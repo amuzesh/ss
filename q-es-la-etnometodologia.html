@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Q Es La Etnometodologia at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Q Es La Etnometodologia",
+  "datePublished": "2022-06-11T02:46:15Z",
+  "image": "https://tse1.mm.bing.net/th?q=q%20es%20la%20etnometodologia",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=q%20es%20la%20etnometodologia&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=q%20es%20la%20etnometodologia" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=q%20es%20la%20etnometodologia" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Q Es La Etnometodologia at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Q Es La Etnometodologia</h2>
+    <p><strong>Q Es La Etnometodologia</strong>. El nombre es para indicar el conjunto de métodos que los miembros de un grupo. Entendida como, la investigación empírica (logia) de los métodos (método) que utiliza la gente (etno) para dar sentido y producir, al mismo tiempo, la actividad social cotidiana, procedimientos constitutivos de la inteligibilidad social la etnometodologia ocupa un lugar propio y distinto de la sociología y del resto de las ciencias humanas.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=q%20es%20la%20etnometodologia" alt="La etnometodologia" />
+        <br>
+        <figcaption>La etnometodologia from es.slideshare.net</figcaption>
+    </figure>
+        <p>
+        La etnometodologia se centra en lo que hace la gente, se hace. Entendida como, la investigación empírica (logia) de los métodos (método) que utiliza la gente (etno) para dar sentido y producir, al mismo tiempo, la actividad social cotidiana, procedimientos constitutivos de la inteligibilidad social la etnometodologia ocupa un lugar propio y distinto de la sociología y del resto de las ciencias humanas. Encuentra una respuesta a tu pregunta que es etnometodologia alexis1510 alexis1510 08.02.2016 ciencias sociales bachillerato contestada que es etnometodologia 1 ver.
+    </p>
+    <h3>La etnometodologia</h3>
+    <p>Encuentra una respuesta a tu pregunta que es etnometodologia alexis1510 alexis1510 08.02.2016 ciencias sociales bachillerato contestada que es etnometodologia 1 ver. La etnometodologia se refiere a la cotidianeidad de los metodos empleados por las personas basandose en el conocimiento compartido y el razonamiento de la sociedad para responder a su entorno. Hc7123456 hc7123456 la etnometodología es una propuesta básica de la sociología que ofrece una perspectiva particular acerca de la naturaleza e indagación. [6] esta figuración local de la que se habla no es otra cosa sino la pretensión de la etnometodología en estudiar la realidad desde la realidad.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="etnometodologia" data-src="https://i.pinimg.com/originals/c7/f3/5e/c7f35e1bc3572b269fda10d4a1d6bd07.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: jessybena.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">El término viene de etno, en la medida que estamos hablando de un saber propio de su sociedad. Así pues con este ejemplo trato de persuadir la intención de la etnometodología en cuanto a la parte fenoménica, que sin duda da paso a la segunda parte de este método que es la hermenéutica. Hc7123456 hc7123456 la etnometodología es una propuesta.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="ETNOMETODOLOGÍA 1.1 by Pam B. Albán" data-src="https://i2.wp.com/0701.static.prezi.com/preview/v2/e27kh2qqagvgr3hglfwe7oi2fp6jc3sachvcdoaizecfr3dnitcq_3_0.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: prezi.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">El término etnometodologia de acuerdo con las raíces griegas, se refiere a los métodos que las personas utilizan cotidianamente para vivir una vida satisfactoria. En términos más sencillos, se trata de una perspectiva sociológica que toma en cuenta los métodos que los seres humanos utilizan en. La etnometodologia se centra en lo que hace la gente, se hace. La etnometodología.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Etnometodología" data-src="https://i2.wp.com/image.slidesharecdn.com/etnometodologia-120725095542-phpapp02/95/etnometodologa-4-728.jpg?cb=1343210434" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">El requisito de adecuación única de los métodos (forma débil) consiste en que el investigador debe tener una «competencia vulgar» en el entorno de la investigación. La etnometodología es una escuela sociológica en desacuerdo con la tradición oficial. Desde que era estudiante, harold garfinkel enfocó sus investigaciones en los. Los seres humanos no son idiotas culturalizados, sino. New ways to.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="EJEMPLOS DE LA ETNOMETODOLOGIA.pptx" data-src="https://i2.wp.com/imgv2-2-f.scribdassets.com/img/document/319821196/original/6ce46e9466/1602207560?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Los dilemas morales son situaciones conflictivas presentadas a los participantes de la investigación, para que contesten qué es lo que el actor principal debería hacer y por. Los seres humanos no son idiotas culturalizados, sino. Qué es la etnometodologia y sus caracteristicas en investigación cualitativa. El término etnometodologia de acuerdo con las raíces griegas, se refiere a los métodos que.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Etnometodologia" data-src="https://i2.wp.com/image.slidesharecdn.com/etnometodologia-100215180410-phpapp01/95/etnometodologia-23-728.jpg?cb=1266257180" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Toma como punto de partida el enfoque etnometodológico, cuyo campo de estudio estaría en las ciencias humanas. Qué es la etnometodologia y sus caracteristicas en investigación cualitativa. Una acción que, para independizarse de las necesidades situadas e independizarse del trabajo, depende de presupuestos complejos que. El nombre es para indicar el conjunto de métodos que los miembros de un grupo..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Etnometodologia" data-src="https://i2.wp.com/image.slidesharecdn.com/etnometodologia-120126113724-phpapp02/95/etnometodologia-20-728.jpg?cb=1327578900" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La etnometodología es una rama de las ciencias sociales que se ocupa de explorar cómo las personas interactúan con el mundo y le dan sentido a la realidad. Dan.9191 • 26 de noviembre de 2015 • resúmenes • 1.579 palabras (7 páginas). Y por influencia de ella, muchos investigadores sociales insisten hoy en la importancia de la palabra que permite.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="ETNOMETODOLOGIA" data-src="https://i2.wp.com/image.slidesharecdn.com/expoii-100731190522-phpapp02/95/etnometodologia-4-728.jpg?cb=1280604061" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Etnometodologia etnometodologia el termino etnometodologia fue utilizado por primera vez por harold garfinkel para denominar la forma de trabajo psicosociológico que estaba realizando en 1954. Hc7123456 hc7123456 la etnometodología es una propuesta básica de la sociología que ofrece una perspectiva particular acerca de la naturaleza e indagación. La etnometodología no es, sin embargo, convencionalmente empirista. La etnometodología es una rama.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="etnometodologia" data-src="https://i2.wp.com/0701.static.prezi.com/preview/v2/2eh3zu66ax2bba4brc7zp65vxt6jc3sachvcdoaizecfr3dnitcq_3_0.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: jessybena.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Diccionario crítico de ciencias sociales. En 1950, la sociología se estableció en estados unidos como una cátedra en progreso y de gran relevancia; Orígenes de la etnometodología ﻿ especialmente desarrollada por harold garfinkel, quien es reconocido como el fundador de la misma y está enfocada a las maneras en que la gente comparte (en el sentido comunicativo) los hechos, procesos.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="La etnometodologia" data-src="https://i2.wp.com/image.slidesharecdn.com/laetnometodologia-120125133202-phpapp01/95/la-etnometodologia-6-728.jpg?cb=1327498656" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La etnometodologia se centra en lo que hace la gente, se hace. Ride, revista iberoamericana para la investigación y el desarrollo educativo, vol. A la realidad es uno de los aspectos más importantes de las actuales ciencias humanas. Se basa en el estudio de garfinkel en la universidad de harvard, y como sólo a través de la utilización del lenguaje.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Etnometodologia" data-src="https://i2.wp.com/image.slidesharecdn.com/etnometodologia-100215180410-phpapp01/95/etnometodologia-19-728.jpg?cb=1266257180" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Diccionario crítico de ciencias sociales. Toma como punto de partida el enfoque etnometodológico, cuyo campo de estudio estaría en las ciencias humanas. 1) la realidad como actividad reflexiva. Desde que era estudiante, harold garfinkel enfocó sus investigaciones en los. De investigación cualitativa de más reciente.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-rootear.html" class="be-post-title">
+				 <h6>que es rootear </h6>
+                </a>
+                <a href="que-es-rootear.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20rootear&amp;w=50&amp;h=50&amp;c=7" alt="que es rootear">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-detención-preventiva.html" class="be-post-title">
+				 <h6>que es una detención preventiva </h6>
+                </a>
+                <a href="que-es-una-detención-preventiva.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20detenci%C3%B3n%20preventiva&amp;w=50&amp;h=50&amp;c=7" alt="que es una detención preventiva">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-flor-de-girasol.html" class="be-post-title">
+				 <h6>que es la flor de girasol </h6>
+                </a>
+                <a href="que-es-la-flor-de-girasol.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20flor%20de%20girasol&amp;w=50&amp;h=50&amp;c=7" alt="que es la flor de girasol">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-rapport.html" class="be-post-title">
+				 <h6>wat is een rapport </h6>
+                </a>
+                <a href="wat-is-een-rapport.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20rapport&amp;w=50&amp;h=50&amp;c=7" alt="wat is een rapport">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-porcion-de-alimento.html" class="be-post-title">
+				 <h6>que es una porcion de alimento </h6>
+                </a>
+                <a href="que-es-una-porcion-de-alimento.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20porcion%20de%20alimento&amp;w=50&amp;h=50&amp;c=7" alt="que es una porcion de alimento">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-n-en-fisica.html" class="be-post-title">
+				 <h6>que significa n en fisica </h6>
+                </a>
+                <a href="que-significa-n-en-fisica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20n%20en%20fisica&amp;w=50&amp;h=50&amp;c=7" alt="que significa n en fisica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="gen-nedir-coğrafya.html" class="be-post-title">
+				 <h6>gen nedir coğrafya </h6>
+                </a>
+                <a href="gen-nedir-coğrafya.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=gen%20nedir%20co%C4%9Frafya&amp;w=50&amp;h=50&amp;c=7" alt="gen nedir coğrafya">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-root-and-its-meaning-in-the-term-apoptosis.html" class="be-post-title">
+				 <h6>what is the root and its meaning in the term apoptosis </h6>
+                </a>
+                <a href="what-is-the-root-and-its-meaning-in-the-term-apoptosis.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20root%20and%20its%20meaning%20in%20the%20term%20apoptosis&amp;w=50&amp;h=50&amp;c=7" alt="what is the root and its meaning in the term apoptosis">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-p-i-l-e-s-stand-for.html" class="be-post-title">
+				 <h6>what does p.i.l.e.s stand for </h6>
+                </a>
+                <a href="what-does-p-i-l-e-s-stand-for.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20p.i.l.e.s%20stand%20for&amp;w=50&amp;h=50&amp;c=7" alt="what does p.i.l.e.s stand for">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-modus.html" class="be-post-title">
+				 <h6>wat is een modus </h6>
+                </a>
+                <a href="wat-is-een-modus.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20modus&amp;w=50&amp;h=50&amp;c=7" alt="wat is een modus">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

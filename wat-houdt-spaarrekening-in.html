@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Wat Houdt Spaarrekening In at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Wat Houdt Spaarrekening In",
+  "datePublished": "2022-07-07T01:46:24Z",
+  "image": "https://tse1.mm.bing.net/th?q=wat%20houdt%20spaarrekening%20in",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=wat%20houdt%20spaarrekening%20in&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=wat%20houdt%20spaarrekening%20in" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=wat%20houdt%20spaarrekening%20in" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Wat Houdt Spaarrekening In at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Wat Houdt Spaarrekening In</h2>
+    <p><strong>Wat Houdt Spaarrekening In</strong>. Dat betekent dat een gemachtigde op de spaarrekening geen geld meer van de rekening kan opnemen nadat de rekeninghouder overleden is. Vaak kunnen zij er ook direct bij, waardoor het makkelijk is om spaargeld te onttrekken.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=wat%20houdt%20spaarrekening%20in" alt="Wat gebeurt er met de spaarrekening van de kinderen bij een scheiding?" />
+        <br>
+        <figcaption>Wat gebeurt er met de spaarrekening van de kinderen bij een scheiding? from www.echtscheiding-wijzer.nl</figcaption>
+    </figure>
+        <p>
+        Dit is tegen een vooraf afgesproken periode en rente. De rente op je spaarrekening. Niet iedere bank geeft hetzelfde percentage rente, en niet allemaal betalen ze het rentebedrag op dezelfde manier uit.
+    </p>
+    <h3>Wat gebeurt er met de spaarrekening van de kinderen bij een scheiding?</h3>
+    <p>In dit artikel lees je er alles over. De meest voorkomende vormen van sparen zijn: Waardebonnen, spaarzegels, en dergelijke sparen, die men later kan inwisselen voor iets. En/of rekening op twee namen.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Spaarrente en voorwaarden spaarrekening GarantiBank Gouden" data-src="https://i2.wp.com/cdn-graphs.homefinance.nl/SPR/graphs/spr-internetgrafiek9.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.spaarrekeningen.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Je spaarloonrekening na 1 januari 2016. Een internetspaarrekening, een gewone spaarrekening, een spaardeposito of een termijndeposito zijn slechts enkele voorbeelden van de verschillende soorten spaarrekeningen. Met de rente op 0 en soms negatieve spaarrente is het verstandig om te bekijken of er alternatieven zijn naast sparen die bij jouw persoonlijke situatie en behoefte passen. Maar wat houdt zo’n rekening nu.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Spaarrente en voorwaarden spaarrekening ABN AMRO Vermogens Spaarrekening" data-src="https://i2.wp.com/cdn-graphs.homefinance.nl/SPR/graphs/spr-internetgrafiek170.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.spaarrekeningen.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De meest voorkomende vormen van sparen zijn: Als je geld van je spaarrekening wilt opnemen, gaat dat standaard naar de tegenrekening. In dit artikel lees je er alles over. Sparen is een manier van omgaan met bezittingen waarbij er iets apart gehouden wordt in plaats van het uit of weg te geven. Rente op spaargeld is jaar op jaar gedaald.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Spaarrente en voorwaarden spaarrekening Yapi Kredi EuroPlus Spaarrekening" data-src="https://i2.wp.com/hf-graphs.azurewebsites.net/SPR/graphs/spr-internetgrafiek103.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.spaarrekeningen.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De tegenrekening is altijd een betaalrekening. Dit zijn de vereisten die een spaarrekening meestal bevat: Je kunt op allerlei manieren sparen. Wat de voorwaarden zijn, verschilt per bank. Staat een spaarrekening op 2 namen?</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Zakelijke spaarrekening Wat zijn de voordelen?" data-src="https://i2.wp.com/startersdagen.com/wp-content/uploads/2021/05/1225-uur-1-750x300.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: startersdagen.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Wat is het verschil tussen een spaarrekening en een (termijn)deposito? Rente op spaargeld is jaar op jaar gedaald. Na een verklaring van erfrecht kan de geblokkeerde spaarrekening opgeheven worden. Aan het eind van het jaar moet u de som maken van wat u op al uw spaarrekeningen (en de spaarrekening van uw minderjarige kinderen) hebt verdiend en dit bedrag op.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wat gebeurt er met een spaarrekening bij overlijden Consumentenbond" data-src="https://i2.wp.com/www.consumentenbond.nl/binaries/content/gallery/cbhippowebsite/tests/hypotheek-aanpassen-besparen/afbeeldingen/besparen-overlijdensrisicoverzekering.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.consumentenbond.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Over het spaargeld ontvang je een variabele rente, die kan schommelen binnen bepaalde marges. Banken gebruiken dit om je identiteit te controleren. Als u het minimumsaldo niet kunt betalen, kan een traditionele spaarrekening. Vanaf deze rekening doe je de eerste storting op de spaarrekening. Na een verklaring van erfrecht kan de geblokkeerde spaarrekening opgeheven worden.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Spaarrente en voorwaarden spaarrekening Credit Europe Bank TopInterest" data-src="https://i2.wp.com/cdn-graphs.homefinance.nl/SPR/graphs/spr-internetgrafiek19.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.spaarrekeningen.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Als je een spaarrekening opent, moet je een tegenrekening opgeven. Over het spaargeld ontvang je een variabele rente, die kan schommelen binnen bepaalde marges. Het geld dat op een spaarrekening staat, is vrij opneembaar. Wat is het verschil tussen een spaarrekening en een (termijn)deposito? Als u het minimumsaldo niet kunt betalen, kan een traditionele spaarrekening.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wat gebeurt er met de spaarrekening van de kinderen bij een scheiding?" data-src="https://i2.wp.com/www.echtscheiding-wijzer.nl/wp-content/uploads/2021/07/kindgeld-scaled.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.echtscheiding-wijzer.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dit is de roerende voorheffing. Dan kun je hiermee een depositorekening openen of een spaarrekening. Daarnaast is vaak direct opneembaar, waardoor acute problemen direct kunnen worden verholpen. Rente op spaargeld is jaar op jaar gedaald. Het geld dat op een spaarrekening staat, is vrij opneembaar.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Santander Consumer Bank Wat met getrouwheidspremie bij overschrijving" data-src="https://i2.wp.com/i.ytimg.com/vi/R80AL7SWoKI/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Er zijn dus geen kosten aan verbonden. Rien meijer , expert geld &amp; verzekering bijgewerkt op: De blokkering geldt dus óók voor eventuele gemachtigden. Vanaf deze rekening doe je de eerste storting op de spaarrekening. Inschrijven bedankt voor je aanmelding.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Spaarrekening 18jarig meisje geplunderd, maar hoe? Geld Telegraaf.nl" data-src="https://i2.wp.com/www.telegraaf.nl/images/1155x650/filters:format(jpeg):quality(50)/cdn-kiosk-api.telegraaf.nl/c1187cbc-74f4-11eb-8aab-0217670beecd.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.telegraaf.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Veel ouders sluiten een spaarrekening. In 2021, als het bedrag hoger is dan 980 euro, heft de belgische staat een percentage van 15%: Je spaarloonrekening na 1 januari 2016. Hieronder vertellen we je van alles over de spaarrente. Om te beoordelen wat een spaarrekening je werkelijk oplevert, moet je ook rekening houden met de kosten.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Alles wat Je Moet Weten over een Spaarrekening InvesteringsTips" data-src="https://i2.wp.com/investeringstips.nl/wp-content/uploads/2019/08/Spaarrekening-Openen-768x512.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: investeringstips.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dit is tegen een vooraf afgesproken periode en rente. Bij een relatief laag inlegbedrag (tot ongeveer € 5000) is een depositorekening bij de meeste banken niet mogelijk. Als u gewoonlijk gewoon uw spaargeld voor een regenachtig dagfonds houdt, is een geldmarktrekening een geweldige manier om rente te verdienen op het geld dat u al hebt., als u geneigd bent om.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-metáfora-en-el-poema.html" class="be-post-title">
+				 <h6>que es una metáfora en el poema </h6>
+                </a>
+                <a href="que-es-una-metáfora-en-el-poema.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20met%C3%A1fora%20en%20el%20poema&amp;w=50&amp;h=50&amp;c=7" alt="que es una metáfora en el poema">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="biologie-wat-is-een-levensgemeenschap.html" class="be-post-title">
+				 <h6>biologie wat is een levensgemeenschap </h6>
+                </a>
+                <a href="biologie-wat-is-een-levensgemeenschap.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=biologie%20wat%20is%20een%20levensgemeenschap&amp;w=50&amp;h=50&amp;c=7" alt="biologie wat is een levensgemeenschap">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-necesitas-para-trabajar-en-la-dea.html" class="be-post-title">
+				 <h6>que necesitas para trabajar en la dea </h6>
+                </a>
+                <a href="que-necesitas-para-trabajar-en-la-dea.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20necesitas%20para%20trabajar%20en%20la%20dea&amp;w=50&amp;h=50&amp;c=7" alt="que necesitas para trabajar en la dea">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="betekenis-date-of-issue.html" class="be-post-title">
+				 <h6>betekenis date of issue </h6>
+                </a>
+                <a href="betekenis-date-of-issue.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=betekenis%20date%20of%20issue&amp;w=50&amp;h=50&amp;c=7" alt="betekenis date of issue">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="q-es-la-musica-programatica.html" class="be-post-title">
+				 <h6>q es la musica programatica </h6>
+                </a>
+                <a href="q-es-la-musica-programatica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=q%20es%20la%20musica%20programatica&amp;w=50&amp;h=50&amp;c=7" alt="q es la musica programatica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-s-m-a-r-t-e-r-stand-for.html" class="be-post-title">
+				 <h6>what does s.m.a.r.t.e.r stand for </h6>
+                </a>
+                <a href="what-does-s-m-a-r-t-e-r-stand-for.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20s.m.a.r.t.e.r%20stand%20for&amp;w=50&amp;h=50&amp;c=7" alt="what does s.m.a.r.t.e.r stand for">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-doet-een-jurist-bij-de-politie.html" class="be-post-title">
+				 <h6>wat doet een jurist bij de politie </h6>
+                </a>
+                <a href="wat-doet-een-jurist-bij-de-politie.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20doet%20een%20jurist%20bij%20de%20politie&amp;w=50&amp;h=50&amp;c=7" alt="wat doet een jurist bij de politie">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="porque-nuestro-idioma-español-es-importante.html" class="be-post-title">
+				 <h6>porque nuestro idioma español es importante </h6>
+                </a>
+                <a href="porque-nuestro-idioma-español-es-importante.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=porque%20nuestro%20idioma%20espa%C3%B1ol%20es%20importante&amp;w=50&amp;h=50&amp;c=7" alt="porque nuestro idioma español es importante">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-identificar-los-versos-y-las-estrofas-en-un-poema.html" class="be-post-title">
+				 <h6>como identificar los versos y las estrofas en un poema </h6>
+                </a>
+                <a href="como-identificar-los-versos-y-las-estrofas-en-un-poema.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20identificar%20los%20versos%20y%20las%20estrofas%20en%20un%20poema&amp;w=50&amp;h=50&amp;c=7" alt="como identificar los versos y las estrofas en un poema">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-lapa.html" class="be-post-title">
+				 <h6>que es un lapa </h6>
+                </a>
+                <a href="que-es-un-lapa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20lapa&amp;w=50&amp;h=50&amp;c=7" alt="que es un lapa">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Ijarah Mutlaqah Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Ijarah Mutlaqah Adalah",
+  "datePublished": "2022-06-23T21:12:11Z",
+  "image": "https://tse1.mm.bing.net/th?q=ijarah%20mutlaqah%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=ijarah%20mutlaqah%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=ijarah%20mutlaqah%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=ijarah%20mutlaqah%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Ijarah Mutlaqah Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Ijarah Mutlaqah Adalah</h2>
+    <p><strong>Ijarah Mutlaqah Adalah</strong>. Sebuah lembaga keuangan syariah, menyewakan mobil kepada fulan selama 4 tahun, dengan biaya sewa. Pada saat itu, tidak boleh ada pihak yang membatalkan transaksi secara sepihak.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=ijarah%20mutlaqah%20adalah" alt="PPT SISTEM OPERASIONAL BANK SYARIAH PowerPoint Presentation, free" />
+        <br>
+        <figcaption>PPT SISTEM OPERASIONAL BANK SYARIAH PowerPoint Presentation, free from www.slideserve.com</figcaption>
+    </figure>
+        <p>
+        Yup, ijarah berasal dari bahasa arab yang artinya adalah imbalan atau upah sewa atau jasa. Ijarah berasal dari bahasa arab yang memiliki makna imbalan, atau upah sewa/jasa. Sewa barang pada dasarnya adalah jual beli manfaat barang yang disewakan,sementara sewa jasa atau tenaga adalah jual beli atas jasa atau tenaga yang disewakan tersebut.
+    </p>
+    <h3>PPT SISTEM OPERASIONAL BANK SYARIAH PowerPoint Presentation, free</h3>
+    <p>Kami berharap dengan selesainya tugas makalah ini dapat memudahkan kita semua untuk lebih memahami mata kuliah “fiqih muamalah ii” khususnya materi mengenai ijarah dan. Sedangkan ijarah adalah transaksi yang bersifat mengikat semenjak transaksi diadakan. Dikutip dari buku hukum sistem ekonomi islam oleh. Berikut ini kita akan menguraikannya satu persatu, dari apa yang disebut prinsip mudharabah, murabahah, hingga ijarah.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT SISTEM OPERASIONAL BANK SYARIAH PowerPoint Presentation, free" data-src="https://i2.wp.com/image2.slideserve.com/5197971/skema-musyarakah-mutanaqisah-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Secara garis besar mudharabah terdiri atas dua macam, yaitu mutlaqah dan muqayyadah. Pada akad ijarah adalah tidak diperbolehkan untuk memiliki dua kontrak dalam satu akad. Sebuah lembaga keuangan syariah, menyewakan mobil kepada fulan selama 4 tahun, dengan biaya sewa. Sebenarnya bagaimana sih konsep ijarah muntahia bittamlik itu? Jadi ia hanya menunjukkan kepada satu indifidu tidak tertentu dari hakekat tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT SISTEM OPERASIONAL BANK SYARIAH PowerPoint Presentation ID5197971" data-src="https://i2.wp.com/image2.slideserve.com/5197971/skema-musyarakah-mutanaqisah-n.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sedangkan ijarah adalah transaksi yang bersifat mengikat semenjak transaksi diadakan. Akad ijarah ada dua macam,yaitu ijarah atau sewa barang dan sewa tenaga atau jasa (pengupahan). Sewa barang pada dasarnya adalah jual beli manfaat barang yang disewakan,sementara sewa jasa atau tenaga adalah jual beli atas jasa atau tenaga yang disewakan tersebut. Ijarah yang biasa kita kenal dengan persewaan, sangat sering membantu,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dunia Keuangan SISTEM PEMBIAYAAN LEASING DI PERBANKAN SYARIAH" data-src="https://i2.wp.com/3.bp.blogspot.com/-aKYtGeaj61k/ULWXceKVm4I/AAAAAAAAACI/W7KcvqQ-03U/s1600/leasing+perbankan+syariah.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dunia-keuangan.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Adalah kerjasama antara dua pihak dimana shahibul maal menyediakan modal dan memberikan kewenangan penuh kepada mudharib dalam menentukan jenis dan tempat investasi, sedangkan keuntungan dan kerugian dibagi menurut kesepakatan dimuka. Prinsip bank syariah yang pertama adalah mudharabah. Dikutip dari buku hukum sistem ekonomi islam oleh. Pada umumnya, istilah “ijarah” digunakan dalam perbankan syariah. Istilah “ijarah” pada umumnya digunakan dalam perbankan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Perbankan Syariah" data-src="https://i2.wp.com/image.slidesharecdn.com/perbankansyariah-120808095726-phpapp01/95/perbankan-syariah-62-728.jpg?cb=1344420246" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kami berharap dengan selesainya tugas makalah ini dapat memudahkan kita semua untuk lebih memahami mata kuliah “fiqih muamalah ii” khususnya materi mengenai ijarah dan. Islam telah mengatur berbagai bentuk kerja sama yang dilakukan dalam kegiatan pertanian. Setia keuntungan yang diraih akan dibagi menurut rasio tertentu yang disepakati. Yup, ijarah berasal dari bahasa arab yang artinya adalah imbalan atau upah sewa.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="catatan kiki Pengertian, skema, contoh dan dasar hukum akad mudharabah" data-src="https://i2.wp.com/3.bp.blogspot.com/-id_qJc1o86w/VHFAx35CX5I/AAAAAAAAAOU/4LNKfnzIzZw/s1600/skema-mudharabah.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kikisusiyanti.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Salah satu akad yang populer dipraktikkan oleh pelaku ekonomi syariah dewasa ini, adalah akad ijarah muntahiyah bit tamlik (akad ijarah yang diakhiri dengan menjadikan barang yang disewa sebagai hak milik). Selanjutnya, perbedaan leasing dan ijarah adalah cara sewa beli. Pengertian ijarah ijarah menurut lughat berarti “nama upah”, sedang menurut syarak adalah memberikan kemanfaatan sesuatu dengan adanya penukaran berdasarkan beberapa syarat.1.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT SISTEM OPERASIONAL BANK SYARIAH PowerPoint Presentation, free" data-src="https://i2.wp.com/image2.slideserve.com/5197971/skema-transaksi-jual-beli-dengan-margin-keuntungan-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Islam telah mengatur berbagai bentuk kerja sama yang dilakukan dalam kegiatan pertanian. Sebenarnya bagaimana sih konsep ijarah muntahia bittamlik itu? Menurut hanafiyah rukun ijarah hanya satu yaitu ijab dan qabul dari dua belah pihak yang bertransaksi. Ijarah yang biasa kita kenal dengan persewaan, sangat sering membantu, karena dengan adanya ijarah/persewaan ini, seseorang yang terkadang belum bisa membeli benda untuk kebutuhan..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="AKAD MUDARABAH Pengertian Akad Mudharabah, Skema Akad Mudharabah" data-src="https://i2.wp.com/1.bp.blogspot.com/-TMPrKAKJcXA/Xqp8qDgSaFI/AAAAAAAAAIg/_Z6DgfO8Ot8e3pY5m9CamPISpvf0ML-qQCEwYBhgL/s1600/SKEMA%2BAKAD%2BMUDARABAH.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: intanlidia1209.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jadi ia hanya menunjukkan kepada satu indifidu tidak tertentu dari hakekat tersebut. Setia keuntungan yang diraih akan dibagi menurut rasio tertentu yang disepakati. Akad ijarah adalah akad pemindahan hak guna atas barang atau jasa dalam tanggungan waktu tertentu yang diikuti dengan pembayaran upah atau biaya sewa tanpa disertai dengan perpindahan hak milik atas barang itu sendiri. Kami berharap dengan selesainya.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT BAB VI MANAJEMEN DANA BANK SYARIAH PowerPoint Presentation ID" data-src="https://i2.wp.com/image2.slideserve.com/5122016/slide14-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sighat (ijab dan qabul) 3. Pembuatan makalah ini adalah sebagai pemenuhan tugas mata kuliah “fiqih muamalah ii”, guna lebih mengetahui dan memahami mengenai ijarah dan ijarah muntahiya bittamlik. Oleh sebab itu, pembiayaan dengan akad ijarah diatur sesuai syariat islam. Prinsip bank syariah yang pertama adalah mudharabah. (b) syarat in’iqad (syarat terjadinya akad) • orang yang berakad harus mukallaf, yaitu baligh.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT SISTEM OPERASIONAL BANK SYARIAH PowerPoint Presentation, free" data-src="https://i2.wp.com/image2.slideserve.com/5197971/jenis-sewa-ijarah-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Prinsip operasional syariah yang diterapkan dalam penghimpunan dana masyarakat adalah prinsip wadi’ah dan mudharabah. Skema akad ijarah tidak memperbolehkan b menjual barang x ke a atau yang disebut dengan skema akad syariah yaitu skema bai’ inah. (b) syarat in’iqad (syarat terjadinya akad) • orang yang berakad harus mukallaf, yaitu baligh dan berakal, sedangkan anak mumayyiz belum dapat dikategorikan ahli akad..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="AKAD MUDARABAH Pengertian Akad Mudharabah, Skema Akad Mudharabah" data-src="https://i2.wp.com/1.bp.blogspot.com/-TMPrKAKJcXA/Xqp8qDgSaFI/AAAAAAAAAIg/_Z6DgfO8Ot8e3pY5m9CamPISpvf0ML-qQCEwYBhgL/s640/SKEMA%2BAKAD%2BMUDARABAH.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: intanlidia1209.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Aset musyarakah mutanaqisah dapat dialihkan kepada syarik atau pihak lain melalui akad ijarah. Pengertian mutlaq dan muqayyad mutlaq adalah lafadz yang menunjukkan sesuatu hakekat tanpa sesuatu qayyid (pembatas). Penerapan dalam kehidupan hariannya seperti apa? Ijarah berasal dari bahasa arab yang memiliki makna imbalan, atau upah sewa/jasa. Adapun menurut jumhur ulama iajarah ada empat yaitu:</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="tomatsaus-fra-bunnen.html" class="be-post-title">
+				 <h6>tomatsaus fra bunnen </h6>
+                </a>
+                <a href="tomatsaus-fra-bunnen.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=tomatsaus%20fra%20bunnen&amp;w=50&amp;h=50&amp;c=7" alt="tomatsaus fra bunnen">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kookgroep-aanleggen.html" class="be-post-title">
+				 <h6>kookgroep aanleggen </h6>
+                </a>
+                <a href="kookgroep-aanleggen.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kookgroep%20aanleggen&amp;w=50&amp;h=50&amp;c=7" alt="kookgroep aanleggen">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-infonavit-patronal.html" class="be-post-title">
+				 <h6>que es el infonavit patronal </h6>
+                </a>
+                <a href="que-es-el-infonavit-patronal.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20infonavit%20patronal&amp;w=50&amp;h=50&amp;c=7" alt="que es el infonavit patronal">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-puerro-en-mexico.html" class="be-post-title">
+				 <h6>que es un puerro en mexico </h6>
+                </a>
+                <a href="que-es-un-puerro-en-mexico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20puerro%20en%20mexico&amp;w=50&amp;h=50&amp;c=7" alt="que es un puerro en mexico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-m-k-s-en-fisica.html" class="be-post-title">
+				 <h6>que es m.k.s en fisica </h6>
+                </a>
+                <a href="que-es-m-k-s-en-fisica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20m.k.s%20en%20fisica&amp;w=50&amp;h=50&amp;c=7" alt="que es m.k.s en fisica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-renta-en-economia.html" class="be-post-title">
+				 <h6>que es la renta en economia </h6>
+                </a>
+                <a href="que-es-la-renta-en-economia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20renta%20en%20economia&amp;w=50&amp;h=50&amp;c=7" alt="que es la renta en economia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-tipo-de-queso-eres.html" class="be-post-title">
+				 <h6>que tipo de queso eres </h6>
+                </a>
+                <a href="que-tipo-de-queso-eres.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20tipo%20de%20queso%20eres&amp;w=50&amp;h=50&amp;c=7" alt="que tipo de queso eres">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-edge-en-un-celular.html" class="be-post-title">
+				 <h6>que significa edge en un celular </h6>
+                </a>
+                <a href="que-significa-edge-en-un-celular.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20edge%20en%20un%20celular&amp;w=50&amp;h=50&amp;c=7" alt="que significa edge en un celular">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-3-4-en-musica.html" class="be-post-title">
+				 <h6>que significa 3/4 en musica </h6>
+                </a>
+                <a href="que-significa-3-4-en-musica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%203%2F4%20en%20musica&amp;w=50&amp;h=50&amp;c=7" alt="que significa 3/4 en musica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="netnummer-038.html" class="be-post-title">
+				 <h6>netnummer 038 </h6>
+                </a>
+                <a href="netnummer-038.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=netnummer%20038&amp;w=50&amp;h=50&amp;c=7" alt="netnummer 038">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Ristretto Setting On Nespresso at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Ristretto Setting On Nespresso",
+  "datePublished": "2022-05-27T21:05:12Z",
+  "image": "https://tse1.mm.bing.net/th?q=ristretto%20setting%20on%20nespresso",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=ristretto%20setting%20on%20nespresso&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=ristretto%20setting%20on%20nespresso" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=ristretto%20setting%20on%20nespresso" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Ristretto Setting On Nespresso at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Ristretto Setting On Nespresso</h2>
+    <p><strong>Ristretto Setting On Nespresso</strong>. This preset setting isn&#039;t necessarily spot on for all capsules though. Enter factory settings mode by pushing the button and the lever down together for three seconds.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=ristretto%20setting%20on%20nespresso" alt="Ristretto 10 Nespresso® Compatible Capsules Must Espresso Italiano" />
+        <br>
+        <figcaption>Ristretto 10 Nespresso® Compatible Capsules Must Espresso Italiano from mustespresso.ae</figcaption>
+    </figure>
+        <p>
+        But through that intensity you’ll tast. Set of 2 pixie espresso cups (2.7oz) with double stainless steel walls, matching the color of your favorite nespresso capsules. This is the lever on the front of the machine that you lift up in order to insert a coffee capsule.
+    </p>
+    <h3>Ristretto 10 Nespresso® Compatible Capsules Must Espresso Italiano</h3>
+    <p>We celebrate italy’s rich history of master blenders and roasters in ispirazione ristretto italiano. I don’t know where they get their definitions, but that has. [13] skip this step if the machine is already off. But for lungo, more water is introduced to.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Nespresso PIXIE Espresso Cup Set Ristretto &amp; Decaffeinato Espresso" data-src="https://i2.wp.com/cdn.shopify.com/s/files/1/0321/6687/1084/products/2021-03-0915_38_07-PIXIEEspressoSetRistretto_DecaffeinatoCups_CoffeeCups_Nespresso_2048x2048.png?v=1615304349" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: espresso.ly</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Height 2 in /6.1 cm, ⌀ 2 in / 6.3 cm. You can buy a variety of flavors of this. Ristretto is a classic blend of coffee beans from central and south america. Coffee becomes a game with this set of two pixie espresso cups (ca. The descale and clean alert lights will start blinking.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Nespresso RISTRETTO INTENSO PRO" data-src="https://i2.wp.com/www.saladplate.com/media/catalog/product/cache/d1209fde5e7aa76f9b86a3e97aa499b0/9/0/900x900px-ristrettointenso.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.saladplate.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">If you want to enjoy a great coffee, ristretto is the way to go. Coffee becomes a game with this set of two pixie espresso cups (capacity: Putting the arabica coffees through a quick roast keeps their bright acidity and fruity notes alive and gives ispirazione ristretto italiano more in the cup. Bestpresso dark rich ristretto is the perfect start.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Nescafé Dolce Gusto Rapido Set Espresso, Ristretto, Barista, 3 x 16" data-src="https://i2.wp.com/pickserver.de/media/D/DG0326.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.about-tea.de</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The best part about ristretto is that it’s compatible with all original nespresso espresso machines. This is the lever on the front of the machine that you lift up in order to insert a coffee capsule. Your nespresso machine is factory set in terms of the amount of water dispensed. Pixie espresso duo cups, ristretto &amp; decaffeinato (80ml) sgd 45.00..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How to Make a Ristretto Coffee on a Nespresso Machine YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/PBIixmA1F9k/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Putting the arabica coffees through a quick roast keeps their bright acidity and fruity notes alive and gives ispirazione ristretto italiano more in the cup. The combination of three parts of whole milk results in a mouthfeel that’s sweet, woody, and syrupy. True ristrettos (such as the nespresso ristretto capsule) are ground more finely than the true espresso or lungo.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Nespresso New Ristretto Decaffeinato YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/oO6bx7DEKDI/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In the colours of your favourite espresso capsules, they match. The combination of three parts of whole milk results in a mouthfeel that’s sweet, woody, and syrupy. You can buy a variety of flavors of this. 27.00 ₾ 23.00 ₾ add to cart. The best part about ristretto is that it’s compatible with all original nespresso espresso machines.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Nespresso Ristretto 10бр кафе капсули" data-src="https://i2.wp.com/kafemania.bg/image/cache/data/nespresso capsules/ristretto-1200x1200.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kafemania.bg</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">You can make ristretto your standard setting! Press the lever down three times to return to factory settings. Pixie espresso duo cups, ristretto &amp; decaffeinato (80ml) sgd 45.00. On the citiz machine, press the espresso button, and about halfway, press the espresso button to stop the brew midway. But for lungo, more water is introduced to.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Nespresso Expert make Ristretto &#039;Livanto&#039; YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/vj0tI-JXbFM/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The ristretto is a perfect coffee to wake you up in the morning and keep you alert throughout the day. Activate to add the product. In the colours of your favourite espresso. But for lungo, more water is introduced to. Ristretto the dark, intense roast and fine grind develop the dense body and iconic thick coffee crema of these latin.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ristretto 10 Nespresso® Compatible Capsules Must Espresso Italiano" data-src="https://i2.wp.com/mustespresso.ae/wp-content/uploads/2021/02/ristretto-MUST-ALU-1024x998.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: mustespresso.ae</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It is a rich and creamy coffee with a light, smoky flavor. The arabica beans in this capsule get a dark roast, then a fine grind. After 3 seconds, watch for the green led indicator on the top of the machine to shut off. To brew a ristretto, you need to use a capsule that is labelled as a ristretto..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Compatibili Nespresso Caffè Ristretto Caffè, Caffè italiano, Miscelatori" data-src="https://i.pinimg.com/originals/0d/49/db/0d49dbcd6ffaa5e1eaeb2a92d0d603f0.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Get free delivery on all orders above ₫1,500,000. Height 2 in /6.1 cm, ⌀ 2 in / 6.3 cm. Press the lever down for 3 seconds to turn off the machine, if needed. In the colours of your favourite espresso capsules, they match your coffee while keeping it warm with a double stainless steel exterior. Arabica from east africa and.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ristretto Cafés Oquendo Cafés Oquendo" data-src="https://i2.wp.com/www.cafesoquendo.com/wp-content/uploads/fly-images/3660/oquendo-15-nespresso-ristretto-1240x0.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.cafesoquendo.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Press the hot milk and flat white button together for three seconds to enter menu mode. Press the ristretto button one more time to choose 9 minutes. I don’t know where they get their definitions, but that has. The descale and clean alert lights will start blinking. Coffee becomes a game with this set of two pixie espresso cups (ca.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-risk-management-in-social-work.html" class="be-post-title">
+				 <h6>what is risk management in social work </h6>
+                </a>
+                <a href="what-is-risk-management-in-social-work.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20risk%20management%20in%20social%20work&amp;w=50&amp;h=50&amp;c=7" alt="what is risk management in social work">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-genero-lirico-y-sus-caracteristicas.html" class="be-post-title">
+				 <h6>que es el genero lirico y sus caracteristicas </h6>
+                </a>
+                <a href="que-es-el-genero-lirico-y-sus-caracteristicas.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20genero%20lirico%20y%20sus%20caracteristicas&amp;w=50&amp;h=50&amp;c=7" alt="que es el genero lirico y sus caracteristicas">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-sinfonia-en-español.html" class="be-post-title">
+				 <h6>que significa sinfonia en español </h6>
+                </a>
+                <a href="que-significa-sinfonia-en-español.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20sinfonia%20en%20espa%C3%B1ol&amp;w=50&amp;h=50&amp;c=7" alt="que significa sinfonia en español">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-zenuwstelsel.html" class="be-post-title">
+				 <h6>wat is zenuwstelsel </h6>
+                </a>
+                <a href="wat-is-zenuwstelsel.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20zenuwstelsel&amp;w=50&amp;h=50&amp;c=7" alt="wat is zenuwstelsel">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="por-qué-se-dice-que-el-ecuador-es-mega-diverso.html" class="be-post-title">
+				 <h6>por qué se dice que el ecuador es mega diverso </h6>
+                </a>
+                <a href="por-qué-se-dice-que-el-ecuador-es-mega-diverso.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=por%20qu%C3%A9%20se%20dice%20que%20el%20ecuador%20es%20mega%20diverso&amp;w=50&amp;h=50&amp;c=7" alt="por qué se dice que el ecuador es mega diverso">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-poema-en-prosa.html" class="be-post-title">
+				 <h6>que es el poema en prosa </h6>
+                </a>
+                <a href="que-es-el-poema-en-prosa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20poema%20en%20prosa&amp;w=50&amp;h=50&amp;c=7" alt="que es el poema en prosa">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-inproceedings.html" class="be-post-title">
+				 <h6>what is inproceedings </h6>
+                </a>
+                <a href="what-is-inproceedings.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20inproceedings&amp;w=50&amp;h=50&amp;c=7" alt="what is inproceedings">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-organizar-closet-de-comida.html" class="be-post-title">
+				 <h6>como organizar closet de comida </h6>
+                </a>
+                <a href="como-organizar-closet-de-comida.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20organizar%20closet%20de%20comida&amp;w=50&amp;h=50&amp;c=7" alt="como organizar closet de comida">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-sonata-para-niños.html" class="be-post-title">
+				 <h6>que significa sonata para niños </h6>
+                </a>
+                <a href="que-significa-sonata-para-niños.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20sonata%20para%20ni%C3%B1os&amp;w=50&amp;h=50&amp;c=7" alt="que significa sonata para niños">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-verso-en-un-poema-ejemplos.html" class="be-post-title">
+				 <h6>que es el verso en un poema ejemplos </h6>
+                </a>
+                <a href="que-es-el-verso-en-un-poema-ejemplos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20verso%20en%20un%20poema%20ejemplos&amp;w=50&amp;h=50&amp;c=7" alt="que es el verso en un poema ejemplos">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

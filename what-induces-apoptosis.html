@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        What Induces Apoptosis at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "What Induces Apoptosis",
+  "datePublished": "2022-05-23T06:52:28Z",
+  "image": "https://tse1.mm.bing.net/th?q=what%20induces%20apoptosis",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=what%20induces%20apoptosis&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20induces%20apoptosis" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20induces%20apoptosis" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            What Induces Apoptosis at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">What Induces Apoptosis</h2>
+    <p><strong>What Induces Apoptosis</strong>. An association between dna damage and premature senescence is not unexpected; Apoptosis is an ordered cascade of enzymatic events that culminates in cell death and the cleavage of dna into characteristic nucleosomal fragments.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=what%20induces%20apoptosis" alt="Ni 2+ induced mitochondriaapoptosis and caspasedependent apoptosis" />
+        <br>
+        <figcaption>Ni 2+ induced mitochondriaapoptosis and caspasedependent apoptosis from www.researchgate.net</figcaption>
+    </figure>
+        <p>
+        Intrinsic apoptosis is activated by internal dna damage within the cell. One of two apoptotic pathways will be activated. 26 rows these inducers may target a specific cellular process in order to induce antitumor or antineoplastic effects, e.g.
+    </p>
+    <h3>Ni 2+ induced mitochondriaapoptosis and caspasedependent apoptosis</h3>
+    <p>Assays to confirm the induction of apoptosis by quantifying changes in mitochondrial membrane potential, phosphatidylserine membrane. This often occurs for the greater good of the whole organism, such as when the cell’s dna has become damaged and it may become cancerous. Linomide, that has a wide range of immunostimulatory effects; This chapter describes methods for inducing apoptosis via ultraviolet b irradiation, small molecule drug treatments, death receptor ligation, and exposure to granule components of cytotoxic lymphocytes.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ni 2+ induced mitochondriaapoptosis and caspasedependent apoptosis" data-src="https://i2.wp.com/www.researchgate.net/publication/338736785/figure/download/fig1/AS:849992919052288@1579665512605/Ni-2-induced-mitochondria-apoptosis-and-caspase-dependent-apoptosis.ppm" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">One of two apoptotic pathways will be activated. Apoptosis is not induced by mk2206 in u266 cell line. Capsaicin in hot pepper can cause apoptosis in prostate cancer cells and pancreatic cancer cells in mice. Apoptosis is a normal genetically programmed cell death where an aging cell at the end of its life cycle shrinks and its remaining fragments are.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Vanquish Oncology Procaspase 3 Activation Factor to Selectively" data-src="https://i2.wp.com/blogs.shu.edu/cancer/files/2016/02/apoptosis.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blogs.shu.edu</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Necrosis is the premature death of a cell that occurs due to signals arising due to the presence of external agents like fungal or bacterial toxins. Low levels of cflipl can enhance apoptotic signaling, whereas apoptosis is inhibited when cflipl levels are high [19]. Apoptosis is not induced by mk2206 in u266 cell line. Apoptosis is a process that occurs.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Phoyunnanin E Induces Apoptosis of Nonsmall Cell Lung Cancer Cells via" data-src="https://i2.wp.com/ar.iiarjournals.org/content/anticanres/38/11/6281/F6.large.jpg?width=800&amp;height=600&amp;carousel=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ar.iiarjournals.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Extrinsic apoptosis is activated by. Apoptosis also plays a role in preventing cancer. The cells were treated with 100 ng/ml lps for 12 hours in the presence of the indicated concentrations of fbs. &#039;&#039;falling off&#039;&#039;) is a form of programmed cell death that occurs in multicellular organisms. 26 rows these inducers may target a specific cellular process in order to.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Schematic overview of apoptosis induced by coptisine via the induction" data-src="https://i2.wp.com/www.researchgate.net/publication/343393877/figure/download/fig5/AS:920424263200769@1596457653158/Schematic-overview-of-apoptosis-induced-by-coptisine-via-the-induction-of-ROS-mediated.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In the strictest sense, programmed cell death may be applied to other forms of cell death that require gene expression without fulfilling some, or all, of the morphological criteria of apoptosis. But there is a down side. The absence of aif can cause neurodegeneration, skeleton muscle atrophy and dilated cardiomyopathy. Actinomycin d, an antineoplastic antibiotic, inhibits rna synthesis, camptothecin, an.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Quercetin induced apoptosis of human oral cancer SAS cells through" data-src="https://i2.wp.com/www.spandidos-publications.com/article_images/ol/15/6/ol-15-06-9663-g06.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: spandidos-publications.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">(f) apoptosis induced by lps depends on the presence of fbs. 10 5 macrophages were treated for 12 hours with the indicated concentrations of lps. Apoptosis is the process of programmed cell death. Biochemical events lead to characteristic cell changes and death.these changes include blebbing, cell shrinkage, nuclear fragmentation, chromatin condensation, dna fragmentation, and mrna decay. Apoptosis is a form.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="3 DNA damage induced p53 promotes apoptosis in a... Download" data-src="https://i2.wp.com/www.researchgate.net/profile/Diego-Rodriguez-69/publication/286007555/figure/fig1/AS:367887052230659@1464722516234/The-Death-Receptor-and-Mitochondrial-pathways-of-Apoptosis-DNA-damage-triggers-the-death_Q640.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Apoptosis is the process of programmed cell death. Apoptosis also plays a role in preventing cancer. Foods that induce cancer killing apoptosis Apoptosis is referred to as “programmed” cell death because it happens due to. A dna damage pathway involving atm and p53 is activated in senescent cells 5 and γh2ax positivity is a useful marker for replicative senescence.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Lycorine hydrochloride induces reactive oxygen species‑mediated" data-src="https://i2.wp.com/www.spandidos-publications.com/article_images/ol/21/3/ol-21-03-12497-g05.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.spandidos-publications.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Drugs that inhibit lymphocyte apoptosis and that have been employed in vivo include cyclosporin a that, although predominantly immunosuppressive, in determined circumstances induces an autoimmune syndrome: Intrinsic apoptosis is activated by internal dna damage within the cell. Clove extract inhibits tumor growth and promotes cell cycle arrest and apoptosis. &#039;&#039;falling off&#039;&#039;) is a form of programmed cell death that occurs.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="TNFrelated Apoptosis Inducing Ligand (TRAIL) Receptor &amp; Cancer" data-src="https://i2.wp.com/abbviescience.com/images/TRAIL_Graphic_1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: abbviescience.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Apoptosis is an ordered cascade of enzymatic events that culminates in cell death and the cleavage of dna into characteristic nucleosomal fragments. Apoptosis is a process that occurs in multicellular when a cell intentionally “decides” to die. 2 whatever the definition, studies clearly show that. Linomide, that has a wide range of immunostimulatory effects; In adults, apoptosis is used to.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Schematic model of gallic acidinduced apoptosis pathway in primary" data-src="https://i2.wp.com/www.researchgate.net/profile/Chiu-Yuan-Chen/publication/236085037/figure/download/fig6/AS:203201610555399@1425458447476/Schematic-model-of-gallic-acid-induced-apoptosis-pathway-in-primary-cultured-murine-lung.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">26 rows these inducers may target a specific cellular process in order to induce antitumor or antineoplastic effects, e.g. Ectopic expression of hid in mammalian cells induces apoptosis, suggesting a conserved mechanism. &#039;&#039;falling off&#039;&#039;) is a form of programmed cell death that occurs in multicellular organisms. Curcumin which is an extract from turmeric can cause apoptosis. Apoptosis is not induced.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Fenofibrate did not induce apoptosis in MS1 VEGF cells" data-src="https://i2.wp.com/www.researchgate.net/publication/332526672/figure/download/fig2/AS:749382878130176@1555678209784/Fenofibrate-did-not-induce-apoptosis-in-MS1-VEGF-angiosarcoma-cells-Data-were-generated.ppm" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Foods that induce cancer killing apoptosis 26 rows these inducers may target a specific cellular process in order to induce antitumor or antineoplastic effects, e.g. In the strictest sense, programmed cell death may be applied to other forms of cell death that require gene expression without fulfilling some, or all, of the morphological criteria of apoptosis. It is used during.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-systematische-review.html" class="be-post-title">
+				 <h6>wat is een systematische review </h6>
+                </a>
+                <a href="wat-is-een-systematische-review.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20systematische%20review&amp;w=50&amp;h=50&amp;c=7" alt="wat is een systematische review">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-bierkaai.html" class="be-post-title">
+				 <h6>wat is een bierkaai </h6>
+                </a>
+                <a href="wat-is-een-bierkaai.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20bierkaai&amp;w=50&amp;h=50&amp;c=7" alt="wat is een bierkaai">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="uji-adrenalin-adalah.html" class="be-post-title">
+				 <h6>uji adrenalin adalah </h6>
+                </a>
+                <a href="uji-adrenalin-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=uji%20adrenalin%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="uji adrenalin adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-market-risk-premium-in-capm.html" class="be-post-title">
+				 <h6>what is market risk premium in capm </h6>
+                </a>
+                <a href="what-is-market-risk-premium-in-capm.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20market%20risk%20premium%20in%20capm&amp;w=50&amp;h=50&amp;c=7" alt="what is market risk premium in capm">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-release-plan-en-scrum.html" class="be-post-title">
+				 <h6>que es un release plan en scrum </h6>
+                </a>
+                <a href="que-es-un-release-plan-en-scrum.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20release%20plan%20en%20scrum&amp;w=50&amp;h=50&amp;c=7" alt="que es un release plan en scrum">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wie-geht-es-dir-english.html" class="be-post-title">
+				 <h6>wie geht es dir english </h6>
+                </a>
+                <a href="wie-geht-es-dir-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wie%20geht%20es%20dir%20english&amp;w=50&amp;h=50&amp;c=7" alt="wie geht es dir english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-goed-kussen-voor-nekklachten.html" class="be-post-title">
+				 <h6>wat is een goed kussen voor nekklachten </h6>
+                </a>
+                <a href="wat-is-een-goed-kussen-voor-nekklachten.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20goed%20kussen%20voor%20nekklachten&amp;w=50&amp;h=50&amp;c=7" alt="wat is een goed kussen voor nekklachten">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-google-bedrijfsprofiel.html" class="be-post-title">
+				 <h6>wat is een google bedrijfsprofiel </h6>
+                </a>
+                <a href="wat-is-een-google-bedrijfsprofiel.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20google%20bedrijfsprofiel&amp;w=50&amp;h=50&amp;c=7" alt="wat is een google bedrijfsprofiel">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-ecuador-megadiverso-y-pluricultural.html" class="be-post-title">
+				 <h6>que es el ecuador megadiverso y pluricultural </h6>
+                </a>
+                <a href="que-es-el-ecuador-megadiverso-y-pluricultural.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20ecuador%20megadiverso%20y%20pluricultural&amp;w=50&amp;h=50&amp;c=7" alt="que es el ecuador megadiverso y pluricultural">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-son-hitos-o-milestones.html" class="be-post-title">
+				 <h6>que son hitos o milestones </h6>
+                </a>
+                <a href="que-son-hitos-o-milestones.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20son%20hitos%20o%20milestones&amp;w=50&amp;h=50&amp;c=7" alt="que son hitos o milestones">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

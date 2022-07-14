@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Eis Perkeso Benefits at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Eis Perkeso Benefits",
+  "datePublished": "2022-03-31T16:23:40Z",
+  "image": "https://tse1.mm.bing.net/th?q=eis%20perkeso%20benefits",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=eis%20perkeso%20benefits&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=eis%20perkeso%20benefits" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=eis%20perkeso%20benefits" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Eis Perkeso Benefits at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Eis Perkeso Benefits</h2>
+    <p><strong>Eis Perkeso Benefits</strong>. Here you will find the “assist.perkeso. Eiscentre.perkeso.gov.my.site is running on ip address 112.137.168.38, host name 112.137.168.38 ( malaysia) ping response time 20ms good ping.current global rank is.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=eis%20perkeso%20benefits" alt="What Is Eis Perkeso / Eis Perkeso How To Claim Job Loss Benefits 4" />
+        <br>
+        <figcaption>What Is Eis Perkeso / Eis Perkeso How To Claim Job Loss Benefits 4 from porta-templari-modenas.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Eis is designed to give investors, who subscribe for shares in a business, tax relief on their investment. In addition, you’ll need to meet the contributions qualifying conditions (cqc) (i.e. According to the eis contribution table, 0.2% will be paid by the employer, and 0.2% will be cut from the employee’s monthly wages.
+    </p>
+    <h3>What Is Eis Perkeso / Eis Perkeso How To Claim Job Loss Benefits 4</h3>
+    <p>Loe refers to loss of employment. Sort by relevance date job type any job type full time part time internship permanent contract listed date any time last 24 hours last 7 days last 14. Wait for the result of your application either via email or using the portal id. Loe refers to loss of employment.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="A Traveller&#039;s Note Memohon benefit EIS dari Perkeso" data-src="https://i2.wp.com/1.bp.blogspot.com/-pnA1wWaNXrw/XzAC5fcZwtI/AAAAAAAAlyk/DkMDvD_1yCwX4aw4yxQ3_BIljgY1DGfeACNcBGAsYHQ/s1600/IMG_20200809_181123.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: life-of-a-traveller.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Here you will find the “assist.perkeso. Register at the eis portal and complete your application with the necessary information. Employment insurance (eis) contributions are set at 0.4% of an employee’s estimated monthly wage. This insurance, regulated by the employment insurance system act 2017 and also administered by the eis socso, protects workers between the ages of 18 and 60 who.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Perkeso Eis Claim Form / Once you registered in assist perkeso portal" data-src="https://i2.wp.com/pbs.twimg.com/media/EyP9xCtUYAQMfKM.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: abdoelazizz760.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Failure mode effect analysis, control plans &amp; wi: Eis (employment insurance scheme), is a financial scheme overseen by the social security organisation (socso) that provides financial aid to retrenched employees for up to 6 months. Feb 23, 2017 · education benefit is a socso benefit that can come in the form of education benefits or scholarships to dependant beneficiaries based.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="A Traveller&#039;s Note Memohon benefit EIS dari Perkeso" data-src="https://i2.wp.com/1.bp.blogspot.com/-teQr5fzK1J0/XzABTluyDAI/AAAAAAAAlyU/5HxezqbzqN8WdYZ6jWvws4nqG7goMwRfQCNcBGAsYHQ/s640/Screenshot_20200809_161522.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: life-of-a-traveller.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The malay name for it is sistem insurans pekerjaan (sip). According to the eis contribution table, 0.2%. Benefits are calculated based on your previous assumed salary and your contributions qualifying conditions (cqc) i.e. If you have been contributing to eis and you lose your job, you will get some benefits to help you cope and start your next chapter of.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="A Traveller&#039;s Note Memohon benefit EIS dari Perkeso" data-src="https://i2.wp.com/1.bp.blogspot.com/-2ehaTE8NoGQ/XzAAq9XGKOI/AAAAAAAAlyE/NwzdH5H4HI0U7ca4qpqflL8ezC6wG8N2wCNcBGAsYHQ/w1200-h630-p-k-no-nu/Screenshot_20200809-213323.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: life-of-a-traveller.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Loss of employment date (loe) (loss of employment date shall be one day after last day of employment. What documents should i get ready before applying for eis benefits? Pusat dialisis nur kasih sdn bhd 2. Delay in submitting the application will result in the benefit claims not being processed and may be rejected. / pseudo code / passport no.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="What Is Eis Perkeso / Eis Perkeso How To Claim Job Loss Benefits 4" data-src="https://i2.wp.com/eiscentre.perkeso.gov.my/weekly-report/EIS-REPORT.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: porta-templari-modenas.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The malay name for it is sistem insurans pekerjaan (sip). Sort by relevance date job type any job type full time part time internship permanent contract listed date any time last 24 hours last 7 days last 14. Pay slips for the last 6 months. Ob refers to insured person. Eis is designed to give investors, who subscribe for shares.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Employment Insurance System" data-src="https://i2.wp.com/www.perkeso.gov.my/images/imej/imej2_sip/flashnews/FLASHNEWS_4APR2019.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.perkeso.gov.my</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In addition, you’ll need to meet the contributions qualifying conditions (cqc) (i.e. Delima kinta sdn bhd 3. Act 800 refers to the employment insurance system act 2017. For the application of eis benefits, if you do lose your job (e.g. “the eis programme is also opened to the public as socso wants to help more people to get good jobs,”.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Benefit Payment Date" data-src="https://i2.wp.com/www.perkeso.gov.my/templates/yootheme/cache/infografik_bayaran_awal_faedah_perkeso-83e13df4.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.perkeso.gov.my</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Delay in submitting the application will result in the benefit claims not being processed and may be rejected. 01.01.2021 · benefit calculator (sip) note: Ob refers to insured person. “the eis programme is also opened to the public as socso wants to help more people to get good jobs,” he said. For the application of eis benefits, if you do.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="A Traveller&#039;s Note Memohon benefit EIS dari Perkeso" data-src="https://i2.wp.com/1.bp.blogspot.com/-39BLvD2mIPk/XzAIFk9Q46I/AAAAAAAAlzE/qLc_M7Psv803VwlU6zU_KGchAInZcP8FQCNcBGAsYHQ/s1600/IMG_20200809_204657.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: life-of-a-traveller.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Delima kinta sdn bhd 3. In addition, you’ll need to meet the contributions qualifying conditions (cqc) (i.e. Pusat dialisis nur kasih sdn bhd 2. Here you will find the “assist.perkeso. “to date i am happy to announce that through the eis perkeso (socso employment insurance scheme), about 11,585 have been able to secure new jobs under the job replacement programme.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="A Traveller&#039;s Note Memohon benefit EIS dari Perkeso" data-src="https://i2.wp.com/1.bp.blogspot.com/-3QSksEbZZW0/Xy-2_qFXtwI/AAAAAAAAlx0/mbQNx8-YJ9gpHQCobiQ-0ZTAvZFXlbiSgCNcBGAsYHQ/s1600/Screenshot_20200809-155708.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: life-of-a-traveller.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">[temu duga tertutup anjuran pejabat perkeso taiping] 🏭majikan terlibat : Company name (please keyin 3 character and select company) company name. Loe refers to loss of employment. Delay in submitting the application will result in the benefit claims not being processed and may be rejected. Employees’ social security act 1969 (act 4) employment injury scheme;</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Perkeso EIS Training Provider (Kursus SIP Courses) DMC" data-src="https://i2.wp.com/www.dmhubtraining.com/eis/wp-content/uploads/2020/09/Get-Up-To-6-Months-Income-Support-FREE-Digital-Marketing-Training.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.dmhubtraining.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">“the eis programme is also opened to the public as socso wants to help more people to get good jobs,” he said. According to the eis contribution table,. What documents should i get ready before applying for eis benefits? Employees’ social security act 1969 (act 4) employment injury scheme; Once you registered in assist perkeso portal, you can proceed to.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-gliadina-deaminada.html" class="be-post-title">
+				 <h6>que es la gliadina deaminada </h6>
+                </a>
+                <a href="que-es-la-gliadina-deaminada.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20gliadina%20deaminada&amp;w=50&amp;h=50&amp;c=7" alt="que es la gliadina deaminada">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="het-verschil-tussen-reinigen-en-desinfecteren.html" class="be-post-title">
+				 <h6>het verschil tussen reinigen en desinfecteren </h6>
+                </a>
+                <a href="het-verschil-tussen-reinigen-en-desinfecteren.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=het%20verschil%20tussen%20reinigen%20en%20desinfecteren&amp;w=50&amp;h=50&amp;c=7" alt="het verschil tussen reinigen en desinfecteren">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-zarpado-en-argentina.html" class="be-post-title">
+				 <h6>que significa zarpado en argentina </h6>
+                </a>
+                <a href="que-significa-zarpado-en-argentina.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20zarpado%20en%20argentina&amp;w=50&amp;h=50&amp;c=7" alt="que significa zarpado en argentina">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-xilema-y-el-floema.html" class="be-post-title">
+				 <h6>que es el xilema y el floema </h6>
+                </a>
+                <a href="que-es-el-xilema-y-el-floema.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20xilema%20y%20el%20floema&amp;w=50&amp;h=50&amp;c=7" alt="que es el xilema y el floema">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-ecosistema-marino.html" class="be-post-title">
+				 <h6>que es un ecosistema marino </h6>
+                </a>
+                <a href="que-es-un-ecosistema-marino.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20ecosistema%20marino&amp;w=50&amp;h=50&amp;c=7" alt="que es un ecosistema marino">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-function-sheet.html" class="be-post-title">
+				 <h6>wat is een function sheet </h6>
+                </a>
+                <a href="wat-is-een-function-sheet.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20function%20sheet&amp;w=50&amp;h=50&amp;c=7" alt="wat is een function sheet">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-udai.html" class="be-post-title">
+				 <h6>que significa udai </h6>
+                </a>
+                <a href="que-significa-udai.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20udai&amp;w=50&amp;h=50&amp;c=7" alt="que significa udai">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-confianza-valor.html" class="be-post-title">
+				 <h6>que es la confianza valor </h6>
+                </a>
+                <a href="que-es-la-confianza-valor.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20confianza%20valor&amp;w=50&amp;h=50&amp;c=7" alt="que es la confianza valor">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-risk-reduction-brainly.html" class="be-post-title">
+				 <h6>what is risk reduction brainly </h6>
+                </a>
+                <a href="what-is-risk-reduction-brainly.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20risk%20reduction%20brainly&amp;w=50&amp;h=50&amp;c=7" alt="what is risk reduction brainly">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-udn-banco-provincia.html" class="be-post-title">
+				 <h6>que significa udn banco provincia </h6>
+                </a>
+                <a href="que-significa-udn-banco-provincia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20udn%20banco%20provincia&amp;w=50&amp;h=50&amp;c=7" alt="que significa udn banco provincia">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Que Como Cuando at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Que Como Cuando",
+  "datePublished": "2022-05-21T09:03:37Z",
+  "image": "https://tse1.mm.bing.net/th?q=que%20como%20cuando",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=que%20como%20cuando&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20como%20cuando" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20como%20cuando" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Que Como Cuando at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Que Como Cuando</h2>
+    <p><strong>Que Como Cuando</strong>. ¿qué es la alimentación complementaria? Así como las palabras qué/que se escriben con o sin tilde según su función en la oración, también el trío de palabras que revisaremos en esta lección ―cómo/como, cuándo/cuando, dónde/donde― llevan tilde o no según su papel sintáctico.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=que%20como%20cuando" alt="Agentes de Cambio en Acción noviembre 2011" />
+        <br>
+        <figcaption>Agentes de Cambio en Acción noviembre 2011 from agentesdecambio2020.blogspot.com</figcaption>
+    </figure>
+        <p>
+        El término como, sin tilde, puede ser un adverbio, «hazlo como quieras»; Es la que se realiza a lo largo del curso con el objetivo de adaptar el proceso de enseñanza aprendizaje a la respuesta que están dando nuestros alumnos; Se escribe con tilde, cómo, cuando es interrogativo o exclamativo:.
+    </p>
+    <h3>Agentes de Cambio en Acción noviembre 2011</h3>
+    <p>Esta es la casa que quiero comprarme.&gt; esta es la que quiero comprarme. La información de las cookies se almacena en tu navegador y realiza funciones tales como reconocerte cuando vuelves a nuestra web o ayudar a nuestro equipo a comprender qué secciones de la web encuentras más interesantes y útiles. Soy más alto que tú. Que, cuando ejerce función de pronombre relativo o conjunción, se escribe sin tilde, debido a que se trata de una palabra átona.en cambio, qué, escrita con acento diacrítico, se emplea para introducir enunciados interrogativos o exclamativos.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Quién? ¿Qué? ¿Cómo?, ¿Cuándo? , ¿Dónde? y...¿Por qué?" data-src="https://i2.wp.com/ciudadoriental.com/wp-content/uploads/2017/04/preguntas2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ciudadoriental.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ahora queda decidir el cómo y el cuándo de la intervención. Sigue en vivo la superluna del ciervo. Es muy rico y no se presta a equívocos tan fácilmente como el lenguaje verbal. Esta es la casa que quiero comprarme. Esta es la casa que quiero comprarme.&gt; esta es la que quiero comprarme.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cómo Escribir Una Declaración Artística Consejos de Expertos en Arte" data-src="https://i2.wp.com/www.agora-gallery.com/advice/wp-content/uploads/2015/12/1-1024x451.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.agora-gallery.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La que se realiza al inicio del curso con el fin de establecer lo que ya conocen y lo que deben conocer los estudiantes sobre nuestro tema. En ese rodaje, hay una escena que mantiene en suspenso al espectador, como si la cinta se detuviera en segundos bastante interesante, antes de caer a la superficie de la tierra el espectador.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Interrogativas em espanhol ¿Quién?, ¿Qué?, ¿Cuando?, ¿Cómo?, ¿Dónde" data-src="https://i2.wp.com/dumarti.com/habla/wp-content/uploads/2015/05/Que-cuando-como-interrogativa-espanhol.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dumarti.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sin embargo, cuando estas mismas palabras funcionan como adverbios o pronombres relativos o, en el caso de algunas de ellas, también como conjunciones, son átonas (salvo el relativo cual, que es. En función de los criterios de evaluación que quiera evaluar, así como de las características y necesidades específicas del alumnado el profesorado utilizará diferentes. Una conjunción, «alberto es tan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Agentes de Cambio en Acción noviembre 2011" data-src="https://i2.wp.com/2.bp.blogspot.com/-fV_BgimbUck/TtLGXl78pvI/AAAAAAAAAWQ/B1XLLtpzetI/s1600/Guias+del+Cambio.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: agentesdecambio2020.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Esta web utiliza cookies para que podamos ofrecerte la mejor experiencia de usuario posible. Para comenzar, veamos que nos dice la rae al respecto. La evaluación del aprendizaje del alumnado es continua y la realiza el equipo docente mediante la observación continuada del aprendizaje y de su maduración personal. Una educación basada en valores. Así como las palabras qué/que se.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pregunte El Símbolo De Lo Que Cuando Donde Porqué Quién Cómo, Diagrama" data-src="https://i2.wp.com/thumbs.dreamstime.com/z/pregunte-el-símbolo-de-lo-que-cuando-donde-porqué-quién-cómo-diagrama-del-análisis-53646158.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.dreamstime.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ahora queda decidir el cómo y el cuándo de la intervención. Ambas son palabras homófonas, pues se pronuncian prácticamente igual. Que, quien, como, cuando, donde, cual, cuanto y cuan no llevan tilde cuando: Tengo que entender el cómo, el resto ya me quedó claro. Prieto de el mundo (españa):</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Que, Que, Como, Quando, Onde, Porque Ilustração Stock Ilustração de" data-src="https://i2.wp.com/thumbs.dreamstime.com/z/que-que-como-quando-onde-porque-28960253.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: pt.dreamstime.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Una educación inclusiva, es decir, una educación que sea capaz de atender la diversidad de todos sus alumnos. Cómo, cuándo y dónde se escriben siempre con tilde cuando son palabras interrogativas o exclamativas. Esto se conoce como « itinerancia o roaming sin recargos». El bono alimentario es el subsidio que otorgará el gobierno a las personas de bajos recursos, con.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="All peterborough 7 ideas today" data-src="https://i2.wp.com/image.slidesharecdn.com/allpeterborough7ideastoday-140818171848-phpapp02/95/all-peterborough-7-ideas-today-11-638.jpg?cb=1408382437" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Para comenzar, veamos que nos dice la rae al respecto. Del qué y el cómo al por qué y para qué en educación. Tengo que entender el cómo, el resto ya me quedó claro. Con artículos determinados, forma los relativos compuestos el que, la que, los que, las que: El bono alimentario es el subsidio que otorgará el gobierno a.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cuánto cabrón / ¿Dónde? ¿Cuándo? ¿Por qué? ¿Quién lo hizo?" data-src="https://i2.wp.com/statics.memondo.com/p/99/ccs/2017/09/CC_2670456_e6bd23df53164055a3cbdf4730dcd900__donde_cuando_por_que_quien_lo_hizo_thumb_fb.jpg?cb=2130757" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.cuantocabron.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Para enlazar partes de la oración: Que, cuando ejerce función de pronombre relativo o conjunción, se escribe sin tilde, debido a que se trata de una palabra átona.en cambio, qué, escrita con acento diacrítico, se emplea para introducir enunciados interrogativos o exclamativos. En ese rodaje, hay una escena que mantiene en suspenso al espectador, como si la cinta se detuviera.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Quién donde cuando cómo stock de ilustración. Ilustración de cuando" data-src="https://i2.wp.com/thumbs.dreamstime.com/z/quién-donde-cuando-cómo-24693689.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.dreamstime.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Cada año, los fenómenos conocidos como ‘superlunas’ consiguen congregar a miles de personas,. El jefe, que no sabía nada, no supo reaccionar. El término como, sin tilde, puede ser un adverbio, «hazlo como quieras»; Así como las palabras qué/que se escriben con o sin tilde según su función en la oración, también el trío de palabras que revisaremos en esta.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="&quot;Quién, qué, dónde, cuándo, por qué, cómo &quot; Stock image and royalty" data-src="https://i2.wp.com/t4.ftcdn.net/jpg/00/76/37/75/500_F_76377572_ZaNMN2zIHt2vEHcGiohC7cYejG4FMfal.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.fotolia.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Explicita el modo en que se lleva a cabo una acción: Las 5w encierran el secreto del periodismo. Una conjunción, «alberto es tan fuerte como paco»; Como en otros casos, algunas no deberían tildarse según la reglas generales de acentuación por ser. Si viajas a otro país de la unión europea, no tienes que pagar recargos adicionales por usar los.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-calmar-el-dolor-de-espalda-en-el-embarazo.html" class="be-post-title">
+				 <h6>como calmar el dolor de espalda en el embarazo </h6>
+                </a>
+                <a href="como-calmar-el-dolor-de-espalda-en-el-embarazo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20calmar%20el%20dolor%20de%20espalda%20en%20el%20embarazo&amp;w=50&amp;h=50&amp;c=7" alt="como calmar el dolor de espalda en el embarazo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-son-homeostasis-en-biologia.html" class="be-post-title">
+				 <h6>que son homeostasis en biologia </h6>
+                </a>
+                <a href="que-son-homeostasis-en-biologia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20son%20homeostasis%20en%20biologia&amp;w=50&amp;h=50&amp;c=7" alt="que son homeostasis en biologia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="boro-y-manganeso-para-que-sirve.html" class="be-post-title">
+				 <h6>boro y manganeso para que sirve </h6>
+                </a>
+                <a href="boro-y-manganeso-para-que-sirve.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=boro%20y%20manganeso%20para%20que%20sirve&amp;w=50&amp;h=50&amp;c=7" alt="boro y manganeso para que sirve">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-prudencia-como-valor.html" class="be-post-title">
+				 <h6>que es el prudencia como valor </h6>
+                </a>
+                <a href="que-es-el-prudencia-como-valor.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20prudencia%20como%20valor&amp;w=50&amp;h=50&amp;c=7" alt="que es el prudencia como valor">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-eis-mean-in-spanish.html" class="be-post-title">
+				 <h6>what is eis mean in spanish </h6>
+                </a>
+                <a href="what-is-eis-mean-in-spanish.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20eis%20mean%20in%20spanish&amp;w=50&amp;h=50&amp;c=7" alt="what is eis mean in spanish">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-hacer-durante-un-deslizamiento-de-tierra.html" class="be-post-title">
+				 <h6>que hacer durante un deslizamiento de tierra </h6>
+                </a>
+                <a href="que-hacer-durante-un-deslizamiento-de-tierra.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20hacer%20durante%20un%20deslizamiento%20de%20tierra&amp;w=50&amp;h=50&amp;c=7" alt="que hacer durante un deslizamiento de tierra">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="significado-de-demente-diccionario-español.html" class="be-post-title">
+				 <h6>significado de demente diccionario español </h6>
+                </a>
+                <a href="significado-de-demente-diccionario-español.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=significado%20de%20demente%20diccionario%20espa%C3%B1ol&amp;w=50&amp;h=50&amp;c=7" alt="significado de demente diccionario español">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-riser-rated-cable.html" class="be-post-title">
+				 <h6>what is riser rated cable </h6>
+                </a>
+                <a href="what-is-riser-rated-cable.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20riser%20rated%20cable&amp;w=50&amp;h=50&amp;c=7" alt="what is riser rated cable">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-contrato-de-transaccion-en-colombia.html" class="be-post-title">
+				 <h6>que es contrato de transaccion en colombia </h6>
+                </a>
+                <a href="que-es-contrato-de-transaccion-en-colombia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20contrato%20de%20transaccion%20en%20colombia&amp;w=50&amp;h=50&amp;c=7" alt="que es contrato de transaccion en colombia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="как-делают-шампанское-просекко.html" class="be-post-title">
+				 <h6>как делают шампанское просекко </h6>
+                </a>
+                <a href="как-делают-шампанское-просекко.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=%D0%BA%D0%B0%D0%BA%20%D0%B4%D0%B5%D0%BB%D0%B0%D1%8E%D1%82%20%D1%88%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B5%20%D0%BF%D1%80%D0%BE%D1%81%D0%B5%D0%BA%D0%BA%D0%BE&amp;w=50&amp;h=50&amp;c=7" alt="как делают шампанское просекко">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

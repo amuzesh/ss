@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Etika Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Etika Adalah",
+  "datePublished": "2022-06-17T02:25:45Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20etika%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20etika%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20etika%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20etika%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Etika Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Etika Adalah</h2>
+    <p><strong>Uji Etika Adalah</strong>. Istilah etika berasal dari bahasa yunani kuno. Pengujian benar atau salah dalam pengujian dan pengambilan keputusan.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20etika%20adalah" alt="Etika Profesi_10 uji kompetensi guru" />
+        <br>
+        <figcaption>Etika Profesi_10 uji kompetensi guru from www.slideshare.net</figcaption>
+    </figure>
+        <p>
+        Etik penggunaan hewan percobaan •persyaratan etik adalah bahwa relawan manusia hanya boleh diikutsertakan jika obat dan sarana medik baru telah di uji coba tuntas di laboratorium serta jika layak dengan menggunakan hewan percobaan •obat dan sarana medik baru tidak boleh digunakan utk pertama kali langsung pada manusia, kecuali bila Pengujian ini dilakukan untuk membandingkan antara dua. Oleh karena itu, kita harus memahami kebiasaan atau kode etik sekitar.
+    </p>
+    <h3>Etika Profesi_10 uji kompetensi guru</h3>
+    <p>Dengan demikian, secara etimologis kata “etika” mempunyai makna yang sama dengan “moral”. Ethos mempunyai banyak arti yaitu : Di indonesia yang kaya akan budaya dan suku bangsa ini, tentunya sangat menjunjung tinggi etika. Dunia digital telah diberitahu bahwa itu adalah subjek penyelidikan sesuai dengan.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pengertian Etiket / Pengertian Etika Ciri, Fungsi, Manfaat, Jenis" data-src="https://i2.wp.com/1.bp.blogspot.com/-L5BbRGiUCiU/XUf7maOIBYI/AAAAAAAAFOI/7JpkybU65nYDUFtttsrOiMilR8TFzfDngCLcBGAs/s1600/20190805_140313_0000.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: gambarhantunyata.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pilihannya menjadi membuat keputusan yang mematuhi hukum atau tidak, bukannya keputusan yang. Ilmu dan teknologi kedokteran telah berkembang sangat pesat berkat penelitian yang baik dan bermutu tinggi. Uji wilcoxon termasuk dalam pengujian non parametrik. Untuk civitas akademika unej rp 75.000; Komisi etik adalah institusi independen yang terdiri dari professional medis/ilmiah dan anggota nonmedik/nonilmiah di bidang uji klinis, yang bertanggung jawab.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Etika Profesi_10 uji kompetensi guru" data-src="https://i2.wp.com/image.slidesharecdn.com/10ujikompetensiguru-190104075705/95/etika-profesi10-uji-kompetensi-guru-10-638.jpg?cb=1546588650" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Komisi etik adalah institusi independen yang terdiri dari professional medis/ilmiah dan anggota nonmedik/nonilmiah di bidang uji klinis, yang bertanggung jawab terhadap perlindungan hak, keamanan, dan kesejahteraan subjek uji klinik. Ethos mempunyai banyak arti yaitu : Penelitian pada pasien atas dasar indikasi medis dan Pertanyaan yang harus diajukan disini adalah apakah dilema etika itu menyangkut aspek pelanggaran hukum. •komisi etik penelitian.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Etika Profesi_10 uji kompetensi guru" data-src="https://i2.wp.com/image.slidesharecdn.com/10ujikompetensiguru-190104075705/95/etika-profesi10-uji-kompetensi-guru-12-638.jpg?cb=1546588650" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pengujian ini dilakukan untuk membandingkan antara dua. Sumber dan waktu (sugiyono, 40 2010. Wccftech.com memiliki kebijakan pengungkapan dan etika. Untuk uji klinik obat bersponsor, dan/atau penelitian multisenter: Pengujian benar atau salah dalam pengujian dan pengambilan keputusan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Etika Profesi_10 uji kompetensi guru" data-src="https://i2.wp.com/image.slidesharecdn.com/10ujikompetensiguru-190104075705/95/etika-profesi10-uji-kompetensi-guru-2-638.jpg?cb=1546588650" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Salah satu yang menjadi kekurangan dan ketidak tahuan peneliti dalam penelitian menggunakan hewan uji adalah etika dalam pemanfaatan hewan uji (ridwan, 2013). Komisi etik adalah institusi independen yang terdiri dari professional medis/ilmiah dan anggota nonmedik/nonilmiah di bidang uji klinis, yang bertanggung jawab terhadap perlindungan hak, keamanan, dan kesejahteraan subjek uji klinik. Pengertian, jenis, fungsi &amp; contohnya. Pengujian ini dilakukan untuk.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Etika Profesi_10 uji kompetensi guru" data-src="https://i2.wp.com/image.slidesharecdn.com/10ujikompetensiguru-190104075705/95/etika-profesi10-uji-kompetensi-guru-6-638.jpg?cb=1546588650" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bila jawabannya adalah iya, maka pilihan yang ada bukanlah antara benar lawan benar, namun antara benar lawan salah. Tempat tinggal yang biasa, padang rumput, kandang, kebiasaan/adat, akhlak,watak, perasaan, sikap, cara berpikir. Penelitian adalah upaya untuk menemukan kebenaran. Arti lainnya dari uji petik adalah pengujian yang dilakukan terhadap kendaraan yang mengangkut barang yang diduga melakukan pelanggaran kelebihan muatan. Terdapat 2 arti.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Etika Profesi_10 uji kompetensi guru" data-src="https://i2.wp.com/image.slidesharecdn.com/10ujikompetensiguru-190104075705/95/etika-profesi10-uji-kompetensi-guru-8-638.jpg?cb=1546588650" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Protokol yang telah disetujui oleh komisi etik Proses uji klinik fase i, il, ill, dan iv yang mana setiap fase mempunyai tujuan. Ethos mempunyai banyak arti yaitu : Pengujian benar atau salah dalam pengujian dan pengambilan keputusan. Untuk non civitas akademika unej rp.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Etika Profesi_10 uji kompetensi guru" data-src="https://i2.wp.com/image.slidesharecdn.com/10ujikompetensiguru-190104075705/95/etika-profesi10-uji-kompetensi-guru-9-638.jpg?cb=1546588650" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">•komisi etik penelitian kesehatan institusi (lokal) komisi independen, di btk dan diangkat oleh kepala lembaga penelitian setempat (fk, fkg, fkm dan fak. Puncak penyimpangan etik tersebut terjadi pada saat pemerintahan nazi. Sumber dan waktu (sugiyono, 40 2010. Hewan uji merupakan hewan percobaan yang digunakan dalam sebuah penelitian biologis yang dipilih berdasarkan syarat atau standar tertentu yang ditetapkan dalam penelitian tersebut..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Etika Profesi_10 uji kompetensi guru" data-src="https://i2.wp.com/image.slidesharecdn.com/10ujikompetensiguru-190104075705/95/etika-profesi10-uji-kompetensi-guru-3-638.jpg?cb=1546588650" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Untuk civitas akademika unej rp 75.000; Penelitian pada pasien atas dasar indikasi medis dan Pengertian, jenis, fungsi &amp; contohnya. Yang digunakan peneliti adalah adalah. Bila jawabannya adalah iya, maka pilihan yang ada bukanlah antara benar lawan benar, namun antara benar lawan salah.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Etika Profesi_10 uji kompetensi guru" data-src="https://i2.wp.com/image.slidesharecdn.com/10ujikompetensiguru-190104075705/95/etika-profesi10-uji-kompetensi-guru-4-638.jpg?cb=1546588650" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">2124/un25.1.14/sp/2019, biaya protokol etik adalah sebagai berikut : Pengujian benar atau salah, dalam hal ini dapat dilakukan menggunakan uji legal, uji regulasi atau standar profesional. Etika dalam proses penelitian menjadi bagian yang esensial dalam upaya Hewan uji merupakan hewan percobaan yang digunakan dalam sebuah penelitian biologis yang dipilih berdasarkan syarat atau standar tertentu yang ditetapkan dalam penelitian tersebut. Etik penelitian.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Etika Profesi_10 uji kompetensi guru" data-src="https://i2.wp.com/image.slidesharecdn.com/10ujikompetensiguru-190104075705/95/etika-profesi10-uji-kompetensi-guru-5-638.jpg?cb=1546588650" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Etik penggunaan hewan percobaan •persyaratan etik adalah bahwa relawan manusia hanya boleh diikutsertakan jika obat dan sarana medik baru telah di uji coba tuntas di laboratorium serta jika layak dengan menggunakan hewan percobaan •obat dan sarana medik baru tidak boleh digunakan utk pertama kali langsung pada manusia, kecuali bila Penelitian pada pasien atas dasar indikasi medis dan Menurut notoatmodjo (2012),.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-membrete.html" class="be-post-title">
+				 <h6>que es un membrete </h6>
+                </a>
+                <a href="que-es-un-membrete.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20membrete&amp;w=50&amp;h=50&amp;c=7" alt="que es un membrete">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-deslizador-en-fisica.html" class="be-post-title">
+				 <h6>que es un deslizador en fisica </h6>
+                </a>
+                <a href="que-es-un-deslizador-en-fisica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20deslizador%20en%20fisica&amp;w=50&amp;h=50&amp;c=7" alt="que es un deslizador en fisica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-ondine-s-curse.html" class="be-post-title">
+				 <h6>what is ondine&#039;s curse </h6>
+                </a>
+                <a href="what-is-ondine-s-curse.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20ondine%27s%20curse&amp;w=50&amp;h=50&amp;c=7" alt="what is ondine&amp;#039;s curse">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-vitamina-es-buena-para-los-nervios.html" class="be-post-title">
+				 <h6>que vitamina es buena para los nervios </h6>
+                </a>
+                <a href="que-vitamina-es-buena-para-los-nervios.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20vitamina%20es%20buena%20para%20los%20nervios&amp;w=50&amp;h=50&amp;c=7" alt="que vitamina es buena para los nervios">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-minecraft-bedrock.html" class="be-post-title">
+				 <h6>que es minecraft bedrock </h6>
+                </a>
+                <a href="que-es-minecraft-bedrock.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20minecraft%20bedrock&amp;w=50&amp;h=50&amp;c=7" alt="que es minecraft bedrock">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="verso-y-estrofa-en-un-poema.html" class="be-post-title">
+				 <h6>verso y estrofa en un poema </h6>
+                </a>
+                <a href="verso-y-estrofa-en-un-poema.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=verso%20y%20estrofa%20en%20un%20poema&amp;w=50&amp;h=50&amp;c=7" alt="verso y estrofa en un poema">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-s-n-m-en-fisica.html" class="be-post-title">
+				 <h6>que es s.n.m. en fisica </h6>
+                </a>
+                <a href="que-es-s-n-m-en-fisica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20s.n.m.%20en%20fisica&amp;w=50&amp;h=50&amp;c=7" alt="que es s.n.m. en fisica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-google-bedrijfsprofiel.html" class="be-post-title">
+				 <h6>wat is google bedrijfsprofiel </h6>
+                </a>
+                <a href="wat-is-google-bedrijfsprofiel.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20google%20bedrijfsprofiel&amp;w=50&amp;h=50&amp;c=7" alt="wat is google bedrijfsprofiel">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="tempi-di-digestione-e-defecazione.html" class="be-post-title">
+				 <h6>tempi di digestione e defecazione </h6>
+                </a>
+                <a href="tempi-di-digestione-e-defecazione.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=tempi%20di%20digestione%20e%20defecazione&amp;w=50&amp;h=50&amp;c=7" alt="tempi di digestione e defecazione">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-goed-kussen-voor-nekklachten.html" class="be-post-title">
+				 <h6>wat is een goed kussen voor nekklachten </h6>
+                </a>
+                <a href="wat-is-een-goed-kussen-voor-nekklachten.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20goed%20kussen%20voor%20nekklachten&amp;w=50&amp;h=50&amp;c=7" alt="wat is een goed kussen voor nekklachten">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

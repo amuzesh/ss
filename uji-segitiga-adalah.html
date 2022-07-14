@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Segitiga Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Segitiga Adalah",
+  "datePublished": "2022-05-03T11:50:36Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20segitiga%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20segitiga%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20segitiga%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20segitiga%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Segitiga Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Segitiga Adalah</h2>
+    <p><strong>Uji Segitiga Adalah</strong>. Menentukan produk yang berbeda diantara ketiga sampel yang disajikan. Sejak 300 sm, euclid telah menemukan konsep bahwa jumlah dari tiga sudut adalah 180 °.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20segitiga%20adalah" alt="(PDF) Laporan Resmi Evaluasi Sensori Uji Segitiga (Triangle Test" />
+        <br>
+        <figcaption>(PDF) Laporan Resmi Evaluasi Sensori Uji Segitiga (Triangle Test from www.academia.edu</figcaption>
+    </figure>
+        <p>
+        Uji segitiga digunakan apabila akan dilakukan penggantian jenis produk dengan tujuan produk pengganti tidak berbeda secara signifikan terhadap produk standar. Di dalam pelaksanaan uji segitiga, panelis diminta mcmilih satu di antara 3 contoh yang berbeda dengan yang lain. Uji triangle (segitiga) merupakan salah satu bentuk pengujian pembedaan pada uji organoleptik, dimana dalam pengujian ini sejumlah contoh disajikan hanya jika dalam pengujian duo trio menggunakan pembanding sedangkan dalam uji triangle tanpa menggunakan pembanding.
+    </p>
+    <h3>(PDF) Laporan Resmi Evaluasi Sensori Uji Segitiga (Triangle Test</h3>
+    <p>Ini memberikan kontribusi besar pada konsep bentuk, seperti mencari panjang sisi dan panjang sudutnya. L.δstu = ½ x alas x tinggi. Dalam pengertian ini, salah satu unsur pertama yang harus diperhitungkan adalah fakta bahwa jumlah sudut dalam segitiga selalu berukuran 180 °. Segitiga terdiri dari kata “segi” dan “tiga” yang artinya memiliki jumlah segi.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) Laporan Resmi Evaluasi Sensori Uji Segitiga (Triangle Test" data-src="https://i2.wp.com/0.academia-photos.com/attachment_thumbnails/61473231/mini_magick20191210-10270-1milxwb.png?1575976531" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.academia.edu</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dalam uji segitiga kescragaman ketiga contoh sangat penting agar dapat dihindari pengaruh penyajian. Nama produk yg diuji : Uji hipotesis adalah sebuah proses untuk melakukan evaluasi kekuatan bukti dari sampel, dan memberikan dasar untuk membuat keputusan terkait dengan populasinya. Uji triangle atau uji segitiga adalah suatu metode yang bertujuan untuk menetapkan apakah ada perbedaan sifat sensorik atau konsistensi 17 aroma.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="luas segitiga PQR adalah... a 21cm²b 30cm²c 35cm²d 50cm²tolong jawab" data-src="https://i2.wp.com/id-static.z-dn.net/files/d75/d5d7bd19fd4325703f60673bcfd71bd9.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tujuan uji hipotesis adalah untuk memutuskan apakah hipotesis yang diuji ditolak atau diterima. Nama produk yg diuji : Ada baiknya sobat membaca artikel yang satu ini. Demikian informasi yang dapat mimin sampaikan. Uji triangle digunakan untuk mengetahui ada tidaknya perbedaan antar sampel.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="1. nilai Sin a untuk segitiga sikusiku pada gambar adalah A) 15/12B" data-src="https://i2.wp.com/id-static.z-dn.net/files/d46/dd74ce2a56ea76ed65c017d0f29965bb.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dalam uji segitiga kescragaman ketiga contoh sangat penting agar dapat dihindari pengaruh penyajian. Selain memiliki 3 sisi atau rusuk dan sudut, sifat yang dimiliki segitiga memiliki besar sudut 180°. Pengujian pembedaan ini meliputi : Biasanya uji ini dilakukan oleh panelis yang terlatih. Di dalam pelaksanaan uji segitiga, panelis diminta mcmilih satu di antara 3 contoh yang berbeda dengan yang lain.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="uji kompetensi 4 kekongruenan dan kesebangunan Brainly.co.id" data-src="https://i2.wp.com/id-static.z-dn.net/files/d4c/fc34c2f514b7fcc214d4cb7a51e812c9.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji segitiga digunakan apabila akan dilakukan penggantian jenis produk dengan tujuan produk pengganti tidak berbeda secara signifikan terhadap produk standar. Di dalam pelaksanaan uji segitiga, panelis diminta mcmilih satu di antara 3 contoh yang berbeda dengan yang lain. Di dalam pelaksanaan uji segitiga, panelis diminta mcmilih satu di antara 3 contoh yang berbeda dengan yang lain. Pada materi sebelumnya kita.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jawaban Esai Uji Kompetensi 8 Halaman 295 Matematika Kelas 7 (Segiempat" data-src="https://i2.wp.com/3.bp.blogspot.com/-zJeFeZGiCkU/XLcqTuNKaUI/AAAAAAAAIJc/C_j3DPxWliwa9Ymuvq-t1vti47lm9hEsgCLcBGAs/s640/no7.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.bastechinfo.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sejak 300 sm, euclid telah menemukan konsep bahwa jumlah dari tiga sudut adalah 180 °. Untuk mencari luasannya maka perlu menggunakan rumus yang sudah ditentukan. Dan luas segitiga adalah ½ × a × t; Uji hipotesis adalah sebuah proses untuk melakukan evaluasi kekuatan bukti dari sampel, dan memberikan dasar untuk membuat keputusan terkait dengan populasinya. Dalam uji segitiga kescragaman ketiga.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jawaban Esai Uji Kompetensi Semester 2 Halaman 319 Matematika Kelas 8" data-src="https://i2.wp.com/2.bp.blogspot.com/-07jPtovKwf0/XMfYRHxHfeI/AAAAAAAAITY/Z9wMYSY5to8M1667oDNUw_dIWIvqBhQWgCLcBGAs/s640/esai%2Buk%2Bsmstr%2B2.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.bastechinfo.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Demikian informasi yang dapat mimin sampaikan. Bentuk format pengujian pada uji segitiga 3 contoh yg disajikan dengan 2 contoh sama dan 1 berbeda yg disajikan langsung 3. Kode diberikan secara acak pada ke 3 contoh tersebut. Dimana terdapat tiga sampel pada uji triangle dan dua dari tiga sampel tersebut sama. Pada materi sebelumnya kita telah mempelajari cara menentukan keliling dari.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Diketahui Keliling Segitiga Abc Adalah 53 Cm Pembahasan Soal" data-src="https://i2.wp.com/id-static.z-dn.net/files/db2/3b2b9430e5ddb2aa76de19fb42a2e457.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: pembahasansoalku.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Mendeteksi adanya perbedaan kecil diantara tiga contoh yang disajikan tanpa adanya pembanding. Contoh a adalah contoh yang berbeda dengan dua contoh b. Ini memberikan kontribusi besar pada konsep bentuk, seperti mencari panjang sisi dan panjang sudutnya. Uji triangle digunakan untuk mengetahui ada tidaknya perbedaan antar sampel. Untuk mencari luasannya maka perlu menggunakan rumus yang sudah ditentukan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jawaban PG Uji Kompetensi 8 Halaman 289 Matematika Kelas 7 (Segiempat" data-src="https://i2.wp.com/1.bp.blogspot.com/-ot2XgpoUamM/XJOK2rTUJ0I/AAAAAAAAH_s/NkGn5PR4Hv861liv3vBByX0gsh1hwIsmQCLcBGAs/s1600/no20.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.bastechinfo.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Demikian informasi yang dapat mimin sampaikan. Uji hipotesis merupakan bagian dari statistik inferensial yang bertujuan untuk menarik kesimpulan. Uji hipotesis adalah sebuah proses untuk melakukan evaluasi kekuatan bukti dari sampel, dan memberikan dasar untuk membuat keputusan terkait dengan populasinya. Prinsip dari percobaan uji triangle adalah berdasarkan sensitifitas panelis dalam membedakan dua sampel dimana perbedaannya sangat kecil dan pengujian ini sifatnya.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jawaban PG Uji Kompetensi Bab 2 Matemtika Kelas 8 SMP Halaman 66" data-src="https://i2.wp.com/id-static.z-dn.net/files/d09/ced088a257dad9a9d58518aeb21cfbea.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.basbahanajar.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Biasanya produk yang diuji adalah jenis produk baru kemudian dibandingkan dengan produk terdahulu yang sudah diterima oleh masyarakat. Penyelesaian soal [ soal ] jelaskan mengapa rumus menghitung luas segitiga adalah ½ x alas x tinggi _____ ☛ penjelasan soal. Uji triangle (segitiga) merupakan salah satu bentuk pengujian pembedaan pada uji organoleptik, dimana dalam pengujian ini sejumlah contoh disajikan hanya jika.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji T Independen dengan SPSS Blog Biostatistik" data-src="https://i2.wp.com/lh4.googleusercontent.com/-EXbGGk-6cbo/TY68lbT0mNI/AAAAAAAAAGc/TyIDUPvBLVM/s1600/hasil.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: statistik-kesehatan.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Penyelesaian soal [ soal ] jelaskan mengapa rumus menghitung luas segitiga adalah ½ x alas x tinggi _____ ☛ penjelasan soal. Ada baiknya sobat membaca artikel yang satu ini. Pada uji segitiga kepada 40 panelis dengan sampel a adalah susu cokelat frisian flag dan sampel b adalah susu cokelat indomilk mendapatkan hasil 24 panelis yang menjawab benar. Mendeteksi adanya perbedaan.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-pais-megadiverso-y-sus-caracteristicas.html" class="be-post-title">
+				 <h6>que es un pais megadiverso y sus caracteristicas </h6>
+                </a>
+                <a href="que-es-un-pais-megadiverso-y-sus-caracteristicas.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20pais%20megadiverso%20y%20sus%20caracteristicas&amp;w=50&amp;h=50&amp;c=7" alt="que es un pais megadiverso y sus caracteristicas">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cuantas-carceles-federales-hay-en-estados-unidos.html" class="be-post-title">
+				 <h6>cuantas carceles federales hay en estados unidos </h6>
+                </a>
+                <a href="cuantas-carceles-federales-hay-en-estados-unidos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cuantas%20carceles%20federales%20hay%20en%20estados%20unidos&amp;w=50&amp;h=50&amp;c=7" alt="cuantas carceles federales hay en estados unidos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-un-desliz-amoroso.html" class="be-post-title">
+				 <h6>que significa un desliz amoroso </h6>
+                </a>
+                <a href="que-significa-un-desliz-amoroso.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20un%20desliz%20amoroso&amp;w=50&amp;h=50&amp;c=7" alt="que significa un desliz amoroso">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-ion-poliatomico-en-quimica.html" class="be-post-title">
+				 <h6>que es un ion poliatomico en quimica </h6>
+                </a>
+                <a href="que-es-un-ion-poliatomico-en-quimica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20ion%20poliatomico%20en%20quimica&amp;w=50&amp;h=50&amp;c=7" alt="que es un ion poliatomico en quimica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="dolor-de-un-trombo-en-la-pierna.html" class="be-post-title">
+				 <h6>dolor de un trombo en la pierna </h6>
+                </a>
+                <a href="dolor-de-un-trombo-en-la-pierna.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=dolor%20de%20un%20trombo%20en%20la%20pierna&amp;w=50&amp;h=50&amp;c=7" alt="dolor de un trombo en la pierna">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-fifí-en-méxico.html" class="be-post-title">
+				 <h6>que es un fifí en méxico </h6>
+                </a>
+                <a href="que-es-un-fifí-en-méxico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20fif%C3%AD%20en%20m%C3%A9xico&amp;w=50&amp;h=50&amp;c=7" alt="que es un fifí en méxico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-rima-consonante-y-ejemplos.html" class="be-post-title">
+				 <h6>que significa rima consonante y ejemplos </h6>
+                </a>
+                <a href="que-significa-rima-consonante-y-ejemplos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20rima%20consonante%20y%20ejemplos&amp;w=50&amp;h=50&amp;c=7" alt="que significa rima consonante y ejemplos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-e-t-s-y-stand-for.html" class="be-post-title">
+				 <h6>what does e t s y stand for </h6>
+                </a>
+                <a href="what-does-e-t-s-y-stand-for.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20e%20t%20s%20y%20stand%20for&amp;w=50&amp;h=50&amp;c=7" alt="what does e t s y stand for">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="naprzeciw-czy-na-przeciw.html" class="be-post-title">
+				 <h6>naprzeciw czy na przeciw </h6>
+                </a>
+                <a href="naprzeciw-czy-na-przeciw.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=naprzeciw%20czy%20na%20przeciw&amp;w=50&amp;h=50&amp;c=7" alt="naprzeciw czy na przeciw">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-ghetto-definicion.html" class="be-post-title">
+				 <h6>que es un ghetto definicion </h6>
+                </a>
+                <a href="que-es-un-ghetto-definicion.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20ghetto%20definicion&amp;w=50&amp;h=50&amp;c=7" alt="que es un ghetto definicion">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Can Market Risk Premium Be Negative at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Can Market Risk Premium Be Negative",
+  "datePublished": "2022-06-03T05:44:00Z",
+  "image": "https://tse1.mm.bing.net/th?q=can%20market%20risk%20premium%20be%20negative",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=can%20market%20risk%20premium%20be%20negative&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=can%20market%20risk%20premium%20be%20negative" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=can%20market%20risk%20premium%20be%20negative" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Can Market Risk Premium Be Negative at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Can Market Risk Premium Be Negative</h2>
+    <p><strong>Can Market Risk Premium Be Negative</strong>. The implicit restriction is that equilibrium risk premia of assets positively correlated with the market must be strictly positive. Long term negative market risk premium i.e.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=can%20market%20risk%20premium%20be%20negative" alt="We Can’t Predict But We Can Prepare Phillips &amp; Company" />
+        <br>
+        <figcaption>We Can’t Predict But We Can Prepare Phillips &amp; Company from phillipsandco.com</figcaption>
+    </figure>
+        <p>
+        The implicit restriction is that equilibrium risk premia of assets positively correlated with the market must be strictly positive. This could be for a number of reasons. Investments that have lower risk might also have a lower risk premium.
+    </p>
+    <h3>We Can’t Predict But We Can Prepare Phillips &amp; Company</h3>
+    <p>Negative market expectation indicates failure of the economy. Assets pay high returns (are risky) if they negatively correlate with the sdf (and thus positively correlate with business cycles). An asset&#039;s risk premium is a form of compensation for investors who. Investments that have lower risk might also have a lower risk premium.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Overnight Risk Premium in Equity and Commodity Markets Quantitative" data-src="https://i2.wp.com/www.quanttrader.com/wp-content/uploads/2020/04/Bund-Future-FGBL-overnight-risk-premium.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.quanttrader.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Stock market predictions can help. The risk premium that is paid for an investment is negative instead of positive. The “liquidity premium,” for example, is negative—the more liquid a security, in general, the lower the expected return. In general, a risk premium is a way to compensate an investor for greater risk. The market risk premium is the additional return.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="The Equity Risk Premium Says The Market May Have Already Priced In" data-src="https://i2.wp.com/static.seekingalpha.com/uploads/2019/2/2/saupload_LNYdV6b4K1E7MbHQP0DDA98yQpEzady0LxP2boiqpGBIAogvGgCM48Z0aAc8KEtfJJFZ-25MiI8zjbxCUd3QSM7Tr6huwK5kwn5EWr3PUzizaNZEeKpAc2KSOqMe5AfMyLey8a-E.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: seekingalpha.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Now that we have the formula, let’s take a look at what makes up market risk premium and break down the parts. The market risk premium is the return that you earn on stocks above what you could earn by investing in government bonds. The “liquidity premium,” for example, is negative—the more liquid a security, in general, the lower the.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="We Can’t Predict But We Can Prepare Phillips &amp; Company" data-src="https://i2.wp.com/phillipsandco.com/files/cache/4654d586ee404cc7b8d2d290044f83b2_f2834.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: phillipsandco.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">There is plenty of evidence that sustained negative real rates increase equity risk premiums. For different specifications of the sdf (e.g. Investments that have lower risk might also have a lower risk premium. The risk premium that is paid for an investment is negative instead of positive. There are positive and negative premiums in the market.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="FRB FEDS Notes Has the inflation risk premium fallen? Is it now negative?" data-src="https://i2.wp.com/www.federalreserve.gov/econresdata/notes/feds-notes/2016/gifjpg/fig3_20160404.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.federalreserve.gov</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In fact, in the equity risk premium history considered, it. For example, if the rate of return on the market is 15% when the rate on a government bond is 3%, the market risk premium is 12%. Remember that the sdf is high in recessions. First, the “catastrophe” risk attached to an increase in real rates rises the longer an.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Is The Market Really Overvalued? Seeking Alpha" data-src="https://i2.wp.com/static.seekingalpha.com/uploads/2017/3/11/25766563-14892873834932046.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: seekingalpha.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The market risk premium is part of the capital asset pricing model (capm) which analysts and investors use to calculate the acceptable rate of return for an investment. Also this site contains a complementary post on. Investors always prefer to have the highest possible rate of return. Assets pay high returns (are risky) if they negatively correlate with the sdf.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="The impact of negative interest rates on market Professionele Schroders" data-src="https://i2.wp.com/www.schroders.com/nl/sysglobalassets/digital/insights/graphs/european-equity-risk-premium.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.schroders.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">But if a risk premium is computed with a reference to an average risk asset, then a. There is plenty of evidence that sustained negative real rates increase equity risk premiums. The post ties in with this sites’ lecture on information efficiency through fundamental value research (particularly the part on fixed income markets). Remember that the sdf is high in.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Valuing the US Bull Market with Total Cash Flow and Appreciating US" data-src="https://i2.wp.com/investmentmoats.com/wp-content/uploads/2021/08/20210830-US-equity-risk-premium-1536x925.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: investmentmoats.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Long term negative market risk premium i.e. Under such circumstances,a negative risk premium cannot exist. Remember that the sdf is high in recessions. The market risk premium is the return that you earn on stocks above what you could earn by investing in government bonds. Investments that have lower risk might also have a lower risk premium.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Stocks And Bonds Are Not Really At Odds With Each Other Seeking Alpha" data-src="https://i2.wp.com/static.cdn-seekingalpha.com/uploads/2013/4/9/saupload_Equity_risk_premium.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: seekingalpha.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">But if a risk premium is computed with a reference to an average risk asset, then a. The market risk premium is the additional return on the portfolio because of the additional risk involved in the portfolio; For example, if the rate of return on the market is 15% when the rate on a government bond is 3%, the market.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Taking Stock Seeking Alpha" data-src="https://i2.wp.com/static.seekingalpha.com/uploads/2020/3/23/47328850-1584981707701909_origin.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: seekingalpha.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">This just means people are willing to pay for safety. Negative market expectation indicates failure of the economy. It is part of the capital asset pricing model which is used to work out rates of return on investments. Ideally, an investment gives a high rate of return with low risk, but sometimes taking a risk can earn bigger rewards. Investments.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="The Equity Risk Premium Says The Market May Have Already Priced In" data-src="https://i2.wp.com/static.seekingalpha.com/uploads/2019/2/2/saupload_JPkZS0GfyOJksHpV_qnGacFZyUQ35mLHf3uFkhl4cZ2wSZ1icwzFCc-n8AvEgSpPf5mxsFcPmb1Onudl5m1nx19o-KUJIBZxJbTJfsmSjcNkzfdc6wPD3O7MLf3CaXXfk0chaNWL.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: seekingalpha.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">First, the “catastrophe” risk attached to an increase in real rates rises the longer an economy is addicted to negative real rates. Such strong requirement is not supported by the data, especially in most recent years, and investors can profit from it. Now that we have the formula, let’s take a look at what makes up market risk premium and.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-estrofa-y-el-verso.html" class="be-post-title">
+				 <h6>que es la estrofa y el verso </h6>
+                </a>
+                <a href="que-es-la-estrofa-y-el-verso.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20estrofa%20y%20el%20verso&amp;w=50&amp;h=50&amp;c=7" alt="que es la estrofa y el verso">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-modalidad-sincronica-y-asincronica.html" class="be-post-title">
+				 <h6>que es modalidad sincronica y asincronica </h6>
+                </a>
+                <a href="que-es-modalidad-sincronica-y-asincronica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20modalidad%20sincronica%20y%20asincronica&amp;w=50&amp;h=50&amp;c=7" alt="que es modalidad sincronica y asincronica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-son-las-estrofas-en-un-poema.html" class="be-post-title">
+				 <h6>que son las estrofas en un poema </h6>
+                </a>
+                <a href="que-son-las-estrofas-en-un-poema.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20son%20las%20estrofas%20en%20un%20poema&amp;w=50&amp;h=50&amp;c=7" alt="que son las estrofas en un poema">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-diferencia-hay-entre-una-laptop-y-una-chromebook.html" class="be-post-title">
+				 <h6>que diferencia hay entre una laptop y una chromebook </h6>
+                </a>
+                <a href="que-diferencia-hay-entre-una-laptop-y-una-chromebook.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20diferencia%20hay%20entre%20una%20laptop%20y%20una%20chromebook&amp;w=50&amp;h=50&amp;c=7" alt="que diferencia hay entre una laptop y una chromebook">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-querella-penal.html" class="be-post-title">
+				 <h6>que es querella penal </h6>
+                </a>
+                <a href="que-es-querella-penal.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20querella%20penal&amp;w=50&amp;h=50&amp;c=7" alt="que es querella penal">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-respeto-explicacion-para-niños-de-preescolar.html" class="be-post-title">
+				 <h6>que es el respeto explicacion para niños de preescolar </h6>
+                </a>
+                <a href="que-es-el-respeto-explicacion-para-niños-de-preescolar.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20respeto%20explicacion%20para%20ni%C3%B1os%20de%20preescolar&amp;w=50&amp;h=50&amp;c=7" alt="que es el respeto explicacion para niños de preescolar">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-genero-lirico-resumen.html" class="be-post-title">
+				 <h6>que es el genero lirico resumen </h6>
+                </a>
+                <a href="que-es-el-genero-lirico-resumen.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20genero%20lirico%20resumen&amp;w=50&amp;h=50&amp;c=7" alt="que es el genero lirico resumen">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-lenguaje-se-habla-en-bosnia.html" class="be-post-title">
+				 <h6>que lenguaje se habla en bosnia </h6>
+                </a>
+                <a href="que-lenguaje-se-habla-en-bosnia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20lenguaje%20se%20habla%20en%20bosnia&amp;w=50&amp;h=50&amp;c=7" alt="que lenguaje se habla en bosnia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-itin-number-en-español.html" class="be-post-title">
+				 <h6>que es un itin number en español </h6>
+                </a>
+                <a href="que-es-un-itin-number-en-español.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20itin%20number%20en%20espa%C3%B1ol&amp;w=50&amp;h=50&amp;c=7" alt="que es un itin number en español">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="arti-dari-kata-human-adalah.html" class="be-post-title">
+				 <h6>arti dari kata human adalah </h6>
+                </a>
+                <a href="arti-dari-kata-human-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=arti%20dari%20kata%20human%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="arti dari kata human adalah">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

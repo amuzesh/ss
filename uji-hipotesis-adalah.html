@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Hipotesis Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Hipotesis Adalah",
+  "datePublished": "2022-04-24T15:48:32Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20hipotesis%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20hipotesis%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20hipotesis%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20hipotesis%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Hipotesis Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Hipotesis Adalah</h2>
+    <p><strong>Uji Hipotesis Adalah</strong>. Uji hipotesis adalah metode pengambilan keputusan yang didasarkan dari analisis data, baik dari percobaan yang terkontrol, maupun dari observasi (tidak terkontrol). Keputusan dari uji hipotesis hampir.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20hipotesis%20adalah" alt="PPT UJI HIPOTESIS PowerPoint Presentation, free download ID5432886" />
+        <br>
+        <figcaption>PPT UJI HIPOTESIS PowerPoint Presentation, free download ID5432886 from www.slideserve.com</figcaption>
+    </figure>
+        <p>
+        Kewajiban peneliti tidak cuma merumuskan hipotesis. Psl 108 statistik dasar even semester 2022 rang human denanto statistiua pasar 202107510035 pengujian hipotesis pengujian hipotesis adalah prosector. Jawabannya diberikan oleh uji hipotesis:
+    </p>
+    <h3>PPT UJI HIPOTESIS PowerPoint Presentation, free download ID5432886</h3>
+    <p>Pengujian hipotesis merupakan suatu tahapan dalam proses penelitian dalam rangka menentukan jawaban apakah hipotesis ditolak atau. •statistik adalah ukuran² yg dikenakan pada sampel spt (rata²), s (simpangan baku), s². Uji hipotesis #1 menyatakan hipotesis. Kewajiban peneliti tidak cuma merumuskan hipotesis.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pengertian Uji Hipotesis dan Jenisjenisnya" data-src="https://i2.wp.com/teknikelektronika.com/wp-content/uploads/2015/05/Rumus-Uji-Hipotesis.jpg?x22079" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: teknikelektronika.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dalam statistik sebuah hasil bisa dikatakan signifikan secara statistik jika kejadian tersebut hampir tidak mungkin disebabkan oleh faktor yang kebetulan, sesuai dengan batas probabilitas  yang sudah ditentukan sebelumnya. Populasi dan sampel penelitian (pengertian, proses, teknik pengambilan dan rumus) pengertian dan jenis skala pengukuran dalam penelitian. Pengujian hipotesis adalah pengujian terhadap suatu pernyataan dengan menggunakan metode statistik sehingga hasil pengujian tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT Modul 7 Uji Hipotesis PowerPoint Presentation, free download" data-src="https://i2.wp.com/image3.slideserve.com/5697966/uji-statistik-satu-sampel-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pengujian hipotesis adalah pengujian terhadap suatu pernyataan dengan menggunakan metode statistik sehingga hasil pengujian tersebut dapat dinyatakan signifikan secara statistik. Uji hipotesis merupakan metode pembuktian empiris untuk mengkonfirmasi atau menolak sebuah opini ataupun asumsi dengan menggunakan data sampel. Tujuan pengujian adalah untuk mengetahui apakah hipotesis diterima atau hipotesis ditolak. May 5, 2019 by yuvalianda. Agar uji statistik valid, penting untuk.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pengertian Uji Hipotesis dan Jenisjenisnya" data-src="https://i2.wp.com/teknikelektronika.com/wp-content/uploads/2015/05/Pengertian-Uji-Hipotesis-dan-jenis-jenisnya.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: teknikelektronika.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Setiap uji jelas berbeda ya, apalagi dalam statistik, kalau ditanya perbedaany apa jelas dari rumus matematis berbeda,yg dicari juga berbeda satu f hitung yang satu t hitung, yg terpenting adalah dalam menentukan stattistik uji disesuaiakn dengan rumusan hipotesisnya, hipotesisnya bgimana, komparatif, korelasioanal, kausalitas atau lainnya, krna kesemua itu. Karena uji hipotesis ini adalah membandingkan 2 sampel, maka uji hipotesis yang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT UJI HIPOTESIS PowerPoint Presentation, free download ID5432886" data-src="https://i2.wp.com/image3.slideserve.com/5432886/uji-hipotesis1-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Rumus uji hipotesis 2 sample t test (silakan lihat tabel diatas) Uji t dapat dibagi menjadi dua, yaitu uji t yang digunakan untuk pengujian hipotesis 1 sampel dan uji t yang digunakan untuk pengujian hipotesis 2 sempel. Definisi • hipotesis adalah suatu pernyataan yang masih lemah kebenarannya, dan perlu dibuktikan; Pengujian hipotesis adalah pengujian terhadap suatu pernyataan dengan menggunakan metode.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT UJI HIPOTESIS PowerPoint Presentation, free download ID5432886" data-src="https://i2.wp.com/image3.slideserve.com/5432886/hipotesis-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Mesin barun 1 = 8 x 1 = 550 s 1 = 25. Kesalahan dalam perumusan hipotesis dan pengujian hipotesis. Uji hipotesis adalah metode pengambilan keputusan yang didasarkan dari analisis data, baik dari percobaan yang terkontrol, maupun dari observasi (tidak terkontrol). Hipotesis berasal dari bahasa yunani. Uji hipotesis kadang disebut juga konfirmasi analisis data.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT UJI HIPOTESIS PowerPoint Presentation, free download ID5432886" data-src="https://i2.wp.com/image3.slideserve.com/5432886/uji-hipotesis-n.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Definisi • hipotesis adalah suatu pernyataan yang masih lemah kebenarannya, dan perlu dibuktikan; Uji t pertama kali dikembangkan oleh william seely gosset pada tahun 1915. Oleh karenanya, pernyataan pra uji tersebut berupa dugaan sementara. Artinya dugaan masih bersifat tentatif. Kesalahan dalam perumusan hipotesis dan pengujian hipotesis.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Uji Hipotesis Beda Dua Rata Rata Sampel Kecil Pengujian" data-src="https://i2.wp.com/fatkhan.web.id/wp-content/uploads/2017/04/Fatkhan.web_.id-Uji-T.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: infopopuler32er.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Namun ia juga harus menguji hipotesisnya. Prinsip uji hipotesis adalah melakukan perbandingan antara nilai sampel (data hasil penelitian) dengan nilai hipotesis (nilai populasi) yang diajukan. Hupo artinya adalah lemah, rendah, dan tidak kuat. Hipotesis berasal dari bahasa yunani. Suatu uji hipotesis (hypothesis test) adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pengertian Uji Hipotesis dan Jenisjenisnya" data-src="https://i2.wp.com/teknikelektronika.com/wp-content/uploads/2015/05/tipe-kesalahan-dalam-uji-hipotesis.jpg?x31719" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: teknikelektronika.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Komponen lain yang diperlukan untuk melaporkan hasil uji adalah derajat kebebasan (df). Ingat, yang diuji dalam hipotesis adalah parameter, maka notasi yang digunakan dalam hipotesis statistika adalah parameter (untuk nilai tengah), (untuk simpangan baku), dan p. •statistik adalah ukuran² yg dikenakan pada sampel spt (rata²), s (simpangan baku), s². Uji t pertama kali dikembangkan oleh william seely gosset pada tahun.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT Uji Hipotesis untuk Proporsi PowerPoint Presentation, free" data-src="https://i2.wp.com/image3.slideserve.com/6974672/b-uji-hipotesis-selisih-dua-proporsi-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Karena uji hipotesis ini adalah membandingkan 2 sampel, maka uji hipotesis yang digunakan adalah 2 sample t test. Menurut zikmund, hipotesis penelitian adalah proposisi atau dugaan belum terbukti. Namun ia juga harus menguji hipotesisnya. Tujuan pengujian adalah untuk mengetahui apakah hipotesis diterima atau hipotesis ditolak. Uji hipotesis adalah metode pengambilan keputusan yang didasarkan dari analisis data, baik dari percobaan yang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT Modul 7 Uji Hipotesis PowerPoint Presentation, free download" data-src="https://i2.wp.com/image3.slideserve.com/5697966/definisi-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pengertian uji hipotesis via : Hipotesis berasal dari bahasa yunani. Uji hipotesis #1 menyatakan hipotesis. Df dapat dihitung dengan mengambil jumlah total observasi berpasangan dikurangi 1. Mesin laman 2 = 8 x 2 = 500 s 2 = 20.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-ristretto-bianco.html" class="be-post-title">
+				 <h6>what is a ristretto bianco </h6>
+                </a>
+                <a href="what-is-a-ristretto-bianco.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20ristretto%20bianco&amp;w=50&amp;h=50&amp;c=7" alt="what is a ristretto bianco">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-pase-en-drogas.html" class="be-post-title">
+				 <h6>que es un pase en drogas </h6>
+                </a>
+                <a href="que-es-un-pase-en-drogas.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20pase%20en%20drogas&amp;w=50&amp;h=50&amp;c=7" alt="que es un pase en drogas">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="gen-terapisi-nedir-biyoloji.html" class="be-post-title">
+				 <h6>gen terapisi nedir biyoloji </h6>
+                </a>
+                <a href="gen-terapisi-nedir-biyoloji.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=gen%20terapisi%20nedir%20biyoloji&amp;w=50&amp;h=50&amp;c=7" alt="gen terapisi nedir biyoloji">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-hay-en-la-cocina-in-english.html" class="be-post-title">
+				 <h6>que hay en la cocina in english </h6>
+                </a>
+                <a href="que-hay-en-la-cocina-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20hay%20en%20la%20cocina%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="que hay en la cocina in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-escribir-una-autobiografia-en-ingles.html" class="be-post-title">
+				 <h6>como escribir una autobiografia en ingles </h6>
+                </a>
+                <a href="como-escribir-una-autobiografia-en-ingles.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20escribir%20una%20autobiografia%20en%20ingles&amp;w=50&amp;h=50&amp;c=7" alt="como escribir una autobiografia en ingles">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-tarjeta-de-debito-o-credito.html" class="be-post-title">
+				 <h6>que es tarjeta de debito o credito </h6>
+                </a>
+                <a href="que-es-tarjeta-de-debito-o-credito.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20tarjeta%20de%20debito%20o%20credito&amp;w=50&amp;h=50&amp;c=7" alt="que es tarjeta de debito o credito">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="qué-es-el-realismo-filosófico-y-quiénes-fueron-sus-exponentes.html" class="be-post-title">
+				 <h6>qué es el realismo filosófico y quiénes fueron sus exponentes </h6>
+                </a>
+                <a href="qué-es-el-realismo-filosófico-y-quiénes-fueron-sus-exponentes.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=qu%C3%A9%20es%20el%20realismo%20filos%C3%B3fico%20y%20qui%C3%A9nes%20fueron%20sus%20exponentes&amp;w=50&amp;h=50&amp;c=7" alt="qué es el realismo filosófico y quiénes fueron sus exponentes">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-plomero-definicion-para-niños.html" class="be-post-title">
+				 <h6>que es plomero definicion para niños </h6>
+                </a>
+                <a href="que-es-plomero-definicion-para-niños.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20plomero%20definicion%20para%20ni%C3%B1os&amp;w=50&amp;h=50&amp;c=7" alt="que es plomero definicion para niños">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-es-el-dolor-de-nervio-ciatico.html" class="be-post-title">
+				 <h6>como es el dolor de nervio ciatico </h6>
+                </a>
+                <a href="como-es-el-dolor-de-nervio-ciatico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20es%20el%20dolor%20de%20nervio%20ciatico&amp;w=50&amp;h=50&amp;c=7" alt="como es el dolor de nervio ciatico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="çavreşamın-ne-demek-turkce.html" class="be-post-title">
+				 <h6>çavreşamın ne demek turkce </h6>
+                </a>
+                <a href="çavreşamın-ne-demek-turkce.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=%C3%A7avre%C5%9Fam%C4%B1n%20ne%20demek%20turkce&amp;w=50&amp;h=50&amp;c=7" alt="çavreşamın ne demek turkce">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

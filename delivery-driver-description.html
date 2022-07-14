@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Delivery Driver Description at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Delivery Driver Description",
+  "datePublished": "2022-05-18T09:04:30Z",
+  "image": "https://tse1.mm.bing.net/th?q=delivery%20driver%20description",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=delivery%20driver%20description&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=delivery%20driver%20description" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=delivery%20driver%20description" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Delivery Driver Description at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Delivery Driver Description</h2>
+    <p><strong>Delivery Driver Description</strong>. Delivery driver (class 3 license) (based in singapore) hirohisa vending pte. Delivering parcels and goods to customers on designated routes.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=delivery%20driver%20description" alt="Restaurant Delivery Driver Job Description" />
+        <br>
+        <figcaption>Restaurant Delivery Driver Job Description from www.restaurantowner.com</figcaption>
+    </figure>
+        <p>
+        The delivery man is responsible to note down the address and has to deliver the food items to the customer who has placed the home delivery order. I&#039;ve created this page to highlight the most recently updated (and useful!) resources for route delivery driver job description. Be specific when adding job titles for the various positions.
+    </p>
+    <h3>Restaurant Delivery Driver Job Description</h3>
+    <p>Willingness to adhere to assigned routes, schedules, safety procedures, and transportation laws. Post this job for free. They often serve as the intermediary between. In the united states of america;</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Delivery Truck Driver Job Description" data-src="https://i2.wp.com/gotilo.org/wp-content/uploads/2020/10/delivery_truck_driver_resume_samples_8.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: gotilo.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Delivery drivers work for parcel delivery services, logistics companies, restaurants, and other organizations that deliver goods. Position hours and route times may vary. Delivering parcels and goods to customers on designated routes. The delivery driver needs to collaborate with the courier company’s support team to offer excellent customer service and address. A minimum requirement for this job role is high.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pizza Delivery Driver Job Description with Fun duties room" data-src="https://i2.wp.com/uroomsurf.com/wp-content/uploads/2020/05/201.-pizza-delivery-driver-job-description.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: uroomsurf.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It also involves tasks like collecting payments whenever necessary and maintaining a log of all the deliveries. Willing to help load and unload truck when necessary (able to lift 120 pounds). Other duties and responsibilities for this position include: Collecting, transferring, and putting off parcels and small supplies within a local area or city is part of their work description..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Delivery Driver Job Description Resume New Best Pizza Delivery Drivers" data-src="https://i.pinimg.com/originals/ca/af/a1/caafa1e00a9f8283b298ca94cda0160d.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com.au</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Follow routes and time schedule. How to write a delivery driver job experience description. If you are searching for a job, good luck on the hunt! Packing, loading and unloading delivery vans and trucks. Delivery drivers can deliver items from food to furniture to people around the city.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Project Angel Heart Meal Delivery Driver Volunteer Position" data-src="https://i2.wp.com/view.publitas.com/9551/627018/pages/059e3723c070a99fb39423014ab23ca8e2ae4b9f-at1600.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: view.publitas.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Delivery drivers are responsible for collecting items and they transport such items to different destinations. Delivery driver with four years’ experience driving various routes. First, add all the relevant information. Here are three examples of summaries the builder might offer for a delivery driver resume: They load different items on the trucks.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Food Delivery Driver Resume Samples QwikResume" data-src="https://i2.wp.com/assets.qwikresume.com/resume-samples/pdf/screenshots/food-delivery-driver-1591251894-pdf.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.qwikresume.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">When adding your job experiences on your resume, here are a few guidelines you can keep in mind: Typically, delivery drivers are employed in corporations, food delivery services, warehouses, etc. You should add the following information with each job experience entry: Job description for delivery driver (day shift) posted by alpaq seafood processing pte. Their main job is to be.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Delivery Truck Driver Job Description" data-src="https://i2.wp.com/gotilo.org/wp-content/uploads/2020/10/delivery_driver_job_description_resume_luxury__truck_driving_7.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: gotilo.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">They can either deliver items to businesses or deliver them to the public. The salary of delivery drivers is $14.30 per hour ted states and $50.00 per day. For some ideas on the type of. It is the role responsible for delivering various items to different addresses as assigned. They load different items on the trucks.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Delivery Driver Job Description Pdf My Blog" data-src="https://i.pinimg.com/originals/92/54/d7/9254d7897760bc05cf2e02ef49faca97.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: tripgue.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">West * day or night shift job description: The delivery driver needs to collaborate with the courier company’s support team to offer excellent customer service and address. Post this job for free. Must possess or be eligible to earn a valid wisconsin cdl with school bus driver endorsement, “s” and passenger endorsement, “p”. Be specific when adding job titles for.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="jobdescriptiondutiesandresponsibilitiesofadeliverydriver" data-src="https://i2.wp.com/www.academicrelated.com/wp-content/uploads/2020/11/job-description-duties-and-responsibilities-of-a-delivery-driver.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.academicrelated.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Delivery driver salary ranges from $11.30 (25 th percentile) to $16.59 (7. The salary of delivery drivers is $14.30 per hour ted states and $50.00 per day. Have the ability to use gps or a map for deliveries. The delivery driver needs to collaborate with the courier company’s support team to offer excellent customer service and address. Packing, loading and.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Restaurant Delivery Driver Job Description" data-src="https://i2.wp.com/www.restaurantowner.com/members/images/924b.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.restaurantowner.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Detail mileage and delivery times. Packing, loading and unloading delivery vans and trucks. Pizza delivery driver job description learn about the key requirements, duties, responsibilities, and skills that should be in a pizza delivery driver job description. West * day or night shift job description: The delivery driver needs to collaborate with the courier company’s support team to offer excellent.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Delivery Truck Driver Job Description" data-src="https://i2.wp.com/gotilo.org/wp-content/uploads/2020/10/delivery_driver_job_description_resume_fresh_free_creative_truck_0.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: gotilo.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">They load different items on the trucks. West * day or night shift job description: Delivery drivers make sure the products arrive at their destination on time and in good condition. Job description for delivery driver (day shift) posted by alpaq seafood processing pte. It is the role responsible for delivering various items to different addresses as assigned.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cuales-son-las-estrofas-en-los-poemas.html" class="be-post-title">
+				 <h6>cuales son las estrofas en los poemas </h6>
+                </a>
+                <a href="cuales-son-las-estrofas-en-los-poemas.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cuales%20son%20las%20estrofas%20en%20los%20poemas&amp;w=50&amp;h=50&amp;c=7" alt="cuales son las estrofas en los poemas">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-het-kwartet.html" class="be-post-title">
+				 <h6>wat is het kwartet </h6>
+                </a>
+                <a href="wat-is-het-kwartet.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20het%20kwartet&amp;w=50&amp;h=50&amp;c=7" alt="wat is het kwartet">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-se-clasifica-la-musica-folclórica.html" class="be-post-title">
+				 <h6>como se clasifica la musica folclórica </h6>
+                </a>
+                <a href="como-se-clasifica-la-musica-folclórica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20se%20clasifica%20la%20musica%20folcl%C3%B3rica&amp;w=50&amp;h=50&amp;c=7" alt="como se clasifica la musica folclórica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-betekent-het-begrip-arbeidsintensief.html" class="be-post-title">
+				 <h6>wat betekent het begrip arbeidsintensief </h6>
+                </a>
+                <a href="wat-betekent-het-begrip-arbeidsintensief.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20betekent%20het%20begrip%20arbeidsintensief&amp;w=50&amp;h=50&amp;c=7" alt="wat betekent het begrip arbeidsintensief">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-cubata-en-venezuela.html" class="be-post-title">
+				 <h6>que significa cubata en venezuela </h6>
+                </a>
+                <a href="que-significa-cubata-en-venezuela.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20cubata%20en%20venezuela&amp;w=50&amp;h=50&amp;c=7" alt="que significa cubata en venezuela">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="una-mujer-con-sobrepeso-puede-quedar-embarazada.html" class="be-post-title">
+				 <h6>una mujer con sobrepeso puede quedar embarazada </h6>
+                </a>
+                <a href="una-mujer-con-sobrepeso-puede-quedar-embarazada.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=una%20mujer%20con%20sobrepeso%20puede%20quedar%20embarazada&amp;w=50&amp;h=50&amp;c=7" alt="una mujer con sobrepeso puede quedar embarazada">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="significado-hidratos-de-metano.html" class="be-post-title">
+				 <h6>significado hidratos de metano </h6>
+                </a>
+                <a href="significado-hidratos-de-metano.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=significado%20hidratos%20de%20metano&amp;w=50&amp;h=50&amp;c=7" alt="significado hidratos de metano">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-minecraft-bedrock.html" class="be-post-title">
+				 <h6>que significa minecraft bedrock </h6>
+                </a>
+                <a href="que-significa-minecraft-bedrock.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20minecraft%20bedrock&amp;w=50&amp;h=50&amp;c=7" alt="que significa minecraft bedrock">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-realismo-corriente-filosofica.html" class="be-post-title">
+				 <h6>que es el realismo corriente filosofica </h6>
+                </a>
+                <a href="que-es-el-realismo-corriente-filosofica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20realismo%20corriente%20filosofica&amp;w=50&amp;h=50&amp;c=7" alt="que es el realismo corriente filosofica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="ombudsman-contact-number-south-africa.html" class="be-post-title">
+				 <h6>ombudsman contact number south africa </h6>
+                </a>
+                <a href="ombudsman-contact-number-south-africa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=ombudsman%20contact%20number%20south%20africa&amp;w=50&amp;h=50&amp;c=7" alt="ombudsman contact number south africa">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

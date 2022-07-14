@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Pirogen Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Pirogen Adalah",
+  "datePublished": "2022-07-13T13:09:33Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20pirogen%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20pirogen%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20pirogen%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20pirogen%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Pirogen Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Pirogen Adalah</h2>
+    <p><strong>Uji Pirogen Adalah</strong>. 2.4 definisi pirogen pirogen berasal dari kata pyro yang artinya keadaan yang berhubungan dengan panas, dan kata gen yang artinya membentuk atau menghasilkan.pirogen adalah suatu produk mikroorganisme, terutama dari. Pirogen adalah zat atau agen yang menghasilkan demam, saat dilepaskan ke sirkulasi darah.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20pirogen%20adalah" alt="tabel uji validitas" />
+        <br>
+        <figcaption>tabel uji validitas from www.scribd.com</figcaption>
+    </figure>
+        <p>
+        Eurolab adalah pemimpin industri dalam pengujian endotoksin bakteri.&lt;/p&gt; Dalam beberapa kasus, tes lal mungkin tidak layak. • istilahtoksemia menunjukkanadanya toksin dalam darah.
+    </p>
+    <h3>tabel uji validitas</h3>
+    <p>Pengujian pirogen ada 2 yaitu dengan menggunakan kelinci dan dengan menggunakan lamulus. Pirogen dihasilkan oleh pelbagai jenis mikroorganisma seperti bakteria, jamur, ragi, dan virus. Semua pengujian memenuhi persyaratan yang ditentukan dalam bagian usp , bagian usp , ansi / aami st72: Pirogen secara garis besar dikelompokkan menjadi dua macam, yaitu.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tutorial Uji Validitas dan reliabilitas dengan SPSS Lengkap dan Tuntas" data-src="https://i2.wp.com/ometlit.com/wp-content/uploads/2020/07/Uji_Validitas_5_ometlit-768x485.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ometlit.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">View uji pirogen (lal) 2016.ppt from chemical 001 at universitas padjadjaran. Hasil uji pirogen menunjukkan sediaan bebas pirogen. Hangatkan larutan pd suhu 37 derajat kurang lebih 2 derajat sebelum penyintikan. Pirogen dihasilkan oleh pelbagai jenis mikroorganisma seperti bakteria, jamur, ragi, dan virus. Rekam suhu berturut turut antara jam pertama dan jam ke 3 setelah penyuntikan dengan selang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="tabel uji validitas" data-src="https://i2.wp.com/imgv2-1-f.scribdassets.com/img/document/240539477/original/4c77c62a8b/1584056863?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hangatkan larutan pd suhu 37 derajat kurang lebih 2 derajat sebelum penyintikan. 2011, ep 2.6.14, jp 4.01, dan panduan fda untuk uji pirogen dan endotoksin industri: Bila kemudian terjadi pembentukan gel yang stabil sampai 1 jam masa inkubasi, berarti cuplikan tidak bebas pirogen. Endotoksn tidak disekresikan, melainkan baru akan dikeluarkan saat sel bakteri mengalami gangguan. Laboratorium pengujian endotoksin di eurolab.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Konsultan Statistik Cara Membaca T Tabel pada Uji T" data-src="https://i2.wp.com/1.bp.blogspot.com/-09zV9LfoXcM/X9LsTpqqFMI/AAAAAAAABSU/D0zBkd8KHcESA_EBwVPTG3azKYGh79xdACLcBGAsYHQ/s1280/Tabel%2Bt%2Bdf%2B28%2Brev%2B00.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.konsultanstatistik.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pirogen yang paling umum adalah endotoksin, yaitu lipopolisakarida (lps) yang diproduksi oleh bakteri gram negatif seperti e. Endotoksn tidak disekresikan, melainkan baru akan dikeluarkan saat sel bakteri mengalami gangguan. Pirogen adalah zat organik hasil metabolisme dari bakteri gram negatif dimana reaksi yang ditimbulkan yaitu demam (fever), menggigil, sakit kepala dn malaise. Biasanya, zat pirogenik termasuk endotoksin dan produk sampingan bakteri.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT UJI HIPOTESIS PowerPoint Presentation, free download ID5432886" data-src="https://i2.wp.com/image3.slideserve.com/5432886/uji-perbandingan-statistik-parametrik-non-parametrik-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jika bahan uji berupa minyak, membran dapat disterilkan terpisah dan setelah melalui pengeringan unit dirakit secara aseptic (anonim, 1995). Uji pirogen adalah uji yang dilakukan untuk mengetahui apakan suatu sediaan uji bebas pirogen atau tidak (anonim, 1995). Inokulasi langsung ke dalam media uji 2. Semua pengujian memenuhi persyaratan yang ditentukan dalam bagian usp , bagian usp , ansi / aami.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="All About Nutrition Uji Organoleptik" data-src="https://i2.wp.com/1.bp.blogspot.com/-2rePKou5bvk/TbuMP6J8gvI/AAAAAAAAAEs/wPc892RiUR0/w1200-h630-p-k-no-nu/orlep.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: poenyasemua.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pirogen adalah zat atau agen yang menghasilkan demam, saat dilepaskan ke sirkulasi darah. Hasil uji pirogen menunjukkan sediaan bebas pirogen. Biasanya, zat pirogenik termasuk endotoksin dan produk sampingan bakteri lainnya. Pirogen adalah suatu produk mikroorganisme, terutama dari bakteri gram negatif dan dapat berupa endotoksin dari bakteri ini. Uji ini dilakukan setelah melalui uji sterilitas.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="UJI PIROGEN (LAL) 2016.ppt Apa itu endotoksin Endotoksin berasal dari" data-src="https://i2.wp.com/www.coursehero.com/doc-asset/bg/5bca155d5b912fec6de6716bec3cdf2df60f17df/splits/v9/split-0-page-4-html-bg-unsplit.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.coursehero.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Penanaman yang umum dilakukan dengan mendapatkan sumber benih yang asal ada. Pirogen adalah zat asing yang menyebabkan demam (peningkatan suhu) dalam tubuh hewan. Semua larutan harus bebas dari kontaminasi. Ada 2 metode pengujian pyrogen, yaitu : Dengan teknik ini, cuplikan sediaan diperlakukan dengan lal dan diinkubasikan pada suhu 37qc.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Pirogen (Lal) [PPT Powerpoint]" data-src="https://i2.wp.com/static.fdokumen.com/img/1200x630/reader012/image/20180820/54e4ade74a7959a2708b4b0b.png?t=1591570034" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: fdokumen.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pirogen adalah zat organik hasil metabolisme dari bakteri gram negatif dimana reaksi yang ditimbulkan yaitu demam (fever), menggigil, sakit kepala dn malaise. • uji pirogen dengan kelinci • lal test uji pirogen dengan kelinci • metode standar pada abad 20 • bahan diinjeksikan pada telinga lal test • dikembangkan pada 1960’s by drs. Sebilangan besar toksin yang dihasilkan oleh bakteria.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="SUMMARY STATISTIK Uji Chi Square" data-src="https://i2.wp.com/1.bp.blogspot.com/-XrFPSPFcCu8/Xer7LKSu31I/AAAAAAAAQIk/bkgb2-7OhHYRkA9bkCU_AflGpGrl1DmVwCLcBGAsYHQ/s1600/29.PNG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: billyonlinetext.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji lain yang mendeteksi endotoksin adalah uji faktor c rekombinan. Depirogenisasi adalah menghilangkan pirogen dari larutan sediaan parenteral. Seperti yang telah diungkapkan sebelumnya bahwa tujuan uji ini adalah untuk membatasi resiko reaksi demam pada pasien (anonim, 1995). Eurolab adalah pemimpin industri dalam pengujian endotoksin bakteri.&lt;/p&gt; Rekam suhu berturut turut antara jam pertama dan jam ke 3 setelah penyuntikan dengan selang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pengertian Dan Contoh Kasus Uji Regresi Linear Sederhana Dan Berganda" data-src="https://i2.wp.com/fatkhan.web.id/wp-content/uploads/2018/01/rumus7.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: fatkhan.web.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Membuktikan bahwa pirogen adalah substansi yang tidak tersaring, thermostabil, dan non volatile. • istilahtoksemia menunjukkanadanya toksin dalam darah. Sterilisasi dilakukan pada makanan dan obat selama produksi. Steril adalah suatu keadaan dimana suatu zat bebas dari mikroba baik yang patogen maupun yang tidak patogen baik dalam bentuk vegetatif maupun dalam bentuk spora. Dengan teknik ini, cuplikan sediaan diperlakukan dengan lal dan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tutorial Uji Tanda dan Uji Rank Tanda Wilcoxon" data-src="https://i2.wp.com/1.bp.blogspot.com/-_jTbyNIgQq8/XZqt3Xyp4LI/AAAAAAAAEDQ/ZpvfSu2gK9Q4uNNj1Gkom4FuXugcOl4QgCEwYBhgL/s1600/6.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.danialmahkya.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Endotoksin merupakan produk samping bakteri yang menjadi pirogenik (aktif) saat mencapai aliran darah. Seperti yang telah diungkapkan sebelumnya bahwa tujuan uji ini adalah untuk membatasi resiko reaksi demam pada pasien (anonim, 1995). Endotoksin ini terdiri dari suatu senyawa komplek yaitu terdiri dari suatu lipopolysaccharida yang pyrogenic, suatu protein dan suatu lipid yang innert. Uji khas untuk deteksi kontaminasi endotoksin adalah.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-serigrafia-manual.html" class="be-post-title">
+				 <h6>que es la serigrafia manual </h6>
+                </a>
+                <a href="que-es-la-serigrafia-manual.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20serigrafia%20manual&amp;w=50&amp;h=50&amp;c=7" alt="que es la serigrafia manual">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-vaca-demonio.html" class="be-post-title">
+				 <h6>que es un vaca demonio </h6>
+                </a>
+                <a href="que-es-un-vaca-demonio.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20vaca%20demonio&amp;w=50&amp;h=50&amp;c=7" alt="que es un vaca demonio">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="dionicol-thiamphenicol-obat-apa.html" class="be-post-title">
+				 <h6>dionicol thiamphenicol obat apa </h6>
+                </a>
+                <a href="dionicol-thiamphenicol-obat-apa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=dionicol%20thiamphenicol%20obat%20apa&amp;w=50&amp;h=50&amp;c=7" alt="dionicol thiamphenicol obat apa">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="recetas-de-comida-que-se-puede-comer-fria.html" class="be-post-title">
+				 <h6>recetas de comida que se puede comer fria </h6>
+                </a>
+                <a href="recetas-de-comida-que-se-puede-comer-fria.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=recetas%20de%20comida%20que%20se%20puede%20comer%20fria&amp;w=50&amp;h=50&amp;c=7" alt="recetas de comida que se puede comer fria">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="müzikte-hüzzam-ne-demek.html" class="be-post-title">
+				 <h6>müzikte hüzzam ne demek </h6>
+                </a>
+                <a href="müzikte-hüzzam-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=m%C3%BCzikte%20h%C3%BCzzam%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="müzikte hüzzam ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-pedir-la-cuenta-en-un-restaurante-en-inglés.html" class="be-post-title">
+				 <h6>como pedir la cuenta en un restaurante en inglés </h6>
+                </a>
+                <a href="como-pedir-la-cuenta-en-un-restaurante-en-inglés.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20pedir%20la%20cuenta%20en%20un%20restaurante%20en%20ingl%C3%A9s&amp;w=50&amp;h=50&amp;c=7" alt="como pedir la cuenta en un restaurante en inglés">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-itf-bcp.html" class="be-post-title">
+				 <h6>que es el itf bcp </h6>
+                </a>
+                <a href="que-es-el-itf-bcp.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20itf%20bcp&amp;w=50&amp;h=50&amp;c=7" alt="que es el itf bcp">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-itbis-retenido.html" class="be-post-title">
+				 <h6>que es el itbis retenido </h6>
+                </a>
+                <a href="que-es-el-itbis-retenido.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20itbis%20retenido&amp;w=50&amp;h=50&amp;c=7" alt="que es el itbis retenido">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="anak-kerja-adalah.html" class="be-post-title">
+				 <h6>anak kerja adalah </h6>
+                </a>
+                <a href="anak-kerja-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=anak%20kerja%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="anak kerja adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="gambar-punggung-kaki-adalah.html" class="be-post-title">
+				 <h6>gambar punggung kaki adalah </h6>
+                </a>
+                <a href="gambar-punggung-kaki-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=gambar%20punggung%20kaki%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="gambar punggung kaki adalah">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

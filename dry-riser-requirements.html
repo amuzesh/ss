@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Dry Riser Requirements at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Dry Riser Requirements",
+  "datePublished": "2022-07-05T23:02:28Z",
+  "image": "https://tse1.mm.bing.net/th?q=dry%20riser%20requirements",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=dry%20riser%20requirements&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=dry%20riser%20requirements" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=dry%20riser%20requirements" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Dry Riser Requirements at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Dry Riser Requirements</h2>
+    <p><strong>Dry Riser Requirements</strong>. It is a legal requirement to ensure these provisions are maintained appropriately, so it remains ready and effective in an event of a fire. In recent years, the icc has continued to emphasize the importance of fire sprinkler riser rooms by expanding upon its requirements.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=dry%20riser%20requirements" alt="Wet Risers UK Dry Risers" />
+        <br>
+        <figcaption>Wet Risers UK Dry Risers from www.ukdryrisers.co.uk</figcaption>
+    </figure>
+        <p>
+        If you have any more queries or we haven’t answered any. All dry riser cabinet heights should fall between 400mm and 600mm from finished floor levels to the bottom of the cabinets. The dry riser is the opposite of a wet riser or wet standpipe system where the pipes are kept full of water for manual or automatic fire fighting operations.
+    </p>
+    <h3>Wet Risers UK Dry Risers</h3>
+    <p>In recent years, the icc has continued to emphasize the importance of fire sprinkler riser rooms by expanding upon its requirements. Pe to ensure that all requirement for the provision of rising mains in the building are complied with and allowed for in the construction stage 2. Test dry riser system in accordance with s 5306. The major items in the checklist are elaborated as follow s:</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="What is a Dry Riser? Fire and Security Group" data-src="https://i2.wp.com/www.fireandsecuritygroup.co.uk/wp-content/uploads/2021/04/fire-and-security-group-What-is-a-Dry-Riser-02.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.fireandsecuritygroup.co.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dry and wet risers are very similar, both in design and function. In 2012, it required rooms housing fire protection systems to be adequately sized to facilitate maintenance. The dry riser is the opposite of a wet riser or wet standpipe system where the pipes are kept full of water for manual or automatic fire fighting operations. Wet and dry.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dry Risers Fire Crest Fire Protection Cornwall" data-src="https://i2.wp.com/www.extinguisher.com/wp-content/uploads/2012/09/20131129_135433-2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.extinguisher.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pe to ensure that all requirement for the provision of rising mains in the building are complied with and allowed for in the construction stage 2. The cradle shall be constructed and positioned to facilitate the retrieving of fire hose by firefighters. An inspection checklist has been designed buildings under construction (see annex a). Provision of dry &amp; wet risers.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dry &amp; Wet Riser ASAP Fire Systems Ltd." data-src="https://i2.wp.com/asapfiresystems.co.uk/wp-content/uploads/2018/03/canstockphoto17788656.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: asapfiresystems.co.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The pipe work of dry riser distribution systems is usually of galvanized steel pipe. Bs9990 was first published in 2006, with the latest edition release in january 2015 by bsi standards ltd. The major items in the checklist are elaborated as follow s: Wet and dry riser systems are made up of a network of valves and pipes that enable.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dry Riser Testing Kent Fire" data-src="https://i2.wp.com/www.morganfire.co.uk/wp-content/uploads/2014/11/IMG_2570.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.morganfire.co.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">For a service please email paul@pscfiresafety.com or leave a message on 01455557877. Dry risers have an inlet connector at rescue service vehicle access level and landing valves at locations on each floor. An inspection checklist has been designed buildings under construction (see annex a). The unit is filled with water at a given pressure for a period of time. On.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wet Risers UK Dry Risers" data-src="https://i2.wp.com/www.ukdryrisers.co.uk/wp-content/uploads/2018/05/PTSGPhotography-29thJanuary2017-13.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.ukdryrisers.co.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The company who installed the dry riser should pressure test to 12 bar of water for a minimum of 15 minutes, then issue you with certification. Notwithstanding the requirements in cl.6.2.1a., dry rising mains conforming to ss 575 shall be provided to supply any part of a single or multiple. If your building has a dry riser or wet riser.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dry Risers UK Team Services Fire Systems" data-src="https://i2.wp.com/static.wixstatic.com/media/b3ded45e08f841cc9105ca751642743c.jpg/v1/fill/w_2500,h_1666,al_c/b3ded45e08f841cc9105ca751642743c.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.teamservicesfiresystems.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dry risers have an inlet connector at rescue service vehicle access level and landing valves at locations on each floor. The building regulations requirements state that all buildings over 18 meters should be fitted with this system, ensuring that taller buildings and compartmentalized areas, such as hospital corridors, are allowed easy access to water in the event of a fire..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dry Riser Testing and Maintainance throughout the Midlands and UK" data-src="https://i2.wp.com/www.nationwidecctv.co.uk/assets/images/dry-riserlarge.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.nationwidecctv.co.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">If your building design doesn’t allow for these heights certain allowances are made, this will have to be agreed with your local authority. A wet riser is required for occupied buildings taller than 50. Here we explain the regulations, so you can remain up to date to reduce risk to life and damage to property. On the other hand, a.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Step by Step guide to Dry Riser Maintenance Fire Tech Dry Risers Ltd" data-src="https://i2.wp.com/firetechdryrisers.co.uk/wp-content/uploads/2020/07/Maintenance-2.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: firetechdryrisers.co.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In 2012, it required rooms housing fire protection systems to be adequately sized to facilitate maintenance. Pe to ensure that all requirement for the provision of rising mains in the building are complied with and allowed for in the construction stage 2. Test dry riser system in accordance with s 5306. The pipe work of dry riser distribution systems is.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dry Riser Testing and Maintenance Indepth Water Management" data-src="https://i2.wp.com/www.indepth.ie/wp-content/uploads/2018/07/Dry-Riser.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.indepth.ie</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">If you have any more queries or we haven’t answered any. On going maintenance should be carried out from date of commissioning, with a 6 monthly visual inspection and 12 mostly hydraulic pressure test. • pressurise the riser with water to 10 bars measured at the inlet for a period not less. • replace instantaneous rubber washers as required. The.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Fire hydrant service requirements · Dry Risers Direct" data-src="https://i2.wp.com/www.dryrisersdirect.co.uk/wp-content/uploads/2017/02/WP_20161115_10_31_10_Pro_LI-e1489839559651.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.dryrisersdirect.co.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">At dry risers direct we design, install and maintain all our dry riser projects to the bs9990:2015 standards. • check air release valve is in place and operating correctly. All dry risers need to undergo a pressure test every 12 months. • replace instantaneous rubber washers as required. Ensure that riser pipes are properly indicated and numbered with the water.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-bueno-para-la-menopausia-prematura.html" class="be-post-title">
+				 <h6>que es bueno para la menopausia prematura </h6>
+                </a>
+                <a href="que-es-bueno-para-la-menopausia-prematura.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20bueno%20para%20la%20menopausia%20prematura&amp;w=50&amp;h=50&amp;c=7" alt="que es bueno para la menopausia prematura">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-pedir-la-cuenta-en-un-restaurante-en-ingles.html" class="be-post-title">
+				 <h6>como pedir la cuenta en un restaurante en ingles </h6>
+                </a>
+                <a href="como-pedir-la-cuenta-en-un-restaurante-en-ingles.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20pedir%20la%20cuenta%20en%20un%20restaurante%20en%20ingles&amp;w=50&amp;h=50&amp;c=7" alt="como pedir la cuenta en un restaurante en ingles">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-hacer-una-vinagreta.html" class="be-post-title">
+				 <h6>como.hacer una vinagreta </h6>
+                </a>
+                <a href="como-hacer-una-vinagreta.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como.hacer%20una%20vinagreta&amp;w=50&amp;h=50&amp;c=7" alt="como.hacer una vinagreta">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-terrestre.html" class="be-post-title">
+				 <h6>que es terrestre </h6>
+                </a>
+                <a href="que-es-terrestre.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20terrestre&amp;w=50&amp;h=50&amp;c=7" alt="que es terrestre">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="email-marketing-que-es-y-como-funciona.html" class="be-post-title">
+				 <h6>email marketing que es y como funciona </h6>
+                </a>
+                <a href="email-marketing-que-es-y-como-funciona.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=email%20marketing%20que%20es%20y%20como%20funciona&amp;w=50&amp;h=50&amp;c=7" alt="email marketing que es y como funciona">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="vad-är-grönsaker-på-spanska.html" class="be-post-title">
+				 <h6>vad är grönsaker på spanska </h6>
+                </a>
+                <a href="vad-är-grönsaker-på-spanska.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=vad%20%C3%A4r%20gr%C3%B6nsaker%20p%C3%A5%20spanska&amp;w=50&amp;h=50&amp;c=7" alt="vad är grönsaker på spanska">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="uji-kelayakan-bisnis.html" class="be-post-title">
+				 <h6>uji kelayakan bisnis </h6>
+                </a>
+                <a href="uji-kelayakan-bisnis.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=uji%20kelayakan%20bisnis&amp;w=50&amp;h=50&amp;c=7" alt="uji kelayakan bisnis">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-trombosis-en-la-pierna.html" class="be-post-title">
+				 <h6>que es la trombosis en la pierna </h6>
+                </a>
+                <a href="que-es-la-trombosis-en-la-pierna.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20trombosis%20en%20la%20pierna&amp;w=50&amp;h=50&amp;c=7" alt="que es la trombosis en la pierna">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-boekjaar.html" class="be-post-title">
+				 <h6>wat is een boekjaar </h6>
+                </a>
+                <a href="wat-is-een-boekjaar.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20boekjaar&amp;w=50&amp;h=50&amp;c=7" alt="wat is een boekjaar">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-hacer-una-descripcion-de-cargo-administrativo.html" class="be-post-title">
+				 <h6>como hacer una descripcion de cargo administrativo </h6>
+                </a>
+                <a href="como-hacer-una-descripcion-de-cargo-administrativo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20hacer%20una%20descripcion%20de%20cargo%20administrativo&amp;w=50&amp;h=50&amp;c=7" alt="como hacer una descripcion de cargo administrativo">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

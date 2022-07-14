@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Aktivitas Antioksidan Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Aktivitas Antioksidan Adalah",
+  "datePublished": "2022-05-17T21:39:15Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20aktivitas%20antioksidan%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20aktivitas%20antioksidan%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20aktivitas%20antioksidan%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20aktivitas%20antioksidan%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Aktivitas Antioksidan Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Aktivitas Antioksidan Adalah</h2>
+    <p><strong>Uji Aktivitas Antioksidan Adalah</strong>. Metode uji aktivitas antioksidan yang digunakan adalah metode peredaman dpph. Hasil evaluasi sifat fisik krim yang menghasilkan sediaan yang baik adalah formula 3 dengan konsentrasi 8% tween 80 dan 4% span 80.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20aktivitas%20antioksidan%20adalah" alt="(PDF) Uji Aktivitas Antioksidan Teh Daun Sirsak (Annona Muricata Linn" />
+        <br>
+        <figcaption>(PDF) Uji Aktivitas Antioksidan Teh Daun Sirsak (Annona Muricata Linn from www.researchgate.net</figcaption>
+    </figure>
+        <p>
+        Uji aktivitas antibakteri pada ekstrak kunyit dengan metode difusi agar cakram a. Untuk uji antijamur adalah pipet 0,5 ml, pipet 1 ml, bulb, cawan petri dan kertas cakram. (1)alvi kusuma w., (ii) nur furqani, (iii) anna pradiningsih.
+    </p>
+    <h3>(PDF) Uji Aktivitas Antioksidan Teh Daun Sirsak (Annona Muricata Linn</h3>
+    <p>Memiliki aktivitas antioksidan yang baik. Pengujian antioksidan ekstrak metanol areca vestiaria giseke 8 16 c (ppm) a1 % inhibisi 1 c (ppm) a2 % inhibisi 2 0 0,788 0 0,896 2 0,714 9,39086294 2 0,716 20,08928571 Metode yang digunakan pada penentuan aktivitas antioksidan terong belanda (solanum betaceum cav.) pada penelitian ini adalah metode frap. Pengujian aktivitas antioksidan dari ekstrak metanol sampel dapat di lihat pada tabel 1.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="ISOLASI DAN UJI AKTIVITAS ANTIOKSIDAN SENYAWA DALAM" data-src="https://i2.wp.com/s1.studylibid.com/store/data/000964628_1-65cc1a9ab016ca346a5be15b9f7506fb.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: studylibid.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Berdasarkan hasil tersebut, maka dapat disimpulkan bahwa uji antioksidan dengan menggunakan abts ternyata mampu memberikan indikator antioksidan yang lebih baik daripada dpph. Metode yang umum digunakan dalam pengujian aktivitas antioksidan adalah diphenylpicrylhydrazil (dpph) free radical scavenging assay. Antioksidan, kembang kol (brassica oleracea botrytis), dpph. Memiliki aktivitas antioksidan yang baik. Turi (sesbania grandiflora l.) adalah tanaman jenis pepohonan yang banyak</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji aktivitas antibakteri, antijamur, antioksidan dan toksisitas terh…" data-src="https://i2.wp.com/image.slidesharecdn.com/ujiaktivitasantibakteriantijamurantioksidandantoksisitasterhadapektrakkunyit-140102212813-phpapp01/95/uji-aktivitas-antibakteri-antijamur-antioksidan-dan-toksisitas-terhadap-ektrak-kunyit-2-638.jpg?cb=1388698176" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Penyiapan bahan, pembuatan ekstrak, dan uji aktivitas antioksidan ek strak. Metode yang umum digunakan dalam pengujian aktivitas antioksidan adalah diphenylpicrylhydrazil (dpph) free radical scavenging assay. Uji aktivitas antioksidan probiotik dalam minuman yoghurt dengan berbagai cita rasa dengan ini menyatakan bahwa skripsi yang saya buat adalah asli karya sendiri dan bukan plagiat. Utama senyawa antioksidan adalah kemampuannya untuk menangkap dan menstabilkan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) Uji Aktivitas Antioksidan NMetil Kitosan Berkelarutan Tinggi" data-src="https://i2.wp.com/i1.rgstatic.net/publication/323397768_Uji_Aktivitas_Antioksidan_N-Metil_Kitosan_Berkelarutan_Tinggi/links/5ad836df0f7e9b28593ad383/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pengukuran aktivitas antioksidan sampel dilakukan pada panjang Antioksidan, kembang kol (brassica oleracea botrytis), dpph. Pengujian antioksidan ekstrak metanol areca vestiaria giseke 8 16 c (ppm) a1 % inhibisi 1 c (ppm) a2 % inhibisi 2 0 0,788 0 0,896 2 0,714 9,39086294 2 0,716 20,08928571 Vargia (2002) mengemukakan bahwa metode frap adalah metode Uji aktivitas antioksidan menunjukkan bahwa ekstrak etanol.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="HIDUPKU Uji Antioksidan" data-src="https://i2.wp.com/1.bp.blogspot.com/-d0PjhewL1do/TbpT2iVeJfI/AAAAAAAAAZg/NWw3dLRiBSk/s1600/3.bmp" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: alipart.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Penyiapan bahan, pembuatan ekstrak, dan uji aktivitas antioksidan ek strak. Hasil evaluasi sifat fisik krim yang menghasilkan sediaan yang baik adalah formula 3 dengan konsentrasi 8% tween 80 dan 4% span 80. Radikal bebas adalah molekul atau senyawa kimia sangat reaktif yang menyebabkan stres oksidatif, yang didefinisikan sebagai ketidakseimbangan antara jumlah oksidan dan antioksidan, berpotensi memicu kanker. Ririn septia lestari,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) Uji Aktivitas Antioksidan Teh Daun Sirsak (Annona Muricata Linn" data-src="https://i2.wp.com/i1.rgstatic.net/publication/336930607_Uji_Aktivitas_Antioksidan_Teh_Daun_Sirsak_Annona_Muricata_Linn_Berdasarkan_Teknik_Pengolahan/links/5dbba1d792851c81801dd38b/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Metode yang umum digunakan dalam pengujian aktivitas antioksidan adalah diphenylpicrylhydrazil (dpph) free radical scavenging assay. Uji aktivitas antioksidan dilakukan dengan metode dpph, dengan senyawa kurkumin dan vitamin c sebagai pembanding dan hasilnya dinyatakan dengan nilai ic50. Memiliki aktivitas antioksidan yang baik. Metode uji aktivitas antioksidan yang digunakan adalah metode peredaman dpph. Hasil uji aktivitas antioksidan ekstrak etanol daun kemuning diperoleh.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="UJI AKTIVITAS ANTIOKSIDAN EKSTRAK ETANOL BEE POLLEN LEBAH TRIGONA" data-src="https://i2.wp.com/jurnal.univrab.ac.id/public/journals/36/cover_issue_105_en_US.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: jurnal.univrab.ac.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ppm, 61.193 ppm dan 98.372 ppm yang menunjukkan bahwa aktivitas antioksidan yang semakin menurun seiring lamanya proses perebusan. Alkaloid dari ekstrak daun phoebe declinata nees. Uji aktivitas antioksidan probiotik dalam minuman yoghurt dengan berbagai cita rasa dengan ini menyatakan bahwa skripsi yang saya buat adalah asli karya sendiri dan bukan plagiat. (1)alvi kusuma w., (ii) nur furqani, (iii) anna pradiningsih..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) Uji Aktivitas Antioksidan Ekstrak Kasar Keong Bakau (Telescopium" data-src="https://i2.wp.com/i1.rgstatic.net/publication/343651574_Uji_Aktivitas_Antioksidan_Ekstrak_Kasar_Keong_Bakau_Telescopium_telescopium_dengan_Pelarut_yang_Berbeda_terhadap_Metode_DPPH_Diphenyl_Picril_Hidrazil/links/5f367520458515b7291f344e/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Metode yang digunakan dalam pengujian aktivitas antioksidan adalah metode serapan radikal dpph karena merupakan metode yang sederhana, mudah, dan menggunakan sampel dalam jumlah yang sedikit dengan waktu yang singkat (hanani, 2005). Turi (sesbania grandiflora l.) adalah tanaman jenis pepohonan yang banyak Metode yang umum digunakan dalam pengujian aktivitas antioksidan adalah diphenylpicrylhydrazil (dpph) free radical scavenging assay. Uji aktivitas antioksidan lotion.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) Uji Antioksidan Ekstrak Etanol Kulit Buah dan Daging Buah Menteng" data-src="https://i2.wp.com/i1.rgstatic.net/publication/339686622_Uji_Antioksidan_Ekstrak_Etanol_Kulit_Buah_dan_Daging_Buah_Menteng_Baccaurea_racemosa_Blume_Mull_Arg_dengan_Metode_DPPH_22_Diphenyl-1-picrylhydrazyl/links/5e5fa8e2a6fdccbeba1a1cc7/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji aktivitas antioksidan dilakukan dengan metode dpph, dengan senyawa kurkumin dan vitamin c sebagai pembanding dan hasilnya dinyatakan dengan nilai ic50. Metode penelitian pengujian aktivitas antioksidan dari daun mimusops elengi dilakukan melalui beberapa tahapan penelitian yang meliputi : Pengukuran aktivitas antioksidan sampel dilakukan pada panjang Isolasi dan uji aktivitas antioksidan dari kulit batang putri malu. Antioksidan adalah senyawa yang mampu.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) Penentuan Total Kadar Fenol dari Daun Kersen Segar, Kering dan" data-src="https://i2.wp.com/i1.rgstatic.net/publication/325224432_Penentuan_Total_Kadar_Fenol_dari_Daun_Kersen_Segar_Kering_dan_Rontok_Muntingia_calabura_L_serta_Uji_Aktivitas_Antioksidan_dengan_Metode_DPPH/links/5afee50b458515095b85033c/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pengujian antioksidan ekstrak metanol areca vestiaria giseke 8 16 c (ppm) a1 % inhibisi 1 c (ppm) a2 % inhibisi 2 0 0,788 0 0,896 2 0,714 9,39086294 2 0,716 20,08928571 Isolasi dan uji aktivitas antioksidan senyawa. Metode yang digunakan pada penentuan aktivitas antioksidan terong belanda (solanum betaceum cav.) pada penelitian ini adalah metode frap. Kesimpulan pada penelitian ini adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) Sintesis Elektrokimia Kompleks Cu(II)Basa Schiff NBenziliden" data-src="https://i2.wp.com/i1.rgstatic.net/publication/328884121_Sintesis_Elektrokimia_Kompleks_CuII-Basa_Schiff_N-Benziliden_Anilin_dan_Uji_Aktivitas_sebagai_Antibakteri_terhadap_Escherichia_Coli_dan_Staphylococcus_Aureus/links/5be980cf92851c6b27b9334d/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Metode penelitian pengujian aktivitas antioksidan dari daun mimusops elengi dilakukan melalui beberapa tahapan penelitian yang meliputi : 2.1.1 uji antioksidan uji aktivitas antioksidan terdiri atas metode in vivo dan in vitro. Utama senyawa antioksidan adalah kemampuannya untuk menangkap dan menstabilkan radikal bebas (prakash, 2001). Radikal bebas adalah molekul atau senyawa kimia sangat reaktif yang menyebabkan stres oksidatif, yang didefinisikan sebagai.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-kwartet-in-het-spaans.html" class="be-post-title">
+				 <h6>wat is kwartet in het spaans </h6>
+                </a>
+                <a href="wat-is-kwartet-in-het-spaans.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20kwartet%20in%20het%20spaans&amp;w=50&amp;h=50&amp;c=7" alt="wat is kwartet in het spaans">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-project-risk-register.html" class="be-post-title">
+				 <h6>what is a project risk register </h6>
+                </a>
+                <a href="what-is-a-project-risk-register.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20project%20risk%20register&amp;w=50&amp;h=50&amp;c=7" alt="what is a project risk register">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-s-t-a-b-l-e-certification-stand-for.html" class="be-post-title">
+				 <h6>what does s.t.a.b.l.e. certification stand for </h6>
+                </a>
+                <a href="what-does-s-t-a-b-l-e-certification-stand-for.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20s.t.a.b.l.e.%20certification%20stand%20for&amp;w=50&amp;h=50&amp;c=7" alt="what does s.t.a.b.l.e. certification stand for">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-diferencia-entre-psiquiatra-y-psicólogo.html" class="be-post-title">
+				 <h6>que es la diferencia entre psiquiatra y psicólogo </h6>
+                </a>
+                <a href="que-es-la-diferencia-entre-psiquiatra-y-psicólogo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20diferencia%20entre%20psiquiatra%20y%20psic%C3%B3logo&amp;w=50&amp;h=50&amp;c=7" alt="que es la diferencia entre psiquiatra y psicólogo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-vechtscheiding.html" class="be-post-title">
+				 <h6>wat is een vechtscheiding </h6>
+                </a>
+                <a href="wat-is-een-vechtscheiding.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20vechtscheiding&amp;w=50&amp;h=50&amp;c=7" alt="wat is een vechtscheiding">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bengisu-demek.html" class="be-post-title">
+				 <h6>bengisu demek </h6>
+                </a>
+                <a href="bengisu-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bengisu%20demek&amp;w=50&amp;h=50&amp;c=7" alt="bengisu demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-minecraft-bedrock-vs-java.html" class="be-post-title">
+				 <h6>que es minecraft bedrock vs java </h6>
+                </a>
+                <a href="que-es-minecraft-bedrock-vs-java.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20minecraft%20bedrock%20vs%20java&amp;w=50&amp;h=50&amp;c=7" alt="que es minecraft bedrock vs java">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="terbiyesiz-ingilizce-ne-demek.html" class="be-post-title">
+				 <h6>terbiyesiz ingilizce ne demek </h6>
+                </a>
+                <a href="terbiyesiz-ingilizce-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=terbiyesiz%20ingilizce%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="terbiyesiz ingilizce ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bank-pembangunan-adalah.html" class="be-post-title">
+				 <h6>bank pembangunan adalah </h6>
+                </a>
+                <a href="bank-pembangunan-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bank%20pembangunan%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="bank pembangunan adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-menopausia-y-sus-sintomas.html" class="be-post-title">
+				 <h6>que es la menopausia y sus sintomas </h6>
+                </a>
+                <a href="que-es-la-menopausia-y-sus-sintomas.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20menopausia%20y%20sus%20sintomas&amp;w=50&amp;h=50&amp;c=7" alt="que es la menopausia y sus sintomas">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        What Does Risk Based Approach Means at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "What Does Risk Based Approach Means",
+  "datePublished": "2022-07-05T16:59:18Z",
+  "image": "https://tse1.mm.bing.net/th?q=what%20does%20risk%20based%20approach%20means",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=what%20does%20risk%20based%20approach%20means&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20does%20risk%20based%20approach%20means" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20does%20risk%20based%20approach%20means" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            What Does Risk Based Approach Means at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">What Does Risk Based Approach Means</h2>
+    <p><strong>What Does Risk Based Approach Means</strong>. There are books written around this subject. In this approach, the flood risk is formed by the probability of a flood and the consequences of a flood (risk = probability x consequences).</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=what%20does%20risk%20based%20approach%20means" alt="PPT Chapter 16 PowerPoint Presentation ID736542" />
+        <br>
+        <figcaption>PPT Chapter 16 PowerPoint Presentation ID736542 from www.slideserve.com</figcaption>
+    </figure>
+        <p>
+        Modify the audit plan to accommodate risks. A risk based approach means companies should identify, assess and understand the money laundering and terrorist financial risk of their customers, this is determined by evaluating each individual customer on their own merit and not using a ruled based approach where all customers are treated the same. By getting to know your customer better.
+    </p>
+    <h3>PPT Chapter 16 PowerPoint Presentation ID736542</h3>
+    <p>The risk assessment of your business activities based on specific criteria; A critical view on the new and old regime. Somashekar bv risk based thinking (rbt) is applied at every element of the qms to enhance the success of the company and its qms operation. It means that you’ll have to find out about prospective and actual clients’ business operations, industries, and characteristics.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="DESTRESS Risk assessment" data-src="https://i2.wp.com/www.destress-h2020.eu/export/sites/destress/.galleries/destress/Riskassessment1.png_2063069299.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.destress-h2020.eu</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">There are books written around this subject. A critical view on the new and old regime. We, then, quantifying that risk and measuring risk aversion to use that analysis as the basis for decisions and prioritizing resources. After ranking risks, auditors can compose an audit plan. The water level, hydraulic load, strength and height of the dike are factors that.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT KYC for Banks &amp; RiskBased Approach PowerPoint Presentation, free" data-src="https://i2.wp.com/image1.slideserve.com/2918492/kyc-for-banks-risk-based-approach-n.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It does not only help audit to use their resources effectively, but it also helps auditee (those that are auditing) not spend a lot of time. Risk means different things to different people. Making sure that what your organisation does is fit for purpose, and not only stays that way, but keeps improving”, explains the chartered quality institute.in other words,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="What does the riskbased approach mean? AllRisk" data-src="https://i2.wp.com/cdn.bullit.digital/kbase/sites/3/20200924094244/AR_Blog-about-the-risk-based-approach-1.0.0.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kbase.ncr-web.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">We, then, quantifying that risk and measuring risk aversion to use that analysis as the basis for decisions and prioritizing resources. Risks based approach helps the auditor to achieve its objective by focusing on those areas that are defined by them as high risks. Senior management set a number of major objectives for their company. The subject of “risk” is.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="RiskBased Approach How to fulfill the ISO 13485 Requirement" data-src="https://i2.wp.com/www.johner-institute.com/fileadmin/bilder/articles/qm/Riskbased_approach.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.johner-institute.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Rba promotes flexibility in the adoption of measures. A rba to aml/cft means that countries, competent authorities and financial institutions, are expected to identify, assess and understand the ml/tf risks to which they are exposed and take aml/cft measures commensurate to those risks in order to mitigate them effectively. The risk or impact to the business should this particular feature.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="What does the riskbased approach mean? AllRisk" data-src="https://i2.wp.com/cdn.bullit.digital/kbase/sites/3/20200924094245/AR_Blog_Signal-and-limit-value.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kbase.ncr-web.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">By getting to know your customer better. Risk means different things to different people. Once your compliance program reduces those highest risks to acceptable levels, you move on to lower risks. Modify the audit plan to accommodate risks. The 14971 targets the risk to patient and user of the medical device which one has to consider throughout the medical device.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT Chapter 16 PowerPoint Presentation ID736542" data-src="https://i2.wp.com/image.slideserve.com/736542/risk-based-approach-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The subject of “risk” is not entirely new in a quality management system. A risk based approach means companies should identify, assess and understand the money laundering and terrorist financial risk of their customers, this is determined by evaluating each individual customer on their own merit and not using a ruled based approach where all customers are treated the same..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt=" Semoegy MedTech" data-src="https://i2.wp.com/semoegy.com/wp-content/uploads/2017/06/Screen-Shot-2017-06-07-at-13.43.42-1024x575.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: semoegy.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Improved transparency and accountability for outcomes. “managing quality means constantly pursuing excellence: Making sure that what your organisation does is fit for purpose, and not only stays that way, but keeps improving”, explains the chartered quality institute.in other words, quality management is an essential element of success and growth, and any good business strategy will utilise one or more of.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Quality Management Systems for advanced therapies, Part 3 a risk based" data-src="https://i2.wp.com/vineti.com/wp-content/uploads/2021/03/Four_critical_risks_for_advanced_therpies-1024x440.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: vineti.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A risk based approach means companies should identify, assess and understand the money laundering and terrorist financial risk of their customers, this is determined by evaluating each individual customer on their own merit and not using a ruled based approach where all customers are treated the same. The risk or impact to the business should this particular feature go wrong.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk Based Approach what does that mean? The Test Guy" data-src="https://i2.wp.com/thetestguy.co.uk/wp-content/uploads/2020/01/Risk.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: thetestguy.co.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">We use a risk register, which is a collection of risk decisions documenting the risk, the impact, and the treatment. Making sure that what your organisation does is fit for purpose, and not only stays that way, but keeps improving”, explains the chartered quality institute.in other words, quality management is an essential element of success and growth, and any good.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Quality Management Systems for advanced therapies, Part 3 a risk based" data-src="https://i2.wp.com/vineti.com/wp-content/uploads/2021/03/Quality_Risk_Management_a_continuous_process.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: vineti.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">This article elaborates on ‘what is risk based approach?’. A risk based approach means companies should identify, assess and understand the money laundering and terrorist financial risk of their customers, this is determined by evaluating each individual customer on their own merit and not using a ruled based approach where all customers are treated the same. Risk means different things.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-data-en-un-celular.html" class="be-post-title">
+				 <h6>que es la data en un celular </h6>
+                </a>
+                <a href="que-es-la-data-en-un-celular.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20data%20en%20un%20celular&amp;w=50&amp;h=50&amp;c=7" alt="que es la data en un celular">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-colágeno.html" class="be-post-title">
+				 <h6>que es un colágeno </h6>
+                </a>
+                <a href="que-es-un-colágeno.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20col%C3%A1geno&amp;w=50&amp;h=50&amp;c=7" alt="que es un colágeno">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-hcl-stands-for.html" class="be-post-title">
+				 <h6>what does hcl stands for </h6>
+                </a>
+                <a href="what-does-hcl-stands-for.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20hcl%20stands%20for&amp;w=50&amp;h=50&amp;c=7" alt="what does hcl stands for">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-sifonar.html" class="be-post-title">
+				 <h6>que es sifonar </h6>
+                </a>
+                <a href="que-es-sifonar.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20sifonar&amp;w=50&amp;h=50&amp;c=7" alt="que es sifonar">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-se-quita-el-dolor-de-espalda-en-el-embarazo.html" class="be-post-title">
+				 <h6>como se quita el dolor de espalda en el embarazo </h6>
+                </a>
+                <a href="como-se-quita-el-dolor-de-espalda-en-el-embarazo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20se%20quita%20el%20dolor%20de%20espalda%20en%20el%20embarazo&amp;w=50&amp;h=50&amp;c=7" alt="como se quita el dolor de espalda en el embarazo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-tipo-de-parpado-tengo.html" class="be-post-title">
+				 <h6>que tipo de parpado tengo </h6>
+                </a>
+                <a href="que-tipo-de-parpado-tengo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20tipo%20de%20parpado%20tengo&amp;w=50&amp;h=50&amp;c=7" alt="que tipo de parpado tengo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="minecraft-education-edition-description.html" class="be-post-title">
+				 <h6>minecraft education edition description </h6>
+                </a>
+                <a href="minecraft-education-edition-description.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=minecraft%20education%20edition%20description&amp;w=50&amp;h=50&amp;c=7" alt="minecraft education edition description">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cual-es-la-diferencia-de-sinfonia-y-sonata.html" class="be-post-title">
+				 <h6>cual es la diferencia de sinfonia y sonata </h6>
+                </a>
+                <a href="cual-es-la-diferencia-de-sinfonia-y-sonata.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cual%20es%20la%20diferencia%20de%20sinfonia%20y%20sonata&amp;w=50&amp;h=50&amp;c=7" alt="cual es la diferencia de sinfonia y sonata">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-cubata-en-españa.html" class="be-post-title">
+				 <h6>que es cubata en españa </h6>
+                </a>
+                <a href="que-es-cubata-en-españa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20cubata%20en%20espa%C3%B1a&amp;w=50&amp;h=50&amp;c=7" alt="que es cubata en españa">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-compra-programatica-de-medios.html" class="be-post-title">
+				 <h6>que es la compra programatica de medios </h6>
+                </a>
+                <a href="que-es-la-compra-programatica-de-medios.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20compra%20programatica%20de%20medios&amp;w=50&amp;h=50&amp;c=7" alt="que es la compra programatica de medios">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

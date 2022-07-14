@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Toksisitas Akut Pada Mencit at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Toksisitas Akut Pada Mencit",
+  "datePublished": "2022-06-06T16:21:53Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20toksisitas%20akut%20pada%20mencit",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20toksisitas%20akut%20pada%20mencit&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20toksisitas%20akut%20pada%20mencit" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20toksisitas%20akut%20pada%20mencit" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Toksisitas Akut Pada Mencit at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Toksisitas Akut Pada Mencit</h2>
+    <p><strong>Uji Toksisitas Akut Pada Mencit</strong>. Pada mencit diberikan perlakuan pemberian ekstrak valerian berupa ekstrak alkohol 70% akar valerian yang telah distandardisasi, dengan dosis bertingkat yaitu 5, 50. Uji toksisitas akut ekstrak etanol daun kayu hitam (diospyros celebica b.) terhadap mencit (mus musculus) skripsi diajukan untuk memenuhi salah satu syarat meraih gelar sarjana farmasi jurusan farmasi pada fakultas kedokteran dan ilmu kesehatan uin alauddin makassar oleh:</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20toksisitas%20akut%20pada%20mencit" alt="(PDF) UJI TOKSISITAS AKUT EKSTRAK AIR HERBA PECUT KUDA (Stachytarpheta" />
+        <br>
+        <figcaption>(PDF) UJI TOKSISITAS AKUT EKSTRAK AIR HERBA PECUT KUDA (Stachytarpheta from www.researchgate.net</figcaption>
+    </figure>
+        <p>
+        I uji toksisitas akut ekstrak etanol daun pletekan Pengujian dilakukan dengan model penyakit dan dibuat pada hewan percobaan. Telah dilakukan penelitian tentang uji toksisitas akut dan ld 50 ekstrak etanol daun kirinyuh (euphatorium odoratum linn) pada mencit (mus musculus.
+    </p>
+    <h3>(PDF) UJI TOKSISITAS AKUT EKSTRAK AIR HERBA PECUT KUDA (Stachytarpheta</h3>
+    <p>Download &amp; view laporan praktikum uji ketoksikan akut as pdf for free. Novi astuti 19133878a halaman judul fakultas farmasi universitas setia budi surakarta 2017. P ada prinsipnya, penelitian uji toksisitas akut bertujuan untuk mengetahui dosis relatif toksisitas akut terhadap produk obat herbal. Pada mencit diberikan perlakuan pemberian ekstrak valerian berupa ekstrak alkohol 70% akar valerian yang telah distandardisasi, dengan dosis bertingkat yaitu 5, 50.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji toksisitas akut infusa biji alpukat Persea americana Mill. pada" data-src="https://i2.wp.com/data03.123dok.com/thumb/tabel-gambaran-histopatologik-mencit-jantan-pemberian-infusa-alpukat-y8g2l02z.NmMtoXtlpHwMupZI6DIl.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: id.123dok.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Metadata show full item record. 2 uji toksisitas akut ekstrak meniran ( phyllanthus niruri linn. Uji toksisitas akut dan ld 50 ekstrak etanol daun kirinyuh (euphatorium odoratum linn) pada mencit (mus musculus) jumain*), syahruni**), farid f.t**) *) jurusan farmasi poltekkes kemenkes makassar **) jurusan farmasi universitas pancasakti makassar abstrak telah dilakukan penelitian tentang uji toksisitas akut dan ld 50 ekstrak.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) UJI TOKSISITAS AKUT EKSTRAK ETANOL SIRIH MERAH (Piper crocatum" data-src="https://i2.wp.com/i1.rgstatic.net/publication/322306917_UJI_TOKSISITAS_AKUT_EKSTRAK_ETANOL_SIRIH_MERAH_Piper_crocatum_Luiz_and_Pav_PADA_MENCIT_SWISS_WEBSTER/links/5a53015da6fdcc7690042376/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Metadata show full item record. Laporan praktikum uji ketoksikan akut [j3noqrzq8y4d]. Uji toksisitas perlu dilakukan pada suatu produk obat yang akan dipasarkan. Meniran ( phyllanthus niruri linn.) merupakan salah satu tumbuhan yang banyak digunakan sebagai obat tradisional karena memiliki efek Pengujian dilakukan dengan model penyakit dan dibuat pada hewan percobaan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) UJI Toksisitas Sub Akut Ekstrak Etanol Biji Melinjo" data-src="https://i2.wp.com/i1.rgstatic.net/publication/325625862_UJI_Toksisitas_Sub_Akut_Ekstrak_Etanol_Biji_Melinjo_Gnetum_gnemon_L_Terhadap_Fungsi_Hati_Dan_Ginjal_Pada_Mencit_Putih_Jantan/links/5b1931edaca272021ceedf2a/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Agustina dwi wijayanti (fakultas kedokteran hewan, ugm); Kematian mencit dihitung setelah 24 jam perlakuan. Penelitian ini merupakan penelitian eksperimental dengan menggunakan 180 ekor mencit jantan yang dibagi menjadi 1 kelompok kontrol dan 5 kelompok Penelitian ini bertujuan untuk mengetahui nilai lethal dosis 50 (ld 50) atau dosis dari ekstrak etanol daun kirinyuh yang dapat membunuh 50% mencit (mus musculus), sehingga.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji toksisitas akut infusa biji alpukat Persea americana Mill. pada" data-src="https://i2.wp.com/data03.123dok.com/thumb/gambar-skema-alur-penelitian-y8g2l02z.mA8Fbli1xs73cDyT1Gs5.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: id.123dok.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">P ada prinsipnya, penelitian uji toksisitas akut bertujuan untuk mengetahui dosis relatif toksisitas akut terhadap produk obat herbal. Untuk mengetahui sifat toksisitas pada ekstrak valerian (valeriana officinalis) terhadap mencit balb/c, dilakukan dengan menggunakan 25 ekor mencit balb/c yang dibagi lima kelompok. Berapa besar dosis diazinon yang dapat menyebabkan kematian 50% Meniran ( phyllanthus niruri linn.) merupakan salah satu tumbuhan yang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji toksisitas akut infusa biji alpukat Persea americana Mill. pada" data-src="https://i2.wp.com/data03.123dok.com/thumb/tabel-perubahan-histopatologik-mencit-jantan-pemberian-infusa-alpukat-y8g2l02z.1ylFkxtWNuO8IMPiM5uE.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: id.123dok.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pada dosis iv semua mencit mengalami kematian sehingga persentase kematian yaitu 100% sehingga urutan kematian pada uji toksisitas akut yaitu 0,0,3,5. Ida fitriana (fakultas kedokteran hewan, ugm); Penelitian ini bertujuan untuk mengetahui nilai lethal dosis 50 (ld 50) atau dosis dari ekstrak etanol daun kirinyuh yang dapat membunuh 50% mencit (mus musculus), sehingga dapat memberikan data dasar keamanan. Berapa besar.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji toksisitas akut infusa biji alpukat Persea americana Mill. pada" data-src="https://i2.wp.com/data03.123dok.com/thumb/tabel-skrining-fitokimia-ekstrak-persea-americana-mill-dengan-y8g2l02z.bQt0wcQ2UoGTWqIMgfD.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: id.123dok.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Penelitian ini bertujuan untuk mengetahui toksisitas akut ekstrak etanol daun salam (eeds) terhadap mencit galur ddy yang dilihat dari kematian mencit, perubahan perilaku, perubahan berat badan, dan. Metadata show full item record. Pengujian dilakukan dengan model penyakit dan dibuat pada hewan percobaan. I uji toksisitas akut ekstrak etanol daun pletekan Pada mencit diberikan perlakuan pemberian ekstrak valerian berupa ekstrak alkohol.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji toksisitas akut infusa biji alpukat Persea americana Mill. pada" data-src="https://i2.wp.com/data03.123dok.com/thumb/tabel-perubahan-histopatologik-mencit-betina-pemberian-infusa-alpukat-y8g2l02z.2R8HDXTz6FAZCg9fRLiQ.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: id.123dok.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Download &amp; view laporan praktikum uji ketoksikan akut as pdf for free. Berapa besar dosis diazinon yang dapat menyebabkan kematian 50% Laporan praktikum uji ketoksikan akut [j3noqrzq8y4d]. Uji toksisitas akut (6) tujuan uji toksisitas akut adalah untuk menetapkan potensi toksisitas akut (ld. Uji toksisitas perlu dilakukan pada suatu produk obat yang akan dipasarkan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="LAPORAN FARMAKO MENCIT" data-src="https://i2.wp.com/imgv2-2-f.scribdassets.com/img/document/140357764/original/ca9f508f8e/1562263566?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Untuk mengetahui sifat toksisitas pada ekstrak valerian (valeriana officinalis) terhadap mencit balb/c, dilakukan dengan menggunakan 25 ekor mencit balb/c yang dibagi lima kelompok. Penelitian ini bertujuan untuk mengetahui nilai toksisitas akut (ld 50 ), tingkat keamanan ekstrak etanol herba benalu mangga, dan gejala klinis yang ditimbulkannya. Puspa wikan sari (fakultas kedokteran hewan, ugm); Pengujian dilakukan dengan model penyakit dan dibuat.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji toksisitas akut infusa biji alpukat Persea americana Mill. pada" data-src="https://i2.wp.com/data03.123dok.com/thumb/tabel-jumlah-mencit-yang-respon-setelah-pemberian-infusa-y8g2l02z.e2PhPZTLzUOlHvPu7jHQ.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: id.123dok.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sediaan uji dinyatakan memenuhi syarat, jika tidak seekor mencit pun mati dalam waktu 24 jam [7,8]. P ada prinsipnya, penelitian uji toksisitas akut bertujuan untuk mengetahui dosis relatif toksisitas akut terhadap produk obat herbal. Pengujian dilakukan dengan model penyakit dan dibuat pada hewan percobaan. Ida fitriana (fakultas kedokteran hewan, ugm); Uji toksisitas akut ekstrak etanol daun pletekan (ruellia tuberosa l.).</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) UJI TOKSISITAS AKUT EKSTRAK AIR HERBA PECUT KUDA (Stachytarpheta" data-src="https://i2.wp.com/i1.rgstatic.net/publication/320314074_UJI_TOKSISITAS_AKUT_EKSTRAK_AIR_HERBA_PECUT_KUDA_Stachytarpheta_jamaicensis_L_VAHL_PADA_MENCIT_SWISS_WEBSTER/links/59e3e658aca2724cbfe3b76b/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji toksisitas perlu dilakukan pada suatu produk obat yang akan dipasarkan. Puspa wikan sari (fakultas kedokteran hewan, ugm); Uji toksisitas akut ekstrak etanol daun kayu hitam (diospyros celebica b.) terhadap mencit (mus musculus) skripsi diajukan untuk memenuhi salah satu syarat meraih gelar sarjana farmasi jurusan farmasi pada fakultas kedokteran dan ilmu kesehatan uin alauddin makassar oleh: Uji toksisitas akut yang.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-se-coloca-un-sifon-de-cocina.html" class="be-post-title">
+				 <h6>como se coloca un sifon de cocina </h6>
+                </a>
+                <a href="como-se-coloca-un-sifon-de-cocina.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20se%20coloca%20un%20sifon%20de%20cocina&amp;w=50&amp;h=50&amp;c=7" alt="como se coloca un sifon de cocina">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="apa-yang-dimaksud-dengan-kualitatif.html" class="be-post-title">
+				 <h6>apa yang dimaksud dengan kualitatif </h6>
+                </a>
+                <a href="apa-yang-dimaksud-dengan-kualitatif.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=apa%20yang%20dimaksud%20dengan%20kualitatif&amp;w=50&amp;h=50&amp;c=7" alt="apa yang dimaksud dengan kualitatif">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-belasting.html" class="be-post-title">
+				 <h6>wat is belasting </h6>
+                </a>
+                <a href="wat-is-belasting.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20belasting&amp;w=50&amp;h=50&amp;c=7" alt="wat is belasting">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-escuadra-de-teja.html" class="be-post-title">
+				 <h6>que es una escuadra de teja </h6>
+                </a>
+                <a href="que-es-una-escuadra-de-teja.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20escuadra%20de%20teja&amp;w=50&amp;h=50&amp;c=7" alt="que es una escuadra de teja">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-voorzetselvoorwerp-voorbeeld.html" class="be-post-title">
+				 <h6>wat is een voorzetselvoorwerp voorbeeld </h6>
+                </a>
+                <a href="wat-is-een-voorzetselvoorwerp-voorbeeld.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20voorzetselvoorwerp%20voorbeeld&amp;w=50&amp;h=50&amp;c=7" alt="wat is een voorzetselvoorwerp voorbeeld">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-monnik.html" class="be-post-title">
+				 <h6>wat is een monnik </h6>
+                </a>
+                <a href="wat-is-een-monnik.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20monnik&amp;w=50&amp;h=50&amp;c=7" alt="wat is een monnik">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="deslizamiento-de-tierra-para-niños.html" class="be-post-title">
+				 <h6>deslizamiento de tierra para niños </h6>
+                </a>
+                <a href="deslizamiento-de-tierra-para-niños.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=deslizamiento%20de%20tierra%20para%20ni%C3%B1os&amp;w=50&amp;h=50&amp;c=7" alt="deslizamiento de tierra para niños">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-bisnummer.html" class="be-post-title">
+				 <h6>wat is een bisnummer </h6>
+                </a>
+                <a href="wat-is-een-bisnummer.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20bisnummer&amp;w=50&amp;h=50&amp;c=7" alt="wat is een bisnummer">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-hacer-un-bosquejo-en-word.html" class="be-post-title">
+				 <h6>como hacer un bosquejo en word </h6>
+                </a>
+                <a href="como-hacer-un-bosquejo-en-word.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20hacer%20un%20bosquejo%20en%20word&amp;w=50&amp;h=50&amp;c=7" alt="como hacer un bosquejo en word">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cuales-son-los-tipos-de-ecosistemas-terrestres-y-acuaticos.html" class="be-post-title">
+				 <h6>cuales son los tipos de ecosistemas terrestres y acuaticos </h6>
+                </a>
+                <a href="cuales-son-los-tipos-de-ecosistemas-terrestres-y-acuaticos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cuales%20son%20los%20tipos%20de%20ecosistemas%20terrestres%20y%20acuaticos&amp;w=50&amp;h=50&amp;c=7" alt="cuales son los tipos de ecosistemas terrestres y acuaticos">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

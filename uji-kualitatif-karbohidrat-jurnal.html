@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Kualitatif Karbohidrat Jurnal at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Kualitatif Karbohidrat Jurnal",
+  "datePublished": "2022-05-21T17:58:09Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20kualitatif%20karbohidrat%20jurnal",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20kualitatif%20karbohidrat%20jurnal&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20kualitatif%20karbohidrat%20jurnal" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20kualitatif%20karbohidrat%20jurnal" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Kualitatif Karbohidrat Jurnal at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Kualitatif Karbohidrat Jurnal</h2>
+    <p><strong>Uji Kualitatif Karbohidrat Jurnal</strong>. Program studi pendidikan teknologi agroindustri fakultas pendidikan teknologi dan kejuruan universitas pendidikan. Uji benedict untuk gula pereduksi, kegiatan 3:</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20kualitatif%20karbohidrat%20jurnal" alt="JURNAL UJI MOLISCH KARBOHIDRAT PDF" />
+        <br>
+        <figcaption>JURNAL UJI MOLISCH KARBOHIDRAT PDF from hierleben.net</figcaption>
+    </figure>
+        <p>
+        Kualitatif kadar pati yang terkandung dalam tiap larutan pati. Terdapat 3 percobaan yang dilakukan pada praktikum uji karbohidrat ini yaitu : This document was uploaded by user and they confirmed that they have the permission to share it.
+    </p>
+    <h3>JURNAL UJI MOLISCH KARBOHIDRAT PDF</h3>
+    <p>15 tetes larutan uji dimasukkan ke dalam tabung reaksi. Uji molisch adalah uji kimia kualitatif untuk mengetahui adanya karbohidrat. Morfologi usus ayam broiler yang disuplementasi dengan probiotik strain tunggal dan campuran. Lembar kerja berbasis inkuiri terbimbing pada praktikum uji karbohidrat disajikan dalam gambar 1.1.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="JURNAL UJI MOLISCH KARBOHIDRAT PDF" data-src="https://i2.wp.com/2.bp.blogspot.com/-7VsPRByurdE/WYFOAFfmZVI/AAAAAAAAAqw/6lIWQ-n2Bz0j_pVH3xxYMSlLkqxoh8UpwCK4BGAYYCw/s1600/fgdh.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: gomac.me</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Analisis dilakukan menggunakan uji fehling, moore, hidrolisa, dan iod. To uui more books about jurnal uji molisch karbohidrat, you. Read online uji kandungan karbohidrat protein dan lemak lemak 0.66 g, dan air 11.62 g. Morfologi usus ayam broiler yang disuplementasi dengan probiotik strain tunggal dan campuran. Oligo / polisakarida → monosakarida (pati) asam atau enzim (glukosa) penentuan monosakarida:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jurnal Uji Kualitatif Karbohidrat PDF" data-src="https://i2.wp.com/imgv2-1-f.scribdassets.com/img/document/349623252/original/e38ab6d1f3/1629363904?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Nco2+ nh2o (ch2o)n + no2. Uji kualitatif karbohidrat (uji barfoed dan uji selliwanof) asri oktavianti rahayu (1305365)1, siti karlina (1307576)2 1,2) jurusan/prodi pendidikan teknologi agroindustri, fakultas pendidikan teknologi dan kejuruan, universitas pendidikan indonesia abstrack carbohydrates are chemical compounds commonly found in foods and the. Metode metode yang digunakan adalah pendekatan rancangan pembelajaran melalui tes kualitatif hasil siswa akan melakukan kegiatan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jurnal Analisis Karbohidrat Kualitatif" data-src="https://i2.wp.com/imgv2-1-f.scribdassets.com/img/document/315889772/original/400e1b1659/1592021290?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: id.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Penelitian ini menghasilkan bahwa berdasarkan hasil uji fehling dan moore, glukosa dan sukrosa merupakan gula sederhana. Uji karbohidrat secara kuantitatif penentuan karbohidrat dari kelompok polisarida dan oligisakarida, perlu perlakuan pendahuluan , yaitu hidrolisa sehingga diperoleh monosakarida. Lembar kerja berbasis inkuiri terbimbing pada praktikum uji karbohidrat disajikan dalam gambar 1.1. Karbohidrat memegang peranan penting dalam alam karena merupakan sumber energi utama.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Kualitatif Lipid Belajar" data-src="https://i2.wp.com/image.slidesharecdn.com/jurnalkarbohidratagussulistiyono412013016-141009053802-conversion-gate02/95/jurnal-karbohidrat-7-638.jpg?cb=1412833131" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: detiks.github.io</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji fehling uji fehling digunakan untuk menunjukkan sifat khusus karbohidrat dengan adanya karbohidrat pereduksi. This document was uploaded by user and they confirmed that they have the permission to share it. Dapat mengenal beberapa karbohidrat yang lazim dan sifat fisisnya. Uji kualitatif yang kedua yaitu uji molisch yang merupakan uji umum untuk mengidentifikasi adanya karbohidrat secara kualitatif. Nco2+ nh2o (ch2o)n.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jurnal Uji Karbohidrat Pdf Juragan Soal" data-src="https://i2.wp.com/0.academia-photos.com/attachment_thumbnails/35288649/mini_magick20180817-22185-1kx2bl2.png?1534534920" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: juragansoalpdf.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Lembar kerja berbasis inkuiri terbimbing pada praktikum uji karbohidrat disajikan dalam gambar 1.1. Menentukan ide pokok dari wacana uji karbohidrat 2. Analisis dilakukan menggunakan uji fehling, moore, hidrolisa, dan iod. Dapat mempelajari perbedaan penting sifat fisis dan kimia dan kimia dari monosakirida, disakarida, dan polisakarida. Kualitatif kadar pati yang terkandung dalam tiap larutan pati.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="JURNAL UJI MOLISCH KARBOHIDRAT PDF" data-src="https://i2.wp.com/image.slidesharecdn.com/karbohidrati-130403200604-phpapp01/95/karbohidrat-i-2-638.jpg?cb\u003d1365019625" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: hierleben.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dapat mengenal beberapa karbohidrat yang lazim dan sifat fisisnya. Di samping itu dihasilkan oksigen (o2) yang lepas di udara (almatsier, 2010). Analisis dilakukan menggunakan uji fehling, moore, hidrolisa, dan iod. Download jurnal uji kualitatif karbohidrat. If you are author or own the copyright of this book, please report to us by using this dmca report form.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jurnal Uji Karbohidrat Pdf Juragan Soal" data-src="https://i2.wp.com/i1.rgstatic.net/publication/337888216_ISOLASI_DAN_IDENTIFIKASI_KARBOHIDRAT/links/5df09793a6fdcc2837178685/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: juragansoalpdf.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji benedict untuk gula pereduksi, kegiatan 3: Uji kualitatif uji fehling, uji seliwanof, uji barfoed penggunaan pada pembelajaran dalam bentuk lembar kerja dengan tahapan inkuiri terbimbing mengidentifikasi masalah 1. Nah, kali ini akan dibahas beberapa uji yang teramsuk ke dalam analisis kualitatif pada karbohidrat. Read online uji kandungan karbohidrat protein dan lemak lemak 0.66 g, dan air 11.62 g. Journal.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jurnal Uji Kualitatif Karbohidrat 2021 E Jurnal" data-src="https://i2.wp.com/www.stikesmi.ac.id/medias/materi/PENGUMUMAN HASIL KELULUSAN UJI TULIS GELOMBANG I 2020_page-0003.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ejurnal.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji karbohidrat secara kuantitatif penentuan karbohidrat dari kelompok polisarida dan oligisakarida, perlu perlakuan pendahuluan , yaitu hidrolisa sehingga diperoleh monosakarida. Sampel yang kami gunakan ada 7 yaitu : Uji molisch untuk karbohidrat, kegiatan 2: 15 tetes larutan uji dimasukkan ke dalam tabung reaksi. Menentukan ide pokok dari wacana uji karbohidrat 2.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jurnal Biokimia Karbohidrat Pdf lasopahalo" data-src="https://i2.wp.com/lasopahalo297.weebly.com/uploads/1/2/6/5/126513525/981738285.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lasopahalo297.weebly.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dapat mengenal beberapa karbohidrat yang lazim dan sifat fisisnya. Nah, kali ini akan dibahas beberapa uji yang teramsuk ke dalam analisis kualitatif pada karbohidrat. Di samping itu dihasilkan oksigen (o2) yang lepas di udara (almatsier, 2010). Kol merupakan sayuran yang memiliki kandungan karbohidrat yang sedikit yaitu hanya sekitar 5,3 gram (fardiaz,2009). Nco2+ nh2o (ch2o)n + no2.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jurnal Internasional Uji Karbohidrat Soal Update" data-src="https://i2.wp.com/i1.rgstatic.net/publication/331126765_Uji_Kualitas_Kimia_Dan_Organoleptik_Pada_Nugget_Ayam_Hasil_Substitusi_Ampas_Tahu/links/5c66c86ba6fdcc404eb4387a/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: soalupdatepdf.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">If you are author or own the copyright of this book, please report to us by using this dmca report form. Karbohidrat memegang peranan penting dalam alam karena merupakan sumber energi utama bagi umat manusia dan hewan yang harganya relatif murah. Morfologi usus ayam broiler yang disuplementasi dengan probiotik strain tunggal dan campuran. Menentukan ide pokok dari wacana uji karbohidrat.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-do-i-email-the-financial-ombudsman.html" class="be-post-title">
+				 <h6>how do i email the financial ombudsman </h6>
+                </a>
+                <a href="how-do-i-email-the-financial-ombudsman.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20email%20the%20financial%20ombudsman&amp;w=50&amp;h=50&amp;c=7" alt="how do i email the financial ombudsman">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-netnummer-023.html" class="be-post-title">
+				 <h6>wat is netnummer 023 </h6>
+                </a>
+                <a href="wat-is-netnummer-023.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20netnummer%20023&amp;w=50&amp;h=50&amp;c=7" alt="wat is netnummer 023">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-voorzetselvoorwerp.html" class="be-post-title">
+				 <h6>wat is een voorzetselvoorwerp </h6>
+                </a>
+                <a href="wat-is-een-voorzetselvoorwerp.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20voorzetselvoorwerp&amp;w=50&amp;h=50&amp;c=7" alt="wat is een voorzetselvoorwerp">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-texto-lirico.html" class="be-post-title">
+				 <h6>que es el texto lirico </h6>
+                </a>
+                <a href="que-es-el-texto-lirico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20texto%20lirico&amp;w=50&amp;h=50&amp;c=7" alt="que es el texto lirico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-bedrijfskundige.html" class="be-post-title">
+				 <h6>wat is een bedrijfskundige </h6>
+                </a>
+                <a href="wat-is-een-bedrijfskundige.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20bedrijfskundige&amp;w=50&amp;h=50&amp;c=7" alt="wat is een bedrijfskundige">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="een-ander-woord-voor-ontwikkelingsland.html" class="be-post-title">
+				 <h6>een ander woord voor ontwikkelingsland </h6>
+                </a>
+                <a href="een-ander-woord-voor-ontwikkelingsland.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=een%20ander%20woord%20voor%20ontwikkelingsland&amp;w=50&amp;h=50&amp;c=7" alt="een ander woord voor ontwikkelingsland">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="significado-de-conviccion-diccionario-biblico.html" class="be-post-title">
+				 <h6>significado de conviccion diccionario biblico </h6>
+                </a>
+                <a href="significado-de-conviccion-diccionario-biblico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=significado%20de%20conviccion%20diccionario%20biblico&amp;w=50&amp;h=50&amp;c=7" alt="significado de conviccion diccionario biblico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-fiche.html" class="be-post-title">
+				 <h6>what is a fiche </h6>
+                </a>
+                <a href="what-is-a-fiche.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20fiche&amp;w=50&amp;h=50&amp;c=7" alt="what is a fiche">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-zeepvrij.html" class="be-post-title">
+				 <h6>wat is zeepvrij </h6>
+                </a>
+                <a href="wat-is-zeepvrij.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20zeepvrij&amp;w=50&amp;h=50&amp;c=7" alt="wat is zeepvrij">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-contrato-de-seguro.html" class="be-post-title">
+				 <h6>que es un contrato de seguro </h6>
+                </a>
+                <a href="que-es-un-contrato-de-seguro.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20contrato%20de%20seguro&amp;w=50&amp;h=50&amp;c=7" alt="que es un contrato de seguro">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

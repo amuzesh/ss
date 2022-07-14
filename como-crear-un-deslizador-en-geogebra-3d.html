@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Como Crear Un Deslizador En Geogebra 3D at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Como Crear Un Deslizador En Geogebra 3D",
+  "datePublished": "2022-04-23T13:13:55Z",
+  "image": "https://tse1.mm.bing.net/th?q=como%20crear%20un%20deslizador%20en%20geogebra%203d",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=como%20crear%20un%20deslizador%20en%20geogebra%203d&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=como%20crear%20un%20deslizador%20en%20geogebra%203d" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=como%20crear%20un%20deslizador%20en%20geogebra%203d" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Como Crear Un Deslizador En Geogebra 3D at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Como Crear Un Deslizador En Geogebra 3D</h2>
+    <p><strong>Como Crear Un Deslizador En Geogebra 3D</strong>. Caracterizar los triángulos, considerando la medida de sus lados y ángulos internos. Si te vuelve a ocurrir, por favor haz una captura de pantalla (con la tecla imprimir pantalla del teclado si estás en.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=como%20crear%20un%20deslizador%20en%20geogebra%203d" alt="Cómo hacer un Dodecaedro en GEOGEBRA (Graficadora 3D) YouTube" />
+        <br>
+        <figcaption>Cómo hacer un Dodecaedro en GEOGEBRA (Graficadora 3D) YouTube from www.youtube.com</figcaption>
+    </figure>
+        <p>
+        Breve tutorial que explica como incorporar un deslizador en dos ejemplos concretos. Material elaborado por juan pablo serrano echeverría, costa rica. Xurxorodrigueztebra xurxorodrigueztebra hace 2 semanas matemáticas.
+    </p>
+    <h3>Cómo hacer un Dodecaedro en GEOGEBRA (Graficadora 3D) YouTube</h3>
+    <p>Características de los triángulos (base, altura, lado, ángulos internos y vértices) y. Scribd es red social de lectura y publicación más importante del mundo. Tengo el material en geogebra tal cual lo quiero, pero al momento de intentar convertirlo en gif, la conversión se queda trabada y no. Caracterizar los triángulos, considerando la medida de sus lados y ángulos internos.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¡TUTORIAL! Cubo en GeoGebra 3D YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/lREozhsSxN4/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Número , ángulo o entero , cada deslizador, tendrá un nombre; Abrir el menú de navegación. Seleccionamos esta herramienta, al pulsar en la vista gráfica, aparecerá el cuadro de diálogo siguiente: Uso de deslizadores iv año. Características de los triángulos (base, altura, lado, ángulos internos y vértices) y.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Solidos en Revolucion en Geogebra 3D YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/3QWHbCm-lDw/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Material elaborado por juan pablo serrano echeverría, costa rica. Representar una función en r2 (o r3) como una función vectorial, el proceso es el siguiente. Codigo de ejemplo int posdes01; Pero tengo problemas al crear una tabla de valores con el rango en grados, pues lo escribo en grados pero. Quiero obtener un gif animado con el movimiento de una.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="GeoGebra La mejor manera de aprender matemáticas Todos hacemos TIC" data-src="https://i2.wp.com/diocesanos.es/blogs/equipotic/wp-content/uploads/sites/2/2015/08/geogebra.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: diocesanos.es</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tengo el material en geogebra tal cual lo quiero, pero al momento de intentar convertirlo en gif, la conversión se queda trabada y no. Caracterizar los triángulos, considerando la medida de sus lados y ángulos internos. Lo hacemos con la herramienta deslizador que se encuentra en el bloque de herramientas que hemos denominado control. Void setup() { size(400, 100); Scribd.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Cómo hacer un pentágono regular en Geogebra? YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/veX7_bzgwvg/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Lo hacemos con la herramienta deslizador que se encuentra en el bloque de herramientas que hemos denominado control. Uso de deslizadores iv año. Uso de deslizadores en geogebra. Por ejemplo, si pusiste x o y con mayúsculas, ya no los reconoce como las variables x e y cartesianas y por eso te propuso crear el deslizador ¿por qué no pruebas.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cómo hacer un Dodecaedro en GEOGEBRA (Graficadora 3D) YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/P0mXwhdbQDU/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Quiero obtener un gif animado con el movimiento de una partícula en una trayectoria parabólica y otra partícula en una trayectoria circular, simulando el movimiento de la tierra y el de un satélite. Número , ángulo o entero , cada deslizador, tendrá un nombre; Material elaborado por juan pablo serrano echeverría, costa rica. Void setup() { size(400, 100); Hay varios.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="como hacer una casa en 3d en geogebra 2017 23 YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/ezas0UGMaSk/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Lo veremos con un ejemplo muy sencillo en la ventana gráfica 2d. Vamos a construir un cuadrado de lado variable. Características de los triángulos (base, altura, lado, ángulos internos y vértices) y. Uso de deslizadores en geogebra. Seleccionamos esta herramienta, al pulsar en la vista gráfica, aparecerá el cuadro de diálogo siguiente:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Cómo construir un cubo en Geogebra 3D? YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/0UzFi0hS9P0/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Si te vuelve a ocurrir, por favor haz una captura de pantalla (con la tecla imprimir pantalla del teclado si estás en. Hay varios tipos de deslizadores: Una vez en se haya ingresado a geogebra, para poder graficar campos direccionales se ingresa a la ventana. Número , ángulo o entero , cada deslizador, tendrá un nombre; Representar una función en.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="COMO HACER UN DODECAEDRO EN GEOGEBRA ( FÁCIL Y RÁPIDO ) YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/1DmujFq6lew/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Abrir el menú de navegación. Al darle enter geogebra te preguntará si deseas crear, en este caso, dos deslizadores, a y b. Vamos a construir un cuadrado de lado variable. Por ejemplo, si pusiste x o y con mayúsculas, ya no los reconoce como las variables x e y cartesianas y por eso te propuso crear el deslizador ¿por qué.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Plantilla para construir poliedros regulares GeoGebra" data-src="https://i2.wp.com/cdn.geogebra.org/material/0O221A1leHhQAlXbbhISUkhAvv4CcfYb/material-AQD5ZF3U.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.geogebra.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uso de deslizadores en geogebra. Lo veremos con un ejemplo muy sencillo en la ventana gráfica 2d. Representar una función en r2 (o r3) como una función vectorial, el proceso es el siguiente. Con la funcion map() podemos adaptar el boton deslizante a un rango deseado, por ejemplo de 0 a 180 para simular la inclinacion de un objeto o.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="19 Curso GeoGebra 3D Elipsoide YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/gCiJJen5F2A/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Vamos a construir un cuadrado de lado variable. Quiero obtener un gif animado con el movimiento de una partícula en una trayectoria parabólica y otra partícula en una trayectoria circular, simulando el movimiento de la tierra y el de un satélite. Es change language cambiar idioma. Si te vuelve a ocurrir, por favor haz una captura de pantalla (con la.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-zanfona-instrumento-musical.html" class="be-post-title">
+				 <h6>que es una zanfona instrumento musical </h6>
+                </a>
+                <a href="que-es-una-zanfona-instrumento-musical.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20zanfona%20instrumento%20musical&amp;w=50&amp;h=50&amp;c=7" alt="que es una zanfona instrumento musical">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-fubtracking.html" class="be-post-title">
+				 <h6>what is fubtracking </h6>
+                </a>
+                <a href="what-is-fubtracking.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20fubtracking&amp;w=50&amp;h=50&amp;c=7" alt="what is fubtracking">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-hidrato-de-metano.html" class="be-post-title">
+				 <h6>que es hidrato de metano </h6>
+                </a>
+                <a href="que-es-hidrato-de-metano.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20hidrato%20de%20metano&amp;w=50&amp;h=50&amp;c=7" alt="que es hidrato de metano">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-s-n-m-en-fisica.html" class="be-post-title">
+				 <h6>que es s.n.m. en fisica </h6>
+                </a>
+                <a href="que-es-s-n-m-en-fisica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20s.n.m.%20en%20fisica&amp;w=50&amp;h=50&amp;c=7" alt="que es s.n.m. en fisica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-parca.html" class="be-post-title">
+				 <h6>que es una parca </h6>
+                </a>
+                <a href="que-es-una-parca.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20parca&amp;w=50&amp;h=50&amp;c=7" alt="que es una parca">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-se-dice-música-en-inglés-traductor.html" class="be-post-title">
+				 <h6>como se dice música en inglés traductor </h6>
+                </a>
+                <a href="como-se-dice-música-en-inglés-traductor.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20se%20dice%20m%C3%BAsica%20en%20ingl%C3%A9s%20traductor&amp;w=50&amp;h=50&amp;c=7" alt="como se dice música en inglés traductor">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-precios-regula-el-estado-peruano.html" class="be-post-title">
+				 <h6>que precios regula el estado peruano </h6>
+                </a>
+                <a href="que-precios-regula-el-estado-peruano.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20precios%20regula%20el%20estado%20peruano&amp;w=50&amp;h=50&amp;c=7" alt="que precios regula el estado peruano">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-transgénero-definicion.html" class="be-post-title">
+				 <h6>que es transgénero definicion </h6>
+                </a>
+                <a href="que-es-transgénero-definicion.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20transg%C3%A9nero%20definicion&amp;w=50&amp;h=50&amp;c=7" alt="que es transgénero definicion">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-ecuador-megadiverso-y-pluricultural.html" class="be-post-title">
+				 <h6>que es el ecuador megadiverso y pluricultural </h6>
+                </a>
+                <a href="que-es-el-ecuador-megadiverso-y-pluricultural.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20ecuador%20megadiverso%20y%20pluricultural&amp;w=50&amp;h=50&amp;c=7" alt="que es el ecuador megadiverso y pluricultural">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-rising-sign-for-virgo.html" class="be-post-title">
+				 <h6>what is the rising sign for virgo </h6>
+                </a>
+                <a href="what-is-the-rising-sign-for-virgo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20rising%20sign%20for%20virgo&amp;w=50&amp;h=50&amp;c=7" alt="what is the rising sign for virgo">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

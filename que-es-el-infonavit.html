@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Que Es El Infonavit at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Que Es El Infonavit",
+  "datePublished": "2022-05-03T03:17:23Z",
+  "image": "https://tse1.mm.bing.net/th?q=que%20es%20el%20infonavit",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=que%20es%20el%20infonavit&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20es%20el%20infonavit" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20es%20el%20infonavit" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Que Es El Infonavit at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Que Es El Infonavit</h2>
+    <p><strong>Que Es El Infonavit</strong>. Además de los créditos, el instituto también se encarga de administrar la subcuenta de vivienda. Este engaño, además de generarte dolores de cabeza, puede hacerte perder dinero, la oportunidad de hacer ese viaje soñado en familia e incluso podrías ser víctima de usurpación de identidad.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=que%20es%20el%20infonavit" alt="¿Qué es el Infonavit y cuáles son sus funciones?" />
+        <br>
+        <figcaption>¿Qué es el Infonavit y cuáles son sus funciones? from www.oinkoink.com.mx</figcaption>
+    </figure>
+        <p>
+        Como este es un proceso que forma parte de la ley y está vigente desde la primera vez que empiezas a trabajar, sin importar si estás o no buscando comprar tu casa aún, el beneficio primordial es que ya estás ahorrando para tu casa; Dudas sobre el programa en cdmx: Estas aportaciones se hacen cada dos meses y suman el 5 por ciento de tu salario integrado;
+    </p>
+    <h3>¿Qué es el Infonavit y cuáles son sus funciones?</h3>
+    <p>Como resultado obtendrás el valor infonavit 2022. Este organismo cuenta con recursos financieros propios, para cumplir su misión de facilitar el acceso a vivienda para los trabajadores mediante. El fondo de protección de pagos del infonavit es un seguro que cubre tanto al instituto como al trabajador en caso de impago por desempleo. La nueva notificación de descuento del instituto del fondo nacional de la vivienda para los trabajadores ( infonavit ), estará disponible para aquellos trabajadores que estén tramitando un crédito para comprar una casa, o bien, para remodelar su vivienda.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Infonavit Servicios que ofrece" data-src="https://i1.wp.com/i.ibb.co/93X1Zjj/infonavit1.png?w=640&amp;ssl=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ppsotoasesor.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">El instituto de la vivienda para los trabajadores (infonavit) se fundó en 1972 con el objetivo de cumplir con el derecho a la vivienda de los trabajadores.este cuenta con 3 tipos de participación: El monto de este aporte se determina tomando como base el salario de cotización del trabajador, esto es un 5% de esta cantidad y se deposita en.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Infonavit tiene nuevo sistema de puntaje para obtener un crédito El" data-src="https://i2.wp.com/elmanana.com.mx/u/fotografias/fotosnoticias/2021/5/16/51631.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: elmanana.com.mx</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En el cofinavit es el instituto quien te prestará la menos cantidad del crédito, siendo el banco que elijas quien se encargara de otorgar la mayoría. El infonavit es un organismo de servicio social, creado en 1972, por el presidente luis echeverría álvarez. El instituto del fondo nacional de la vivienda para los trabajadores (infonavit) es un organismo público tripartito.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="INFONAVIT 🥇 3 sencillos pasos para checar tu puntaje + Cita" data-src="https://i2.wp.com/gob-mx.mx/wp-content/uploads/2020/09/infonavit.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: gob-mx.mx</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Resulta que me quede saque mi casa con infonavit en el 2004 y yo trabajaba en el 2007 me quede desemp ¿cómo salir de deudas? En 1972 se funda el instituto del fondo nacional de la vivienda para los trabajadores (infonavit), y el 21 de abril de ese mismo año se promulga la ley del infonavit. El instituto de la.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¡Van! Así es como te podrás &quot;librar&quot; de hasta el 55 de tu crédito de" data-src="https://i1.wp.com/www.sopitas.com/wp-content/uploads/2019/02/infonavit-requisitos-creditos-amlo.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.sopitas.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dudas sobre el programa en cdmx: Es decir, el sueldo más las. Hola es mi primera vez por aqui y estoy algo desesperada. ¿qué es y para qué sirve el infonavit? El instituto del fondo nacional de la vivienda para los trabajadores (infonavit) es un organismo público tripartito de méxico, que cuenta con la participación del sector de los trabajadores,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jornada Universitaria Infonavit en Universidad Internacional" data-src="https://i2.wp.com/blogs.uninter.edu.mx/ENDECS/wp-content/uploads/2019/09/Infonavit-2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blogs.uninter.edu.mx</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tener un mínimo de 116 puntos (es importante que primero hagas tu precalificación de crédito infonavit para confirmar que reúnas los puntos mínimos) ejecutar una planificación presupuestaria familiar de gastos y egresos. En latinoamérica especialmente, el poseer una vivienda propia se ha convertido en una necesidad que debe ser cubierta por. Imagina a un chico de solo 18 años que.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Conoce qué es y cuál es el objetivo del Infonavit BLOG" data-src="https://i2.wp.com/blogsoftwaresicoss.com.mx/wp-content/uploads/2019/05/infonavit.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blogsoftwaresicoss.com.mx</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Existen tres modalidades para el cálculo de las amortizaciones: Su nombre significa instituto del fondo nacional de la vivienda para los trabajadores. El instituto del fondo nacional de vivienda para los trabajadores, o mejor conocido como infonavit, es una institución perteneciente a la secretaría de hacienda y crédito público, y que fue fundada ya hace más de 40 años, el.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Cómo se compone mi cuenta INFONAVIT? Expertos en Casas" data-src="https://i2.wp.com/casasenventadurango.com/wp-content/uploads/2020/01/mi-cuenta-infonavit-2.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: casasenventadurango.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hola es mi primera vez por aqui y estoy algo desesperada. El infonavit es un organismo de servicio social, creado en 1972, por el presidente luis echeverría álvarez. Este engaño, además de generarte dolores de cabeza, puede hacerte perder dinero, la oportunidad de hacer ese viaje soñado en familia e incluso podrías ser víctima de usurpación de identidad. En el.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Qué es el Infonavit y cuáles son sus funciones?" data-src="https://i2.wp.com/www.oinkoink.com.mx/wp-content/uploads/2021/06/que-es-el-infonavit.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.oinkoink.com.mx</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hola es mi primera vez por aqui y estoy algo desesperada. Este engaño, además de generarte dolores de cabeza, puede hacerte perder dinero, la oportunidad de hacer ese viaje soñado en familia e incluso podrías ser víctima de usurpación de identidad. Además de los créditos, el instituto también se encarga de administrar la subcuenta de vivienda. Los principales requisitos para.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cuánto Crédito tengo en Infonavit Casas Para Disfrutar Vidusa" data-src="https://i2.wp.com/www.vidusa.com/blog/wp-content/uploads/2017/09/infografia-credito-infonavit-tradicional.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.vidusa.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Debes saber que, desde que comienzas tu vida laboral tienes una cuenta individual, la cual se subdivide en 4 subcuentas que forman parte del sistema de ahorro para el retiro (sar), y una de ellas es la subcuenta de vivienda en la que se guardan las aportaciones del 5% de tu salario base de cotización que hace tu patrón al.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Sabes qué es y para qué sirve tu ahorro Infonavit?Notaría Pública 188" data-src="https://i2.wp.com/notaria188.com.mx/wp-content/uploads/2015/05/Infonavit.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: notaria188.com.mx</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La nueva notificación de descuento del instituto del fondo nacional de la vivienda para los trabajadores ( infonavit ), estará disponible para aquellos trabajadores que estén tramitando un crédito para comprar una casa, o bien, para remodelar su vivienda. Cuenta con tres diferentes tipos de participación: El instituto de la vivienda para los trabajadores (infonavit) surgió el 21 de abril.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cómo-se-escribe-escuchar-música-en-inglés.html" class="be-post-title">
+				 <h6>cómo se escribe escuchar música en inglés </h6>
+                </a>
+                <a href="cómo-se-escribe-escuchar-música-en-inglés.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=c%C3%B3mo%20se%20escribe%20escuchar%20m%C3%BAsica%20en%20ingl%C3%A9s&amp;w=50&amp;h=50&amp;c=7" alt="cómo se escribe escuchar música en inglés">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-un-pais-megadiverso.html" class="be-post-title">
+				 <h6>que significa un pais megadiverso </h6>
+                </a>
+                <a href="que-significa-un-pais-megadiverso.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20un%20pais%20megadiverso&amp;w=50&amp;h=50&amp;c=7" alt="que significa un pais megadiverso">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="polip-rekti-adalah.html" class="be-post-title">
+				 <h6>polip rekti adalah </h6>
+                </a>
+                <a href="polip-rekti-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=polip%20rekti%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="polip rekti adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-d-o-s-e-stand-for.html" class="be-post-title">
+				 <h6>what does d.o.s.e stand for </h6>
+                </a>
+                <a href="what-does-d-o-s-e-stand-for.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20d.o.s.e%20stand%20for&amp;w=50&amp;h=50&amp;c=7" alt="what does d.o.s.e stand for">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-fries-stand-for-in-consent.html" class="be-post-title">
+				 <h6>what does fries stand for in consent </h6>
+                </a>
+                <a href="what-does-fries-stand-for-in-consent.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20fries%20stand%20for%20in%20consent&amp;w=50&amp;h=50&amp;c=7" alt="what does fries stand for in consent">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-peruanidad.html" class="be-post-title">
+				 <h6>que es la peruanidad </h6>
+                </a>
+                <a href="que-es-la-peruanidad.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20peruanidad&amp;w=50&amp;h=50&amp;c=7" alt="que es la peruanidad">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-teoria-organizacional.html" class="be-post-title">
+				 <h6>que es la teoria organizacional </h6>
+                </a>
+                <a href="que-es-la-teoria-organizacional.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20teoria%20organizacional&amp;w=50&amp;h=50&amp;c=7" alt="que es la teoria organizacional">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-traject.html" class="be-post-title">
+				 <h6>wat is een traject </h6>
+                </a>
+                <a href="wat-is-een-traject.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20traject&amp;w=50&amp;h=50&amp;c=7" alt="wat is een traject">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-programatica-en-marketing.html" class="be-post-title">
+				 <h6>que es programatica en marketing </h6>
+                </a>
+                <a href="que-es-programatica-en-marketing.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20programatica%20en%20marketing&amp;w=50&amp;h=50&amp;c=7" alt="que es programatica en marketing">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-good-risk-premium.html" class="be-post-title">
+				 <h6>what is a good risk premium </h6>
+                </a>
+                <a href="what-is-a-good-risk-premium.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20good%20risk%20premium&amp;w=50&amp;h=50&amp;c=7" alt="what is a good risk premium">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

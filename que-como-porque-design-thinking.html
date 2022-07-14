@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Que Como Porque Design Thinking at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Que Como Porque Design Thinking",
+  "datePublished": "2022-07-09T16:57:06Z",
+  "image": "https://tse1.mm.bing.net/th?q=que%20como%20porque%20design%20thinking",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=que%20como%20porque%20design%20thinking&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20como%20porque%20design%20thinking" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20como%20porque%20design%20thinking" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Que Como Porque Design Thinking at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Que Como Porque Design Thinking</h2>
+    <p><strong>Que Como Porque Design Thinking</strong>. En este libro se acuñó por primera vez el término design thinking o pensamiento de diseño. Razones por las que el proceso del design thinking funciona la comunicación visual es la base.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=que%20como%20porque%20design%20thinking" alt="Qué es el Design Thinking y por qué es tan aclamado. Blog CEDIM" />
+        <br>
+        <figcaption>Qué es el Design Thinking y por qué es tan aclamado. Blog CEDIM from blog.cedim.edu.mx</figcaption>
+    </figure>
+        <p>
+        Crea una ambiente sin reglas para dar espacio a todas las ideas y a la creatividad sin límites. Para seguir los ejemplos de design thinking, es fundamental tener en cuenta las necesidades reales de tus clientes potenciales. Hoy se ha vuelto central en negocios para multitud de aspectos, desde ser más sostenibles.
+    </p>
+    <h3>Qué es el Design Thinking y por qué es tan aclamado. Blog CEDIM</h3>
+    <p>Debo decir que el término no es nuevo, ya en 1959 john e. El design thinking es una metodología utilizada para producir ideas innovadoras que contribuyan al éxito de un negocio. Esta metodología consta de un proceso definido y requiere que cada miembro tenga una actitud observadora y la mente abierta frente a las nuevas opciones que plantee el resto de los colaboradores. La idea de cómo conectar con tus clientes es pensar en como es el día a día en su vida.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿POR QUÉ DESIGN THINKING? Fundación San Francisco Global" data-src="https://i2.wp.com/sanfranciscoglobal.org/wp-content/uploads/2020/10/Design-Thinking-740x357-1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sanfranciscoglobal.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En este libro se acuñó por primera vez el término design thinking o pensamiento de diseño. Para seguir los ejemplos de design thinking, es fundamental tener en cuenta las necesidades reales de tus clientes potenciales. El carácter repetitivo y cíclico del design thinking es precisamente el que permite detectar fallos y proporcionar nuevas mejoras. Esta metodología juega un papel. Este.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="O que é Design Thinking Como funciona, porque está tão em Alta." data-src="https://i2.wp.com/www.guiacommarketing.com.br/wp-content/uploads/2019/01/design-thinking.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.guiacommarketing.com.br</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Esta herramienta propone innovar basándose en la observación de las personas. Es, al mismo tiempo, un método y una forma de pensamiento que gira en torno al interés por solucionar problemas con un enfoque centrado en las personas. El “design thinking” cada vez tiene más adeptos y, actualmente, es considerada una de las mejores herramientas para fomentar la innovación en.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Etapas de Design Thinking" data-src="https://i2.wp.com/static.wixstatic.com/media/990802_799d7ce2029f4654b305d9d8bf15e261~mv2.jpg/v1/fill/w_650,h_438,al_c,q_90/990802_799d7ce2029f4654b305d9d8bf15e261~mv2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.blgroup.com.mx</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">El design thinking es una metodología que busca encontrar soluciones de una manera diferente. Desde su invención en los años 70’s, esta herramienta creativa ha tenido un fuerte protagonismo en equipos de diseño de productos, espacios de formación para emprendedores y departamentos de. El design thinking es una metodología que sirve para identificar problemas, y a su vez, ideas innovadoras.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Design Thinking. ¿Moda o Modo?" data-src="https://i2.wp.com/lorbada.com/wp-content/uploads/2016/11/Que-es-design-thinking-01-01-1024x572.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lorbada.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Compartirán las fotografías entre ellos, debiendo describir qué ven, cómo lo hacen, y porqué lo están haciendo. Herbert escribió un libro que se llama “ la ciencia de lo artificial “. El design thinking es una metodología que sirve para identificar problemas, y a su vez, ideas innovadoras y creativas que puedan solucionarlos. La metodología del design thinking se desarrolla.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="O que é e como funciona o Design Thinking Atom Digital" data-src="https://i2.wp.com/atomdigital.com.br/wp-content/uploads/2018/07/O-que-e-e-como-funciona-o-Design-thinking.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: atomdigital.com.br</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Design thinking es una tendencia global que nace como iniciativa de algunos ingenieros para solucionar problemas complejos. El carácter repetitivo y cíclico del design thinking es precisamente el que permite detectar fallos y proporcionar nuevas mejoras. La idea de cómo conectar con tus clientes es pensar en como es el día a día en su vida. A diferencia de otras,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Design Thinking como innovación centrada en las personas Neuropista" data-src="https://i2.wp.com/neuropista.files.wordpress.com/2015/01/01-01-2015-design-thinking-5pasos.png?w=1024" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: neuropista.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">El pensamiento de diseño es una estrategia creativa de resolución de problemas que permite el desarrollo de nuevas ideas y soluciones. El design thinking es muy importante para los diseñadores ux, porque se trata de diseños muy pensados y orientados hacia el usuario, hacia su experiencia. Herbert escribió un libro que se llama “ la ciencia de lo artificial “..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PORQUE VOCÊ DEVE APRENDER DESIGN THINKING" data-src="https://i2.wp.com/www.ciamakers.com/wp-content/uploads/2019/07/infografico-1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.ciamakers.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De esta forma se ejercita la observación, pasando de lo concreto a lo emocional, de lo. Herbert escribió un libro que se llama “ la ciencia de lo artificial “. Razones por las que el proceso del design thinking funciona la comunicación visual es la base. Salud, educación, diseño de servicios, marketing, recursos humanos. El design thinking, o pensamiento de.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="O que é Design Thinking e por que você deveria aprender!" data-src="https://i2.wp.com/cursos.aldeia.cc/wp-content/uploads/2021/03/design-thinking-o-que-e.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: cursos.aldeia.cc</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pero antes de descartarlo como una tarea difícil o rechazarlo como una palabra de moda, vamos a darle una mirada más. A pesar de que fue desarrollado en torno al diseño, permite llegar a ideas innovadoras en otras áreas como los modelos de negocio, el marketing, los productos e incluso la educación. Pero no requiere únicamente un esfuerzo mental, es.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Qué es el Design Thinking y por qué es tan aclamado. Blog CEDIM" data-src="https://i2.wp.com/blog.cedim.edu.mx/wp-content/uploads/2019/07/5aab088b54e5230f700773b0_gif-proces.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blog.cedim.edu.mx</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Herbert escribió un libro que se llama “ la ciencia de lo artificial “. Trazendo para o contexto de rh, os objetivos do design thinking passam, justamente, pela melhor entrega aos stakeholders e aos candidatos. El carácter repetitivo y cíclico del design thinking es precisamente el que permite detectar fallos y proporcionar nuevas mejoras. Debo decir que el término no.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="O que é Design Thinking? Conceito e metodologia" data-src="https://i2.wp.com/evolvemvp.com/wp-content/uploads/2018/04/o-que-e-design-thinking.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: evolvemvp.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">El “design thinking” cada vez tiene más adeptos y, actualmente, es considerada una de las mejores herramientas para fomentar la innovación en las organizaciones de una manera exitosa y eficaz. Acelera el ciclo de desarrollo de nuevas soluciones. En opinno utilizamos el design thinking como metodología de innovación, ya que nos permite construir ideas, ideate y probar soluciones para alcanzar.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-interfaz-de-usuario.html" class="be-post-title">
+				 <h6>que es una interfaz de usuario </h6>
+                </a>
+                <a href="que-es-una-interfaz-de-usuario.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20interfaz%20de%20usuario&amp;w=50&amp;h=50&amp;c=7" alt="que es una interfaz de usuario">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-risk-free-interest-rate-in-options-india.html" class="be-post-title">
+				 <h6>what is risk free interest rate in options india </h6>
+                </a>
+                <a href="what-is-risk-free-interest-rate-in-options-india.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20risk%20free%20interest%20rate%20in%20options%20india&amp;w=50&amp;h=50&amp;c=7" alt="what is risk free interest rate in options india">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="uji-mutu-hedonik-adalah.html" class="be-post-title">
+				 <h6>uji mutu hedonik adalah </h6>
+                </a>
+                <a href="uji-mutu-hedonik-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=uji%20mutu%20hedonik%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="uji mutu hedonik adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-curar-un-perro-de-una-herida.html" class="be-post-title">
+				 <h6>como curar un perro de una herida </h6>
+                </a>
+                <a href="como-curar-un-perro-de-una-herida.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20curar%20un%20perro%20de%20una%20herida&amp;w=50&amp;h=50&amp;c=7" alt="como curar un perro de una herida">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-het-voorzetselvoorwerp-in-een-zin.html" class="be-post-title">
+				 <h6>wat is het voorzetselvoorwerp in een zin </h6>
+                </a>
+                <a href="wat-is-het-voorzetselvoorwerp-in-een-zin.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20het%20voorzetselvoorwerp%20in%20een%20zin&amp;w=50&amp;h=50&amp;c=7" alt="wat is het voorzetselvoorwerp in een zin">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-rising-sign-and-moon-sign.html" class="be-post-title">
+				 <h6>what is a rising sign and moon sign </h6>
+                </a>
+                <a href="what-is-a-rising-sign-and-moon-sign.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20rising%20sign%20and%20moon%20sign&amp;w=50&amp;h=50&amp;c=7" alt="what is a rising sign and moon sign">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-pensamiento-mágico-religioso.html" class="be-post-title">
+				 <h6>que es pensamiento mágico religioso </h6>
+                </a>
+                <a href="que-es-pensamiento-mágico-religioso.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20pensamiento%20m%C3%A1gico%20religioso&amp;w=50&amp;h=50&amp;c=7" alt="que es pensamiento mágico religioso">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-software-de-un-celular.html" class="be-post-title">
+				 <h6>que es el software de un celular </h6>
+                </a>
+                <a href="que-es-el-software-de-un-celular.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20software%20de%20un%20celular&amp;w=50&amp;h=50&amp;c=7" alt="que es el software de un celular">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-f-r-i-e-n-d-s-stand-for-the-show.html" class="be-post-title">
+				 <h6>what does f.r.i.e.n.d.s stand for the show </h6>
+                </a>
+                <a href="what-does-f-r-i-e-n-d-s-stand-for-the-show.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20f.r.i.e.n.d.s%20stand%20for%20the%20show&amp;w=50&amp;h=50&amp;c=7" alt="what does f.r.i.e.n.d.s stand for the show">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-hay-en-la-ciudad-de-las-artes-y-las-ciencias.html" class="be-post-title">
+				 <h6>que hay en la ciudad de las artes y las ciencias </h6>
+                </a>
+                <a href="que-hay-en-la-ciudad-de-las-artes-y-las-ciencias.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20hay%20en%20la%20ciudad%20de%20las%20artes%20y%20las%20ciencias&amp;w=50&amp;h=50&amp;c=7" alt="que hay en la ciudad de las artes y las ciencias">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

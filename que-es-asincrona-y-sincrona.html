@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Que Es Asincrona Y Sincrona at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Que Es Asincrona Y Sincrona",
+  "datePublished": "2022-06-21T03:16:29Z",
+  "image": "https://tse1.mm.bing.net/th?q=que%20es%20asincrona%20y%20sincrona",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=que%20es%20asincrona%20y%20sincrona&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20es%20asincrona%20y%20sincrona" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20es%20asincrona%20y%20sincrona" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Que Es Asincrona Y Sincrona at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Que Es Asincrona Y Sincrona</h2>
+    <p><strong>Que Es Asincrona Y Sincrona</strong>. La diferencia entre dram síncrona y asíncrona es que la dram síncrona usa el reloj del sistema para coordinar el acceso a la memoria, mientras que la dram asíncrona no usa el reloj del sistema para coordinar el acceso a la memoria. Este aviso fue puesto el 28 de abril de 2013.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=que%20es%20asincrona%20y%20sincrona" alt="4.3. Comunicación síncrona Las Nuevas Tecnologías de la Información y" />
+        <br>
+        <figcaption>4.3. Comunicación síncrona Las Nuevas Tecnologías de la Información y from sites.google.com</figcaption>
+    </figure>
+        <p>
+        Este aviso fue puesto el 28 de abril de 2013. Coliciones y manejo de errores en una red. Esta clase anulará al menos un método, es decir, doinbackground(params) y, con mayor frecuencia, anulará el segundo método onpostexecute(result).
+    </p>
+    <h3>4.3. Comunicación síncrona Las Nuevas Tecnologías de la Información y</h3>
+    <p>Como motor síncrono convierte la energía eléctrica. De esta forma el js que es síncrono funciona de manera asíncrona en node. En la transmisión síncrona, los datos se transfieren en forma de tramas, mientras que en la transmisión asíncrona los datos se transmiten 1 byte a la vez. Características de la máquina síncrona.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="5 Ejemplos De Comunicacion Sincrona Y Asincrona Nuevo Ejemplo" data-src="https://i2.wp.com/4.bp.blogspot.com/-suhZCZ503NE/UK27YwXc4FI/AAAAAAAAABU/IvdnUp_znbg/s1600/Imagen3.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: nuevoejemplo.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A esto se le llama non blocking, es decir permite hacer otras cosas sin tener que detener la ejecución del. Es decir en este tipo de transmisión es cuando existe una coordinación temporal precisa entre emisor y receptor. Como motor síncrono convierte la energía eléctrica. N = ns = 120f/p. Ac琀椀vidad asíncrona y síncronas 1.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tic II grupo 212 ¿Que es la Comunicacion asincrona?" data-src="https://i2.wp.com/4.bp.blogspot.com/_59gkjAeIgiw/S_afiwOAVbI/AAAAAAAAAAY/1iQHbhZNwII/s1600/one-click-telemedicine[1].jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: grupo212e07.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Motor síncrono base motor asíncrono. (aun en el caso de que no hayan caracteres a transmitir, la sincronía se mantiene y es frecuente que se envíen continuamente bits llamados de “relleno”). Esta sincronización se lleva a cabo a través de unos bits especiales que definen el entorno de cada código. La principal diferencia entre la transmisión síncrona y la transmisión.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="4.3. Comunicación síncrona Las Nuevas Tecnologías de la Información y" data-src="https://i2.wp.com/sites.google.com/site/autogestionconocimiento/_/rsrc/1436887075750/modulo-iv-elaboracion-de-material-multimr/4-3-cominicacion-sicrona/asincronico.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sites.google.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Esto implica que la información no se envíe y se reciba de forma simultánea en el tiempo, sino con cierta demora. Este concepto (junto a la comunicación asincrónica), pero, va más. En este tipo de transmisión la información se transmite por palabras, bytes o conjunto de bits, estando. De un carácter se emiten con la ayuda de impulsos suplementarios que.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Comunicación interpersonal, síncrona y asíncrona" data-src="https://i2.wp.com/image.slidesharecdn.com/comunicacininterpersonalsncronayasncrona-111006180748-phpapp02/95/comunicacin-interpersonal-sncrona-y-asncrona-3-728.jpg?cb=1317924501" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La transmisión síncrona requiere una señal de reloj entre el remitente y el receptor para informar al receptor sobre el. Las videoconferencias, chats, partidos de fútbol en directo, conciertos en directo, mítines a tiempo real, charlas en directo. La principal diferencia entre la transmisión síncrona y la transmisión asíncrona es que en la transmisión síncrona los datos se envían en.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Comunicación sincrona y asincrona" data-src="https://i2.wp.com/image.slidesharecdn.com/comunicacinsincronayasincrona-171106151947/95/comunicacin-sincrona-y-asincrona-3-638.jpg?cb=1509981599" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Las videoconferencias, chats, partidos de fútbol en directo, conciertos en directo, mítines a tiempo real, charlas en directo. En android, asynctask (tarea asíncrona) nos permite ejecutar la instrucción en segundo plano y luego sincronizar nuevamente con nuestro hilo principal. La transmisión asíncrona tiene lugar cuando el proceso de sincronización entre emisor y receptor se realiza en cada palabra de código.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="TRANSMISION SÍNCRONA y ASÍNCRONA Que es y como funciona?" data-src="https://i2.wp.com/247tecno.com/wp-content/uploads/2018/04/SIN.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: 247tecno.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Las videoconferencias, chats, partidos de fútbol en directo, conciertos en directo, mítines a tiempo real, charlas en directo. Ac琀椀vidad asíncrona y síncronas 1. Esta clase anulará al menos un método, es decir, doinbackground(params) y, con mayor frecuencia, anulará el segundo método onpostexecute(result). Características de la máquina síncrona. La transmisión síncrona requiere una señal de reloj entre el remitente y el.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Comunicación sincrónica y asincrónica" data-src="https://i2.wp.com/image.slidesharecdn.com/comunicacinsincrnicayasincrnica-131001160905-phpapp02/95/comunicacin-sincrnica-y-asincrnica-3-638.jpg?cb=1380644255" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A esto se le llama non blocking, es decir permite hacer otras cosas sin tener que detener la ejecución del. Esta sincronización se lleva a cabo a través de unos bits especiales que definen el entorno de cada código. Son herramientas de comunicación síncronas: A nivel comunicacion quiere decir que hay alguien emitiendo, que otra persona está al otro lado.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Transmisión Síncrona y Asíncrona, Cdma, Tdma, Tdscdma, Wcdma" data-src="https://i2.wp.com/imgv2-1-f.scribdassets.com/img/document/366017250/original/026a97b21d/1590263262?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Asíncrono y síncrono son dos métodos diferentes de sincronización de transmisión. Es un breve artículo que explica las diferencias entre la comunicación síncrona y asíncrona. Este concepto (junto a la comunicación asincrónica), pero, va más. Cuando hacemos referencia a la comunicación síncrona o asíncrona, hablamos de dos formas de comunicarse en la cual se intercambia información en tiempos diferentes. Significa.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Comunicación Síncrona y Asíncrona Martha Salamanca Docente" data-src="https://i2.wp.com/marthasalamanca.files.wordpress.com/2014/09/comunicacic3b3n-sc3adncrona-y-asc3adncrona.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: marthasalamanca.wordpress.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De esta forma, las aplicaciones asíncronas pueden actualizar su información de forma mucho más eficiente y rápida que las síncronas. La comunicación es asíncrona cuando estos pueden transmitirse en cualquier instante aisladamente o en grupos, y no hay ninguna coordinación temporal estricta entre tx y rx. En este tipo de transmisión la información se transmite por palabras, bytes o conjunto.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Transmision sincrona y_asincrona" data-src="https://i2.wp.com/image.slidesharecdn.com/transmisionsincronayasincrona-100816223301-phpapp01/95/transmision-sincrona-yasincrona-4-728.jpg?cb=1281998081" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Así entonces tenemos que el uso de node permite que se definan eventos que no bloquean al sistema, y sus callbacks se ejecutan cuando dichos eventos se cumplen. De un carácter se emiten con la ayuda de impulsos suplementarios que permiten mantener en sincronismo los dos extremos. Información sobre asíncrona en el diccionario y enciclopedia en línea gratuito. Es decir,.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-akkoord-sluiten.html" class="be-post-title">
+				 <h6>wat is een akkoord sluiten </h6>
+                </a>
+                <a href="wat-is-een-akkoord-sluiten.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20akkoord%20sluiten&amp;w=50&amp;h=50&amp;c=7" alt="wat is een akkoord sluiten">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-querer-a-tu-pareja.html" class="be-post-title">
+				 <h6>que es querer a tu pareja </h6>
+                </a>
+                <a href="que-es-querer-a-tu-pareja.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20querer%20a%20tu%20pareja&amp;w=50&amp;h=50&amp;c=7" alt="que es querer a tu pareja">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-elaborar-un-objetivo-especifico-ejemplos.html" class="be-post-title">
+				 <h6>como elaborar un objetivo especifico ejemplos </h6>
+                </a>
+                <a href="como-elaborar-un-objetivo-especifico-ejemplos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20elaborar%20un%20objetivo%20especifico%20ejemplos&amp;w=50&amp;h=50&amp;c=7" alt="como elaborar un objetivo especifico ejemplos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-concentracion-de-una-solucion-ejemplo.html" class="be-post-title">
+				 <h6>que es la concentracion de una solucion ejemplo </h6>
+                </a>
+                <a href="que-es-la-concentracion-de-una-solucion-ejemplo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20concentracion%20de%20una%20solucion%20ejemplo&amp;w=50&amp;h=50&amp;c=7" alt="que es la concentracion de una solucion ejemplo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-most-common-last-name-for-african-american.html" class="be-post-title">
+				 <h6>what is the most common last name for african american </h6>
+                </a>
+                <a href="what-is-the-most-common-last-name-for-african-american.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20most%20common%20last%20name%20for%20african%20american&amp;w=50&amp;h=50&amp;c=7" alt="what is the most common last name for african american">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-artritis-en-las-rodillas.html" class="be-post-title">
+				 <h6>que es el artritis en las rodillas </h6>
+                </a>
+                <a href="que-es-el-artritis-en-las-rodillas.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20artritis%20en%20las%20rodillas&amp;w=50&amp;h=50&amp;c=7" alt="que es el artritis en las rodillas">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-paraplejia.html" class="be-post-title">
+				 <h6>que es la paraplejia </h6>
+                </a>
+                <a href="que-es-la-paraplejia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20paraplejia&amp;w=50&amp;h=50&amp;c=7" alt="que es la paraplejia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-son-las-estrofas-explicacion-para-niños.html" class="be-post-title">
+				 <h6>que son las estrofas explicacion para niños </h6>
+                </a>
+                <a href="que-son-las-estrofas-explicacion-para-niños.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20son%20las%20estrofas%20explicacion%20para%20ni%C3%B1os&amp;w=50&amp;h=50&amp;c=7" alt="que son las estrofas explicacion para niños">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-es-un-contrato-de-donacion.html" class="be-post-title">
+				 <h6>como es un contrato de donacion </h6>
+                </a>
+                <a href="como-es-un-contrato-de-donacion.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20es%20un%20contrato%20de%20donacion&amp;w=50&amp;h=50&amp;c=7" alt="como es un contrato de donacion">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-que-un-pais-entre-en-default.html" class="be-post-title">
+				 <h6>que es que un pais entre en default </h6>
+                </a>
+                <a href="que-es-que-un-pais-entre-en-default.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20que%20un%20pais%20entre%20en%20default&amp;w=50&amp;h=50&amp;c=7" alt="que es que un pais entre en default">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

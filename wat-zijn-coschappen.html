@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Wat Zijn Coschappen at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Wat Zijn Coschappen",
+  "datePublished": "2022-05-09T18:14:16Z",
+  "image": "https://tse1.mm.bing.net/th?q=wat%20zijn%20coschappen",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=wat%20zijn%20coschappen&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=wat%20zijn%20coschappen" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=wat%20zijn%20coschappen" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Wat Zijn Coschappen at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Wat Zijn Coschappen</h2>
+    <p><strong>Wat Zijn Coschappen</strong>. Je maakt je eigen coschap. Uitslapen en coschappen gaan simpelweg niet door één deur.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=wat%20zijn%20coschappen" alt="Tips en tricks voor de coschappen MFVR" />
+        <br>
+        <figcaption>Tips en tricks voor de coschappen MFVR from mfvr.nl</figcaption>
+    </figure>
+        <p>
+        Tijdens deze lunch wordt het coschap onder coassistenten. Je vraagt je vast af wat dat met geneeskunde te maken heeft en wat de link met coschappen is. Je hoeft en kúnt simpelweg niet alles weten.
+    </p>
+    <h3>Tips en tricks voor de coschappen MFVR</h3>
+    <p>Vertalingen van het woord coschappen van nederlands naar engels en voorbeelden van het gebruik van coschappen in een zin met hun vertalingen: Weet dat dit voor iedereen geldt en dat je er voor je het weet weer helemaal in zit!; Hierbij zijn de anamnese, lichamelijk onderzoek en het aanvullend onderzoek de grootste nieuwe leerpunten. ‘ik heb betrokken begeleiders gehad, maar ook coschappen waarbij ik mijn begeleider pas zag tijdens de eindbeoordeling.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="UvAkiest drie partijen voor de coschappen bij geneeskunde Folia" data-src="https://i2.wp.com/assets-cdn-folia.boondrive.com/1240x698/15405_1591191119040_Lijsttrekker-coschappen.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.folia.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Door de coronapandemie zijn de wachttijden voor de coschappen bij sommige universiteiten flink opgelopen. De laatste jaren van de opleiding bestaan uit verschillende stages (coassistentschappen) in allerlei specialismen als coassistent. Sommige ziekenhuizen hebben daarom huisvesting voor (co)assistenten geregeld,. Het is handig om voor meerdere dagen te koken in het cohuis. Helemaal als je geen ochtendmens bent, kan het behoorlijk wennen.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="UvA geeft gamer topsportstatus" data-src="https://i2.wp.com/www.cursor.tue.nl/fileadmin/user_upload/nieuws/2017/5-mei/koen-schobbers-gameruva.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.cursor.tue.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hierbij zijn de anamnese, lichamelijk onderzoek en het aanvullend onderzoek de grootste nieuwe leerpunten. Het is handig om voor meerdere dagen te koken in het cohuis. Sommige ziekenhuizen hebben daarom huisvesting voor (co)assistenten geregeld,. Zowel yvo smulders in zijn hoofdredactioneel commentaar bij ons artikel als frank wolters in zijn ingezonden reactie hebben natuurlijk gelijk dat het doel van coschappen is.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="STIP Keuze en oudste coschappen" data-src="https://i2.wp.com/erasmusmc.kxondemand.com/Privatedata/HTMLEditor/Files/Wijziging_KOCO_OC.png?t=033123" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: stip.erasmusmc.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sinds je chief coschappen bent heb je een stap terug gezet. Zowel yvo smulders in zijn hoofdredactioneel commentaar bij ons artikel als frank wolters in zijn ingezonden reactie hebben natuurlijk gelijk dat het doel van coschappen is om goede (basis)artsen op te leiden, en dat je je af kunt vragen of je aan de hand van een beoordeling van het.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Coschappen bij GGZ NoordHollandNoord" data-src="https://i2.wp.com/www.ggz-nhn.nl/Bestanden/Images/Werken Bij/Headers/header-opleidingen-stages.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.ggz-nhn.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Veel nieuwe mensen, zoeken waar je moet zijn en praktische zaken regelen. Ik zie in een oogopslag wat een patiënt mankeert. Ideal for a future intern. Het grootste verschil tussen de bachelor en de master zijn natuurlijk de coschappen. Tijdens de masteropleiding geneeskunde loopt de onderwijslijn professionele ontwikkeling (po) als een rode draad door alle jaren en coschappen heen.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tips en tricks voor de coschappen MFVR" data-src="https://i2.wp.com/mfvr.nl/f/eventapp/cover/81" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: mfvr.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Vraag dus vooral ook aan de coassistenten die net wat verder zijn met de coschappen, zij kunnen jou inwerken en tips geven! Wat is de betekenis van coschappen? Je weekenden zijn dan ook waardevol om wat langer in bed te kunnen blijven liggen in de ochtend. Kijk dan hier voor meer informatie: De boekenserie helpt jou door per discipline weer.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Coschappen medischcontact" data-src="https://i2.wp.com/www.medischcontact.nl/upload_mm/6/c/8/cid2016_coschappen_ais_getty2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.medischcontact.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tijdens mijn coschappen bij psychiatrie kreeg ik een. Dit zijn coschappen die je zelf regelt in een of meerdere disciplines naar keuze. Amphia biedt meerdere (basis) coschappen aan. De boekenserie helpt jou door per discipline weer te geven waar je op moet focussen bij de anamnese en welke onderzoeken je meer informatie geven. I&#039;m in the surgical residency program.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Geneeskundestudenten bieden de hulp aan nu coschappen zijn" data-src="https://i2.wp.com/www.dub.uu.nl/sites/default/files/styles/large/public/reanimeren_4721.jpg?itok=UEgKJPQf&amp;c=3d4387bcfcb5a090fe3ce59d6f543d11" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.dub.uu.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Vraag dus vooral ook aan de coassistenten die net wat verder zijn met de coschappen, zij kunnen jou inwerken en tips geven! Soms zijn coschappen niet leuk. Tijdens deze lunch wordt het coschap onder coassistenten. Vertalingen van het woord coschappen van nederlands naar engels en voorbeelden van het gebruik van coschappen in een zin met hun vertalingen: Uitslapen en coschappen.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tijd om Coschappen te lopen Compendium Geneeskunde" data-src="https://i2.wp.com/compendiumgeneeskunde.nl/wp-content/uploads/Reeks_stapel_54321-2-768x518.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: compendiumgeneeskunde.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Zo’n gesprek duurt nog geen minuut.’ Zowel yvo smulders in zijn hoofdredactioneel commentaar bij ons artikel als frank wolters in zijn ingezonden reactie hebben natuurlijk gelijk dat het doel van coschappen is om goede (basis)artsen op te leiden, en dat je je af kunt vragen of je aan de hand van een beoordeling van het coschap door de coassistenten zelf.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Blog Hoe yoga mij de coschappen door helpt Collaps.nl" data-src="https://i2.wp.com/www.co-llaps.nl/wp-content/uploads/2020/09/Blog-Hoe-yoga-mij-de-coschappen-door-hielp-980x653.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.co-llaps.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Zowel yvo smulders in zijn hoofdredactioneel commentaar bij ons artikel als frank wolters in zijn ingezonden reactie hebben natuurlijk gelijk dat het doel van coschappen is om goede (basis)artsen op te leiden, en dat je je af kunt vragen of je aan de hand van een beoordeling van het coschap door de coassistenten zelf kunt inschatten in hoeverre aan dat.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Van coschappen naar coronadiensten op Curaçao Wij &amp; corona" data-src="https://i2.wp.com/wijencorona.nl/wp-content/uploads/2021/04/Gregory-26Zorg.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: wijencorona.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De benodigde boeken kun je lenen bij de universitaire bibliotheken; Op ensie, encyclopedie sinds 1946, vind je 1 betekenis van het woord coschappen. De eerste jaren zijn, afhankelijk van de universiteit, over het algemeen eerder theoretisch georiënteerd. Ziekenhuizen vergoeden coschappen traditioneel niet, omdat de coschappen als onderwijs. Daarom wil ik jullie graag iets vertellen over een van mijn hobby’s:</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="belki-bir-gün-ingilizce-ne-demek.html" class="be-post-title">
+				 <h6>belki bir gün ingilizce ne demek </h6>
+                </a>
+                <a href="belki-bir-gün-ingilizce-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=belki%20bir%20g%C3%BCn%20ingilizce%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="belki bir gün ingilizce ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-perforacion-minecraft.html" class="be-post-title">
+				 <h6>que es perforacion minecraft </h6>
+                </a>
+                <a href="que-es-perforacion-minecraft.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20perforacion%20minecraft&amp;w=50&amp;h=50&amp;c=7" alt="que es perforacion minecraft">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="was-ist-gemüsebrühe.html" class="be-post-title">
+				 <h6>was ist gemüsebrühe </h6>
+                </a>
+                <a href="was-ist-gemüsebrühe.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=was%20ist%20gem%C3%BCsebr%C3%BChe&amp;w=50&amp;h=50&amp;c=7" alt="was ist gemüsebrühe">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-jabali.html" class="be-post-title">
+				 <h6>que es una jabali </h6>
+                </a>
+                <a href="que-es-una-jabali.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20jabali&amp;w=50&amp;h=50&amp;c=7" alt="que es una jabali">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-ley-limon-en-florida.html" class="be-post-title">
+				 <h6>que es la ley limon en florida </h6>
+                </a>
+                <a href="que-es-la-ley-limon-en-florida.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20ley%20limon%20en%20florida&amp;w=50&amp;h=50&amp;c=7" alt="que es la ley limon en florida">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-major-risk-factor-for-type-2-diabetes.html" class="be-post-title">
+				 <h6>what is a major risk factor for type 2 diabetes </h6>
+                </a>
+                <a href="what-is-a-major-risk-factor-for-type-2-diabetes.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20major%20risk%20factor%20for%20type%202%20diabetes&amp;w=50&amp;h=50&amp;c=7" alt="what is a major risk factor for type 2 diabetes">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-gewestelijk-voetbal.html" class="be-post-title">
+				 <h6>wat is gewestelijk voetbal </h6>
+                </a>
+                <a href="wat-is-gewestelijk-voetbal.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20gewestelijk%20voetbal&amp;w=50&amp;h=50&amp;c=7" alt="wat is gewestelijk voetbal">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-respeto-para-niños-de-segundo-grado.html" class="be-post-title">
+				 <h6>que es el respeto para niños de segundo grado </h6>
+                </a>
+                <a href="que-es-el-respeto-para-niños-de-segundo-grado.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20respeto%20para%20ni%C3%B1os%20de%20segundo%20grado&amp;w=50&amp;h=50&amp;c=7" alt="que es el respeto para niños de segundo grado">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-hacer-un-sifon-de-cocina-casero.html" class="be-post-title">
+				 <h6>como hacer un sifon de cocina casero </h6>
+                </a>
+                <a href="como-hacer-un-sifon-de-cocina-casero.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20hacer%20un%20sifon%20de%20cocina%20casero&amp;w=50&amp;h=50&amp;c=7" alt="como hacer un sifon de cocina casero">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-fire-alarm-riser-diagram.html" class="be-post-title">
+				 <h6>what is a fire alarm riser diagram </h6>
+                </a>
+                <a href="what-is-a-fire-alarm-riser-diagram.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20fire%20alarm%20riser%20diagram&amp;w=50&amp;h=50&amp;c=7" alt="what is a fire alarm riser diagram">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

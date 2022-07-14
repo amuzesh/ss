@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        What Is Thermald at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "What Is Thermald",
+  "datePublished": "2022-05-25T07:30:58Z",
+  "image": "https://tse1.mm.bing.net/th?q=what%20is%20thermald",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=what%20is%20thermald&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20thermald" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20thermald" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            What Is Thermald at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">What Is Thermald</h2>
+    <p><strong>What Is Thermald</strong>. Thermald is a linux daemon used to prevent the overheating of intel cpus. If the temp of the cpu reaches a certain level ( stock 60° i think), it lowers the freq to cool it down and to prevent damage, u can configure both the way u want to ^^.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=what%20is%20thermald" alt="How to control thermald throttling? · Issue 146 · intel/thermal_daemon" />
+        <br>
+        <figcaption>How to control thermald throttling? · Issue 146 · intel/thermal_daemon from github.com</figcaption>
+    </figure>
+        <p>
+        It is the energy contained within the system. Thermald is a linux daemon used to prevent the overheating of platforms. You can get this information by running.
+    </p>
+    <h3>How to control thermald throttling? · Issue 146 · intel/thermal_daemon</h3>
+    <p>Note that fourier’s law applies for all matter, regardless of its state (solid, liquid, or gas), therefore. According to the thermald.exe version information. Apparently, it is related to a kernel module called intel_powerclamp that fires off a process called kidle_inject, which hogs the cpu. Once the system temperature reaches a certain threshold, the linux daemon activates various cooling methods to try to cool the system.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="thermald.exe Windows process What is it?" data-src="https://i2.wp.com/www.file.net/img/screenshot/taskman-thermald-exe.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.file.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Unfortunately, appearances could be remarkably. This daemon monitors temperature and applies compensation using available cooling methods. During the early days of the dot com boom, our online pc maintenance tools were skyrocketing. We have seen about 80 different instances of thermald.exe in different location. By default, it monitors cpu temperature using available cpu digital temperature sensors and maintains cpu temperature.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PerformanceTweaks and PowersaveTweaks how do they work KDE Garuda" data-src="https://i2.wp.com/forum.garudalinux.org/uploads/default/original/2X/2/20fdb54f946036323028711ed4e729f2a3b85dbe.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: forum.garudalinux.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Systemctl enable thermald &amp;&amp; systemctl start thermald. This daemon monitors temperature and applies compensation using available cooling methods. In this tutorial we learn how to install thermald on fedora 34. Thermal desorption is a reclamation process followed to separate hydrocarbons from various types of materials. Apt show thermald (shows general info about the package, note the output line priority:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Fedora 33 PreRelease (Beta) version is now available to download" data-src="https://i2.wp.com/ans-world.com/wp-content/uploads/2020/09/Anacoda-Installer-1024x576.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ans-world.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Systemctl enable thermald &amp;&amp; systemctl start thermald. A package is a file that describes how and where software is installed in your os. Thermald.com is a webpage that presents itself as a little bit suspicious (in a way). Some said to purge thermald, and some said thermald uses the acpi driver. The heat transfer characteristics of a solid material are.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Linux dicas e suporte Linux thermal daemon (thermald) no seu GNU/Linux" data-src="https://i2.wp.com/4.bp.blogspot.com/-bqOOVYy8I8E/XEQv6Z3jlWI/AAAAAAAAoEQ/mdG0kriGBFkGR11QLjs04Q-hxuVVONlwwCLcBGAs/s1600/Screenshot_20190120_062247.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: linuxdicasesuporte.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Using microsoft’s internet explorer along. If the temp of the cpu reaches a certain level ( stock 60° i think), it lowers the freq to cool it down and to prevent damage, u can configure both the way u want to ^^. A package is a file that describes how and where software is installed in your os. [adjective] of,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="All the Possible Ways to Reduce Laptop Overheating in Linux" data-src="https://i2.wp.com/www.ubuntupit.com/wp-content/uploads/2020/06/thermald.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.ubuntupit.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Thermal desorption is a reclamation process followed to separate hydrocarbons from various types of materials. Also, the same vendor can create thermald.exe in more than one version. Thermald.com is a webpage that presents itself as a little bit suspicious (in a way). Some said to purge thermald, and some said thermald uses the acpi driver. By default, it monitors cpu.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Linux dicas e suporte Linux thermal daemon (thermald) no seu GNU/Linux" data-src="https://i2.wp.com/3.bp.blogspot.com/-6gYUc1ZjnyI/XEQ6GSQlBXI/AAAAAAAAoEg/v8g837RHsxINx4dbvVHFOzbyvFyT9AIVgCLcBGAs/s1600/Screenshot_20190120_070502.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: linuxdicasesuporte.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">This is why most stone yards offer to. By default, it monitors cpu temperature using available cpu digital temperature sensors and maintains cpu temperature under control, before hw takes aggressive correction action. The heat transfer characteristics of a solid material are measured by a property called the thermal conductivity, k (or λ), measured in w/m.k. Thermal definition, of, relating to,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Linux dicas e suporte Linux thermal daemon (thermald) no seu GNU/Linux" data-src="https://i2.wp.com/2.bp.blogspot.com/--GsRJo3_qN4/XEQwf4P5e2I/AAAAAAAAoEY/njUmpJPkGY0uuBrR1ZVjCaVz3QQ-ON6MACLcBGAs/s1600/Screenshot_20190120_062501.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: linuxdicasesuporte.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It is the energy contained within the system. System information viewer is a utility that displays hardware and software information for windows pcs. During the early days of the dot com boom, our online pc maintenance tools were skyrocketing. Apparently, it is related to a kernel module called intel_powerclamp that fires off a process called kidle_inject, which hogs the cpu..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How to control thermald throttling? · Issue 146 · intel/thermal_daemon" data-src="https://i2.wp.com/user-images.githubusercontent.com/17298149/34922273-97be92b6-f9af-11e7-97e5-ae8d569618b1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: github.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A whole branch of physics, thermodynamics, deals with how heat is transferred between different systems and how work is done in the process (see the 1ˢᵗ law of thermodynamics ). Pc pitstop began in 1999 with an emphasis on computer diagnostics and maintenance. The name thermald.exe can be used by many programs from different vendors. Thermal desorption is a reclamation.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="The Importance Of Thermald On Linux For Modern Intel Tiger Lake Laptops" data-src="https://i2.wp.com/www.phoronix.net/image.php?id=intel-thermald-tgl&amp;image=intel_thermald_1_med" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.phoronix.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Thermald monitors and controls platform temperature. The si unit of thermal energy is the joule (j). In thermodynamics, thermal energy (also called the internal energy) is defined as the energy associated with microscopic forms of energy. On the exterior the domain appears to be totally legitimate; A package is a file that describes how and where software is installed in.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="thermald.exe Windows Prozess Was ist das?" data-src="https://i2.wp.com/www.file.net/img/screenshot-de/taskmanager-thermald-exe.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.file.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Thermal is a protection for your phone: Thermald.exe runs the thermal daemon, a process that monitors temperatures and manages fans speeds. It is the energy contained within the system. Thus, we distinguish between all variants of thermald.exe using so called checksum. During the early days of the dot com boom, our online pc maintenance tools were skyrocketing.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-kvk-nummer-in-het-engels.html" class="be-post-title">
+				 <h6>wat is kvk nummer in het engels </h6>
+                </a>
+                <a href="wat-is-kvk-nummer-in-het-engels.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20kvk%20nummer%20in%20het%20engels&amp;w=50&amp;h=50&amp;c=7" alt="wat is kvk nummer in het engels">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-pagaré-y-para-que-sirve.html" class="be-post-title">
+				 <h6>que es un pagaré y para que sirve </h6>
+                </a>
+                <a href="que-es-un-pagaré-y-para-que-sirve.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20pagar%C3%A9%20y%20para%20que%20sirve&amp;w=50&amp;h=50&amp;c=7" alt="que es un pagaré y para que sirve">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="qué-es-sifonales.html" class="be-post-title">
+				 <h6>qué es sifonales </h6>
+                </a>
+                <a href="qué-es-sifonales.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=qu%C3%A9%20es%20sifonales&amp;w=50&amp;h=50&amp;c=7" alt="qué es sifonales">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-objetivo-profesional-ejemplos.html" class="be-post-title">
+				 <h6>que es un objetivo profesional ejemplos </h6>
+                </a>
+                <a href="que-es-un-objetivo-profesional-ejemplos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20objetivo%20profesional%20ejemplos&amp;w=50&amp;h=50&amp;c=7" alt="que es un objetivo profesional ejemplos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-ejido-en-mexico.html" class="be-post-title">
+				 <h6>que es un ejido en mexico </h6>
+                </a>
+                <a href="que-es-un-ejido-en-mexico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20ejido%20en%20mexico&amp;w=50&amp;h=50&amp;c=7" alt="que es un ejido en mexico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-amortizacion-parcial-de-un-prestamo.html" class="be-post-title">
+				 <h6>que es la amortizacion parcial de un prestamo </h6>
+                </a>
+                <a href="que-es-la-amortizacion-parcial-de-un-prestamo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20amortizacion%20parcial%20de%20un%20prestamo&amp;w=50&amp;h=50&amp;c=7" alt="que es la amortizacion parcial de un prestamo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-s-e-s-stand-for-kpop.html" class="be-post-title">
+				 <h6>what does s.e.s stand for kpop </h6>
+                </a>
+                <a href="what-does-s-e-s-stand-for-kpop.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20s.e.s%20stand%20for%20kpop&amp;w=50&amp;h=50&amp;c=7" alt="what does s.e.s stand for kpop">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="waar-zijn-worteltjes-goed-voor.html" class="be-post-title">
+				 <h6>waar zijn worteltjes goed voor </h6>
+                </a>
+                <a href="waar-zijn-worteltjes-goed-voor.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=waar%20zijn%20worteltjes%20goed%20voor&amp;w=50&amp;h=50&amp;c=7" alt="waar zijn worteltjes goed voor">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-flor-de-girasol.html" class="be-post-title">
+				 <h6>que es la flor de girasol </h6>
+                </a>
+                <a href="que-es-la-flor-de-girasol.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20flor%20de%20girasol&amp;w=50&amp;h=50&amp;c=7" alt="que es la flor de girasol">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-betekent-gewestweg.html" class="be-post-title">
+				 <h6>wat betekent gewestweg </h6>
+                </a>
+                <a href="wat-betekent-gewestweg.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20betekent%20gewestweg&amp;w=50&amp;h=50&amp;c=7" alt="wat betekent gewestweg">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

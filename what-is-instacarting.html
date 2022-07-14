@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        What Is Instacarting at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "What Is Instacarting",
+  "datePublished": "2022-05-09T10:51:16Z",
+  "image": "https://tse1.mm.bing.net/th?q=what%20is%20instacarting",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=what%20is%20instacarting&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20instacarting" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20instacarting" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            What Is Instacarting at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">What Is Instacarting</h2>
+    <p><strong>What Is Instacarting</strong>. One sneaky instacart shopper trick is to scan your shopper receipts with a variety of reward apps. The fault with that argument is simple:</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=what%20is%20instacarting" alt="Instacarting in NOVA" />
+        <br>
+        <figcaption>Instacarting in NOVA from www.reddit.com</figcaption>
+    </figure>
+        <p>
+        The best way to make the most money with instacart is to be in an area with high demand. You can browse available selections by store and build your online shopping cart on target’s website or on the target app. If you elect to pay the full annual price upfront, you’ll save about $20 per year.
+    </p>
+    <h3>Instacarting in NOVA</h3>
+    <p>Go to a location with high demand. Instacart express costs $99 per year (for an annual membership) or $9.99 per month (for a monthly membership). Knowing how much to pay is just the first step. One sneaky instacart shopper trick is to scan your shopper receipts with a variety of reward apps.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="recently started instacarting, got my first review..." data-src="https://i2.wp.com/i.redd.it/zhph0d7oo6c61.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.reddit.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Go to a location with high demand. What is dual batch instacarting? This not a strategy that i have personally deployed yet, however, in my short time doing instacart i have ran into multiple “team instacarters”. Select the items you want and schedule a delivery. Target is a great place to order your groceries online to be picked up at.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Instacarting in NOVA" data-src="https://i2.wp.com/i.redd.it/vu6giwrv8e831.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.reddit.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tipping is strongly recommended, so there’s potential to earn more since you get to keep 100% of customer tips. For many deliveries, the charge is $5.99, but this may differ depending on your location. What is dual batch instacarting? You can browse available selections by store and build your online shopping cart on target’s website or on the target app..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Instacarting in NOVA" data-src="https://i2.wp.com/i.redd.it/gia1bnqujg831.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.reddit.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tipping is strongly recommended, so there’s potential to earn more since you get to keep 100% of customer tips. Instacart isn’t buying items to store and sell later via its website. The instacart 1099 tax forms you&#039;ll need to file. When you pick up your groceries at instacart. Download the instacart app or start shopping online now with instacart to.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Instacarting... in a Smart Fortwo Cabrio." data-src="https://i2.wp.com/i.redd.it/drqfr6kyl5851.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.reddit.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The april 2021 rate of $17.18 per hour represents a whopping 39.56% jump in earnings from $12.31 in january 2020. Download the instacart app or start shopping online now with instacart to get groceries, alcohol, home essentials, and more delivered to you in as fast as 1 hour or select curbside pickup from your favorite local stores. The best way.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Instacarting in Wegmans YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/t04G9scOrFs/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tipping is strongly recommended, so there’s potential to earn more since you get to keep 100% of customer tips. The april 2021 rate of $17.18 per hour represents a whopping 39.56% jump in earnings from $12.31 in january 2020. The argument is that as a reseller you shouldn’t get a receipt showing what the original cast was the same way.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="I got my account deactivated 🤦‍♂️🤦‍♂️" data-src="https://i2.wp.com/preview.redd.it/7prt6ckkjlf61.jpg?auto=webp&amp;s=fbfcb1ba8fa0f660ea78de313b645f084c8458fb" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.reddit.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">To get higher earnings you’ll need more batches. You can browse available selections by store and build your online shopping cart on target’s website or on the target app. This not a strategy that i have personally deployed yet, however, in my short time doing instacart i have ran into multiple “team instacarters”. Using instacart makes is easy to get.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="When football season starts, but you can&#039;t stop instacarting🏈🏈🏈" data-src="https://i2.wp.com/preview.redd.it/1c0iqkpaeym51.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=dda4e7f571b4023bfaf02f394593c99cab56712f" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.reddit.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Like rideshare driving, instacart is a flexible way to earn extra money because you can choose your own schedule and get paid. For many deliveries, the charge is $5.99, but this may differ depending on your location. Instacart allows you to shop your favorite grocery stores from the comfort of your home, using your computer, tablet, or smartphone. You will.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Are my metrics good? Been instacarting for two months" data-src="https://i2.wp.com/external-preview.redd.it/ppuZsgZPN0R7AQAZRKB1X9AOEMv9OHdpDN_YHrOKtng.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=ca4f885655fb944d71939c63ed34e0ff5c70797b" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.reddit.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Because instacart caps the hours at 29 per week, they’re not required to provide you with health insurance (which is for employees who. This not a strategy that i have personally deployed yet, however, in my short time doing instacart i have ran into multiple “team instacarters”. Excellent pay plus covers has mileage percentage in top of good promotions.highly responsive.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Got to say hello to this good girl in training while Instacarting today" data-src="https://i2.wp.com/i.redd.it/15hip5zanxx51.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.reddit.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">There is a charge in addition to the price of your groceries. To get higher earnings you’ll need more batches. The best way to make the most money with instacart is to be in an area with high demand. If you earned at least $600 delivery groceries over the course of the year — including base pay and tips from.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="New payment structure is 💩...confirmed." data-src="https://i2.wp.com/preview.redd.it/oykb3n4t5jw11.jpg?auto=webp&amp;s=799621df995eec983b536044ba0d85f9d07e0ece" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.reddit.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">What is dual batch instacarting? Instacart express costs $99 per year (for an annual membership) or $9.99 per month (for a monthly membership). If it’s $5, then that means ~$0.40 in taxes. Instacart is one of the most popular grocery delivery apps, and they rely on everyday people like you and me to operate. These zones have less competition and.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-ester.html" class="be-post-title">
+				 <h6>wat is een ester </h6>
+                </a>
+                <a href="wat-is-een-ester.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20ester&amp;w=50&amp;h=50&amp;c=7" alt="wat is een ester">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="terbiyesiz-ne-demek-fransizca.html" class="be-post-title">
+				 <h6>terbiyesiz ne demek fransizca </h6>
+                </a>
+                <a href="terbiyesiz-ne-demek-fransizca.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=terbiyesiz%20ne%20demek%20fransizca&amp;w=50&amp;h=50&amp;c=7" alt="terbiyesiz ne demek fransizca">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="uji-toksisitas-adalah-pdf.html" class="be-post-title">
+				 <h6>uji toksisitas adalah pdf </h6>
+                </a>
+                <a href="uji-toksisitas-adalah-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=uji%20toksisitas%20adalah%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="uji toksisitas adalah pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="tipos-de-ecosistema-terrestre-y-sus-caracteristicas.html" class="be-post-title">
+				 <h6>tipos de ecosistema terrestre y sus caracteristicas </h6>
+                </a>
+                <a href="tipos-de-ecosistema-terrestre-y-sus-caracteristicas.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=tipos%20de%20ecosistema%20terrestre%20y%20sus%20caracteristicas&amp;w=50&amp;h=50&amp;c=7" alt="tipos de ecosistema terrestre y sus caracteristicas">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-verdient-een-agoog.html" class="be-post-title">
+				 <h6>wat verdient een agoog </h6>
+                </a>
+                <a href="wat-verdient-een-agoog.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20verdient%20een%20agoog&amp;w=50&amp;h=50&amp;c=7" alt="wat verdient een agoog">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-amortizacion-de-credito-infonavit.html" class="be-post-title">
+				 <h6>que es la amortizacion de credito infonavit </h6>
+                </a>
+                <a href="que-es-la-amortizacion-de-credito-infonavit.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20amortizacion%20de%20credito%20infonavit&amp;w=50&amp;h=50&amp;c=7" alt="que es la amortizacion de credito infonavit">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-filosofo-definicion.html" class="be-post-title">
+				 <h6>que es un filosofo definicion </h6>
+                </a>
+                <a href="que-es-un-filosofo-definicion.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20filosofo%20definicion&amp;w=50&amp;h=50&amp;c=7" alt="que es un filosofo definicion">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-es-la-habana-cuba.html" class="be-post-title">
+				 <h6>como es la habana cuba </h6>
+                </a>
+                <a href="como-es-la-habana-cuba.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20es%20la%20habana%20cuba&amp;w=50&amp;h=50&amp;c=7" alt="como es la habana cuba">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-virgos-rising-zodiac-sign.html" class="be-post-title">
+				 <h6>what is a virgos rising zodiac sign </h6>
+                </a>
+                <a href="what-is-a-virgos-rising-zodiac-sign.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20virgos%20rising%20zodiac%20sign&amp;w=50&amp;h=50&amp;c=7" alt="what is a virgos rising zodiac sign">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bağlı-gen-nedir-biyoloji.html" class="be-post-title">
+				 <h6>bağlı gen nedir biyoloji </h6>
+                </a>
+                <a href="bağlı-gen-nedir-biyoloji.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=ba%C4%9Fl%C4%B1%20gen%20nedir%20biyoloji&amp;w=50&amp;h=50&amp;c=7" alt="bağlı gen nedir biyoloji">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

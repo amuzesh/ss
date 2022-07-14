@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Is Eis Compulsory at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Is Eis Compulsory",
+  "datePublished": "2022-07-01T13:33:50Z",
+  "image": "https://tse1.mm.bing.net/th?q=is%20eis%20compulsory",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=is%20eis%20compulsory&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=is%20eis%20compulsory" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=is%20eis%20compulsory" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Is Eis Compulsory at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Is Eis Compulsory</h2>
+    <p><strong>Is Eis Compulsory</strong>. The eis will be operated and administered by the social security organisation. Malaysia’s 2021 budget announcement has highlighted that the epf rate for employee under the age 60 years old is reduced from 11% to 6% by default with effect from february 2021 to january 2022.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=is%20eis%20compulsory" alt="Kinder Überraschungsei Eis selber machen Ü Ei Eis Rezept YouTube" />
+        <br>
+        <figcaption>Kinder Überraschungsei Eis selber machen Ü Ei Eis Rezept YouTube from www.youtube.com</figcaption>
+    </figure>
+        <p>
+        It is noted that the contributions to eis is capped at a monthly salary level of rm4,000. The eis is intended to act as a safety net for employees in the event of retrenchment or unemployment due to bankruptcy or any other reasons for insolvency of employers. D) for mammogram screening, panel doctors will refer the employee to the mammogram centre for screening.
+    </p>
+    <h3>Kinder Überraschungsei Eis selber machen Ü Ei Eis Rezept YouTube</h3>
+    <p>All employers in the private sector are required to pay monthly contributions for each of their employees. That it is a communal obligation. Employee’s eligibility all employees who are employed under a contract of service or apprenticeship in the private sector and contractual / temporary staff of federal / state government as well as federal / state statutory bodies need to be registered and covered by. But there are more rules than you can shake a stick at and every year extra ones are added.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Enable EIS, Camera2API Google Camera On MI A1 (No Root Required)" data-src="https://i2.wp.com/www.gizdev.com/wp-content/uploads/2018/03/Camera2API-Google-Camera-on-MI-A1-Without-Root-750x422.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.gizdev.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Malaysia’s 2021 budget announcement has highlighted that the epf rate for employee under the age 60 years old is reduced from 11% to 6% by default with effect from february 2021 to january 2022. Esic is not to be provided to all employees, its provided to those employees who come under the ambit of esic. It functions similarly to the.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Leckeres Joghurt Eis selber machen in 10 min ohne teure Eismaschine" data-src="https://i2.wp.com/i.ytimg.com/vi/BPVyVGSPo-s/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">C) bring together the voucher to the hsp panel clinic; An employee is defined as a person who is employed for wages under a contract of service or apprenticeship with an employer. This system is applicable to the private sector which is estimated to benefit 6.6 million workers. It is recommended to engage a payroll service provider that takes care.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Eis Contribution Table Pdf Rational Construction Of Pt Pttex" data-src="https://i0.wp.com/sharecredit.co.uk/Images/OpenISA.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: rubygreenholt.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">All foreign workers must register to obtain the foreign worker social security no. Employers are prohibited from reducing wages and removing or reducing any similar existing benefits in response to their eis obligations. To help navigate the maze, here is a current checklist. Who is eligible for eis? That it is a communal obligation.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kinder Überraschungsei Eis selber machen Ü Ei Eis Rezept YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/3WgcoDMWC7A/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hmrc has information on eis and seis at their website under “enterprise investment scheme (eis)” or “seed enterprise investment scheme (seis)” and in their venture capital manual (vcm). This is the view of imam ahmad (may allah have mercy on him). Esic is not to be provided to all employees, its provided to those employees who come under the ambit.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Employer contribution of EPF, SOCSO, and EIS in Malaysia" data-src="https://i2.wp.com/foundingbird.com/wp-content/uploads/2021/01/EPF-SOCSO-768x1130.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: foundingbird.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">That it is a communal obligation. Hmrc has information on eis and seis at their website under “enterprise investment scheme (eis)” or “seed enterprise investment scheme (seis)” and in their venture capital manual (vcm). The eis contribution total approximately 1.5% of monthly wages, with the employee and employer contributing 50% each. Employers are prohibited from reducing wages and removing or.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kadar Caruman Eis Contribution Table 2021 Jadual Caruman Sip Perkeso" data-src="https://i0.wp.com/www.smartouch.com.my/wp-content/uploads/2021/04/asx-1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: denajacobi.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Malaysia’s 2021 budget announcement has highlighted that the epf rate for employee under the age 60 years old is reduced from 11% to 6% by default with effect from february 2021 to january 2022. It is recommended to engage a payroll service provider that takes care of your employees’ registration with epf and socso, salary payments, payroll taxes, and also.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="EisFlaschenkühler all4house.de" data-src="https://i2.wp.com/www.all4house.de/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/e/i/eisflaschenku_hler_zitronen_eis_.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.all4house.de</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The eis contribution total approximately 1.5% of monthly wages, with the employee and employer contributing 50% each. Is it compulsory to apply for the eis program in malaysia? It is compulsory for all eligible employees who are malaysian citizens and permanent residents to register. All employers in the private sector are required to pay monthly contributions for each of their.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Magnum Dark Chocolate Raspberry Ice Cream, 14.8 Oz Pint (1 Count" data-src="https://i2.wp.com/cdn11.bigcommerce.com/s-du7jbb86da/images/stencil/1280x1280/products/2397/4922/ETFZ-0000-9656__89297.1518010415.JPG?c=2?imbypass=on" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: rocketdsd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The contribution rate is 0.2% for the employer and 0.2% for employee based on the employee’s monthly salary. C) bring together the voucher to the hsp panel clinic; It is a compulsory government scheme that covers all private sector employees automatically, with employers and employees each contributing 0.2% of the employee’s salary every month. That it is a duty for.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Socso Contribution Table 2020 Employer Contribution Of Epf Socso And" data-src="https://i2.wp.com/lh3.googleusercontent.com/blogger_img_proxy/ABLy4Eziq1Zh7F7WBmojQPHpImDDbM-_3y5Umw-Cv1rAU_rwfvpIcRYrT7MJXd7IDmeBqkNBRnSfqx_A002N2bOHT-NH-zD9yRiURnLYtyYpPKPnrlaR75I1XoIqqOB7Cj54s1QiHpIXgz-tJhhZuVJwuxaMQnd-0KaEJ3dCCKPUsYMtZuLpfA58i6pKGg=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: rownkevin.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The proposed eis initiative will be managed by socso, and the contribution from both employers and employees towards the employee’s insurance account is compulsory. Esic is not to be provided to all employees, its provided to those employees who come under the ambit of esic. It also aims to provide extended welfare. An employee is defined as a person who.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Borang 8A Eis / How To Get An Ea Form What Is Ea Form Is Ea Form" data-src="https://i2.wp.com/lh3.googleusercontent.com/proxy/YbXxAZR_Ps7aKPW1POdQxG-FJo5Iz8cJ7jirDwfV7mYF40p7lOJa3r17VN1Eyh_CpyOefkHC6LB1UwEUu4tWWLB6wsSOYCb6Ybw0mhYMvNp9I6qwDWE7cc0D7x4_5GSFY6it=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: abellia8.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The eis contribution rate is based on section 18 and schedule 2 of the employment insurance system act 2017. The malaysian epf is a compulsory pension scheme for all malaysians. That ‘eid prayer is sunnah mu’akkadah (a confirmed sunnah). Who is eligible for eis? Employee’s eligibility all employees who are employed under a contract of service or apprenticeship in the.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-depredacion-en-biologia.html" class="be-post-title">
+				 <h6>que es depredacion en biologia </h6>
+                </a>
+                <a href="que-es-depredacion-en-biologia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20depredacion%20en%20biologia&amp;w=50&amp;h=50&amp;c=7" alt="que es depredacion en biologia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-ser-en-la-filosofia-brainly.html" class="be-post-title">
+				 <h6>que es el ser en la filosofia brainly </h6>
+                </a>
+                <a href="que-es-el-ser-en-la-filosofia-brainly.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20ser%20en%20la%20filosofia%20brainly&amp;w=50&amp;h=50&amp;c=7" alt="que es el ser en la filosofia brainly">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="minecraft-pe-file-location.html" class="be-post-title">
+				 <h6>minecraft pe file location </h6>
+                </a>
+                <a href="minecraft-pe-file-location.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=minecraft%20pe%20file%20location&amp;w=50&amp;h=50&amp;c=7" alt="minecraft pe file location">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-itbis-facturado.html" class="be-post-title">
+				 <h6>que es el itbis facturado </h6>
+                </a>
+                <a href="que-es-el-itbis-facturado.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20itbis%20facturado&amp;w=50&amp;h=50&amp;c=7" alt="que es el itbis facturado">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-fiscale-fiche-281-10.html" class="be-post-title">
+				 <h6>wat is fiscale fiche 281.10 </h6>
+                </a>
+                <a href="wat-is-fiscale-fiche-281-10.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20fiscale%20fiche%20281.10&amp;w=50&amp;h=50&amp;c=7" alt="wat is fiscale fiche 281.10">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-debe-contener-un-contrato-de-donacion.html" class="be-post-title">
+				 <h6>que debe contener un contrato de donacion </h6>
+                </a>
+                <a href="que-debe-contener-un-contrato-de-donacion.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20debe%20contener%20un%20contrato%20de%20donacion&amp;w=50&amp;h=50&amp;c=7" alt="que debe contener un contrato de donacion">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-betaalverzoek.html" class="be-post-title">
+				 <h6>wat is een betaalverzoek </h6>
+                </a>
+                <a href="wat-is-een-betaalverzoek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20betaalverzoek&amp;w=50&amp;h=50&amp;c=7" alt="wat is een betaalverzoek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-minecraft-es-mejor-java-o-windows-10.html" class="be-post-title">
+				 <h6>que minecraft es mejor java o windows 10 </h6>
+                </a>
+                <a href="que-minecraft-es-mejor-java-o-windows-10.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20minecraft%20es%20mejor%20java%20o%20windows%2010&amp;w=50&amp;h=50&amp;c=7" alt="que minecraft es mejor java o windows 10">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-het-verschil-tussen-reinigen-en-desinfecteren.html" class="be-post-title">
+				 <h6>wat is het verschil tussen reinigen en desinfecteren </h6>
+                </a>
+                <a href="wat-is-het-verschil-tussen-reinigen-en-desinfecteren.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20het%20verschil%20tussen%20reinigen%20en%20desinfecteren&amp;w=50&amp;h=50&amp;c=7" alt="wat is het verschil tussen reinigen en desinfecteren">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-rederij.html" class="be-post-title">
+				 <h6>wat is een rederij </h6>
+                </a>
+                <a href="wat-is-een-rederij.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20rederij&amp;w=50&amp;h=50&amp;c=7" alt="wat is een rederij">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

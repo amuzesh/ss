@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Que Es Qe at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Que Es Qe",
+  "datePublished": "2022-05-22T04:13:03Z",
+  "image": "https://tse1.mm.bing.net/th?q=que%20es%20qe",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=que%20es%20qe&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20es%20qe" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20es%20qe" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Que Es Qe at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Que Es Qe</h2>
+    <p><strong>Que Es Qe</strong>. No me gustan has participado en algún otro concurso? Sin referencia deíctica ni anafórica.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=que%20es%20qe" alt="¿Qué es argumentar?" />
+        <br>
+        <figcaption>¿Qué es argumentar? from www.aboutespanol.com</figcaption>
+    </figure>
+        <p>
+        Actualidad ¿qué es el manhattanhenge? What does the abbreviation que stand for? Ser hombre o mujer, o ser gay o hetero.
+    </p>
+    <h3>¿Qué es argumentar?</h3>
+    <p>Van desde la versión 1 (con na matriz de 21 x 21 módulos) hasta la versión 10 (con 177 x 177 módulos). Yo lo recordaba caro eh?qué va! ¿ a qué amigo hay que llamar? Ser hombre o mujer, o ser gay o hetero.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Que es la Matemática? Explicacion YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/RljDSMHH8l4/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Yo lo recordaba caro eh?qué va! What does the abbreviation que stand for? De esta forma no es extraño que puedan producir una de estas dos circunstancias. En el caso de carnets de otra categoría la. Los programas de estímulo de la economía quantitative easing (qe) tienen como objetivo la compra de activos de deuda pública por parte de los.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Qué es dicción? YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/1quF4TFCdgU/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bueno, ha contado parte, pero no lo. En términos teóricos el qe es una herramienta de política monetaria en la cual el banco central compra bonos del gobierno o cualquier otra clase de activos financieros con el fin de inyectar. Hay varias versiones de códigos qr según la cantidad de módulos que forman la matriz: La flexibilización cuantitativa (en inglés.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Que es la logica" data-src="https://i2.wp.com/cdn.slidesharecdn.com/ss_thumbnails/queeslalogica-140328172457-phpapp02-thumbnail-4.jpg?cb=1396027551" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Salvan la vida a una cría de elefante y a su madre gracias a una reanimación rcp en tailandia; No me gustan has participado en algún otro concurso? El cambio climático es un problema global que alcanza una perspectiva ambiental, política, económica y social en la que las peores previsiones también implican enormes pérdidas económicas. Van desde la versión 1.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Qué es la percepción" data-src="https://i2.wp.com/cdn.slidesharecdn.com/ss_thumbnails/queslapercepcin-111114154903-phpapp01-thumbnail-4.jpg?cb=1321285866" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">11 de julio de 2022. Es por ello que conviene estar muy atentos. Por su historia, la palabra “queer” puede tener un sentido negativo. What does the abbreviation que stand for? Pronom interrogatiu, precedit o no de preposició (es nota que és interrogatiu perquè significa ‘quina cosa’ o ‘quin motiu’):</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Qué es HTTP y HTTPS?" data-src="https://i2.wp.com/www.aboutespanol.com/thmb/5U6d8-LLZgkOZOVS1ry0zmMiKWc=/1354x778/filters:fill(auto,1)/HTTP-en-URL-56ce68265f9b5879cc629d63.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.aboutespanol.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Aquest és el cotxe de què et parlo.: Is it que, queue, or q? No sé qué vestidos de estos le gustarán. Van desde la versión 1 (con na matriz de 21 x 21 módulos) hasta la versión 10 (con 177 x 177 módulos). En el caso de carnets de otra categoría la.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Que Es El Método Científico?" data-src="https://i2.wp.com/imgv2-2-f.scribdassets.com/img/document/4106258/original/4152eb3d3d/1568170579?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Qué significa qe en español. Bueno, ha contado parte, pero no lo. No me gustan has participado en algún otro concurso? No, no, no ¡qué va! Is it que, queue, or q?</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Qué es una Sucesión Matemática Trailer YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/aig4IZGlWN4/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Conjunció que introdueix oracions subordinades substantives. Pregunta por el tipo o la clase a que pertenecen una o varias personas o cosas. What does the abbreviation que stand for? Pregunta por la identidad de una o varias personas o cosas de un conjunto identificable. Más quiero perder la vida que perder la honra.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Que es tutoria" data-src="https://i2.wp.com/cdn.slidesharecdn.com/ss_thumbnails/queestutoria-110409184108-phpapp01-thumbnail-4.jpg?cb=1302375462" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">See 3 authoritative translations of qué es in english with example sentences and audio pronunciations. El efecto más inmediato de un qe, como se ha podido comprobar en eeuu, es la subida de las bolsas. Los programas de estímulo de la economía quantitative easing (qe) tienen como objetivo la compra de activos de deuda pública por parte de los bancos.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿que es la emigracion? YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/4HTdBT8nvW0/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">El boj decidió mantener los tipos de interés a corto plazo cerca de sus valores mínimos cercanos a cero, desde 1999. Pronom relatiu precedit de preposició feble (equival a el qual, la qual, els quals, les quals…): Puso a la venta una casa del ipvdu a días de recibirla, ahora el gobierno se la quit. La estructura general de un.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Qué es argumentar?" data-src="https://i2.wp.com/www.aboutespanol.com/thmb/2G3PnZgypuQOBI9Jh8vb2Hv86JM=/2120x1414/filters:fill(auto,1)/Mujerdenegocioshablandoenreunin-5b07234043a103003613b524.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.aboutespanol.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Entre otras cosas, sus conocimientos en operaciones (infraestructura, servidores, plataformas) le vendrán bien para las pruebas de seguridad, performance, para integrar chequeos en un esquema de ci/cd, etc. El chorro de dinero en efectivo que reciben los bancos va directo a la inversión que más rentabilidad les puede generar, la financiera. La expansión cuantitativa es un instrumento de política monetaria.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-crear-una-historia-corta-en-ingles.html" class="be-post-title">
+				 <h6>como crear una historia corta en ingles </h6>
+                </a>
+                <a href="como-crear-una-historia-corta-en-ingles.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20crear%20una%20historia%20corta%20en%20ingles&amp;w=50&amp;h=50&amp;c=7" alt="como crear una historia corta en ingles">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="programa-sap-para-que-sirve.html" class="be-post-title">
+				 <h6>programa sap para que sirve </h6>
+                </a>
+                <a href="programa-sap-para-que-sirve.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=programa%20sap%20para%20que%20sirve&amp;w=50&amp;h=50&amp;c=7" alt="programa sap para que sirve">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="is-libor-risk-free.html" class="be-post-title">
+				 <h6>is libor risk free </h6>
+                </a>
+                <a href="is-libor-risk-free.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=is%20libor%20risk%20free&amp;w=50&amp;h=50&amp;c=7" alt="is libor risk free">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-grupo-de-apoyo.html" class="be-post-title">
+				 <h6>que es un grupo de apoyo </h6>
+                </a>
+                <a href="que-es-un-grupo-de-apoyo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20grupo%20de%20apoyo&amp;w=50&amp;h=50&amp;c=7" alt="que es un grupo de apoyo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="hur-många-steg-är-en-mil.html" class="be-post-title">
+				 <h6>hur många steg är en mil </h6>
+                </a>
+                <a href="hur-många-steg-är-en-mil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=hur%20m%C3%A5nga%20steg%20%C3%A4r%20en%20mil&amp;w=50&amp;h=50&amp;c=7" alt="hur många steg är en mil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="hidratos-de-carbono-en-nutricion.html" class="be-post-title">
+				 <h6>hidratos de carbono en nutricion </h6>
+                </a>
+                <a href="hidratos-de-carbono-en-nutricion.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=hidratos%20de%20carbono%20en%20nutricion&amp;w=50&amp;h=50&amp;c=7" alt="hidratos de carbono en nutricion">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-pais-megadiverso-y-sus-caracteristicas.html" class="be-post-title">
+				 <h6>que es un pais megadiverso y sus caracteristicas </h6>
+                </a>
+                <a href="que-es-un-pais-megadiverso-y-sus-caracteristicas.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20pais%20megadiverso%20y%20sus%20caracteristicas&amp;w=50&amp;h=50&amp;c=7" alt="que es un pais megadiverso y sus caracteristicas">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-doet-een-uitvoerder.html" class="be-post-title">
+				 <h6>wat doet een uitvoerder </h6>
+                </a>
+                <a href="wat-doet-een-uitvoerder.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20doet%20een%20uitvoerder&amp;w=50&amp;h=50&amp;c=7" alt="wat doet een uitvoerder">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-silencio.html" class="be-post-title">
+				 <h6>que es silencio </h6>
+                </a>
+                <a href="que-es-silencio.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20silencio&amp;w=50&amp;h=50&amp;c=7" alt="que es silencio">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-estornudar-1-2-y-3-veces.html" class="be-post-title">
+				 <h6>que significa estornudar 1 2 y 3 veces </h6>
+                </a>
+                <a href="que-significa-estornudar-1-2-y-3-veces.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20estornudar%201%202%20y%203%20veces&amp;w=50&amp;h=50&amp;c=7" alt="que significa estornudar 1 2 y 3 veces">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

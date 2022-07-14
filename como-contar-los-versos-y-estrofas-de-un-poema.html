@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Como Contar Los Versos Y Estrofas De Un Poema at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Como Contar Los Versos Y Estrofas De Un Poema",
+  "datePublished": "2022-06-28T11:55:40Z",
+  "image": "https://tse1.mm.bing.net/th?q=como%20contar%20los%20versos%20y%20estrofas%20de%20un%20poema",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=como%20contar%20los%20versos%20y%20estrofas%20de%20un%20poema&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=como%20contar%20los%20versos%20y%20estrofas%20de%20un%20poema" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=como%20contar%20los%20versos%20y%20estrofas%20de%20un%20poema" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Como Contar Los Versos Y Estrofas De Un Poema at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Como Contar Los Versos Y Estrofas De Un Poema</h2>
+    <p><strong>Como Contar Los Versos Y Estrofas De Un Poema</strong>. Sin embargo, existe una excepción: Se señala con una triple barra inclinada.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=como%20contar%20los%20versos%20y%20estrofas%20de%20un%20poema" alt="Que Es La Metrica En Un Poema Ejemplos Compartir Ejemplos" />
+        <br>
+        <figcaption>Que Es La Metrica En Un Poema Ejemplos Compartir Ejemplos from compartirejemplos.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Cinco versos de arte mayor, rima consonante que sigue el esquema: En una canción, las estrofas estarán agrupadas o segmentadas en cuatro o más líneas, con un espacio en blanco entre cada agrupación. Las estrofas se clasifican según el número de versos que contienen.
+    </p>
+    <h3>Que Es La Metrica En Un Poema Ejemplos Compartir Ejemplos</h3>
+    <p>Cuando en el interior del verso una palabra termina en vocal y la siguiente empieza por vocal, se funden las sílabas a que pertenecen ambas vocales y se cuentan como una sola. Médir un verso es contar le numéro de silabas métriques que lo integran. Para medir un verso hay que tener en cuenta la sinalefa y la acentuación de la palabra final del verso. Esta pausa impide la sinalefa.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Que Es La Metrica En Un Poema Ejemplos Compartir Ejemplos" data-src="https://i2.wp.com/lh5.googleusercontent.com/proxy/w3T16QQiX7YS0S0tQyyOyOoYYdZItJ1XDh819u0hA2Hu1_JQhl6SCYvteTtIgAss37veKVrx6RVWna5cuFPAsSL9awyFttlxiibiXrNlcP3thVzxJZEfkRHY6AM0SPKn0klKaYSqxh2lEgvqcw=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: compartirejemplos.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Volvió la luna a buscarlo. Es, por ejemplo, el soneto. Separar y contar las sílabas. Este poema tiene 4 estrofas Para medir un verso hay que tener en cuenta la sinalefa y la acentuación de la palabra final del verso.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ejercicio de Estrofas y versos" data-src="https://i2.wp.com/files.liveworksheets.com/def_files/2020/10/6/1006204619541131/1006204619541131001.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.liveworksheets.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Cesura, que se produce en el interior de los versos compuestos. A continuación te dejaremos una lista con los principales elementos de los poemas para ayudarte a traer emoción, significado e imaginación al lector. Esta es la peculiaridad de la poesía, la libertad a. Se señala con una doble barra inclinada. Para jugar otra vez, pero estaba entretenido.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="La poesía lírica" data-src="https://i2.wp.com/image.slidesharecdn.com/lapoesalrica-120628195419-phpapp01/95/la-poesa-lrica-5-728.jpg?cb=1340913309" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">También tenemos que fijarnos en la estructura de la rima, es decir, qué verso rima con qué. El número de versos según las estrofas. Para medir un verso hay que tener en cuenta la sinalefa y la acentuación de la palabra final del verso. Pese a que parezca mentira, los poemas pueden tener los versos que cada autor quiera. ¿cómo.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="SIEMPRE 20 LA PROSA Y EL VERSO (1° Secundaria)" data-src="https://i2.wp.com/1.bp.blogspot.com/-w_r2uQkmrgQ/ToqKi8NMZLI/AAAAAAAABoI/1pvD6kt8D8A/s1600/19.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: siempre20.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Las estrofas son los párrafos, por lo que el anterior poema tiene 1 sola estrofa. ¿cuántas estrofas del himno nacional. Cesura, que se produce en el interior de los versos compuestos. Para comprender este tipo de obra lírica, debemos considerar sus elementos formales. Una estrofa, es una de las unidades que componen un poema, y.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Necesito un poema de 4 estrofas que RIMEN&gt;&gt; Brainly.lat" data-src="https://i2.wp.com/es-static.z-dn.net/files/d06/a4e0ef1fc66a964b73657c6d13d3538a.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.lat</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Cinco versos de arte menor con rima consonante que mantiene el mismo esquema métrico que el anterior. Puedes escribir una palabra, un texto largo o poemas, y nuestra web separará las sílabas y las contará. Cuenta el número de versos de cada grupo para identificar cada estrofa y determinar cuántos versos hay en cada estrofa. Es un análisis estilístico que.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="DE TODO UN POCO Poesía y sus principales características" data-src="https://i2.wp.com/3.bp.blogspot.com/-bme3OZpLkms/TtNKgbHfHJI/AAAAAAAAAig/DdQO7JFaciE/s1600/Canci%25C3%25B3n+del+pirata+an%25C3%25A1lisis+mn%25C3%25A9trico.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: jpbd1a.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Podemos crear un poema con 100 versos o con 1 sólo y 3 palabras. Cinco versos de arte menor con rima consonante y esquema más variable que el quinteto, por ejemplo: Cómo hacer un análisis métrico Aprende cómo analizar un poema métricamente y según sus versos, estrofas y más. Sacaba en otro tiempo la alegría”.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="CUARTO DE PRIMARIA JESUS NEIRA » 2015 » Abril » 20" data-src="https://i2.wp.com/recursostic.educacion.es/eda/web/tic_2_0/informes/garcia_monedero_gloria/EL_CID/images/rima3acento.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blog.educastur.es</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Las silabas métricas pas de coïncidence exacte avec las silabas normales porc, al medir verso, hay que tener en cuenta las siguientes reglas: Para jugar otra vez, pero estaba entretenido. Si observa algún carácter extraño que no debería estar, por favor utiliza nuestro formulario de contacto y lo resolveremos lo antes posible. A trechos me paraba para enjugar mi frente”..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="La pizarra de Lengua y Literatura Tipos de estrofas y poemas" data-src="https://i2.wp.com/3.bp.blogspot.com/-nxY_eMYDI28/VFfDNZuRBFI/AAAAAAAAAMM/NkYWfIIHIYA/s1600/las%2Bestrofas.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lapizarradelengua.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">El poema se divide en estrofas, las estrofas se cuentan de manera visual, un poema puede tener una sola estrofa o varias, cada estrofa. Forma fija una forma cuya estructuración resulta fijada convencionalmente. Puedes escribir una palabra, un texto largo o poemas, y nuestra web separará las sílabas y las contará. Las estrofas se suelen repetir en el poema estrófico.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Literatura. poesia.versos estrofas y sus tipos" data-src="https://i2.wp.com/image.slidesharecdn.com/literatura-poesia-versosestrofasysustipos-100605122247-phpapp01/95/literatura-poesiaversos-estrofas-y-sus-tipos-2-728.jpg?cb=1275740599" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">También tenemos que tener presente que la separación en sílabas. Esto puede ayudarte a identificar las estrofas del poema y la estructura del mismo. Esta es la peculiaridad de la poesía, la libertad a. Juntar todo el texto (para lingüistas). Te enseñamos todo lo que necesitas saber para entender todos los elementos del poema.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="La métrica en esquemas" data-src="https://i2.wp.com/image.slidesharecdn.com/versoymtrica1eso-130221053638-phpapp01/95/verso-y-mtrica-1-eso-12-638.jpg?cb=1361425038" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: llavesdefieltro.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Lo mismo pasa con $, ª, =, , {, +, etc. Para comprender este tipo de obra lírica, debemos considerar sus elementos formales. Si observas una canción escrita, fíjate en las agrupaciones de al menos cuatro o cinco líneas en secciones. Esto puede ayudarte a identificar las estrofas del poema y la estructura del mismo. Para ello debemos separar cada.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-hacer-una-introduccion-de-un-libro.html" class="be-post-title">
+				 <h6>como hacer una introduccion de un libro </h6>
+                </a>
+                <a href="como-hacer-una-introduccion-de-un-libro.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20hacer%20una%20introduccion%20de%20un%20libro&amp;w=50&amp;h=50&amp;c=7" alt="como hacer una introduccion de un libro">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-cuba-libre.html" class="be-post-title">
+				 <h6>que es una cuba libre </h6>
+                </a>
+                <a href="que-es-una-cuba-libre.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20cuba%20libre&amp;w=50&amp;h=50&amp;c=7" alt="que es una cuba libre">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="omaygat-ne-demek-ingilizcesi-nedir.html" class="be-post-title">
+				 <h6>omaygat ne demek ingilizcesi nedir </h6>
+                </a>
+                <a href="omaygat-ne-demek-ingilizcesi-nedir.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=omaygat%20ne%20demek%20ingilizcesi%20nedir&amp;w=50&amp;h=50&amp;c=7" alt="omaygat ne demek ingilizcesi nedir">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-sus-en-ingles.html" class="be-post-title">
+				 <h6>que es sus en ingles </h6>
+                </a>
+                <a href="que-es-sus-en-ingles.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20sus%20en%20ingles&amp;w=50&amp;h=50&amp;c=7" alt="que es sus en ingles">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="hüzzam-zamanı-ne-demek.html" class="be-post-title">
+				 <h6>hüzzam zamanı ne demek </h6>
+                </a>
+                <a href="hüzzam-zamanı-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=h%C3%BCzzam%20zaman%C4%B1%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="hüzzam zamanı ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-douanefactuur.html" class="be-post-title">
+				 <h6>wat is een douanefactuur </h6>
+                </a>
+                <a href="wat-is-een-douanefactuur.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20douanefactuur&amp;w=50&amp;h=50&amp;c=7" alt="wat is een douanefactuur">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="canon-latin-word-meaning.html" class="be-post-title">
+				 <h6>canon latin word meaning </h6>
+                </a>
+                <a href="canon-latin-word-meaning.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=canon%20latin%20word%20meaning&amp;w=50&amp;h=50&amp;c=7" alt="canon latin word meaning">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-asincronica-y-sincronica.html" class="be-post-title">
+				 <h6>que es asincronica y sincronica </h6>
+                </a>
+                <a href="que-es-asincronica-y-sincronica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20asincronica%20y%20sincronica&amp;w=50&amp;h=50&amp;c=7" alt="que es asincronica y sincronica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-rukia-s-shikai.html" class="be-post-title">
+				 <h6>what is rukia&#039;s shikai </h6>
+                </a>
+                <a href="what-is-rukia-s-shikai.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20rukia%27s%20shikai&amp;w=50&amp;h=50&amp;c=7" alt="what is rukia&amp;#039;s shikai">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-included-in-a-risk-register.html" class="be-post-title">
+				 <h6>what is included in a risk register </h6>
+                </a>
+                <a href="what-is-included-in-a-risk-register.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20included%20in%20a%20risk%20register&amp;w=50&amp;h=50&amp;c=7" alt="what is included in a risk register">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

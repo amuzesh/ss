@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Verso Y Estrofa Poema at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Verso Y Estrofa Poema",
+  "datePublished": "2022-06-26T07:56:35Z",
+  "image": "https://tse1.mm.bing.net/th?q=verso%20y%20estrofa%20poema",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=verso%20y%20estrofa%20poema&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=verso%20y%20estrofa%20poema" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=verso%20y%20estrofa%20poema" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Verso Y Estrofa Poema at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Verso Y Estrofa Poema</h2>
+    <p><strong>Verso Y Estrofa Poema</strong>. Un verso es la unidad básica del poema, y, en conjunto, varios versos conforman una estrofa. Es una estupenda y divertida manera para que los niños aprendan qué es una estrofa.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=verso%20y%20estrofa%20poema" alt="2º B (Eunate) Verso y estrofa" />
+        <br>
+        <figcaption>2º B (Eunate) Verso y estrofa from elblogdesegundoeunate.blogspot.com</figcaption>
+    </figure>
+        <p>
+        45 45 encontró este documento útil marcar este documento como útil. Dos de cuatro versos y dos de tres), aunque dicha estructura también se considera pasada de moda en la poesía. Principales estrofas nombre n.º de versos rima sílabas por verso esquema pareado 2 consonante o asonante no hay un número fijo aa, aa,aa,aa terceto 3 consonante 11(endecasílabos).
+    </p>
+    <h3>2º B (Eunate) Verso y estrofa</h3>
+    <p>Suma de sã­labas de un. Poemas:versos y estrofas estudio de los poemas, los versos, las estrofas y la rima. Pero antiguamente la clasificación era mucho más rigurosa, vamos a verlo. Versos, estrofas add to my workbooks (465) download file pdf add to google classroom add to microsoft teams</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="El_genero_lirico._Verso_estrofa_y_poema" data-src="https://i2.wp.com/imgv2-1-f.scribdassets.com/img/document/78061304/original/0a6e4ea2df/1620891406?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Su ritmo se ve alterado por la cantidad de sílabas que posee y sus acentos. Esta tiene sus propias características y sus normas en cuanto a escritura. Coincidencia de sonidos entre verso y verso. Es una forma especial de expresarse, es un conjunto de palabras sujetas a medida, ritmo y cadencia. Se trata de un verso agudo, es decir, lleva.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="poemas con estrofas y versos rima jacaranda 191 qu 233 es un poema" data-src="https://i2.wp.com/image.slidesharecdn.com/figurasliterarias-100920085908-phpapp01/95/figuras-literarias-3-728.jpg?cb=1284973197" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blackhairstylecuts.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Lo primero que debemos recordar es que los poemas están escritos en verso, y estos, a su vez, están agrupados en estrofas. Su ritmo se ve alterado por la cantidad de sílabas que posee y sus acentos. En la poesía moderna, las estrofas no tienen todas el mismo número de versos, ni la medida ni la rima. Cada lã­nea o.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="El verso y la estrofa" data-src="https://i2.wp.com/image.slidesharecdn.com/elversoylaestrofa-140527021438-phpapp01/95/slide-2-1024.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Versos, estrofas añadir a mis cuadernos (465) descargar archivo pdf añadir a google classroom Las estrofas clásicas más comunes, son: Lo primero que debemos recordar es que los poemas están escritos en verso, y estos, a su vez, están agrupados en estrofas. Este cuadro puede ser utilizado a lo largo de toda la secundaria para facilitar al alumnado la identificación.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="El verso y la estrofa" data-src="https://i2.wp.com/image.slidesharecdn.com/elversoylaestrofa-140527021438-phpapp01/95/el-verso-y-la-estrofa-4-1024.jpg?cb=1401156946" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Una estrofa, entonces, será un grupo de versos que poseen una cierta medida o que tienen una rima común. De esta forma se establecen 3 tipos principales: Pero antiguamente la clasificación era mucho más rigurosa, vamos a verlo. Esta tiene sus propias características y sus normas en cuanto a escritura. 45 45 encontró este documento útil marcar este documento como.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="necesito un poema de 3 estrofas y 5 versos Brainly.lat" data-src="https://i2.wp.com/es-static.z-dn.net/files/d43/9144c3a52980e398153a5d353ac24e37.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.lat</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">About press copyright contact us creators advertise developers terms privacy policy &amp; safety how youtube works test new features press copyright contact us creators. En la poesía moderna, lasestrofas no tienen necesariamente exactamente el mismo número de versos ni exactamente la misma rima, y un poema tampoco debe tener necesariamente un número exacto de estrofas. Esta tiene sus propias características.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="COLE Y LENGUA POESÍA VERSOS Y ESTROFAS" data-src="https://i2.wp.com/es-static.z-dn.net/files/d2a/9e92dc26ba845aa8e0b381dc39520c88.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: coleylengua.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Una estrofa puede estar compuesta por una cantidad determinada de versos. El verso es una de las unidades en las que puede dividirse un poema, superior generalmente al pie e inferior a la estrofa. Una forma de poema extenso, a menudo escrito en verso en blanco, en el que el poeta muestra a un protagonista en acción de importancia histórica,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Collection of Poemas Con Estrofas Y Versos Rima Elementos Formales" data-src="https://i2.wp.com/i.ytimg.com/vi/wnKnH0E-7VM/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blackhairstylecuts.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De esta forma se establecen 3 tipos principales: Poema de dos estrofas y cuatro versos Esa letra se representa con minúscula si el verso es de arte menor y con mayúscula si es de arte mayor.a los versos que no riman (versos sueltos) se les asigna. Una estrofa, entonces, será un grupo de versos que poseen una cierta medida o.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Collection of Poema Con 2 Estrofas Y 4 Versos Brainlylat Cuentos" data-src="https://i2.wp.com/docentes.corefonet.com/media/upload/Poema_estrofa_y_verso.jpg?id=3455" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: apexwallpapers.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La poesía o la lírica es el género literario que expresa los sentimientos del autor. Una forma de poema extenso, a menudo escrito en verso en blanco, en el que el poeta muestra a un protagonista en acción de importancia histórica, o un gran mito. Coincidencia de sonidos entre verso y verso. Una estrofa, entonces, será un grupo de versos.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="2º B (Eunate) Verso y estrofa" data-src="https://i2.wp.com/4.bp.blogspot.com/-zx1cqhQaP-A/WT7kmbENzeI/AAAAAAAAEVA/SQVai9AadEMiEKcLNrLp99douisUX1JMACLcB/s1600/VERSO%252C%252BESTROFA%252C%252BRIMA%252BPOEMA.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: elblogdesegundoeunate.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Características, tipos, ejemplos.una estrofa es cada una de las partes en las cuales se divide o se estructura un poema.por otro lado, la estrofa está constituida por una cantidad variable de versos a lo largo del poema y estas pueden guardar similitud en cuanto a métrica, ritmo, rima y número de versos. En unprofesor queremos mostrarte una gran variedad de.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Blog de Educación Compensatoria Verso, estrofa, poema y rima." data-src="https://i2.wp.com/2.bp.blogspot.com/-wr2isjYH0Dc/WIEYEGhu9rI/AAAAAAAAAxQ/WNCSlEEG-c05eO-mu2QlWfT2qfZaZgkXACLcB/w1200-h630-p-k-no-nu/estrofa.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blogauroraeducacioncompe.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Un conjunto de versos es una estrofa y un conjunto de versos reunidos en estrofas es lo que da lugar a un poema. Para ello se miden los versos y se asigna una letra a los que riman entre sí; Este poema está dedicado a la luna, busca exaltar la bellaza de nuestro satélite natural y alabarlo con gracia. Es.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-realismo-magico-segun-gabriel-garcia-marquez.html" class="be-post-title">
+				 <h6>que es el realismo magico segun gabriel garcia marquez </h6>
+                </a>
+                <a href="que-es-el-realismo-magico-segun-gabriel-garcia-marquez.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20realismo%20magico%20segun%20gabriel%20garcia%20marquez&amp;w=50&amp;h=50&amp;c=7" alt="que es el realismo magico segun gabriel garcia marquez">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="mantenerse-en-sus-trece-significa.html" class="be-post-title">
+				 <h6>mantenerse en sus trece significa </h6>
+                </a>
+                <a href="mantenerse-en-sus-trece-significa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=mantenerse%20en%20sus%20trece%20significa&amp;w=50&amp;h=50&amp;c=7" alt="mantenerse en sus trece significa">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="fire-riser-room-rating-requirements.html" class="be-post-title">
+				 <h6>fire riser room rating requirements </h6>
+                </a>
+                <a href="fire-riser-room-rating-requirements.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=fire%20riser%20room%20rating%20requirements&amp;w=50&amp;h=50&amp;c=7" alt="fire riser room rating requirements">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-volkswagen-eos.html" class="be-post-title">
+				 <h6>what is volkswagen eos </h6>
+                </a>
+                <a href="what-is-volkswagen-eos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20volkswagen%20eos&amp;w=50&amp;h=50&amp;c=7" alt="what is volkswagen eos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-risk-register-in-information-security.html" class="be-post-title">
+				 <h6>what is risk register in information security </h6>
+                </a>
+                <a href="what-is-risk-register-in-information-security.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20risk%20register%20in%20information%20security&amp;w=50&amp;h=50&amp;c=7" alt="what is risk register in information security">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-sesion-sincrónica.html" class="be-post-title">
+				 <h6>que es sesion sincrónica </h6>
+                </a>
+                <a href="que-es-sesion-sincrónica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20sesion%20sincr%C3%B3nica&amp;w=50&amp;h=50&amp;c=7" alt="que es sesion sincrónica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-redencion-segun-la-biblia-cristiana.html" class="be-post-title">
+				 <h6>que es la redencion segun la biblia cristiana </h6>
+                </a>
+                <a href="que-es-la-redencion-segun-la-biblia-cristiana.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20redencion%20segun%20la%20biblia%20cristiana&amp;w=50&amp;h=50&amp;c=7" alt="que es la redencion segun la biblia cristiana">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-provincias-en-estados-unidos.html" class="be-post-title">
+				 <h6>que es provincias en estados unidos </h6>
+                </a>
+                <a href="que-es-provincias-en-estados-unidos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20provincias%20en%20estados%20unidos&amp;w=50&amp;h=50&amp;c=7" alt="que es provincias en estados unidos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-risk-severity-matrix-in-project-management.html" class="be-post-title">
+				 <h6>what is risk severity matrix in project management </h6>
+                </a>
+                <a href="what-is-risk-severity-matrix-in-project-management.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20risk%20severity%20matrix%20in%20project%20management&amp;w=50&amp;h=50&amp;c=7" alt="what is risk severity matrix in project management">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cosas-que-se-necesitan-en-una-cocina.html" class="be-post-title">
+				 <h6>cosas que se necesitan en una cocina </h6>
+                </a>
+                <a href="cosas-que-se-necesitan-en-una-cocina.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cosas%20que%20se%20necesitan%20en%20una%20cocina&amp;w=50&amp;h=50&amp;c=7" alt="cosas que se necesitan en una cocina">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Risk Based Approach To Regulation Uk at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Risk Based Approach To Regulation Uk",
+  "datePublished": "2022-05-24T19:56:48Z",
+  "image": "https://tse1.mm.bing.net/th?q=risk%20based%20approach%20to%20regulation%20uk",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=risk%20based%20approach%20to%20regulation%20uk&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=risk%20based%20approach%20to%20regulation%20uk" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=risk%20based%20approach%20to%20regulation%20uk" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Risk Based Approach To Regulation Uk at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Risk Based Approach To Regulation Uk</h2>
+    <p><strong>Risk Based Approach To Regulation Uk</strong>. Aasg risk outlook (updated april 2022) The legal services act requires us to regulate in a way that is transparent, accountable.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=risk%20based%20approach%20to%20regulation%20uk" alt="UK New Approach to Financial Regulation Financial Services Authority" />
+        <br>
+        <figcaption>UK New Approach to Financial Regulation Financial Services Authority from www.scribd.com</figcaption>
+    </figure>
+        <p>
+        The benefits of this approach include a more efficient and effective use of resources, minimising compliance costs and the flexibility to respond to new risks as money laundering methods change. Sudan 1 has never been approved for use in foods in the uk. Our summary of the nra forms part of new resources to support your firm.
+    </p>
+    <h3>UK New Approach to Financial Regulation Financial Services Authority</h3>
+    <p>This means that we focus regulatory attention on those providers that are at greatest risk of breaching their conditions of registration. For this we will look at how regulation has evolved over the last 30 years or so, and how risk ideas gained ground as a response to increased levels of state. Where appropriate, we step in to prevent these from crystallising or to minimise their effect. Uk risk based approach (rba) 9 2.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk Management Framework for Information Systems and Organizations" data-src="https://i2.wp.com/images.ukdissertations.com/123/0526734.001.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.ukessays.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The extent that we can mitigate them; What is risk based regulation? The annex compares the frameworks in more detail. Of risk based regulation, the process of development, the main elements of the frameworks, some of the outcomes to date, so far as those regulators have identified them, and five reflections on risk based regulation. In march 2020, we paused.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="AntiMoney Laundering Programmes Systems" data-src="https://i2.wp.com/financetrainingcourse.com/education/wp-content/uploads/2017/06/AML-2-1024x863.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: financetrainingcourse.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Registered in england and wales, company number 3707955,. Sudan 1 has never been approved for use in foods in the uk. For this we will look at how regulation has evolved over the last 30 years or so, and how risk ideas gained ground as a response to increased levels of state. Where appropriate, we step in to prevent these.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="[PDF] Risk regulation and compliance food safety in the UK Semantic" data-src="https://i2.wp.com/d3i71xaburhd42.cloudfront.net/f2726723e6ee31c41dc351b0c55d29054e4ae939/5-Figure2.1-1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.semanticscholar.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">By gathering and analysing information, we can monitor risks and emerging trends. What is risk based regulation? Where appropriate, we step in to prevent these from crystallising or to minimise their effect. The firm’s decisions on the When assessing risk, we will consider the likelihood.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Clear desire for move to riskbased approach to pesticide regulation" data-src="https://i2.wp.com/cached.imagescaler.hbpl.co.uk/resize/scaleWidth/885/cached.offlinehbpl.hbpl.co.uk/news/WOH/spray-20161108021515711.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.hortweek.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The controls, some criminals may still succeed in exploiting a business for criminal purposes. By gathering and analysing information, we can monitor risks and emerging trends. When assessing risk, we will consider the likelihood. Of risk based regulation, the process of development, the main elements of the frameworks, some of the outcomes to date, so far as those regulators have.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="EPA AML presentation 23 February 2016 small" data-src="https://i2.wp.com/image.slidesharecdn.com/2057404d-5002-466d-8697-1e601af3fd27-160307134123/95/epa-aml-presentation-23-february-2016-small-4-638.jpg?cb=1457358145" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The legal services act requires us to regulate in a way that is transparent, accountable. Sudan 1 has never been approved for use in foods in the uk. Uk risk based approach (rba) 9 2. Range of meanings (1) regulation of risks to society (2) loose collection of approaches expressed terms of risk (3) in banking and insurance regulation, the.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Working across the policy cycle Oxford Policy Management" data-src="https://i2.wp.com/www.opml.co.uk/files/Pages/our-approach/policy-cycle-navy.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.opml.co.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The benefits of this approach include a more efficient and effective use of resources, minimising compliance costs and the flexibility to respond to new risks as money laundering methods change. It can mean different things to different people. Our risk appetite statement ; Of risk based regulation, the process of development, the main elements of the frameworks, some of the.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) The RiskBased Regulation Approach the case of the UK regime of" data-src="https://i2.wp.com/i1.rgstatic.net/publication/284139001_The_Risk-Based_Regulation_Approach_the_case_of_the_UK_regime_of_Central_Counterparties_in_the_OTC_derivatives_market/links/58c2a9ad45851538eb8052d1/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In the uk phase 1 accreditation scheme, phase 1 units are required to have a documented risk assessment process and to produce a risk assessment for all proposed trials for this reason. What is risk based regulation? Our summary of the nra forms part of new resources to support your firm. The approach to overseas internal ratings based (irb) models..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="AML Testing Services in UK, USA, UAE Maveric Systems" data-src="https://i2.wp.com/maveric-systems.com/wp-content/uploads/2016/07/AML-testing.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: maveric-systems.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">For this we will look at how regulation has evolved over the last 30 years or so, and how risk ideas gained ground as a response to increased levels of state. Our summary of the nra forms part of new resources to support your firm. Published on 12 october 2020. It can mean different things to different people. If an.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="UK New Approach to Financial Regulation Financial Services Authority" data-src="https://i2.wp.com/imgv2-2-f.scribdassets.com/img/document/34961881/original/2b267221d3/1588601638?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Where appropriate, we step in to prevent these from crystallising or to minimise their effect. Motivations for developing risk based approaches to regulation For this we will look at how regulation has evolved over the last 30 years or so, and how risk ideas gained ground as a response to increased levels of state. Range of meanings (1) regulation of.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="The 4P’s Approach to Arc Flash Risk Assessment Electrical Safety" data-src="https://i2.wp.com/elecsafety.co.uk/wp-content/uploads/2020/05/4ps.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: elecsafety.co.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">What is risk based regulation? Uk risk based approach (rba) 9 2. Registered in england and wales, company number 3707955,. Our free guide provides advice for uk firms advice on steps to implement such an approach. By gathering and analysing information, we can monitor risks and emerging trends.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="ejercicios-para-evitar-el-dolor-de-espalda-en-el-embarazo.html" class="be-post-title">
+				 <h6>ejercicios para evitar el dolor de espalda en el embarazo </h6>
+                </a>
+                <a href="ejercicios-para-evitar-el-dolor-de-espalda-en-el-embarazo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=ejercicios%20para%20evitar%20el%20dolor%20de%20espalda%20en%20el%20embarazo&amp;w=50&amp;h=50&amp;c=7" alt="ejercicios para evitar el dolor de espalda en el embarazo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-infonavit-y-como-funciona.html" class="be-post-title">
+				 <h6>que es el infonavit y como funciona </h6>
+                </a>
+                <a href="que-es-el-infonavit-y-como-funciona.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20infonavit%20y%20como%20funciona&amp;w=50&amp;h=50&amp;c=7" alt="que es el infonavit y como funciona">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-kost-een-tussenwoning-isoleren.html" class="be-post-title">
+				 <h6>wat kost een tussenwoning isoleren </h6>
+                </a>
+                <a href="wat-kost-een-tussenwoning-isoleren.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20kost%20een%20tussenwoning%20isoleren&amp;w=50&amp;h=50&amp;c=7" alt="wat kost een tussenwoning isoleren">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-maicena-en-cocina.html" class="be-post-title">
+				 <h6>que es maicena en cocina </h6>
+                </a>
+                <a href="que-es-maicena-en-cocina.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20maicena%20en%20cocina&amp;w=50&amp;h=50&amp;c=7" alt="que es maicena en cocina">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-definicion-operacional.html" class="be-post-title">
+				 <h6>que es definicion operacional </h6>
+                </a>
+                <a href="que-es-definicion-operacional.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20definicion%20operacional&amp;w=50&amp;h=50&amp;c=7" alt="que es definicion operacional">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="parabenen-wat-is-dat.html" class="be-post-title">
+				 <h6>parabenen wat is dat </h6>
+                </a>
+                <a href="parabenen-wat-is-dat.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=parabenen%20wat%20is%20dat&amp;w=50&amp;h=50&amp;c=7" alt="parabenen wat is dat">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="yks-kep-adresi-ne-demek.html" class="be-post-title">
+				 <h6>yks kep adresi ne demek </h6>
+                </a>
+                <a href="yks-kep-adresi-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=yks%20kep%20adresi%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="yks kep adresi ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-management-information-system-and-its-objectives.html" class="be-post-title">
+				 <h6>what is management information system and its objectives </h6>
+                </a>
+                <a href="what-is-management-information-system-and-its-objectives.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20management%20information%20system%20and%20its%20objectives&amp;w=50&amp;h=50&amp;c=7" alt="what is management information system and its objectives">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-kost-een-extra-kookgroep-aanleggen.html" class="be-post-title">
+				 <h6>wat kost een extra kookgroep aanleggen </h6>
+                </a>
+                <a href="wat-kost-een-extra-kookgroep-aanleggen.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20kost%20een%20extra%20kookgroep%20aanleggen&amp;w=50&amp;h=50&amp;c=7" alt="wat kost een extra kookgroep aanleggen">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-jabalí.html" class="be-post-title">
+				 <h6>que es la jabalí </h6>
+                </a>
+                <a href="que-es-la-jabalí.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20jabal%C3%AD&amp;w=50&amp;h=50&amp;c=7" alt="que es la jabalí">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Tanda Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Tanda Adalah",
+  "datePublished": "2022-06-06T15:04:59Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20tanda%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20tanda%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20tanda%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20tanda%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Tanda Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Tanda Adalah</h2>
+    <p><strong>Uji Tanda Adalah</strong>. Menu uji tanda (sign test) dengan spss versi 26. Uji tanda lebih condong kepada pengujian persepsi atau pandangan tentang sesuatu.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20tanda%20adalah" alt="Tutorial Cara Uji T Paired dengan SPSS Uji Statistik" />
+        <br>
+        <figcaption>Tutorial Cara Uji T Paired dengan SPSS Uji Statistik from www.statistikian.com</figcaption>
+    </figure>
+        <p>
+        Klik menu analyze &gt; nonparametric tests &gt; legacy dialogs &gt; related samples. P= (x ≤ n│p = x) keterangan: Probabilitas hasil sampel = pr(0)+pr(1)+pr(2)+pr(3)+pr(4)
+    </p>
+    <h3>Tutorial Cara Uji T Paired dengan SPSS Uji Statistik</h3>
+    <p>Uji tanda (sign test) • • didasarkan pada prosedur tanda positif dan negatif dari perbedaan antara pasangan data ordinal. Apabila ho diterima, maka jumlah selisih pasangan data yang positif kurang lebih akan sama dengan pasangan data yang negatif, sehingga sangat diharapkan jumlah selisih pasangan data yang positif dan negatif adalah setengah dari total sampel yang ada. Kami melayani uji autentikasi tulisan dan tanda tangan serta melayani juga. Adapun maksud dan pengertian dengan uji tanda adalah melakukan pengujian pada barisan data (squence) dari nilai median (supangat, 2007:</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Tanda (Sign Test) Pelatihan Universitas Indonesia" data-src="https://i2.wp.com/pelatihan-ui.com/wp-content/uploads/2016/05/Uji-Tanda-2.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: pelatihan-ui.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Perhitungan nilai uji statistik jumlah sampel n = 10, jenis tanda yg memiliki nilai terkecil adalah negatif sebanyak r = 4, peluang yg diujikan sebesar p=0,5. Kedua kelompok sampel saling berhubungan. Kami melayani uji autentikasi tulisan dan tanda tangan serta melayani juga. Pada artikel ini, uji tanda dan rank tanda wilcoxon akan digunakan sekaligus pada data sampel berpasangan. Uji tanda.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="16++ Contoh Soal Uji Chi Square Statistik Non Parametrik Kumpulan" data-src="https://i2.wp.com/i.ytimg.com/vi/NAFv4Oqw4n4/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: teamhannamy.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ternyata eksperimen ini menghasilkan 2 buah nol, 2 tanda positif dan 11 tanda negatif maka: Uji autentikasi/keaslian tulisan dan tanda tangan. Kami melayani uji autentikasi tulisan dan tanda tangan serta melayani juga. Materi ajar adeheryana vol.1 no.1 2021. Tidak ada perbedaan data dua sampel berpasangan (median populasi sama me1 = me2)) h 1 :</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT Uji Wilcoxon dan Uji Tanda PowerPoint Presentation, free download" data-src="https://i2.wp.com/image.slideserve.com/484033/slide6-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Probabilitas hasil sampel = pr(0)+pr(1)+pr(2)+pr(3)+pr(4) Menghitung tanda dan perubahan nilai n dari tabel diperoleh: Dari tabel diketahui bahwa jumlah yang tidak mengalami perubahan (skor 0) ada sebanyak 6 siswa. Uji tanda dan uji rank tanda wilcoxon dengan spss.pada kesempatan ini akan dibahas tahapan analisis uji tanda (sign test) menggunakan. Sehingga jumlah n adalah 44.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Uji Tanda Statistik Non Parametrik Pembahasan Soal" data-src="https://i2.wp.com/lh6.googleusercontent.com/proxy/6rU70t809t6q-F1MOQKdgcBe_pghgLhkWtnUbo2kmT9I2N3j3gJVi40DYXXiu-PvcndPOC6tL4xE7tUiv8ElxZIi75HD9D9F=w1200-h630-pd" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: pembahasansoalku.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pada prinsipnya, uji tanda memiliki tujuan untuk menghitung selisih nilai dari kedua pasang sampel. 10 menunjukkan “rasa sangat enak” 1 menunjukkan “rasa sangat tidak enak”. Uji autentikasi/keaslian tulisan dan tanda tangan. Didapatkan p=0,0461 0,0461 &lt; 0,05 tolak ho kesimpulan : Apabila lim n→∞an = 0 lim n → ∞ a n = 0, maka deret konvergen.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="ANALISIS NON PARAMETRIK I PENGUJIAN SATU SAMPEL Uji" data-src="https://i2.wp.com/slidetodoc.com/presentation_image_h/cac89781bf4ed099b2b6934ccb06d08a/image-31.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: slidetodoc.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pada artikel ini, uji tanda dan rank tanda wilcoxon akan digunakan sekaligus pada data sampel berpasangan. Sehingga jumlah n adalah 44. Uji tanda (sign test) merupakan uji statistika nonparameterik yang dapat digunakan untuk menguji 1 sampel maupun 2 sampel berpasangan. Masukkan variabel nilai_sesudah ke kotak variable2. Uji tanda (sign test) uji ttanda ( sign test) sama halnya dengan uji wilcoxon.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Uji Tanda Statistik Non Parametrik Wulan Tugas" data-src="https://i2.wp.com/image.slidesharecdn.com/uji-tanda-sign-test-131126041005-phpapp02/95/uji-tandasigntest-1-638.jpg?cb=1385439024" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: wulantugasdoc.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">• untuk uji dua arah. Kami melayani uji autentikasi tulisan dan tanda tangan serta melayani juga. Uji autentikasi/keaslian tulisan dan tanda tangan. Uji tanda (sign test) merupakan uji statistika nonparameterik yang dapat digunakan untuk menguji 1 sampel maupun 2 sampel berpasangan. [pendahuluan] statistika non parametrik bahwa metode pengujian manual statistika non parametrik akan mengalami kendala ketika.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tutorial Cara Uji T Paired dengan SPSS Uji Statistik" data-src="https://i2.wp.com/www.statistikian.com/wp-content/uploads/blogger/-dadDeTNZJuA/UHfzUimupqI/AAAAAAAAAtY/sPdK0oY-S5k/s1600/ww10.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.statistikian.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">[pendahuluan] statistika non parametrik bahwa metode pengujian manual statistika non parametrik akan mengalami kendala ketika. Uji tanda (sign test) merupakan uji statistika non parametrik yang sederhana dan merupakan uji non parametrik yang paling awal digunakan. Dalam grafonomi kita menganalisa autentikasi (keaslian) suatu tulisan dan tanda tangan, apakah. Mm statistik ii menyatakan hipotesis nol dan hipotesis alternatif. 10 menunjukkan “rasa sangat.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tutorial Uji Tanda dan Uji Rank Tanda Wilcoxon" data-src="https://i2.wp.com/1.bp.blogspot.com/-_jTbyNIgQq8/XZqt3Xyp4LI/AAAAAAAAEDQ/ZpvfSu2gK9Q4uNNj1Gkom4FuXugcOl4QgCEwYBhgL/s1600/6.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.danialmahkya.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">P= (x ≤ n│p = x) keterangan: Segala hasil analisa kami adalah objektif berdasarkan science. Ternyata eksperimen ini menghasilkan 2 buah nol, 2 tanda positif dan 11 tanda negatif maka: Probabilitas hasil sampel = pr(0)+pr(1)+pr(2)+pr(3)+pr(4) Karena n &gt; 25, maka perhitungan statistik uji menggunakan pendekatan distribusi normal dengan rumus.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="QUARTILSTAT Analisis Data Statistik Terbaik di Kota Mataram UJI" data-src="https://i2.wp.com/4.bp.blogspot.com/-6siggfUF0Eo/WmnaYPqatdI/AAAAAAAAAx8/M97Aap18MJwLy0Da3XGFHGH1Xqkpme4vQCLcBGAs/s1600/444.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: quartilstat.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Didapatkan p=0,0461 0,0461 &lt; 0,05 tolak ho kesimpulan : Syarat dan penggunaan uji ini: Ternyata eksperimen ini menghasilkan 2 buah nol, 2 tanda positif dan 11 tanda negatif maka: Sampel yang digunakan bersifat random. Menu uji tanda (sign test) dengan spss versi 26.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Wilcoxon Digunakan Untuk Tutorial Cara Uji Wilcoxon Signed Rank" data-src="https://i2.wp.com/i.ytimg.com/vi/AoFcnSXWns8/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: rumahbelajaridea.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Obat baru tersebut efektif meningkatkan fev1 pada confidence level 95 % Uji keaslian tulisan dan tanda tangan pada kasus pemalsuan tanda tangan, grafologi forensik, surat kaleng, tanda tangan palsu dll. Uji tanda (sign test) telah dibahas pada artikel lainnya disini yaitu tutorial : Apabila lim n→∞an = 0 lim n → ∞ a n = 0, maka deret konvergen. Dalam.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="uji-tanda-adalah.html" class="be-post-title">
+				 <h6>uji tanda adalah </h6>
+                </a>
+                <a href="uji-tanda-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=uji%20tanda%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="uji tanda adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-s-o-p-h-i-e-stand-for.html" class="be-post-title">
+				 <h6>what does s.o.p.h.i.e. stand for </h6>
+                </a>
+                <a href="what-does-s-o-p-h-i-e-stand-for.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20s.o.p.h.i.e.%20stand%20for&amp;w=50&amp;h=50&amp;c=7" alt="what does s.o.p.h.i.e. stand for">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-producto-escalar-de-dos-vectores.html" class="be-post-title">
+				 <h6>que es el producto escalar de dos vectores </h6>
+                </a>
+                <a href="que-es-el-producto-escalar-de-dos-vectores.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20producto%20escalar%20de%20dos%20vectores&amp;w=50&amp;h=50&amp;c=7" alt="que es el producto escalar de dos vectores">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-im3-miami.html" class="be-post-title">
+				 <h6>what is im3 miami </h6>
+                </a>
+                <a href="what-is-im3-miami.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20im3%20miami&amp;w=50&amp;h=50&amp;c=7" alt="what is im3 miami">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-difference-between-ristretto-and-lungo.html" class="be-post-title">
+				 <h6>what is the difference between ristretto and lungo </h6>
+                </a>
+                <a href="what-is-the-difference-between-ristretto-and-lungo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20difference%20between%20ristretto%20and%20lungo&amp;w=50&amp;h=50&amp;c=7" alt="what is the difference between ristretto and lungo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-similes-y-ejemplos.html" class="be-post-title">
+				 <h6>que es el similes y ejemplos </h6>
+                </a>
+                <a href="que-es-el-similes-y-ejemplos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20similes%20y%20ejemplos&amp;w=50&amp;h=50&amp;c=7" alt="que es el similes y ejemplos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="zahnbürste-reinigen-oral-b.html" class="be-post-title">
+				 <h6>zahnbürste reinigen oral b </h6>
+                </a>
+                <a href="zahnbürste-reinigen-oral-b.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=zahnb%C3%BCrste%20reinigen%20oral%20b&amp;w=50&amp;h=50&amp;c=7" alt="zahnbürste reinigen oral b">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-faire-à-madrid.html" class="be-post-title">
+				 <h6>que faire à madrid </h6>
+                </a>
+                <a href="que-faire-à-madrid.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20faire%20%C3%A0%20madrid&amp;w=50&amp;h=50&amp;c=7" alt="que faire à madrid">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-elfs-mean.html" class="be-post-title">
+				 <h6>what does elfs mean </h6>
+                </a>
+                <a href="what-does-elfs-mean.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20elfs%20mean&amp;w=50&amp;h=50&amp;c=7" alt="what does elfs mean">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="hoe-weet-je-of-iemand-je-zielsverwant-is.html" class="be-post-title">
+				 <h6>hoe weet je of iemand je zielsverwant is </h6>
+                </a>
+                <a href="hoe-weet-je-of-iemand-je-zielsverwant-is.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=hoe%20weet%20je%20of%20iemand%20je%20zielsverwant%20is&amp;w=50&amp;h=50&amp;c=7" alt="hoe weet je of iemand je zielsverwant is">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

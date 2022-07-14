@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Kookgroep Aanleggen at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Kookgroep Aanleggen",
+  "datePublished": "2022-03-28T01:47:37Z",
+  "image": "https://tse1.mm.bing.net/th?q=kookgroep%20aanleggen",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=kookgroep%20aanleggen&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kookgroep%20aanleggen" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kookgroep%20aanleggen" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Kookgroep Aanleggen at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Kookgroep Aanleggen</h2>
+    <p><strong>Kookgroep Aanleggen</strong>. Bovenstaande tabel geeft je een idee aan welke kosten je kunt denken bij de klus &#039;kookplaat aansluiten&#039;. Er is een 1 fase en een 3 fase uitvoering.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=kookgroep%20aanleggen" alt="extra elektra groep aanleggen voor inductie Kluswebsite" />
+        <br>
+        <figcaption>extra elektra groep aanleggen voor inductie Kluswebsite from www.kluswebsite.nl</figcaption>
+    </figure>
+        <p>
+        Voor het aansluiten van een kookgroep zijn er verschillende draden nodig. Deze bestaat in een 1 fase en een 3 fase uitvoering. Heb je de linker kookgroep, dan kun je een inductiekookplaat kiezen die op 2 fasen werkt.
+    </p>
+    <h3>extra elektra groep aanleggen voor inductie Kluswebsite</h3>
+    <p>About press copyright contact us creators advertise developers terms privacy policy &amp; safety how youtube works test new features press copyright contact us creators. Een 1 fase fornuisgroep zijn in feite 2 gekoppelde installatieautomaten, vaak 2x16a. Aansluiten inductieplaat met bijgevoegd installatieschema. Je kunt in dit geval de bescherm dopjes (als deze er op zitten) verwijderen en de kookgroep er zo bij klikken.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kookgroep aanleggen met perilex stopcontact + gaskraan monteren Werkspot" data-src="https://i2.wp.com/www.werkspot.nl/images/sr/original/d84940e3-07d9-478a-b9a1-d8582c3174f7.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.werkspot.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De volgende draden heb je nodig: Een elektricien is gespecialiseerd in het aansluiten van kookgroepen. Er is een 1 fase en een 3 fase uitvoering. Meet het aantal fasen met een multimeter. Kennis die u zelf wellicht niet in huis heeft.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kookgroep aanleggen Werkspot" data-src="https://i2.wp.com/www.werkspot.nl/images/sr/original/742a6220-2b5d-4c3c-b3f4-930f1528b8c0.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.werkspot.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Heb je de linker kookgroep, dan kun je een inductiekookplaat kiezen die op 2 fasen werkt. Tussen de groepenkast en de keuken wordt 2,5 mm² installatiedraad in pe buis gebruikt. Om u alvast enig idee te geven van de mogelijke kosten treft u onderstaand richtprijzen aan waar u rekening mee dient te houden: Aansluiten inductieplaat met bijgevoegd installatieschema. Kennis die.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kookgroep aanleggen Werkspot" data-src="https://i2.wp.com/www.werkspot.nl/images/sr/original/46e9330c-c0e7-416f-b280-549d75a54bf2.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.werkspot.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Als u elektrisch wilt gaan koken heeft u meestal een kookgroep nodig in uw groepenkast. Het zijn onze gemiddelde prijzen, inclusief btw, onderdelen en arbeidskosten. Een standaard fornuisgroep monteren in de groepenkast, welke stappen neem ik?groepenkast c. Kookgroep installeren in de groepenkast. Voor het laten aansluiten van een kookgroep bent u bij groenebeek installatietechniek aan het juiste adres.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kookgroep aanleggen em leiding leggen door kruipruimte Werkspot" data-src="https://i2.wp.com/s3-eu-west-1.amazonaws.com/static-sr.s3.werkspot.nl/f2af2d6d-b9f6-42a4-b22d-8871bb9aae50.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.werkspot.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In een gemiddeld woonhuis kan een kooktoestel maximaal 3680 watt hebben. In de aankomende jaren zullen vele huishoudens de overstap maken van het koken op een gaskookplaat naar dat op een elektrische kookplaat. U mag dus niet de l1/n door de ene aardlekschakelaar laten beveiligen en de l2/n2 door een andere. Groenebeek staat voor u klaar. Het maximale vermogen is.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kookgroep aanleggen Werkspot" data-src="https://i2.wp.com/www.werkspot.nl/images/sr/original/4df60176-8607-4f0b-9b97-22ce31ea1601.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.werkspot.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Een kookgroep aansluiten is een groep in de meterkast waar een kooktoestel op wordt aangesloten. Werkzaamheden aan zo een installatie moeten gebeuren door vakbekwame personen. In een gemiddeld woonhuis kan een kooktoestel maximaal 3680 watt hebben. In dat geval is er een aparte groep noodzakelijk. Heb je de linker kookgroep, dan kun je een inductiekookplaat kiezen die op 2 fasen.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Groepenkast wijzigen aanleggen kookgroep t.b.v. inductie Werkspot" data-src="https://i2.wp.com/www.werkspot.nl/images/sr/original/40b44234-324e-429f-92fe-e17f0947bf3a.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.werkspot.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Het zijn onze gemiddelde prijzen, inclusief btw, onderdelen en arbeidskosten. Voorschriften voor de aanleg van een elektrische installatie vaak wordt het werken aan een groepenkast overgelaten aan een erkend installateur. Een kookgroep aansluiten is een groep in de meterkast waar een kooktoestel op wordt aangesloten. Hiervoor is een aparte kookgroep/fornuisgroep nodig in de groepenkast. Groenebeek staat voor u klaar.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Groepenkast wijzigen aanleggen kookgroep t.b.v. inductie Werkspot" data-src="https://i2.wp.com/www.werkspot.nl/images/sr/original/73fe610e-7739-4686-a77d-10d39f8837fd.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.werkspot.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kijk welk stopcontact er in jouw keuken zit. Heb ook de “2 fasen” van de kookgroep op klem 1 en 2 aangesloten en de 2 nullen op klem 4. Een kookgroep zijn twee gekoppelde 1 fase groepen en wordt gezien als 1 groep. Werkzaamheden aan zo een installatie moeten gebeuren door vakbekwame personen. Meet het aantal fasen met een multimeter.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Meterkast Vervangen / perilex Stopcontact Aanleggen Keuken, Kookgroep" data-src="https://i2.wp.com/i.ytimg.com/vi/F882xOyhWHA/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Het aanleggen van een fornuisgroep is niet moeilijk. De enige uitzondering is een kookgroep. Het maximale vermogen is dan 2 x 16 x 230 = 7,4 kva. Dit is een tweeledige installatieautomaat die via een hendel mechanisch verbonden is. Geschreven door een installateur simpel uitgelegd</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="extra elektra groep aanleggen voor inductie Kluswebsite" data-src="https://i2.wp.com/www.kluswebsite.nl/media/cache/job_big/userfiles/files/303000-304000/303657-181ac2236cedbd0302c00b4a312eca52.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.kluswebsite.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">U mag dus niet de l1/n door de ene aardlekschakelaar laten beveiligen en de l2/n2 door een andere. Geschreven door een installateur simpel uitgelegd Aansluiten inductieplaat met bijgevoegd installatieschema. Een fornuisgroep of kookgroep is nodig om een kooktoestel te kunnen aansluiten. De fornuisgroep heeft dus 4 aansluitingen, 2 x een fase en 2 x een nul:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kookgroep aanleggen Werkspot" data-src="https://i2.wp.com/www.werkspot.nl/images/sr/original/12d63c28-0dc4-4b47-9336-4e417f00c326.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.werkspot.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Voorschriften voor de aanleg van een elektrische installatie vaak wordt het werken aan een groepenkast overgelaten aan een erkend installateur. De volgende draden heb je nodig: Bovenstaande tabel geeft je een idee aan welke kosten je kunt denken bij de klus &#039;kookplaat aansluiten&#039;. U mag dus niet de l1/n door de ene aardlekschakelaar laten beveiligen en de l2/n2 door een.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="qr-code-que-es-y-como-funciona.html" class="be-post-title">
+				 <h6>qr code que es y como funciona </h6>
+                </a>
+                <a href="qr-code-que-es-y-como-funciona.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=qr%20code%20que%20es%20y%20como%20funciona&amp;w=50&amp;h=50&amp;c=7" alt="qr code que es y como funciona">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-estoy-suelta-como-gabete.html" class="be-post-title">
+				 <h6>que estoy suelta como gabete </h6>
+                </a>
+                <a href="que-estoy-suelta-como-gabete.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20estoy%20suelta%20como%20gabete&amp;w=50&amp;h=50&amp;c=7" alt="que estoy suelta como gabete">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-gateway-en-redes.html" class="be-post-title">
+				 <h6>que es gateway en redes </h6>
+                </a>
+                <a href="que-es-gateway-en-redes.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20gateway%20en%20redes&amp;w=50&amp;h=50&amp;c=7" alt="que es gateway en redes">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-zorgplan.html" class="be-post-title">
+				 <h6>wat is een zorgplan </h6>
+                </a>
+                <a href="wat-is-een-zorgplan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20zorgplan&amp;w=50&amp;h=50&amp;c=7" alt="wat is een zorgplan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-zijn-parabenen-en-sulfaten.html" class="be-post-title">
+				 <h6>wat zijn parabenen en sulfaten </h6>
+                </a>
+                <a href="wat-zijn-parabenen-en-sulfaten.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20zijn%20parabenen%20en%20sulfaten&amp;w=50&amp;h=50&amp;c=7" alt="wat zijn parabenen en sulfaten">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-btw-nummer-bedrijf.html" class="be-post-title">
+				 <h6>wat is btw nummer bedrijf </h6>
+                </a>
+                <a href="wat-is-btw-nummer-bedrijf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20btw%20nummer%20bedrijf&amp;w=50&amp;h=50&amp;c=7" alt="wat is btw nummer bedrijf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-ciencias-naturales-brainly.html" class="be-post-title">
+				 <h6>que es la ciencias naturales brainly </h6>
+                </a>
+                <a href="que-es-la-ciencias-naturales-brainly.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20ciencias%20naturales%20brainly&amp;w=50&amp;h=50&amp;c=7" alt="que es la ciencias naturales brainly">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="was-ist-eine-szene-drama.html" class="be-post-title">
+				 <h6>was ist eine szene drama </h6>
+                </a>
+                <a href="was-ist-eine-szene-drama.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=was%20ist%20eine%20szene%20drama&amp;w=50&amp;h=50&amp;c=7" alt="was ist eine szene drama">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-ristretto-espresso.html" class="be-post-title">
+				 <h6>what is ristretto espresso </h6>
+                </a>
+                <a href="what-is-ristretto-espresso.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20ristretto%20espresso&amp;w=50&amp;h=50&amp;c=7" alt="what is ristretto espresso">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-saber-si-estoy-en-el-seguro-social.html" class="be-post-title">
+				 <h6>como saber si estoy en el seguro social </h6>
+                </a>
+                <a href="como-saber-si-estoy-en-el-seguro-social.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20saber%20si%20estoy%20en%20el%20seguro%20social&amp;w=50&amp;h=50&amp;c=7" alt="como saber si estoy en el seguro social">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

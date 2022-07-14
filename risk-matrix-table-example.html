@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Risk Matrix Table Example at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Risk Matrix Table Example",
+  "datePublished": "2022-05-29T01:05:50Z",
+  "image": "https://tse1.mm.bing.net/th?q=risk%20matrix%20table%20example",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=risk%20matrix%20table%20example&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=risk%20matrix%20table%20example" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=risk%20matrix%20table%20example" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Risk Matrix Table Example at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Risk Matrix Table Example</h2>
+    <p><strong>Risk Matrix Table Example</strong>. Health and safety risk matrix. A risk is an uncertain event that will impact the project.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=risk%20matrix%20table%20example" alt="the Risk Matrix and Sample Risk Assessment Tables" />
+        <br>
+        <figcaption>the Risk Matrix and Sample Risk Assessment Tables from studylib.net</figcaption>
+    </figure>
+        <p>
+        Let&#039;s take our earlier example. If lower level and/or adjusted consequence levels for financial and/or operations impact types have been used, the total risk rating needs to be reported by stating the organisational level of the assessment before the risk rating; Project risk management / 8 minutes of reading.
+    </p>
+    <h3>the Risk Matrix and Sample Risk Assessment Tables</h3>
+    <p>To place a risk in the risk matrix, assign a rating to its severity and likelihood. The impact of a risk and the negative consequences that would result. To place a risk in the risk matrix, assign a rating to its severity and likelihood. How to create a risk matrix.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Get Your RiskManagement Right" data-src="https://i2.wp.com/www.otsmanagement.com.au/wp-content/uploads/Risk-Matrix.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.otsmanagement.com.au</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Here&#039;s how the 5x5 risk matrix could look, using the above scale: Project managers try to mitigate negative risks, or threats, and enhance positive risks, or opportunities. With the potential impact of the risk decided by the team, now you have to place it on the matrix according to how probable the potential risk is. A risk matrix is a.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="the Risk Matrix and Sample Risk Assessment Tables" data-src="https://i2.wp.com/s3.studylib.net/store/data/007239128_1-75e101dd2a514d13f214b4208011054e.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: studylib.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The type of incidents that might fall into the low category could be hazards related to accessing a site. For example, a hazard that is very likely to happen and will have major losses will receive a higher risk rating than a hazard that’s unlikely and will cause little harm. Plot the risks on the matrix. Something that is important.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk assessment matrix Download Table" data-src="https://i2.wp.com/www.researchgate.net/profile/Sina_Hajati/publication/326416075/figure/download/tbl2/AS:668898387038239@1536489211805/Risk-assessment-matrix.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Risks that occur in project management are evident as being unexpected factors that presents itself within a project in a way could affect the project’s outcome. A risk matrix template focuses on two key aspects: The risk assessment values are determined by multiplying the scores for the probability and severity values together. Figure 1 example risk matrix as excel bubble.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Simple Risk Assessment Matrix table with resultant risk calculation" data-src="https://i2.wp.com/2.bp.blogspot.com/-cN9_Nk8FDr8/WsCrdwANEAI/AAAAAAAAF2E/H2YdEjnzFkI5kvLEbhr4wbSW5GB7znJTACLcBGAs/s1600/risk.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: spshell.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The type of hazards that fall into this level of total risk would be more general hazards rather than high risk job steps. A 5x5 risk matrix simply refers to a risk matrix that is made up of 5 cells along the x axis and 5 cells along the y axis. That said, high risks must be in red, moderate.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="A risk evaluation matrix table scoring 2 x functions consequence x" data-src="https://i2.wp.com/www.researchgate.net/profile/Helen_Dallas/publication/340299110/figure/download/fig4/AS:875116724502529@1585655494436/A-risk-evaluation-matrix-table-scoring-2-x-functions-consequence-x-likelihood-where.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">By creating a risk assessment matrix, the project management team can effectively analyze and prioritize the risks associated with the project. Think uneven surfaces causing slips and falls, materials on the ground causing trips etc. The following is an example matrix of possible personal injuries, with particular accidents allocated to appropriate cells within the matrix: Colours are used to segment.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="7 MEC Risk Assessment Matrix Download Table" data-src="https://i2.wp.com/www.researchgate.net/profile/Geoff_Carton/publication/319544742/figure/download/tbl13/AS:613998403801099@1523400035172/7-MEC-Risk-Assessment-Matrix.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Create an action plan elaborating on the steps you need to take to mitigate the risks and reduce the impact if it actually occurs. The following are the instructions i used to create the risk matrix in excel. Let&#039;s take our earlier example. The example risk matrix consequence categories (table 13.1) range from one to five, with five being the.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk matrix" data-src="https://i2.wp.com/safety.unimelb.edu.au/__data/assets/image/0011/2235386/Risk-matrix-image.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: safety.unimelb.edu.au</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Health and safety risk matrix. Assign each hazard with a corresponding risk rating, based on the likelihood and impact you’ve already calculated. A risk is an uncertain event that will impact the project. A short name for the risk that should be displayed in risk bubble and/or legend A risk matrix template focuses on two key aspects:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Causal Capital Making A Risk Matrix Useful" data-src="https://i2.wp.com/2.bp.blogspot.com/-McErI5J1EK0/Vd3bB1Jg5GI/AAAAAAAAHwg/w-7KoUDzmyc/s1600/Typical%2BRisk%2BMatrix.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: causalcapital.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The most important factor in creating or adopting a safety risk matrix is ensuring that the categories Figure 1 example risk matrix as excel bubble chart. Using a risk matrix template. By creating a risk assessment matrix, the project management team can effectively analyze and prioritize the risks associated with the project. Now we can calculate our risk level, from.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PowerPoint Risk Management matrix" data-src="https://i2.wp.com/hislides-az0pg5xoql0a2.netdna-ssl.com/Elements/0941PP/New_Slide_Show.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: hislide.io</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Health and safety risk matrix. The risk assessment matrix is made in a form of a table where risks are grouped based on its likelihood and severity of consequence; Add simple risk matrix data. This method helps balance the weight of severity and probability, as you can see in the following chart that displays the default risk assessment values: Share.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How to Create Risk Matrix Template in Excel Free Download" data-src="https://i2.wp.com/www.examspm.com/wp-content/uploads/2016/08/Screen-Shot-2016-08-23-at-12.47.10-PM.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.examspm.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A short name for the risk that should be displayed in risk bubble and/or legend The risk matrix is an important tool for the. Create an action plan elaborating on the steps you need to take to mitigate the risks and reduce the impact if it actually occurs. Where combinations of severity and likelihood cause risk to fall into the.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-gueto.html" class="be-post-title">
+				 <h6>que es el gueto </h6>
+                </a>
+                <a href="que-es-el-gueto.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20gueto&amp;w=50&amp;h=50&amp;c=7" alt="que es el gueto">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cual-es-el-dinero-en-el-salvador.html" class="be-post-title">
+				 <h6>cual es el dinero en el salvador </h6>
+                </a>
+                <a href="cual-es-el-dinero-en-el-salvador.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cual%20es%20el%20dinero%20en%20el%20salvador&amp;w=50&amp;h=50&amp;c=7" alt="cual es el dinero en el salvador">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-transgenero-ejemplos.html" class="be-post-title">
+				 <h6>que es transgenero ejemplos </h6>
+                </a>
+                <a href="que-es-transgenero-ejemplos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20transgenero%20ejemplos&amp;w=50&amp;h=50&amp;c=7" alt="que es transgenero ejemplos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="teknik-menendang-dengan-punggung-kaki-dalam-pencak-silat-adalah.html" class="be-post-title">
+				 <h6>teknik menendang dengan punggung kaki dalam pencak silat adalah </h6>
+                </a>
+                <a href="teknik-menendang-dengan-punggung-kaki-dalam-pencak-silat-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=teknik%20menendang%20dengan%20punggung%20kaki%20dalam%20pencak%20silat%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="teknik menendang dengan punggung kaki dalam pencak silat adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-itp-alquiler.html" class="be-post-title">
+				 <h6>que es el itp alquiler </h6>
+                </a>
+                <a href="que-es-el-itp-alquiler.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20itp%20alquiler&amp;w=50&amp;h=50&amp;c=7" alt="que es el itp alquiler">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="uji-tuntas-adalah.html" class="be-post-title">
+				 <h6>uji tuntas adalah </h6>
+                </a>
+                <a href="uji-tuntas-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=uji%20tuntas%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="uji tuntas adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-fire-sprinkler-riser.html" class="be-post-title">
+				 <h6>what is a fire sprinkler riser </h6>
+                </a>
+                <a href="what-is-a-fire-sprinkler-riser.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20fire%20sprinkler%20riser&amp;w=50&amp;h=50&amp;c=7" alt="what is a fire sprinkler riser">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-fondo-blanco-en-cocina.html" class="be-post-title">
+				 <h6>que es un fondo blanco en cocina </h6>
+                </a>
+                <a href="que-es-un-fondo-blanco-en-cocina.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20fondo%20blanco%20en%20cocina&amp;w=50&amp;h=50&amp;c=7" alt="que es un fondo blanco en cocina">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-citar-una-pagina-de-un-libro.html" class="be-post-title">
+				 <h6>como citar una pagina de un libro </h6>
+                </a>
+                <a href="como-citar-una-pagina-de-un-libro.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20citar%20una%20pagina%20de%20un%20libro&amp;w=50&amp;h=50&amp;c=7" alt="como citar una pagina de un libro">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-de-dagmaat-van-een-raam.html" class="be-post-title">
+				 <h6>wat is de dagmaat van een raam </h6>
+                </a>
+                <a href="wat-is-de-dagmaat-van-een-raam.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20de%20dagmaat%20van%20een%20raam&amp;w=50&amp;h=50&amp;c=7" alt="wat is de dagmaat van een raam">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

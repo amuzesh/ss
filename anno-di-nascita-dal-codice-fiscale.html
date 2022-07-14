@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Anno Di Nascita Dal Codice Fiscale at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Anno Di Nascita Dal Codice Fiscale",
+  "datePublished": "2022-06-27T16:07:27Z",
+  "image": "https://tse1.mm.bing.net/th?q=anno%20di%20nascita%20dal%20codice%20fiscale",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=anno%20di%20nascita%20dal%20codice%20fiscale&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=anno%20di%20nascita%20dal%20codice%20fiscale" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=anno%20di%20nascita%20dal%20codice%20fiscale" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Anno Di Nascita Dal Codice Fiscale at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Anno Di Nascita Dal Codice Fiscale</h2>
+    <p><strong>Anno Di Nascita Dal Codice Fiscale</strong>. Se avete davanti un codice fiscale che riporta la sigla 82t30 significa che si tratta di un uomo nato nel 1982 (82), di dicembre (t) il giorno 30, mentre la sigla 82t70 indicherà una donna nata nello stesso giorno (30+40=70). 2000 o successivi, nel cf sarà riportato il numero 00 (oppure 01 per 2001, 02 per il 2002 e così via) e per excel l&#039;anno di nascita è il 1900 (oppure 1901, 1902 e così via) c&#039;è un modo per ovviare a ciò?</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=anno%20di%20nascita%20dal%20codice%20fiscale" alt="Calcolo Codice Fiscale come calcolare il codice fiscale? Software" />
+        <br>
+        <figcaption>Calcolo Codice Fiscale come calcolare il codice fiscale? Software from www.assofacile.it</figcaption>
+    </figure>
+        <p>
+        I 5 caratteri che compongono la data di nascita si ripartiscono nel modo seguente: Ricavare il luogo di nascita dal codice fiscale. Che cos’è e come si calcola il codice fiscale.
+    </p>
+    <h3>Calcolo Codice Fiscale come calcolare il codice fiscale? Software</h3>
+    <p>La tabella appena vista è utile anche per decodificare manualmente la data di nascita di una persona partendo dal suo codice fiscale. Il codice fiscale è un codice di 16 caratteri formato da 9 lettere e 7 numeri e serve ad identificare ai fini fiscali ed amministrativi ogni contribuente italiano e tutti i cittadini esteri nati e domiciliati in italia, è stato introdotto dal decreto del presidente della repubblica n.605 del 29 settembre 1973 per rendere più efficiente l. Due cifre per l’anno di nascita, una lettera che indica il mese di nascita (è necessario fare riferimento a una tabella per la codifica) Nel codice fiscale, la data di nascita si ricava dai caratteri compresi tra la settima e l’undicesima posizione.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Struttura del Codice Fiscale e modalità di calcolo" data-src="https://i2.wp.com/www.paginainizio.com/service/images/codicefiscaleshare.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.paginainizio.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Questo potrebbe trarci in inganno poiché (relativamente ad oggi che siamo nel 2019) un ultracentenario nato. Nel testare il tutto ho notato che inserendo il codice fiscale ad esempio di mia figlia che è nata il 01/03/2000 la data ricavata dal seguente codice me.datanascita = iif(mid([codice fiscale], 10. Anno di nascita, ultime due cifre, esempio 86 estratto da 1986; Va.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Calcolo del Codice Fiscale Servizi Free" data-src="https://i2.wp.com/www.servizifree.it/wp-content/uploads/2018/04/CALCOLO-CODICE-FISCALE_800x514-768x493.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.servizifree.it</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Più precisamente, il settimo e l’ottavo carattere indicano le ultime due cifre dell’anno di nascita. Clicca quindi sul pulsante elabora ed, entro qualche secondo, saranno visualizzati i dati che. La data di nascita si può ricavare dal settimo, ottavo, nono, decimo ed undicesimo carattere del codice fiscale e precisamente: Formula per ricavare la data di nascita dal codice fiscale =.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="SCARICA GRATIS CALCOLO CODICE FISCALE skekjwv.magicmind.info" data-src="https://i2.wp.com/images.sftcdn.net/images/t_app-cover-l,f_auto/p/f90b7568-9b53-11e6-be29-00163ed833e7/159514506/codicefiscale-screenshot.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: skekjwv.magicmind.info</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Estrarre data codice fiscale per nati dopo il 2000. 8 rappresentano le ultime due cifre dell’anno di nascita. Nelle form in cui c&#039;è da inserire il codice fiscale, su evento dopo aggiornamento calcolo automaticamente il sesso, il luogo e la data di nascita. La data di nascita si ricava dal 7° all&#039;11° carattere (frnsst 75d50 a717n) e in particolare: Per.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Calcolo Codice Fiscale come calcolare il codice fiscale? Software" data-src="https://i2.wp.com/www.assofacile.it/wp-content/uploads/2019/09/calcolo-codice-fiscale.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.assofacile.it</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Come si ricava la data di nascita dal codice fiscale. Data di nascita dal codice fiscale. Se il giorno di nascita è compreso tra1 e 9, sarà preceduto da uno zero, altrimenti no. Con il nostro strumento puoi calcolare il codice fiscale inverso e ricavare i dati anagrafici dal codice fiscale.estrae data, sesso, provincia, comune di nascita e tutti i.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="I Mesi Nel Codice Fiscale rangerwhitening" data-src="https://i2.wp.com/lh5.googleusercontent.com/proxy/LApGobaDA7PkaYgNqDQ5YM77exJv4adEqbm5K5ka6XXF0QY3O8uEora-r5egeEa3Jmr44l5xABFbAPHJaXBEdTcGulcP9RO8eA61Z2V-kAjpHtWEDv2n_8og1icr1p2QiD3VUot3HquedZSxvinmclbTpONXC1bfyDk4RyaUtnT1Qw=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: rangerwhitening.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Più precisamente, il settimo e l’ottavo carattere indicano le ultime due cifre dell’anno di. Il problema e che or lo devo usare con codici fiscali di ragazzi e bambini nati dopo il 2000. Due cifre per l’anno di nascita, una lettera che indica il mese di nascita (è necessario fare riferimento a una tabella per la codifica) Questo potrebbe trarci.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Calcolo codice fiscale SmartCityExhibition" data-src="https://i2.wp.com/smartcityexhibition.it/wp-content/uploads/2017/07/calcolo-codice-fiscale-1050x525.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: smartcityexhibition.it</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Questo potrebbe trarci in inganno poiché (relativamente ad oggi che siamo nel 2019) un ultracentenario nato. Dal 1 gennaio 2004 il tesserino del codice fiscale è stato sostituito dalla tessera sanitaria. Il codice catastale è composto da una lettera e tre numeri che nel codice fiscale sono inseriti dal dodicesimo fino al quindicesimo carattere. Per codice fiscale inverso, o verifica.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Estrarre data di nascita dal codice fiscale" data-src="https://i2.wp.com/im6.freeforumzone.it/up/68/71/1605949556.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: opelmeriva.freeforumzone.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Anno di nascita, ultime due cifre, esempio 86 estratto da 1986; Più precisamente, il settimo e l’ottavo carattere indicano le ultime due cifre dell’anno di nascita. La decodifica di un codice fiscale è possibile grazie alla sua composizione. I 5 caratteri che compongono la data di nascita si ripartiscono nel modo seguente: Come si ricava la data di nascita dal.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Il codice fiscale (metodo di calcolo) / Sgart.it" data-src="https://i2.wp.com/www.sgart.it/IT/informatica/il-codice-fiscale/file?sgart-codicefiscale.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.sgart.it</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Il problema e che or lo devo usare con codici fiscali di ragazzi e bambini nati dopo il 2000. Tutto quello che devi fare per risalire a nome, cognome, data e luogo di nascita dal codice fiscale di una persona è collegarti al sito internet codice inverso e digitare il codice fiscale da cui vuoi trarre i dati anagrafici nel.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Codice Fiscale Inverso" data-src="https://i2.wp.com/www.codicefiscaleonline.com/img/preview_inverso.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.codicefiscaleonline.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ad esempio, 83 indica l’anno 1983. Come estrarre la data di nascita dal codice fiscale. Clicca quindi sul pulsante elabora ed, entro qualche secondo, saranno visualizzati i dati che. Partiamo da un codice fiscale di esempio frnsst75d50a717n (il codice è di pura fantasia e ci scusiamo se dovesse appartenere ad una persona reale). Più precisamente, il settimo e l’ottavo carattere.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Calcolo codice fiscale inverso Excel Excel per professionisti" data-src="https://i2.wp.com/www.marcofilocamo.it/wp-content/uploads/2019/12/Microsoft_Excel_Calcolo_Codice_Fiscale_Inverso_Anno_Nascita.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.marcofilocamo.it</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Con il calcolo del codice fiscale inverso puoi risalire ai dati anagrafici del suo titolare e verificare velocemente la validità e la correttezza di un codice fiscale. Salve, per estrarre la data di nascita dal codice fiscale, uso questa formula: Uguali, ma diverso sarà il 16°. L codice fiscale non è solo per persone fisiche. Nelle form in cui c&#039;è.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-risk-tolerance-statement.html" class="be-post-title">
+				 <h6>what is a risk tolerance statement </h6>
+                </a>
+                <a href="what-is-a-risk-tolerance-statement.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20risk%20tolerance%20statement&amp;w=50&amp;h=50&amp;c=7" alt="what is a risk tolerance statement">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="presupuesto-de-gastos-de-ventas.html" class="be-post-title">
+				 <h6>presupuesto de gastos de ventas </h6>
+                </a>
+                <a href="presupuesto-de-gastos-de-ventas.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=presupuesto%20de%20gastos%20de%20ventas&amp;w=50&amp;h=50&amp;c=7" alt="presupuesto de gastos de ventas">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="insurance-ombudsman-south-africa-contact-details.html" class="be-post-title">
+				 <h6>insurance ombudsman south africa contact details </h6>
+                </a>
+                <a href="insurance-ombudsman-south-africa-contact-details.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=insurance%20ombudsman%20south%20africa%20contact%20details&amp;w=50&amp;h=50&amp;c=7" alt="insurance ombudsman south africa contact details">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="q-quiere-decir-sos-cuba.html" class="be-post-title">
+				 <h6>q quiere decir sos cuba </h6>
+                </a>
+                <a href="q-quiere-decir-sos-cuba.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=q%20quiere%20decir%20sos%20cuba&amp;w=50&amp;h=50&amp;c=7" alt="q quiere decir sos cuba">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-douane-systeem.html" class="be-post-title">
+				 <h6>wat is een douane systeem </h6>
+                </a>
+                <a href="wat-is-een-douane-systeem.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20douane%20systeem&amp;w=50&amp;h=50&amp;c=7" alt="wat is een douane systeem">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-codice-de-leningrado.html" class="be-post-title">
+				 <h6>que es el codice de leningrado </h6>
+                </a>
+                <a href="que-es-el-codice-de-leningrado.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20codice%20de%20leningrado&amp;w=50&amp;h=50&amp;c=7" alt="que es el codice de leningrado">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-pérgola-en-ingles.html" class="be-post-title">
+				 <h6>que es pérgola en ingles </h6>
+                </a>
+                <a href="que-es-pérgola-en-ingles.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20p%C3%A9rgola%20en%20ingles&amp;w=50&amp;h=50&amp;c=7" alt="que es pérgola en ingles">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-estrofa-brainly.html" class="be-post-title">
+				 <h6>que es estrofa brainly </h6>
+                </a>
+                <a href="que-es-estrofa-brainly.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20estrofa%20brainly&amp;w=50&amp;h=50&amp;c=7" alt="que es estrofa brainly">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-ester.html" class="be-post-title">
+				 <h6>wat is een ester </h6>
+                </a>
+                <a href="wat-is-een-ester.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20ester&amp;w=50&amp;h=50&amp;c=7" alt="wat is een ester">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-tens-stand-for-in-tens-unit.html" class="be-post-title">
+				 <h6>what does tens stand for in tens unit </h6>
+                </a>
+                <a href="what-does-tens-stand-for-in-tens-unit.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20tens%20stand%20for%20in%20tens%20unit&amp;w=50&amp;h=50&amp;c=7" alt="what does tens stand for in tens unit">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

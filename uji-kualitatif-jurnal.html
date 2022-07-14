@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Kualitatif Jurnal at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Kualitatif Jurnal",
+  "datePublished": "2022-04-19T15:44:52Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20kualitatif%20jurnal",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20kualitatif%20jurnal&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20kualitatif%20jurnal" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20kualitatif%20jurnal" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Kualitatif Jurnal at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Kualitatif Jurnal</h2>
+    <p><strong>Uji Kualitatif Jurnal</strong>. Uji kualitatif lipid kelompok 2 inayatul fitriah1, lela qodariah2, lita puspa dewi3, lulu desia mutiani4, mia farida5, mohammad teddy wijaya6, muhammad ihsan7 abstrak lipid merupakan senyawa organic yang sering kita kenal dengan lemak, lemak adalah sumber utama energy yang dibutuhkan oleh setiap makhluk hidup. Oligo / polisakarida → monosakarida (pati) asam atau enzim (glukosa) penentuan monosakarida:</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20kualitatif%20jurnal" alt="JURNAL UJI MOLISCH KARBOHIDRAT PDF" />
+        <br>
+        <figcaption>JURNAL UJI MOLISCH KARBOHIDRAT PDF from hierleben.net</figcaption>
+    </figure>
+        <p>
+        Mangrove diketahui mempunyai komponen fitokimia yang mempunyai kemampuan bioaktif. Uji kualitatif senyawa metabolit sekunder pada daun palado. Uji pendahuluan senyawa polifenol digunakan pereaksi fecl3 dan untuk flavonoid digunakan pereaksi serbuk mg dan hcl pekat.
+    </p>
+    <h3>JURNAL UJI MOLISCH KARBOHIDRAT PDF</h3>
+    <p>Sampel yang menunjukkan hasil positif pada analisis kualitatif akan dilanjutkan pada analisis kuantitatif secara Uncategorized ardi priyadi (1401376).1, sarah tsamrotul fuadah (1404231).2, septi yuliana (1401520).3, titis fitri asih (1403604).4. Journal of research and technology, vol. Mbaebie, phytochemical constituents of some nigerian medicinal plants, african journal of biotechnology vol.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Kualitatif Protein I(jurnal).docx" data-src="https://i2.wp.com/imgv2-2-f.scribdassets.com/img/document/242339797/original/121de7c3d4/1583819729?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: id.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sebagai penegasan hasil uji pendahuluan, penelitian dilanjutkan dengan kromatografi lapis tipis. Selain uji kualitatif, digunakan juga uji kuantitatif menggunakan metode titrasi. Pharmachon, jurnal ilmiah farmasi, vol.2 no. Uncategorized ardi priyadi (1401376).1, sarah tsamrotul fuadah (1404231).2, septi yuliana (1401520).3, titis fitri asih (1403604).4. Uji validitas dan uji reliabilitas dapat dijabarkan sebagai berikut ini (iskandar, 2013).</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="242339797UjiKualitatifProteinIjurnaldocx.docx" data-src="https://i2.wp.com/imgv2-1-f.scribdassets.com/img/document/340316493/original/6948cc6f7f/1597132433?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Larutan pati 1% dilakukan uji iodium untuk membedakan polisakarida dari disakarida dan monosakarida. Pengujian validitas ini dilakukan melalui cara uji korelasi antara Uji aktivitas lipase ini dilakukan bersama dengan pembuatan kurva pertumbuhan bakteri. Program studi pendidikan teknologi agroindustri fakultas pendidikan teknologi dan kejuruan universitas pendidikan indonesia Hasilnya merupakan larutan pati 1%.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Penentuan Jenis Karbohidrat Dengan Uji Kualitatif Menggunakan Reagen" data-src="https://i2.wp.com/image.slidesharecdn.com/jurnalkarbohidratagussulistiyono412013016-141009053802-conversion-gate02/95/jurnal-karbohidrat-4-638.jpg?cb=1412833131" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kumpulanberbagaijenis.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji pendahuluan senyawa polifenol digunakan pereaksi fecl3 dan untuk flavonoid digunakan pereaksi serbuk mg dan hcl pekat. Analisis kualitatif fenol analisis kualitatif ini bertujuan untuk mengetahui apakah di dalam ekstrak buah sentul terdapat senyawa fenol dengan indikator perubahan warna secara spesifik. Uji aktivitas lipase ini dilakukan bersama dengan pembuatan kurva pertumbuhan bakteri. Uji kualitatif senyawa metabolit sekunder pada daun palado.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jurnal Penelitian Kuantitatif Keperawatan Pdf / Pdf Modul Riset" data-src="https://i2.wp.com/i1.rgstatic.net/publication/329391811_Pengalaman_Perawat_Kepala_Ruang_Tentang_Pelaksanaan_Model_Delegasi_Keperawatan_&#039;Relactor&#039;_MDK&#039;R&#039;/links/5c2662b9299bf12be39f2203/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: filegratis-download.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Setiap sampling, 4 ml kultur diambil dan disentrifugasi 8000 rpm, 10 menit, suhu 4° c. Jurnal penyuluhan perikanan dan kelautan. Pemeriksaan keabsahan data penelitian kualitatif pada skripsi. Uji kualitatif senyawa metabolit sekunder pada daun palado (agave angustifolia) yang diekstraksi dengan pelarut air dan etanol. 1 ml karbohidrat ditambah 2 ml larutan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="JURNAL UJI MOLISCH KARBOHIDRAT PDF" data-src="https://i2.wp.com/image.slidesharecdn.com/karbohidrati-130403200604-phpapp01/95/karbohidrat-i-2-638.jpg?cb\u003d1365019625" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: hierleben.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pengujian validitas ini dilakukan melalui cara uji korelasi antara Dari uji kualitatif yang dilakukan yaitu dengan metoda biuret, metoda ninhidrin dan metoda xanthoprotein memberikan hasil positif. Skripsi yang diteliti secara kualitatifberjumlah 35 judul. Uncategorized ardi priyadi (1401376).1, sarah tsamrotul fuadah (1404231).2, septi yuliana (1401520).3, titis fitri asih (1403604).4. Jurnal ilmiah kesehatan masyarakat vol.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="JURNAL SKRIPSI UJI AKTIVITAS ANTIBAKTERI e kemudian dicuci dengan air" data-src="https://i2.wp.com/static.dokumen.tech/img/1200x630/reader019/reader/2020040708/5b0a45dd7f8b9a99488bf1f2/r-1.jpg?t=1628871448" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dokumen.tech</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Penilaian kualitas suatu temuan penelitian, baik kuantitatif maupun kualitatif memerlukan pembahasan tentang keabsahan data/validitas (trustworthiness) dan reliabilitasnya.secara tradisional, penilaian validitas dan reliabilitas dalam penelitian kuantitatif telah memiliki standar baku yang mengacu pada pengujian isi dan kegunaan alat ukur yang. Pati merupakan polisakarida yang tersusun oleh glukosa. Supernatan disaring dan didapatkan ekstrak kasar enzim. Jurnal penyuluhan perikanan dan kelautan. Uji kualitatif.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jurnal Internasional Uji Karbohidrat Soal Update" data-src="https://i2.wp.com/i1.rgstatic.net/publication/331126765_Uji_Kualitas_Kimia_Dan_Organoleptik_Pada_Nugget_Ayam_Hasil_Substitusi_Ampas_Tahu/links/5c66c86ba6fdcc404eb4387a/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: soalupdatepdf.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">12 edisi 3, 2020 145 teknik pemeriksaan keabsahan data pada penelitian. Skripsi yang diteliti secara kualitatifberjumlah 35 judul. Air adalah pelarut komponen fitokimia yang relat. Dari uji kualitatif yang dilakukan yaitu dengan metoda biuret, metoda ninhidrin dan metoda xanthoprotein memberikan hasil positif. Penelitian ini difokuskanpada implementasi teknik triangulasi dalam proses pemeriksaan keabsahan data pada penelitian skripsimahasiswa pendidikan sendratasik universitas lambung.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jurnal Uji Kualitatif Karbohidrat 2021 E Jurnal" data-src="https://i2.wp.com/syariah.iainkediri.ac.id/wp-content/uploads/2021/01/PKH-Web-1024x341.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ejurnal.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ketiga endapan inulin basah (1,2,3 ) dicampurkan dan diperoleh massa total. Jurnal ilmiah pendidikan kimia “hydrogen” vol. Peralatan yang digunakan dalam kegiatan ini meliputi tabung reaksi. Jurnal penyuluhan perikanan dan kelautan. Journal of research and technology, vol.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="JURNAL UJI MOLISCH KARBOHIDRAT PDF" data-src="https://i2.wp.com/2.bp.blogspot.com/-7VsPRByurdE/WYFOAFfmZVI/AAAAAAAAAqw/6lIWQ-n2Bz0j_pVH3xxYMSlLkqxoh8UpwCK4BGAYYCw/s1600/fgdh.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: gomac.me</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Selain uji kualitatif, digunakan juga uji kuantitatif menggunakan metode titrasi. Pharmachon, jurnal ilmiah farmasi, vol.2 no. Pati merupakan polisakarida yang tersusun oleh glukosa. Pengujian validitas ini dilakukan melalui cara uji korelasi antara Uji kualitatif senyawa metabolit sekunder pada daun palado.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="JURNAL SKRIPSI UJI AKTIVITAS ANTIBAKTERI e kemudian dicuci dengan air" data-src="https://i2.wp.com/reader019.dokumen.tech/reader019/reader/2020040708/5b0a45dd7f8b9a99488bf1f2/r-3.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dokumen.tech</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jurnal ilmiah pendidikan kimia “hydrogen” vol. Uji validitas dan uji reliabilitas dapat dijabarkan sebagai berikut ini (iskandar, 2013). Penilaian kualitas suatu temuan penelitian, baik kuantitatif maupun kualitatif memerlukan pembahasan tentang keabsahan data/validitas (trustworthiness) dan reliabilitasnya.secara tradisional, penilaian validitas dan reliabilitas dalam penelitian kuantitatif telah memiliki standar baku yang mengacu pada pengujian isi dan kegunaan alat ukur yang. Analisis kualitatif fenol.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-hefboom-betekenis.html" class="be-post-title">
+				 <h6>wat is een hefboom betekenis </h6>
+                </a>
+                <a href="wat-is-een-hefboom-betekenis.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20hefboom%20betekenis&amp;w=50&amp;h=50&amp;c=7" alt="wat is een hefboom betekenis">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="eos-definition-finance.html" class="be-post-title">
+				 <h6>eos definition finance </h6>
+                </a>
+                <a href="eos-definition-finance.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=eos%20definition%20finance&amp;w=50&amp;h=50&amp;c=7" alt="eos definition finance">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-w3m.html" class="be-post-title">
+				 <h6>what is w3m </h6>
+                </a>
+                <a href="what-is-w3m.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20w3m&amp;w=50&amp;h=50&amp;c=7" alt="what is w3m">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-hacer-durante-un-deslizamiento-de-tierra.html" class="be-post-title">
+				 <h6>que hacer durante un deslizamiento de tierra </h6>
+                </a>
+                <a href="que-hacer-durante-un-deslizamiento-de-tierra.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20hacer%20durante%20un%20deslizamiento%20de%20tierra&amp;w=50&amp;h=50&amp;c=7" alt="que hacer durante un deslizamiento de tierra">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-se-llamaba-la-suegra-de-moises.html" class="be-post-title">
+				 <h6>como se llamaba la suegra de moises </h6>
+                </a>
+                <a href="como-se-llamaba-la-suegra-de-moises.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20se%20llamaba%20la%20suegra%20de%20moises&amp;w=50&amp;h=50&amp;c=7" alt="como se llamaba la suegra de moises">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-redoxreactie.html" class="be-post-title">
+				 <h6>wat is een redoxreactie </h6>
+                </a>
+                <a href="wat-is-een-redoxreactie.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20redoxreactie&amp;w=50&amp;h=50&amp;c=7" alt="wat is een redoxreactie">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-codigo-qr-y-como-funciona.html" class="be-post-title">
+				 <h6>que es un codigo qr y como funciona </h6>
+                </a>
+                <a href="que-es-un-codigo-qr-y-como-funciona.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20codigo%20qr%20y%20como%20funciona&amp;w=50&amp;h=50&amp;c=7" alt="que es un codigo qr y como funciona">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-ggz.html" class="be-post-title">
+				 <h6>what is ggz </h6>
+                </a>
+                <a href="what-is-ggz.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20ggz&amp;w=50&amp;h=50&amp;c=7" alt="what is ggz">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-fonavipo.html" class="be-post-title">
+				 <h6>que es fonavipo </h6>
+                </a>
+                <a href="que-es-fonavipo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20fonavipo&amp;w=50&amp;h=50&amp;c=7" alt="que es fonavipo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="uji-antagonis-adalah.html" class="be-post-title">
+				 <h6>uji antagonis adalah </h6>
+                </a>
+                <a href="uji-antagonis-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=uji%20antagonis%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="uji antagonis adalah">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

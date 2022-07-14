@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Qu&#039;est Ce Que Le Phishing En Informatique at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Qu&#039;est Ce Que Le Phishing En Informatique",
+  "datePublished": "2022-04-30T04:20:52Z",
+  "image": "https://tse1.mm.bing.net/th?q=qu%27est%20ce%20que%20le%20phishing%20en%20informatique",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=qu%27est%20ce%20que%20le%20phishing%20en%20informatique&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=qu%27est%20ce%20que%20le%20phishing%20en%20informatique" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=qu%27est%20ce%20que%20le%20phishing%20en%20informatique" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Qu&#039;est Ce Que Le Phishing En Informatique at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Qu&#039;est Ce Que Le Phishing En Informatique</h2>
+    <p><strong>Qu&#039;est Ce Que Le Phishing En Informatique</strong>. La technique du phishing est une technique consistant à exploiter non pas une faille informatique mais la faille humaine en dupant les internautes crédules par le biais d’un courrier électronique semblant provenir d’une entreprise de confiance, typiquement une banque ou un site de commerce ou votre opérateur téléphonique. Outre le fait que cela est garanti après un test de phishing bien réalisé, il y a des signes qui doivent vous alerter.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=qu%27est%20ce%20que%20le%20phishing%20en%20informatique" alt="Qu&#039;estce que le Phishing ? et comment vous protéger (le guide ultime" />
+        <br>
+        <figcaption>Qu&#039;estce que le Phishing ? et comment vous protéger (le guide ultime from ituto.net</figcaption>
+    </figure>
+        <p>
+        Le phishing est une forme de cyberattaque qui mise sur l’inattention de l’internaute et non sur des paramètres informatiques. Le phishing ou hameçonnage est l&#039;une des principales menaces venant d&#039;internet. Pour en être sûr, placez votre curseur sur le.
+    </p>
+    <h3>Qu&#039;estce que le Phishing ? et comment vous protéger (le guide ultime</h3>
+    <p>Le terme phishing est dérivé du mot anglais fishing, car les attaquants lancent des appâts comme le font les pêcheurs à la ligne pour attirer leurs proies.le mot a été utilisé pour la première fois par un groupe de pirates informatiques en 1996, lorsqu&#039;ils ont volé les noms d&#039;utilisateurs et les mots de passe d&#039;aol avec le logiciel malveillant aohell. L&#039;hameçonnage ou phishing est une forme d&#039;escroquerie sur internet. Le fraudeur se fait passer pour un organisme que vous connaissez (banque, service des impôts, caf, etc.), en utilisant le logo et le nom de cet organisme. Il vous envoie un mail vous demandant généralement de mettre à jour ou de confirmer vos informations suite à un.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Qu&#039;estce que le Phishing ? et comment vous protéger (le guide ultime" data-src="https://i2.wp.com/ituto.net/wp-content/uploads/2020/10/18513155081584350349.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ituto.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Attaque de phishing via google docs. Autrement dit, vos collaborateurs et vous devez être en mesure de reconnaître l’hameçonnage. C&#039;est ce que l&#039;on nomme le brand spoofing (usurpation de marque en français). En effet, le phishing prend souvent la forme d. Outre le fait que cela est garanti après un test de phishing bien réalisé, il y a des signes.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Qu’estce que le phishing ? SOS CONSO LITIGES RÉCLAMATIONS" data-src="https://i2.wp.com/sosconso.fr/wp-content/uploads/2021/08/Quest-ce-que-le-phishing-.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sosconso.fr</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pour s’en protéger, évitez de transmettre vos données bancaires et vos mots de passe par téléphone ou message électronique. L&#039;une des choses les plus utiles que nous pouvons apprendre en analysant les kits de phishing est l&#039;endroit où les informations d&#039;identification sont envoyées. Heureusement, il existe des moyens de démasquer ce genre de tentative. Une attaque de phishing est une.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Qu’estceque le phishing ? RGPD DPO" data-src="https://i2.wp.com/rgpd-dpo.be/wp-content/uploads/2019/01/fishing.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: rgpd-dpo.be</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Évitez autant que possible de cliquer sur les liens d’apparence douteuse. Pour en être sûr, placez votre curseur sur le. Le phishing sur les réseaux sociaux désigne une attaque exécutée sur des plateformes telles qu’instagram, linkedin, facebook ou twitter. En effet, le phishing prend souvent la forme d. Les réseaux sociaux sont devenus aussi omniprésents que l’air que nous respirons.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Le Phishing (hameçonnage) c&#039;est quoi ? SOSPC" data-src="https://i2.wp.com/sospc.name/wp-content/uploads/2013/10/cnp-phishing.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sospc.name</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pour s’en protéger, évitez de transmettre vos données bancaires et vos mots de passe par téléphone ou message électronique. L&#039;hameçonnage ou phishing est une forme d&#039;escroquerie sur internet. Et, si vous possédez un compte de messagerie, vous avez probablement déjà été victime de phishing. Évitez autant que possible de cliquer sur les liens d’apparence douteuse. Les antivirus sont également un.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Phishing (ou hameçonnage), qu&#039;est ce que c&#039;est ? Association Défis" data-src="https://i2.wp.com/www.defis.info/wp-content/uploads/2017/11/Phishing2.2.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.defis.info</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En français, on parle d’ « hameçonnage ». La technique du phishing est une technique consistant à exploiter non pas une faille informatique mais la faille humaine en dupant les internautes crédules par le biais d’un courrier électronique semblant provenir d’une entreprise de confiance, typiquement une banque ou un site de commerce ou votre opérateur téléphonique. En cas de doute,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Qu’estce que le phishing ? Ucar Sens" data-src="https://i2.wp.com/ucar-sens.fr/wp-content/uploads/2021/02/phishing.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ucar-sens.fr</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pour en être sûr, placez votre curseur sur le. Le phishing est une forme de cyberattaque qui mise sur l’inattention de l’internaute et non sur des paramètres informatiques. La technique du phishing est une technique consistant à exploiter non pas une faille informatique mais la faille humaine en dupant les internautes crédules par le biais d’un courrier électronique semblant provenir.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Qu&#039;estce que le malware Redatup ? Sciences et Avenir" data-src="https://i2.wp.com/www.sciencesetavenir.fr/assets/img/2019/10/14/cover-r4x3w1000-5da48984ea152-proteger-phishing-malwares-comment.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.sciencesetavenir.fr</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pour en être sûr, placez votre curseur sur le. Le phishing est une cybermenace constante depuis les débuts d&#039;internet et il est probable qu&#039;il le reste tant qu&#039;il réussira à faire des victimes. En français, on parle d’ « hameçonnage ». Attaque de phishing via google docs. L’hameçonnage ( phishing en anglais) est une technique frauduleuse destinée à leurrer l’internaute.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Le phishing qu&#039;estce que c&#039;est ? billet de banque" data-src="https://i2.wp.com/billetdebanque.panorabanques.com/wp-content/uploads/2015/11/Le-phishing-quest-ce-que-cest.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: billetdebanque.panorabanques.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Le phishing sur les réseaux sociaux désigne une attaque exécutée sur des plateformes telles qu’instagram, linkedin, facebook ou twitter. En cas de doute, contactez l&#039;entreprise concernée par un autre biais : Le phishing est une cybermenace constante depuis les débuts d&#039;internet et il est probable qu&#039;il le reste tant qu&#039;il réussira à faire des victimes. L’hameçonnage ( phishing en anglais).</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Qu&#039;estce que le phishing et comment s&#039;en prémunir" data-src="https://i2.wp.com/www.prodigemobile.com/wp-content/uploads/2019/07/attaque-phishing-mail.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.prodigemobile.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Le phishing sur les réseaux sociaux désigne une attaque exécutée sur des plateformes telles qu’instagram, linkedin, facebook ou twitter. Le phishing est une technique frauduleuse destinée à leurrer les internautes pour les amener à communiquer des données personnelles (accès au compte, mots de passe…) et/ou bancaires en se faisant passer pour un tiers de confiance. Les réseaux sociaux sont devenus.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Piratage informatique Qu&#039;estce que le phishing ? EstelNumerique" data-src="https://i2.wp.com/www.estel-numerique.com/wp-content/uploads/2020/03/20630-scaled.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.estel-numerique.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En français, on parle d’ « hameçonnage ». Les antivirus sont également un très bon moyen de se protéger contre le phishing, et ce, de deux manières. La technique du phishing est une technique consistant à exploiter non pas une faille informatique mais la faille humaine en dupant les internautes crédules par le biais d’un courrier électronique semblant provenir d’une.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="oldest-surname-in-south-africa.html" class="be-post-title">
+				 <h6>oldest surname in south africa </h6>
+                </a>
+                <a href="oldest-surname-in-south-africa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=oldest%20surname%20in%20south%20africa&amp;w=50&amp;h=50&amp;c=7" alt="oldest surname in south africa">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-f-r-e-i-n-d-s-stand-for.html" class="be-post-title">
+				 <h6>what does f.r.e.i.n.d.s stand for </h6>
+                </a>
+                <a href="what-does-f-r-e-i-n-d-s-stand-for.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20f.r.e.i.n.d.s%20stand%20for&amp;w=50&amp;h=50&amp;c=7" alt="what does f.r.e.i.n.d.s stand for">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-goed-kussen-voor-mij.html" class="be-post-title">
+				 <h6>wat is een goed kussen voor mij </h6>
+                </a>
+                <a href="wat-is-een-goed-kussen-voor-mij.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20goed%20kussen%20voor%20mij&amp;w=50&amp;h=50&amp;c=7" alt="wat is een goed kussen voor mij">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-interface-de-un-sistema-operativo.html" class="be-post-title">
+				 <h6>que es el interface de un sistema operativo </h6>
+                </a>
+                <a href="que-es-el-interface-de-un-sistema-operativo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20interface%20de%20un%20sistema%20operativo&amp;w=50&amp;h=50&amp;c=7" alt="que es el interface de un sistema operativo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-amigo-verdadero-jw.html" class="be-post-title">
+				 <h6>que es un amigo verdadero jw </h6>
+                </a>
+                <a href="que-es-un-amigo-verdadero-jw.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20amigo%20verdadero%20jw&amp;w=50&amp;h=50&amp;c=7" alt="que es un amigo verdadero jw">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="hidrato-de-metano-formula-estrutural.html" class="be-post-title">
+				 <h6>hidrato de metano formula estrutural </h6>
+                </a>
+                <a href="hidrato-de-metano-formula-estrutural.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=hidrato%20de%20metano%20formula%20estrutural&amp;w=50&amp;h=50&amp;c=7" alt="hidrato de metano formula estrutural">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-betekent-postinterventiedossier.html" class="be-post-title">
+				 <h6>wat betekent postinterventiedossier </h6>
+                </a>
+                <a href="wat-betekent-postinterventiedossier.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20betekent%20postinterventiedossier&amp;w=50&amp;h=50&amp;c=7" alt="wat betekent postinterventiedossier">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-klaplong.html" class="be-post-title">
+				 <h6>wat is klaplong </h6>
+                </a>
+                <a href="wat-is-klaplong.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20klaplong&amp;w=50&amp;h=50&amp;c=7" alt="wat is klaplong">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-goede-epc-waarde.html" class="be-post-title">
+				 <h6>wat is een goede epc waarde </h6>
+                </a>
+                <a href="wat-is-een-goede-epc-waarde.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20goede%20epc%20waarde&amp;w=50&amp;h=50&amp;c=7" alt="wat is een goede epc waarde">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-magistrado-en-méxico.html" class="be-post-title">
+				 <h6>que es un magistrado en méxico </h6>
+                </a>
+                <a href="que-es-un-magistrado-en-méxico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20magistrado%20en%20m%C3%A9xico&amp;w=50&amp;h=50&amp;c=7" alt="que es un magistrado en méxico">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

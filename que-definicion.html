@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Que Definicion at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Que Definicion",
+  "datePublished": "2022-04-29T13:24:59Z",
+  "image": "https://tse1.mm.bing.net/th?q=que%20definicion",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=que%20definicion&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20definicion" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20definicion" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Que Definicion at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Que Definicion</h2>
+    <p><strong>Que Definicion</strong>. Pregunta por la identidad de una o varias personas o cosas de un conjunto identificable. Es decir, el concepto de salud no sólo da cuenta de la no aparición.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=que%20definicion" alt="Colonialismo Qué es, definición y concepto Economipedia" />
+        <br>
+        <figcaption>Colonialismo Qué es, definición y concepto Economipedia from economipedia.com</figcaption>
+    </figure>
+        <p>
+        Pregunta por la identidad de una o varias personas o cosas de un conjunto identificable. Ella, que finalmente no vino, tenía un compromiso. Aquí encontrarás listados alfabéticamente ordenados con el significado de todas las palabras que puedas necesitar.
+    </p>
+    <h3>Colonialismo Qué es, definición y concepto Economipedia</h3>
+    <p>Concepto significa diseño, imagen, construcción o símbolo, concepción, idea u opinión expresada, caracterización. Definición significa acción y efecto de definir. Del latín conceptus, el término concepto se refiere a la idea que forma el entendimiento. A continuación encontrarás las últimas.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Qué es Atrofia Significado Tipos Causas Efectos" data-src="https://i2.wp.com/quesignificado.org/wp-content/uploads/2020/06/que-es-atrofia-significado-definicion-causas-efectos.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: quesignificado.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Introduce una oración relativa y refiere a un antecedente expreso, generalmente nominal. El concepto se entiende además como la serie de datos estructurados en forma lógica que le. La definición es el resultado del proceso mediante el cual se específica el significado de una unidad léxica (palabra, frase o concepto) y se. Es el individuo encargado de recibir esa comunicación.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="DISESTESIA DEFINICION PDF" data-src="https://i2.wp.com/image.slidesharecdn.com/dolor-151228012405/95/semiologia-del-dolor-10-638.jpg?cbu003d1451265871" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: watchesok.me</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">♦ equivale a &#039;el, la, lo cual&#039;; Pregunta por el tipo o la clase a que pertenecen una o varias personas o cosas. De esta manera, un planteamiento teórico detecta inicialmente un problema de la realidad, propone una. Con el artículo forma el relativo compuesto: La teoría es un modelo de explicación de una parte de la realidad.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Definición variable" data-src="https://i2.wp.com/image.slidesharecdn.com/definicin-variable-151030191956-lva1-app6892/95/definicin-variable-1-638.jpg?cb=1446232990" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Que, cuando ejerce función de pronombre relativo o conjunción, se escribe sin tilde, debido a que se trata de una palabra átona.en cambio, qué, escrita con acento diacrítico, se emplea para introducir enunciados interrogativos o exclamativos. El que, la que, los que, las que, lo que, que a diferencia de la sola forma que, posee variación. Podemos decir, en principio,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="DEFINICION DE OSMOLALIDAD PDF" data-src="https://i2.wp.com/image.slidesharecdn.com/smosispresinosmticayosmolaridad-131007225408-phpapp01/95/smosis-presin-osmtica-y-osmolaridad-5-638.jpg?cbu003d1381186477" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: vipvisiontv.me</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Lingüística enunciado de un diccionario que constituye una paráfrasis sinonímica de la entrada y ofrece un. Acción y resultado de definir. Aquí encontrarás listados alfabéticamente ordenados con el significado de todas las palabras que puedas necesitar. En oportunidades es difícil diferenciarla de una novela corta ya que su especificidad no puede ser medida con precisión. What does the abbreviation que.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Colonialismo Qué es, definición y concepto Economipedia" data-src="https://i2.wp.com/economipedia.com/wp-content/uploads/Qué-es-colonialismo.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: economipedia.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Según la organización mundial de la salud (oms), la salud es la condición de todo ser vivo que goza de un absoluto bienestar tanto a nivel físico como a nivel mental y social. Definición de que en el diccionario de español en línea. Diccionario de la lengua española; Información sobre que en el diccionario y enciclopedia en línea gratuito. Aquí.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Qué es la Bioética Principios Definición Concepto Importancia" data-src="https://i2.wp.com/quesignificado.org/wp-content/uploads/2019/08/que-es-la-bioetica.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: quesignificado.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Podemos decir, en principio, que la salud se define como la ausencia de enfermedad, es decir, cuando no tenemos ningún mal o afección que afecte nuestro organismo, nuestro cuerpo: Se trata de un concepto subjetivo, ya que si le preguntas a alguien sobre lo que percibe por calidad, probablemente sea diferente a loleer más Información rápida y de calidad. Que,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Definición de ISP » Concepto en Definición ABC" data-src="https://i2.wp.com/www.definicionabc.com/wp-content/uploads/tecnologia/ISP.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.definicionabc.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pero vamos a ir un poco más allá, y diremos también que el término salud, que deriva del vocablo en. El cuento es una pequeña narración creada por uno o varios autores y donde participan un reducido grupo de personajes con una trama bastante sencilla. La dislexia es un trastorno del aprendizaje de la lectoescritura, de carácter persistente y específico,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Definición de Menester" data-src="https://i2.wp.com/elnoti.com/wp-content/uploads/2016/06/160610-Menester.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: elnoti.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Con el artículo forma el relativo compuesto: Es la formulación de una idea o una imagen a través de palabras. La teoría es un modelo de explicación de una parte de la realidad. Surge de una operación lógica, ya que a través de un. Una definición busca explicar lo que es algo a rasgos generales, de manera que alguien que.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Qué es Innovación Definición Características Marketing Empresarial" data-src="https://i2.wp.com/quesignificado.org/wp-content/uploads/2019/08/que-es-innovacion.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: quesignificado.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Traducir que significado que traducción de que sinónimos de que, antónimos de que. Este tipo de explicación se fundamenta en una o varias hipótesis que son verificadas experimentalmente y, a partir de los datos obtenidos, se ofrece una generalización. Introduce una oración relativa y refiere a un antecedente expreso, generalmente nominal. Se trata de un pensamiento que es expresado mediante.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="DEFINICION DE POLIPNEA PDF" data-src="https://i2.wp.com/image.slidesharecdn.com/signosvitales-2014-140513190357-phpapp01/95/signos-vitales-25-638.jpg?cbu003d1400007887" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: mp3disc.info</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">(sobre la definición de la economía política, y un método de investigación propio para ella. Del latín conceptus, el término concepto se refiere a la idea que forma el entendimiento. Información sobre que en el diccionario y enciclopedia en línea gratuito. El que, la que, los que, las que, lo que, que a diferencia de la sola forma que, posee.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-corrupcion-concepto-corto.html" class="be-post-title">
+				 <h6>que es la corrupcion concepto corto </h6>
+                </a>
+                <a href="que-es-la-corrupcion-concepto-corto.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20corrupcion%20concepto%20corto&amp;w=50&amp;h=50&amp;c=7" alt="que es la corrupcion concepto corto">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="grünspan-was-ist-das.html" class="be-post-title">
+				 <h6>grünspan was ist das </h6>
+                </a>
+                <a href="grünspan-was-ist-das.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=gr%C3%BCnspan%20was%20ist%20das&amp;w=50&amp;h=50&amp;c=7" alt="grünspan was ist das">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="qué-significa-la-palabra-megadiverso.html" class="be-post-title">
+				 <h6>qué significa la palabra megadiverso </h6>
+                </a>
+                <a href="qué-significa-la-palabra-megadiverso.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=qu%C3%A9%20significa%20la%20palabra%20megadiverso&amp;w=50&amp;h=50&amp;c=7" alt="qué significa la palabra megadiverso">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-sorprender-a-un-hombre.html" class="be-post-title">
+				 <h6>como sorprender a un hombre </h6>
+                </a>
+                <a href="como-sorprender-a-un-hombre.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20sorprender%20a%20un%20hombre&amp;w=50&amp;h=50&amp;c=7" alt="como sorprender a un hombre">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="most-common-afrikaans-surname.html" class="be-post-title">
+				 <h6>most common afrikaans surname </h6>
+                </a>
+                <a href="most-common-afrikaans-surname.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=most%20common%20afrikaans%20surname&amp;w=50&amp;h=50&amp;c=7" alt="most common afrikaans surname">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-eryptosis.html" class="be-post-title">
+				 <h6>what is eryptosis </h6>
+                </a>
+                <a href="what-is-eryptosis.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20eryptosis&amp;w=50&amp;h=50&amp;c=7" alt="what is eryptosis">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="q-es-piola-en-mexico.html" class="be-post-title">
+				 <h6>q es piola en mexico </h6>
+                </a>
+                <a href="q-es-piola-en-mexico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=q%20es%20piola%20en%20mexico&amp;w=50&amp;h=50&amp;c=7" alt="q es piola en mexico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-power-riser.html" class="be-post-title">
+				 <h6>what is a power riser </h6>
+                </a>
+                <a href="what-is-a-power-riser.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20power%20riser&amp;w=50&amp;h=50&amp;c=7" alt="what is a power riser">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="when-to-use-riser-cable.html" class="be-post-title">
+				 <h6>when to use riser cable </h6>
+                </a>
+                <a href="when-to-use-riser-cable.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=when%20to%20use%20riser%20cable&amp;w=50&amp;h=50&amp;c=7" alt="when to use riser cable">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="gewestplannen-wat-is-dat.html" class="be-post-title">
+				 <h6>gewestplannen wat is dat </h6>
+                </a>
+                <a href="gewestplannen-wat-is-dat.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=gewestplannen%20wat%20is%20dat&amp;w=50&amp;h=50&amp;c=7" alt="gewestplannen wat is dat">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

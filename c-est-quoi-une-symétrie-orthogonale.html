@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        C&#039;est Quoi Une Symétrie Orthogonale at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "C&#039;est Quoi Une Symétrie Orthogonale",
+  "datePublished": "2022-04-27T09:55:50Z",
+  "image": "https://tse1.mm.bing.net/th?q=c%27est%20quoi%20une%20sym%C3%A9trie%20orthogonale",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=c%27est%20quoi%20une%20sym%C3%A9trie%20orthogonale&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=c%27est%20quoi%20une%20sym%C3%A9trie%20orthogonale" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=c%27est%20quoi%20une%20sym%C3%A9trie%20orthogonale" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            C&#039;est Quoi Une Symétrie Orthogonale at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">C&#039;est Quoi Une Symétrie Orthogonale</h2>
+    <p><strong>C&#039;est Quoi Une Symétrie Orthogonale</strong>. Un axe de symétrie est une droite qui partage en deux parties une figure que l’on peut superposer par pliage. Il existe plusieurs sortes de symétries dans le plan ou dans l’espace.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=c%27est%20quoi%20une%20sym%C3%A9trie%20orthogonale" alt="Symétrie axiale, qu&#039;est ce que c&#039;est ? (6eme) YouTube" />
+        <br>
+        <figcaption>Symétrie axiale, qu&#039;est ce que c&#039;est ? (6eme) YouTube from www.youtube.com</figcaption>
+    </figure>
+        <p>
+        Les enfants qui ont un numéro vert se placent en dispersion d’un côté de la corde. Les mesures des angles ;; On appelle d la droite du pli , on note a le premier point ;
+    </p>
+    <h3>Symétrie axiale, qu&#039;est ce que c&#039;est ? (6eme) YouTube</h3>
+    <p>Les droites (d) et (d&#039;) sont parallèles. Les enfants qui ont un numéro vert se placent en dispersion d’un côté de la corde. Placer un point sur une feuille ; On remarque que le symétrique de c ;</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Image d&#039;un angle par une symétrie centrale Cours de maths YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/6j4sAC1HlDs/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Cette droite (d) est appelée axe de symétrie. Une symétrie géométrique est un cas particulier de symétrie. Partager plus d&#039;outils de partage. Pour écrire à l’envers, nous avons dû commencer à écrire la dernière lettre et il faut tourner les lettres. I) symétrie par rapport a une droite:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cours de maths Axe de symétrie" data-src="https://i2.wp.com/e.maxicours.com/img/2/2/8/8/228842.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.maxicours.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Symétrie axiale et orthogonale symétrie axiale et orthogonale. Un axe de symétrie (une droite). L’autre morceau de la lettre est « l’image miroir » de la première. L&#039;axe de symétrie, c&#039;est quoi? En voici un exemple :</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Symétrie axiale, qu&#039;est ce que c&#039;est ? (6eme) YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/WniTqk4_4so/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La symétrie orthogonale la symétrie orthogonale, c&#039;est lorsque chaque point d&#039;une figure est reporté de l&#039;autre côté de l&#039;axe de symétrie. Plus généralement, le symétrique d&#039;une figure par symétrie centrale est une figure superposable. Toute droite orthogonale à un plan est orthogonale à toutes les droites de ce plan c. A) définition de la symetrie orthogonale. Invariance d&#039;une figure par.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pouvez vous m&#039;expliquer la différence entre symétrie axiale et symétrie" data-src="https://i2.wp.com/fr-static.z-dn.net/files/d22/8302e4209e6262217d51aea38a499d97.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: nosdevoirs.fr</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Le motif de base de cette mosaïque est le parcours d&#039;un cavalier dans une grille 5 × 5. Certaines lettres ont un axe de symétrie d’autres pas. C’est une isométrie où chaque point de la figure est envoyé perpendiculairement de Plusieurs matériels peuvent au départ leur fournir l’occasion d’agir réellement et de percevoir les relations nécessaires à l’étude. Propriétés [modifier.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="3. Axe de symétrie d’une figure Image Lelivrescolaire.fr" data-src="https://i2.wp.com/img.lelivrescolaire.fr/mathematiques-6e-2016/symetrie-axiale/3-axe-de-symetrie-dune-figure/3000.c10.3.6.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.lelivrescolaire.fr</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La symétrie orthogonale la symétrie orthogonale, c&#039;est lorsque chaque point d&#039;une figure est reporté de l&#039;autre côté de l&#039;axe de symétrie. Dégager les caractéristiques d’une symétrie orthogonale. Plier la feuille ,le point ne doit pas se trouver sur le pli ; Partager plus d&#039;outils de partage. La corde figure l’axe de symétrie, les enfants des points du plan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="La symétrie orthogonale" data-src="https://i2.wp.com/warmaths.fr/MATH/SYMETRIE/Symetrie orthogonale_fichiers/image023.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: warmaths.fr</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La distance d&#039;un point à l&#039;axe de symétrie est égale &amp;#22 Certaines lettres ont un axe de symétrie d’autres pas. Les dimensions des longueurs ;; Dégager les caractéristiques d’une symétrie orthogonale. On remarque que le symétrique de c ;</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="3eme Symétrie" data-src="https://i2.wp.com/mathix.org/cours_interactif/images_cours/Symetrie/Symetrie1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: mathix.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Toute droite orthogonale à un plan est orthogonale à toutes les droites de ce plan c. La symétrie orthogonale la symétrie orthogonale, c&#039;est lorsque chaque point d&#039;une figure est reporté de l&#039;autre côté de l&#039;axe de symétrie. Parmi les symétries courantes, on peut citer la réflexion et la symétrie centrale. L’autre morceau de la lettre est « l’image miroir ».</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cours de maths Symétrie axiale" data-src="https://i2.wp.com/e.maxicours.com/img/1/4/8/7/148797.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.maxicours.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Les segments [aa&#039;] et [bb&#039;] sont perpendiculaires à la droite d. Se retourner élément caractéristique : L&#039;axe de symétrie, c&#039;est quoi? Pour construire le symétrique a&#039; d&#039;un point a par rapport à une droite (d), on trace la droite passant par ce point a. L’enseignant dit aux enfants qu’ils vont représenter une symétrie orthogonale.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Qu&#039;elle est la différence de la symétrie axiale avec la symétrie" data-src="https://i2.wp.com/fr-static.z-dn.net/files/d6f/47e61880b9011f900eed59d7ee117fd4.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: nosdevoirs.fr</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Montrons pour ﬁnir que f est un automorphisme de e si (i) ou (ii) est vraie. Avec une aiguille piquer la feuille de part en part en a. Symétrie axiale et orthogonale symétrie axiale et orthogonale. De manière générale, un système est symétrique quand on peut permuter ses éléments en laissant sa forme inchangée. La symétrie orthogonale est une transformation.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="AlgoRythmes avril 2015" data-src="https://i2.wp.com/4.bp.blogspot.com/-dj7eXxJPdnw/VT5C6YaL_eI/AAAAAAAAPJQ/gZMl0TD-ajM/s1600/6è-Topogramme%2BMarichal%2BSymétrie.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: algorythmes.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Citons pour mémoire les miroirs. Plier la feuille ,le point ne doit pas se trouver sur le pli ; 3°) la symétrie orthogonale en 4eme. Une symétrie géométrique est un cas particulier de symétrie. Le concept d&#039;automorphisme permet de préciser cette définition.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="porque-nuestro-idioma-español-es-importante.html" class="be-post-title">
+				 <h6>porque nuestro idioma español es importante </h6>
+                </a>
+                <a href="porque-nuestro-idioma-español-es-importante.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=porque%20nuestro%20idioma%20espa%C3%B1ol%20es%20importante&amp;w=50&amp;h=50&amp;c=7" alt="porque nuestro idioma español es importante">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-organizar-la-despensa-de-la-cocina.html" class="be-post-title">
+				 <h6>como organizar la despensa de la cocina </h6>
+                </a>
+                <a href="como-organizar-la-despensa-de-la-cocina.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20organizar%20la%20despensa%20de%20la%20cocina&amp;w=50&amp;h=50&amp;c=7" alt="como organizar la despensa de la cocina">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-estrofa-dentro-de-un-poema.html" class="be-post-title">
+				 <h6>que es una estrofa dentro de un poema </h6>
+                </a>
+                <a href="que-es-una-estrofa-dentro-de-un-poema.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20estrofa%20dentro%20de%20un%20poema&amp;w=50&amp;h=50&amp;c=7" alt="que es una estrofa dentro de un poema">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-dispositivos-medicos-requieren-registro-sanitario.html" class="be-post-title">
+				 <h6>que dispositivos medicos requieren registro sanitario </h6>
+                </a>
+                <a href="que-dispositivos-medicos-requieren-registro-sanitario.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20dispositivos%20medicos%20requieren%20registro%20sanitario&amp;w=50&amp;h=50&amp;c=7" alt="que dispositivos medicos requieren registro sanitario">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-caldear-en-mexico.html" class="be-post-title">
+				 <h6>que es caldear en mexico </h6>
+                </a>
+                <a href="que-es-caldear-en-mexico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20caldear%20en%20mexico&amp;w=50&amp;h=50&amp;c=7" alt="que es caldear en mexico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-qmemulatorservice.html" class="be-post-title">
+				 <h6>que es qmemulatorservice </h6>
+                </a>
+                <a href="que-es-qmemulatorservice.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20qmemulatorservice&amp;w=50&amp;h=50&amp;c=7" alt="que es qmemulatorservice">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-megadiverso-wikipedia.html" class="be-post-title">
+				 <h6>que es megadiverso wikipedia </h6>
+                </a>
+                <a href="que-es-megadiverso-wikipedia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20megadiverso%20wikipedia&amp;w=50&amp;h=50&amp;c=7" alt="que es megadiverso wikipedia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-favoritismo-segun-autores.html" class="be-post-title">
+				 <h6>que es el favoritismo segun autores </h6>
+                </a>
+                <a href="que-es-el-favoritismo-segun-autores.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20favoritismo%20segun%20autores&amp;w=50&amp;h=50&amp;c=7" alt="que es el favoritismo segun autores">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-fmm-méxico.html" class="be-post-title">
+				 <h6>que es la fmm méxico </h6>
+                </a>
+                <a href="que-es-la-fmm-méxico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20fmm%20m%C3%A9xico&amp;w=50&amp;h=50&amp;c=7" alt="que es la fmm méxico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="uji-hipotesis-adalah-pdf.html" class="be-post-title">
+				 <h6>uji hipotesis adalah pdf </h6>
+                </a>
+                <a href="uji-hipotesis-adalah-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=uji%20hipotesis%20adalah%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="uji hipotesis adalah pdf">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

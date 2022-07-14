@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Prosedur Pengujian Hipotesis Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Prosedur Pengujian Hipotesis Adalah",
+  "datePublished": "2022-07-03T10:05:38Z",
+  "image": "https://tse1.mm.bing.net/th?q=prosedur%20pengujian%20hipotesis%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=prosedur%20pengujian%20hipotesis%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=prosedur%20pengujian%20hipotesis%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=prosedur%20pengujian%20hipotesis%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Prosedur Pengujian Hipotesis Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Prosedur Pengujian Hipotesis Adalah</h2>
+    <p><strong>Prosedur Pengujian Hipotesis Adalah</strong>. Dengan melakukan pengujian statistik terhadap hipotesis kita dapat memutuskan apakah hipotesis dapat diterima (data tidak memberikan bukti untuk menolak hipotesis) atau ditolak (data memberikan bukti untuk menolak hipotesis). Artikel ini berfungsi sebagai tutorial.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=prosedur%20pengujian%20hipotesis%20adalah" alt="PPT PENGUJIAN HIPOTESIS SAMPEL BESAR PowerPoint Presentation, free" />
+        <br>
+        <figcaption>PPT PENGUJIAN HIPOTESIS SAMPEL BESAR PowerPoint Presentation, free from www.slideserve.com</figcaption>
+    </figure>
+        <p>
+        Sampel besar ( n &gt; 30 ) konsep dasar prosedur pengujian hipotesisnya adalah sebagai berikut. Setiap uji jelas berbeda ya, apalagi dalam statistik, kalau ditanya perbedaany apa jelas dari rumus matematis berbeda,yg dicari juga berbeda satu f hitung yang satu t hitung, yg terpenting adalah dalam menentukan stattistik uji disesuaiakn dengan rumusan hipotesisnya, hipotesisnya bgimana, komparatif, korelasioanal, kausalitas atau lainnya, krna kesemua itu. Semuanya akan kita bahas di artikel ini.
+    </p>
+    <h3>PPT PENGUJIAN HIPOTESIS SAMPEL BESAR PowerPoint Presentation, free</h3>
+    <p>Dengan melakukan pengujian statistik terhadap hipotesis kita dapat memutuskan apakah hipotesis dapat diterima (data tidak memberikan bukti untuk menolak hipotesis) atau ditolak (data memberikan bukti untuk menolak hipotesis). Prosedur pengujian hipotesis 1) h1 menyatakan bahwa harga parameter lebih besar dari pada harga yang di hipotesiskan. Dalam menguji suatu hipotesis statistik setidaknya dibutuhkan lima langkah, yaitu sebagai berikut: Pengujian hipotesis statistik adalah prosedur yang memungkinkan keputusan dapat dibuat, yaitu keputusan untuk menolak atau atau tidak menolak hipotesis yang sedang dipersoalkan.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT PENGUJIAN HIPOTESIS SAMPEL BESAR PowerPoint Presentation, free" data-src="https://i2.wp.com/image2.slideserve.com/3672050/outline-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pengujian hipotesis adalah suatu prosedur yang akam menghasilkan suatu keputusan, yaitu keputusan menerima atau menolak hipotesis itu. Ukuran statistik &gt; nilai tertentu h 0: Interval kepercayaan adalah estimasi interval untuk parameter populasi, yaitu estimasi titik plus dan minus nilai kritis dikali kesalahan standar sampel. Uji normalitas uji normalitas dilakukan untuk mengetahui kedua kelas berdistribusi normal atau tidak. Hipotesis dibagi menjadi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT PENGUJIAN HIPOTESIS ( STATISTIK) PowerPoint Presentation, free" data-src="https://i2.wp.com/image3.slideserve.com/5603487/prosedur-dalam-uji-hipotesis-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Identifikasi skala pengukuran variabel 2. Tentukan jenis uji hipotesis 3. Teknik analisis data yang dilakukan adalah : Pengujian hipotesis adalah suatu prosedur yang akam menghasilkan suatu keputusan, yaitu keputusan menerima atau menolak hipotesis itu. Dengan melakukan pengujian statistik terhadap hipotesis kita dapat memutuskan apakah hipotesis dapat diterima (data tidak memberikan bukti untuk menolak hipotesis) atau ditolak (data memberikan bukti untuk.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pengujian hipotesis" data-src="https://i2.wp.com/image.slidesharecdn.com/pengujianhipotesis-151117194443-lva1-app6892/95/pengujian-hipotesis-7-638.jpg?cb=1447789541" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Harus diuji harus kuantitatif pengujian hipotesis suatu prosedur yang akan menghasilkan suatu keputusan menolak keputusan menerima 3 Dua variabel saja yang kita gunakan sebagai contoh. Pengujian hipotesis tahap kedua (pengujian model mediasi) prosedur pengujian isr sebagai variabel pemediasi hubungan antara gcg dan faktor financial dengan profitabilitas adalah sebagai berikut: 2) h1 menyatakan bahwa harga parameter lebih kecil dari pada harga.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT PENGUJIAN HIPOTESIS PowerPoint Presentation, free download ID" data-src="https://i2.wp.com/image1.slideserve.com/3346472/pengujian-statistik-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Μ&gt; μ 0 hipotesis alternatifnya bertanda &gt; “lebih dari” tidak dibagi 2 uji hipotesisnya disebut uji hipotesis satu sisi (one tailed test) sisi kanan ex standard berat minuman “x” adalah 250 ml, perusahaan Analisis terhadap data penelitian dilakukan dengan tujuan untuk menguji kebenaran hipotesis yang diajukan dalam penelitian. Hipotesis nol (h 0) hipotesis yang diartikan sebagai tidak adanya perbedaan antara.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PENGUJIAN HIPOTESIS tugas" data-src="https://i2.wp.com/hamka301.files.wordpress.com/2017/04/c.png?w=613" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: hamka301.wordpress.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Variabelnya adalah perilaku agresif dan tingkat kepadatan penduduk. #1 memilih bentuk alternatif hipotesis. Uji normalitas uji normalitas dilakukan untuk mengetahui kedua kelas berdistribusi normal atau tidak. Μ= μ 0 h 1: Hipotesis adalah suatu pernyataan/asumsi/anggapan yang bisa benar atau salah mengenai nilai suatu parameter populasi yang dimaksudkan untuk pengujian lebih lanjut dan berguna untuk pengambilan keputusan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="[006] Seri Statistik Uji Hipotesis Mean Tunggal dengan Sampel Besar" data-src="https://i2.wp.com/1.bp.blogspot.com/-3xGj_XuzRM8/XZT9wbPIQdI/AAAAAAAABEo/4WS5IjfcI24G7aEtdGKzA-qNW4wYPlG3QCLcBGAsYHQ/s1600/uji%2Bmean%2Btunggal%2Bsampel%2Bbesar%2Bz%2B001.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: hiv-treatmentt.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dua variabel saja yang kita gunakan sebagai contoh. Ukuran statistik &gt; nilai tertentu h 0: Uji hipotesis adalah sebuah proses untuk melakukan evaluasi kekuatan bukti dari sampel, dan memberikan dasar untuk membuat keputusan terkait dengan populasinya. Identifikasi skala pengukuran variabel 2. Prosedur atau langkah untuk melakukan uji hipotesis melibatkan pemahaman tentang significance level, statistik uji, aturan keputusan, dan critical value.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT PENGUJIAN HIPOTESIS SAMPEL BESAR PowerPoint Presentation, free" data-src="https://i2.wp.com/image2.slideserve.com/3672050/slide8-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hipotesis yang akan diuji diberi symbol ho (hipotesis nol) dan langsung disertai ha (hipotesis alternatif). Dengan melakukan pengujian statistik terhadap hipotesis kita dapat memutuskan apakah hipotesis dapat diterima (data tidak memberikan bukti untuk menolak hipotesis) atau ditolak (data memberikan bukti untuk menolak hipotesis). Psl 108 statistik dasar even semester 2022 rang human denanto statistiua pasar 202107510035 pengujian hipotesis pengujian hipotesis.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Dan Jawaban Uji Hipotesis Dunia Sosial" data-src="https://i2.wp.com/image.slidesharecdn.com/pengujianhipotesis-150224172837-conversion-gate01/95/pengujian-hipotesis-makalah-pengantar-statistika-44-638.jpg?cb=1424799161" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.duniasosial.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ukuran statistik &gt; nilai tertentu h 0: Ingat, yang diuji dalam hipotesis adalah parameter, maka notasi yang digunakan dalam hipotesis statistika adalah parameter (untuk nilai tengah), (untuk simpangan baku), dan p. Dengan melakukan pengujian statistik terhadap hipotesis kita dapat memutuskan apakah hipotesis dapat diterima (data tidak memberikan bukti untuk menolak hipotesis) atau ditolak (data memberikan bukti untuk menolak hipotesis). Dugaan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pengujian Hipotesis. Hipotesis pada dasarnya merupakan suatu… by" data-src="https://i2.wp.com/miro.medium.com/max/1104/1*Xg472n86Ph6T6zxF5c2i5Q.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: medium.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tentukan kriteria pengujian hitung nilai uji statistik kesimpulan prosedur pengujian hipotesis : Μ&gt; μ 0 hipotesis alternatifnya bertanda &gt; “lebih dari” tidak dibagi 2 uji hipotesisnya disebut uji hipotesis satu sisi (one tailed test) sisi kanan ex standard berat minuman “x” adalah 250 ml, perusahaan Prosedur atau langkah untuk melakukan uji hipotesis melibatkan pemahaman tentang significance level, statistik uji, aturan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT PENGUJIAN HIPOTESIS ( STATISTIK) PowerPoint Presentation, free" data-src="https://i2.wp.com/image3.slideserve.com/5603487/hipotesis-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Variabelnya adalah perilaku agresif dan tingkat kepadatan penduduk. Tentukan kriteria pengujian hitung nilai uji statistik kesimpulan prosedur pengujian hipotesis : Dalam pengujian hipotesis, keputusan yang di buat mengandung ketidakpastian, artinya keputusan bias benar atau salah, sehingga menimbulkan risiko. Ingat, yang diuji dalam hipotesis adalah parameter, maka notasi yang digunakan dalam hipotesis statistika adalah parameter (untuk nilai tengah), (untuk simpangan baku),.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-cuidar-el-ecosistema-terrestre-y-acuatico.html" class="be-post-title">
+				 <h6>como cuidar el ecosistema terrestre y acuatico </h6>
+                </a>
+                <a href="como-cuidar-el-ecosistema-terrestre-y-acuatico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20cuidar%20el%20ecosistema%20terrestre%20y%20acuatico&amp;w=50&amp;h=50&amp;c=7" alt="como cuidar el ecosistema terrestre y acuatico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-un-jabalí-en-el-sueño.html" class="be-post-title">
+				 <h6>que significa un jabalí en el sueño </h6>
+                </a>
+                <a href="que-significa-un-jabalí-en-el-sueño.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20un%20jabal%C3%AD%20en%20el%20sue%C3%B1o&amp;w=50&amp;h=50&amp;c=7" alt="que significa un jabalí en el sueño">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="owulacja-ból-brzucha.html" class="be-post-title">
+				 <h6>owulacja ból brzucha </h6>
+                </a>
+                <a href="owulacja-ból-brzucha.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=owulacja%20b%C3%B3l%20brzucha&amp;w=50&amp;h=50&amp;c=7" alt="owulacja ból brzucha">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-purpose.html" class="be-post-title">
+				 <h6>wat is een purpose </h6>
+                </a>
+                <a href="wat-is-een-purpose.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20purpose&amp;w=50&amp;h=50&amp;c=7" alt="wat is een purpose">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="owulacja-czy-boli-brzuch.html" class="be-post-title">
+				 <h6>owulacja czy boli brzuch </h6>
+                </a>
+                <a href="owulacja-czy-boli-brzuch.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=owulacja%20czy%20boli%20brzuch&amp;w=50&amp;h=50&amp;c=7" alt="owulacja czy boli brzuch">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="difference-between-ess-and-eis.html" class="be-post-title">
+				 <h6>difference between ess and eis </h6>
+                </a>
+                <a href="difference-between-ess-and-eis.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=difference%20between%20ess%20and%20eis&amp;w=50&amp;h=50&amp;c=7" alt="difference between ess and eis">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-modifiable-risk-factor-for-osteoporosis.html" class="be-post-title">
+				 <h6>what is a modifiable risk factor for osteoporosis </h6>
+                </a>
+                <a href="what-is-a-modifiable-risk-factor-for-osteoporosis.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20modifiable%20risk%20factor%20for%20osteoporosis&amp;w=50&amp;h=50&amp;c=7" alt="what is a modifiable risk factor for osteoporosis">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-proloog.html" class="be-post-title">
+				 <h6>wat is proloog </h6>
+                </a>
+                <a href="wat-is-proloog.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20proloog&amp;w=50&amp;h=50&amp;c=7" alt="wat is proloog">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-milestones-completed-en-ingles.html" class="be-post-title">
+				 <h6>que significa milestones completed en ingles </h6>
+                </a>
+                <a href="que-significa-milestones-completed-en-ingles.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20milestones%20completed%20en%20ingles&amp;w=50&amp;h=50&amp;c=7" alt="que significa milestones completed en ingles">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-nespresso-ristretto.html" class="be-post-title">
+				 <h6>what is nespresso ristretto </h6>
+                </a>
+                <a href="what-is-nespresso-ristretto.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20nespresso%20ristretto&amp;w=50&amp;h=50&amp;c=7" alt="what is nespresso ristretto">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

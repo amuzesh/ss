@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Q Es Un Fondo Cocina at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Q Es Un Fondo Cocina",
+  "datePublished": "2022-04-03T14:55:47Z",
+  "image": "https://tse1.mm.bing.net/th?q=q%20es%20un%20fondo%20cocina",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=q%20es%20un%20fondo%20cocina&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=q%20es%20un%20fondo%20cocina" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=q%20es%20un%20fondo%20cocina" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Q Es Un Fondo Cocina at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Q Es Un Fondo Cocina</h2>
+    <p><strong>Q Es Un Fondo Cocina</strong>. Por eso los moluscos necesitan un calor más prolongado a 80ºc, para. Pachi larrosa sábado, 3 julio 2021, 00:00.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=q%20es%20un%20fondo%20cocina" alt="Cocinas y Recetas Fondo o caldo, básico en la cocina" />
+        <br>
+        <figcaption>Cocinas y Recetas Fondo o caldo, básico en la cocina from entrecocinasyrecetas.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Los fondos son los líquidos que se obtienen cociendo en abundante agua a fuego muy lento y durante un tiempo prolongado carnes, pescados y hortalizas, habitualmente con el. Es importante conocer los diferentes fondos, su elaboración y sus aplicaciones para poder elaborar platos correctamente, ya que. Distinguir los diferentes fondos y sus ingredientes.
+    </p>
+    <h3>Cocinas y Recetas Fondo o caldo, básico en la cocina</h3>
+    <p>A estos fondos, en la cocina profesional se los conoce con un nombre más distinguido: Si agregas más carne de carnero o cordero, lo. Los fondos se preparan mediante la cocción lenta de huesos, restos de carne, espinas de pescado, verduras aromáticas y sazonamiento. Seguramente en alguna receta o algún otro lado has leído, o bien has escuchado en algún lado la palabra fondo como platillo y te has dado cuenta que tiene relación con el caldo, pero tenemos que decirte que estas son dos muy diferentes.la realidad de los fondos es que son un caldos básicos que tienen múltiples aplicaciones en la cocina.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Con María en su cocina FONDOS BÁSICOS Fondo oscuro (Fond brun" data-src="https://i2.wp.com/3.bp.blogspot.com/-GZHiAJPUR9c/Ur8fiR5ibhI/AAAAAAAAAug/lKc2iCQzM_A/s1600/Fondos+b%25C3%25A1sicos+-+fondo+oscuro+-+fond+brun+-+Conmariaensucocina00007.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: conmariaensucocina.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Un caldo o fondo es, en gastronomía, el agua en. En la preparación suele emplearse huesos (o espinas en el caso de que se trate de pescados) que se someten a una cocción lenta, generalmente aromatizada con verduras, especias y hierbas aromáticas.existen diversos tipos de fondos en función del proceso. Si es a base de ternera o pollo tiene un.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Las bases de la gran cocina" data-src="https://i2.wp.com/static.elcomercio.es/noticias/201603/03/media/fondo-cocina2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.elcomercio.es</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Utilizan generalmente huesos de las articulaciones e incluso algunas piezas. Elaborar correctamente fondos (fondo claro, oscuro y fumet). De esta forma, consigues un plato con un sabor más intenso y delicioso. Los fondos de cocina pueden obtenerse a través de la disolución de un cubito de caldo de pollo o verduras en agua. El colágeno del calamar y del pulpo.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Fondo, fumet y caldo todo lo que has de saber Gastronosfera" data-src="https://i2.wp.com/www.gastronosfera.com/sites/default/files/styles/cabecera_contenido/public/field/image/gastronosfera_caldo_fumet_fondo_8.jpg?itok=bEMh7Gb1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.gastronosfera.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Conocer la correcta utilización de. Conocer los diferentes tipos de fondos utilizados por un cocinero en una cocina profesional. Dentro del mundo de la cocina, en muchas recetas te encontrarás con el término de fondo pero ¿sabes qué significa exactamente? Caldo blanco hecho con gallina y codillo de ternera, para que tenga el máximo sabor.hay una versión más económica que.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Qué son los fondos en cocina? Tipos de fondos. Scoolinary Blog" data-src="https://i0.wp.com/blog.scoolinary.com/wp-content/uploads/2020/12/shutterstock_222498466-1.jpg?w=1000&amp;ssl=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blog.scoolinary.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Los fondos de cocina pueden obtenerse a través de la disolución de un cubito de caldo de pollo o verduras en agua. Los fondos blancos se hacen con huesos y recortes de la carne de ternera, pollo, conejo, cerdo, cordero o carnero. La patata, mejor rallada o cuadraditos para que suelte la fécula y de consistencia al fondo. Un fondo.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Con María en su cocina FONDOS BÁSICOS Fondo oscuro (Fond brun" data-src="https://i2.wp.com/4.bp.blogspot.com/-uPFTJTEYIW0/Ur8fqyfoztI/AAAAAAAAAus/Qz_Qs3q0No0/s1600/Fondos+b%25C3%25A1sicos+-+fondo+oscuro+-+fond+brun+-+Conmariaensucocina00008.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: conmariaensucocina.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">El fondo en la cocina profesional es un caldo básico que se elabora como primer paso de una preparación. Un fondo bien hecho marca la diferencia entre un plato de calidad y otro mediocre e insípido. Tipos de fondos en la cocina: El fondo, en sí, es un concentrado que se realiza con verduras y carnes (rojas o blancas), pescados.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Fondos de cocina, la base de la cocina Menea El Bigote" data-src="https://i2.wp.com/www.meneaelbigote.es/wp-content/uploads/2016/01/fondo-blanco.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.meneaelbigote.es</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Los hay blancos, los caldos cortos de carnes, aves pescados, verduras, hay funets, palabra de origen francés, pero lo habitual para las salsas es utilizar calados buenos ligados con un roux hecho al momento. Es importante conocer los diferentes fondos, su elaboración y sus aplicaciones para poder elaborar platos correctamente, ya que. Además, se le agrega jamón, apio, verduras de.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Caldo Casero. Fondo oscuro. Tutorial. La Cocina de Frabisa La Cocina" data-src="https://i2.wp.com/lacocinadefrabisa.lavozdegalicia.es/wp-content/uploads/2016/01/caldo-frabisa.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lacocinadefrabisa.lavozdegalicia.es</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En pescados de aguas cálidas se funde a 25 ºc y en pescados de aguas frías alrededor de los 10 ºc. Los fondos de cocina son aquellas preparaciones líquidas o sólidas, elaboradas por los cocineros, generalmente con antelación, y con aplicaciones muy variadas, como aderezar, mojar, ligar, rellenar y homogeneizar platos muy diferentes. Características y usos principales fondos básicos de.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cocinas y Recetas Fondo o caldo, básico en la cocina" data-src="https://i2.wp.com/4.bp.blogspot.com/-sBX9KOGiLhU/URFpWCaYrfI/AAAAAAAAA6A/i6qJD2tTc1w/s1600/fondo.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: entrecocinasyrecetas.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tras largas cocciones en que se va reduciendo la carne hasta conseguir una consistencia semilíquida, gelatinosa y de fuerte sabor. Por definición no debe de tener color, para lo cual debe de cocer muy lentamente y de forma constante. 3 pasos para que el éxito te suceda a ti victor hugo manzanilla (5/5) gratis. La cocina y los alimentos. Caldo.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Fondos básicos de cocina Prepara un caldo perfecto GastroCritic" data-src="https://i2.wp.com/3.bp.blogspot.com/-98GJOpC7fdw/VfajGfv_9XI/AAAAAAAACiQ/NqHmGkfqW5k/s1600/fondo-blanco.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: gastrocriticvalencia.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Un fondo es, básicamente, un caldo que se hace como base para una preparación posterior en la cocina. Los fondos líquidos pueden sustituirse por agua a la que se añaden los mismos fondos liofilizados. A estos fondos, en la cocina profesional se los conoce con un nombre más distinguido: En la preparación suele emplearse huesos (o espinas en el caso.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bocados Caseros CONSOMÉ DE AVE (Fondo blanco de pollo)" data-src="https://i2.wp.com/1.bp.blogspot.com/-bmgPg6IO9Zw/UPGz6_EM0uI/AAAAAAAAOWw/3FOOEoDV6oo/s1600/IMG_039.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.bocadoscaseros.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Los fondos son preparaciones de base que luego se usan para confeccionar salsas. En la preparación suele emplearse huesos (o espinas en el caso de que se trate de pescados) que se someten a una cocción lenta, generalmente aromatizada con verduras, especias y hierbas aromáticas.existen diversos tipos de fondos en función del proceso. Elaborar correctamente fondos (fondo claro, oscuro y.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-betekent-flauwvallen-in-je-droom.html" class="be-post-title">
+				 <h6>wat betekent flauwvallen in je droom </h6>
+                </a>
+                <a href="wat-betekent-flauwvallen-in-je-droom.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20betekent%20flauwvallen%20in%20je%20droom&amp;w=50&amp;h=50&amp;c=7" alt="wat betekent flauwvallen in je droom">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-fire-sprinkler-riser.html" class="be-post-title">
+				 <h6>what is a fire sprinkler riser </h6>
+                </a>
+                <a href="what-is-a-fire-sprinkler-riser.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20fire%20sprinkler%20riser&amp;w=50&amp;h=50&amp;c=7" alt="what is a fire sprinkler riser">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="как-делают-шампанское.html" class="be-post-title">
+				 <h6>как делают шампанское </h6>
+                </a>
+                <a href="как-делают-шампанское.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=%D0%BA%D0%B0%D0%BA%20%D0%B4%D0%B5%D0%BB%D0%B0%D1%8E%D1%82%20%D1%88%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B5&amp;w=50&amp;h=50&amp;c=7" alt="как делают шампанское">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-ciclo-en-el-gym.html" class="be-post-title">
+				 <h6>que es ciclo en el gym </h6>
+                </a>
+                <a href="que-es-ciclo-en-el-gym.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20ciclo%20en%20el%20gym&amp;w=50&amp;h=50&amp;c=7" alt="que es ciclo en el gym">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="hoe-zeg-je-in-het-engels-mooi.html" class="be-post-title">
+				 <h6>hoe zeg je in het engels mooi </h6>
+                </a>
+                <a href="hoe-zeg-je-in-het-engels-mooi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=hoe%20zeg%20je%20in%20het%20engels%20mooi&amp;w=50&amp;h=50&amp;c=7" alt="hoe zeg je in het engels mooi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-grupo-de-ayuda-mutua.html" class="be-post-title">
+				 <h6>que es un grupo de ayuda mutua </h6>
+                </a>
+                <a href="que-es-un-grupo-de-ayuda-mutua.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20grupo%20de%20ayuda%20mutua&amp;w=50&amp;h=50&amp;c=7" alt="que es un grupo de ayuda mutua">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="police-ombudsman-sa-contact.html" class="be-post-title">
+				 <h6>police ombudsman sa contact </h6>
+                </a>
+                <a href="police-ombudsman-sa-contact.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=police%20ombudsman%20sa%20contact&amp;w=50&amp;h=50&amp;c=7" alt="police ombudsman sa contact">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-it-and-itis-in-tcs.html" class="be-post-title">
+				 <h6>what is it and itis in tcs </h6>
+                </a>
+                <a href="what-is-it-and-itis-in-tcs.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20it%20and%20itis%20in%20tcs&amp;w=50&amp;h=50&amp;c=7" alt="what is it and itis in tcs">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-code-for-stair-riser-height.html" class="be-post-title">
+				 <h6>what is code for stair riser height </h6>
+                </a>
+                <a href="what-is-code-for-stair-riser-height.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20code%20for%20stair%20riser%20height&amp;w=50&amp;h=50&amp;c=7" alt="what is code for stair riser height">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-silencio-administrativo.html" class="be-post-title">
+				 <h6>que es el silencio administrativo </h6>
+                </a>
+                <a href="que-es-el-silencio-administrativo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20silencio%20administrativo&amp;w=50&amp;h=50&amp;c=7" alt="que es el silencio administrativo">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

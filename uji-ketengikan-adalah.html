@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Ketengikan Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Ketengikan Adalah",
+  "datePublished": "2022-05-31T08:59:34Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20ketengikan%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20ketengikan%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20ketengikan%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20ketengikan%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Ketengikan Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Ketengikan Adalah</h2>
+    <p><strong>Uji Ketengikan Adalah</strong>. Oleh sebab itu, pada uji ini banyak sifat yang sensorik yang dinilai dan dianalisis secara keseluruhan. Yaitu suatu pengujian khasiat obat baru pada manusia, dimana sebelumnya diawali oleh pengujian pada binatang atau pra klinik.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20ketengikan%20adalah" alt="Garam Yang Mengalami Hidrolisis Dan Sesuai Dengan Uji Lakmusnya Adalah" />
+        <br>
+        <figcaption>Garam Yang Mengalami Hidrolisis Dan Sesuai Dengan Uji Lakmusnya Adalah from www.jawabanku.id</figcaption>
+    </figure>
+        <p>
+        Pelaksanaan pekerjaan struktur selalu akan dimulai dengan investigasi tanah. Banyaknya uji statistik membuat kita sulit untuk mengingat uji statistik mana yang paling tepat untuk digunakan. Eki) 0812 9595 7914 (mr.
+    </p>
+    <h3>Garam Yang Mengalami Hidrolisis Dan Sesuai Dengan Uji Lakmusnya Adalah</h3>
+    <p>Khususnya kendaraan yang membawa penumpang umum dan barang. Uji kekerasan adalah pengujian yang paling efektif untuk menguji kekerasan dari suatu material, karena dengan pengujian ini, kita dapat dengan mudah mengetahui gambaaran sifat mekanis suatu material. Eki) 0812 9595 7914 (mr. Dengan adanya air, lemak dapat terhidrolisis menjadi gliserol dan asam lemak.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Makanan (Amilum, Glukosa, Protein, dan Lemak) idschool" data-src="https://i2.wp.com/idschool.net/wp-content/uploads/2018/03/Tabel-hasil-pengamatan-uji-zat-makanan-660x209.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: idschool.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Maksud dan tujuan dari penulisan ini adalah sekedar memberikan pencerahan, pengetahuan dan pengertian bagi kita semua agar mahfum, betapa sulit, mahal dan lama waktu yang mereka butuhkan dalam meluncurkan sebuah obat untuk. Khususnya kendaraan yang membawa penumpang umum dan barang. Bilangan peroksida adalah indeks jumlah lemak atau minyak yang telah mengalami oksidasi angka peroksida sangat penting untuk identifikasi tingkat oksidasi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Garam Yang Mengalami Hidrolisis Dan Sesuai Dengan Uji Lakmusnya Adalah" data-src="https://i2.wp.com/id-static.z-dn.net/files/d53/9a459de7acc61359e370d09c8cb4ee6c.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.jawabanku.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji kualitatif lipid lainnya adalah uji ketengikan. Dalam percakapan umum, peroksida adalah larutan berair dari hidrogen peroksida (hooh or h2o2), senyawa yang dijual sebagai disinfektan atau pemutih ringan. Besar denda maksimal pelanggar uji emisi adalah rp250.000 untuk sepeda motor dan maksimal rp500.000 untuk kendaraan roda empat. Uji ketengikan peroksida digunakan sebagai zat pengelantang atau bleaching agent pada industri pulp, kertas,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="tabel uji validitas" data-src="https://i2.wp.com/imgv2-1-f.scribdassets.com/img/document/240539477/original/4c77c62a8b/1584056863?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji kekerasan adalah pengujian yang paling efektif untuk menguji kekerasan dari suatu material, karena dengan pengujian ini, kita dapat dengan mudah mengetahui gambaaran sifat mekanis suatu material. Banyaknya uji statistik membuat kita sulit untuk mengingat uji statistik mana yang paling tepat untuk digunakan. Ini biasanya dikenakan pada mobil yang memiliki plat kuning. Inda setyawati, s.tp m.si asisten : Dalam percakapan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT UJI HIPOTESIS PowerPoint Presentation, free download ID5432886" data-src="https://i2.wp.com/image3.slideserve.com/5432886/uji-perbandingan-statistik-parametrik-non-parametrik-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Zwickroell group adalah pemasok terkemuka global untuk mesin pengujian material statis yang dirancang khusus untuk uji tarik, kompresi, lentur, geser, dan torsi. Floroglusinol ini berfungsi sebagai penampak bercak. Bilangan peroksida adalah indeks jumlah lemak atau minyak yang telah mengalami oksidasi angka peroksida sangat penting untuk identifikasi tingkat oksidasi minyak. Kir adalah rangkaian kegiatan pengujian kendaraan bermotor sebagai tanda bahwa kendaraan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bahan Makanan Yang Mengandung Karbohidrat Dan Protein Secara Berurutan" data-src="https://i2.wp.com/2.bp.blogspot.com/-uWuv9eCESgs/XFRXlsJc_yI/AAAAAAAAjvg/n_NWVXYCPTICQBmFy-b5VlHphJFf64dwQCLcBGAs/w1200-h630-p-k-no-nu/makanan.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: cara-diet-cepat-2020.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sifat ketangguhan adalah kemampuan suatu logam untuk menahan beban kejut. Uji ketengikan uji kualitatif lipid lainnya adalah uji ketengikan. Selanjutnya, sebuah kertas saring dicelupkan ke larutan floroglusinol. Pelaksanaan pekerjaan struktur selalu akan dimulai dengan investigasi tanah. Dalam uji ini, diidentifikasi lipid mana yang sudah tengik dengan yang belum tengik yang disebabkan oleh oksidasi lipid.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tutorial Uji Validitas dan reliabilitas dengan SPSS Lengkap dan Tuntas" data-src="https://i2.wp.com/ometlit.com/wp-content/uploads/2020/07/Uji_Validitas_5_ometlit-768x485.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ometlit.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ketengikan pada minyak kelapa dapat diatasi dengan usaha menambahkan bahan yang mengandung antioksidan. Bila proses ini terjadi pada makanan, bau dan rasa yang tidak diinginkan dapat terjadi. Dalam uji ini, di identifikasi lipid mana yang sudah tengik dengan yang belum tengik yang disebabkan oleh oksidasi lipid. Dalam percakapan umum, peroksida adalah larutan berair dari hidrogen peroksida (hooh or h2o2), senyawa.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tutorial Cara Uji T Paired dengan SPSS Uji Statistik" data-src="https://i2.wp.com/www.statistikian.com/wp-content/uploads/blogger/-dadDeTNZJuA/UHfzUimupqI/AAAAAAAAAtY/sPdK0oY-S5k/s1600/ww10.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.statistikian.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji berkala sudah jelas diatur dalam uu no.22 tahun 1009 mengenai lintas dan angkutan jalan. Minyak yang akan diuji dicampurkan dengan hcl. Untuk menguji ketengikan suatu sampel minyak / lemak. Khususnya kendaraan yang membawa penumpang umum dan barang. Besar denda maksimal pelanggar uji emisi adalah rp250.000 untuk sepeda motor dan maksimal rp500.000 untuk kendaraan roda empat.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="kesimpulan hasil percobaan uji makanan di atas adalah.... Brainly.co.id" data-src="https://i2.wp.com/id-static.z-dn.net/files/d50/da753879c892006498514051bfeefc71.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ketangguhan suatu logam merupakan gabungan antara kekuatan dan keuletan logam tersebut. 021 8690 6777 021 8690 6770; Erlenmayer 100 ml diisi dengan 5 ml bahan percobaan. Oleh sebab itu, pada uji ini banyak sifat yang sensorik yang dinilai dan dianalisis secara keseluruhan. Dalam uji ini, diidentifikasi lipid mana yang sudah tengik dengan yang belum tengik yang disebabkan oleh oksidasi lipid.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="UJI KETENGIKAN Uji kualitatif lipid lainnya adalah uji ketengikan Dalam" data-src="https://i2.wp.com/www.coursehero.com/doc-asset/bg/160ac3b928619dca7c2feea44fe98744b523b051/splits/v9/split-11-page-20-html-bg-unsplit.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.coursehero.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Abstrak uji hidrolisis pati dengan asam adalah uji kimia untuk mengetahui kandungan karbohidrat terhadap beberapa reaksi tertutup. I2 + 2na2s2o3 2nai + na2s406. Besar denda maksimal pelanggar uji emisi adalah rp250.000 untuk sepeda motor dan maksimal rp500.000 untuk kendaraan roda empat. Uji akrolein adalah untuk menentukan adanya gliserol. Minyak yang akan diuji dicampurkan dengan hcl.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="SUMMARY STATISTIK Uji Chi Square" data-src="https://i2.wp.com/1.bp.blogspot.com/-XrFPSPFcCu8/Xer7LKSu31I/AAAAAAAAQIk/bkgb2-7OhHYRkA9bkCU_AflGpGrl1DmVwCLcBGAsYHQ/s1600/29.PNG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: billyonlinetext.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dalam percakapan umum, peroksida adalah larutan berair dari hidrogen peroksida (hooh or h2o2), senyawa yang dijual sebagai disinfektan atau pemutih ringan. Yaitu suatu pengujian khasiat obat baru pada manusia, dimana sebelumnya diawali oleh pengujian pada binatang atau pra klinik. Uji berkala sudah jelas diatur dalam uu no.22 tahun 1009 mengenai lintas dan angkutan jalan. Dalam uji ini, diidentifikasi lipid mana.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="arap-ne-demek.html" class="be-post-title">
+				 <h6>arap ne demek </h6>
+                </a>
+                <a href="arap-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=arap%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="arap ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-risk-matrix.html" class="be-post-title">
+				 <h6>what is a risk matrix </h6>
+                </a>
+                <a href="what-is-a-risk-matrix.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20risk%20matrix&amp;w=50&amp;h=50&amp;c=7" alt="what is a risk matrix">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-efecto-invernadero-causas-consecuencias-y-soluciones.html" class="be-post-title">
+				 <h6>que es el efecto invernadero causas consecuencias y soluciones </h6>
+                </a>
+                <a href="que-es-el-efecto-invernadero-causas-consecuencias-y-soluciones.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20efecto%20invernadero%20causas%20consecuencias%20y%20soluciones&amp;w=50&amp;h=50&amp;c=7" alt="que es el efecto invernadero causas consecuencias y soluciones">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="dorpe-in-suid-afrika.html" class="be-post-title">
+				 <h6>dorpe in suid afrika </h6>
+                </a>
+                <a href="dorpe-in-suid-afrika.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=dorpe%20in%20suid%20afrika&amp;w=50&amp;h=50&amp;c=7" alt="dorpe in suid afrika">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-ghetto-en-republica-dominicana.html" class="be-post-title">
+				 <h6>que es el ghetto en republica dominicana </h6>
+                </a>
+                <a href="que-es-el-ghetto-en-republica-dominicana.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20ghetto%20en%20republica%20dominicana&amp;w=50&amp;h=50&amp;c=7" alt="que es el ghetto en republica dominicana">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-una-estrofa-en-un-poema.html" class="be-post-title">
+				 <h6>que significa una estrofa en un poema </h6>
+                </a>
+                <a href="que-significa-una-estrofa-en-un-poema.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20una%20estrofa%20en%20un%20poema&amp;w=50&amp;h=50&amp;c=7" alt="que significa una estrofa en un poema">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-gerundio-ejemplos.html" class="be-post-title">
+				 <h6>que es gerundio ejemplos </h6>
+                </a>
+                <a href="que-es-gerundio-ejemplos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20gerundio%20ejemplos&amp;w=50&amp;h=50&amp;c=7" alt="que es gerundio ejemplos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="eos-declined-in-latin.html" class="be-post-title">
+				 <h6>eos declined in latin </h6>
+                </a>
+                <a href="eos-declined-in-latin.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=eos%20declined%20in%20latin&amp;w=50&amp;h=50&amp;c=7" alt="eos declined in latin">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cómo-se-dice-escuchando-musica-en-ingles.html" class="be-post-title">
+				 <h6>cómo se dice escuchando musica en ingles </h6>
+                </a>
+                <a href="cómo-se-dice-escuchando-musica-en-ingles.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=c%C3%B3mo%20se%20dice%20escuchando%20musica%20en%20ingles&amp;w=50&amp;h=50&amp;c=7" alt="cómo se dice escuchando musica en ingles">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-crear-una-empresa-en-estados-unidos-desde-colombia.html" class="be-post-title">
+				 <h6>como crear una empresa en estados unidos desde colombia </h6>
+                </a>
+                <a href="como-crear-una-empresa-en-estados-unidos-desde-colombia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20crear%20una%20empresa%20en%20estados%20unidos%20desde%20colombia&amp;w=50&amp;h=50&amp;c=7" alt="como crear una empresa en estados unidos desde colombia">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

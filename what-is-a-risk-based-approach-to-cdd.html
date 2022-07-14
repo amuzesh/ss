@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        What Is A Risk Based Approach To Cdd at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "What Is A Risk Based Approach To Cdd",
+  "datePublished": "2022-05-21T08:15:14Z",
+  "image": "https://tse1.mm.bing.net/th?q=what%20is%20a%20risk%20based%20approach%20to%20cdd",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=what%20is%20a%20risk%20based%20approach%20to%20cdd&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20a%20risk%20based%20approach%20to%20cdd" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20a%20risk%20based%20approach%20to%20cdd" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            What Is A Risk Based Approach To Cdd at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">What Is A Risk Based Approach To Cdd</h2>
+    <p><strong>What Is A Risk Based Approach To Cdd</strong>. A risk based approach is a process that allows you to identify potential high risks of money laundering and terrorist financing and develop strategies to mitigate them. This article elaborates on ‘what is risk based approach?’.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=what%20is%20a%20risk%20based%20approach%20to%20cdd" alt="PPT KYC for Banks &amp; RiskBased Approach PowerPoint Presentation, free" />
+        <br>
+        <figcaption>PPT KYC for Banks &amp; RiskBased Approach PowerPoint Presentation, free from www.slideserve.com</figcaption>
+    </figure>
+        <p>
+        The practice’s risk assessment required under regulation 18 In this regard, the major considerations for banks/ dfis may be: A risk based approach for real estate brokers and land developers august 15th, 2019.
+    </p>
+    <h3>PPT KYC for Banks &amp; RiskBased Approach PowerPoint Presentation, free</h3>
+    <p>.existing obligations, such as your client identification, will be maintained as a minimum baseline requirement. What is a risk based approach in risk assessment? Solutions to help your compliance team efficiently investigate sanctions risks and report potentially suspicious activity. Commensurate to the risks identified for effective mitigation.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk Based Approach Bachir El Nakib July 2009 Mode]" data-src="https://i2.wp.com/image.slidesharecdn.com/riskbasedapproachbachirelnakibjuly2009compatibilitymode-124731263671-phpapp02/95/risk-based-approach-bachir-el-nakib-july-2009-compatibility-mode-10-728.jpg?cb=1247294712" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">What is a risk based approach in risk assessment? Information on how targeted sanctions screening agents, transaction monitoring. The following table provides key areas that should be reviewed and considered : Highlights of this educational webinar include: The risk based approach (rba) is an essential part of the uk’s money laundering regulations and has been embedded in legislation and via.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk Based Approach Bachir El Nakib July 2009 Mode]" data-src="https://i2.wp.com/image.slidesharecdn.com/riskbasedapproachbachirelnakibjuly2009compatibilitymode-124731263671-phpapp02/95/risk-based-approach-bachir-el-nakib-july-2009-compatibility-mode-22-728.jpg?cb=1247294712" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It is designed to help banks and financial institutions prevent financial. Customer due diligence (cdd) refers to the act of collecting identifying information in order to verify a customer’s identity and more accurately assess the level of criminal risk they present. Customer relationships present varying levels of financial crime risks, depending on the presence or absence of numerous factors, including.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT KYC for Banks &amp; RiskBased Approach PowerPoint Presentation, free" data-src="https://i2.wp.com/image1.slideserve.com/2918492/why-is-a-risk-based-approach-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">What is cdd (customer due diligence)? It is designed to help banks and financial institutions prevent financial. The risk based approach to cdd was imposed on organizations by the fourth anti money laundering directive of the eu. ‘this article elaborates on risk based approach in cdd and kyc’. This doesn’t simply mean taking a copy of a passport to prove.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="ICBC AML RiskBased Approach (Jan 2011) by Bachir El Nakib" data-src="https://i2.wp.com/image.slidesharecdn.com/icbcamlriskbasedapproachjan2011-120214161533-phpapp01/95/icbc-aml-riskbased-approach-jan-2011-by-bachir-el-nakib-41-728.jpg?cb=1329236697" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Treatment, and controls that commensurate to the level of risk. It is designed to help banks and financial institutions prevent financial. Cdd checks include analysing the customer lifecycle from onboarding through to recognising key changes over time and undertaking regular. In this regard, the major considerations for banks/ dfis may be: Customers, goods, channels, and jurisdictions.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT KYC for Banks &amp; RiskBased Approach PowerPoint Presentation ID" data-src="https://i2.wp.com/image1.slideserve.com/2918492/how-to-establish-a-risk-based-approach-n.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kyc or customer due diligence (cdd) collates information about your customers to assess the extent of any risk they pose to the firm. This will help us to prepare and form strategies. Discussion on how a consolidated sanctions compliance program can reduce false positive alerts. Cdd is the process used by dnfbps, and other financial firms to collect a series.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk Based Approach Bachir El Nakib July 2009 Mode]" data-src="https://i2.wp.com/image.slidesharecdn.com/riskbasedapproachbachirelnakibjuly2009compatibilitymode-124731263671-phpapp02/95/risk-based-approach-bachir-el-nakib-july-2009-compatibility-mode-52-728.jpg?cb=1247294712" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Solutions to help your compliance team efficiently investigate sanctions risks and report potentially suspicious activity. Each requires regulators to determine. In this regard, the major considerations for banks/ dfis may be: The following table provides key areas that should be reviewed and considered : Cdd checks include analysing the customer lifecycle from onboarding through to recognising key changes over time.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT Agenda for the presentation PowerPoint Presentation ID5761946" data-src="https://i2.wp.com/image3.slideserve.com/5761946/overview-the-principle-of-cdd-and-the-risk-based-approach-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Solutions to help your compliance team efficiently investigate sanctions risks and report potentially suspicious activity. Kyc or customer due diligence (cdd) collates information about your customers to assess the extent of any risk they pose to the firm. A rba to aml/cft means that countries, competent authorities and financial institutions, are expected to identify, assess and understand the ml/tf risks.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT KYC for Banks &amp; RiskBased Approach PowerPoint Presentation, free" data-src="https://i2.wp.com/image1.slideserve.com/2918492/slide7-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">(a) quantification of risk through risk matrix: What is a risk based approach in risk assessment? Cdd checks include analysing the customer lifecycle from onboarding through to recognising key changes over time and undertaking regular. A risk based approach for real estate brokers and land developers august 15th, 2019. Solutions to help your compliance team efficiently investigate sanctions risks and.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="ICBC AML RiskBased Approach (Jan 2011) by Bachir El Nakib" data-src="https://i2.wp.com/image.slidesharecdn.com/icbcamlriskbasedapproachjan2011-120214161533-phpapp01/95/icbc-aml-riskbased-approach-jan-2011-by-bachir-el-nakib-25-728.jpg?cb=1329236697" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A risk based approach is a process that allows you to identify potential high risks of money laundering and terrorist financing and develop strategies to mitigate them. The following table provides key areas that should be reviewed and considered : (a) quantification of risk through risk matrix: Each requires regulators to determine. 🤩 25% off digital certs &amp;.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk Based Approach Bachir El Nakib July 2009 Mode]" data-src="https://i2.wp.com/image.slidesharecdn.com/riskbasedapproachbachirelnakibjuly2009compatibilitymode-124731263671-phpapp02/95/risk-based-approach-bachir-el-nakib-july-2009-compatibility-mode-21-728.jpg?cb=1247294712" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">This will help us to prepare and form strategies. This doesn’t simply mean taking a copy of a passport to prove identity. In january 2000, the financial services authority (fsa) was the first to put forth such a concept in its book titled a new regulator for the new millennium. Since then, the principle was actively promoted by international organizations,.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-son-las-pectinas-pdf.html" class="be-post-title">
+				 <h6>que son las pectinas pdf </h6>
+                </a>
+                <a href="que-son-las-pectinas-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20son%20las%20pectinas%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="que son las pectinas pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-fonavi-en-peru.html" class="be-post-title">
+				 <h6>que es fonavi en peru </h6>
+                </a>
+                <a href="que-es-fonavi-en-peru.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20fonavi%20en%20peru&amp;w=50&amp;h=50&amp;c=7" alt="que es fonavi en peru">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-not-subject-to-eis-contribution.html" class="be-post-title">
+				 <h6>what is not subject to eis contribution </h6>
+                </a>
+                <a href="what-is-not-subject-to-eis-contribution.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20not%20subject%20to%20eis%20contribution&amp;w=50&amp;h=50&amp;c=7" alt="what is not subject to eis contribution">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="czy-palenie-pomaga-w-odchudzaniu.html" class="be-post-title">
+				 <h6>czy palenie pomaga w odchudzaniu </h6>
+                </a>
+                <a href="czy-palenie-pomaga-w-odchudzaniu.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=czy%20palenie%20pomaga%20w%20odchudzaniu&amp;w=50&amp;h=50&amp;c=7" alt="czy palenie pomaga w odchudzaniu">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-relampago.html" class="be-post-title">
+				 <h6>que es un relampago </h6>
+                </a>
+                <a href="que-es-un-relampago.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20relampago&amp;w=50&amp;h=50&amp;c=7" alt="que es un relampago">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-lezingen.html" class="be-post-title">
+				 <h6>wat is een lezingen </h6>
+                </a>
+                <a href="wat-is-een-lezingen.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20lezingen&amp;w=50&amp;h=50&amp;c=7" alt="wat is een lezingen">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="google-onay-kodu-nedir.html" class="be-post-title">
+				 <h6>google onay kodu nedir </h6>
+                </a>
+                <a href="google-onay-kodu-nedir.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=google%20onay%20kodu%20nedir&amp;w=50&amp;h=50&amp;c=7" alt="google onay kodu nedir">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-verso-y-prosa-ejemplos.html" class="be-post-title">
+				 <h6>que es verso y prosa ejemplos </h6>
+                </a>
+                <a href="que-es-verso-y-prosa-ejemplos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20verso%20y%20prosa%20ejemplos&amp;w=50&amp;h=50&amp;c=7" alt="que es verso y prosa ejemplos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="risk-management-in-construction-industry-book.html" class="be-post-title">
+				 <h6>risk management in construction industry book </h6>
+                </a>
+                <a href="risk-management-in-construction-industry-book.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=risk%20management%20in%20construction%20industry%20book&amp;w=50&amp;h=50&amp;c=7" alt="risk management in construction industry book">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-eis-ee-contribution.html" class="be-post-title">
+				 <h6>what is eis ee contribution </h6>
+                </a>
+                <a href="what-is-eis-ee-contribution.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20eis%20ee%20contribution&amp;w=50&amp;h=50&amp;c=7" alt="what is eis ee contribution">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Que Es La Sisa at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Que Es La Sisa",
+  "datePublished": "2022-03-26T23:28:07Z",
+  "image": "https://tse1.mm.bing.net/th?q=que%20es%20la%20sisa",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=que%20es%20la%20sisa&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20es%20la%20sisa" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20es%20la%20sisa" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Que Es La Sisa at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Que Es La Sisa</h2>
+    <p><strong>Que Es La Sisa</strong>. En la misma línea, ¿cómo se mide la sisa de una prenda? Coloca una cinta, cordón, o similar, atada en la línea de la cintura (de esta manera te asegurarás que las medidas verticales las tomas teniendo como referencia exactamente esta línea y evitaras errores).</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=que%20es%20la%20sisa" alt="Sisa y copa de manga en armonía ⋆ MiMcostura" />
+        <br>
+        <figcaption>Sisa y copa de manga en armonía ⋆ MiMcostura from www.mimcostura.com</figcaption>
+    </figure>
+        <p>
+        Durante el antiguo régimen, forma de recaudación indirecta, que con frecuencia se ha confundido con un impuesto indirecto que gravaba los productos de uso común fraccionables, consistente en la reducción de la cantidad de mercancía percibida por el comprador, pagando este el precio completo; Apenas posee «un centenar o dos». Sisa (el dorado, san martín) es una población que está situada en perú.
+    </p>
+    <h3>Sisa y copa de manga en armonía ⋆ MiMcostura</h3>
+    <p>Por ello la forma de la sisa es un óvalo con una pancita en el delantero. Corte en forma curvo elaborado en el cuerpo de una prenda de vestir que corresponde la parte del axila. Somos una compañía aseguradora que brinda tranquilidad y seguridad financiera,. Porque el bienestar de los garcía lo es todo.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dibujo de Sisa Patrones de costura, Libros de costura, Costura" data-src="https://i.pinimg.com/originals/e7/3b/44/e73b448f9d86944921182f5467ba2ad5.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.es</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">El paseo de sisa es muy utilizado cuando de marcar patrones para mangas se habla. En cualquier caso, ¿cuál es el contorno de sisa? La mejor manera de medir el ancho del pecho es colocar la prenda completamente extendida sobre una superficie plana y medir el ancho del pecho como se muestra en la imagen. Hablar de acumular quizá suene.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Leyenda de Sisa Ocio Ajedrez" data-src="https://i2.wp.com/imgv2-2-f.scribdassets.com/img/document/407565867/original/5ccb451cc8/1604342060?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Somos una compañía aseguradora que brinda tranquilidad y seguridad financiera,. Se deriva, según sebastián de covarrubias, del verbo hebreo sisah , que significa «quitar» o «sustraer», lo que conviene muy bien a este tributo, porque del abasto o género  se separa lo mandado impuesto para su satisfacción. Esta medida se utiliza para dibujar la profundidad de la sisa en el.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dar holgura a la sisa del patrón de niño Acf Studio" data-src="https://i2.wp.com/4.bp.blogspot.com/-z2D2e6sbLmI/XHU2pze-sKI/AAAAAAAAIZ4/YW44vijfOYgxZfTO98xyExWJKjlT9O6xgCLcBGAs/s1600/IMG_2019.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.alejandracolomera.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Definición de sisa en el diccionario de español en línea. A continuación, resta la talla del contorno a la medida del busto. Corte curvo hecho en el cuerpo de una prenda de vestir que corresponde a la parte de la axila. Para utilizar éste sistema de forma adecuada, se recomienda ms explorer 7, mozilla firefox 3, google chrome 2 o.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="AGENCIA NACIONAL DE HIDROCARBUROS &gt; ANH &gt; BOLIVIA &gt; 2018" data-src="https://i2.wp.com/www.anh.gob.bo/InsideFiles/Noticias/Nacho/ReqVeh.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.anh.gob.bo</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Un método es medir desde la articulación del hombro y el cuello hasta la axila. Tiene una población de 9.477 habitantes (año 2015), el código postal es 220301. Existen distintas versiones de esta leyenda, que se suele considerar como el. Específicamente, el corte curvado que se hace en la parte de la axila. Sisa (el dorado, san martín) es una.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tejer sisa para manga pegada o chaleco sin mangas" data-src="https://i2.wp.com/blog.tejerconlucila.com/images/blog/sisa-manga-pegada-esquema.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blog.tejerconlucila.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En cualquier caso, ¿cuál es el contorno de sisa? Sisa es una compañía que provee seguridad a los vendedores ambulantes, con el. Esta es una de las leyendas más conocidas del ajedrez. De igual forma, ¿cómo se mide la sisa de una prenda? Es un sistema nuevo que reemplazará a los registros y regímenes informativos vinculados a la actividad de.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="La manga y cómo medir la sisa en la costura una visión general Mi" data-src="https://i2.wp.com/comprarmimaquinadecoser.com/wp-content/uploads/2020/04/armscye-y-medicion-de-sisa-en-la-costura-una-vision-general-171.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: comprarmimaquinadecoser.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Es suficiente un dato estadístico para hacernos una idea del beneficio que se podía sacar de la sisa del vino: Para medir el largo de sisa situaremos la cinta métrica en el hombro (donde sobresalga el hueso del hombro), y mediremos hasta la parte baja del brazo. Es la compañía que opera en el ramo de los seguros de daños.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="SISA se consolida entre las aseguradoras más fuertes de Centroamérica" data-src="https://i2.wp.com/static.elmundo.sv/wp-content/uploads/2020/06/SISA-nueva-imagen.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: diario.elmundo.sv</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Corte en forma curvo elaborado en el cuerpo de una prenda de vestir que corresponde la parte del axila. Para medir el largo de sisa situaremos la cinta métrica en el hombro (donde sobresalga el hueso del hombro), y mediremos hasta la parte baja del brazo. Es suficiente un dato estadístico para hacernos una idea del beneficio que se podía.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Sisa y copa de manga en armonía ⋆ MiMcostura" data-src="https://i2.wp.com/www.mimcostura.com/wp-content/uploads/2018/11/sisa4.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.mimcostura.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Traducir sisa significado sisa traducción de sisa sinónimos de sisa, antónimos de sisa. La persona, sea otra o tú misma, ha de ir vestida con ropa ceñida. Para los tejidos, en 1632 la sisa del medio dozavo de la vara de medir fue un impuesto de 4,34 %, del que se estimó que junto con otros impuestos menores podría dar.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="COSTURNDO El cálculo de la anchura de la sisa de la manga" data-src="https://i2.wp.com/4.bp.blogspot.com/-FGsYQmdcMAY/UJ1MR9BlrgI/AAAAAAAAwIY/JO9bz2Ir8JU/s1600/tmp1A1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: corte-y-confeccion.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La mejor manera de medir el ancho del pecho es colocar la prenda completamente extendida sobre una superficie plana y medir el ancho del pecho como se muestra en la imagen. Vídeo que es la sisa en la ropa: De igual forma, ¿cómo se mide la sisa de una prenda? Seis décadas después, jaume sisa acumula en casa unos 4.000.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Sisa y copa de manga en armonía ⋆ MiMcostura" data-src="https://i2.wp.com/www.mimcostura.com/wp-content/uploads/2018/11/sisa.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.mimcostura.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Esta es una de las leyendas más conocidas del ajedrez. Por ejemplo, en 1626 se estableció una sisa del vino del 6,6 % , más un impuesto de una libra por bota de vino, medida antes de la sisa. ¿cómo se toma la medida del busto? ¿cómo se mide el busto de un poleron? Se recomienda presentar al funcionario autorizante.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="q-significa-cuba-libre.html" class="be-post-title">
+				 <h6>q significa cuba libre </h6>
+                </a>
+                <a href="q-significa-cuba-libre.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=q%20significa%20cuba%20libre&amp;w=50&amp;h=50&amp;c=7" alt="q significa cuba libre">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-bamboe-ondergoed.html" class="be-post-title">
+				 <h6>wat is bamboe ondergoed </h6>
+                </a>
+                <a href="wat-is-bamboe-ondergoed.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20bamboe%20ondergoed&amp;w=50&amp;h=50&amp;c=7" alt="wat is bamboe ondergoed">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="teknik-menendang-dengan-punggung-kaki-adalah-tendangan.html" class="be-post-title">
+				 <h6>teknik menendang dengan punggung kaki adalah tendangan </h6>
+                </a>
+                <a href="teknik-menendang-dengan-punggung-kaki-adalah-tendangan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=teknik%20menendang%20dengan%20punggung%20kaki%20adalah%20tendangan&amp;w=50&amp;h=50&amp;c=7" alt="teknik menendang dengan punggung kaki adalah tendangan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-n-en-fisica.html" class="be-post-title">
+				 <h6>que significa n en fisica </h6>
+                </a>
+                <a href="que-significa-n-en-fisica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20n%20en%20fisica&amp;w=50&amp;h=50&amp;c=7" alt="que significa n en fisica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-gewestwaarborg.html" class="be-post-title">
+				 <h6>wat is een gewestwaarborg </h6>
+                </a>
+                <a href="wat-is-een-gewestwaarborg.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20gewestwaarborg&amp;w=50&amp;h=50&amp;c=7" alt="wat is een gewestwaarborg">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-systematic-review.html" class="be-post-title">
+				 <h6>wat is een systematic review </h6>
+                </a>
+                <a href="wat-is-een-systematic-review.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20systematic%20review&amp;w=50&amp;h=50&amp;c=7" alt="wat is een systematic review">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-beat-en-música-electrónica.html" class="be-post-title">
+				 <h6>que es un beat en música electrónica </h6>
+                </a>
+                <a href="que-es-un-beat-en-música-electrónica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20beat%20en%20m%C3%BAsica%20electr%C3%B3nica&amp;w=50&amp;h=50&amp;c=7" alt="que es un beat en música electrónica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-fonavi-peru.html" class="be-post-title">
+				 <h6>que es fonavi peru </h6>
+                </a>
+                <a href="que-es-fonavi-peru.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20fonavi%20peru&amp;w=50&amp;h=50&amp;c=7" alt="que es fonavi peru">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-betekent-gewestweg.html" class="be-post-title">
+				 <h6>wat betekent gewestweg </h6>
+                </a>
+                <a href="wat-betekent-gewestweg.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20betekent%20gewestweg&amp;w=50&amp;h=50&amp;c=7" alt="wat betekent gewestweg">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="novel-fiksi-adalah.html" class="be-post-title">
+				 <h6>novel fiksi adalah </h6>
+                </a>
+                <a href="novel-fiksi-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=novel%20fiksi%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="novel fiksi adalah">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

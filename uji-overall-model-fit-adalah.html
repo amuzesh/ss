@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Overall Model Fit Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Overall Model Fit Adalah",
+  "datePublished": "2022-06-04T05:09:46Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20overall%20model%20fit%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20overall%20model%20fit%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20overall%20model%20fit%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20overall%20model%20fit%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Overall Model Fit Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Overall Model Fit Adalah</h2>
+    <p><strong>Uji Overall Model Fit Adalah</strong>. Statistik yang digunakan berdasarkan fungsi likelihood. Fâ­ 0 = frekuensi observasi.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20overall%20model%20fit%20adalah" alt="Uji Kecocokan Model / Goodness of Fit Index (SEM) Equilibrium" />
+        <br>
+        <figcaption>Uji Kecocokan Model / Goodness of Fit Index (SEM) Equilibrium from equilibriumsolution2013.wordpress.com</figcaption>
+    </figure>
+        <p>
+        P = peluang h 0 benar. Pengujian model fit overall model fit pengujian ini bertujuan untuk menunjukkan bahwa model yang dihipotesiskan fit dengan data dengan menggunakan fungsi log likelihood. Goodness of fit indices (gfi) gfi merupakan ukuran mengenai ketepatan model dalam menghasilkan observed matrix covarians.
+    </p>
+    <h3>Uji Kecocokan Model / Goodness of Fit Index (SEM) Equilibrium</h3>
+    <p>4.4.1 uji goodness of fit (uji ketepatan model) untuk mengetahui kriteria model yang baik (goodness of fit) digunakan: Model yang dihipotesiskan tidak fit dengan data. Nilainya diharapkan tinggi lebih besar sama dengan 0,90. Berikut ini merupakan hasil pengujian overall model fit:</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Goodness Of Fit Adalah" data-src="https://i2.wp.com/www.researchgate.net/profile/Jusup_Nurgraha/publication/323999914/figure/tbl2/AS:631593626509370@1527595063831/MODEL-TESTING-GOODNESS-OF-FIT.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: orauvi.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dari hipotesis ini, agar model fit dengan data maka h 0 harus diterima. Uji parameter yang digunakan dalam penelitian ini adalah sebagai berikut: Uji kesesuaian model (goodness of fit test) goodness of fit test bertujuan untuk mengetahui seberapa efektif model Disamping secara individual, sem juga menguji model yang diusulkan secara keseluruhan, yaitu melalui uji kesesuaian model (overall model fit test)..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Chow Pada Pool Data" data-src="https://i2.wp.com/www.mobilestatistik.com/wp-content/uploads/2020/09/EVIEWS-Chow-Test3.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.mobilestatistik.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Nilai gfi yang baik adalah ≥ 0.90 (hair et al., 2010 p.667). Banyak pertanyaan yang masuk kepada kita terkait dengan uji kebaikan model dari model sem pls dan output yang dihasilkan oleh software smartpls. Model yang dihipotesiskan fit dengan data h₁ :model yang dihipotesiskan tidak fit dengan data dari hipotesis ini, agar model fit dengan data maka harus. Dengan kata.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Analisis Jalur Menggunakan AMOS (Bagian 3, Goodnes of Fit Model" data-src="https://i0.wp.com/maglearning.id/wp-content/uploads/2019/04/gof.png?resize=571%2C385&amp;ssl=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: maglearning.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji kebaikan model ini menggunakan software amos versi 21.0. Overall goodness fit model gsca selain dapat dilihat dari fit dan afit dapat pula dengan melihat nilai gfi (goodness of fit index) dan srmr (standardized root means residual). Uji t adalah uji statistik yang digunakan untuk melihat kontribusi setiap variabel independen pada perubahan variabel dependen secara parsial. Nilainya diharapkan tinggi lebih.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Kecocokan Model / Goodness of Fit Index (SEM) Equilibrium" data-src="https://i2.wp.com/equilibriumsolution2013.files.wordpress.com/2016/02/gof.png?w=580" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: equilibriumsolution2013.wordpress.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji goodness of fit sendiri terbagi ke dalam beberapa jenis menurut jumlah populasi yg diuji dan independensi data, yaitu : 4.4.1 uji goodness of fit (uji ketepatan model) untuk mengetahui kriteria model yang baik (goodness of fit) digunakan: Model yang dihipotesiskan fit dengan data h₁ :model yang dihipotesiskan tidak fit dengan data dari hipotesis ini, agar model fit dengan data.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Konsultan Statistik Cara Membaca F Tabel pada Uji Regresi Linear" data-src="https://i2.wp.com/lh3.googleusercontent.com/-ShoELxkjBK8/X_J7mT2mJOI/AAAAAAAABXs/NgQjz6-T0PwirCqSfDUJACyNvm9krUmMwCLcBGAsYHQ/image.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.konsultanstatistik.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dalam langkah ini bertujuan untuk menguji kesesuaian antara model dengan data. Hipotesis untuk menilai model fit adalah: Untuk menguji hipotesis nol dan alternatif, l. Nilai tertinggi dalam indeks menunjukkan better fit. Ukuran kesesuaian model secara deskriptif.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Goodness Of Fit Adalah" data-src="https://i2.wp.com/www.researchgate.net/profile/Muniaty_Aisyah/publication/311939270/figure/tbl1/AS:667843825786889@1536237784791/Goodness-of-Fit-Model.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: caligntecsei.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Nilai chi square model adalah sebesar 21,028 dengan nilai. Uji kebaikan model ini menggunakan software amos versi 21.0. Goodness of fit model sem pls. Uji goodness of fit sendiri terbagi ke dalam beberapa jenis menurut jumlah populasi yg diuji dan independensi data, yaitu : Tabel 2 hasil uji keseluruhan model.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Hausman Pada Pool Data" data-src="https://i2.wp.com/www.mobilestatistik.com/wp-content/uploads/2020/09/EVIEWS-Hausman-Test8.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.mobilestatistik.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Goodness of fit model sem pls. Pengujian parameter model dalam analisis regresi logistik dilakukan untuk melihat apakah variabel penjelas mempunyai pengaruh yang nyata dalam model. Nilai chi square model adalah sebesar 21,028 dengan nilai. Goodness of fit indices (gfi) gfi merupakan ukuran mengenai ketepatan model dalam menghasilkan observed matrix covarians. Menilai keseluruhan model (overall model fit) uji ini digunakan untuk.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Normalitas Kolmogorov Smirnov Pdf Sekolah Siswa" data-src="https://i2.wp.com/lh3.googleusercontent.com/proxy/z6YN6put5PqioFr2gxHEsNAJxG9UA5uzmDRkSYiSqdRlNAZDjAVKur-QGV9pSuzSBKBXL4-NJOU037yzmhfPKnuD-IRYgsZMy6H8CrdlZPELzQK3A3tWGyL0aQ9KKGT1=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sekolahsiswadoc.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pengujian model fit dan keseluruhan model (overall model fit) pengujian ini dilakukan untuk mengatahui apakah model fit dengan data baik sebelum maupun sesudah variabel bebas dimasukkan kedalam model. Statistik yang digunakan berdasarkan fungsi likelihood. Nilai chi square model adalah sebesar 21,028 dengan nilai. Model yang dihipotesiskan tidak fit dengan data. Diharapkan nilainya rendah sehingga diperoleh nilai p (probability) yang tinggi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT Regresi linier dan berganda PowerPoint Presentation, free" data-src="https://i2.wp.com/image1.slideserve.com/2054199/memilih-model-dan-bentuk-fungsi-model-empiris-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji goodness of fit sendiri terbagi ke dalam beberapa jenis menurut jumlah populasi yg diuji dan independensi data, yaitu : Model yang dihipotesiskan fit dengan data ha : Dalam sem, yang dimaksud dengan “kesesuaian model” adalah kesesuaian antara matriks kovarian sampel dengan estimasi matriks kovarians populasi yang dihasilkan,. Ukuran kesesuaian model secara deskriptif. Rfi ≥ 0,9 adalah good fit, sedangkan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Multikolinearitas Data dengan Menggunakan SPSS Tambah Pinter" data-src="https://i0.wp.com/tambahpinter.com/wp-content/uploads/2020/06/multi-4-696x680.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: tambahpinter.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Srmr menunjukkan kesalahan model estimasi goodness of. Semakin mendekati angka 1, model dinyatakan semakin baik. Ukuran kesesuaian model secara deskriptif. Likelihood ditunjukkan dalam probabilitas model yang dihipotesiskan dan menggambarkan data yang telah diinput. Rfi ≥ 0,9 adalah good fit, sedangkan 0,8 ≤ rfi ˂ 0,9 adalah marginal fit.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-ded-adjust-in-salary-slip.html" class="be-post-title">
+				 <h6>what is ded adjust in salary slip </h6>
+                </a>
+                <a href="what-is-ded-adjust-in-salary-slip.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20ded%20adjust%20in%20salary%20slip&amp;w=50&amp;h=50&amp;c=7" alt="what is ded adjust in salary slip">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="d-e-b-s-stands-for.html" class="be-post-title">
+				 <h6>d.e.b.s stands for </h6>
+                </a>
+                <a href="d-e-b-s-stands-for.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=d.e.b.s%20stands%20for&amp;w=50&amp;h=50&amp;c=7" alt="d.e.b.s stands for">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-sonata-barroca.html" class="be-post-title">
+				 <h6>que es sonata barroca </h6>
+                </a>
+                <a href="que-es-sonata-barroca.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20sonata%20barroca&amp;w=50&amp;h=50&amp;c=7" alt="que es sonata barroca">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-convectorkachel.html" class="be-post-title">
+				 <h6>wat is convectorkachel </h6>
+                </a>
+                <a href="wat-is-convectorkachel.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20convectorkachel&amp;w=50&amp;h=50&amp;c=7" alt="wat is convectorkachel">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-hacen-con-la-comida-preparada-de-masterchef.html" class="be-post-title">
+				 <h6>que hacen con la comida preparada de masterchef </h6>
+                </a>
+                <a href="que-hacen-con-la-comida-preparada-de-masterchef.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20hacen%20con%20la%20comida%20preparada%20de%20masterchef&amp;w=50&amp;h=50&amp;c=7" alt="que hacen con la comida preparada de masterchef">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-ecosistema-acuatico-ejemplos.html" class="be-post-title">
+				 <h6>que es un ecosistema acuatico ejemplos </h6>
+                </a>
+                <a href="que-es-un-ecosistema-acuatico-ejemplos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20ecosistema%20acuatico%20ejemplos&amp;w=50&amp;h=50&amp;c=7" alt="que es un ecosistema acuatico ejemplos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-codigo-organico-procesal-penal.html" class="be-post-title">
+				 <h6>que es el codigo organico procesal penal </h6>
+                </a>
+                <a href="que-es-el-codigo-organico-procesal-penal.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20codigo%20organico%20procesal%20penal&amp;w=50&amp;h=50&amp;c=7" alt="que es el codigo organico procesal penal">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-la-palabra-estrofa-ejemplos.html" class="be-post-title">
+				 <h6>que significa la palabra estrofa ejemplos </h6>
+                </a>
+                <a href="que-significa-la-palabra-estrofa-ejemplos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20la%20palabra%20estrofa%20ejemplos&amp;w=50&amp;h=50&amp;c=7" alt="que significa la palabra estrofa ejemplos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="diferencias-entre-pensamiento-mítico-mágico-religioso-y-científico.html" class="be-post-title">
+				 <h6>diferencias entre pensamiento mítico mágico religioso y científico </h6>
+                </a>
+                <a href="diferencias-entre-pensamiento-mítico-mágico-religioso-y-científico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=diferencias%20entre%20pensamiento%20m%C3%ADtico%20m%C3%A1gico%20religioso%20y%20cient%C3%ADfico&amp;w=50&amp;h=50&amp;c=7" alt="diferencias entre pensamiento mítico mágico religioso y científico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-de-rente-op-een-hypotheek.html" class="be-post-title">
+				 <h6>wat is de rente op een hypotheek </h6>
+                </a>
+                <a href="wat-is-de-rente-op-een-hypotheek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20de%20rente%20op%20een%20hypotheek&amp;w=50&amp;h=50&amp;c=7" alt="wat is de rente op een hypotheek">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

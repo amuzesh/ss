@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Van Driver Description at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Van Driver Description",
+  "datePublished": "2022-04-24T04:33:57Z",
+  "image": "https://tse1.mm.bing.net/th?q=van%20driver%20description",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=van%20driver%20description&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=van%20driver%20description" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=van%20driver%20description" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Van Driver Description at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Van Driver Description</h2>
+    <p><strong>Van Driver Description</strong>. Van drivers should have a clean driving record, ensuring the safety and comfortability of the passengers while on the road. To perform daily inspections of the transportation equipment;</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=van%20driver%20description" alt="Delivery Van Driver CV Example" />
+        <br>
+        <figcaption>Delivery Van Driver CV Example from icover.org.uk</figcaption>
+    </figure>
+        <p>
+        Van drivers need to have good communication. The primary task of a shuttle driver is to convey travelers on a bus, van or another light vehicle’s from one location to another. Loads and unloads goods, equipment, materials and passengers between various destinations.
+    </p>
+    <h3>Delivery Van Driver CV Example</h3>
+    <p>The primary role of a bus drive is to is transport people and cargo from one place to another. Van driver duties and responsibilities. Picking up office purchases or other administrative needs. Van driver job description template.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Van Driver Resume Samples QwikResume" data-src="https://i2.wp.com/assets.qwikresume.com/resume-samples/pdf/screenshots/van-driver-1561101686-pdf.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.qwikresume.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">No home pick up or drop off is permitted. Some positions require drivers to have cpr and first aid certification. Van driver job description template. Assists in general with the center. Must possess or be eligible to earn a valid wisconsin cdl with school bus driver endorsement, “s” and passenger endorsement, “p”.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Van Driver Resume Samples QwikResume" data-src="https://i2.wp.com/assets.qwikresume.com/resume-samples/pdf/screenshots/van-driver-1561104622-pdf.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.qwikresume.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Provide excellent service to your passengers. Bus driver&#039;s can have a wide range of employers. Load, unload, prepare, inspect and operate a delivery vehicle. Van driver duties and responsibilities. Drivers also plan routes based on road conditions.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Delivery Van Driver CV Example" data-src="http://i1.wp.com/icover.org.uk/wp-content/uploads/2015/01/Delivery-Van-Driver-CV-example.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: icover.org.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">(9 days ago) jun 17, 2021 · valid driver&#039;s license for at least 3 years. Pick up passengers from a chosen location. Being a van driver provides and collects appropriate documentation for the delivery or pick up of goods or passengers. Loads and unloads goods, equipment, materials and passengers between various destinations. Bus driver&#039;s can have a wide range of.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Van Driver Resume Samples QwikResume" data-src="https://i2.wp.com/assets.qwikresume.com/resume-samples/pdf/screenshots/van-driver-1561104600-pdf.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.qwikresume.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Many people find opportunities to build a career in school van driver job description as a result of technology improvements. Operating equipment and machines, such as cars, trucks, forklifts, etc. Assists students in the loading and unloading process; Valid driver&#039;s license issued by the state where you intend to work. A passenger van does not require the operator to possess.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="HSMT Van Driver Job Description Healthy Start Medical Transportation" data-src="https://i2.wp.com/www.healthystartnc.com/home/wp-content/uploads/2018/06/HSMT-Van-Driver-Job-Description-768x994.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.healthystartnc.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Under the supervision of the center director, the. Van driver duties and responsibilities. Our company is looking for a van driver to join our team. Respond to guest inquiries and requests and resolve issues in a timely, friendly and efficient manner; Van drivers are to report 10 minutes before their</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Driver Of Transport Van Resume Example Kelly Tours Hoboken," data-src="https://i2.wp.com/resumesearchstorage.blob.core.windows.net/images/82/ba/82badf1e-838a-47f3-ba31-f7952e6bd8af/6c65e834-db3d-405f-9b2f-9f4f427eabdc.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.livecareer.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Must possess or be eligible to earn a valid wisconsin cdl with school bus driver endorsement, “s” and passenger endorsement, “p”. When writing your resume, be sure to reference the job description and highlight any skills, awards and certifications that match with the requirements. Participate in the routine cleaning and servicing of the school van as appropriate. Van driver duties.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Van Driver Resume Example Arc Of Rensselaer County Troy, New York" data-src="https://i2.wp.com/resumesearchstorage.blob.core.windows.net/images/45/af/45af48a4-ea19-4302-9fbe-c26aed5e1e70/a60d5be5-43cc-40da-96e0-545f93797251.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.livecareer.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Interacting with clients in professional conduct. Operating equipment and machines, such as cars, trucks, forklifts, etc. The van driver is responsible for the operation and maintenance of the company vehicles as well as the transport of client and staff safely and efficiently to and from appointments. Download resume pdf build free resume. Loads and unloads goods, equipment, materials and passengers.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Van Driver Jobs Blue Arrow" data-src="https://i2.wp.com/www.bluearrow.co.uk/-/media/bluearrow/find-a-job/featured-employers/bt/job-descriptions/bt-van-driver/bt-van-driver-jd-facebook.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.bluearrow.co.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Utilizing navigation apps to find the most optimal route. Healthcare lets people build a career around the technology they love. Loads and unloads goods, equipment, materials and passengers between various destinations. Bus driver&#039;s can have a wide range of employers. Must be able to deal professionally and diplomatically</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="School Bus Join Our Team Hastings, MN" data-src="https://i2.wp.com/irp-cdn.multiscreensite.com/954962e7/files/uploaded/Van Driver Description.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.hastingsbuscompany.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Mondays to fridays from 8:00 am to 5:00 pm. The primary role of a bus drive is to is transport people and cargo from one place to another. Carrying out vehicle maintenance checks. Deliver a wide variety of items to different addresses and through different routes. The primary task of a shuttle driver is to convey travelers on a bus,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="School Van Driver Resume Example School Express York, Pennsylvania" data-src="https://i2.wp.com/resumesearchstorage.blob.core.windows.net/images/141/470/935/97647140_141470935.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.livecareer.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A driver is a professional who drives clients around in an efficient, safe and timely manner. Care van drivers must have the ability to lift at least 30 pounds without difficulty and be able to push or support up to 185 pounds. Day care center van drivers provide transportation and supervision for children. Abiding by all transportation laws and maintaining.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-amortizacion-parcial-de-un-prestamo.html" class="be-post-title">
+				 <h6>que es la amortizacion parcial de un prestamo </h6>
+                </a>
+                <a href="que-es-la-amortizacion-parcial-de-un-prestamo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20amortizacion%20parcial%20de%20un%20prestamo&amp;w=50&amp;h=50&amp;c=7" alt="que es la amortizacion parcial de un prestamo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-risk-management-in-sports.html" class="be-post-title">
+				 <h6>what is risk management in sports </h6>
+                </a>
+                <a href="what-is-risk-management-in-sports.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20risk%20management%20in%20sports&amp;w=50&amp;h=50&amp;c=7" alt="what is risk management in sports">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-encantamiento-perforacion-en-minecraft.html" class="be-post-title">
+				 <h6>que es el encantamiento perforacion en minecraft </h6>
+                </a>
+                <a href="que-es-el-encantamiento-perforacion-en-minecraft.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20encantamiento%20perforacion%20en%20minecraft&amp;w=50&amp;h=50&amp;c=7" alt="que es el encantamiento perforacion en minecraft">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-existe-la-relatividad-del-tiempo.html" class="be-post-title">
+				 <h6>que existe la relatividad del tiempo </h6>
+                </a>
+                <a href="que-existe-la-relatividad-del-tiempo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20existe%20la%20relatividad%20del%20tiempo&amp;w=50&amp;h=50&amp;c=7" alt="que existe la relatividad del tiempo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="qué-es-sifonales.html" class="be-post-title">
+				 <h6>qué es sifonales </h6>
+                </a>
+                <a href="qué-es-sifonales.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=qu%C3%A9%20es%20sifonales&amp;w=50&amp;h=50&amp;c=7" alt="qué es sifonales">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-ciencia-y-sus-caracteristicas.html" class="be-post-title">
+				 <h6>que es la ciencia y sus caracteristicas </h6>
+                </a>
+                <a href="que-es-la-ciencia-y-sus-caracteristicas.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20ciencia%20y%20sus%20caracteristicas&amp;w=50&amp;h=50&amp;c=7" alt="que es la ciencia y sus caracteristicas">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-dos-en-informatica.html" class="be-post-title">
+				 <h6>que es dos en informatica </h6>
+                </a>
+                <a href="que-es-dos-en-informatica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20dos%20en%20informatica&amp;w=50&amp;h=50&amp;c=7" alt="que es dos en informatica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-hiperbole-en-un-poema.html" class="be-post-title">
+				 <h6>que significa hiperbole en un poema </h6>
+                </a>
+                <a href="que-significa-hiperbole-en-un-poema.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20hiperbole%20en%20un%20poema&amp;w=50&amp;h=50&amp;c=7" alt="que significa hiperbole en un poema">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-cuba-de-una-lavadora.html" class="be-post-title">
+				 <h6>que es la cuba de una lavadora </h6>
+                </a>
+                <a href="que-es-la-cuba-de-una-lavadora.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20cuba%20de%20una%20lavadora&amp;w=50&amp;h=50&amp;c=7" alt="que es la cuba de una lavadora">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-s-better-minecraft-or-minecraft-dungeons.html" class="be-post-title">
+				 <h6>what&#039;s better minecraft or minecraft dungeons </h6>
+                </a>
+                <a href="what-s-better-minecraft-or-minecraft-dungeons.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%27s%20better%20minecraft%20or%20minecraft%20dungeons&amp;w=50&amp;h=50&amp;c=7" alt="what&amp;#039;s better minecraft or minecraft dungeons">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

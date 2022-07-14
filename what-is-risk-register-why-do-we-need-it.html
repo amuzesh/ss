@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        What Is Risk Register Why Do We Need It at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "What Is Risk Register Why Do We Need It",
+  "datePublished": "2022-07-11T11:22:49Z",
+  "image": "https://tse1.mm.bing.net/th?q=what%20is%20risk%20register%20why%20do%20we%20need%20it",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=what%20is%20risk%20register%20why%20do%20we%20need%20it&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20risk%20register%20why%20do%20we%20need%20it" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20risk%20register%20why%20do%20we%20need%20it" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            What Is Risk Register Why Do We Need It at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">What Is Risk Register Why Do We Need It</h2>
+    <p><strong>What Is Risk Register Why Do We Need It</strong>. We also kinda covered why risk registers are used, but i think we need to delve a little deeper. Sometimes it’s used to fulfill regulatory compliance obligations, but mostly a risk register helps you to stay on top of issues that might derail intended outcomes.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=what%20is%20risk%20register%20why%20do%20we%20need%20it" alt="Model Risk and Risk Validation Roles All Levels Engage People" />
+        <br>
+        <figcaption>Model Risk and Risk Validation Roles All Levels Engage People from engagepeople.ie</figcaption>
+    </figure>
+        <p>
+        Do not forget to include positive risks. You can use a risk register to take advantage of opportunities while reducing the impact of threats. On the other hand, risk assessment is a process that identifies a particular risk, evaluates and priorities it.
+    </p>
+    <h3>Model Risk and Risk Validation Roles All Levels Engage People</h3>
+    <p>Since it’s usually up to project managers (we’re. You also use the risk register to monitor and control risks during the whole project life cycle. Risk management is the process of identifying, assessing and controlling threats to an organization&#039;s capital and earnings. We all know that risk registers are used to gather information about identified hazards and risks, their nature and level of impact to the business, as well as document immediate corrective actions.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Minister explains why it&#039;s critical to keep foot and mouth disease out" data-src="https://i2.wp.com/www.3aw.com.au/wp-content/uploads/sites/12/2022/07/cow-foot-1200x800.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.3aw.com.au</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Upon the completion of the risk management plan, a master document known as a risk register is created. Last edited by a moderator: Risk managers and project managers alike need to use a risk register. A risk register is a tool in risk management and project management. It is a vital part of your organizational process assets.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="‎Friend Make friends online в App Store" data-src="https://i2.wp.com/is1-ssl.mzstatic.com/image/thumb/Purple126/v4/b3/17/f8/b317f857-6b3e-8f11-3b3c-d784f09e40eb/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: apps.apple.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">You can edit the default risk workflow or create a new risk flow at settings. A risk register (which can sometimes be referred to as a risk log) is a project management tool which helps managers and companies document risks, track risks and address them through preventative controls and corrective actions. You can use a risk register to take advantage.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="What You Need to Know About SIDS" data-src="https://i2.wp.com/paidforarticles.com/uploads/2022/05/1653735356-rs26783-gettyimages-1022137310-1024x615.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: paidforarticles.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">For me, the first steps in risk management were overwhelming as well. Risk registers might include the following information in a table: The risk register will list each risk that made it into the top 10, starting with the biggest risk. The task of updating the risk registers is usually delegated to the project control. You can use a risk.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk Register Example Pdf" data-src="https://i2.wp.com/www.symbiant.co.uk/images/reports/monetary-risk-register.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: tampafloodwaterdamage.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">There are many different types of risk register and it is important yours is meaningful for your needs and activities. A risk register also called a risk log, is a document that is used as a tool by businesses and managers to identify risks that may affect their business. However, having a risk register is helpful for any project. It.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Groupon Inc. (NASDAQ GRPN) Drops 8.73 In Recent Session. Here’s" data-src="https://i2.wp.com/i1.ytimg.com/vi/tq3TdCOXI08/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: stocksregister.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Iso 73:2009 risk management—vocabulary defines a risk register to. Risk register is a document that contains the information about identified risks, results of risk analysis (impact, probability, effects), as well as risk response plans. Each risk will have a description and some assessment that. Upon the completion of the risk management plan, a master document known as a risk register.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Model Risk and Risk Validation Roles All Levels Engage People" data-src="https://i2.wp.com/engagepeople.ie/wp-content/uploads/2019/10/engage-1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: engagepeople.ie</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Following are the list of fields that you need to fill to create a risk register. Sometimes it’s used to fulfill regulatory compliance obligations, but mostly a risk register helps you to stay on top of issues that might derail intended outcomes. A risk register (which can sometimes be referred to as a risk log) is a project management tool.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Vermilion Energy Inc. When The Timing Is Right, Sit Tight Stocks" data-src="https://i2.wp.com/i3.ytimg.com/vi/JABCiGtgRk4/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: stocksregister.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Why do we need a risk register? We know a risk register lists. The task of updating the risk registers is usually delegated to the project control. For me, the first steps in risk management were overwhelming as well. We also kinda covered why risk registers are used, but i think we need to delve a little deeper.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kenexis Technical Safety Webinars" data-src="https://i2.wp.com/www.kenexis.com/wp-content/uploads/2021/01/battery-energy-storage-containers-e1652883424526.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.kenexis.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">What is a risk register?. This is a number that organizes the risk into a certain category. A risk register is where you document risks you are currently managing that need to be monitored and it provides a record of the output of the risk management process. By committing to using a risk register, you have to go through a.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Why do we need to protect marine life and how to do it" data-src="https://i2.wp.com/www.sustainablefriends.com/wp-content/uploads/marine_life_endagered_fishing.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.sustainablefriends.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A risk register is shared with project stakeholders to ensure information is stored in one accessible place. A risk register is a document used as a risk management tool and to fulfill regulatory compliance acting as a repository for all risks identified and includes additional information about each risk, e.g., nature of the risk, reference and owner, mitigation measures. It.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jason Tarry ‘Why Tesco is putting health on your weekly shopping list" data-src="https://i2.wp.com/d53bpfpeyyyn7.cloudfront.net/Pictures/480xAny/P/web/j/i/z/retailweek_2022_packshot_313535.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.retail-week.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A descriptive name to identify your risk register. The components of a risk register are the elements a project manager records for each entry. There are many different types of risk register and it is important yours is meaningful for your needs and activities. Risk register is a document that contains the information about identified risks, results of risk analysis.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="punggung-kaki-bagian-luar-adalah.html" class="be-post-title">
+				 <h6>punggung kaki bagian luar adalah </h6>
+                </a>
+                <a href="punggung-kaki-bagian-luar-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=punggung%20kaki%20bagian%20luar%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="punggung kaki bagian luar adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="ombudsman-south-africa-contact-details.html" class="be-post-title">
+				 <h6>ombudsman south africa contact details </h6>
+                </a>
+                <a href="ombudsman-south-africa-contact-details.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=ombudsman%20south%20africa%20contact%20details&amp;w=50&amp;h=50&amp;c=7" alt="ombudsman south africa contact details">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-cuba-filtro.html" class="be-post-title">
+				 <h6>que es la cuba filtro </h6>
+                </a>
+                <a href="que-es-la-cuba-filtro.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20cuba%20filtro&amp;w=50&amp;h=50&amp;c=7" alt="que es la cuba filtro">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-indirect-comparison.html" class="be-post-title">
+				 <h6>what is indirect comparison </h6>
+                </a>
+                <a href="what-is-indirect-comparison.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20indirect%20comparison&amp;w=50&amp;h=50&amp;c=7" alt="what is indirect comparison">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-emetofobia.html" class="be-post-title">
+				 <h6>que es la emetofobia </h6>
+                </a>
+                <a href="que-es-la-emetofobia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20emetofobia&amp;w=50&amp;h=50&amp;c=7" alt="que es la emetofobia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-enfermedad-es-cuando-te-salen-bolitas-en-las-piernas.html" class="be-post-title">
+				 <h6>que enfermedad es cuando te salen bolitas en las piernas </h6>
+                </a>
+                <a href="que-enfermedad-es-cuando-te-salen-bolitas-en-las-piernas.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20enfermedad%20es%20cuando%20te%20salen%20bolitas%20en%20las%20piernas&amp;w=50&amp;h=50&amp;c=7" alt="que enfermedad es cuando te salen bolitas en las piernas">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-icslap-protocol.html" class="be-post-title">
+				 <h6>what is icslap protocol </h6>
+                </a>
+                <a href="what-is-icslap-protocol.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20icslap%20protocol&amp;w=50&amp;h=50&amp;c=7" alt="what is icslap protocol">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-precipitado-en-quimica.html" class="be-post-title">
+				 <h6>que es precipitado en quimica </h6>
+                </a>
+                <a href="que-es-precipitado-en-quimica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20precipitado%20en%20quimica&amp;w=50&amp;h=50&amp;c=7" alt="que es precipitado en quimica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-iva-debito-fiscal-y-credito-fiscal.html" class="be-post-title">
+				 <h6>que es iva debito fiscal y credito fiscal </h6>
+                </a>
+                <a href="que-es-iva-debito-fiscal-y-credito-fiscal.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20iva%20debito%20fiscal%20y%20credito%20fiscal&amp;w=50&amp;h=50&amp;c=7" alt="que es iva debito fiscal y credito fiscal">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-ghetto-en-colombia.html" class="be-post-title">
+				 <h6>que es el ghetto en colombia </h6>
+                </a>
+                <a href="que-es-el-ghetto-en-colombia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20ghetto%20en%20colombia&amp;w=50&amp;h=50&amp;c=7" alt="que es el ghetto en colombia">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

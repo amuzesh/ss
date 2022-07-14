@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Q Es Un Triple Doble at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Q Es Un Triple Doble",
+  "datePublished": "2022-03-17T07:37:08Z",
+  "image": "https://tse1.mm.bing.net/th?q=q%20es%20un%20triple%20doble",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=q%20es%20un%20triple%20doble&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=q%20es%20un%20triple%20doble" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=q%20es%20un%20triple%20doble" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Q Es Un Triple Doble at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Q Es Un Triple Doble</h2>
+    <p><strong>Q Es Un Triple Doble</strong>. Il s’agit de compiler au moins 20 unités dans trois catégories statistiques différentes, chose qui n’a été faite qu’à deux reprises depuis la naissance de la nba, par les fameux wilt chamberlain (1968) et russell westbrook (2019). Un tipus especial de triple doble és el doble triple doble, terme que determina la consecució no d&#039;un mínim de 10, sinó de 20 en tres de les.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=q%20es%20un%20triple%20doble" alt="El triple de un número para Segundo de Primaria Fichas de Trabajo" />
+        <br>
+        <figcaption>El triple de un número para Segundo de Primaria Fichas de Trabajo from fichasdetrabajo.net</figcaption>
+    </figure>
+        <p>
+        Un enlace triple es aún más fuerte/más corto. Sustantivo (van normalmente precedidos de artículo y son siempre masculinos): Se trata de fichas en la cuál hay que calcular el doble y el tripe de los números que se plantean y se aconseja que se haga como un ejercicio de cálculo mental a partir de la suma de dobles y triples del mismo número.
+    </p>
+    <h3>El triple de un número para Segundo de Primaria Fichas de Trabajo</h3>
+    <p>Es decir, se tiene que llegar como mínimo a 10, en 3 de estas 5 categorías. Hacer un doble dígito supone superar 9 valores estadísticos en uno de esos datos cuantificables. Una habitación doble es aquella en la cual 2 personas adultas se hospedan y pueden ir acompañados hasta de dos menores dentro de esa misma habitación. ¿cuál es el doble de 1?</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="El triple de un número para Segundo de Primaria Fichas de Trabajo" data-src="https://i2.wp.com/fichasdetrabajo.net/wp-content/uploads/El-triple-de-un-número-para-Segundo-Grado-de-Primaria.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: fichasdetrabajo.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Es un logro bastante raro. Un enlace triple es aún más fuerte/más corto. En una habitación triple, a diferencia de la anterior, se hospedarán 3 personas adultas y pueden estar, en la misma habitación, hasta con un menor. [noun] an instance in which a player accumulates a total of 10 or more in three statistical categories (usually points, assists, and.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="MI COLE &quot;MIGUEL HERNÁNDEZ&quot; Repaso 5º y 6º" data-src="https://i2.wp.com/aprendelibvrefiles.blob.core.windows.net/aprendelibvre-container/course/multiplicacion_y_division/image/numeralmultip-012_xl.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: micolemiguelhernandezprofes.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En este caso, se trata de un enlace polar, debido a la diferencia de electronegatividades entre el carbono y el oxígeno. ¿cuál es el doble de 1? Por ejemplo, un jugador que en un partido hace 27 puntos, 21 rebotes y 20 asistencias ha. Il s’agit de compiler au moins 20 unités dans trois catégories statistiques différentes, chose qui n’a.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="AULA DE INNOVACIÓN PEDAGÓGICA 2096 TRABAJAMOS DOBLE Y TRIPLE" data-src="https://i2.wp.com/i.ytimg.com/vi/dKGzadbvCgM/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: aulainnovacion2096.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Es menos común de lograr, pero ello no significa que no haya sido alcanzado, ya que son varios los jugadores que incluyen éste récord en sus logros. En algunos lugares este movimiento es conocido como entrada a canasta en dos tiempos, penetración en dos tiempos, o finalización con dos apoyos.si conoces otra forma de llamar al doble ritmo,. Una habitación.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mochila de Recursos Adrian Joviero El doble y el triple de un número" data-src="https://i2.wp.com/3.bp.blogspot.com/-JT_WXtILQ4Q/UyiLT2MYwEI/AAAAAAAABMI/QzExA9h04Fw/s1600/Dibujo.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.mochiladerecursos.com.ar</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Puntos, rebotes, asistencias, tapones y recuperaciones de balón (llamados robos); Las longitudes también son un cambio sutil… un enlace doble tiene aproximadamente el 90 % de la longitud de un enlace simple y un enlace triple tiene aproximadamente el. Ha habido un triple empate. Pero conseguir un triple doble no es nada fácil. Se trata de fichas en la cuál.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Doble y Triple para Segundo Grado de Primaria Actividades Educativas" data-src="https://i2.wp.com/actividadeseducativas.net/wp-content/uploads/2018/12/Doble-y-Triple-para-Segundo-de-Primaria.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: actividadeseducativas.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Un triple doble és un terme del bàsquetbol que determina la consecució per part d&#039;un jugador de dobles dígits (un mínim de 10) en tres de les cinc categories quantificables (punts, rebots, assistències, taps i recuperacions de pilota). Il s’agit de compiler au moins 20 unités dans trois catégories statistiques différentes, chose qui n’a été faite qu’à deux reprises depuis.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="La Clase de Tercero/Cuarto del Picasso El Doble y el Triple de un Número." data-src="https://i2.wp.com/4.bp.blogspot.com/-axiWSvpC3tg/WhcWecxXCNI/AAAAAAAABL0/p5gxBoWtltQ6dPxM0TNbD3fjmUKBvXoZQCLcBGAs/s1600/imagen%2Btriple.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: laclasedetercerodelpicasso.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Se trata de fichas en la cuál hay que calcular el doble y el tripe de los números que se plantean y se aconseja que se haga como un ejercicio de cálculo mental a partir de la suma de dobles y triples del mismo número. En una habitación triple, a diferencia de la anterior, se hospedarán 3 personas adultas y.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Doble y triple" data-src="https://i2.wp.com/image.slidesharecdn.com/dobleytriple-130122090457-phpapp01/95/slide-2-1024.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La primera ficha realizada por se propone un puzzle y en la segunda. Aspectos que se contabilizan en las reglas básicas del baloncesto. A continuación os dejo un ejemplo de cada uno de ellos: Un triple doble significa que un jugador alcanzó dos dígitos en tres de estas categorías: En este caso, los dos posibles esquemas de numeración conducen al.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Primeros pasos en Primaria El doble y el triple" data-src="https://i2.wp.com/3.bp.blogspot.com/-Z5eqPLvwQk0/UUWHUdIboNI/AAAAAAAAOTU/WuuIIxdl8V8/s1600/Captura+de+pantalla+2013-03-17+a+las+10.03.23.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: alca-primerospasosenprimaria.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Un tipus especial de triple doble és el doble triple doble, terme que determina la consecució no d&#039;un mínim de 10, sinó de 20 en tres de les. Play this game to review mathematics. Solo tres jugadores han registrado 100 […] El doble y el triple draft. Es menos común de lograr, pero ello no significa que no haya sido.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="El rincón de Bego MATEMÁTICAS" data-src="https://i2.wp.com/image.slidesharecdn.com/dobleytripledeunnmero-131029140351-phpapp02/95/doble-y-triple-de-un-nmero-2-638.jpg?cb=1383055465" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: elrincondebegoyeltuyo.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Oscar robertson, qui a réussi à atteindre une moyenne d&#039;un. Lo más común es puntos, rebotes y asistencias. Un triple doble significa que un jugador alcanzó dos dígitos en tres de estas categorías: ¿cuál es el doble de 1? Pero conseguir un triple doble no es nada fácil.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Lección 20. Más del doble, pero menos del triple Ayuda para tu tarea" data-src="https://i2.wp.com/recursos.pacoelchato.com/img/mPRvkRdRy3qIBzOOVyn7gJDwDcFIDGedtla2rA5p.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: pacoelchato.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La primera ficha realizada por se propone un puzzle y en la segunda. Solo tres jugadores han registrado 100 […] Un triple doble és un terme del bàsquetbol que determina la consecució per part d&#039;un jugador de dobles dígits (un mínim de 10) en tres de les cinc categories quantificables (punts, rebots, assistències, taps i recuperacions de pilota). Es un.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="hacer-una-reservacion-en-un-restaurante-en-ingles.html" class="be-post-title">
+				 <h6>hacer una reservacion en un restaurante en ingles </h6>
+                </a>
+                <a href="hacer-una-reservacion-en-un-restaurante-en-ingles.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=hacer%20una%20reservacion%20en%20un%20restaurante%20en%20ingles&amp;w=50&amp;h=50&amp;c=7" alt="hacer una reservacion en un restaurante en ingles">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cuál-es-la-moneda-de-cuba.html" class="be-post-title">
+				 <h6>cuál es la moneda de cuba </h6>
+                </a>
+                <a href="cuál-es-la-moneda-de-cuba.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cu%C3%A1l%20es%20la%20moneda%20de%20cuba&amp;w=50&amp;h=50&amp;c=7" alt="cuál es la moneda de cuba">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="police-ombudsman-nsw-contact-number.html" class="be-post-title">
+				 <h6>police ombudsman nsw contact number </h6>
+                </a>
+                <a href="police-ombudsman-nsw-contact-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=police%20ombudsman%20nsw%20contact%20number&amp;w=50&amp;h=50&amp;c=7" alt="police ombudsman nsw contact number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-minimum-riser-height-for-residential-stairs.html" class="be-post-title">
+				 <h6>what is the minimum riser height for residential stairs </h6>
+                </a>
+                <a href="what-is-the-minimum-riser-height-for-residential-stairs.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20minimum%20riser%20height%20for%20residential%20stairs&amp;w=50&amp;h=50&amp;c=7" alt="what is the minimum riser height for residential stairs">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-hidrato-de-carbono-simple.html" class="be-post-title">
+				 <h6>que es un hidrato de carbono simple </h6>
+                </a>
+                <a href="que-es-un-hidrato-de-carbono-simple.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20hidrato%20de%20carbono%20simple&amp;w=50&amp;h=50&amp;c=7" alt="que es un hidrato de carbono simple">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-cuidar-un-desgarro-en-la-pierna.html" class="be-post-title">
+				 <h6>como cuidar un desgarro en la pierna </h6>
+                </a>
+                <a href="como-cuidar-un-desgarro-en-la-pierna.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20cuidar%20un%20desgarro%20en%20la%20pierna&amp;w=50&amp;h=50&amp;c=7" alt="como cuidar un desgarro en la pierna">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-contrato-de-arrendamiento.html" class="be-post-title">
+				 <h6>que es un contrato de arrendamiento </h6>
+                </a>
+                <a href="que-es-un-contrato-de-arrendamiento.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20contrato%20de%20arrendamiento&amp;w=50&amp;h=50&amp;c=7" alt="que es un contrato de arrendamiento">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-infografia-y-sus-caracteristicas-pdf.html" class="be-post-title">
+				 <h6>que es una infografia y sus caracteristicas pdf </h6>
+                </a>
+                <a href="que-es-una-infografia-y-sus-caracteristicas-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20infografia%20y%20sus%20caracteristicas%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="que es una infografia y sus caracteristicas pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="qué-es-el-triple-doble-en-baloncesto.html" class="be-post-title">
+				 <h6>qué es el triple doble en baloncesto </h6>
+                </a>
+                <a href="qué-es-el-triple-doble-en-baloncesto.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=qu%C3%A9%20es%20el%20triple%20doble%20en%20baloncesto&amp;w=50&amp;h=50&amp;c=7" alt="qué es el triple doble en baloncesto">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kalau-umur-23-kelahiran-tahun-berapa.html" class="be-post-title">
+				 <h6>kalau umur 23 kelahiran tahun berapa </h6>
+                </a>
+                <a href="kalau-umur-23-kelahiran-tahun-berapa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kalau%20umur%2023%20kelahiran%20tahun%20berapa&amp;w=50&amp;h=50&amp;c=7" alt="kalau umur 23 kelahiran tahun berapa">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

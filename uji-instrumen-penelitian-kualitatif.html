@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Instrumen Penelitian Kualitatif at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Instrumen Penelitian Kualitatif",
+  "datePublished": "2022-06-14T15:38:54Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20instrumen%20penelitian%20kualitatif",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20instrumen%20penelitian%20kualitatif&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20instrumen%20penelitian%20kualitatif" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20instrumen%20penelitian%20kualitatif" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Instrumen Penelitian Kualitatif at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Instrumen Penelitian Kualitatif</h2>
+    <p><strong>Uji Instrumen Penelitian Kualitatif</strong>. Waktu penelitian dilaksanakan disemester genap tahun pelajaran 2013/2014. Ketika anda akan menjalankan suatu penelitian, tentu saja ada berbagai hal.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20instrumen%20penelitian%20kualitatif" alt="Contoh Kisi Kisi Instrumen Penelitian Kualitatif Dunia Sosial" />
+        <br>
+        <figcaption>Contoh Kisi Kisi Instrumen Penelitian Kualitatif Dunia Sosial from www.duniasosial.id</figcaption>
+    </figure>
+        <p>
+        The value of the validity and reliability of an instrument is influenced by the measured subject, the instrument user. Jenis dari instrumen penelitian dibagi menjadi 6 bentuk. Makalah tentang penjelasan instrumen penelitian, pengertian, menurut para ahli pertanyaan tentang contoh kuesioner, pengertian max weber.
+    </p>
+    <h3>Contoh Kisi Kisi Instrumen Penelitian Kualitatif Dunia Sosial</h3>
+    <p>Validasi data penelitian angket gaya belajar. Mencari panduan wawancara biasanya merupakan pendekatan penelitian kualitatif,. Penelitian kualitatif karena permasalahan yang kompleks,. Data dikumpulkan secara verbal diperkaya dan diperdalam dengan hasil pengamatan, mendengar, persepsi, pemaknaan/penghayatan peneliti.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jurnal Validitas Dan Reliabilitas Penelitian Kualitatif Benua Ilmu" data-src="https://i2.wp.com/i1.rgstatic.net/publication/327743115_MENGHINDAR_DARI_BIAS_Praktik_Triangulasi_dan_Kesahihan_Riset_Kualitatif/links/5ca589d492851c8e64b10194/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: benuailmusekolah.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Validitas adalah derajat yang menyatakan suatu tes mengukur apa yang seharusnya diukur. Secara umum, ada 5 jenis instrumen yang sering digunakan dalam kegiatan penelitian, yaitu: Digunakan pula dalam penelitian kualitatif maupun instrumen penelitian kuantitatif. Jumlah butir pertanyaan harus genap. Instrumen penelitian adalah kuisioner perbedaan istilah dalam pengujian keabsahan data antara metode kualitatif dan kuantitatif aspek metode kualitatif metode kuantitatif 1.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Best Kisi Kisi Instrumen Penelitian Media Pembelajaran" data-src="https://i2.wp.com/image.slidesharecdn.com/proposal-141208092443-conversion-gate02/95/proposal-penelitian-38-638.jpg?cb=1418030728" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: terbarulatihansoal.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Data yang digunakan dalam instumen adalah berupa skor 1 dan 0. Misalnya kita melakukan penelitian dengan judul: Kr 21, dan alfa cronbach. Metodologi penelitian pendidikan dan sosial (kualitatif dan kuantitatif). Data dikumpulkan secara verbal diperkaya dan diperdalam dengan hasil pengamatan, mendengar, persepsi, pemaknaan/penghayatan peneliti.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Instrumen Contoh Lembar Observasi Penelitian Kualitatif File PDF" data-src="https://i2.wp.com/3.bp.blogspot.com/-A_ADYkCB3eg/WJgHsu92ZBI/AAAAAAAAoMw/XppDHkpQ6Rcvg9aevuh5tosknjm1TcHHQCK4B/s1600/IMG-20170206-WA0006-750294.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: filepdf.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Metode penelitian kualitatif adalah penelitian yang digunakan untuk meneliti pada kondisi objek alamiah, dimana peneliti merupakan instrumen kunci (sugiyono, 2005). Data yang digunakan dalam instumen adalah berupa skor 1 dan 0. Validasi data penelitian angket gaya belajar. Prosedur penelitian, suatu pendekatan praktek. Berikut ini penggunaan instrumen penelitian kualitatif dengan langkah penyusunannya:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kisi Kisi Instrumen Hasil Belajar Siswa Cara Mengajarku" data-src="https://i2.wp.com/0.academia-photos.com/attachment_thumbnails/43086803/mini_magick20180819-24613-vc2eep.png?1534706331" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: berbagimengajar.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Adapun koefisien korelasi berkisar diantara 0,510 sampai dengan 0,794. Budiastuti, d., dan bandur, a. Bab v uji validitas dan reliabilitas a. Gunakan instrumen yang sudah resmi/baku. A) instrumen wawancara instrumen wawancara digunakan dalam penelitian kualitatif karena dapat mengungkap informasi lintas waktu, yaitu berkaitan dengan dengan masa lampau, masa sekarang, dan masa yang akan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Instrumen Penelitian {{15}} Contoh O" data-src="https://i2.wp.com/lh6.googleusercontent.com/proxy/KugUyB7YCmmMbrBABbVoi44mZRJGW57Q6UpVhWvrBYtnh-2SBTP8cu4EpoXEzGr4dLhD-8saWBYcpgMhKnBXFi4GaJ37Y942VgyZvw8sVuBUghb3uryxhf6bl4BNbJsXkO2xOacHHCHLD9QiPA4INqUXZTR-ODleTuGJVWt-0C7igtviaPFYOT8aoJWZT0ZEza8ZzSJgrlb4BWG2rBoVnquYjYF_maZpSkLdN9W-=s0-d" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: contoho.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Instrumen ini dapat dipakai untuk penelitian dan penulisan karya tulis ilmiah seperti skripsi, tesis, disertasi, laporan, dan sebagainya. Banyak eksperimen sosial menggunakan buku uji karena mereka dapat merekam data eksperimen yang diperlukan. Kr 21, dan alfa cronbach. Ada beberapa jenis instrumen penelitian yang biasanya digunakan oleh peneliti. Penelitian kualitatif menurut (ulfatin, 2014:188) penelitian kualitatif dalam pengumpulan datanya, instrumen yang dapat.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Instrumen Penelitian Angket Aneka Contoh" data-src="https://i2.wp.com/imgv2-2-f.scribdassets.com/img/document/108820026/original/15a7d8b7a5/1551167886?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sacredvisionastrology.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Suatu kuesioner dikatakan reliabel atau handal jika jawaban seseorang terhadap pernyataan adalah konsisten Misalnya kita melakukan penelitian dengan judul: Adapun koefisien korelasi berkisar diantara 0,510 sampai dengan 0,794. Sedangkan pada penelitian kualitatif di samping instrument tersebut di atas peneliti juga merupakan instrumen. Instrumen penelitian, unit analisis dan pengamatan, sumber data dan teknik pengumpulan data, teknik analisis data, dan uji keabsahan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="√ Instrumen Penelitian Jenis, Kualitatif, Kuantitatif dan Penggunaannya" data-src="https://i1.wp.com/lintar.net/wp-content/uploads/2020/05/Instrumen-penelitian.jpg?w=800&amp;ssl=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lintar.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ada 5 hal yang dilakukan dalam uji kredibilas ini yaitu: Yaitu instrumen yang sudah digunakan dan dikembangkan oleh peneliti sebelumnya. Oleh karena itu penelitian kualitatif sering dikatakan bersifat subyektif dan reflektif. Tepat dalam memberikan data hasil penelitian (reliabel). Dilihat dari bentuknya, instrumen penelitian memiliki beberapa jenis.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Kisi Kisi Instrumen Dunia Sosial" data-src="https://i2.wp.com/4.bp.blogspot.com/-l9eSFwRCIpY/VjYeYiHAlKI/AAAAAAAACB0/Zyw29iD75CI/s1600/ins4.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.duniasosial.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Instrumen penelitian adalah diri sendiri 1. Penelitian uji validitas dan reabilitas penelitian. Ada perbedaan yang mendasar mengenai validitas dan reliabilitas dalam penelitian kuantitatif dan penelitian kualitatif. Waktu penelitian dilaksanakan disemester genap tahun pelajaran 2013/2014. Berikut ini penggunaan instrumen penelitian kualitatif dengan langkah penyusunannya:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Kisi Kisi Instrumen Penelitian Kualitatif Dunia Sosial" data-src="https://i2.wp.com/online.fliphtml5.com/utvqj/fexe/files/large/1.jpg?1580157114" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.duniasosial.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">1 bab i instrumen penelitian dan skala. Instrumen ini dapat dipakai untuk penelitian dan penulisan karya tulis ilmiah seperti skripsi, tesis, disertasi, laporan, dan sebagainya. Kr 21, dan alfa cronbach. Instrumen untuk teknik tersebut pada penelitian kuantitatif adalah: Secara umum, ada 5 jenis instrumen yang sering digunakan dalam kegiatan penelitian, yaitu:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Hasil Analisis Uji Validitas dan Reliabilitas Instrumen Penelitian" data-src="https://i2.wp.com/www.researchgate.net/profile/Musnaini_Musnaini/publication/337147225/figure/download/tbl1/AS:823464852221952@1573340728594/Hasil-Analisis-Uji-Validitas-dan-Reliabilitas-Instrumen-Penelitian.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Waktu penelitian dilaksanakan disemester genap tahun pelajaran 2013/2014. Karenanya, instrumen tersebut sudah teruji, atau dapat dikatakan telah memenuhi persyaratan uji validitas. Adapun koefisien korelasi berkisar diantara 0,510 sampai dengan 0,794. Digunakan untuk penelitian kualitatif maupun penelitian kuantitatif, berikut ini adalah beberapa instrumen penelitian: Banyak eksperimen sosial menggunakan buku uji karena mereka dapat merekam data eksperimen yang diperlukan.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-fazer-anel-de-papel.html" class="be-post-title">
+				 <h6>como fazer anel de papel </h6>
+                </a>
+                <a href="como-fazer-anel-de-papel.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20fazer%20anel%20de%20papel&amp;w=50&amp;h=50&amp;c=7" alt="como fazer anel de papel">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-cbp-en-estados-unidos.html" class="be-post-title">
+				 <h6>que significa cbp en estados unidos </h6>
+                </a>
+                <a href="que-significa-cbp-en-estados-unidos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20cbp%20en%20estados%20unidos&amp;w=50&amp;h=50&amp;c=7" alt="que significa cbp en estados unidos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-lengua-se-habla-en-bosnia.html" class="be-post-title">
+				 <h6>que lengua se habla en bosnia </h6>
+                </a>
+                <a href="que-lengua-se-habla-en-bosnia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20lengua%20se%20habla%20en%20bosnia&amp;w=50&amp;h=50&amp;c=7" alt="que lengua se habla en bosnia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-kader-wet.html" class="be-post-title">
+				 <h6>wat is een kader wet </h6>
+                </a>
+                <a href="wat-is-een-kader-wet.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20kader%20wet&amp;w=50&amp;h=50&amp;c=7" alt="wat is een kader wet">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="hoeveel-verdient-een-douane-declarant.html" class="be-post-title">
+				 <h6>hoeveel verdient een douane declarant </h6>
+                </a>
+                <a href="hoeveel-verdient-een-douane-declarant.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=hoeveel%20verdient%20een%20douane%20declarant&amp;w=50&amp;h=50&amp;c=7" alt="hoeveel verdient een douane declarant">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-betekent-een-windroos.html" class="be-post-title">
+				 <h6>wat betekent een windroos </h6>
+                </a>
+                <a href="wat-betekent-een-windroos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20betekent%20een%20windroos&amp;w=50&amp;h=50&amp;c=7" alt="wat betekent een windroos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-kost-een-hovenier-per-uur.html" class="be-post-title">
+				 <h6>wat kost een hovenier per uur </h6>
+                </a>
+                <a href="wat-kost-een-hovenier-per-uur.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20kost%20een%20hovenier%20per%20uur&amp;w=50&amp;h=50&amp;c=7" alt="wat kost een hovenier per uur">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-riser-pipe-in-plumbing.html" class="be-post-title">
+				 <h6>what is a riser pipe in plumbing </h6>
+                </a>
+                <a href="what-is-a-riser-pipe-in-plumbing.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20riser%20pipe%20in%20plumbing&amp;w=50&amp;h=50&amp;c=7" alt="what is a riser pipe in plumbing">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="punggung-kaki-bagian-luar-adalah.html" class="be-post-title">
+				 <h6>punggung kaki bagian luar adalah </h6>
+                </a>
+                <a href="punggung-kaki-bagian-luar-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=punggung%20kaki%20bagian%20luar%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="punggung kaki bagian luar adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-colágeno-hidrolizado.html" class="be-post-title">
+				 <h6>que es el colágeno hidrolizado </h6>
+                </a>
+                <a href="que-es-el-colágeno-hidrolizado.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20col%C3%A1geno%20hidrolizado&amp;w=50&amp;h=50&amp;c=7" alt="que es el colágeno hidrolizado">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

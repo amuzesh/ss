@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Longest Surname In The World at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Longest Surname In The World",
+  "datePublished": "2022-03-23T23:53:59Z",
+  "image": "https://tse1.mm.bing.net/th?q=longest%20surname%20in%20the%20world",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=longest%20surname%20in%20the%20world&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=longest%20surname%20in%20the%20world" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=longest%20surname%20in%20the%20world" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Longest Surname In The World at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Longest Surname In The World</h2>
+    <p><strong>Longest Surname In The World</strong>. The oldest surname in the world is katz (the initials of the two words — kohen tsedek). There are 23 names like that.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=longest%20surname%20in%20the%20world" alt="Worlds longest name 9GAG" />
+        <br>
+        <figcaption>Worlds longest name 9GAG from 9gag.com</figcaption>
+    </figure>
+        <p>
+        Surprisingly, kushim wasn’t a king or ruler, they were an accountant. Anna bertha cecilia diana emily fanny gertrude hypatia inez jane kate louise maud nora ophelia prudence quince rebecca sarah teresa ulysis venus winifred xenophon yetty zeno pepper. We would like to show you a description here but the site won’t allow us.
+    </p>
+    <h3>Worlds longest name 9GAG</h3>
+    <p>4 august 1914, germany) who passed away on 24 october 1997, in philadelphia, pennsylvania usa, as verified on 1 january 2021. “adolph blaine charles david earl frederick gerald hubert. While there is some debate on who is the oldest named person on record, for the most part, many researchers agree that kushim is the oldest known name in the world, dating back to around 3400 to 3000 bce. The word was derived from the english term, tombere, which means a dancer.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="The Longest Name In The World YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/qbhcxfijGnw/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The oldest surname in the world is katz (the initials of the two words — kohen tsedek). 26 first names (one for every letter of the alphabet. Do you know any birdwhistles? Explore the most popular surnames in the world. Some sources said his last name alone was 666 characters.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch Longest" data-src="https://i2.wp.com/i.ytimg.com/vi/50kbYtA98Q8/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The most common japanese last names, sato and suzuki, are all the way down at numbers 195 and 202. Surprisingly, kushim wasn’t a king or ruler, they were an accountant. One surname agreed on as one of the oldest is ‘o’brien. Top 5 people with the longest names 1.hubert blaine wolfeschlegelsteinhausenbergerdorff full name: Assman, assmann, or aßmann is a german.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="i have the longest name in the world.. YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/myBbwxrGvrM/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">26 first names (one for every letter of the alphabet. Firstly because it has been 10+ years since the survey and we could have gotten new people in the country. Wolfe + 585, senior, claimed the guinness book of world records for the world’s longest name. There could be more of those last names in reality. The surname longest within.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Worlds longest name 9GAG" data-src="https://i2.wp.com/images-cdn.9gag.com/photo/aYg4Nn0_700b.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: 9gag.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">() the longest single english surname is featherstonehaugh (17 letters), variously pronounced featherstonehaw or festonhaw or fessonhay or freestonhugh or feerstonhaw or fanshaw. The opposite seemed to be true for a linotype operator from philadelphia. His last name is more than 600 letters long and, as you can see below, takes a whole paragraph’s worth of space to type out..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="goes crazy over girl whose name has more than 1K letters" data-src="https://i2.wp.com/rollingout.com/wp-content/uploads/2019/01/Screen-Shot-2019-01-08-at-1.56.08-PM.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: rollingout.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The longest personal name is 747 characters long, and belongs to hubert blaine wolfe­schlegel­stein­hausen­berger­dorff sr. The 12th edition of the guinness book of world records declared mr. 4 august 1914, germany) who passed away on 24 october 1997, in philadelphia, pennsylvania usa, as verified on 1 january 2021. Birdwhistle is a name so rare that, currently, less than 10 people.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Swedish man now has world&#039;s longest name, made up of 63 words in all" data-src="https://i2.wp.com/cdn.abcotvs.com/dip/images/151657_070114-ktrk-longest-name-img.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: abc13.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Some sources said his last name alone was 666 characters. Free ( italian) the luxury clothing brand armani has long been associated with haute couture and fashion. In fact, according to the guinness book of world records throughout most of the 1970s and ‘80s, hubert wolfstern is a man of the most names: Wolfe + 585, senior, claimed the guinness.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="I AM/The longest name in the WORLD YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/0DCVpjF8ZpU/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Anna bertha cecilia diana emily fanny gertrude hypatia inez jane kate louise maud nora ophelia prudence quince rebecca sarah teresa ulysis venus winifred xenophon yetty zeno pepper. “adolph blaine charles david earl frederick gerald hubert. In fact, according to the guinness book of world records throughout most of the 1970s and ‘80s, hubert wolfstern is a man of the most.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Longest name in the world. YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/amUc_dPBf_o/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Every katz is a priest, descending in an unbroken line from aaron the brother of. “red wacky league antlez broke the stereo neon tide bring back honesty coalition feedback hand. The world’s longest name was hubert wolfe’s full name, which included a total of 26 first names and a 597 character last name. These names from different european locations date.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Longest name Extended Play" data-src="https://i2.wp.com/extendedplay.thecivilians.org/wp-content/uploads/2015/03/Longest-name.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: extendedplay.thecivilians.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hubert&#039;s name in full, (without senior) is adolph blaine charles. His last name is more than 600 letters long and, as you can see below, takes a whole paragraph’s worth of space to type out. “adolph blaine charles david earl frederick gerald hubert. Globalization has meant that surnames distribute far beyond their country of origin, so that it is possible.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="[EGP Remix] LONGEST NAME IN THE WORLD Hardest Name In Africa by" data-src="https://i2.wp.com/i1.sndcdn.com/artworks-000199989132-7xrlro-t500x500.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: soundcloud.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The 12th edition of the guinness book of world records declared mr. The most common japanese last names, sato and suzuki, are all the way down at numbers 195 and 202. The leading authority of world records guinness world records is responsible for recording unique things such as the world’s longest names. The brand name comes from the last name.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-bueno-comer-para-la-circulacion-de-la-sangre.html" class="be-post-title">
+				 <h6>que es bueno comer para la circulacion de la sangre </h6>
+                </a>
+                <a href="que-es-bueno-comer-para-la-circulacion-de-la-sangre.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20bueno%20comer%20para%20la%20circulacion%20de%20la%20sangre&amp;w=50&amp;h=50&amp;c=7" alt="que es bueno comer para la circulacion de la sangre">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="incinmişsin-ne-demek.html" class="be-post-title">
+				 <h6>incinmişsin ne demek </h6>
+                </a>
+                <a href="incinmişsin-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=incinmi%C5%9Fsin%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="incinmişsin ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-can-i-call-airtel-customer-service.html" class="be-post-title">
+				 <h6>how can i call airtel customer service </h6>
+                </a>
+                <a href="how-can-i-call-airtel-customer-service.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20can%20i%20call%20airtel%20customer%20service&amp;w=50&amp;h=50&amp;c=7" alt="how can i call airtel customer service">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-ganzie.html" class="be-post-title">
+				 <h6>what is a ganzie </h6>
+                </a>
+                <a href="what-is-a-ganzie.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20ganzie&amp;w=50&amp;h=50&amp;c=7" alt="what is a ganzie">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-aplicar-en-amazon.html" class="be-post-title">
+				 <h6>como aplicar en amazon </h6>
+                </a>
+                <a href="como-aplicar-en-amazon.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20aplicar%20en%20amazon&amp;w=50&amp;h=50&amp;c=7" alt="como aplicar en amazon">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cuánto-tiempo-puede-estar-un-ciudadano-americano-en-méxico.html" class="be-post-title">
+				 <h6>cuánto tiempo puede estar un ciudadano americano en méxico </h6>
+                </a>
+                <a href="cuánto-tiempo-puede-estar-un-ciudadano-americano-en-méxico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cu%C3%A1nto%20tiempo%20puede%20estar%20un%20ciudadano%20americano%20en%20m%C3%A9xico&amp;w=50&amp;h=50&amp;c=7" alt="cuánto tiempo puede estar un ciudadano americano en méxico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-sarwatch.html" class="be-post-title">
+				 <h6>what is sarwatch </h6>
+                </a>
+                <a href="what-is-sarwatch.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20sarwatch&amp;w=50&amp;h=50&amp;c=7" alt="what is sarwatch">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-volkswagen-eos.html" class="be-post-title">
+				 <h6>what is volkswagen eos </h6>
+                </a>
+                <a href="what-is-volkswagen-eos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20volkswagen%20eos&amp;w=50&amp;h=50&amp;c=7" alt="what is volkswagen eos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-verdient-een-informateur.html" class="be-post-title">
+				 <h6>wat verdient een informateur </h6>
+                </a>
+                <a href="wat-verdient-een-informateur.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20verdient%20een%20informateur&amp;w=50&amp;h=50&amp;c=7" alt="wat verdient een informateur">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-3speak.html" class="be-post-title">
+				 <h6>what is 3speak </h6>
+                </a>
+                <a href="what-is-3speak.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%203speak&amp;w=50&amp;h=50&amp;c=7" alt="what is 3speak">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

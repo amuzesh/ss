@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        1 Fase Vs 3 Fase at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "1 Fase Vs 3 Fase",
+  "datePublished": "2022-04-15T03:42:55Z",
+  "image": "https://tse1.mm.bing.net/th?q=1%20fase%20vs%203%20fase",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=1%20fase%20vs%203%20fase&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=1%20fase%20vs%203%20fase" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=1%20fase%20vs%203%20fase" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            1 Fase Vs 3 Fase at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">1 Fase Vs 3 Fase</h2>
+    <p><strong>1 Fase Vs 3 Fase</strong>. 1 phase power vs 3 phase power. A single phase motor draws significantly more current than the equivalent 3 phase motor, making 3 phase power a more efficient choice for industrial applications.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=1%20fase%20vs%203%20fase" alt="Difference Between Single Phase and Three Phase Transformer Know It" />
+        <br>
+        <figcaption>Difference Between Single Phase and Three Phase Transformer Know It from laxmiassociates.in</figcaption>
+    </figure>
+        <p>
+        Two types of power exist in the use of rectifiers. Single phase ups contains one conductor while three phase ups supply power through three conductors. The key difference between single phase ups and three phase ups are the following points:
+    </p>
+    <h3>Difference Between Single Phase and Three Phase Transformer Know It</h3>
+    <p>The main difference between the two comes in the power supply and reliability in delivering this energy. A single phase supply is smaller and most domestic houses with gas central heating need single phase and have this as standard. But most of the time you will find that, 3 phase power is preferred over 1 phase power. Set a digital multimeter to the ac volts setting.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Single Phase vs 3 Phase Explained Carter Sullivan" data-src="https://i2.wp.com/www.cartersullivan.co.uk/wp-content/uploads/2019/08/single-phase-three-phase.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.cartersullivan.co.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It is more efficient than single phase and allows for smaller wires and for smaller machines. Men det er vanlig å kalle 2 fas for 1 fas, både hos folk flest. The key difference between single phase ups and three phase ups are the following points: Two types of power exist in the use of rectifiers. Dermed går det ikke.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="SinglePhase Vs. ThreePhase Power Explanation" data-src="https://i2.wp.com/www.electpower.com/wp-content/uploads/2020/09/single-phase-vs-three-phase-Power.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.electpower.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De volgende componenten zijn altijd even breed, bij elke fase aansluiting. Men i trefasesystem har nettverket tre faser, og hvis feilen oppstår i en av fasene, vil de to andre. The size of the machine is less. To be entirely sure if you need. Three phase machines are less costly and more efficient.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Advantages of Three Phase System over Single Phase System Electrical4U" data-src="https://i2.wp.com/www.electrical4u.com/wp-content/uploads/3-Phase-vs-Single-Phase-Power-Systems.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.electrical4u.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The number of the conductor in single phase and three phase system is different. Cables for a single phase installation. 3 phase machineries are more efficient than 1 phase. Electrical energy is generated, transmitted and distributed in the form of three phase power. Homes and small premises are connected with single phase power.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Difference Between Single Phase and Three Phase Transformer Know It" data-src="https://i2.wp.com/laxmiassociates.in/wp-content/uploads/2020/10/single-vs-three-phase-transformer.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: laxmiassociates.in</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">If you require two or more electricity meters then you need a three phase supply. That is why they have generally 3 phase systems. You can also check the voltage. V4.2 bug, wens of iets. 1 phase supply is used by domestic householders.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="singlephasethreephase" data-src="https://i2.wp.com/makoair.com.au/wp-content/uploads/2016/12/single-phase-three-phase.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: makoair.com.au</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Esthetically, 3 phase systems look a bit less refined, because there&#039;s a switch on their base to choose the phase to which they have to connect. 3 phase supply is used by industrial consumers. 1 phase supply is used by domestic householders. De volgende componenten zijn altijd even breed, bij elke fase aansluiting. Turn on your multimeter and set the.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Single Phase vs Three Phase UPS What’s The Difference and How to" data-src="https://i2.wp.com/img-en.fs.com/community/upload/wangEditor/202005/29/_1590741971_xPST1x0gWb.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: community.fs.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">You can also check the voltage. As the name indicates single phase rectifiers use less power than the three phased rectifiers. Three phase electric power is a common. A 3 phase rail supports three times the power of a 1 phase rail (interesting for stores with many spots on long rails). The size of the machine is less.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Difference Between Single Phase And Three Phase 1 Phase Vs 3 Phase" data-src="https://i2.wp.com/i.ytimg.com/vi/6yBr-RDCLNU/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Electrical energy is generated, transmitted and distributed in the form of three phase power. Single phase power is the consistency of the delivery of power. V4.2 bug, wens of iets. A single phase supply is smaller and most domestic houses with gas central heating need single phase and have this as standard. 1 phase supply is used by domestic householders.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Single Phase vs 3Phase Portable Generator" data-src="https://i2.wp.com/burnshomeconstruction.com/wp-content/uploads/2019/10/Single-Phase-vs-3-Phase-Portable-Generator.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: burnshomeconstruction.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Som vi ser nede i høyre hjørne så mangler bilen to spoler i laderen. You can also check the voltage. Men det er vanlig å kalle 2 fas for 1 fas, både hos folk flest. Two types of power exist in the use of rectifiers. A single phase air conditioner uses a single phase power supply, with single phase being.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="3 Phase vs single phase supply BSNLCAFE" data-src="https://i2.wp.com/3.bp.blogspot.com/-nXOR6GHJdxc/V4yuQ97cInI/AAAAAAAAAxo/PJHxA0adlI4dy3vpIiGBttWl7krtMXiaQCLcB/s1600/3phasevssinglephase.bmp" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bsnlttapreparation.blogspot.in</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Set a digital multimeter to the ac volts setting. The difference between the two is the constancy of delivery. That is why they have generally 3 phase systems. It is more efficient than single phase and allows for smaller wires and for smaller machines. That is why they have generally 1 phase systems.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Single Phase vs Three Phase Difference Between Single Phase and Three" data-src="https://i.pinimg.com/originals/7a/e1/d9/7ae1d992f10c6c0b5fe00322e815b034.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A 3 phase rail supports three times the power of a 1 phase rail (interesting for stores with many spots on long rails). 1 phase power vs 3 phase power. But most of the time you will find that, 3 phase power is preferred over 1 phase power. Ze leveren een groter vermogen. A little more in depth as why.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-mavo-in-belgie.html" class="be-post-title">
+				 <h6>wat is mavo in belgie </h6>
+                </a>
+                <a href="wat-is-mavo-in-belgie.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20mavo%20in%20belgie&amp;w=50&amp;h=50&amp;c=7" alt="wat is mavo in belgie">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="me-sale-un-bulto-en-el-ano.html" class="be-post-title">
+				 <h6>me sale un bulto en el ano </h6>
+                </a>
+                <a href="me-sale-un-bulto-en-el-ano.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=me%20sale%20un%20bulto%20en%20el%20ano&amp;w=50&amp;h=50&amp;c=7" alt="me sale un bulto en el ano">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-non-apoptotic-meaning.html" class="be-post-title">
+				 <h6>what does non apoptotic meaning </h6>
+                </a>
+                <a href="what-does-non-apoptotic-meaning.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20non%20apoptotic%20meaning&amp;w=50&amp;h=50&amp;c=7" alt="what does non apoptotic meaning">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-ristretto-mean-at-starbucks.html" class="be-post-title">
+				 <h6>what does ristretto mean at starbucks </h6>
+                </a>
+                <a href="what-does-ristretto-mean-at-starbucks.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20ristretto%20mean%20at%20starbucks&amp;w=50&amp;h=50&amp;c=7" alt="what does ristretto mean at starbucks">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="para-que-sirve-la-esencia-de-canela-esoterismo.html" class="be-post-title">
+				 <h6>para que sirve la esencia de canela esoterismo </h6>
+                </a>
+                <a href="para-que-sirve-la-esencia-de-canela-esoterismo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=para%20que%20sirve%20la%20esencia%20de%20canela%20esoterismo&amp;w=50&amp;h=50&amp;c=7" alt="para que sirve la esencia de canela esoterismo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-desinfecterende-zeep.html" class="be-post-title">
+				 <h6>wat is desinfecterende zeep </h6>
+                </a>
+                <a href="wat-is-desinfecterende-zeep.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20desinfecterende%20zeep&amp;w=50&amp;h=50&amp;c=7" alt="wat is desinfecterende zeep">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-estrofa-ejemplo.html" class="be-post-title">
+				 <h6>que es una estrofa ejemplo </h6>
+                </a>
+                <a href="que-es-una-estrofa-ejemplo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20estrofa%20ejemplo&amp;w=50&amp;h=50&amp;c=7" alt="que es una estrofa ejemplo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-betekent-een-gewestweg.html" class="be-post-title">
+				 <h6>wat betekent een gewestweg </h6>
+                </a>
+                <a href="wat-betekent-een-gewestweg.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20betekent%20een%20gewestweg&amp;w=50&amp;h=50&amp;c=7" alt="wat betekent een gewestweg">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-megadiversidad-para-niños.html" class="be-post-title">
+				 <h6>que es la megadiversidad para niños </h6>
+                </a>
+                <a href="que-es-la-megadiversidad-para-niños.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20megadiversidad%20para%20ni%C3%B1os&amp;w=50&amp;h=50&amp;c=7" alt="que es la megadiversidad para niños">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-repository.html" class="be-post-title">
+				 <h6>wat is een repository </h6>
+                </a>
+                <a href="wat-is-een-repository.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20repository&amp;w=50&amp;h=50&amp;c=7" alt="wat is een repository">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Google Games Charges at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Google Games Charges",
+  "datePublished": "2022-06-08T18:39:08Z",
+  "image": "https://tse1.mm.bing.net/th?q=google%20games%20charges",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=google%20games%20charges&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=google%20games%20charges" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=google%20games%20charges" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Google Games Charges at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Google Games Charges</h2>
+    <p><strong>Google Games Charges</strong>. On my government debit card! You will be billed only for the underlying use of kubernetes clusters associated with your use of the game servers service.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=google%20games%20charges" alt="Unauthorized Play Store charges Google support YouTube" />
+        <br>
+        <figcaption>Unauthorized Play Store charges Google support YouTube from www.youtube.com</figcaption>
+    </figure>
+        <p>
+        Pos purch google glu games inc; All google play purchases appear on your statement under these names: My granddaughter wanted an add on to a game and did not realize it was not free.
+    </p>
+    <h3>Unauthorized Play Store charges Google support YouTube</h3>
+    <p>Charges for google products or services appear on your card statement starting with google. if it’s a google play purchase, go to the play unrecognized transactions troubleshooter. Google *camel games google.com/chca charge has been reported as unauthorized by 57 users, 22 users recognized the charge as safe. Experience the new gameplay in parkour charge. All google play purchases appear on your statement under these names:</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="UNAUTHORIZED CHARGES Google Play Community" data-src="https://i2.wp.com/storage.googleapis.com/support-forums-api/attachment/message-27090089-468832768358631898.PNG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: support.google.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">This is a casual parkour game. Pos pur google glu games inc; Somehow you signed up for it. Check that the charge came from google. Those amounts included charges of $.99, $1.07, $5, $9.99, and more.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Unauthorized Play Store charges Google support YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/gme-wtKPX9o/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Besides enjoying your favorite android games on a pc, you’ll have keyboard and mouse access, seamless sync across devices, and integration with google play points. One victim, identified only as matthew, who uses a local bank in bastrop, texas, said he found 13 transactions on his account. Debit google glu games inc; Visa check card google glu games inc mc;.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Get free Google Play Cards charged with ease 100 real cards" data-src="https://i2.wp.com/1.bp.blogspot.com/-kCrMEwQUnqM/XpcR-FV1PMI/AAAAAAAAGJ0/Bh_1jKWfaso_LUzLvt9HVidgHJa_KNRNgCLcBGAsYHQ/s1600/Free%2BGoogle%2BPlay%2Bcards.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sbayafb.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Checkcard google glu games inc; Pos pur google glu games inc; My granddaughter wanted an add on to a game and did not realize it was not free. Those amounts included charges of $.99, $1.07, $5, $9.99, and more. Preventing these purchases isn’t easy, but it.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Charge Me Fast by cfsuman Charging, Graphing calculator, Google play" data-src="https://i.pinimg.com/originals/b6/bb/42/b6bb4213a204301ec77e91f898060c27.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Parents are often surprised by unauthorized credit card charges. Go to google click the initial circle on top right, manage account tab and then purchased and subscription tap. The charge google *camel games google.com/chca was first reported sep 4, 2013. Usually when you lose internet connection, this dinosaur image will definitely appear on the front page of google chrome. Experience.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Charge Accept Credit Card Payments via Stripe Apps on Google Play" data-src="https://i2.wp.com/play-lh.googleusercontent.com/YumxsYt-r_kWmbHJiOJffpPSkBf4x98sPkppAjCDh55ZnBAIm5OQZbh-AueUQKP2Ew8" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: play.google.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Google play games is a pc application that lets you browse, download, and play select mobile games on a windows desktop or laptop. Check that the charge came from google. Google *camel games google.com/chca charge has been reported as unauthorized by 57 users, 22 users recognized the charge as safe. All google play purchases appear on your statement under these.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Unautorhized Charges From GOOGLE*CHROME http//g.co/helppaygb Google" data-src="https://i2.wp.com/storage.googleapis.com/support-forums-api/attachment/thread-23208020-12300753655273585603.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: support.google.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Those amounts included charges of $.99, $1.07, $5, $9.99, and more. Parents are often surprised by unauthorized credit card charges. Starting in january 2021, there is still no additional charge for the first cluster we manage, but each additional cluster will be billed as. A contactless way to pay, by google. Over the coming weeks, join calico (c)athlete lucky as.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Google Play charge O2 Community" data-src="https://i2.wp.com/community.o2.co.uk/t5/image/serverpage/image-id/21640i58A2D76357059482?v=v2" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: community.o2.co.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Once you give your kid a credit card and you’re the primary account holder, you’ll be responsible for all charges they make, even if you didn’t directly approve each purchase. The credit card charge google *playrix games google.com/chns has been submitted by a user in need of information. Check that the charge came from google. Pos purch google glu games.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Google Google play charges, Review 799491 ComplaintsBoard" data-src="https://i2.wp.com/www.complaintsboard.com/thumb.php?src=image.png&amp;wmax=900&amp;hmax=900&amp;nocrop=true&amp;complaints=799491&amp;comment=1702034" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.complaintsboard.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Go to google click the initial circle on top right, manage account tab and then purchased and subscription tap. Experience the new gameplay in parkour charge. My granddaughter wanted an add on to a game and did not realize it was not free. Google takes a 30% share of your app revenue as well, and also google’s cut on your.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How to charge Google Play purchases to your cell phone bill MobileSyrup" data-src="https://i2.wp.com/cdn.mobilesyrup.com/wp-content/uploads/2016/10/google-play-mobile-billing-2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: mobilesyrup.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Parents are often surprised by unauthorized credit card charges. Those amounts included charges of $.99, $1.07, $5, $9.99, and more. So what the heck is going on, i have 3 charges of, $4.99 and 2 charges of $9.99. Check that the charge came from google. Dozens of other people told abc15 that they also found bogus charges on their accounts.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Win Google Play Cards charged with 15 + playstation4 cards for free" data-src="https://i2.wp.com/1.bp.blogspot.com/-GIplJd4Cu4c/Xr1uFbJlR6I/AAAAAAAAHOI/wqZDmREWtdgGGuXBph7pfuK8J-jwVEOGQCLcBGAsYHQ/w1200-h630-p-k-no-nu/Google%2BPlay%2Bcards%2Bare%2Bcharged%2Bfree.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: 4gaonline.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Visa check card google glu games inc mc; So what the heck is going on, i have 3 charges of, $4.99 and 2 charges of $9.99. Pos purchase google glu games inc; This is a casual parkour game. Those amounts included charges of $.99, $1.07, $5, $9.99, and more.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-hidratos-de-carbono-en-quimica.html" class="be-post-title">
+				 <h6>que es un hidratos de carbono en quimica </h6>
+                </a>
+                <a href="que-es-un-hidratos-de-carbono-en-quimica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20hidratos%20de%20carbono%20en%20quimica&amp;w=50&amp;h=50&amp;c=7" alt="que es un hidratos de carbono en quimica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-riser-room-mean.html" class="be-post-title">
+				 <h6>what does riser room mean </h6>
+                </a>
+                <a href="what-does-riser-room-mean.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20riser%20room%20mean&amp;w=50&amp;h=50&amp;c=7" alt="what does riser room mean">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="o-que-como-porque.html" class="be-post-title">
+				 <h6>o que como porque </h6>
+                </a>
+                <a href="o-que-como-porque.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=o%20que%20como%20porque&amp;w=50&amp;h=50&amp;c=7" alt="o que como porque">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-rentmeesterschap.html" class="be-post-title">
+				 <h6>wat is een rentmeesterschap </h6>
+                </a>
+                <a href="wat-is-een-rentmeesterschap.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20rentmeesterschap&amp;w=50&amp;h=50&amp;c=7" alt="wat is een rentmeesterschap">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-eos-mean-in-cao.html" class="be-post-title">
+				 <h6>what does eos mean in cao </h6>
+                </a>
+                <a href="what-does-eos-mean-in-cao.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20eos%20mean%20in%20cao&amp;w=50&amp;h=50&amp;c=7" alt="what does eos mean in cao">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="uji-kesesuaian-model-adalah.html" class="be-post-title">
+				 <h6>uji kesesuaian model adalah </h6>
+                </a>
+                <a href="uji-kesesuaian-model-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=uji%20kesesuaian%20model%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="uji kesesuaian model adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="ecosistema-terrestre-para-niños-maqueta.html" class="be-post-title">
+				 <h6>ecosistema terrestre para niños maqueta </h6>
+                </a>
+                <a href="ecosistema-terrestre-para-niños-maqueta.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=ecosistema%20terrestre%20para%20ni%C3%B1os%20maqueta&amp;w=50&amp;h=50&amp;c=7" alt="ecosistema terrestre para niños maqueta">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-wapenwedloop.html" class="be-post-title">
+				 <h6>wat is een wapenwedloop </h6>
+                </a>
+                <a href="wat-is-een-wapenwedloop.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20wapenwedloop&amp;w=50&amp;h=50&amp;c=7" alt="wat is een wapenwedloop">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-pieza-musical-wikipedia.html" class="be-post-title">
+				 <h6>que es una pieza musical wikipedia </h6>
+                </a>
+                <a href="que-es-una-pieza-musical-wikipedia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20pieza%20musical%20wikipedia&amp;w=50&amp;h=50&amp;c=7" alt="que es una pieza musical wikipedia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-samenlevingsvorm.html" class="be-post-title">
+				 <h6>wat is een samenlevingsvorm </h6>
+                </a>
+                <a href="wat-is-een-samenlevingsvorm.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20samenlevingsvorm&amp;w=50&amp;h=50&amp;c=7" alt="wat is een samenlevingsvorm">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

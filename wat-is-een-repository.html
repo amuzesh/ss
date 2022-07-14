@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Wat Is Een Repository at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Wat Is Een Repository",
+  "datePublished": "2022-06-23T01:27:21Z",
+  "image": "https://tse1.mm.bing.net/th?q=wat%20is%20een%20repository",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=wat%20is%20een%20repository&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=wat%20is%20een%20repository" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=wat%20is%20een%20repository" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Wat Is Een Repository at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Wat Is Een Repository</h2>
+    <p><strong>Wat Is Een Repository</strong>. The term “data repository” is often used interchangeably with a data warehouse or a data mart. The antique furniture was stored in a repository.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20repository" alt="Een architectuur repository voor big data" />
+        <br>
+        <figcaption>Een architectuur repository voor big data from assistent.interactory.nl</figcaption>
+    </figure>
+        <p>
+        Repositories in git contain a collection of files of various different versions of a project. It provides a convenient way of managing the backup storage. Vooral voor grote organisaties die al lang informatie technologie gebruiken, zoals banken, is het heel belangrijk om een goed georganiseerde repository te hebben.
+    </p>
+    <h3>Een architectuur repository voor big data</h3>
+    <p>[noun] a place, room, or container where something is deposited or stored : It is a more generalized term, favored when the specific type of data storage entity is not known or is irrelevant to the context. Git uses a version control system to track all changes made to the project and save them in the repository. Die voedselverspreider se bewaarplek is twee kilometer weg, die owerhede moet hierdie belangrike varswaterbewaarplek beskerm, hierdie nuwe biblioteek sal gevestig word as &#039;n.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Een architectuur repository voor big data" data-src="https://i2.wp.com/wpp.eaxpertise.nl/diagrams/273.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: assistent.interactory.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">First off, they contain no working or checked out copy of your source files. Git uses a version control system to track all changes made to the project and save them in the repository. Een repository bij versiebeheer om software in te bewaren. Een institutional repository of institutioneel archief is opgezet rond de output van een instelling, een subject repository.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bitbucket vs GitHub Welke repository past het best bij jouw" data-src="https://i2.wp.com/kinsta.com/nl/wp-content/uploads/sites/7/2020/08/github-dashboard-nl.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kinsta.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It is a more generalized term, favored when the specific type of data storage entity is not known or is irrelevant to the context. A.git subfolder with all the git related revision history of your repo. Een bron/opslag van informatie/gegevens of monsters. Een pakketbron, een opslagplek voor software. Vooral voor grote organisaties die al lang informatie technologie gebruiken, zoals banken,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bitbucket Create a new repository" data-src="https://i2.wp.com/modernways.be/myap/it/image/tools/git/Bitbucket Create a new repository.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.modernways.be</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">You can also use disk cleanup to clean up all the files on your computer. A data repository is a data storage entity in which data has been isolated for analytical or reporting purposes. A software repository is typically managed by source control or repository managers. The main benefits of this feature are as follows: Gitlab’s research team started with.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Avetica Centraal Contentbeheer (1) Gebruik een FTP repository" data-src="https://i2.wp.com/avetica.nl/wp-content/uploads/2021/03/FTP-repository-in-Moodle-1024x780.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: avetica.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">2) any data files that are infected may only be cleaned by deleting the file entirely, which means there is a potential for data loss. A working tree, or checked out copies of your project files. Package managers allow automatically installing and updating repositories (sometimes called packages). A digital repository is an online archive for the storage of digital objects;.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wat is SAP Screen Personas? myBrand SAP Digitale Transformatie" data-src="https://i2.wp.com/mybrand.nl/wp-content/uploads/2020/04/SAP-Screen-Personas-3.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: mybrand.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In simple terms, a svn repository (or subversion repository) is a collection of files and directories, bundled together in a special database that also records a complete history of all the changes that have ever been made to these files. &#039;n bewaarplek is &#039;n ruimte wat gebruik word om verskillende dinge te stoor. It is a more generalized term, favored.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Versiebeheersysteem op software repository Wiki (nl) invantive" data-src="https://i2.wp.com/forums.invantive.com/uploads/db9863/original/1X/395fa286ab2835e1ee85831e04b3a24d099ec148.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: forums.invantive.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Back then, research was mostly feedback that came from different sources. A data repository is a data storage entity in which data has been isolated for analytical or reporting purposes. Repositories in git contain a collection of files of various different versions of a project. For example, if backup data grows and the backup. Repository is &#039;n term wat sy.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bitbucket Add remote repository in command prompt" data-src="https://i2.wp.com/www.modernways.be/myap/it/image/tools/git/Bitbucket Add remote repository in command prompt.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.modernways.be</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Een dergelijk online archief heet een repository. The repository, a newspaper in ohio; Het kan naast publicaties ook ruwe data of audiovisueel materiaal bevatten. Een digitale bewaarplaats voor wetenschappelijke informatie of digital academic. A vcs or the version control system is used to create these versions and store them in a specific place.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Versiebeheersysteem op software repository Wiki (nl) invantive" data-src="https://i2.wp.com/forums.invantive.com/uploads/db9863/original/1X/b57e64eb6afc9b23851960d682bb54bff2d70cc6.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: forums.invantive.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In simple terms, a svn repository (or subversion repository) is a collection of files and directories, bundled together in a special database that also records a complete history of all the changes that have ever been made to these files. The purpose of a data repository is to keep a certain population of data isolated so that it can be.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wat is GitHub? Hoe moet je het gebruiken? Prgrmmr" data-src="https://i2.wp.com/prgrmmr.nl/media/posts/25/github-desktop-new-repo-secure.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: prgrmmr.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In simple terms, a svn repository (or subversion repository) is a collection of files and directories, bundled together in a special database that also records a complete history of all the changes that have ever been made to these files. For this, they explicitly defined a command called git clone to clone the repository to work on it. A data.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="RePub, Erasmus University Repository Wat een uitkomst!" data-src="https://i2.wp.com/repub.eur.nl/pub/79479/Cover-wat-een-uitkomst.PNG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: repub.eur.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">These files are imported from the repository into the local server of the user for further updations and modifications in the content of the file. The antique furniture was stored in a repository. Repository (version control), a data structure which stores metadata for a set of files or directory structure software repository, a storage location for software packages; It is.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="polip-nasi-adalah.html" class="be-post-title">
+				 <h6>polip nasi adalah </h6>
+                </a>
+                <a href="polip-nasi-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=polip%20nasi%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="polip nasi adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-monopolie-voc.html" class="be-post-title">
+				 <h6>wat is een monopolie voc </h6>
+                </a>
+                <a href="wat-is-een-monopolie-voc.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20monopolie%20voc&amp;w=50&amp;h=50&amp;c=7" alt="wat is een monopolie voc">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-ingenieria-electronica-industrial.html" class="be-post-title">
+				 <h6>que es la ingenieria electronica industrial </h6>
+                </a>
+                <a href="que-es-la-ingenieria-electronica-industrial.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20ingenieria%20electronica%20industrial&amp;w=50&amp;h=50&amp;c=7" alt="que es la ingenieria electronica industrial">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-estratificación-socioeconómica.html" class="be-post-title">
+				 <h6>que es la estratificación socioeconómica </h6>
+                </a>
+                <a href="que-es-la-estratificación-socioeconómica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20estratificaci%C3%B3n%20socioecon%C3%B3mica&amp;w=50&amp;h=50&amp;c=7" alt="que es la estratificación socioeconómica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-sonata-en-musica.html" class="be-post-title">
+				 <h6>que es sonata en musica </h6>
+                </a>
+                <a href="que-es-sonata-en-musica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20sonata%20en%20musica&amp;w=50&amp;h=50&amp;c=7" alt="que es sonata en musica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-se-clasifica-la-musica-llanera.html" class="be-post-title">
+				 <h6>como se clasifica la musica llanera </h6>
+                </a>
+                <a href="como-se-clasifica-la-musica-llanera.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20se%20clasifica%20la%20musica%20llanera&amp;w=50&amp;h=50&amp;c=7" alt="como se clasifica la musica llanera">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-cártel-de-drogas.html" class="be-post-title">
+				 <h6>que es un cártel de drogas </h6>
+                </a>
+                <a href="que-es-un-cártel-de-drogas.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20c%C3%A1rtel%20de%20drogas&amp;w=50&amp;h=50&amp;c=7" alt="que es un cártel de drogas">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-zetgroep-reinigen.html" class="be-post-title">
+				 <h6>wat is zetgroep reinigen </h6>
+                </a>
+                <a href="wat-is-zetgroep-reinigen.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20zetgroep%20reinigen&amp;w=50&amp;h=50&amp;c=7" alt="wat is zetgroep reinigen">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-eis-for.html" class="be-post-title">
+				 <h6>what is eis for </h6>
+                </a>
+                <a href="what-is-eis-for.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20eis%20for&amp;w=50&amp;h=50&amp;c=7" alt="what is eis for">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="klaplong-wat-is-dat.html" class="be-post-title">
+				 <h6>klaplong wat is dat </h6>
+                </a>
+                <a href="klaplong-wat-is-dat.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=klaplong%20wat%20is%20dat&amp;w=50&amp;h=50&amp;c=7" alt="klaplong wat is dat">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

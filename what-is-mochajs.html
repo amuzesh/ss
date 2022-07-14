@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        What Is Mochajs at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "What Is Mochajs",
+  "datePublished": "2022-03-30T11:03:03Z",
+  "image": "https://tse1.mm.bing.net/th?q=what%20is%20mochajs",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=what%20is%20mochajs&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20mochajs" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20mochajs" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            What Is Mochajs at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">What Is Mochajs</h2>
+    <p><strong>What Is Mochajs</strong>. Mochajs.org&#039;s promoters are those who respond with a score of 9 to 10, and they are likely to create most value, such as buying more, remaining customers for longer, and making more. Note that you have to use the exact name “test” for the directory since mocha looks for a directory with this name to run the tests.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=what%20is%20mochajs" alt="Add output option to JSON reporter · Issue 4131 · mochajs/mocha · GitHub" />
+        <br>
+        <figcaption>Add output option to JSON reporter · Issue 4131 · mochajs/mocha · GitHub from github.com</figcaption>
+    </figure>
+        <p>
+        Must be run before calling mocha#run.changes the runner class to use; Mochajs + selenium webdriver generally speaking, selenium webdriver can be integrated with mochajs since it is used in any plain nodejs script. We can use mocha to run any type of test we like within.
+    </p>
+    <h3>Add output option to JSON reporter · Issue 4131 · mochajs/mocha · GitHub</h3>
+    <p>Mocha coffee bean, a cultivated variety. Just use a proper assertion library, then you get all the information you need Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases. Mocha or shekkacho language, a language of ethiopia.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="15 Best JavaScript Unit testing frameworks Dunebook" data-src="https://i2.wp.com/lh6.googleusercontent.com/O4PTnZsYGgd0LxkZIQ6hNZPpV_DqLKbNRBXDvctu1Nt7rLlFkZBMTyTAq-EuDQDsx4KeD1h3-nrn1hgckiiS6-DDV3CRv8TLNkf5J0dS2se_dLVb4d49svGxDqYZ-2yRfAa4hgqY6Pm3uwEmPw" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.dunebook.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Again, we can go to our command line and run our test with npm test. It is one of the most flexible javascript testing libraries. Mocha is an open source test framework that is used to run your automated tests in node. It comes with a wide range of features that allow you to create descriptive automated tests, robust reports.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Creating MochaJS unit tests using Client Side JavaScript Part 3 YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/K6dINk8jKhU/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Now when you run your test command, you’ll see the following output of ascii coverage data following your test report: However, since mocha doesn’t know when an asynchronous function has finished before a ‘done()’ is called or a promise is returned, we have to be very careful with handling. Let’s take a look at two of the most popular test.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="25 Best Used Angularjs Tools for Web Developers DzineFlip" data-src="https://i2.wp.com/dzineflip.com/wp-content/uploads/2015/08/Mochajs.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dzineflip.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">If our expected parameter equals our actual parameter, the test passes. It is one of the most flexible javascript testing libraries. Spec is default test reporter for mocha. Also it&#039;s useful for asynchronous testing, and provides various king of test reports. We make corrections until everything works.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="15 Useful AngularJS Tools For Developers Hongkiat" data-src="https://i2.wp.com/assets.hongkiat.com/uploads/angularjs-tools/mocha.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.hongkiat.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Note that you have to use the exact name “test” for the directory since mocha looks for a directory with this name to run the tests. Mocha or shekkacho language, a language of ethiopia. It’s been initially designed to support the node.js testing process. An initial spec is written, with tests for the most basic functionality. All we’re doing here.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Very hard to find docs for using mocha programmatically · Issue 3140" data-src="https://i2.wp.com/opengraph.githubassets.com/e8fefa8611bec1cd0d7fda24aafa96244cdcde8fa8b7236e98a1823278f38620/mochajs/mocha/issues/3140" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: github.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Mocha provides developers with a base test framework, with options such as assertion, mocking, and spy libraries. A moth of the genus cyclophora. Must be run before calling mocha#run.changes the runner class to use; With istanbul installed, prepend your existing mocha command with the nyc binary. Also enables lazy file loading if not already done so.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="get the default `process.stdout.write` back after tests are finished" data-src="https://i2.wp.com/opengraph.githubassets.com/1e9ee7f55df03b93173c0fc12b2eb33df2f6911fc0852863176dbec551690b30/mochajs/mocha/issues/1582" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: github.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">An initial implementation is created. When passed false and lazy loading has been enabled via any means (including calling parallelmode(true)), this method will not disable lazy loading. Mocha is a testing library for node.js, created to be a simple, extensible, and fast.it’s used for unit and integration testing, and it’s a great candidate for bdd (behavior driven development). Mocha is.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Add output option to JSON reporter · Issue 4131 · mochajs/mocha · GitHub" data-src="https://i2.wp.com/opengraph.githubassets.com/c9b6fc7ac00e7964ba70303a0b8dfb9ab9b58e63d56b35b7422466c48e947a07/mochajs/mocha/issues/4131" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: github.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It is one of the most flexible javascript testing libraries. Mocha is a javascript test framework for node.js programs, featuring browser support, asynchronous testing, test coverage reports, and use of any assertion library. The documentation describes jasmine as “batteries included,” meaning that it attempts to provide everything a developer needs in a test framework. Note that you have to use.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="afterEach runs before test completes · Issue 3439 · mochajs/mocha · GitHub" data-src="https://i2.wp.com/opengraph.githubassets.com/8c34c5d52a513ab01beaf840a4380b0ca7671aa4dc6737a71dd9be4f8b56554f/mochajs/mocha/issues/3439" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: github.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">If our expected parameter equals our actual parameter, the test passes. Note that you have to use the exact name “test” for the directory since mocha looks for a directory with this name to run the tests. We can use mocha to run any type of test we like within. Now when you run your test command, you’ll see the.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="GitHub mochajs/mocha ☕️ simple, flexible, fun javascript test" data-src="https://i2.wp.com/opengraph.githubassets.com/e6f2dd879fe9b3b16961bd7822b4d7d4a633af3604dce86f865882ecf9d769c9/mochajs/mocha" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: github.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">How likely are you to recommend mochajs.org to a friend or colleague?. Mochajs.org&#039;s net promoter score is based on responses to a single question, typically on a scale from 0 to 10: Must be run before calling mocha#run.changes the runner class to use; Mocha is a javascript test framework for node.js programs, featuring browser support, asynchronous testing, test coverage reports,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="suppress stdout from test cases · Issue 290 · mochajs/mocha · GitHub" data-src="https://i2.wp.com/opengraph.githubassets.com/9e2bd5f0f0cbeee223ea3a02e7017f1f5010cf8fe16b57220bbe09192546117a/mochajs/mocha/issues/290" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: github.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Mocha or shekkacho language, a language of ethiopia. Mocha js is an open source javascript testing framework which runs on nodejs. Mocha is widely used in node.js. Jasmine was created around 2008. Mocha is an open source test framework that is used to run your automated tests in node.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-flauwvallen-in-t-engels.html" class="be-post-title">
+				 <h6>wat is flauwvallen in t engels </h6>
+                </a>
+                <a href="wat-is-flauwvallen-in-t-engels.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20flauwvallen%20in%20t%20engels&amp;w=50&amp;h=50&amp;c=7" alt="wat is flauwvallen in t engels">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="porque-me-da-tanto-sueño-todo-el-tiempo.html" class="be-post-title">
+				 <h6>porque me da tanto sueño todo el tiempo </h6>
+                </a>
+                <a href="porque-me-da-tanto-sueño-todo-el-tiempo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=porque%20me%20da%20tanto%20sue%C3%B1o%20todo%20el%20tiempo&amp;w=50&amp;h=50&amp;c=7" alt="porque me da tanto sueño todo el tiempo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-gezinslid.html" class="be-post-title">
+				 <h6>wat is een gezinslid </h6>
+                </a>
+                <a href="wat-is-een-gezinslid.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20gezinslid&amp;w=50&amp;h=50&amp;c=7" alt="wat is een gezinslid">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-usar-el-pasado-simple-en-ingles.html" class="be-post-title">
+				 <h6>como usar el pasado simple en ingles </h6>
+                </a>
+                <a href="como-usar-el-pasado-simple-en-ingles.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20usar%20el%20pasado%20simple%20en%20ingles&amp;w=50&amp;h=50&amp;c=7" alt="como usar el pasado simple en ingles">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-organizar-un-armario-cocina.html" class="be-post-title">
+				 <h6>como organizar un armario cocina </h6>
+                </a>
+                <a href="como-organizar-un-armario-cocina.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20organizar%20un%20armario%20cocina&amp;w=50&amp;h=50&amp;c=7" alt="como organizar un armario cocina">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-risk-factor-for-drug-use.html" class="be-post-title">
+				 <h6>what is a risk factor for drug use </h6>
+                </a>
+                <a href="what-is-a-risk-factor-for-drug-use.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20risk%20factor%20for%20drug%20use&amp;w=50&amp;h=50&amp;c=7" alt="what is a risk factor for drug use">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-safety-risk-register.html" class="be-post-title">
+				 <h6>what is a safety risk register </h6>
+                </a>
+                <a href="what-is-a-safety-risk-register.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20safety%20risk%20register&amp;w=50&amp;h=50&amp;c=7" alt="what is a safety risk register">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-realismo-magico-autores-y-obras.html" class="be-post-title">
+				 <h6>que es el realismo magico autores y obras </h6>
+                </a>
+                <a href="que-es-el-realismo-magico-autores-y-obras.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20realismo%20magico%20autores%20y%20obras&amp;w=50&amp;h=50&amp;c=7" alt="que es el realismo magico autores y obras">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cannon-definition-medical.html" class="be-post-title">
+				 <h6>cannon definition medical </h6>
+                </a>
+                <a href="cannon-definition-medical.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cannon%20definition%20medical&amp;w=50&amp;h=50&amp;c=7" alt="cannon definition medical">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="hoe-weet-ik-of-iemand-mijn-soulmate-is.html" class="be-post-title">
+				 <h6>hoe weet ik of iemand mijn soulmate is </h6>
+                </a>
+                <a href="hoe-weet-ik-of-iemand-mijn-soulmate-is.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=hoe%20weet%20ik%20of%20iemand%20mijn%20soulmate%20is&amp;w=50&amp;h=50&amp;c=7" alt="hoe weet ik of iemand mijn soulmate is">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

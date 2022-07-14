@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Wat Kost Een Website Laten Bouwen at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Wat Kost Een Website Laten Bouwen",
+  "datePublished": "2022-06-04T00:23:56Z",
+  "image": "https://tse1.mm.bing.net/th?q=wat%20kost%20een%20website%20laten%20bouwen",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=wat%20kost%20een%20website%20laten%20bouwen&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=wat%20kost%20een%20website%20laten%20bouwen" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=wat%20kost%20een%20website%20laten%20bouwen" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Wat Kost Een Website Laten Bouwen at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Wat Kost Een Website Laten Bouwen</h2>
+    <p><strong>Wat Kost Een Website Laten Bouwen</strong>. Website met een eigen design en geavanceerde functionaliteiten. Het verschil zit bijvoorbeeld in of je een simpel ontwerp gebruikt of compleet maatwerk wilt.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=wat%20kost%20een%20website%20laten%20bouwen" alt="Website laten maken Wat moet je juist niet doen? Marketingportaal" />
+        <br>
+        <figcaption>Website laten maken Wat moet je juist niet doen? Marketingportaal from www.marketingportaal.nl</figcaption>
+    </figure>
+        <p>
+        Echter kan je dit in sommige gevallen beter niet zelf doen. Met deze tool bereken je zelf in 8 stappen wat jouw website zou moeten kosten. Besparen op de kosten van een hor plaatsen.
+    </p>
+    <h3>Website laten maken Wat moet je juist niet doen? Marketingportaal</h3>
+    <p>Hoeveel kost het om een website te bouwen? Hosting) teksten voor basis pagina’s (over, home, contact) en 3 landingspagina’s. Dan heb je een nette website. Besparen op de kosten van een hor plaatsen.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wat kost het om een website op maat te laten bouwen? Snelwebcenter" data-src="https://i2.wp.com/snelwebcenter.nl/wp-content/uploads/2020/03/watkosteenmaatwerkwebsite-scaled-1-1024x683.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: snelwebcenter.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De gemiddelde kosten per jaar voor het maken van een website zullen rond de €100 euro liggen. We hebben een globale indicatie van kosten voor je op een rij gezet. Wij hebben de kosten op een rijtje gezet. Het goedkoopste pakket is, op moment van schrijven, 349 euro in het jaar en bevat alle bovenstaande bouwtenen. Website of webshop een.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wat kost een website Professionele websites Reclamebureau 390" data-src="https://i2.wp.com/www.reclamebureau390.nl/wp-content/uploads/2019/03/wat-kost-een-website-bouwen.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.reclamebureau390.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">We hebben een globale indicatie van kosten voor je op een rij gezet. Wij zorgen dat jouw website echt klanten oplevert, zodat jouw onderneming kan groeien. Er zijn 4 soorten websites te. De kosten van een nieuwe website hangen af van verschillende factoren. Website met een eigen design en basis functionaliteiten.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wat kost een professionele website laten maken volgens Riumssen?" data-src="https://i2.wp.com/riumssen.nl/wp-content/uploads/2020/06/Wat-kost-een-website-Riumssen-682x492.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: riumssen.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Als je plannen hebt voor een nieuwe website, is het eerste dat je weten wilt: Wat kost een website laten maken? Veel goedkope webhosting pakketten zijn onveilig, traag of overbelast. Wij zorgen dat jouw website echt klanten oplevert, zodat jouw onderneming kan groeien. Digital.com schat in dat een simpele website, met weinig maatwerk, minder dan 20 pagina’s, een paar stockfoto’s.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wat kost een huis bouwen? 🏠🏗 Slimster" data-src="https://i2.wp.com/cdn.slimster.nl/upload/cache/jumbotron_image/upload/cms/18/Uitbouw erker2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: slimster.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De kosten per jaar voor een website laten maken zullen stukken hoger liggen. Wil je een website met complexe functionaliteiten dan betaal je meer, denk aan bedragen tussen de 10.000 en 30.000 euro. Hoeveel kost het om een website te bouwen? Een hor laten plaatsen kan ervoor zorgen dat de kosten redelijk wat toenemen. Webdesigners gaan voor u aan de.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Website laten maken Wat moet je juist niet doen? Marketingportaal" data-src="https://i2.wp.com/www.marketingportaal.nl/wp-content/uploads/2020/11/website-laten-maken.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.marketingportaal.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Wat kost het laten maken van een professionele website? Exclusief eventuele marketing of seo kosten. De reden hiervoor is dat geen een website hetzelfde is. De belgische website kameleonplus (extensie.be) bijvoorbeeld biedt meerdere pakketten aan voor het maken van een website. In een wereld waar de meest uiteenlopende prijzen worden genoemd voor het bouwen van een website is het lastig.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wat kost een website laten bouwen? Thab Design Thab Design" data-src="https://i2.wp.com/uploads-ssl.webflow.com/61af28438322ecec6479f42c/6203a6074332521a768d6561_Je-oude-website-analyseren.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.thabdesign.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In een wereld waar de meest uiteenlopende prijzen worden genoemd voor het bouwen van een website is het lastig om een goed beeld te. Jij wil een nieuwe website laten maken voor jouw organisatie en bent benieuwd naar de kosten die dit met zich meebrengt. Digital.com schat in dat een simpele website, met weinig maatwerk, minder dan 20 pagina’s, een.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wat kost een Wordpress website laten maken? Een website al v.a. €960,00" data-src="https://i2.wp.com/www.krachtinternetmarketing.nl/wp-content/uploads/2018/09/wordpress-website-laten-maken2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.krachtinternetmarketing.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De reden hiervoor is dat geen een website hetzelfde is. De investering in jouw website wil je uiteraard terugverdienen. Hoeveel kost het om een website te bouwen? Wil je een website met complexe functionaliteiten dan betaal je meer, denk aan bedragen tussen de 10.000 en 30.000 euro. Terwijl website b een template gebruikt van maar.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Schuur Bouwen Op Betonplaat" data-src="https://i.pinimg.com/originals/3e/cc/5b/3ecc5b4b91b69796fdddd5740e75b51c.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: mariettazul.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jij wil een nieuwe website laten maken voor jouw organisatie en bent benieuwd naar de kosten die dit met zich meebrengt. Hoeveel kost het om een website te bouwen? 349 is een eerste indicatie van wat een website (laten) maken kan kosten. Wat kost een website laten maken? Kort samengevat bestaat het proces van het laten maken van een nieuwe.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Eigen Huis Bouwen Wat kost dat? Rowecobouw" data-src="https://i2.wp.com/www.rowecobouw.nl/files/2020/03/opmetselen-binnenwanden-1280x940.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.rowecobouw.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Wat kost een website laten maken? De gemiddelde kosten per jaar voor het maken van een website zullen rond de €100 euro liggen. Een hor laten plaatsen kan ervoor zorgen dat de kosten redelijk wat toenemen. Btw kan je een website laten maken inclusief hosting, professioneel design, slimme integraties, persoonlijke service en meer. Het goedkoopste pakket is, op moment van.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wat kost het laten maken van een website gemiddeld?" data-src="https://i2.wp.com/000.nl/wp-content/uploads/2012/02/Voorbeeld-Premium-Wordpress-website-bouwen1.png?fit=1024%2C259&amp;ssl=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: 000.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De kosten voor het laten maken van een website is afhankelijk van jouw wensen en vragen je daarom contact met ons op te nemen. Digital.com schat in dat een simpele website, met weinig maatwerk, minder dan 20 pagina’s, een paar stockfoto’s en “geen unieke functionaliteit” tussen $ 2.000 en $ 8.000 kost, als die wordt gemaakt door een professional…. Hoeveel.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-pensamiento-matematico-segun-autores.html" class="be-post-title">
+				 <h6>que es el pensamiento matematico segun autores </h6>
+                </a>
+                <a href="que-es-el-pensamiento-matematico-segun-autores.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20pensamiento%20matematico%20segun%20autores&amp;w=50&amp;h=50&amp;c=7" alt="que es el pensamiento matematico segun autores">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-betekent-parabenen-vrij.html" class="be-post-title">
+				 <h6>wat betekent parabenen vrij </h6>
+                </a>
+                <a href="wat-betekent-parabenen-vrij.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20betekent%20parabenen%20vrij&amp;w=50&amp;h=50&amp;c=7" alt="wat betekent parabenen vrij">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="ecosistemas-terrestres-para-niños-primaria.html" class="be-post-title">
+				 <h6>ecosistemas terrestres para niños primaria </h6>
+                </a>
+                <a href="ecosistemas-terrestres-para-niños-primaria.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=ecosistemas%20terrestres%20para%20ni%C3%B1os%20primaria&amp;w=50&amp;h=50&amp;c=7" alt="ecosistemas terrestres para niños primaria">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-como-cuando.html" class="be-post-title">
+				 <h6>que como cuando </h6>
+                </a>
+                <a href="que-como-cuando.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20como%20cuando&amp;w=50&amp;h=50&amp;c=7" alt="que como cuando">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="most-common-philippines-surnames.html" class="be-post-title">
+				 <h6>most common philippines surnames </h6>
+                </a>
+                <a href="most-common-philippines-surnames.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=most%20common%20philippines%20surnames&amp;w=50&amp;h=50&amp;c=7" alt="most common philippines surnames">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-contrato-de-transaccion-en-colombia.html" class="be-post-title">
+				 <h6>que es contrato de transaccion en colombia </h6>
+                </a>
+                <a href="que-es-contrato-de-transaccion-en-colombia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20contrato%20de%20transaccion%20en%20colombia&amp;w=50&amp;h=50&amp;c=7" alt="que es contrato de transaccion en colombia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="instrumento-de-viento-pequeño-y-ovalado.html" class="be-post-title">
+				 <h6>instrumento de viento pequeño y ovalado </h6>
+                </a>
+                <a href="instrumento-de-viento-pequeño-y-ovalado.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=instrumento%20de%20viento%20peque%C3%B1o%20y%20ovalado&amp;w=50&amp;h=50&amp;c=7" alt="instrumento de viento pequeño y ovalado">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-quiere-decir-sos-cubano.html" class="be-post-title">
+				 <h6>que quiere decir sos cubano </h6>
+                </a>
+                <a href="que-quiere-decir-sos-cubano.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20quiere%20decir%20sos%20cubano&amp;w=50&amp;h=50&amp;c=7" alt="que quiere decir sos cubano">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-notario-publico-y-sus-funciones.html" class="be-post-title">
+				 <h6>que es un notario publico y sus funciones </h6>
+                </a>
+                <a href="que-es-un-notario-publico-y-sus-funciones.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20notario%20publico%20y%20sus%20funciones&amp;w=50&amp;h=50&amp;c=7" alt="que es un notario publico y sus funciones">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-si-estornudo-4-veces.html" class="be-post-title">
+				 <h6>que significa si estornudo 4 veces </h6>
+                </a>
+                <a href="que-significa-si-estornudo-4-veces.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20si%20estornudo%204%20veces&amp;w=50&amp;h=50&amp;c=7" alt="que significa si estornudo 4 veces">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

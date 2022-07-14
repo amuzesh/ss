@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Kenormalan Data Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Kenormalan Data Adalah",
+  "datePublished": "2022-04-28T14:16:24Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20kenormalan%20data%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20kenormalan%20data%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20kenormalan%20data%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20kenormalan%20data%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Kenormalan Data Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Kenormalan Data Adalah</h2>
+    <p><strong>Uji Kenormalan Data Adalah</strong>. Memberikan hasil ekpser imen pengujian keempat metode uji kenormalan data di atas. Tidak ada metode yang paling baik atau paling tepat.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20kenormalan%20data%20adalah" alt="tabel uji validitas" />
+        <br>
+        <figcaption>tabel uji validitas from www.scribd.com</figcaption>
+    </figure>
+        <p>
+        Dalam hal ini penggunaan regresi linier mengasumsikan bahwa setiap didsitribusikan secara normal dengan. Tahapan dan prosedur dari uji wilcoxon adalah sebagai berikut. Power dari uji kenormalan data.
+    </p>
+    <h3>tabel uji validitas</h3>
+    <p>Sedangkan untuk data yang tidak mempunyai distribusi normal, maka analisisnya. Data yang memilki distribusi normal merupakan salah satu syarat dilakukannya uji parametrik. Jika tidak, kita berisiko memilih uji statistik yang tidak sesuai. Dimana j = 1, 2,., n.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Validitas dan Reliabilitas Lesson and Review" data-src="https://i2.wp.com/4.bp.blogspot.com/-dBBNfnSkqpg/Vboa37ljjNI/AAAAAAAAALQ/bmfmYdI6VYo/s1600/Reliability%2B3.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: rendhart.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Data tidak berdistribusi multivariat normal. Dalam hal ini penggunaan regresi linier mengasumsikan bahwa setiap didsitribusikan secara normal dengan. Uji kecukupan data uji kenormalan data aplikasi antropometri dalam perancangan fasilitas kerja. Uji ini merupakan pengujian yang paling banyak dilakukan untuk analisis statistik parametrik. Uji kenormalan data ini sering digunakan sebagai uji prasyarat dalam melakukan analisis data pada statistik inferensia, seperti analisis.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT UJI HIPOTESIS PowerPoint Presentation, free download ID5432886" data-src="https://i2.wp.com/image3.slideserve.com/5432886/uji-perbandingan-statistik-parametrik-non-parametrik-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Data yang ditampilkan adalah power dari metode uji, yaitu persentase menolak asumsi kenormalan dari100 kali pengujian. Uji kenormalan data ini sering digunakan sebagai uji prasyarat dalam melakukan analisis data pada statistik inferensia, seperti analisis korelasi, regresi. Terdapat perbedaan data dua sampel berpasangan (median populasi berbeda me1 ≠ me2) • sedangkan pada uji satu arah. Asumsi yang berkaitan dengan residual yang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="dr. Suparyanto, M.Kes UJI STATISTIK" data-src="https://i2.wp.com/3.bp.blogspot.com/-mCYk1KL1N74/TndNkFJQ67I/AAAAAAAAAgA/duP-lk2XpQU/s1600/Uji+Hipotesis+Komparatif+2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dr-suparyanto.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji normalitas adalah uji yang didapatkan dari sebaran data untuk mengetahui apakah data tersebut memiliki berdistribusi normal atau mendekati normal. Tabulasi data uji normalitas dengan minitab. Banyak ahli statistik yang mencoba membuat pendekatan uji kesesuaian untuk menguji kenormalan data, salah satunya adalah kolmogorov smirnov. Dalam hal ini penggunaan regresi linier mengasumsikan bahwa setiap didsitribusikan secara normal dengan. Kotak yang diarsir.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Statistik Parametrik Dan Nonparametrik Bangku Sekolah" data-src="https://i2.wp.com/lh6.googleusercontent.com/proxy/idwcjiJwjNsEkuQFt3Ak6-WXE2OHdMcuOidfCpp3XKKZoVDNHW_v3Rt9DJ74NBzFKvNPdweYtiPYpEEPV5efDQFoWvBWI-TO-jKkfDVOL0ksQVZMnttKKjpoVtAzout1_Dz2IUnvi_69tat26Ith-WHnXm3fVh3wMD9A-N-eu2pyRpUOxK8OkoCIW7Pv7SL1xEt2rQiBSn8bVKZxtKkYxgNh_Dcj6Q=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bangkusekolahsoal.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Telah dikemukakan di atas, bahwa sebelum melakukan pengujian hipotesis secara parameterik maka salah satu persyaratannya adalah bahwa populasi terdistribusi normal. Bila merupakan variabel acak, konsekuensinya adalah yi­ juga variabel acak karena komponen merupakan komponen sistematis sehingga perilaku. K adalah jumlah sub group 0.51 35 8.967 36 1. Terdapat 2 metode analisis dalam. Nilai α yang diperoleh untuk x2 = 9.60.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Uji Normalitas Data Jejak Pelajar" data-src="https://i2.wp.com/lh5.googleusercontent.com/proxy/ZWUOCbdiejo_WxU3tSdPyV_QyBorUaxGZqB841GLjnjPuCa-TZl2NbwhaI2LzqjiCrNMkrskofJGWHVqP6eSLFjOTjO_y1fsVm4mZw6JnQC-0IIxuc0G-ZJKpCkKSms2hI5mBV4voYzwNklpdJabAQ=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: jejakpelajarsekolah.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Memberikan hasil ekpser imen pengujian keempat metode uji kenormalan data di atas. Asumsi yang berkaitan dengan residual yang sudah dijelaskan di atas dapat ditulis sebagai berikut: Uji normalitas adalah uji yang didapatkan dari sebaran data untuk mengetahui apakah data tersebut memiliki berdistribusi normal atau mendekati normal. Uji ini bisa dengan mudah kita lakukan dengan bantuan software statistik seperti spss, eviews,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="tabel uji validitas" data-src="https://i2.wp.com/imgv2-1-f.scribdassets.com/img/document/240539477/original/4c77c62a8b/1584056863?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Nilai absolute &lt; d tabel (0. Sebelum melakukan uji statistik, kita perlu mengetahui distribusi dari data yang dimiliki. Kolmogorov smirnov dalam menguji kenormalan data digunakan prinsip membandingkan probabilitas kumulatif dari data empirik (grafik kumulatif warna biru) dengan distribusi normal (grafik kumulatif warna merah). Data tidak berdistribusi multivariat normal. Karena data yang berdistribusi normal merupakan syarat dilakukannya tes parametrik.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Uji Mann Whitney [PDF Document]" data-src="https://i2.wp.com/static.fdokumen.com/img/1200x630/reader017/html5/js20200114/5e1ccc3f7117a/5e1ccc3fd167f.png?t=1606700048" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: fdokumen.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Data yang ditampilkan adalah power dari metode uji, yaitu persentase menolak asumsi kenormalan dari100 kali pengujian. Karena data yang berdistribusi normal merupakan syarat dilakukannya tes parametrik. Nah, jika belum puas, kita coba nih pakai uji satu sampel kolmogorov smirnov. Menurut johnson dan wichern (2007), untuk memeriksa data apakah merupakan multivariat normal dapat dilihat dari plot antara d. Uji ini bisa.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Interpretasi Output SPSS Uji Anova TwoWay Muhammad Nasir" data-src="https://i2.wp.com/3.bp.blogspot.com/-ORXTwZrHu2g/XBtExgbH01I/AAAAAAAADCo/LQM8rJC_eYcCUAzL_N7rX2expFPn7NGbgCLcBGAs/s1600/putput%2B2.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.muhammad-nasir.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Asumsi klasik yang harus dipenuhi pada model regresi linier sederhana. Langkah uji normalitas dengan minitab. Jika dibandingkan dengan uji kenormalan lain, bisa dibilang shapiro wilk adalah metode yang paling akurat. Uji kenormalan adalah suatu uji yang dilakukan untuk mengetahui apakah suatu data memiliki distribusi normal. Shapiro wilk merupakan salah satu uji untuk mengetahui kenormalan data.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Koleksi Contoh Soal Regresi Dan Korelasi Linier Sederhana + Jawaban" data-src="https://i2.wp.com/www.statistikian.com/wp-content/uploads/blogger/-1Bv3IqLBung/UCVYibLXWzI/AAAAAAAAAbQ/CwcaXaKrPMg/s640/a3.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dikdasmen.my.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Power dari uji kenormalan data. Tidak ada metode yang paling baik atau paling tepat. Memberikan hasil ekpser imen pengujian keempat metode uji kenormalan data di atas. Α = 0.05 hasil analisis: Kolmogorov smirnov dalam menguji kenormalan data digunakan prinsip membandingkan probabilitas kumulatif dari data empirik (grafik kumulatif warna biru) dengan distribusi normal (grafik kumulatif warna merah).</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Memilih Jenis Uji Hipotesis Ince Furqan" data-src="https://i2.wp.com/1.bp.blogspot.com/-xWpp69tkXUA/Vpn22HhhJBI/AAAAAAAABrA/ETXwHNjEVoI/s1600/TABEL%2BUJI%2BHIPOTESIS.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: incefurqan.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Menurut johnson dan wichern (2007), untuk memeriksa data apakah merupakan multivariat normal dapat dilihat dari plot antara d. K = harga indeks tingkat kepercayaan, yaitu: Nah, jika belum puas, kita coba nih pakai uji satu sampel kolmogorov smirnov. Tidak ada metode yang paling baik atau paling tepat. • untuk uji dua arah.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-megadiverso-wikipedia.html" class="be-post-title">
+				 <h6>que es megadiverso wikipedia </h6>
+                </a>
+                <a href="que-es-megadiverso-wikipedia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20megadiverso%20wikipedia&amp;w=50&amp;h=50&amp;c=7" alt="que es megadiverso wikipedia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="south-africa-ombudsman-contact-details.html" class="be-post-title">
+				 <h6>south africa ombudsman contact details </h6>
+                </a>
+                <a href="south-africa-ombudsman-contact-details.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=south%20africa%20ombudsman%20contact%20details&amp;w=50&amp;h=50&amp;c=7" alt="south africa ombudsman contact details">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kep-adresi-ne-demek.html" class="be-post-title">
+				 <h6>kep adresi ne demek </h6>
+                </a>
+                <a href="kep-adresi-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kep%20adresi%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="kep adresi ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="q-es-fonavipo.html" class="be-post-title">
+				 <h6>q es fonavipo </h6>
+                </a>
+                <a href="q-es-fonavipo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=q%20es%20fonavipo&amp;w=50&amp;h=50&amp;c=7" alt="q es fonavipo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-direct-download.html" class="be-post-title">
+				 <h6>what is direct download </h6>
+                </a>
+                <a href="what-is-direct-download.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20direct%20download&amp;w=50&amp;h=50&amp;c=7" alt="what is direct download">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-precipitar-en-quimica.html" class="be-post-title">
+				 <h6>que es precipitar en quimica </h6>
+                </a>
+                <a href="que-es-precipitar-en-quimica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20precipitar%20en%20quimica&amp;w=50&amp;h=50&amp;c=7" alt="que es precipitar en quimica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-de-hoofdgedachte-van-een-boek.html" class="be-post-title">
+				 <h6>wat is de hoofdgedachte van een boek </h6>
+                </a>
+                <a href="wat-is-de-hoofdgedachte-van-een-boek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20de%20hoofdgedachte%20van%20een%20boek&amp;w=50&amp;h=50&amp;c=7" alt="wat is de hoofdgedachte van een boek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-es-un-itin-number.html" class="be-post-title">
+				 <h6>como es un itin number </h6>
+                </a>
+                <a href="como-es-un-itin-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20es%20un%20itin%20number&amp;w=50&amp;h=50&amp;c=7" alt="como es un itin number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-het-netnummer-085.html" class="be-post-title">
+				 <h6>wat is het netnummer 085 </h6>
+                </a>
+                <a href="wat-is-het-netnummer-085.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20het%20netnummer%20085&amp;w=50&amp;h=50&amp;c=7" alt="wat is het netnummer 085">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="q-es-el-mar-peruano.html" class="be-post-title">
+				 <h6>q es el mar peruano </h6>
+                </a>
+                <a href="q-es-el-mar-peruano.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=q%20es%20el%20mar%20peruano&amp;w=50&amp;h=50&amp;c=7" alt="q es el mar peruano">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

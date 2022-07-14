@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Minimum Bruto Uurloon 2021 at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Minimum Bruto Uurloon 2021",
+  "datePublished": "2022-05-02T11:30:24Z",
+  "image": "https://tse1.mm.bing.net/th?q=minimum%20bruto%20uurloon%202021",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=minimum%20bruto%20uurloon%202021&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=minimum%20bruto%20uurloon%202021" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=minimum%20bruto%20uurloon%202021" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Minimum Bruto Uurloon 2021 at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Minimum Bruto Uurloon 2021</h2>
+    <p><strong>Minimum Bruto Uurloon 2021</strong>. De bedragen van het wettelijk minimumloon gelden voor een volledige werkweek. Het minimumloon 2021 voor volwassenen vanaf 21 jaar is 1.684,80 euro per maand.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=minimum%20bruto%20uurloon%202021" alt="Minimumloon 2021 Netto Per Uur Dutch 2021" />
+        <br>
+        <figcaption>Minimumloon 2021 Netto Per Uur Dutch 2021 from dutch2021.vondelflat.nl</figcaption>
+    </figure>
+        <p>
+        Ook het minimum uurloon wordt bepaald op basis van een fulltime job van minimaal 38 uur. Minimumloon 2022 per maand, week en dag. De regeling is op 15 oktober 2020 in de staatscourant gepubliceerd.
+    </p>
+    <h3>Minimumloon 2021 Netto Per Uur Dutch 2021</h3>
+    <p>Het minimumloon geldt voor alle. Dit is een percentage van het minimumloon. Zie minimumloon 2021 voor het overzicht per uur, dag, week en maand. Tot die tijd kunt u onderstaand tabel hanteren.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Minimum Netto Loon 2021 Dutch 2021" data-src="https://i2.wp.com/cdn.businessinsider.nl/wp-content/uploads/2020/12/nettoloon-abn-amro-2021.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dutch2021.vondelflat.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bedragen minimumlonen vanaf 1 juli 2021. Het wettelijk minimumloon geldt voor alle medewerkers van 21 jaar en ouder. Minimumloon 2022 per maand, week en dag. Het wettelijk minimumloon is het loon waarop een medewerker van 21 jaar tenminste recht heeft. € 1.701,00 minimum bruto weekloon:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Minimumloon 2021 Netto Per Uur Dutch 2021" data-src="https://i2.wp.com/www.berekenhet.nl/wp-content/media/pics/berekenen/werk-en-inkomen-minimumloon.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dutch2021.vondelflat.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hoeveel je als student verdient, is afhankelijk van de sector waarin je van plan bent te werken. Het percentage hangt af van de leeftijd van de werknemer. In de tabel per maand, week en dag vindt u de officiële bedragen. Dit minimumloon is geldig in de periode van 1 januari 2021 tot 1 juli 2021. Wat is het (minimum) loon.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Minimumloon 13 Jaar 2021" data-src="https://i2.wp.com/www.rendement.nl/wosmedia/3913/minimumjeugdlonen_2011-2012.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dutch2021.vondelflat.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ook het minimum uurloon wordt bepaald op basis van een fulltime job van minimaal 38 uur. We leggen uit wat het minimum uurloon is en wat het gemiddelde loon van een student per uur is. Het netto minimumloon is afhankelijk van belastingen, toeslagen en andere vergoedingen of inhoudingen. Bedragen minimumlonen vanaf 1 juli 2021. Omrekenen leidt tot een iets hoger.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Minimumloon 2021 Netto Per Uur Dutch 2021" data-src="https://i2.wp.com/d20rip5b8tht43.cloudfront.net/app/uploads/2019/11/minimumloon-per-maand-week-en-dag-bruto-bedragen-per-1-januari-2020.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dutch2021.vondelflat.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tabel minimumloon 2021 per maand, week en dag leeftijd per maand per week per dag minimumloon per maand, week en dag (bruto bedragen per 1 januari 2021) 21 jaar en ouder € 1.684,80 € 388,80 € 77,76 20 jaar € 1.347,85 € 311,05 € 62,21 19 jaar €. Voor werknemers die jonger zijn is er het minimum jeugdloon. Dit is.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wettelijk minimumloon per 1 juli 2020 Service Management CAO" data-src="https://i2.wp.com/servicemanagement.nl/wp-content/uploads/2020/07/Overzicht-minimumloon-schoonmaak-1024x656.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: servicemanagement.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">21 jaar en ouder € 10,91: Per 1 juli 2021 zien de bedragen er als volgt uit: In de tabel per maand, week en dag vindt u de officiële bedragen. Medewerker vanaf 21,5 jaar met 6 maanden werkervaring: Het wettelijke bruto minimum uurloon per 1 januari 2022 wordt dus op 1 januari 2022 bekend gemaakt.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Minimum Netto Loon 2021" data-src="https://i2.wp.com/www.india-briefing.com/news/wp-content/uploads/2020/11/Maharashtra-Minimum-Wage-Shops-Establishment-As-on-July-1-2020.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dutch2021.vondelflat.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">21 jaar en ouder € 10,91: Wettelijk minimumloon 2021 en wettelijk minimumjeugdloon 1 juli 2021. In de tabel per maand, week en dag vindt u de officiële bedragen. Met deze module bereken je het wettelijke minimumloon per uur.het uurloon wordt berekend door het minimumloon per week te. Het bruto wettelijk minimumloon bedraagt per 1 januari 2021 €1.684,80 per maand, €388,80.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Minimumloon 2021 Netto Per Uur Dutch 2021" data-src="https://i2.wp.com/d20rip5b8tht43.cloudfront.net/app/uploads/2020/10/minimumloon-per-maand-week-dag_-januari-2021.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dutch2021.vondelflat.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De bedrijfsvoorheffing is de belasting die elke maand afgehouden wordt van het loon. Het netto minimumloon is afhankelijk van belastingen, toeslagen en andere vergoedingen of inhoudingen. Wanneer een medewerker jonger is dan 21 jaar, verdient deze een bepaald percentage van het minimumloon. Het wettelijk brutominimumloon (wml) voor werknemers van 21 jaar en ouder bij een volledig dienstverband wordt per 1.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Minimumloon 2021 Netto Per Uur Dutch 2021" data-src="https://i2.wp.com/mijn.bovag.nl/getattachment/Actueel/Nieuws/2019/november/Bedragen-minimumlonen-per-1-januari-2020-bekend/Minimum-jeugdloon-per-1-januari-2020.jpg?width=650&amp;height=363" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dutch2021.vondelflat.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De bedrijfsvoorheffing is de belasting die elke maand afgehouden wordt van het loon. Het wettelijk minimumloon is het loon waarop een medewerker van 21 jaar tenminste recht heeft. Wettelijk minimumloon 2021 en wettelijk minimumjeugdloon 1 juli 2021. Voor werknemers die jonger zijn is er het minimum jeugdloon. Men onderscheidt verschillende bekwaamheidscategorieën, die elk overeenstemmen met een bepaald basisbarema.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Aanpassing wettelijk minimumloon per 1 januari 2020 100" data-src="https://i2.wp.com/www.100-werkgeverscoach.nl/wp-content/uploads/2019/12/wettelijk-minimumjeugdloon-2020.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.100-werkgeverscoach.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">16 oktober 2020 door salaris vanmorgen. Tot die tijd kunt u onderstaand tabel hanteren. Bekijk het nieuwe minimumloon voor volwassenen vanaf 21 jaar en het minimum jeugdloon voor 20 jaar, 19 jaar, 18 jaar en jonger. De brutobedragen van het wettelijk minimumloon en minimumjeugdloon stijgen per 1 januari 2021 met 0,29% hieronder vindt u de nieuwe vastgestelde bedragen. Het minimumloon.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Hoe Bereken Je Bruto Uurloon englshtmi" data-src="https://i2.wp.com/lh5.googleusercontent.com/proxy/ZrWXpzZq_0G772pkbME6wI2cuDtvdT1KLWMtA5GZxK0aFO-SPK3BQGtuGD2fTft7hvb412byUavbZtw2fBlp1nz7uteZ9Hjy3-2cP_7VldXtHdYuyNtDGuNe7SWLkasgqlonZkkoLOUzAhugwQ=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: englshtmi.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Wettelijk minimumloon 2021 en wettelijk minimumjeugdloon 1 juli 2021. Dit ziet er als volgt uit: Hoeveel is dan het minimum uurloon?. Met deze module bereken je het bruto minimumloon per uur op basis van het wettelijk minimumloon per week gedeeld door de fulltime uren per week. Bekijk het nieuwe minimumloon voor volwassenen vanaf 21 jaar en het minimum jeugdloon voor.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-ser-en-la-filosofia-brainly.html" class="be-post-title">
+				 <h6>que es el ser en la filosofia brainly </h6>
+                </a>
+                <a href="que-es-el-ser-en-la-filosofia-brainly.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20ser%20en%20la%20filosofia%20brainly&amp;w=50&amp;h=50&amp;c=7" alt="que es el ser en la filosofia brainly">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="manganeso-para-que-sirve.html" class="be-post-title">
+				 <h6>manganeso para que sirve </h6>
+                </a>
+                <a href="manganeso-para-que-sirve.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=manganeso%20para%20que%20sirve&amp;w=50&amp;h=50&amp;c=7" alt="manganeso para que sirve">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-una-palabra-aguda.html" class="be-post-title">
+				 <h6>que es la una palabra aguda </h6>
+                </a>
+                <a href="que-es-la-una-palabra-aguda.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20una%20palabra%20aguda&amp;w=50&amp;h=50&amp;c=7" alt="que es la una palabra aguda">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-pensamiento-pre-filosofía-religioso.html" class="be-post-title">
+				 <h6>que es el pensamiento pre filosofía religioso </h6>
+                </a>
+                <a href="que-es-el-pensamiento-pre-filosofía-religioso.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20pensamiento%20pre%20filosof%C3%ADa%20religioso&amp;w=50&amp;h=50&amp;c=7" alt="que es el pensamiento pre filosofía religioso">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-servidor-virtual.html" class="be-post-title">
+				 <h6>que es un servidor virtual </h6>
+                </a>
+                <a href="que-es-un-servidor-virtual.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20servidor%20virtual&amp;w=50&amp;h=50&amp;c=7" alt="que es un servidor virtual">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="hoeveel-verdient-een-plastisch-chirurg-per-maand.html" class="be-post-title">
+				 <h6>hoeveel verdient een plastisch chirurg per maand </h6>
+                </a>
+                <a href="hoeveel-verdient-een-plastisch-chirurg-per-maand.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=hoeveel%20verdient%20een%20plastisch%20chirurg%20per%20maand&amp;w=50&amp;h=50&amp;c=7" alt="hoeveel verdient een plastisch chirurg per maand">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-gpu-renderen.html" class="be-post-title">
+				 <h6>wat is gpu renderen </h6>
+                </a>
+                <a href="wat-is-gpu-renderen.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20gpu%20renderen&amp;w=50&amp;h=50&amp;c=7" alt="wat is gpu renderen">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-se-llama-el-suegro-de-moises-en-la-biblia.html" class="be-post-title">
+				 <h6>como se llama el suegro de moises en la biblia </h6>
+                </a>
+                <a href="como-se-llama-el-suegro-de-moises-en-la-biblia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20se%20llama%20el%20suegro%20de%20moises%20en%20la%20biblia&amp;w=50&amp;h=50&amp;c=7" alt="como se llama el suegro de moises en la biblia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-cable-riser.html" class="be-post-title">
+				 <h6>what is a cable riser </h6>
+                </a>
+                <a href="what-is-a-cable-riser.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20cable%20riser&amp;w=50&amp;h=50&amp;c=7" alt="what is a cable riser">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-slime-stand-for-in-slang.html" class="be-post-title">
+				 <h6>what does slime stand for in slang </h6>
+                </a>
+                <a href="what-does-slime-stand-for-in-slang.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20slime%20stand%20for%20in%20slang&amp;w=50&amp;h=50&amp;c=7" alt="what does slime stand for in slang">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

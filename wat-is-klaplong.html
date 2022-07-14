@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Wat Is Klaplong at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Wat Is Klaplong",
+  "datePublished": "2022-05-05T13:52:59Z",
+  "image": "https://tse1.mm.bing.net/th?q=wat%20is%20klaplong",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=wat%20is%20klaplong&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=wat%20is%20klaplong" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=wat%20is%20klaplong" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Wat Is Klaplong at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Wat Is Klaplong</h2>
+    <p><strong>Wat Is Klaplong</strong>. Eén tegen de longen aan (longvlies) en één tegen de borstkas aan (borstvlies). Lucht weghalen met een dunne naald.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=wat%20is%20klaplong" alt="Longemfyseem Longemfyseem levensverwachting Buteyko therapie" />
+        <br>
+        <figcaption>Longemfyseem Longemfyseem levensverwachting Buteyko therapie from www.gezondeademhaling.nl</figcaption>
+    </figure>
+        <p>
+        Als u een klaplong heeft, merkt u dat meestal meteen. In de meeste gevallen is er geen duidelijke oorzaak voor het ontstaan van een klaplong. Daardoor neemt het volume van de long af, soms zelfs in die mate dat er enkel een klomp overblijft ter grootte van een vuist.
+    </p>
+    <h3>Longemfyseem Longemfyseem levensverwachting Buteyko therapie</h3>
+    <p>Een klaplong waarbij bloed en lucht de holte in je longen vullen. Er bestaat echter geen verband met persen of zware inspanning; Sommige mensen hebben weinig of geen klachten. Klaplong (pneumothorax) een klaplong is de toestand waarbij er in de borstholte buiten de long ook vrije lucht aanwezig is.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Eerste hulp bij een klaplong · Gezondheid en wetenschap" data-src="https://i2.wp.com/cdn.nimbu.io/s/yba55wt/channelentries/fbpt9gb/files/rsz_robina-weermeijer-pw9afhc92p8-unsplash.jpg?ixpavyq" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.gezondheidenwetenschap.be</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hierdoor wordt het “lek” in de long gedicht. Daar komt dan lucht door naar binnen, waardoor de onderdruk in de pleuraholte gelijk wordt aan de buitendruk. Het is opmerkelijk dat klaplongen vaker voorkomen bij jonge, lange, magere mannen. Deze talkpoeder veroorzaakt een chemische ontstekingsreactie op de vliezen waardoor deze aan elkaar verkleven. Hij heeft een klaplong en een gescheurde lever.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wat is een klaplong? Longfonds.nl" data-src="https://i2.wp.com/cdn.longfonds.nl/styles/header_image/s3/header_video_collection/video_overlay-klaplong.jpg?itok=co6almbe" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.longfonds.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Klaplong (pneumothorax) een klaplong is de toestand waarbij er in de borstholte buiten de long ook vrije lucht aanwezig is. Wat zijn gevolgen van een klaplong? I think it&#039;s a tension pneumothorax. Een klaplong is een lekje in een long. Een klaplong of pneumothorax is de toestand waarbij er in de borstholte, buiten de longen, vrije lucht aanwezig is.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Babygorillaatje heeft klaplong RTL Nieuws" data-src="https://i2.wp.com/www.rtlnieuws.nl/sites/default/files/styles/liggend_hoge_resolutie/public/content/images/2014/03/15/aapje_0.jpg?itok=UC1Q-ygN" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.rtlnieuws.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Lange magere mensen (vooral jonge mannen) en mensen die roken hebben een grotere kans op een klaplong. Ook kan een klaplong zonder echte oorzaak ontstaan. Rokers hebben bijna altijd een ontstekingsreactie in de kleinere luchtwegen, wat kan leiden tot verstopping. Tussen deze vliezen zit een laagje vloeistof. Een klaplong kan overigens ontstaan na bijvoorbeeld een ongeluk als bijvoorbeeld een rib.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Klaplong Klaplongen Ingeklapte long Wat is een klaplong" data-src="https://i2.wp.com/www.gezondeademhaling.nl/wp-content/uploads/2020/12/Klaplong.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.gezondeademhaling.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Een klaplong gaat soms vanzelf over zonder behandeling. Julie, luc &amp; sanggeeta hoe ziet een klaplong eruit? Een pleurodese wordt ook wel het “plakken” van de longvliezen genoemd. Een klaplong ontstaat vaak in rust. Klaplong (pneumothorax) een klaplong is de toestand waarbij er in de borstholte buiten de long ook vrije lucht aanwezig is.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Klaplong wat gebeurt er in je longen? YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/dtrqaS6H92g/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Een pleurodese wordt ook wel het “plakken” van de longvliezen genoemd. Die lucht drukt op de inwendige organen, dus ook op de long. Wat zijn de symptomen van een klaplong? Wat is de oorzaak van een klaplong? Ik denk dat het een klaplong is.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Longemfyseem Longemfyseem levensverwachting Buteyko therapie" data-src="https://i2.wp.com/www.gezondeademhaling.nl/wp-content/uploads/2020/10/Longemfyseem.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.gezondeademhaling.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In deze folder staat wat een klaplong is, hoe hij ontstaat, wat de symptomen zijn en hoe hij wordt behandeld. Lange magere mensen (vooral jonge mannen) en mensen die roken hebben een grotere kans op een klaplong. Een klaplong waarbij de lucht de holte in je longen vult. Een pneumothorax of klaplong is de toestand waarbij er in de borstholte.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Klaplong Thuisarts" data-src="https://i2.wp.com/www.thuisarts.nl/sites/default/files/styles/subject_sidebar/public/pneumothorax.jpg?itok=-qT3MpsH" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.thuisarts.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Het is opmerkelijk dat klaplongen vaker voorkomen bij jonge, lange, magere mannen. Een klaplong gaat soms vanzelf over zonder behandeling. Hierdoor neemt het volume van de long af, in extreme gevallen tot een klomp ter grootte van een vuist die in het midden van de borstholte aan de luchtwegen vast. We noemen dit een spontane klaplong. Bij een klaplong kunt.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wat is een klaplong? Huisarts.nl" data-src="https://i2.wp.com/www.huisarts.nl/wp-content/uploads/2018/08/Klaplong.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.huisarts.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Het is opmerkelijk dat klaplongen vaker voorkomen bij jonge, lange, magere mannen. Bij een pleurodese wordt het longvlies aan het borstvlies geplakt door middel van steriele talkpoeder. Bij een klaplong of pneumothorax is er in de borstholte buiten de long vrije lucht aanwezig. U kunt het ook benauwd krijgen. Die long schrompelt dan ineen en de borstholte vult zich met.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Longkanker Oncozon" data-src="https://i2.wp.com/www.oncozon.nl/wp-content/uploads/2017/08/Longoncologie-Longkanker-Trompert-800x600.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.oncozon.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Een klaplong gaat soms vanzelf over zonder behandeling. Ik denk dat het een klaplong is. We noemen dit een spontane klaplong. Een klaplong waarbij de lucht de holte in je longen vult. Het moment dat de long inklapt, voelt u een scherpe, heftige, stekende pijn in de borst, soms ook tussen de schouderbladen.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Klaplong St. Antonius Ziekenhuis" data-src="https://i2.wp.com/www.antoniusziekenhuis.nl/sites/default/files/lon_45_longen_gescheurd_longblaasje.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.antoniusziekenhuis.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De diagnose klaplong wordt gesteld op basis van het verhaal van de patiënt en een röntgenfoto. Om je longen heen bevinden zich twee longvliezen. Een klaplong is een pijnlijke, soms beangstigende ervaring. Bij een klaplong kunt u opeens heftige, stekende pijn op uw borst hebben. Ik denk dat het een klaplong is.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-are-the-steps-in-building-a-website.html" class="be-post-title">
+				 <h6>what are the steps in building a website </h6>
+                </a>
+                <a href="what-are-the-steps-in-building-a-website.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20are%20the%20steps%20in%20building%20a%20website&amp;w=50&amp;h=50&amp;c=7" alt="what are the steps in building a website">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-endodontologie.html" class="be-post-title">
+				 <h6>wat is endodontologie </h6>
+                </a>
+                <a href="wat-is-endodontologie.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20endodontologie&amp;w=50&amp;h=50&amp;c=7" alt="wat is endodontologie">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-cuello.html" class="be-post-title">
+				 <h6>que es el cuello </h6>
+                </a>
+                <a href="que-es-el-cuello.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20cuello&amp;w=50&amp;h=50&amp;c=7" alt="que es el cuello">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-troyano-generico.html" class="be-post-title">
+				 <h6>que es un troyano generico </h6>
+                </a>
+                <a href="que-es-un-troyano-generico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20troyano%20generico&amp;w=50&amp;h=50&amp;c=7" alt="que es un troyano generico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-derdegraads-nicht.html" class="be-post-title">
+				 <h6>wat is een derdegraads nicht </h6>
+                </a>
+                <a href="wat-is-een-derdegraads-nicht.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20derdegraads%20nicht&amp;w=50&amp;h=50&amp;c=7" alt="wat is een derdegraads nicht">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-promotor-de-cambaceo.html" class="be-post-title">
+				 <h6>que es un promotor de cambaceo </h6>
+                </a>
+                <a href="que-es-un-promotor-de-cambaceo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20promotor%20de%20cambaceo&amp;w=50&amp;h=50&amp;c=7" alt="que es un promotor de cambaceo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-les-mean-in-slang.html" class="be-post-title">
+				 <h6>what does les mean in slang </h6>
+                </a>
+                <a href="what-does-les-mean-in-slang.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20les%20mean%20in%20slang&amp;w=50&amp;h=50&amp;c=7" alt="what does les mean in slang">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-poner-un-deslizador-en-geogebra.html" class="be-post-title">
+				 <h6>como poner un deslizador en geogebra </h6>
+                </a>
+                <a href="como-poner-un-deslizador-en-geogebra.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20poner%20un%20deslizador%20en%20geogebra&amp;w=50&amp;h=50&amp;c=7" alt="como poner un deslizador en geogebra">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-realismo-social.html" class="be-post-title">
+				 <h6>que es el realismo social </h6>
+                </a>
+                <a href="que-es-el-realismo-social.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20realismo%20social&amp;w=50&amp;h=50&amp;c=7" alt="que es el realismo social">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-bardear-en-argentina.html" class="be-post-title">
+				 <h6>que es bardear en argentina </h6>
+                </a>
+                <a href="que-es-bardear-en-argentina.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20bardear%20en%20argentina&amp;w=50&amp;h=50&amp;c=7" alt="que es bardear en argentina">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

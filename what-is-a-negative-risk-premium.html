@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        What Is A Negative Risk Premium at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "What Is A Negative Risk Premium",
+  "datePublished": "2022-04-26T17:23:53Z",
+  "image": "https://tse1.mm.bing.net/th?q=what%20is%20a%20negative%20risk%20premium",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=what%20is%20a%20negative%20risk%20premium&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20a%20negative%20risk%20premium" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20a%20negative%20risk%20premium" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            What Is A Negative Risk Premium at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">What Is A Negative Risk Premium</h2>
+    <p><strong>What Is A Negative Risk Premium</strong>. Investments that have lower risk might also have a lower risk premium. At the center of the capm is the concept of risk (volatility of returns) and reward (rate of returns).</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=what%20is%20a%20negative%20risk%20premium" alt="The impact of negative interest rates on market Professionele Schroders" />
+        <br>
+        <figcaption>The impact of negative interest rates on market Professionele Schroders from www.schroders.com</figcaption>
+    </figure>
+        <p>
+        The default risk premium is an additional amount of interest rates paid by a borrower to lender/ investor as compensation for the higher credit risk of the borrower assuming his failure to pay back the principal amount in the future and can be mathematically described as the difference in between the interest rates payable on bond and. The market rate of return is the rate of return you can expect by investing in the stock market. 10 jan 2020 last revised:
+    </p>
+    <h3>The impact of negative interest rates on market Professionele Schroders</h3>
+    <p>Basically, market risk premium must always be positive for an economy to succeed and survive. Let’s be honest with each other. David pearson may 23, 2011. The concept of a risk premium is used mostly by investors and finance students studying and dealing with the financial markets.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) Has the inflation risk premium fallen? Is it now negative?" data-src="https://i2.wp.com/i1.rgstatic.net/publication/299651826_Has_the_inflation_risk_premium_fallen_Is_it_now_negative/links/57056b6f08aef745f7176bd0/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The insurance risk premium in options reflects investors’ risk aversion and their tendency to overestimate the probability of significant losses. The most interesting point is that while these “spot” risk premia have indeed fallen. This excess return compensates investors for taking on the relatively higher risk. One of his findings was this: The next generation is a blockbuster.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Understanding negative inflation risk premia Systemic Risk and" data-src="https://i2.wp.com/www.sr-sv.com/wp-content/uploads/2017/05/NegInfRP_01-696x857.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.sr-sv.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">When the risk premium is negative. The concept of a risk premium is used mostly by investors and finance students studying and dealing with the financial markets. David dreman’s 1998 book contrarian investment strategies: The default risk premium is an additional amount of interest rates paid by a borrower to lender/ investor as compensation for the higher credit risk of.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Has the Duration Risk Premium Turned Negative? RISK PREMIUM INVEST" data-src="https://i2.wp.com/riskpremium.com/wp-content/uploads/2018/11/BIS-embedded-risk-premia-768x511.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: riskpremium.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Such protection in financial instruments is best represented by option contracts. This excess return compensates investors for taking on the relatively higher risk. What is the definition of risk premium? The insurance risk premium in options reflects investors’ risk aversion and their tendency to overestimate the probability of significant losses. David dreman’s 1998 book contrarian investment strategies:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Solved What Is The Sign Of The Risk Premium Of A Negative..." data-src="https://i2.wp.com/media.cheggcdn.com/study/502/502c2e29-a778-49d5-8cf9-2ccb63ccebd4/image.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.chegg.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">10 jan 2020 last revised: Specifically, it is usually applied to equities and companies as a measure of how much the potential investor needs to be compensated to take on the extra risk when compared to a. Avoiding risk is an important response strategy where the project team tries to remove the threat or. One of his findings was this:.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="The world’s negative term premium Systemic Risk and Systematic Value" data-src="https://i2.wp.com/www.sr-sv.com/wp-content/uploads/2016/08/WORLD_TP02-696x239.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.sr-sv.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">But if a risk premium is computed with a reference to an average risk asset, then a. At the center of the capm is the concept of risk (volatility of returns) and reward (rate of returns). The default risk premium is an additional amount of interest rates paid by a borrower to lender/ investor as compensation for the higher credit.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="The world’s negative term premium Systemic Risk and Systematic Value" data-src="https://i2.wp.com/www.sr-sv.com/wp-content/uploads/2016/08/WORLD_TP04.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.sr-sv.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">10 jan 2020 last revised: First, the “catastrophe” risk attached to an increase in real rates rises the longer an economy is addicted to negative real rates. Basically, market risk premium must always be positive for an economy to succeed and survive. One of his findings was this: What is the definition of risk premium?</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Negative Exponential Utility Weighted Risk Premiums Relative to CRP" data-src="https://i2.wp.com/www.researchgate.net/profile/Richard_Llewelyn/publication/23773579/figure/download/fig2/AS:341117615788036@1458340185409/Negative-Exponential-Utility-Weighted-Risk-Premiums-Relative-to-CRP.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Let’s be honest with each other. Investors always prefer to have the highest possible rate of return. To calculate risk premium, investors must first. A negative risk premium makes sense. When the returns for an investment seen as riskier are lower than for another, safer investment, the risk premium has turned negative.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="The impact of negative interest rates on market Professionele Schroders" data-src="https://i2.wp.com/www.schroders.com/nl/sysglobalassets/digital/insights/graphs/european-equity-risk-premium.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.schroders.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">“negative risks are referred to as threats that negatively influences one or more project objectives such as cost, quality, time, etc. The concept of a risk premium is used mostly by investors and finance students studying and dealing with the financial markets. A negative risk premium makes sense. Specifically, it is usually applied to equities and companies as a measure.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="The world’s negative term premium Systemic Risk and Systematic Value" data-src="https://i2.wp.com/www.sr-sv.com/wp-content/uploads/2016/08/WORLD_TP03.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.sr-sv.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A long term negative market risk premium, in other words bad, poor or negative market expectations indicates failure of an economy. The market risk premium is part of the capital asset pricing model (capm) which analysts and investors use to calculate the acceptable rate of return for an investment. When the returns for an investment seen as riskier are lower.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="The world’s negative term premium Systemic Risk and Systematic Value" data-src="https://i2.wp.com/www.sr-sv.com/wp-content/uploads/2016/08/WORLD_TP01-696x419.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.sr-sv.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The default risk premium is an additional amount of interest rates paid by a borrower to lender/ investor as compensation for the higher credit risk of the borrower assuming his failure to pay back the principal amount in the future and can be mathematically described as the difference in between the interest rates payable on bond and. First, the “catastrophe”.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-corte-civil.html" class="be-post-title">
+				 <h6>que es una corte civil </h6>
+                </a>
+                <a href="que-es-una-corte-civil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20corte%20civil&amp;w=50&amp;h=50&amp;c=7" alt="que es una corte civil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cara-membaca-independent-sample-t-test.html" class="be-post-title">
+				 <h6>cara membaca independent sample t test </h6>
+                </a>
+                <a href="cara-membaca-independent-sample-t-test.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20membaca%20independent%20sample%20t%20test&amp;w=50&amp;h=50&amp;c=7" alt="cara membaca independent sample t test">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-minimalismo-y-ejemplos.html" class="be-post-title">
+				 <h6>que es el minimalismo y ejemplos </h6>
+                </a>
+                <a href="que-es-el-minimalismo-y-ejemplos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20minimalismo%20y%20ejemplos&amp;w=50&amp;h=50&amp;c=7" alt="que es el minimalismo y ejemplos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-vinexwijk.html" class="be-post-title">
+				 <h6>wat is een vinexwijk </h6>
+                </a>
+                <a href="wat-is-een-vinexwijk.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20vinexwijk&amp;w=50&amp;h=50&amp;c=7" alt="wat is een vinexwijk">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cuántos-años-hay-que-estudiar-para-ser-abogado-en-estados-unidos.html" class="be-post-title">
+				 <h6>cuántos años hay que estudiar para ser abogado en estados unidos </h6>
+                </a>
+                <a href="cuántos-años-hay-que-estudiar-para-ser-abogado-en-estados-unidos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cu%C3%A1ntos%20a%C3%B1os%20hay%20que%20estudiar%20para%20ser%20abogado%20en%20estados%20unidos&amp;w=50&amp;h=50&amp;c=7" alt="cuántos años hay que estudiar para ser abogado en estados unidos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-metrica-en-un-poema-ejemplos.html" class="be-post-title">
+				 <h6>que es una metrica en un poema ejemplos </h6>
+                </a>
+                <a href="que-es-una-metrica-en-un-poema-ejemplos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20metrica%20en%20un%20poema%20ejemplos&amp;w=50&amp;h=50&amp;c=7" alt="que es una metrica en un poema ejemplos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-flauwvallen-in-frans.html" class="be-post-title">
+				 <h6>wat is flauwvallen in frans </h6>
+                </a>
+                <a href="wat-is-flauwvallen-in-frans.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20flauwvallen%20in%20frans&amp;w=50&amp;h=50&amp;c=7" alt="wat is flauwvallen in frans">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-doet-een-bewindvoerder-bij-overlijden.html" class="be-post-title">
+				 <h6>wat doet een bewindvoerder bij overlijden </h6>
+                </a>
+                <a href="wat-doet-een-bewindvoerder-bij-overlijden.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20doet%20een%20bewindvoerder%20bij%20overlijden&amp;w=50&amp;h=50&amp;c=7" alt="wat doet een bewindvoerder bij overlijden">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="qué-es-una-interfaz-en-un-sistema-operativo.html" class="be-post-title">
+				 <h6>qué es una interfaz en un sistema operativo </h6>
+                </a>
+                <a href="qué-es-una-interfaz-en-un-sistema-operativo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=qu%C3%A9%20es%20una%20interfaz%20en%20un%20sistema%20operativo&amp;w=50&amp;h=50&amp;c=7" alt="qué es una interfaz en un sistema operativo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-triple-doble-wikipedia.html" class="be-post-title">
+				 <h6>que es un triple doble wikipedia </h6>
+                </a>
+                <a href="que-es-un-triple-doble-wikipedia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20triple%20doble%20wikipedia&amp;w=50&amp;h=50&amp;c=7" alt="que es un triple doble wikipedia">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

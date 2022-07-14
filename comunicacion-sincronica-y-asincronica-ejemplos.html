@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Comunicacion Sincronica Y Asincronica Ejemplos at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Comunicacion Sincronica Y Asincronica Ejemplos",
+  "datePublished": "2022-07-11T22:43:43Z",
+  "image": "https://tse1.mm.bing.net/th?q=comunicacion%20sincronica%20y%20asincronica%20ejemplos",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=comunicacion%20sincronica%20y%20asincronica%20ejemplos&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=comunicacion%20sincronica%20y%20asincronica%20ejemplos" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=comunicacion%20sincronica%20y%20asincronica%20ejemplos" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Comunicacion Sincronica Y Asincronica Ejemplos at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Comunicacion Sincronica Y Asincronica Ejemplos</h2>
+    <p><strong>Comunicacion Sincronica Y Asincronica Ejemplos</strong>. La comunicación asíncrona o asincrónica es aquella que se realiza a través de internet en tiempos distintos, es decir, que hay una brecha de tiempo entre el envío de la información y su recepción. Mi canal perceptual dominante es visual y cinético;</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=comunicacion%20sincronica%20y%20asincronica%20ejemplos" alt="COMUNICACION SINCRONICA Y ASINCRONICA" />
+        <br>
+        <figcaption>COMUNICACION SINCRONICA Y ASINCRONICA from comunicacincronia.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Respuesta certificada por un experto. La falta de reglas de interacción o la falta de consideración puede llevar a la saturación de la. En el caso de la comunicación escrita, la falta de contexto o la imposibilidad de percibir el tono de la otra persona puede dar lugar a malentendidos o confusiones.
+    </p>
+    <h3>COMUNICACION SINCRONICA Y ASINCRONICA</h3>
+    <p>Respuesta certificada por un experto. La comunicación asincrónica es aquella comunicación que se establece entre personas de manera diferida en el tiempo, es decir, cuando no existe coincidencia temporal o no hay intervención de las dos partes. Lo explicaremos a través de las categorías de canales más tradicionales, luego pasaremos a hablar sobre los significados modernos de estos términos y cómo. Por otro lado, como ejemplo de comunicación asincrónica novedosa (es decir, en el ámbito de las nuevas tecnologías y la comunicación virtual),.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Comunicación sincrónica y asincrónica" data-src="https://i2.wp.com/image.slidesharecdn.com/comunicacinsincrnicayasincrnica-131001160905-phpapp02/95/comunicacin-sincrnica-y-asincrnica-10-638.jpg?cb=1380644255" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Es un breve artículo que explica las diferencias entre la comunicación síncrona y asíncrona. Por ejemplo, en una vídeo conferencia, los interlocutores implicados conversan al mismo tiempo, siendo necesario que, tanto emisor, como receptor se encuentren. Así, como ejemplo de comunicación asincrónica tradicional, encontramos la carta por correo ordinario (correo postal). Una persona deja un comentario en un blog. Dos.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Comunicacion sincronica y asincronica.tic" data-src="https://i2.wp.com/image.slidesharecdn.com/comunicacionsincronicayasincronica-131002191301-phpapp01/95/comunicacion-sincronica-y-asincronicatic-1-638.jpg?cb=1380741312" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Existe la dependencia temporal de que los comunicantes coincidan al mismo tiempo. Diferencia entre comunicación sincrónica y asincrónica. El chat de una red social. Encuentra una respuesta a tu pregunta 5 ejemplos de comunicacion sincronica juanjomoya09flaca juanjomoya09flaca 19.10.2016 castellano. En el siguiente enlace podrás conseguir más información:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Comunicación sincrónica y asincrónica" data-src="https://i2.wp.com/image.slidesharecdn.com/comunicacinsincrnicayasincrnica-131001160905-phpapp02/95/comunicacin-sincrnica-y-asincrnica-3-638.jpg?cb=1380644255" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ocurre cuando los usuarios se comunican y coinciden a través de una red telemática. Es aquella comunicación que se establece entre personas de manera diferida en el tiempo,es decir, cuando no existe coincidencias temporal y no hay intervención de las dos partes. Canales de mensajería síncronos y asincrónicos: Lo explicaremos a través de las categorías de canales más tradicionales, luego.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="COMUNICACION SINCRONICA Y ASINCRONICA" data-src="https://i2.wp.com/1.bp.blogspot.com/-PsNKQVnoD6A/UZLm_AnqV_I/AAAAAAAAAAU/TzVI-pcb_Zc/s1600/Educacion+sincronica+y+asincronica+03.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: comunicacincronia.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En términos comerciales, la comunicación asincrónica se refiere a cualquier. Ocurre cuando los usuarios se comunican y coinciden a través de una red telemática. Entre las desventajas asociadas a la comunicación sincrónica. Actualmente es un tipo de la comunicación desarrollada mediante ordenadores o. Este concepto (junto a la comunicación asincrónica), pero, va más.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Comunicacion sincronica y asincronica" data-src="https://i2.wp.com/image.slidesharecdn.com/comunicacionsincronicayasincronica-180226001154/95/comunicacion-sincronica-y-asincronica-9-638.jpg?cb=1519603961" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La comunicación asincrónica es aquella comunicación que se establece entre dos o más personas de manera diferida en el tiempo, es decir, cuando no existe. La dicotomía de este tipo de comunicación puede verse más diluida si contemplamos las redes sociales como facebook o myspace, en los que los límites entre comunicación sincrónica y comunicación asincrónica están dejando activos. Lo.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Comunicacion sincronica y asincronica" data-src="https://i2.wp.com/image.slidesharecdn.com/comunicacionsincronicayasincronica-131104105257-phpapp01/95/slide-2-1024.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Es un concepto que se enmarca dentro de la cmc (computer mediated comunication o comunicación mediante ordenador), que es aquel tipo de comunicación que se da entre personas y que está mediatizada por ordenadores. La dicotomía de este tipo de comunicación puede verse más diluida si contemplamos las redes sociales como facebook o myspace, en los que los límites entre.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="COMUNICACIÓN SINCRONICA Y ASINCRONICA" data-src="https://i2.wp.com/image.slidesharecdn.com/comunicacionasincronicaysincronica-140925111613-phpapp02/95/comunicacin-sincronica-y-asincronica-2-638.jpg?cb=1411643953" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">El empleo del correo electrónico, y otros portales en internet permiten la comunicación por mensajes que el/la usuario/a descubre al revisar su cuenta de usuario/a, son ejemplos de lo. Algunos ejemplos respecto a la comunicación síncrona son: Whatsapp, messenger, videoconferencias, son herramientas orientadas a las comunicaciones síncronas. Existe la dependencia temporal de que los comunicantes coincidan al mismo tiempo. La.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Comunicación sincronica y asincronica" data-src="https://i2.wp.com/image.slidesharecdn.com/comunicacinsincronicayasincronicatic-131003162133-phpapp02/95/comunicacin-sincronica-y-asincronica-1-638.jpg?cb=1380817327" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Son ejemplos de comunicación sincrónica aquellas que se realizan a través de chat, o por plataformas y aplicaciones como whatsapp, zoom, skype, etc. Por ello hoy conoceremos la comunicación sincrónica y asincrónica. La comunicación es asincrónica cuando la comunicación difiere en el tiempo, es decir, una persona deja un mensaje en un instante y es. Estas y otras plataformas y.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Comunicacion sincronica y asincronica" data-src="https://i2.wp.com/image.slidesharecdn.com/comunicacionsincronicayasincronica-131005134656-phpapp01/95/comunicacion-sincronica-y-asincronica-3-638.jpg?cb=1380981014" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Son ejemplos de comunicación sincrónica aquellas que se realizan a través de chat, o por plataformas y aplicaciones como whatsapp, zoom, skype, etc. Mi canal perceptual dominante es visual y cinético; Este concepto (junto a la comunicación asincrónica), pero, va más. El empleo del correo electrónico, y otros portales en internet permiten la comunicación por mensajes que el/la usuario/a descubre.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="comunicación asincronica y sincronica" data-src="https://i2.wp.com/image.slidesharecdn.com/lindaangarita123-140930091527-phpapp02/95/comunicacin-asincronica-y-sincronica-4-638.jpg?cb=1412068693" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Por ejemplo, en una vídeo conferencia, los interlocutores implicados conversan al mismo tiempo, siendo necesario que, tanto emisor, como receptor se encuentren. Este concepto (junto a la comunicación asincrónica), pero, va más. ¿qué es la comunicación sincrónica y asincrónica en la enseñanza virtual? A raíz de la pandemia de coronavirus, en 2020 el uso de aplicaciones y medios. Contrasta con.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-grupo-de-ayuda.html" class="be-post-title">
+				 <h6>que es un grupo de ayuda </h6>
+                </a>
+                <a href="que-es-un-grupo-de-ayuda.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20grupo%20de%20ayuda&amp;w=50&amp;h=50&amp;c=7" alt="que es un grupo de ayuda">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="arşidük-ne-demek.html" class="be-post-title">
+				 <h6>arşidük ne demek </h6>
+                </a>
+                <a href="arşidük-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=ar%C5%9Fid%C3%BCk%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="arşidük ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-hacer-una-poesia-en-ingles.html" class="be-post-title">
+				 <h6>como hacer una poesia en ingles </h6>
+                </a>
+                <a href="como-hacer-una-poesia-en-ingles.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20hacer%20una%20poesia%20en%20ingles&amp;w=50&amp;h=50&amp;c=7" alt="como hacer una poesia en ingles">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="umur-20-tahun-sekolah-kelas-berapa.html" class="be-post-title">
+				 <h6>umur 20 tahun sekolah kelas berapa </h6>
+                </a>
+                <a href="umur-20-tahun-sekolah-kelas-berapa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=umur%2020%20tahun%20sekolah%20kelas%20berapa&amp;w=50&amp;h=50&amp;c=7" alt="umur 20 tahun sekolah kelas berapa">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-synoniem-voor-vooroordeel.html" class="be-post-title">
+				 <h6>wat is een synoniem voor vooroordeel </h6>
+                </a>
+                <a href="wat-is-een-synoniem-voor-vooroordeel.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20synoniem%20voor%20vooroordeel&amp;w=50&amp;h=50&amp;c=7" alt="wat is een synoniem voor vooroordeel">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-paritair-comité.html" class="be-post-title">
+				 <h6>wat is een paritair comité </h6>
+                </a>
+                <a href="wat-is-een-paritair-comité.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20paritair%20comit%C3%A9&amp;w=50&amp;h=50&amp;c=7" alt="wat is een paritair comité">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-software-de-aplicacion.html" class="be-post-title">
+				 <h6>que es un software de aplicacion </h6>
+                </a>
+                <a href="que-es-un-software-de-aplicacion.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20software%20de%20aplicacion&amp;w=50&amp;h=50&amp;c=7" alt="que es un software de aplicacion">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="czy-owulacja-zawsze-boli.html" class="be-post-title">
+				 <h6>czy owulacja zawsze boli </h6>
+                </a>
+                <a href="czy-owulacja-zawsze-boli.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=czy%20owulacja%20zawsze%20boli&amp;w=50&amp;h=50&amp;c=7" alt="czy owulacja zawsze boli">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-descargar-minecraft-launcher.html" class="be-post-title">
+				 <h6>como descargar minecraft launcher </h6>
+                </a>
+                <a href="como-descargar-minecraft-launcher.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20descargar%20minecraft%20launcher&amp;w=50&amp;h=50&amp;c=7" alt="como descargar minecraft launcher">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-an-ansi-apartment.html" class="be-post-title">
+				 <h6>what is an ansi apartment </h6>
+                </a>
+                <a href="what-is-an-ansi-apartment.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20an%20ansi%20apartment&amp;w=50&amp;h=50&amp;c=7" alt="what is an ansi apartment">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

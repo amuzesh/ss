@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Como Contar at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Como Contar",
+  "datePublished": "2022-03-15T23:33:11Z",
+  "image": "https://tse1.mm.bing.net/th?q=como%20contar",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=como%20contar&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=como%20contar" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=como%20contar" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Como Contar at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Como Contar</h2>
+    <p><strong>Como Contar</strong>. Entonces por favor recuadro &gt; módulo para insertar un nuevo módulo y. Contar dinero es una tarea muy sencilla, pero es útil tener una idea clara de la cantidad de cambio que tienes.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=como%20contar" alt="Como contar celdas de colores en Excel 2019 YouTube" />
+        <br>
+        <figcaption>Como contar celdas de colores en Excel 2019 YouTube from www.youtube.com</figcaption>
+    </figure>
+        <p>
+        Si encuentras una h en medio de vocales, haz de. En algunos casos, es posible que necesitemos comprender mejor nuestros datos para realizar un análisis de datos. Como ejemplo, si se le pide a un autor un mínimo o un máximo de palabras permitidas para escribir, el contador de palabras lo ayudará a saber si su artículo cumple con los requisitos.
+    </p>
+    <h3>Como contar celdas de colores en Excel 2019 YouTube</h3>
+    <p>A continuación, selecciona la parte. Estas funciones difieren solo en los tipos de datos de sus valores devueltos. A continuación, selecciona la parte. En primer lugar, prepara el documento abierto en tu pantalla como has hecho en el apartado anterior.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Semana da Criança • Vamos contar?" data-src="https://i2.wp.com/1.bp.blogspot.com/-o78BQ1zvAq8/X3kxkUoDFOI/AAAAAAAAEJE/DTyVbCLUSdUsp3Pyj0eNoWlqAKns7dMegCLcBGAsYHQ/s2048/Slide9.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: diariodatiamari.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Cómo contar celdas con texto en excel. O contador de anos conta a quantidade de anos entre o período de datas inseridas. Se accede a ella utilizando el método worksheetfunction en vba. Podemos aplicar la función contar escribiendo directamente sobre la celda donde. ¿cómo calcular el número de azulejos necesarios?</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ejercicio de Contar colecciones.." data-src="https://i2.wp.com/files.liveworksheets.com/def_files/2020/12/28/12280402401125425/12280402401125425004.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.liveworksheets.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La función contar cuenta la cantidad de celdas que contienen números y cuenta los números dentro de la lista de argumentos. Count funciona como la función count_big. Excel está en todas partes. En algunos casos, es posible que necesitemos comprender mejor nuestros datos para realizar un análisis de datos. Si encuentras una h en medio de vocales, haz de.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Fichas para aprender a contar Mundo Primaria Actividades de" data-src="https://i.pinimg.com/736x/d9/19/cc/d919ccd641eda16d26b8d4239086fd58.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Count funciona como la función count_big. O contador de meses conta a quantidade de meses entre o período de datas inseridas. La función count cuenta las filas que contienen los siguientes tipos de valores: Tal como podemos ver, en la tabla no hay ninguna celda de valor numérico o referencia numérica. Por lo tanto, nuestro objetivo aquí es contar solo.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Aprender a contar Ficha 1 Paperblog" data-src="https://i2.wp.com/m1.paperblog.com/i/191/1917695/aprender-contar-ficha-1-L-RXYmRH.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.paperblog.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Por ejemplo, puede escribir la siguiente fórmula para contar los números en el rango a1:a20: Dividir o valor por 100 e encontrar o resultado que representa 1%. Se accede a ella utilizando el método worksheetfunction en vba. Primero, observe que tenemos algunos valores en la columna “a”, y poco después, tenemos nuestro resultado. Use la función contar para obtener la.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Aprender a Contar 10 Aprendiendo a contar, Aprende a contar, Tabla de" data-src="https://i.pinimg.com/736x/87/97/dd/8797ddea9c85569a9f4cddcb58772b7f.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: br.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Contar el número de celdas en una lista o una columna de la tabla de excel con la función subtotal. Super user mark as new; Sumar en pares te da. Para proyectos comunes como ventanas individuales, marcos de cuadros, etc., el vidrio en sí suele costar entre $5 y $6 por pie cuadrado. Nuestro objetivo aquí es contar cuántas filas.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Fichas para aprender a contar PORTADA Imagenes Educativas" data-src="https://i0.wp.com/www.imageneseducativas.com/wp-content/uploads/2016/03/Fichas-para-aprender-a-contar-PORTADA.jpg?ssl=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.imageneseducativas.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tal como podemos ver, en la tabla no hay ninguna celda de valor numérico o referencia numérica. Los valores true/false no se admiten. Super user mark as new; Vamos continuar usando o exemplo do 20% de 200 para aprender essa técnica. En primer lugar, prepara el documento abierto en tu pantalla como has hecho en el apartado anterior.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Fichas de infantil Números para contar Escuela en la nube" data-src="https://i2.wp.com/www.escuelaenlanube.com/wp-content/uploads/2013/05/numeros_contar37.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.escuelaenlanube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Contar dinero es una tarea muy sencilla, pero es útil tener una idea clara de la cantidad de cambio que tienes. En esta fase, se es capar de empezar a contar a partir de cualquier número, pero sólo en sentido ascendente. Si deseamos contar las celdas que sean iguales a un texto es suficiente con especificarlo entre comillas dobles. Nuestro.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pin on Mis Pines guardados" data-src="https://i.pinimg.com/736x/5f/88/18/5f881836bb3b39023fd432a46a52cf44.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Se accede a ella utilizando el método worksheetfunction en vba. Count_big siempre devuelve un valor de tipo de datos bigint. Esta función devuelve el número de elementos encontrados en un grupo. Primero, observe que aquí tenemos una columna con números en porcentajes y luego tenemos nuestro resultado. En este vídeo explicamos como hacer uso de la función contar.si, algo que.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Como contar celdas de colores en Excel 2019 YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/7gnNtC6L63I/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ser un buen contador de cartas, debe ser como montar en bicicleta, tienes que hacerlo de forma automática. Además, el contador de palabras muestra automáticamente las diez palabras más utilizadas y la densidad de las mismas dentro del artículo que estás escribiendo. Calcular porcentagem utilizando o 1%. Los valores en blanco se omiten. Cuando 2 vocales juntas forman 1 sílaba.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Vamos aprender a contar" data-src="https://i2.wp.com/image.slidesharecdn.com/vamosaprenderacontar-110819183059-phpapp02/95/vamos-aprender-a-contar-1-728.jpg?cb=1313778693" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Es importante mencionar que la condición no es sensible a mayúsculas y minúsculas por lo que la condición “verde” será lo mismo que “verde”. Cómo contar celdas con texto en excel. Calcular porcentagem utilizando o 1%. Es por eso que, si usamos la función contar de forma correcta, el resultado tiene que ser “0”, ya que la función contar solo.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-s-t-r-i-k-e-stand-for.html" class="be-post-title">
+				 <h6>what does s.t.r.i.k.e stand for </h6>
+                </a>
+                <a href="what-does-s-t-r-i-k-e-stand-for.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20s.t.r.i.k.e%20stand%20for&amp;w=50&amp;h=50&amp;c=7" alt="what does s.t.r.i.k.e stand for">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="waar-zijn-muggen-goed-voor.html" class="be-post-title">
+				 <h6>waar zijn muggen goed voor </h6>
+                </a>
+                <a href="waar-zijn-muggen-goed-voor.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=waar%20zijn%20muggen%20goed%20voor&amp;w=50&amp;h=50&amp;c=7" alt="waar zijn muggen goed voor">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-efecto-fotoelectrico-ejemplos.html" class="be-post-title">
+				 <h6>que es el efecto fotoelectrico ejemplos </h6>
+                </a>
+                <a href="que-es-el-efecto-fotoelectrico-ejemplos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20efecto%20fotoelectrico%20ejemplos&amp;w=50&amp;h=50&amp;c=7" alt="que es el efecto fotoelectrico ejemplos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-efecto-ingreso-microeconomia.html" class="be-post-title">
+				 <h6>que es efecto ingreso microeconomia </h6>
+                </a>
+                <a href="que-es-efecto-ingreso-microeconomia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20efecto%20ingreso%20microeconomia&amp;w=50&amp;h=50&amp;c=7" alt="que es efecto ingreso microeconomia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-itbms.html" class="be-post-title">
+				 <h6>que es el itbms </h6>
+                </a>
+                <a href="que-es-el-itbms.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20itbms&amp;w=50&amp;h=50&amp;c=7" alt="que es el itbms">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-ecuador-geografico.html" class="be-post-title">
+				 <h6>que es el ecuador geografico </h6>
+                </a>
+                <a href="que-es-el-ecuador-geografico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20ecuador%20geografico&amp;w=50&amp;h=50&amp;c=7" alt="que es el ecuador geografico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="sync-mods-android.html" class="be-post-title">
+				 <h6>sync mods android </h6>
+                </a>
+                <a href="sync-mods-android.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=sync%20mods%20android&amp;w=50&amp;h=50&amp;c=7" alt="sync mods android">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-kolonialisme.html" class="be-post-title">
+				 <h6>wat is kolonialisme </h6>
+                </a>
+                <a href="wat-is-kolonialisme.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20kolonialisme&amp;w=50&amp;h=50&amp;c=7" alt="wat is kolonialisme">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cocina-fria-nacional-e-internacional.html" class="be-post-title">
+				 <h6>cocina fria nacional e internacional </h6>
+                </a>
+                <a href="cocina-fria-nacional-e-internacional.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cocina%20fria%20nacional%20e%20internacional&amp;w=50&amp;h=50&amp;c=7" alt="cocina fria nacional e internacional">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-akkoordsymbool.html" class="be-post-title">
+				 <h6>wat is een akkoordsymbool </h6>
+                </a>
+                <a href="wat-is-een-akkoordsymbool.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20akkoordsymbool&amp;w=50&amp;h=50&amp;c=7" alt="wat is een akkoordsymbool">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

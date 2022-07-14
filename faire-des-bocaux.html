@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Faire Des Bocaux at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Faire Des Bocaux",
+  "datePublished": "2022-04-02T06:19:36Z",
+  "image": "https://tse1.mm.bing.net/th?q=faire%20des%20bocaux",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=faire%20des%20bocaux&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=faire%20des%20bocaux" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=faire%20des%20bocaux" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Faire Des Bocaux at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Faire Des Bocaux</h2>
+    <p><strong>Faire Des Bocaux</strong>. Plus l’eau contenue dans votre stérilisateur sera chaude ; Préparer les bocaux et les couvercles.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=faire%20des%20bocaux" alt="Faire ses bocaux Les ustensiles de cuisine" />
+        <br>
+        <figcaption>Faire ses bocaux Les ustensiles de cuisine from jk-tv.ru</figcaption>
+    </figure>
+        <p>
+        Avec de l&#039;eau, des colorants et du coton, vous pourrez vous créer une véritable petite galaxie ! Plus l’eau contenue dans votre stérilisateur sera chaude ; Attendre 30 min, le temps de stériliser, et.
+    </p>
+    <h3>Faire ses bocaux Les ustensiles de cuisine</h3>
+    <p>Le dosage est de 4g de sel par litre d’eau que vous verserez jusqu’à 1cm du bord du bocal. Recouvrir de vinaigre, fermer votre bocal de. Avec de l&#039;eau, des colorants et du coton, vous pourrez vous créer une véritable petite galaxie ! Plus l’eau contenue dans votre stérilisateur sera chaude ;</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="1001+ idées innovantes pour que faire avec des pots en verre Pot en" data-src="https://i.pinimg.com/originals/88/ef/6d/88ef6d3199d4118605f0c261e4c0abc5.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Utilisez vos bocaux pour en faire des pots de plantes aromatiques. 3 bien laver vos bocaux avant de les garnir. Et puis ce mode de conservation est vraiment chouette : S’il vous manque de l’eau, rajoutez en un peu avec du sel. Avant de stériliser, on remplit les bocaux!</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Comment faire des conserves maison pour économiser ? Le guide sur la" data-src="https://i2.wp.com/www.sterilisateur-bocaux.fr/wp-content/uploads/2020/06/conserve-maison.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.sterilisateur-bocaux.fr</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Refermez le couvercle et réglez la durée et la température (généralement aux alentours de 80°c) indiquées dans la recette. Vissez le couvercle et retournez le bocal. Une fois les légumes dans vos bocaux, versez la saumure; Nos chefs vous dévoilent tous leurs conseils pour réaliser les meilleures recettes de bocaux. Et moins vos conserves risqueront de se contaminer durant ce.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Comment faire des conserves et bocaux maison astuces et conseils La" data-src="https://i2.wp.com/www.adeline-cuisine.fr/wp-content/uploads/2019/09/Conserves-et-bocaux-maison-tuto-astuces-conseils-sterilisation-recette-700x525.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.adeline-cuisine.fr</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Le dosage est de 4g de sel par litre d’eau que vous verserez jusqu’à 1cm du bord du bocal. Comment faire cuire des légumes en conserve ? Lavez et ébouillantez les bocaux, les couvercles et les joints, puis les laisser sécher sans les essuyer. Rien de neuf sous le soleil, c’est un moyen de conservation vieux comme le monde. Utilisez.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Faire ses bocaux Les ustensiles de cuisine" data-src="https://i2.wp.com/dedaleasso.org/wp-content/uploads/2014/06/20131025_111644.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: jk-tv.ru</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Comment faire des conserves en bocaux sans stérilisateur ? Faites bouillir les légumes frais dans une casserole. Refermez le couvercle et réglez la durée et la température (généralement aux alentours de 80°c) indiquées dans la recette. Lavez vos bocaux avec de l’eau et du savon. Plus le temps que mettront vos conserves à atteindre les 100° sera court ;</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Faire des conserves et mettre ses légumes en bocaux Aliments" data-src="https://i.pinimg.com/originals/89/46/4f/89464f0c4318c51a808d12f37c128168.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Installez une fée à l&#039;intérieur. Faire ses bocaux à la maison, c’est un super moyen de conserver vos aliments, une aubaine si vous avez moyen d’avoir de beaux fruits et légumes de saison à portée de main. Plus l’eau contenue dans votre stérilisateur sera chaude ; 1 cueillir les cornichons, les débarrasser des petites épines à l&#039;aide d&#039;un chiffon. Veillez.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Que faire avec des bocaux en verre vide ? Tom Press" data-src="https://i2.wp.com/cdn3.tompress.be/I-Grande-33442-que-faire-avec-des-bocaux-en-verre-vide.net.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.tompress.be</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Installez une fée à l&#039;intérieur. Recouvrir de vinaigre, fermer votre bocal de. Vissez le couvercle et retournez le bocal. Il ne vous reste plus qu’à placer les joints du bocal et à le fermer. Lavez et ébouillantez les bocaux, les couvercles et les joints, puis les laisser sécher sans les essuyer.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jardinière de légumes en bocaux Chez Vanda" data-src="https://i2.wp.com/img.over-blog-kiwi.com/1/14/89/03/20170813/ob_de9a32_20-jardiniere.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.chezvanda.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Veillez à bien les rincer. Une fois les légumes dans vos bocaux, versez la saumure; Quand on commence à faire des bocaux, on ne peut plus s’arrêter. Quand on récolte des haricots on en a souvent une cargaison, si on veut les congeler on a souvent très vite le congélateur plein ! Mettre à chauffer avec le couvercle.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Fermentation recettes et conseils pour faire ses bocaux de légumes" data-src="https://i.pinimg.com/originals/78/c3/cc/78c3cc436703a2ae4a637c02162ab60a.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.fr</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Un moyen simple de le faire est de mettre de l’eau dans une grande casserole, de la faire bouillir et d’y plonger les bocaux pendant 10 minutes. Remplissez vos bocaux avec vos légumes en évitant de dépasser le seuil de remplissage maximal. Vous pouvez réaliser la pasteurisation avec une grande marmite en y ajoutant. Faire fondre le sucre avec un.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Faire ses conserves et bocaux maison astuces et recettes Recettes" data-src="https://i2.wp.com/recettesdestephanie.com/wp-content/uploads/2020/10/120844371_1964981590306949_1358639905701919084_o-1-1140x855.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: recettesdestephanie.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Comment faire des conserves en bocaux sans stérilisateur ? Mais parfois il y a des grands classiques indémodables comme les bocaux de haricots verts ! Je dois dire que depuis que j’en fais j’ai des nouvelles idées tous les ans ! Rien de neuf sous le soleil, c’est un moyen de conservation vieux comme le monde. Installez une fée à.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Légumes en bocaux recette facile YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/-SIbPMx29Tc/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jeter l&#039;eau rendue par les cornichons et les égoutter. Chutneys, confitures, marmelades, terrines, rillettes, cassoulet, légumes confits. Afin de limiter le refroidissement du contenu de vos bocaux, il est nécessaire que l’eau de votre stérilisateur soit déjà chaude. Nos chefs vous dévoilent tous leurs conseils pour réaliser les meilleures recettes de bocaux. Veillez à bien les rincer.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-dolor-cronico.html" class="be-post-title">
+				 <h6>que es un dolor cronico </h6>
+                </a>
+                <a href="que-es-un-dolor-cronico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20dolor%20cronico&amp;w=50&amp;h=50&amp;c=7" alt="que es un dolor cronico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-ciclo-en-gym.html" class="be-post-title">
+				 <h6>que es un ciclo en gym </h6>
+                </a>
+                <a href="que-es-un-ciclo-en-gym.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20ciclo%20en%20gym&amp;w=50&amp;h=50&amp;c=7" alt="que es un ciclo en gym">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="un-poema-que-tenga-una-estrofa-y-cuatro-versos.html" class="be-post-title">
+				 <h6>un poema que tenga una estrofa y cuatro versos </h6>
+                </a>
+                <a href="un-poema-que-tenga-una-estrofa-y-cuatro-versos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=un%20poema%20que%20tenga%20una%20estrofa%20y%20cuatro%20versos&amp;w=50&amp;h=50&amp;c=7" alt="un poema que tenga una estrofa y cuatro versos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="definicion-de-economia-social.html" class="be-post-title">
+				 <h6>definicion de economia social </h6>
+                </a>
+                <a href="definicion-de-economia-social.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=definicion%20de%20economia%20social&amp;w=50&amp;h=50&amp;c=7" alt="definicion de economia social">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wie-ne-demek-almanca-türkçe.html" class="be-post-title">
+				 <h6>wie ne demek almanca türkçe </h6>
+                </a>
+                <a href="wie-ne-demek-almanca-türkçe.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wie%20ne%20demek%20almanca%20t%C3%BCrk%C3%A7e&amp;w=50&amp;h=50&amp;c=7" alt="wie ne demek almanca türkçe">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="uji-ketengikan-adalah.html" class="be-post-title">
+				 <h6>uji ketengikan adalah </h6>
+                </a>
+                <a href="uji-ketengikan-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=uji%20ketengikan%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="uji ketengikan adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-organizar-cajones-cocina.html" class="be-post-title">
+				 <h6>como organizar cajones cocina </h6>
+                </a>
+                <a href="como-organizar-cajones-cocina.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20organizar%20cajones%20cocina&amp;w=50&amp;h=50&amp;c=7" alt="como organizar cajones cocina">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-quitar-el-dolor-de-las-plantas-de-los-pies.html" class="be-post-title">
+				 <h6>como quitar el dolor de las plantas de los pies </h6>
+                </a>
+                <a href="como-quitar-el-dolor-de-las-plantas-de-los-pies.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20quitar%20el%20dolor%20de%20las%20plantas%20de%20los%20pies&amp;w=50&amp;h=50&amp;c=7" alt="como quitar el dolor de las plantas de los pies">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="is-a-flat-white-stronger-than-a-latte.html" class="be-post-title">
+				 <h6>is a flat white stronger than a latte </h6>
+                </a>
+                <a href="is-a-flat-white-stronger-than-a-latte.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=is%20a%20flat%20white%20stronger%20than%20a%20latte&amp;w=50&amp;h=50&amp;c=7" alt="is a flat white stronger than a latte">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="long-shot-vs-ristretto-which-is-stronger.html" class="be-post-title">
+				 <h6>long shot vs ristretto which is stronger </h6>
+                </a>
+                <a href="long-shot-vs-ristretto-which-is-stronger.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=long%20shot%20vs%20ristretto%20which%20is%20stronger&amp;w=50&amp;h=50&amp;c=7" alt="long shot vs ristretto which is stronger">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

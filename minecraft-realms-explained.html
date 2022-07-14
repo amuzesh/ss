@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Minecraft Realms Explained at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Minecraft Realms Explained",
+  "datePublished": "2022-03-24T18:29:54Z",
+  "image": "https://tse1.mm.bing.net/th?q=minecraft%20realms%20explained",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=minecraft%20realms%20explained&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=minecraft%20realms%20explained" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=minecraft%20realms%20explained" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Minecraft Realms Explained at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Minecraft Realms Explained</h2>
+    <p><strong>Minecraft Realms Explained</strong>. Now that you’ve migrated your mojang account, there are two ways to resubscribe to your realm. Implications of minecraft realms’ shift from aws to azure.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=minecraft%20realms%20explained" alt="Minecraft Skyblock servers explained how to join the best/most popular" />
+        <br>
+        <figcaption>Minecraft Skyblock servers explained how to join the best/most popular from www.dexerto.com</figcaption>
+    </figure>
+        <p>
+        You can change any setup options. This tutorial will help you understand and navigate the menus of minecraft: And the minecraft realms only take that experience to the next level.
+    </p>
+    <h3>Minecraft Skyblock servers explained how to join the best/most popular</h3>
+    <p>Since the game&#039;s release in 2011, the innumerable possibilities within the game have allowed players to explore open worlds; After you make a purchase, your realms subscription starts. This tutorial will help you understand and navigate the menus of minecraft: Click on the “create new”.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How To Play Bedwars In Minecraft Education Edition / Microsoft releases" data-src="https://i2.wp.com/i.ytimg.com/vi/8vH-i6l5E8M/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: edwinwithey.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Realms plus is available for users who play minecraft on the xbox one consoles, mobile devices, windows 10 pc, and nintendo switch. The ending of minecraft explained. Minecraft realms is a service designed to let players play on a server together with minimal setup, and will be available to the public later this year. You can change any setup options..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How Much Does A Minecraft Account Cost" data-src="https://i2.wp.com/lh3.googleusercontent.com/proxy/dUCseH6VnLraHlucQqIADLx31wapyBawD5Z8z3z3V3Hk8Wu7KLqNdIS_thwBN5ZlgkgTJqLuFHRZTZJrCtB4dq8wfMq6wLr0=s0-d" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: payitforwarddesign.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bedrock edition or realms plus subscription. You&#039;ll see an option to enter a world name or to start with a preexisting world or map. 2) ram, realms has tiny ram compared to servers. In minecraft, players can do anything they put their pickaxe to. The main menu and the pause menu.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Minecraft Pocket Edition/Bedrock Creator Tools &amp; Realms Plus" data-src="https://i2.wp.com/www.mcbedrock.com/wp-content/uploads/2019/09/Screenshot_2-9.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.mcbedrock.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The main menu is what you first. Joining a friend’s realm will allow you to play with them in their world. Launch the game and click on the minecraft realms button. There are two major menu groups in minecraft: In life, we&#039;re told we can do anything we put our minds to.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Minecraft Multiplayer Servers With Friends Top minecraft servers" data-src="https://i2.wp.com/i.ytimg.com/vi/PWqz8R5-PHE/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: toppolygonimages.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">How much is a minecraft realm for a year? Visit minecraft marketplace in your minecraft game client to purchase a realms: 4) auto whitelist.you should be aloud to choose if you want the whitelist or not. This will take you to the. A rule name is the name of the specific gamerule that you would like to set, or view.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Minecraft PS4 Realms Explained Everything You Need To Know! YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/lGvpXAf3Z6s/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Minecraft realms plus free trial explained. In life, we&#039;re told we can do anything we put our minds to. 2) ram, realms has tiny ram compared to servers. Build their own cities, roller coasters, and computers. Do you play minecraft on one of these devices?</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Minecraft Realm token explanation. YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/9IYEyC42MK0/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">I&#039;d really appreciate likes and you sharing this video with your friends!a lot of people on yesterdays video were wondering about minecraft realms, so i deci. However, minecraft realms are not for everybody. How much is a minecraft realm for a year? There are two major menu groups in minecraft: It is a great decision to migrate realms from aws.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Minecraft Xbox &amp; Playstation REALMS EXPLAINED! ONLINE PERSONAL" data-src="https://i2.wp.com/i.ytimg.com/vi/DF6Mo8RdFIU/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bedrock edition or realms plus subscription. Realms plus is available for users who play minecraft on the xbox one consoles, mobile devices, windows 10 pc, and nintendo switch. Read the article to learn how to join a friend’s realm. This will take you to the. If you need help navigating the menu, simply find the appropriate section of this tutorial.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Minecraft Skyblock servers explained how to join the best/most popular" data-src="https://i2.wp.com/www.dexerto.com/wp-content/uploads/2021/05/17/MC-Skyblock-servers-e1621285937573.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.dexerto.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">This tutorial will help you understand and navigate the menus of minecraft: For a low monthly cost, players have access to hours of content. Build their own cities, roller coasters, and computers. If you’re into the scene of modding, you should stick. The last bit is the one where the majority of focus should be.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Hardtoexplain custom world preset Minecraft Map" data-src="https://i2.wp.com/static.planetminecraft.com/files/resource_media/screenshot/1729/2017-07-19-15-09-07-1500467015_lrg.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.planetminecraft.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bedrock edition or realms plus subscription. Build their own cities, roller coasters, and computers. In minecraft, players can do anything they put their pickaxe to. Read the article to learn how to join a friend’s realm. 5) a minecraft server can do the exact same thing as realms if you put a whitelist on.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Hidden 2x3 Door Explained Wiring Minecraft Project" data-src="https://i2.wp.com/static.planetminecraft.com/files/resource_media/screenshot/1201/2012-01-07_042520_1165441.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.planetminecraft.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sunrise is a revival of a massive multiplayer online role playing video game known as free realms that was created by the daybreak game company. Realms is more expensive than other hosting servers. If you’re into the scene of modding, you should stick. Minecraft realms plus free trial explained. Ios, android and windows 10 versions of minecraft all play nicely.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-realista-en-la-literatura.html" class="be-post-title">
+				 <h6>que es realista en la literatura </h6>
+                </a>
+                <a href="que-es-realista-en-la-literatura.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20realista%20en%20la%20literatura&amp;w=50&amp;h=50&amp;c=7" alt="que es realista en la literatura">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-definition-of-apoptosis.html" class="be-post-title">
+				 <h6>what is the definition of apoptosis </h6>
+                </a>
+                <a href="what-is-the-definition-of-apoptosis.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20definition%20of%20apoptosis&amp;w=50&amp;h=50&amp;c=7" alt="what is the definition of apoptosis">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-de-oorzaak-van-een-flauwte.html" class="be-post-title">
+				 <h6>wat is de oorzaak van een flauwte </h6>
+                </a>
+                <a href="wat-is-de-oorzaak-van-een-flauwte.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20de%20oorzaak%20van%20een%20flauwte&amp;w=50&amp;h=50&amp;c=7" alt="wat is de oorzaak van een flauwte">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="donde-grabaron-diario-de-vampiros.html" class="be-post-title">
+				 <h6>donde grabaron diario de vampiros </h6>
+                </a>
+                <a href="donde-grabaron-diario-de-vampiros.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=donde%20grabaron%20diario%20de%20vampiros&amp;w=50&amp;h=50&amp;c=7" alt="donde grabaron diario de vampiros">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="who-is-the-ombudsman-for-telecommunications.html" class="be-post-title">
+				 <h6>who is the ombudsman for telecommunications </h6>
+                </a>
+                <a href="who-is-the-ombudsman-for-telecommunications.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=who%20is%20the%20ombudsman%20for%20telecommunications&amp;w=50&amp;h=50&amp;c=7" alt="who is the ombudsman for telecommunications">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-estrofa-de-un-poema.html" class="be-post-title">
+				 <h6>que es estrofa de un poema </h6>
+                </a>
+                <a href="que-es-estrofa-de-un-poema.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20estrofa%20de%20un%20poema&amp;w=50&amp;h=50&amp;c=7" alt="que es estrofa de un poema">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="uji-t-dependen-dan-independen-adalah.html" class="be-post-title">
+				 <h6>uji t dependen dan independen adalah </h6>
+                </a>
+                <a href="uji-t-dependen-dan-independen-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=uji%20t%20dependen%20dan%20independen%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="uji t dependen dan independen adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="uji-toksisitas-akut-kombinasi.html" class="be-post-title">
+				 <h6>uji toksisitas akut kombinasi </h6>
+                </a>
+                <a href="uji-toksisitas-akut-kombinasi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=uji%20toksisitas%20akut%20kombinasi&amp;w=50&amp;h=50&amp;c=7" alt="uji toksisitas akut kombinasi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="hoeveel-kost-een-spaanse-waterhond.html" class="be-post-title">
+				 <h6>hoeveel kost een spaanse waterhond </h6>
+                </a>
+                <a href="hoeveel-kost-een-spaanse-waterhond.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=hoeveel%20kost%20een%20spaanse%20waterhond&amp;w=50&amp;h=50&amp;c=7" alt="hoeveel kost een spaanse waterhond">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-hacer-mechas-en-el-pelo-con-papel-aluminio.html" class="be-post-title">
+				 <h6>como hacer mechas en el pelo con papel aluminio </h6>
+                </a>
+                <a href="como-hacer-mechas-en-el-pelo-con-papel-aluminio.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20hacer%20mechas%20en%20el%20pelo%20con%20papel%20aluminio&amp;w=50&amp;h=50&amp;c=7" alt="como hacer mechas en el pelo con papel aluminio">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        What Is A Risk Matrix In Project Management at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "What Is A Risk Matrix In Project Management",
+  "datePublished": "2022-06-24T13:30:05Z",
+  "image": "https://tse1.mm.bing.net/th?q=what%20is%20a%20risk%20matrix%20in%20project%20management",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=what%20is%20a%20risk%20matrix%20in%20project%20management&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20a%20risk%20matrix%20in%20project%20management" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20a%20risk%20matrix%20in%20project%20management" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            What Is A Risk Matrix In Project Management at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">What Is A Risk Matrix In Project Management</h2>
+    <p><strong>What Is A Risk Matrix In Project Management</strong>. The risk management matrix rates project risks using a predefined methodology. Here’s a video tutorial on how to create a.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=what%20is%20a%20risk%20matrix%20in%20project%20management" alt="Project Risk Management Software" />
+        <br>
+        <figcaption>Project Risk Management Software from intaver.com</figcaption>
+    </figure>
+        <p>
+        Risk analysis is an essential part of risk management. Write down a checklist or. The stakeholder needs to agree with each area of risk analyzed.
+    </p>
+    <h3>Project Risk Management Software</h3>
+    <p>For each risk you will record your planned countermeasures and contingent. In this sense, the risk matrix should be seen as a result of the risk analysis and risk evaluation. Once the project manager understands the risks, it is time to evaluate them. It is an effective tool that assists in risk evaluation by considering the.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How to get top quality Project Risk Management Assignment Help" data-src="https://i2.wp.com/3.bp.blogspot.com/-N8OzZ2enaiw/XJDNRohpU7I/AAAAAAAAAR8/qMgm3NGrffQI7qZ4Wh0DzePll0cyjZInwCLcBGAs/s1600/project-risk-management.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: totalassignmenthelp.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The project manager can often derive those risks from the list of boundary review. It is an effective tool that assists in risk evaluation by considering the. The participants are then advised to think of whatever risk they can. Risk matrix usually has cells associated with different ranges of probability and impact. Creating a project management risk matrix is not.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Project Risk Management Software" data-src="https://i2.wp.com/intaver.com/wp/wp-content/uploads/2018/05/RiskMatrix.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: intaver.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">How to create a risk matrix. A risk matrix is a grid, with the probability of a risk represented on the left, and the severity of the risk represented on the top. The first step in the process begins with the listing down of all the risks that the participants can think of. All this informs your because you have..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk Management Plan for Tranning Project of Green life Corporation" data-src="https://i1.wp.com/www.belannazhou.com/wp-content/uploads/2016/02/Risk-Matrix-2.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.belannazhou.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A risk matrix is a powerful risk assessment technique that helps a project manager do that. This will confirm each area of importance. The scale used is commonly ranked from zero to one. The project risk plan should include, but not be limited to, the following: All this informs your because you have.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="GEO ExPro Potential Risks from Outdated Technology" data-src="https://i2.wp.com/assets.geoexpro.com/uploads/fdfb32d0-513a-4f22-bdcb-b115107cbeb9/Risk-Matrix-3x31.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.geoexpro.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Creating a risk assessment matrix step 1: The risk assessment matrix offers a visual representation of the risk analysis. The risk management matrix rates project risks using a predefined methodology. A risk assessment matrix, also known as a risk control matrix, is a tool companies use when project planning. Once you assess the likelihood and severity of each risk, you.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk management Failed Us! Oversite Sentry" data-src="https://i2.wp.com/oversitesentry.com/wp-content/uploads/2015/02/riskmanagmentmatrix.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: oversitesentry.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A risk matrix is a grid, with the probability of a risk represented on the left, and the severity of the risk represented on the top. The risk assessment matrix offers a visual representation of the risk analysis. This is usually done in a brainstorming session. Risk analysis is an essential part of risk management. Then rate each risk factor.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk Matrix The risk rating and risk band is dependent on the" data-src="https://i.pinimg.com/736x/b7/76/f1/b776f16b097c599ed391e4c79343943d--risk-management-project-management.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">How to create a risk matrix. By uniting probability and impact in one place, matrices make risk evaluation a breeze. A risk assessment matrix (sometimes called a risk control matrix) is a tool used during the risk assessment stage of project planning. These ratings will help your team prioritize project risks and effectively manage them. Risk matrix usually has cells.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk Matrix VisualScript&#039;s Solution for Project Managers" data-src="https://i2.wp.com/www.visualscript.com/risk-matrix/img/risk-matrix.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.visualscript.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">So, a risk matrix combined with the use of the right skills and acumen to tackle risks can empower a project manager to make every project a success. It is helpful to include a stakeholder to validate the input. The project risk plan should include, but not be limited to, the following: One of the main advantages of using a.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="The Risk Radial refining the prioritisation of project risks Project" data-src="https://i2.wp.com/projectmanager.com.au/wp-content/uploads/2013/01/RiskRadial1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: projectmanager.com.au</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">You&#039;ll tailor the matrix to address the specific risks you currently face. Here’s a video tutorial on how to create a. It allows you to understand. In the diagram, the risks are divided depending on their likelihood and their effects or the extent of damage, so that the worst case scenario can be determined at a glance. The qualitative risk.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Project Risk Management Project Planning School" data-src="https://i2.wp.com/ecostarplan.com/wp-content/uploads/2018/09/risk-matrix.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: projectplanningschool.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The risk assessment matrix offers a visual representation of the risk analysis. Creating a risk matrix contains similar steps to a standard risk management process. A 5x5 risk matrix simply refers to a risk matrix that is made up of 5 cells along the x axis and 5 cells along the y axis. The scale used is commonly ranked from.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk Management Matrix Showing Probability And Impact And High Low Risk" data-src="https://i2.wp.com/www.slideteam.net/media/catalog/product/cache/960x720/r/i/risk_management_matrix_showing_probability_and_impact_and_high_low_risk_Slide01.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideteam.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The probability is then multiplied with the impact it. So, a risk matrix combined with the use of the right skills and acumen to tackle risks can empower a project manager to make every project a success. A risk matrix is a matrix that is used during risk assessment to define the level of risk by considering the category of.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-codigo-qr-y-como-funciona-en-whatsapp.html" class="be-post-title">
+				 <h6>que es el codigo qr y como funciona en whatsapp </h6>
+                </a>
+                <a href="que-es-el-codigo-qr-y-como-funciona-en-whatsapp.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20codigo%20qr%20y%20como%20funciona%20en%20whatsapp&amp;w=50&amp;h=50&amp;c=7" alt="que es el codigo qr y como funciona en whatsapp">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-zijn-voorletters-in-nederland.html" class="be-post-title">
+				 <h6>wat zijn voorletters in nederland </h6>
+                </a>
+                <a href="wat-zijn-voorletters-in-nederland.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20zijn%20voorletters%20in%20nederland&amp;w=50&amp;h=50&amp;c=7" alt="wat zijn voorletters in nederland">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-el-codice-florentino.html" class="be-post-title">
+				 <h6>que significa el codice florentino </h6>
+                </a>
+                <a href="que-significa-el-codice-florentino.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20el%20codice%20florentino&amp;w=50&amp;h=50&amp;c=7" alt="que significa el codice florentino">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wie-geht-es-euch-ne-demek.html" class="be-post-title">
+				 <h6>wie geht es euch ne demek </h6>
+                </a>
+                <a href="wie-geht-es-euch-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wie%20geht%20es%20euch%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="wie geht es euch ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="pasos-para-escribir-un-poema-en-ingles.html" class="be-post-title">
+				 <h6>pasos para escribir un poema en ingles </h6>
+                </a>
+                <a href="pasos-para-escribir-un-poema-en-ingles.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=pasos%20para%20escribir%20un%20poema%20en%20ingles&amp;w=50&amp;h=50&amp;c=7" alt="pasos para escribir un poema en ingles">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-deslizamiento-para-niños.html" class="be-post-title">
+				 <h6>que es un deslizamiento para niños </h6>
+                </a>
+                <a href="que-es-un-deslizamiento-para-niños.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20deslizamiento%20para%20ni%C3%B1os&amp;w=50&amp;h=50&amp;c=7" alt="que es un deslizamiento para niños">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="vad-innehåller-grönsaker-för-näringsämnen.html" class="be-post-title">
+				 <h6>vad innehåller grönsaker för näringsämnen </h6>
+                </a>
+                <a href="vad-innehåller-grönsaker-för-näringsämnen.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=vad%20inneh%C3%A5ller%20gr%C3%B6nsaker%20f%C3%B6r%20n%C3%A4rings%C3%A4mnen&amp;w=50&amp;h=50&amp;c=7" alt="vad innehåller grönsaker för näringsämnen">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-sorprender-a-un-hombre.html" class="be-post-title">
+				 <h6>como sorprender a un hombre </h6>
+                </a>
+                <a href="como-sorprender-a-un-hombre.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20sorprender%20a%20un%20hombre&amp;w=50&amp;h=50&amp;c=7" alt="como sorprender a un hombre">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-efecto-invernadero-definicion-para-niños.html" class="be-post-title">
+				 <h6>que es el efecto invernadero definicion para niños </h6>
+                </a>
+                <a href="que-es-el-efecto-invernadero-definicion-para-niños.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20efecto%20invernadero%20definicion%20para%20ni%C3%B1os&amp;w=50&amp;h=50&amp;c=7" alt="que es el efecto invernadero definicion para niños">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-zijn-basisbehoeften.html" class="be-post-title">
+				 <h6>wat zijn basisbehoeften </h6>
+                </a>
+                <a href="wat-zijn-basisbehoeften.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20zijn%20basisbehoeften&amp;w=50&amp;h=50&amp;c=7" alt="wat zijn basisbehoeften">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

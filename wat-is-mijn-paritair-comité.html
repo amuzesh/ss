@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Wat Is Mijn Paritair Comité at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Wat Is Mijn Paritair Comité",
+  "datePublished": "2022-04-09T11:19:35Z",
+  "image": "https://tse1.mm.bing.net/th?q=wat%20is%20mijn%20paritair%20comit%C3%A9",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=wat%20is%20mijn%20paritair%20comit%C3%A9&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=wat%20is%20mijn%20paritair%20comit%C3%A9" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=wat%20is%20mijn%20paritair%20comit%C3%A9" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Wat Is Mijn Paritair Comité at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Wat Is Mijn Paritair Comité</h2>
+    <p><strong>Wat Is Mijn Paritair Comité</strong>. Een wet zou nochtans een doorbraak betekenen voor talloze werkgevers en werknemers, aangezien een wettelijke bepaling voorrang heeft op een akkoord gesloten binnen het paritair comité. Dit zijn akkoorden die bindend zijn voor de hele sector.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=wat%20is%20mijn%20paritair%20comit%C3%A9" alt="8 Mei Comité maakt film met laatste getuigen WO II (Mechelen) Het" />
+        <br>
+        <figcaption>8 Mei Comité maakt film met laatste getuigen WO II (Mechelen) Het from www.nieuwsblad.be</figcaption>
+    </figure>
+        <p>
+        Wat met de sectorale cao’s gebeurt zowel bij de wijziging van de werkingssfeer van een paritair comité of subcomité, als bij de oprichting of opheffing van een paritair comité of subcomité. Een paritair comité is een belgisch overlegorgaan tussen werkgevers en werknemers, voornamelijk met het oog op het onderhandelen van de collectieve arbeidsovereenkomst. De paritaire comités zijn organen opgericht op basis van de wet van 5 december 1968 betreffende de collectieve arbeidsovereenkomsten en de paritaire comités (pdf, 145.3 kb).
+    </p>
+    <h3>8 Mei Comité maakt film met laatste getuigen WO II (Mechelen) Het</h3>
+    <p>Een wet zou nochtans een doorbraak betekenen voor talloze werkgevers en werknemers, aangezien een wettelijke bepaling voorrang heeft op een akkoord gesloten binnen het paritair comité. Er moet het hoofd geboden worden aan de druk voor 24/24 flexibiliteit, 7/7 en dit gedurende het hele jaar. .de oprichting van een raadgevend paritair comité. Binnen een bedrijf vallen arbeiders en bedienden vaak onder een ander paritair comité.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="8 Mei Comité maakt film met laatste getuigen WO II (Mechelen) Het" data-src="https://i2.wp.com/static.nieuwsblad.be/Assets/Images_Upload/2012/04/21/DSC_0429.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.nieuwsblad.be</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Er moet het hoofd geboden worden aan de druk voor 24/24 flexibiliteit, 7/7 en dit gedurende het hele jaar. Vele paritaire comités zijn uitsluitend bevoegd voor arbeiders of voor bedienden. Vertalingen van het uitdrukking paritaire comité van nederlands naar engels en voorbeelden van het gebruik van paritaire comité in een zin met hun vertalingen: Om zeker te zijn welk paritair.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Belangrijk akkoord in paritair comité voor het Tuinbouwbedrijf AVBS" data-src="https://i2.wp.com/www.avbs.be/sites/default/files/article/thumbnail02DHO225.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.avbs.be</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Een bediende die wekelijks 39 uur presteert heeft recht op 6 compensatiedagen op jaarbasis. Een combinatie van hoge inflatie,. Sommige koninklijke besluiten wijken echter af van dit principe. As employee you can ask for a course subsidy through your joint committee. Pc 329.00 is het overkoepelend paritair comité voor de socioculturele sector.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Opleidingen bij CVO of Syntra Alimento" data-src="https://i2.wp.com/www.alimento.be/sites/default/files/styles/large/public/images/alimento_page/field_visual/ErikJacobsBakker_6048lowres.jpg.jpg?itok=DkiQFSRK" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.alimento.be</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">303.01 paritair subcomité voor de filmproductie. Payflip volgt alvast de ontwikkelingen rond cafetariaplannen en eindejaarspremies op de voet! 0800 39 067 | fax: Sommige koninklijke besluiten wijken echter af van dit principe. Het paritaire comité voor de posterijen, bij besluit.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Erembodegemnaars richten comité op tegen gesloten instellin... Het" data-src="https://i2.wp.com/static.nieuwsblad.be/Assets/Images_Upload/2019/06/06/6ff58e51-75e2-4b38-bae1-eada9081998e.jpg?width=1152&amp;format=jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.nieuwsblad.be</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tenslotte bestaat er een uitzondering op dit principe: Pc 329.01 voor de socioculturele sector van de vlaamse gemeenschap. Binnen een bedrijf vallen arbeiders en bedienden vaak onder een ander paritair comité. Dat is onder meer het geval voor meer dan 400.000 bedienden uit het paritair comité 200,. De horecasector die in het paritair comité vertegenwoordigd is, is uniek.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Catalonië toont aan dat EU worstelt met de regio&#039;s, maar wat doet het" data-src="https://i2.wp.com/images.vrt.be/width1280/2017/10/09/cb0ef706-acf5-11e7-bbe7-02b7b76bf47f.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.vrt.be</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Een paritair comité wordt voorgezeten door een sociaal bemiddelaar die werkt voor het ministerie van werkgelegenheid en werk. Dit zijn akkoorden die bindend zijn voor de hele sector. Het paritair comité bracht ook een verslag uit over het omscholingsplan dat door iedere onderneming of groep was ingediend. Paritair comité voor het verzekeringswezen, nr. Als werknemer kan je een opleidingspremie aanvragen.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Paritair comité wat is het en doet het met je loon? Jobs hln.be" data-src="https://i2.wp.com/images0.persgroep.net/rcs/NrbPz93-bTzHiXh5i5Lg1IAgXKo/diocontent/100363239/_crop/1/55/999/565/_fill/1200/630/?appId=21791a8992982cd8da851550a453bd7f&amp;quality=0.7" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.hln.be</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sommige paritaire comités worden toegekend op basis van het beroep of de overeenkomst van de werknemers, zoals bijvoorbeeld het nationaal paritair comité voor de sport nr. Sommige koninklijke besluiten wijken echter af van dit principe. Bekijk en download ze hieronder. 303.01 paritair subcomité voor de filmproductie. Het paritaire comité voor de posterijen, bij besluit.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Financier mijn investering The Netherlands" data-src="https://i2.wp.com/leasingsolutions.bnpparibas.nl/wp-content/uploads/sites/23/2016/04/bandeau_comite.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: leasingsolutions.bnpparibas.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sommige koninklijke besluiten wijken echter af van dit principe. De paritaire comités zijn organen opgericht op basis van de wet van 5 december 1968 betreffende de collectieve arbeidsovereenkomsten en de paritaire comités (pdf, 154.85 kb). .de oprichting van een raadgevend paritair comité. 303.03 paritair subcomité voor de exploitatie van bioscoopzalen. Bekijk en download ze hieronder.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wat zijn dat, sociale verkiezingen? VRT NWS nieuws" data-src="https://i2.wp.com/images.vrt.be/width1280/2017/10/15/797031a1-b12d-11e7-bbe7-02b7b76bf47f.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.vrt.be</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">303.01 paritair subcomité voor de filmproductie. Daaruit voortvloeiend ook het toezicht op de uitvoering ervan. Wat is een paritair orgaan? Sommige koninklijke besluiten wijken echter af van dit principe. Bekijk en download ze hieronder.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Help! Mijn baas wil een cafetariaplan! ABVVMetaal" data-src="https://i2.wp.com/abvvmetaal.be/images/stories/images_nieuwsbrief/cafetaria.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.abvvmetaal.be</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Paritaire comités groeperen bedrijven met gelijkaardige activiteiten. Het paritair comité bracht ook een verslag uit over het omscholingsplan dat door iedere onderneming of groep was ingediend. Er moet het hoofd geboden worden aan de druk voor 24/24 flexibiliteit, 7/7 en dit gedurende het hele jaar. Een paritair comité is een belgisch overlegorgaan tussen werkgevers en werknemers, voornamelijk met het oog.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Oprichtster van Parkinson Café onderscheiden &#039;Ik mag mijn handen" data-src="https://i2.wp.com/images.regiogroei.cloud/1104x620/f74baf30-d351-3bf8-ba50-cf6e263e1330.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.omroepwest.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Om zeker te zijn welk paritair comité van toepassing is, raadpleeg je best je loonfiche. Dit staat vaak vermeld op je loonbrief. Bepalen de arbeidsvoorwaarden en de verloning van de betrokken sector, om zo bij te dragen tot het sluiten van collectieve arbeidsovereenkomsten. Paritair comité voor de internationale handel, vervoer en aanverwante bedrijfstakken, nr. Er moet het hoofd geboden worden.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="vad-är-skillnaden-mellan-grönsaker-och-frukter.html" class="be-post-title">
+				 <h6>vad är skillnaden mellan grönsaker och frukter </h6>
+                </a>
+                <a href="vad-är-skillnaden-mellan-grönsaker-och-frukter.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=vad%20%C3%A4r%20skillnaden%20mellan%20gr%C3%B6nsaker%20och%20frukter&amp;w=50&amp;h=50&amp;c=7" alt="vad är skillnaden mellan grönsaker och frukter">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-verso-y-ejemplos-para-niños.html" class="be-post-title">
+				 <h6>que es un verso y ejemplos para niños </h6>
+                </a>
+                <a href="que-es-un-verso-y-ejemplos-para-niños.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20verso%20y%20ejemplos%20para%20ni%C3%B1os&amp;w=50&amp;h=50&amp;c=7" alt="que es un verso y ejemplos para niños">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-verso-en-un-poema-ejemplos.html" class="be-post-title">
+				 <h6>que es el verso en un poema ejemplos </h6>
+                </a>
+                <a href="que-es-el-verso-en-un-poema-ejemplos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20verso%20en%20un%20poema%20ejemplos&amp;w=50&amp;h=50&amp;c=7" alt="que es el verso en un poema ejemplos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-hacer-una.html" class="be-post-title">
+				 <h6>como hacer una </h6>
+                </a>
+                <a href="como-hacer-una.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20hacer%20una&amp;w=50&amp;h=50&amp;c=7" alt="como hacer una">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-netnummer-duitsland.html" class="be-post-title">
+				 <h6>wat is een netnummer duitsland </h6>
+                </a>
+                <a href="wat-is-een-netnummer-duitsland.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20netnummer%20duitsland&amp;w=50&amp;h=50&amp;c=7" alt="wat is een netnummer duitsland">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-son-los-hidratos-de-carbono-quimica-organica.html" class="be-post-title">
+				 <h6>que son los hidratos de carbono quimica organica </h6>
+                </a>
+                <a href="que-son-los-hidratos-de-carbono-quimica-organica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20son%20los%20hidratos%20de%20carbono%20quimica%20organica&amp;w=50&amp;h=50&amp;c=7" alt="que son los hidratos de carbono quimica organica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="empresa-llc-en-estados-unidos.html" class="be-post-title">
+				 <h6>empresa llc en estados unidos </h6>
+                </a>
+                <a href="empresa-llc-en-estados-unidos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=empresa%20llc%20en%20estados%20unidos&amp;w=50&amp;h=50&amp;c=7" alt="empresa llc en estados unidos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-ciencia-brainly.html" class="be-post-title">
+				 <h6>que es una ciencia brainly </h6>
+                </a>
+                <a href="que-es-una-ciencia-brainly.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20ciencia%20brainly&amp;w=50&amp;h=50&amp;c=7" alt="que es una ciencia brainly">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-goed-salaris-2022.html" class="be-post-title">
+				 <h6>wat is een goed salaris 2022 </h6>
+                </a>
+                <a href="wat-is-een-goed-salaris-2022.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20goed%20salaris%202022&amp;w=50&amp;h=50&amp;c=7" alt="wat is een goed salaris 2022">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-vendedor-por-cambaceo.html" class="be-post-title">
+				 <h6>que es vendedor por cambaceo </h6>
+                </a>
+                <a href="que-es-vendedor-por-cambaceo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20vendedor%20por%20cambaceo&amp;w=50&amp;h=50&amp;c=7" alt="que es vendedor por cambaceo">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

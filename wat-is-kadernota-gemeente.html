@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Wat Is Kadernota Gemeente at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Wat Is Kadernota Gemeente",
+  "datePublished": "2022-05-04T21:39:53Z",
+  "image": "https://tse1.mm.bing.net/th?q=wat%20is%20kadernota%20gemeente",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=wat%20is%20kadernota%20gemeente&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=wat%20is%20kadernota%20gemeente" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=wat%20is%20kadernota%20gemeente" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Wat Is Kadernota Gemeente at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Wat Is Kadernota Gemeente</h2>
+    <p><strong>Wat Is Kadernota Gemeente</strong>. Het vastgoed van de gemeente rotterdam zowel nancieel als functioneel optimaal. Houd jij je daar in je werk (nog) niet mee bezig, maar ben je wel benieuwd wat zo’n nota nu eigenlijk inhoudt?</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=wat%20is%20kadernota%20gemeente" alt="Inbreng CDA bij Kadernota 2019" />
+        <br>
+        <figcaption>Inbreng CDA bij Kadernota 2019 from www.cda.nl</figcaption>
+    </figure>
+        <p>
+        Inwoners ervaren onze excellente dienstverlening nog meer als vriendelijk, snel, goed en betrouwbaar. Op deze pagina vindt u alle documenten die te maken hebben met de financiën van de gemeente doetinchem. Het is een kader voor het opstellen van de meerjarenbegroting.
+    </p>
+    <h3>Inbreng CDA bij Kadernota 2019</h3>
+    <p>En waar de gemeente dan op aansluit. Hier kunnen inwoners zien wat de gemeente doet. Samen kunnen we het beter dan alleen. Ze zijn gegroepeerd op de thema&#039;s uit het bestuursakkoord via uitklapmenu&#039;s.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kadernota in coronatijd nog zinvol? Gemeente.nu" data-src="https://i2.wp.com/www.gemeente.nu/content/uploads/sites/5/2020/05/kadernota2020.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.gemeente.nu</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De opdracht van de afdeling is zich te richten op haar kerntaak: Dit was zowel voor de gemeente als de inwoners en partners een leertraject. De kadernota is een uitwerking van het collegeprogramma. De gemeenteraad heeft voorafgaand aan de transitie kaders vastgesteld voor de wmo, participatiewet en de jeugdwet en we zijn, uitgaande van deze kaders, voortvarend van start gegaan..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kadernota gemeente heeft weer wat lucht Telstar Online Actueel" data-src="https://i2.wp.com/hetmediacentrum.pubble.cloud/4c0aa478/content/2017/5/6e01d254-200c-489e-84bc-260d89955b6b_thumb840.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.telstar-online.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ter voorbereiding van de begroting wordt er een kadernota opgesteld, door veel gemeenten ook wel de voorjaarsnota genoemd. De opdracht van de afdeling is zich te richten op haar kerntaak: Dat betekent dat het tijd is om te beginnen aan de kadernota. De kadernota is een uitwerking van het collegeprogramma. Samenwerking heeft in de optiek.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Gemeente Kadernota 2021 Op weg naar een sluitende begroting voor 2021" data-src="https://i2.wp.com/pubblestorage.blob.core.windows.net/4b94f7e8/content/2018/9/1b896496-c99c-4561-a5bc-a114f5ef82ae_thumb840.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.voorschotensekrant.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De kadernota is de start van de planning &amp; controle cyclus. De kadernota geeft de financiële tussenstand van het lopende jaar en een raming van de uitgaven en inkomsten van de gemeente. Nu de kadernota toch flinterdun is wil ronde venen belang van de gelegenheid gebruik maken om wat kaders mee te geven voor de programmabegroting en anders alvast voor.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kadernota 2020 Gemeente is en blijft financieel gezond Alphens.nl" data-src="https://i2.wp.com/www.alphens.nl/resize/upload/595/59443/2018_07_15--16_22_14-bl807937-SOCIALSHARING.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.alphens.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Volg de onderstaande link om het pdf document te downloaden. Ze zijn gegroepeerd op de thema&#039;s uit het bestuursakkoord via uitklapmenu&#039;s. Deze begroting bevat een raming van baten (opbrengsten) en lasten (kosten) voor. Download ‘kadernota 2020’, pdf, 751kb. Klik op het bestand om de kadernota te.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Inbreng CDA bij Kadernota 2019" data-src="https://i2.wp.com/d14uo0i7wmc99w.cloudfront.net/_processed_/b/c/csm_Tea Both 1_8d90690885.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.cda.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Nu de kadernota toch flinterdun is wil ronde venen belang van de gelegenheid gebruik maken om wat kaders mee te geven voor de programmabegroting en anders alvast voor een nieuwe coalitie vanaf maart 2022 en het beleid van de gemeente. In de begroting staat wat de plannen zijn en welke resultaten de raad wil. Deze begroting bevat een raming van.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Gemeente trots op &#039;moeilijkste kadernota ooit&#039; Hallo Peel en Maas" data-src="https://i2.wp.com/www.hallopeelenmaas.nl/Image/Get/6877" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.hallopeelenmaas.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Om je inzicht te geven in alle kadernota’s en al het beleid dat leidt tot de ontwikkelingen die je in onze stad ziet, hebben we ze op een pagina op deze site verzameld. Wat is belangrijk bij het inrichten van wijken, straten en pleinen? Volg de onderstaande link om het pdf document te downloaden. In de consultatiefase gaven 70 reacties.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Volkshuisvesting, ruimtelijke ordening en stedelijke vernieuwing" data-src="https://i2.wp.com/dronten2020.kadernota.nl/assets/img/bh de kaai - programma 8 600x400_decd401c6d51fe097bc1e7091b215903.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dronten2020.kadernota.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En waar de gemeente dan op aansluit. Naast de eigen meerwaarde, houdt de gemeente velsen ook in de gaten wat de meerwaarde is voor andere deelnemers aan het samenwerkingsverband. De gemeente is er voor de bewoners; Den haag wordt steeds drukker en op straat blijft er minder ruimte over. Het college zet in op een toename van 2.500 woningen.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Reactie Echt Voor Ambacht op de Kadernota 2019" data-src="https://i2.wp.com/www.ambacht.net/storage/media/Ambacht/kortnieuws/2016/gemeentehuis-ambacht.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.ambacht.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Wat is belangrijk bij het inrichten van wijken, straten en pleinen? Ze zijn gegroepeerd op de thema&#039;s uit het bestuursakkoord via uitklapmenu&#039;s. De kadernota verschijnt ieder voorjaar. Om je inzicht te geven in alle kadernota’s en al het beleid dat leidt tot de ontwikkelingen die je in onze stad ziet, hebben we ze op een pagina op deze site verzameld..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Raad stelt Jaarrekening 2020 en Kadernota 2021 vast HoornRadio" data-src="https://i2.wp.com/www.hoornradio.nl/content/7951/news/clnt/3891419_973886.jpg?width=1600&amp;height=1200" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.hoornradio.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De gemeenteraad heeft voorafgaand aan de transitie kaders vastgesteld voor de wmo, participatiewet en de jeugdwet en we zijn, uitgaande van deze kaders, voortvarend van start gegaan. De kadernota is de start van de planning &amp; controle cyclus. Dat zal ik hier uitleggen aan de hand van de begrotingssystematiek in het algemeen. Het college van b&amp;w en de raad spreken.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Er moeten honderden bomen bij komen en dat mag wat kosten Al het" data-src="https://i2.wp.com/storage.pubble.nl/16c0059b/content/2015/9/539a96da-460c-4b8a-96cf-3323e6c32b07_thumb1140.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.weespernieuws.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Deze begroting bevat een raming van baten (opbrengsten) en lasten (kosten) voor. De kadernota is een uitwerking van het collegeprogramma. Het eindcijfer van de inkomsten moet gelijk zijn aan het eindcijfer van de uitgaven. Dat betekent dat het tijd is om te beginnen aan de kadernota. Om je inzicht te geven in alle kadernota’s en al het beleid dat leidt.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-happens-at-the-end-of-minecraft-dungeons.html" class="be-post-title">
+				 <h6>what happens at the end of minecraft dungeons </h6>
+                </a>
+                <a href="what-happens-at-the-end-of-minecraft-dungeons.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20happens%20at%20the%20end%20of%20minecraft%20dungeons&amp;w=50&amp;h=50&amp;c=7" alt="what happens at the end of minecraft dungeons">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-crear-una-cuenta-de-minecraft-premium-gratis.html" class="be-post-title">
+				 <h6>como crear una cuenta de minecraft premium gratis </h6>
+                </a>
+                <a href="como-crear-una-cuenta-de-minecraft-premium-gratis.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20crear%20una%20cuenta%20de%20minecraft%20premium%20gratis&amp;w=50&amp;h=50&amp;c=7" alt="como crear una cuenta de minecraft premium gratis">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="para-que-sirve-la-esencia-de-canela-esoterismo.html" class="be-post-title">
+				 <h6>para que sirve la esencia de canela esoterismo </h6>
+                </a>
+                <a href="para-que-sirve-la-esencia-de-canela-esoterismo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=para%20que%20sirve%20la%20esencia%20de%20canela%20esoterismo&amp;w=50&amp;h=50&amp;c=7" alt="para que sirve la esencia de canela esoterismo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-interfaz-grafica-de-usuario-en-java.html" class="be-post-title">
+				 <h6>que es una interfaz grafica de usuario en java </h6>
+                </a>
+                <a href="que-es-una-interfaz-grafica-de-usuario-en-java.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20interfaz%20grafica%20de%20usuario%20en%20java&amp;w=50&amp;h=50&amp;c=7" alt="que es una interfaz grafica de usuario en java">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="para-que-sirve-una-interfaz-en-java.html" class="be-post-title">
+				 <h6>para que sirve una interfaz en java </h6>
+                </a>
+                <a href="para-que-sirve-una-interfaz-en-java.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=para%20que%20sirve%20una%20interfaz%20en%20java&amp;w=50&amp;h=50&amp;c=7" alt="para que sirve una interfaz en java">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-doet-een-rapporteur.html" class="be-post-title">
+				 <h6>wat doet een rapporteur </h6>
+                </a>
+                <a href="wat-doet-een-rapporteur.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20doet%20een%20rapporteur&amp;w=50&amp;h=50&amp;c=7" alt="wat doet een rapporteur">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-cártel-de-drogas.html" class="be-post-title">
+				 <h6>que es un cártel de drogas </h6>
+                </a>
+                <a href="que-es-un-cártel-de-drogas.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20c%C3%A1rtel%20de%20drogas&amp;w=50&amp;h=50&amp;c=7" alt="que es un cártel de drogas">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="porque-te-salen-granitos-en-el-ano.html" class="be-post-title">
+				 <h6>porque te salen granitos en el ano </h6>
+                </a>
+                <a href="porque-te-salen-granitos-en-el-ano.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=porque%20te%20salen%20granitos%20en%20el%20ano&amp;w=50&amp;h=50&amp;c=7" alt="porque te salen granitos en el ano">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="types-of-realms-minecraft.html" class="be-post-title">
+				 <h6>types of realms minecraft </h6>
+                </a>
+                <a href="types-of-realms-minecraft.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=types%20of%20realms%20minecraft&amp;w=50&amp;h=50&amp;c=7" alt="types of realms minecraft">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-to-eat-on-fasting-mimicking-diet.html" class="be-post-title">
+				 <h6>what to eat on fasting mimicking diet </h6>
+                </a>
+                <a href="what-to-eat-on-fasting-mimicking-diet.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20to%20eat%20on%20fasting%20mimicking%20diet&amp;w=50&amp;h=50&amp;c=7" alt="what to eat on fasting mimicking diet">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

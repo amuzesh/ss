@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Objek Uji Materiil Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Objek Uji Materiil Adalah",
+  "datePublished": "2022-04-23T22:10:41Z",
+  "image": "https://tse1.mm.bing.net/th?q=objek%20uji%20materiil%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=objek%20uji%20materiil%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=objek%20uji%20materiil%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=objek%20uji%20materiil%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Objek Uji Materiil Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Objek Uji Materiil Adalah</h2>
+    <p><strong>Objek Uji Materiil Adalah</strong>. Objek material adalah lapangan penyelidikan suatu cabang ilmu, sedangkan objek formal adalah sudut tertentu yang menentukan suatu macam ilmu dan membedakan antara ilmu satu dengan lainnya. Antara kerugian pemohon dengan dan objek permohonan pemohon. baca juga:</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=objek%20uji%20materiil%20adalah" alt="Uji Ketelitian dengan Mencari Objek Tersembunyi di Gambar Ini, Yuk! Bobo" />
+        <br>
+        <figcaption>Uji Ketelitian dengan Mencari Objek Tersembunyi di Gambar Ini, Yuk! Bobo from bobo.grid.id</figcaption>
+    </figure>
+        <p>
+        Pengujian oleh hakim terhadap produk dari eksekutif dan legislatif adalah konsekuensi dari dianutnya prinsip check and balances berdasarkan doktrin pemisahan kekuasaan. Pasal 51 ayat 3 huruf b uu no. Jadi, dapat dikatakan bahwa pada dasarnya uji materiil merupakan salah satu jenis judicial review.
+    </p>
+    <h3>Uji Ketelitian dengan Mencari Objek Tersembunyi di Gambar Ini, Yuk! Bobo</h3>
+    <p>Diberikan oleh seorang yang tidak memiliki kepentingan yang bersifat pribadi (conflict. 1 tahun 2011, yaitu adanya perbedaan pendapat dapat/tidaknya diterima objek hak uji materiil yang diundangkan sebelum diterbitkannya perma no. Berkaitan dengan isi atau bahan kajian, seperti atmosfer, litosfer, hidrosfer, biosfer, dan antroposfer. Diberikan oleh seorang yang tidak memiliki kepentingan yang bersifat pribadi (conflict.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="√ Jawaban Uji Kompetensi Penerapan Bab 1 Halaman 30 IPA Kelas 7 (Objek" data-src="https://i2.wp.com/1.bp.blogspot.com/-iWrs45v8xB0/XPiFnlAj21I/AAAAAAAAIaE/b108I4qg1K09qYbkSHpjoFXKPDrzSTziACLcBGAs/s640/no1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.bastechinfo.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Oleh karena itu, kewenangan untuk melakukan uji materiil melekat pada fungsi hakim sebagai subjeknya, bukan pada pejabat lain dalam hal ini pemerintahan.8 Diberikan oleh seorang yang tidak memiliki kepentingan yang bersifat pribadi (conflict. Sedangkan pk dilakukan oleh ma adalah untuk memutus permohonan pk terhadap putusan pengadilan yang. Tahun 2014 bertentangan dengan pasal 1 angka 7 (tujuh) berbunyi “fasilitas pelayanan kesehatan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Ketelitian dengan Mencari Objek Tersembunyi di Gambar Ini, Yuk! Bobo" data-src="https://i2.wp.com/asset-a.grid.id/crop/0x0:0x0/700x0/photo/2018/10/12/640398312.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bobo.grid.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dasar pengujian peraturan tersebut sedang dalam proses pengujian mahkamah konstitusi sampai ada putusan mk maka permohonan hak uji materiil ke mahkamah agung yang diajukan oleh pemohon menjadi prematur (belum waktunya). Bahwa berhubung dengan hal tersebut dalam huruf c dan d, perlu pengaturan kembali peraturan mahkamah agung republik indonesia nomor 1 tahun 2004 tentang hak uji materiil. Berkaitan dengan isi atau.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Untuk memudahkan mempelajari objek yang sangat beranekaragam, perlu" data-src="https://i2.wp.com/3.bp.blogspot.com/-P_TbE_7oNr4/Ws4fremOkyI/AAAAAAAAZFU/uruWID13IUwZF-3zyTRUWcoexEhcmQGawCLcBGAs/s1600/taksos.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.primalangga.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Di indonesia, judicial review dilakukan oleh mahkamah konstitusi (“mk”) dan mahkamah agung (“ma Of interest) dengan subjek dan/atau objek perkara yang sedang diperiksa. Artikel di bawah ini adalah pemutakhiran dari artikel dengan judul perbedaan judicial review dengan hak uji materiil yang dibuat oleh diana kusumasari, s.h., m.h. Koalisi tersebut menilai permohonan uji materiil ini adalah salah satu langkah mundur terhadap.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Ketelitian dengan Mencari Objek Tersembunyi di Gambar Ini, Yuk! Bobo" data-src="https://i2.wp.com/asset-a.grid.id/crop/0x0:0x0/700x465/photo/2018/10/12/3477195048.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bobo.grid.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Objek material adalah lapangan penyelidikan suatu cabang ilmu, sedangkan objek formal adalah sudut tertentu yang menentukan suatu macam ilmu dan membedakan antara ilmu satu dengan lainnya. Permasalahan yang muncul paska diterbitkannya perma no. Koalisi tersebut menilai permohonan uji materiil ini adalah salah satu langkah mundur terhadap upaya pencegahan kekerasan seksual di lingkup. Minta ma tolak uji materiil dan nyatakan. Di.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Subjek Dan Objek Penelitian Aneka Macam Contoh" data-src="https://i2.wp.com/4.bp.blogspot.com/-P-Bkbm_h4Xc/V1bBhz7d9ZI/AAAAAAAABHg/g-vNleB9BHgbYurC0ut90CHGz5yVd5xIQCLcB/s1600/Penelitian%2BEksperimental.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: criarcomo.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dasar pengujian peraturan tersebut sedang dalam proses pengujian mahkamah konstitusi sampai ada putusan mk maka permohonan hak uji materiil ke mahkamah agung yang diajukan oleh pemohon menjadi prematur (belum waktunya). Jadi, dapat dikatakan bahwa pada dasarnya uji materiil merupakan salah satu jenis judicial review. Objek material adalah lapangan penyelidikan suatu cabang ilmu, sedangkan objek formal adalah sudut tertentu yang menentukan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Gumarang awang Blog Prosedur Dan Teknik Audit" data-src="https://i2.wp.com/4.bp.blogspot.com/-wj7yvwssvCE/W9NDDD6hkCI/AAAAAAAAACY/monVx1c4BSwmDb_3U_-0nNs3x7uvi2PqQCLcBGAs/s1600/modul-3-auditevidencerev-41-638.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: gumarangawan.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kewenangan uji materiil yang dimiliki oleh mahkamah agung. 1 tahun 2011, yaitu adanya perbedaan pendapat dapat/tidaknya diterima objek hak uji materiil yang diundangkan sebelum diterbitkannya perma no. Minta ma tolak uji materiil dan nyatakan. Permohonan/hak uji materiil atas peraturan daerah nomor : Keterangan ahli yang dapat dipertimbangkan oleh mahkamah adalah keterangan yang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Ketelitian dengan Mencari Objek Tersembunyi di Gambar Ini, Yuk! Bobo" data-src="https://i2.wp.com/asset-a.grid.id/crop/0x0:0x0/700x0/photo/2018/10/12/3181572556.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bobo.grid.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Permasalahan yang muncul paska diterbitkannya perma no. Keterangan ahli yang dapat dipertimbangkan oleh mahkamah adalah keterangan yang. Lingkup tugas dan wewenang mahkamah agung ini sebagaimana yang telah diatur dalam pasal 24a ayat (1). Rona (tone/color tone/grey tone) yakni tingkat kegelapan atau kecerahan suatu objek pada foto. Oleh karena itu, kewenangan untuk melakukan uji materiil melekat pada fungsi hakim sebagai subjeknya,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Ketelitian dengan Mencari Objek Tersembunyi di Gambar Ini, Yuk! Bobo" data-src="https://i2.wp.com/asset-a.grid.id/crop/0x0:0x0/700x0/photo/2018/10/12/1474651213.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bobo.grid.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Lingkup tugas dan wewenang mahkamah agung ini sebagaimana. 24 tahun 2003 mengatur tentang uji materil dengan mana materi muatan ayat,. Permohonan/hak uji materiil atas peraturan daerah nomor : Pengujian oleh hakim terhadap produk dari eksekutif dan legislatif adalah konsekuensi dari dianutnya prinsip check and balances berdasarkan doktrin pemisahan kekuasaan. 1 tahun 2004, seharusnya segera diatasi agar ke depan terdapat kesatuan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pengertian Metode Penelitian Adalah Contoh, Macam, Jenis, Ciri Ciri" data-src="https://i2.wp.com/1.bp.blogspot.com/-sSMSEO6IwV8/Xjyd0F2ssDI/AAAAAAAADbA/GMwViNnhCTQ4ItVKt5X6nN0h84b7n8rkACLcBGAsYHQ/s1600/macam%2Bmacam%2Bmetode%2Bpenelitian.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.kudupinter.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Namun sebelum ke objek kajian, kita ketahui terlebih dahulu apa pengertianya. Dan pertama kali dipublikasikan pada 5 maret 2011. Objek material adalah lapangan penyelidikan suatu cabang ilmu, sedangkan objek formal adalah sudut tertentu yang menentukan suatu macam ilmu dan membedakan antara ilmu satu dengan lainnya. Lingkup tugas dan wewenang mahkamah agung ini sebagaimana. Tahun 2014 bertentangan dengan pasal 1 angka.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Membedah Arah Uji Materiil UU Jabatan Notaris Oleh Reda Manthovani" data-src="https://i2.wp.com/images.hukumonline.com/frontend/2017/Redaksi/Reda-UU-Notaris.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.hukumonline.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Permohonan/hak uji materiil atas peraturan daerah nomor : Tahun 2014 bertentangan dengan pasal 1 angka 7 (tujuh) berbunyi “fasilitas pelayanan kesehatan adalah suatu alat dan/atau tempat yang digunakan untuk 18. Dasar pengujian peraturan tersebut sedang dalam proses pengujian mahkamah konstitusi sampai ada putusan mk maka permohonan hak uji materiil ke mahkamah agung yang diajukan oleh pemohon menjadi prematur (belum waktunya)..</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-estrofa-ejemplo.html" class="be-post-title">
+				 <h6>que es una estrofa ejemplo </h6>
+                </a>
+                <a href="que-es-una-estrofa-ejemplo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20estrofa%20ejemplo&amp;w=50&amp;h=50&amp;c=7" alt="que es una estrofa ejemplo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="la-menopausia-sintomas-y-tratamiento.html" class="be-post-title">
+				 <h6>la menopausia sintomas y tratamiento </h6>
+                </a>
+                <a href="la-menopausia-sintomas-y-tratamiento.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=la%20menopausia%20sintomas%20y%20tratamiento&amp;w=50&amp;h=50&amp;c=7" alt="la menopausia sintomas y tratamiento">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-repository.html" class="be-post-title">
+				 <h6>wat is een repository </h6>
+                </a>
+                <a href="wat-is-een-repository.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20repository&amp;w=50&amp;h=50&amp;c=7" alt="wat is een repository">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-se-clasifica-la-musica-llanera.html" class="be-post-title">
+				 <h6>como se clasifica la musica llanera </h6>
+                </a>
+                <a href="como-se-clasifica-la-musica-llanera.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20se%20clasifica%20la%20musica%20llanera&amp;w=50&amp;h=50&amp;c=7" alt="como se clasifica la musica llanera">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-alquimista-y-que-hace.html" class="be-post-title">
+				 <h6>que es un alquimista y que hace </h6>
+                </a>
+                <a href="que-es-un-alquimista-y-que-hace.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20alquimista%20y%20que%20hace&amp;w=50&amp;h=50&amp;c=7" alt="que es un alquimista y que hace">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-eryptosis-mean.html" class="be-post-title">
+				 <h6>what does eryptosis mean </h6>
+                </a>
+                <a href="what-does-eryptosis-mean.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20eryptosis%20mean&amp;w=50&amp;h=50&amp;c=7" alt="what does eryptosis mean">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-s-p-a-m-stand-for-in-texting.html" class="be-post-title">
+				 <h6>what does s p a m stand for in texting </h6>
+                </a>
+                <a href="what-does-s-p-a-m-stand-for-in-texting.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20s%20p%20a%20m%20stand%20for%20in%20texting&amp;w=50&amp;h=50&amp;c=7" alt="what does s p a m stand for in texting">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-sifonamiento-en-suelos.html" class="be-post-title">
+				 <h6>que es el sifonamiento en suelos </h6>
+                </a>
+                <a href="que-es-el-sifonamiento-en-suelos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20sifonamiento%20en%20suelos&amp;w=50&amp;h=50&amp;c=7" alt="que es el sifonamiento en suelos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-mangels-in-engels.html" class="be-post-title">
+				 <h6>wat is mangels in engels </h6>
+                </a>
+                <a href="wat-is-mangels-in-engels.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20mangels%20in%20engels&amp;w=50&amp;h=50&amp;c=7" alt="wat is mangels in engels">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-riser-maintenance.html" class="be-post-title">
+				 <h6>what is riser maintenance </h6>
+                </a>
+                <a href="what-is-riser-maintenance.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20riser%20maintenance&amp;w=50&amp;h=50&amp;c=7" alt="what is riser maintenance">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

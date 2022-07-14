@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Novel Fiksi Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Novel Fiksi Adalah",
+  "datePublished": "2022-04-19T22:27:00Z",
+  "image": "https://tse1.mm.bing.net/th?q=novel%20fiksi%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=novel%20fiksi%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=novel%20fiksi%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=novel%20fiksi%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Novel Fiksi Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Novel Fiksi Adalah</h2>
+    <p><strong>Novel Fiksi Adalah</strong>. Prosa sendiri merupakan karya yang digunakan untuk mendeskripsikan suatu cerita, ide atau fakta. Fiksi adalah salah satu genre sastra yang luas.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=novel%20fiksi%20adalah" alt="Buku Cerita Non Fiksi Adalah Alexis Ditutup" />
+        <br>
+        <figcaption>Buku Cerita Non Fiksi Adalah Alexis Ditutup from alexisditutup.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Kisah yang disajikan berdasarkan hubungan romantis antara dua orang. Cerpen adalah cerita fiksi dengan cerita yang lebih pendek dan lebih padat dibanding novel dan roman. Pernyataan yang hanya berdasarkan khayalan atau pikiran.
+    </p>
+    <h3>Buku Cerita Non Fiksi Adalah Alexis Ditutup</h3>
+    <p>Novel adalah gendre fiksi dan fiksi dapat didefinisikan sebagai seni atau kerajinan untuk Novel romantis yaitu novel yang bercerita tentang kisah cinta. Menurut nyata atau tidaknya kejadian. Genre novel ini sering banget nih kita temuin di toko buku dan paling banyak diminati orang.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="15+ Kumpulan Contoh Resensi Novel Fiksi Terlengkap dan Terbaru" data-src="https://i1.wp.com/sekolahnesia.com/wp-content/uploads/2019/10/Contoh-Resensi-Novel-Fiksi-Ayah.jpg?resize=680%2C485&amp;ssl=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sekolahnesia.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Novel novel merupakan salah satu contoh buku fiksi yang paling banyak dibaca dan digemari oleh banyak orang. Kata novel berasal dari bahasa italia, novella yang berarti “sebuah kisah, sepotong berita” dan novel memiliki cerita yang lebih. Novel adalah karya fiksi naratif yang dan biasanya diterbitkan dalam bentuk buku. Adapun contoh fiksi dapat berupa novel, hikayat, fabel, komik, dongeng, cerpen, dan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Terbaru 22+ Gambar Buku Non Fiksi Gani Gambar" data-src="https://i2.wp.com/akutahu.com/uploads/images/image_1920x__28042018-IG-Fiksi-Non_Fiksi.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ganigambar.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pengertian fiksi adalah cerita rekaan atau khayalan, karya naratif yang tidak menyaran pada kebenaran sejarah. Selain itu, cerita fiksi bisa diartikan sebagai suatu karya yang menceritakan sesuatu yang tidak ada dan tidak perlu dicari kebenarannya. Novel adalah karya fiksi naratif yang dan biasanya diterbitkan dalam bentuk buku. Contoh karya fiksi biografis adalah &#039;bung karno penyambung lidah rakyat&#039; karya cindy adam..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bagian Bagian Buku Fiksi Your Books" data-src="https://i.pinimg.com/736x/f2/bb/7e/f2bb7e1fd7f9275cdb063186bb82fc9c.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: yourbooksreference.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tak jarang, fiksi adalah cerita yang membenamkan pembacanya ke dalam pengalaman yang mungkin tidak pernah dialami dalam kehidupan nyata. Selain itu, cerita fiksi bisa diartikan sebagai suatu karya yang menceritakan sesuatu yang tidak ada dan tidak perlu dicari kebenarannya. Novel romantis yaitu novel yang bercerita tentang kisah cinta. Book revie w nama kelompok deti febriyani kurnia choirul nisa miftahul janah.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Berikut Contoh Buku Non Fiksi Adalah Materi Soal" data-src="https://i2.wp.com/lh5.googleusercontent.com/proxy/bq7LRKaF2Ivjwgurhdday0vS7LdzAzy49PS4-hT4z5i9YcJg1tfl8ciN030BKNKbUUP9BriYK82ZppFEo87YZWpZvR-cpno_5Bd0gZ7EUQAOG-BtyFh2Cn1nAqRV8d2IdaQNV43T6Ls4TEbf7KP5-U2Tj8kW-DMFzo8D1KCQvyClWA=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: materisoalsiswa.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Adapun contoh fiksi dapat berupa novel, hikayat, fabel, komik, dongeng, cerpen, dan legenda. Dalam &#039;teori pengkajian fiksi&#039;, nurgiyantoro menjelaskan. Pengertian fiksi adalah cerita rekaan atau khayalan, karya naratif yang tidak menyaran pada kebenaran sejarah. Novel adalah karya fiksi naratif yang dan biasanya diterbitkan dalam bentuk buku. Ini salah satu genre yang paling populer dan banyak diminati orang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Buku Cerita Non Fiksi Adalah Alexis Ditutup" data-src="https://i2.wp.com/lh6.googleusercontent.com/proxy/onmPWs0le-_SkuDMmsf8xDOmAVoVFUjlIk1z3ahoBLRongSTDXR8oEBOMctdVilbaUdXag6R3RaMAm6SeF23wekVMPs4gONMm064ATfO=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: alexisditutup.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Karya tulis fiksi non fiksi • lebih menonjolkan kekuatan imajinasi penulis. Kata novel berasal dari bahasa italia, novella yang berarti “sebuah kisah, sepotong berita” dan novel memiliki cerita yang lebih. Pengertian fiksi adalah cerita rekaan atau khayalan, karya naratif yang tidak menyaran pada kebenaran sejarah. Menurut kamus besar bahasa indonesia (kbbi) pengertian fiksi adalah cerita rekaan seperti roman, novel, dan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Novel Fiksi Ahli Soal" data-src="https://i2.wp.com/lh3.googleusercontent.com/proxy/atrbGo_f-JWC97dzINVfMSO3m5xTeh1ffVGX6CH3OrcCY5z2Bt1eSOKMgtFSt-VfgxnJD33yZvKFpJI2MeGhSTkp-mzP-nWSvOtGZr0azo7j-k3IUHca_-Ri7Q=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ahlisoalsiswa.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Novel adalah karya fiksi naratif yang dan biasanya diterbitkan dalam bentuk buku. Berikut yang tergolong buku fiksi adalah, berilah tiga contoh buku fiksi, buatlah cerita fiksi dan non fiksi, buatlah sebuah indeks dari buku nonfiksi,. Cerpen adalah cerita fiksi dengan cerita yang lebih pendek dan lebih padat dibanding novel dan roman. Novel ini diterbitkan pada tahun 2017 oleh gradien mediatama..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kumpulan Cerita Lucu Cerpen Non Fiksi Sejarah" data-src="https://i2.wp.com/cdn.slidesharecdn.com/ss_thumbnails/resensibukuraksasadarijogja-140614113023-phpapp01-thumbnail-4.jpg?cb=1402745667" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: punyacerita28.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Diadaptasi dari karya sastra pramoedya ananta toer, bumi manusia akan jadi film berdurasi 3 jam. Tujuan orang menulis fiksi biasanya untuk. Kisah yang disajikan berdasarkan hubungan romantis antara dua orang. Novel termasuk dalam jenis buku fiksi. Berikut adalah novel laut bercerita bagi kalian yang tertarik dan penasaran dengan kisah lengkap dari laut dan para tokoh lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="[ベスト] buku novel contoh buku fiksi 115665 yeyenwalljp" data-src="https://i2.wp.com/3.bp.blogspot.com/-5Mt8T4AE6Sc/VYladdzRgTI/AAAAAAAAFck/rOZeOjOwuGY/s1600/cover%2Brahasia%2Bpelangi.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: yeyenwalljp.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dalam kerangka luasnya genre novel telah mencakup beragam jenis gaya, seperti romantis, atau sejarah. Novel dikatakan sebagai karya baru karena merupakan bentuk karya sastra yang lahir setelah karya sastra lama seperti puisi atau hikayat. Adapun contoh fiksi dapat berupa novel, hikayat, fabel, komik, dongeng, cerpen, dan legenda. Cerpen adalah kaya fiksi yang isinya jauh lebih sedikit dari roman dan novel..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kumpulan Contoh Resensi Buku Non Fiksi / Pengetahuan / Pelajaran" data-src="https://i2.wp.com/thegorbalsla.com/wp-content/uploads/2018/02/6.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: thegorbalsla.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Genre novel ini sering banget nih kita temuin di toko buku dan paling banyak diminati orang. Prosa sendiri merupakan karya yang digunakan untuk mendeskripsikan suatu cerita, ide atau fakta. Menurut nyata atau tidaknya kejadian. Novel fiksi yaitu novel yang tidak pernah terjadi dalam kehidupan nyata. Menurut situs kbbi , pengertian novel adalah karangan prosa panjang dengan rangkaian cerita kehidupan seseorang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cerita Fiksi Adalah Cerita Yang Ucap Natal" data-src="https://i2.wp.com/lh5.googleusercontent.com/proxy/XuWWHPb7lL4LpFkDdegjc2SvEchfRiAUbvefLyE_RFLJ5ln5yHIywsa0f03ivmtzk6eK5FcHD_9vA7_61HBzQbcsTbGdOs6Rskfa8WtPypK8H4kIfQdJsPRockwmSjos7mq5apigtxlB1Hi9cMfjQvw=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ucapnatal.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Novel adalah gendre fiksi dan fiksi dapat didefinisikan sebagai seni atau kerajinan untuk Salah satu kategori buku yang dapat diresensi adalah buku novel fiksi.anda penasaran? Novel fiksi, yaitu novel yang isi ceritanya tidak berdasarkan kejadian di kehidupan nyata. Kisah yang disajikan berdasarkan hubungan romantis antara dua orang. Contoh karya fiksi biografis adalah &#039;bung karno penyambung lidah rakyat&#039; karya cindy adam.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-items-en-investigacion.html" class="be-post-title">
+				 <h6>que es un items en investigacion </h6>
+                </a>
+                <a href="que-es-un-items-en-investigacion.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20items%20en%20investigacion&amp;w=50&amp;h=50&amp;c=7" alt="que es un items en investigacion">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-crear-una-empresa-en-estados-unidos-siendo-mexicano.html" class="be-post-title">
+				 <h6>como crear una empresa en estados unidos siendo mexicano </h6>
+                </a>
+                <a href="como-crear-una-empresa-en-estados-unidos-siendo-mexicano.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20crear%20una%20empresa%20en%20estados%20unidos%20siendo%20mexicano&amp;w=50&amp;h=50&amp;c=7" alt="como crear una empresa en estados unidos siendo mexicano">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-efecto-invernadero-artificial-para-niños.html" class="be-post-title">
+				 <h6>que es el efecto invernadero artificial para niños </h6>
+                </a>
+                <a href="que-es-el-efecto-invernadero-artificial-para-niños.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20efecto%20invernadero%20artificial%20para%20ni%C3%B1os&amp;w=50&amp;h=50&amp;c=7" alt="que es el efecto invernadero artificial para niños">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-pérgola-de-madera.html" class="be-post-title">
+				 <h6>que es una pérgola de madera </h6>
+                </a>
+                <a href="que-es-una-pérgola-de-madera.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20p%C3%A9rgola%20de%20madera&amp;w=50&amp;h=50&amp;c=7" alt="que es una pérgola de madera">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-interfaz-de-audio.html" class="be-post-title">
+				 <h6>que es el interfaz de audio </h6>
+                </a>
+                <a href="que-es-el-interfaz-de-audio.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20interfaz%20de%20audio&amp;w=50&amp;h=50&amp;c=7" alt="que es el interfaz de audio">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-controllable-risk-factor-for-heart-disease.html" class="be-post-title">
+				 <h6>what is a controllable risk factor for heart disease </h6>
+                </a>
+                <a href="what-is-a-controllable-risk-factor-for-heart-disease.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20controllable%20risk%20factor%20for%20heart%20disease&amp;w=50&amp;h=50&amp;c=7" alt="what is a controllable risk factor for heart disease">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-son-las-pectinas-en-los-alimentos.html" class="be-post-title">
+				 <h6>que son las pectinas en los alimentos </h6>
+                </a>
+                <a href="que-son-las-pectinas-en-los-alimentos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20son%20las%20pectinas%20en%20los%20alimentos&amp;w=50&amp;h=50&amp;c=7" alt="que son las pectinas en los alimentos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="umur-27-kelahiran-tahun-berapa.html" class="be-post-title">
+				 <h6>umur 27 kelahiran tahun berapa </h6>
+                </a>
+                <a href="umur-27-kelahiran-tahun-berapa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=umur%2027%20kelahiran%20tahun%20berapa&amp;w=50&amp;h=50&amp;c=7" alt="umur 27 kelahiran tahun berapa">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="nominal-risk-free-rate-là-gì.html" class="be-post-title">
+				 <h6>nominal risk free rate là gì </h6>
+                </a>
+                <a href="nominal-risk-free-rate-là-gì.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=nominal%20risk%20free%20rate%20l%C3%A0%20g%C3%AC&amp;w=50&amp;h=50&amp;c=7" alt="nominal risk free rate là gì">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-rising-sign-called-in-hindi.html" class="be-post-title">
+				 <h6>what is rising sign called in hindi </h6>
+                </a>
+                <a href="what-is-rising-sign-called-in-hindi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20rising%20sign%20called%20in%20hindi&amp;w=50&amp;h=50&amp;c=7" alt="what is rising sign called in hindi">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Coba Instrumen Penelitian Kualitatif at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Coba Instrumen Penelitian Kualitatif",
+  "datePublished": "2022-06-01T11:02:03Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20coba%20instrumen%20penelitian%20kualitatif",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20coba%20instrumen%20penelitian%20kualitatif&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20coba%20instrumen%20penelitian%20kualitatif" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20coba%20instrumen%20penelitian%20kualitatif" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Coba Instrumen Penelitian Kualitatif at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Coba Instrumen Penelitian Kualitatif</h2>
+    <p><strong>Uji Coba Instrumen Penelitian Kualitatif</strong>. Adapun koefisien korelasi berkisar diantara 0,507 sampai dengan 0,851. Uji coba instrumen terpakai dalam penelitian ini tidak lain adalah untuk dua kepentingan, yaitu untuk mencari validitas dan.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20coba%20instrumen%20penelitian%20kualitatif" alt="Kisi Kisi Instrumen Hasil Belajar Siswa Cara Mengajarku" />
+        <br>
+        <figcaption>Kisi Kisi Instrumen Hasil Belajar Siswa Cara Mengajarku from berbagimengajar.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Pada uji coba skala yang pertama, aitem yang tidak valid lebih banyak dibandingkan aitem yang valid pada skala berpikir positif dan terdapat indikator pada blueprint yang tidak terwakili oleh satu aitempun. Jenis data penelitian ini berupa data kualitatif dan data kuantitatif. Sebelum digunakan pengambilan data yang sebenarnya, bentuk akhir dari angket yang telah disusun perlu diuji cobakan guna untuk memenuhi alat sebagai pengumpul data yang baik.
+    </p>
+    <h3>Kisi Kisi Instrumen Hasil Belajar Siswa Cara Mengajarku</h3>
+    <p>Pengembangan instrumen untuk mengumpulkan data penelitian. Data kuantitatif dapat diperoleh dari hasil kritikan, tanggapan dan saran dari para ahli. Instrumen variabel penelitian indikator 1 penulisan teks, kata Oleh karena itu, instrumen penelitian yang digunakan dalam penelitian kuantitatif, harus melalui analisis try out (uji coba) instrumen.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Coba Instrumen Akademik dan Non Akademik Pusmenjar Jenjang SD Tahun" data-src="https://i2.wp.com/smpn6tp.sch.id/wp-content/uploads/2021/04/ujicobasd-01.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: smpn6tp.sch.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Data dikumpulkan dengan teknik kuisioner, yaitu. Data kuantitatif diperoleh dari angket dan tes yang diberikan kepada subjek coba. Oleh karena itu, instrumen penelitian yang digunakan dalam penelitian kuantitatif, harus melalui analisis try out (uji coba) instrumen. Pemanfaatan sumber belajar di internet 30 0,832 sangat tinggi reliabel 2. Motivasi belajar 30 0,825 sangat tinggi reliabel hasil dari uji reliabilitas menunjukkan bahwa.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Lampiran 1 instrumen uji coba" data-src="https://i2.wp.com/image.slidesharecdn.com/lampiran1instrumenujicoba-131020121648-phpapp01/95/lampiran-1-instrumen-uji-coba-2-638.jpg?cb=1382271506" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sedangkan pada penelitian kualitatif di samping instrument tersebut di atas peneliti juga merupakan instrumen. Jenis data penelitian ini berupa data kualitatif dan data kuantitatif. Instrumen variabel penelitian indikator 1 penulisan teks, kata Pengujian dilakukan dengan cara melakukan penelitian uji coba baik dengan sampel yang sama maupun sampel yang berbeda namun dengan karakter yang sama. Pada umumnya, analisis uji coba instrumen,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Lampiran 1 instrumen uji coba" data-src="https://i2.wp.com/image.slidesharecdn.com/lampiran1instrumenujicoba-131020121648-phpapp01/95/lampiran-1-instrumen-uji-coba-6-638.jpg?cb=1382271506" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sedangkan pada penelitian kualitatif di samping instrument tersebut di atas peneliti juga merupakan instrumen. Untuk uji coba produk dilakukan dengan dua cara yaitu uji coba kelompok kecil dan uji coba lapangan. Uji coba produk bahan ajar yang telah selesai dibuat, selanjutnya diuji cobakan dalam kegiatan pembelajaran. Maka dari itu, kamu perlu melakukan uji coba instrumen penelitian guna menentukan kelayakannya dari.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Lampiran 1 instrumen uji coba" data-src="https://i2.wp.com/image.slidesharecdn.com/lampiran1instrumenujicoba-131020121648-phpapp01/95/lampiran-1-instrumen-uji-coba-15-638.jpg?cb=1382271506" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Objek penelitian dalam penelitian kualitatif yang di observasi menurut spradley dalam sugiyono (2017:229) dinamakan situasi sosial, yang. Uji coba instrumen uji coba instrumen merupakan suatu tindakan yang dilakukan dalam penelitian kuantitatif guna menguji keabsahan dari instrumen yang dipergunakan. Jenis instrumen yang digunakan oleh peneliti pada uji validasi produk melalui uji coba lapangan terbatas adalah kuesioner. 1 bab iii metodologi penelitian.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Laporan Hasil Uji Coba Soal" data-src="https://i2.wp.com/imgv2-1-f.scribdassets.com/img/document/77531934/original/822fdbcbdf/1566051377?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pengembangan instrumen untuk mengumpulkan data penelitian. Sebelum digunakan pengambilan data yang sebenarnya, bentuk akhir dari angket yang telah disusun perlu diuji cobakan guna untuk memenuhi alat sebagai pengumpul data yang baik. Mengujicobakan instrumen uji coba instrumen perlu dilakukan untuk mengetahui tingkat reabilitas dan validitas serta keterbacaan setiap item. Uji coba instrumen uji coba instrumen merupakan suatu tindakan yang dilakukan dalam.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Tabel Kisi Kisi Instrumen Penelitian Dunia Sosial" data-src="https://i2.wp.com/cdn.slidesharecdn.com/ss_thumbnails/lampiran1instrumenujicoba-131020121648-phpapp01-thumbnail-4.jpg?cb=1382271506" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.duniasosial.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji efek melalui uji coba 10.36526/kejaora.v6i1.1174 teknik pengumpulan data dengan cara observasi, studi dokumentasi, wawancara dan tes, analisis data dilakukan secara kualitatif dan kuantitatif, pengembangan model melalui uji coba terbatas, uji coba luas dan uji efektiifitas. Uji coba produk bahan ajar yang telah selesai dibuat, selanjutnya diuji cobakan dalam kegiatan pembelajaran. Mengujicobakan instrumen uji coba instrumen perlu dilakukan untuk mengetahui.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kisi Kisi Instrumen Hasil Belajar Siswa Cara Mengajarku" data-src="https://i2.wp.com/0.academia-photos.com/attachment_thumbnails/43086803/mini_magick20180819-24613-vc2eep.png?1534706331" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: berbagimengajar.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Instrumen variabel penelitian indikator 1 penulisan teks, kata Mengujicobakan instrumen uji coba instrumen perlu dilakukan untuk mengetahui tingkat reabilitas dan validitas serta keterbacaan setiap item. Melalui uji coba tersebut, instrumen di berikan kepada sejumlah responden sebagai sampel uji coba yang mempunyai karakteristik sama atau ekivalen dengan karakteristik populasi penelitian. 3.6 uji coba instrumen uji coba dalam penelitian ini dilakukan selama.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="My LittLe Blog BAB III" data-src="https://i2.wp.com/4.bp.blogspot.com/-wDLXUIOEmqo/UPuURg8-RsI/AAAAAAAAAIg/k3KVoTFKpak/s1600/wrewrdt.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: wuuindahwulan.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Objek penelitian dalam penelitian kualitatif yang di observasi menurut spradley dalam sugiyono (2017:229) dinamakan situasi sosial, yang. Uji coba ini dimasudkan untuk mendapatkan informasi apakah bahan ajar ini bisa membantu pembelajaran siswa. Berurutan dibahas desain uji coba, subjek uji coba, jenis data, instrumen pengumpulan data, dan teknik analisis data. Melalui uji coba tersebut, instrumen di berikan kepada sejumlah responden sebagai.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Instrumen Penelitian {{15}} Contoh O" data-src="https://i2.wp.com/lh6.googleusercontent.com/proxy/KugUyB7YCmmMbrBABbVoi44mZRJGW57Q6UpVhWvrBYtnh-2SBTP8cu4EpoXEzGr4dLhD-8saWBYcpgMhKnBXFi4GaJ37Y942VgyZvw8sVuBUghb3uryxhf6bl4BNbJsXkO2xOacHHCHLD9QiPA4INqUXZTR-ODleTuGJVWt-0C7igtviaPFYOT8aoJWZT0ZEza8ZzSJgrlb4BWG2rBoVnquYjYF_maZpSkLdN9W-=s0-d" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: contoho.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Silakan cek mulai dari keterbacaan, relevansi dengan topik penelitian, serta kesesuaian dengan variabel yang ada. Jenis data penelitian ini berupa data kualitatif dan data kuantitatif. Mengujicobakan instrumen uji coba instrumen perlu dilakukan untuk mengetahui tingkat reabilitas dan validitas serta keterbacaan setiap item. Sementara dalam penelitian kualitatif, kesahihan data lapangan sangat dipengaruhi oleh. Instrumen untuk teknik tersebut pada penelitian kuantitatif adalah:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="SD.N 080 Bengkulu Utara Lakukan Uji Coba Instrumen Akademik dan Non" data-src="https://i2.wp.com/pakarnews.id/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-06-at-17.01.18-1-696x522.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: pakarnews.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">One shot model adalah model pendekatan yang. Adapun koefisien korelasi berkisar diantara 0,507 sampai dengan 0,851. Objek penelitian dalam penelitian kualitatif yang di observasi menurut spradley dalam sugiyono (2017:229) dinamakan situasi sosial, yang. Antara lain, ali dan yusof (2011) mendefinisikan penelitian kualitatif sebagai: Uji coba produk bahan ajar yang telah selesai dibuat, selanjutnya diuji cobakan dalam kegiatan pembelajaran.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="gerakan-menendang-bola-dengan-menggunakan-punggung-kaki-bagian-dalam-adalah.html" class="be-post-title">
+				 <h6>gerakan menendang bola dengan menggunakan punggung kaki bagian dalam adalah </h6>
+                </a>
+                <a href="gerakan-menendang-bola-dengan-menggunakan-punggung-kaki-bagian-dalam-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=gerakan%20menendang%20bola%20dengan%20menggunakan%20punggung%20kaki%20bagian%20dalam%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="gerakan menendang bola dengan menggunakan punggung kaki bagian dalam adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-ser-malacopa.html" class="be-post-title">
+				 <h6>que significa ser malacopa </h6>
+                </a>
+                <a href="que-significa-ser-malacopa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20ser%20malacopa&amp;w=50&amp;h=50&amp;c=7" alt="que significa ser malacopa">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-estratificación-socioeconómica.html" class="be-post-title">
+				 <h6>que es la estratificación socioeconómica </h6>
+                </a>
+                <a href="que-es-la-estratificación-socioeconómica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20estratificaci%C3%B3n%20socioecon%C3%B3mica&amp;w=50&amp;h=50&amp;c=7" alt="que es la estratificación socioeconómica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="eos-latin-meaning.html" class="be-post-title">
+				 <h6>eos latin meaning </h6>
+                </a>
+                <a href="eos-latin-meaning.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=eos%20latin%20meaning&amp;w=50&amp;h=50&amp;c=7" alt="eos latin meaning">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="most-common-south-african-surnames.html" class="be-post-title">
+				 <h6>most common south african surnames </h6>
+                </a>
+                <a href="most-common-south-african-surnames.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=most%20common%20south%20african%20surnames&amp;w=50&amp;h=50&amp;c=7" alt="most common south african surnames">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="prisión-federal-estados-unidos.html" class="be-post-title">
+				 <h6>prisión federal estados unidos </h6>
+                </a>
+                <a href="prisión-federal-estados-unidos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=prisi%C3%B3n%20federal%20estados%20unidos&amp;w=50&amp;h=50&amp;c=7" alt="prisión federal estados unidos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-liveborn.html" class="be-post-title">
+				 <h6>what is liveborn </h6>
+                </a>
+                <a href="what-is-liveborn.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20liveborn&amp;w=50&amp;h=50&amp;c=7" alt="what is liveborn">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-sinfonia-en-musica.html" class="be-post-title">
+				 <h6>que es una sinfonia en musica </h6>
+                </a>
+                <a href="que-es-una-sinfonia-en-musica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20sinfonia%20en%20musica&amp;w=50&amp;h=50&amp;c=7" alt="que es una sinfonia en musica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-desliz-en-una-relación.html" class="be-post-title">
+				 <h6>que es un desliz en una relación </h6>
+                </a>
+                <a href="que-es-un-desliz-en-una-relación.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20desliz%20en%20una%20relaci%C3%B3n&amp;w=50&amp;h=50&amp;c=7" alt="que es un desliz en una relación">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-contrato-de-donacion-entre-vivos.html" class="be-post-title">
+				 <h6>que es un contrato de donacion entre vivos </h6>
+                </a>
+                <a href="que-es-un-contrato-de-donacion-entre-vivos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20contrato%20de%20donacion%20entre%20vivos&amp;w=50&amp;h=50&amp;c=7" alt="que es un contrato de donacion entre vivos">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

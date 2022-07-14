@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Hoeveel Betalingen Per Tikkie at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Hoeveel Betalingen Per Tikkie",
+  "datePublished": "2022-07-12T03:36:25Z",
+  "image": "https://tse1.mm.bing.net/th?q=hoeveel%20betalingen%20per%20tikkie",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=hoeveel%20betalingen%20per%20tikkie&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=hoeveel%20betalingen%20per%20tikkie" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=hoeveel%20betalingen%20per%20tikkie" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Hoeveel Betalingen Per Tikkie at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Hoeveel Betalingen Per Tikkie</h2>
+    <p><strong>Hoeveel Betalingen Per Tikkie</strong>. De app laadt dan direct het totaalbedrag in en kan voor je. Tikkie voor de zakelijke markt tikkie startte als betaalapp voor consumenten, maar is sinds september 2018 ook beschikbaar voor de zakelijke markt.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=hoeveel%20betalingen%20per%20tikkie" alt="Poenpraat 64 ‘Ik stuur mijn zoon voor iedere euro een tikkie’ &amp;C" />
+        <br>
+        <figcaption>Poenpraat 64 ‘Ik stuur mijn zoon voor iedere euro een tikkie’ &amp;C from www.andc.tv</figcaption>
+    </figure>
+        <p>
+        Klik op ‘’akkoord en doorgaan’’. Jullie komen er samen al snel uit, maar de koper vraagt je wel of je misschien even één cent over kunt maken, zogenaamd om je rekeningnummer te verifiëren. Zo mag je verzoekje niet hoger zijn dan € 750.
+    </p>
+    <h3>Poenpraat 64 ‘Ik stuur mijn zoon voor iedere euro een tikkie’ &amp;C</h3>
+    <p>Zo mag je verzoekje niet hoger zijn dan € 750. Een tikkie kun je niet betalen met een creditcard. In 2021 was al 87% van de elektronische betalingen contactloos. Dit wordt overigens gecontroleerd of de gegevens kloppen door abn amro.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="‘Tikkie heeft het volume om straks ook dé afrekenapp in de retail te" data-src="https://i2.wp.com/cdn.adformatie.nl/styles/fullwidth_image/cloud-storage/2018-06/Freek de Steenwinkel_Tikkie_ABN Amro_16-9.jpg?itok=NrWTt8cw" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.adformatie.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Op piekmomenten verwerken we 350 tikkies per minuut. Let op, dit gaat om het bedrag per persoon, dus níet het totale bedrag. Tikkie check staat los van tikkie voor bedrijven en moet apart worden aangevraagd. Als eerste kijken we even waarom een tikkie niet. Komt u daarboven, dan hangt de prijs per tikkie af van het aantal geslaagde tikkies per.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="De Tikkie Terug Bespaartest" data-src="https://i2.wp.com/www.stichtingmilieunet.nl/andersbekekenblog/wp-content/uploads/2009/10/Tikkie-Terug-Bespaartest.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.stichtingmilieunet.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In welke app het bericht verschijnt, is afhankelijk van de door de verzender gekozen optie. Zodra de betaling achter de rug is zijn op de hoogte van jouw bankrekeningnummer, inlognaam en wachtwoord. In 2019 kende de betaalapp al maar liefst 5 miljoen gebruikers en werden de helft van de betaalverzoeken binnen een half uur al betaald en 80% binnen één.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kookboek &quot;Recepten uit de Lisztstraat&quot; door Marijn Koesen Koken met" data-src="https://i2.wp.com/www.kokenmetkoesen.nl/images/boek/boek-inside-content.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.kokenmetkoesen.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Zo mag je bij een tikkie maximaal 2.500 eur per dag terugvragen, bij een ing verzoek is dat 5.000 eur. En in de weekenden nog wel meer. Zodra de betaling achter de rug is zijn op de hoogte van jouw bankrekeningnummer, inlognaam en wachtwoord. In welke app het bericht verschijnt, is afhankelijk van de door de verzender gekozen optie. Per.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tikkie App geld terugvragen via What’s App How 2 Spend It How 2" data-src="https://i2.wp.com/s3-eu-west-1.amazonaws.com/h2si/production/IMG_6228.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: how2spendit.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Om fraude en zakelijk gebruik te voorkomen zijn er een aantal grenzen aan het gebruik van tikkie. Bij ‘laat je vrienden het bedrag bepalen’ kunt u het schuifje naar. Tikkie voor de zakelijke markt tikkie startte als betaalapp voor consumenten, maar is sinds september 2018 ook beschikbaar voor de zakelijke markt. Ontvang tot € 15.000 per dag. Je geeft het.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Geef een DorpsDiner Stichting Wereld Dorpen voor Kinderen" data-src="https://i2.wp.com/www.werelddorpenvoorkinderen.nl/wp-content/uploads/2019/04/Kinderen-uit-dorpen-aan-eettafel.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.werelddorpenvoorkinderen.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En in de weekenden nog wel meer. Vanaf april is dit gegroeid naar gemiddeld meer dan 300.000 tikkies per dag. Let op, dit gaat om het bedrag per persoon, dus níet het totale bedrag. De bestuursvergaderingen en het overleg met hge bevestigden mijn idee dat het enthousiasme aan alle kanten terecht is. Een andere handige functie is dat het mogelijk.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Met een QR code betalingen online verrichten? Gratis QR Code" data-src="https://i2.wp.com/gratisqrcode.nl/wp-content/uploads/2021/08/tikkie-whatsapp.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: gratisqrcode.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Met de app tikkie kun je eenvoudig betaalverzoekjes doen via whatsapp. &#039;tikkie.me/pay/&#039; in de rest van de link. Op piekmomenten verwerken we 350 tikkies per minuut. Tikkie is voor consumenten gratis en daarmee voor moederbedrijf abn amro verlieslatend. Per verzoek kunnen je vrienden je maximaal € 2.500 terugbetalen.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Geef een DorpsDiner Stichting Wereld Dorpen voor Kinderen" data-src="https://i2.wp.com/www.werelddorpenvoorkinderen.nl/wp-content/uploads/2019/04/qrcode_open_bedrag_dorpen_voor_kinderen_5-4-19-1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.werelddorpenvoorkinderen.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Om fraude en zakelijk gebruik te voorkomen zijn er een aantal grenzen aan het gebruik van tikkie. Gelukkig is het gemakkelijk om een echt betaalverzoek te herkennen. Het maximale bedrag per verstuurde tikkie is € 5.000. Die betalen 25 cent per transactie en kunnen betaalverzoeken. Nadat u alle gegevens heeft ingevuld, krijgt u een tikkie link.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Poenpraat 64 ‘Ik stuur mijn zoon voor iedere euro een tikkie’ &amp;C" data-src="https://i2.wp.com/andc-scale.livewallcampaigns.com/imageScaled/?site=andc&amp;file=1611843002_poenpraat_Linn.jpg&amp;w=2000&amp;h=2000&amp;cropped=0" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.andc.tv</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tikkie voor de zakelijke markt tikkie startte als betaalapp voor consumenten, maar is sinds september 2018 ook beschikbaar voor de zakelijke markt. Zo mag je verzoekje niet hoger zijn dan € 750. Voor jouw bedrijf en je klanten voor jou en je vrienden. Als eerst moet je de app tikkie downloaden en bij het openen van de app geef je.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Waar, wat, hoeveel? Een tikkie naar het zuiden" data-src="https://i2.wp.com/eentikkienaarhetzuidenblog.files.wordpress.com/2016/01/img_0403-1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: eentikkienaarhetzuidenblog.wordpress.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Klik op ‘’akkoord en doorgaan’’. Met tikkie worden rekening veel sneller betaald. Op welke manier kan je tikkie gebruiken? Die betalen 25 cent per transactie en kunnen betaalverzoeken. Deze kopieert u eenvoudig in een factuur, sms of whatsapp.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Hoe werkt de betaalapp Tikkie? Het gemak van een Tikkie sturen." data-src="https://i2.wp.com/www.mnlk.nl/wp-content/uploads/2020/05/Hoe-werkt-Tikkie.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.mnlk.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Nu gaat contactloos betalen vooral met de pinpas. Tikkie is voor consumenten gratis en daarmee voor moederbedrijf abn amro verlieslatend. Aan het einde van de avond zijn de kosten opgelopen en wil je de rekening in drieën splitsen. Er wordt geld verdiend aan zakelijke klanten. De app laadt dan direct het totaalbedrag in en kan voor je.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-es-la-andropausia-en-los-hombres.html" class="be-post-title">
+				 <h6>como es la andropausia en los hombres </h6>
+                </a>
+                <a href="como-es-la-andropausia-en-los-hombres.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20es%20la%20andropausia%20en%20los%20hombres&amp;w=50&amp;h=50&amp;c=7" alt="como es la andropausia en los hombres">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-xilema-y-el-floema-en-las-plantas.html" class="be-post-title">
+				 <h6>que es el xilema y el floema en las plantas </h6>
+                </a>
+                <a href="que-es-el-xilema-y-el-floema-en-las-plantas.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20xilema%20y%20el%20floema%20en%20las%20plantas&amp;w=50&amp;h=50&amp;c=7" alt="que es el xilema y el floema en las plantas">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="realismo-magico-de-gabriel-garcia-marquez-resumen.html" class="be-post-title">
+				 <h6>realismo magico de gabriel garcia marquez resumen </h6>
+                </a>
+                <a href="realismo-magico-de-gabriel-garcia-marquez-resumen.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=realismo%20magico%20de%20gabriel%20garcia%20marquez%20resumen&amp;w=50&amp;h=50&amp;c=7" alt="realismo magico de gabriel garcia marquez resumen">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-sifon-en-cocina.html" class="be-post-title">
+				 <h6>que es sifon en cocina </h6>
+                </a>
+                <a href="que-es-sifon-en-cocina.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20sifon%20en%20cocina&amp;w=50&amp;h=50&amp;c=7" alt="que es sifon en cocina">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-i-s-mean-in-medical-terms.html" class="be-post-title">
+				 <h6>what does i/s mean in medical terms </h6>
+                </a>
+                <a href="what-does-i-s-mean-in-medical-terms.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20i%2Fs%20mean%20in%20medical%20terms&amp;w=50&amp;h=50&amp;c=7" alt="what does i/s mean in medical terms">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-quitar-el-dolor-de-las-plantas-de-los-pies.html" class="be-post-title">
+				 <h6>como quitar el dolor de las plantas de los pies </h6>
+                </a>
+                <a href="como-quitar-el-dolor-de-las-plantas-de-los-pies.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20quitar%20el%20dolor%20de%20las%20plantas%20de%20los%20pies&amp;w=50&amp;h=50&amp;c=7" alt="como quitar el dolor de las plantas de los pies">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-akkoord.html" class="be-post-title">
+				 <h6>wat is een akkoord </h6>
+                </a>
+                <a href="wat-is-een-akkoord.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20akkoord&amp;w=50&amp;h=50&amp;c=7" alt="wat is een akkoord">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-doet-een-kaderarts.html" class="be-post-title">
+				 <h6>wat doet een kaderarts </h6>
+                </a>
+                <a href="wat-doet-een-kaderarts.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20doet%20een%20kaderarts&amp;w=50&amp;h=50&amp;c=7" alt="wat doet een kaderarts">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-contiene-el-hidrato-de-gas.html" class="be-post-title">
+				 <h6>que contiene el hidrato de gas </h6>
+                </a>
+                <a href="que-contiene-el-hidrato-de-gas.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20contiene%20el%20hidrato%20de%20gas&amp;w=50&amp;h=50&amp;c=7" alt="que contiene el hidrato de gas">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-sincrona.html" class="be-post-title">
+				 <h6>que significa sincrona </h6>
+                </a>
+                <a href="que-significa-sincrona.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20sincrona&amp;w=50&amp;h=50&amp;c=7" alt="que significa sincrona">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Que Es Diccionario De Datos En Base De Datos at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Que Es Diccionario De Datos En Base De Datos",
+  "datePublished": "2022-03-17T19:54:39Z",
+  "image": "https://tse1.mm.bing.net/th?q=que%20es%20diccionario%20de%20datos%20en%20base%20de%20datos",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=que%20es%20diccionario%20de%20datos%20en%20base%20de%20datos&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20es%20diccionario%20de%20datos%20en%20base%20de%20datos" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20es%20diccionario%20de%20datos%20en%20base%20de%20datos" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Que Es Diccionario De Datos En Base De Datos at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Que Es Diccionario De Datos En Base De Datos</h2>
+    <p><strong>Que Es Diccionario De Datos En Base De Datos</strong>. Cada tabla son documentos como una unidad específica con una definición detallada de los nombres de los campos dentro de la tabla. El diccionario se debe guardar en la misma base de datos que la.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=que%20es%20diccionario%20de%20datos%20en%20base%20de%20datos" alt="Diccionario De Datos" />
+        <br>
+        <figcaption>Diccionario De Datos from es.slideshare.net</figcaption>
+    </figure>
+        <p>
+        Conjunto de documentos de la metodología. Base de datos de topología ncim. Si uno se olvida de recopilar, estarán conviviendo datos en la correcta versión.
+    </p>
+    <h3>Diccionario De Datos</h3>
+    <p>El diccionario de datos es un componente esencial en cualquier sgbd ya que contiene información (metadatos) sobre los objetos de las bases de datos alojadas en nuestro servidor. Manual de indización de documentos para la base de datos lilacs; Describe la composición de los paquetes de datos (tablas) en la base de datos. Metadatos son datos acerca de los datos, tales como el nombre de las bases de datos o tablas, el tipo de datos de una columna.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Base de Datos 2 DICCIONARIO DE DATOS" data-src="https://i2.wp.com/3.bp.blogspot.com/-qFoGexlKYew/TjW56GylzFI/AAAAAAAAADU/WFCy69n3n2M/w1200-h630-p-k-nu/Image23848.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: katyygaby.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Datos describen las bases de datos y sus objetos. El diccionario de datos es donde oracle almacena metadatos sobre los objetos en la base de datos. Diccionario de datos del modelo. El diccionario se debe guardar en la misma base de datos que la. En sí mismos los diagramas de flujo de datos no describen por completo el objeto de.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="El Rincon de las Notas Recolección de datos" data-src="https://i2.wp.com/image.slidesharecdn.com/diccionariodedatos-090926104143-phpapp01/95/diccionario-de-datos-1-728.jpg?cb=1253979735" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: elrincondelasnotas.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Estos documentos almacenados no siempre son iguales, a diferencia de una. Base de datos de topología ncim. Las bases de datos de tipo documento guardan construcciones de datos jerárquicas y autodescriptivas, generalmente en formato json. Detalles de las transacciones y registros maestros que son de interés para la. Identifica los procesos donde se emplean los datos y los sitios donde.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="base de datos Diccionario de datos" data-src="https://i2.wp.com/lh5.googleusercontent.com/proxy/7GanJBRzi7XdV_I1rDwYy0eUbqLhBp7djJZPqAW1yBm7j0N0YZLz5MZfEccH0cixiODVgAj7UVtMgMZVlPf1vt7jxt7l5LguARa3NlvtBsMHo1TkR9snwx4rVjzw3g7asC0vMAz7vzuO=s0-d" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bere-basededatos.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Este define como se almacena la información y cómo se accede a ella. Datos describen las bases de datos y sus objetos. Tablas que almacenan información de la base de datos. Incluyen dos tipos de objetos tablas base vistas de diccionario de datos. Si los valores de los datos están restringidos a un intervalo especifico, esto debe estar en la.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ejemplo de diccionario de datos para SQL Tabla (base de datos) SQL" data-src="https://i2.wp.com/imgv2-1-f.scribdassets.com/img/document/410890161/original/bf4be559c2/1614600962?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">[1] en un diccionario de datos se encuentra la lista de todos los elementos que forman parte del flujo de datos en todo el sistema. Los diccionarios de datos son el segundo componente del análisis del flujo de datos. El diccionario de datos es el lugar donde se deposita información acerca de todos los datos que forman la bd. Select.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Plantilla Diccionario de Datos Tabla (base de datos) Menú" data-src="https://i2.wp.com/imgv2-2-f.scribdassets.com/img/document/94805748/original/5d6526e5e1/1589297229?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Diccionario de datos del modelo. Si los valores de los datos están restringidos a un intervalo especifico, esto debe estar en la entrada del diccionario. Estos documentos almacenados no siempre son iguales, a diferencia de una. Las bases de datos de tipo documento guardan construcciones de datos jerárquicas y autodescriptivas, generalmente en formato json. La elaboración de diccionarios de datos.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Diccionario De Datos" data-src="https://i2.wp.com/image.slidesharecdn.com/diccionariodedatos-090826172139-phpapp02/95/diccionario-de-datos-1-728.jpg?cb=1251307338" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Diccionario de datos de las bases de datos. Contiene las características lógicas de los sitios donde se almacenan los datos del. La serie completa es compuesta de 5 documentos: Define con precisión los datos de entrada, salida, componentes de almacenes, flujos, detalles de las relaciones entre almacenes, etc. La elaboración de diccionarios de datos que incluyan los detalles técnicos de.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="MODELOS DE BASE DE DATOS" data-src="https://i2.wp.com/i.ytimg.com/vi/jVxdPXr4hBA/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: basededatosintormatica421.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Este tipo de diccionario de datos se denomina diccionario de datos pasivo. Los diccionarios de datos son el segundo componente del análisis del flujo de datos. El diccionario de datos es un componente esencial en cualquier sgbd ya que contiene información (metadatos) sobre los objetos de las bases de datos alojadas en nuestro servidor. Define con precisión los datos de.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="diccionario de datos" data-src="https://i2.wp.com/imgv2-2-f.scribdassets.com/img/document/117463545/original/5da5a8f337/1600727698?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Las bases de datos de tipo documento guardan construcciones de datos jerárquicas y autodescriptivas, generalmente en formato json. Metadatos son datos acerca de los datos, tales como el nombre de las bases de datos o tablas, el tipo de datos de una columna. Esta sección analiza que es un diccionario de datos, por. Incluyen dos tipos de objetos tablas base.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Base de Datos 2 DICCIONARIO DE DATOS" data-src="https://i2.wp.com/1.bp.blogspot.com/-ZYraP05FT_Y/TjWxTvoCYEI/AAAAAAAAADA/tAuA-zqsnR8/s1600/etl-mapa-logico-procesos.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: katyygaby.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Las bases de datos de tipo documento guardan construcciones de datos jerárquicas y autodescriptivas, generalmente en formato json. En este caso, existe la posibilidad de que no coincidan los objetos de la base de datos y el diccionario de datos. Es frecuente que cuando hablamos de diccionario de datos su significado se confunda con el de glosario de negocio o.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="DICCIONARIO DATOS DE SISTEMA DE FICHAS CATASTRO URBANO COFOPRI Tabla" data-src="https://i2.wp.com/imgv2-1-f.scribdassets.com/img/document/234264397/original/adb79d2203/1588172344?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Identifica los procesos donde se emplean los datos y los sitios donde se necesita el acceso inmediato a la información, se desarrolla durante el. Estos datos se encuentran detallados y pueden ser comprendidos entre los analistas de sistemas y los usuarios que tendrán acceso al documento. Describe la composición de los paquetes de datos (tablas) en la base de datos..</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-son-los-milestones.html" class="be-post-title">
+				 <h6>que son los milestones </h6>
+                </a>
+                <a href="que-son-los-milestones.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20son%20los%20milestones&amp;w=50&amp;h=50&amp;c=7" alt="que son los milestones">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-high-apoptosis-mean.html" class="be-post-title">
+				 <h6>what does high apoptosis mean </h6>
+                </a>
+                <a href="what-does-high-apoptosis-mean.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20high%20apoptosis%20mean&amp;w=50&amp;h=50&amp;c=7" alt="what does high apoptosis mean">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-imd-in-kotak-life-insurance.html" class="be-post-title">
+				 <h6>what is imd in kotak life insurance </h6>
+                </a>
+                <a href="what-is-imd-in-kotak-life-insurance.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20imd%20in%20kotak%20life%20insurance&amp;w=50&amp;h=50&amp;c=7" alt="what is imd in kotak life insurance">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-revolución-digital.html" class="be-post-title">
+				 <h6>que es la revolución digital </h6>
+                </a>
+                <a href="que-es-la-revolución-digital.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20revoluci%C3%B3n%20digital&amp;w=50&amp;h=50&amp;c=7" alt="que es la revolución digital">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-minecraft-cuenta-premium.html" class="be-post-title">
+				 <h6>que es minecraft cuenta premium </h6>
+                </a>
+                <a href="que-es-minecraft-cuenta-premium.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20minecraft%20cuenta%20premium&amp;w=50&amp;h=50&amp;c=7" alt="que es minecraft cuenta premium">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-instalar-una-tarja-en-cocina-de-concreto.html" class="be-post-title">
+				 <h6>como instalar una tarja en cocina de concreto </h6>
+                </a>
+                <a href="como-instalar-una-tarja-en-cocina-de-concreto.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20instalar%20una%20tarja%20en%20cocina%20de%20concreto&amp;w=50&amp;h=50&amp;c=7" alt="como instalar una tarja en cocina de concreto">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-paritair-comité.html" class="be-post-title">
+				 <h6>wat is een paritair comité </h6>
+                </a>
+                <a href="wat-is-een-paritair-comité.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20paritair%20comit%C3%A9&amp;w=50&amp;h=50&amp;c=7" alt="wat is een paritair comité">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="czy-podczas-jajeczkowania-boli-brzuch.html" class="be-post-title">
+				 <h6>czy podczas jajeczkowania boli brzuch </h6>
+                </a>
+                <a href="czy-podczas-jajeczkowania-boli-brzuch.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=czy%20podczas%20jajeczkowania%20boli%20brzuch&amp;w=50&amp;h=50&amp;c=7" alt="czy podczas jajeczkowania boli brzuch">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-filosofo-definicion.html" class="be-post-title">
+				 <h6>que es un filosofo definicion </h6>
+                </a>
+                <a href="que-es-un-filosofo-definicion.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20filosofo%20definicion&amp;w=50&amp;h=50&amp;c=7" alt="que es un filosofo definicion">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-fonavista.html" class="be-post-title">
+				 <h6>que es fonavista </h6>
+                </a>
+                <a href="que-es-fonavista.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20fonavista&amp;w=50&amp;h=50&amp;c=7" alt="que es fonavista">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

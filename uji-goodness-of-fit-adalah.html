@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Goodness Of Fit Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Goodness Of Fit Adalah",
+  "datePublished": "2022-06-10T18:50:41Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20goodness%20of%20fit%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20goodness%20of%20fit%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20goodness%20of%20fit%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20goodness%20of%20fit%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Goodness Of Fit Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Goodness Of Fit Adalah</h2>
+    <p><strong>Uji Goodness Of Fit Adalah</strong>. Nilainya diharapkan tinggi lebih besar sama dengan 0,90. Uji kecocokan (goodness of fit) uji kecocokan,.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20goodness%20of%20fit%20adalah" alt="SUMMARY STATISTIK Uji Chi Square" />
+        <br>
+        <figcaption>SUMMARY STATISTIK Uji Chi Square from billyonlinetext.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Uji kecocokan adalah uji untuk mengetahui kenormalan suatu distribusi. Diharapkan nilainya rendah sehingga diperoleh nilai p (probability) yang tinggi melebihi 0,05. 2.â â â â â â memilih distribusi yang digunakan.
+    </p>
+    <h3>SUMMARY STATISTIK Uji Chi Square</h3>
+    <p>Ukuran kesesuaian model secara deskriptif. Pengujian goodness of fit pengujian goodness of fit yang biasa digunakan dalam statistika adalah:. Rentang nilai antara 0 (poor fit) sampai dengan 1.0 (perfect fit). Goodness of fit indeks (gfi) :</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Normalitas dengan Goodness of Fit Test" data-src="https://i2.wp.com/jagostat.com/img/metstat2/uji_normalitas/goodness_of_fit_test/t2.PNG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: jagostat.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Interpretasi hasil estimasi uji goodness of fit. Semakin mendekati angka 1, model dinyatakan semakin baik. Pengujian goodness of fit menggunakan chi square (chi kuadrat). Salah satu syarat dalam uji regresi logistik yang harus terpenuhi yaitu persamaan regresi tersebut mempunyai persamaan yang telah memiliki goodness of fit yang baik.goodness of fit yang baik adalah jika nilai signifikansi pada omnibus test &lt;.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT Uji Goodness of Fit Distribusi Multinomial PowerPoint" data-src="https://i2.wp.com/image3.slideserve.com/5812560/contoh-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ukuran uji kesesuaian model berbasis maximum likelihood (ml). Test of goodness of fit / uji kecocokan. Mas mau tanya, kalau uji goodness fit test nya tidak terpenuhi (maupun dengan cara yg dianjurkan) apakah uji regresi lainnya tidak dapat digunakan? Uji kebaikan suai ( goodness of fit test) antara frekuensi yang teramati dengan frekuensi harapan didasarkan pada besaran. Uji goodness of.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="SUMMARY STATISTIK Uji Chi Square" data-src="https://i2.wp.com/1.bp.blogspot.com/-50Oow226t6s/Xer7HSPIflI/AAAAAAAAQH0/DhoChX55fhk0lpg6oYwIbexqShg9cWtYgCLcBGAsYHQ/s1600/18.PNG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: billyonlinetext.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji kebaikan model ini menggunakan software amos versi 21.0. Goodness of fit indeks (gfi) : Adalah jauh lebih kecil dari 0,05, maka ho ditolak. 2014 data diolah spss 18 berdasarkan tabel 5.14 tersebut dapat dilihat nilai signifikansi sebesar 0,000 adalah lebih kecil dari 0,05. Chi square (chi kuadrat) dapat digunakan untuk.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT Uji Goodness of Fit Distribusi Multinomial PowerPoint" data-src="https://i2.wp.com/image3.slideserve.com/5812560/slide4-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Statistik ini berkisar dari 0 hingga 1 dengan jumlah sampel yang besar dapat meningkatkan nilainya. Secara khusus akan dibahas untuk goodness of fit test beserta contoh kasus supaya lebih mudah dimengerti. Uji t adalah uji statistik yang digunakan untuk melihat kontribusi setiap variabel independen pada perubahan variabel dependen secara parsial. Uji kecocokan adalah uji untuk mengetahui kenormalan suatu distribusi. Pengolahan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT Uji Goodness of Fit Distribusi Multinomial PowerPoint" data-src="https://i2.wp.com/image3.slideserve.com/5812560/uji-goodness-of-fit-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Rentang nilai antara 0 (poor fit) sampai dengan 1.0 (perfect fit). Goodness of fit indices (gfi) gfi merupakan ukuran mengenai ketepatan model dalam menghasilkan observed matrix covarians. Uji kebaikan suai ( goodness of fit test) antara frekuensi yang teramati dengan frekuensi harapan didasarkan pada besaran. Semakin mendekati angka 1, model dinyatakan semakin baik. Uji goodness of fit (uji keselarasan) adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT Uji Goodness of Fit Distribusi Multinomial PowerPoint" data-src="https://i2.wp.com/image3.slideserve.com/5812560/soal-5-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Mas mau tanya, kalau uji goodness fit test nya tidak terpenuhi (maupun dengan cara yg dianjurkan) apakah uji regresi lainnya tidak dapat digunakan? Sebagian besar peneliti menggunakan patokan minimal 0,90 sebagai parameter model bisa dikatakan sebagai model yang baik. Untuk memvalidasi model struktural secara keseluruhan digunakan goodness of fit (gof). Uji kebaikan model ini menggunakan software amos versi 21.0. Semakin.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="ANALISIS CHI KUADRAT KECOCOKAN (GOODNESS OF FIT) •Dalam uji kecocokan" data-src="https://i2.wp.com/reader019.fdokumen.com/reader019/reader/2020043018/5c9ecdc888c993502d8c2cf1/r-3.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: fdokumen.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Oleh karena itu uji ini disebut juga uji keselarasan (goodness of fit test), karena untuk menguji apakah sebuah sampel selaras dengan salah satu distribusi teoritis (seperti distribusi normal, uniform, binomial dan lainnya). Goodness of fit dalam regresi logistik adalah untuk mengetahui kebaikan model sebagaimana uji goodness of fit model regresi linier berganda dengan menggunakan ukuran koefesien determinasi. Adalah jauh lebih.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Goodness Of Fit Adalah" data-src="https://i2.wp.com/www.researchgate.net/profile/Jusup_Nurgraha/publication/323999914/figure/tbl2/AS:631593626509370@1527595063831/MODEL-TESTING-GOODNESS-OF-FIT.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: orauvi.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Meskipun ini disebut tes untuk normalitas, itu sebenarnya tidak. Salah satu syarat dalam uji regresi logistik yang harus terpenuhi yaitu persamaan regresi tersebut mempunyai persamaan yang telah memiliki goodness of fit yang baik.goodness of fit yang baik adalah jika nilai signifikansi pada omnibus test &lt; 0,05 dan value dari hosmer and lemeshow &gt; 0,05. Koefesien determinasi dalam regresi logit mengukur.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="SUMMARY STATISTIK Uji Chi Square" data-src="https://i2.wp.com/1.bp.blogspot.com/-gjmtiMPUSB0/Xer7HbYXK8I/AAAAAAAAQH4/87zgKlNIeYs8nmgVBzS-wAyLVfiWmHZsACLcBGAsYHQ/s1600/19.PNG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: billyonlinetext.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Goodness of fit indeks (gfi) : Uji kecocokan adalah uji untuk mengetahui kenormalan suatu distribusi. Pengujian kesesuaian model pada aplikasi statistik sangat penting karena ketika model. Data tidak mengikuti distribusi tertentu. Koefesien determinasi dalam regresi logit mengukur proporsi varian di dalam variabel independen.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Goodness Of Fit Adalah" data-src="https://i2.wp.com/www.researchgate.net/profile/Muniaty_Aisyah/publication/311939270/figure/tbl1/AS:667843825786889@1536237784791/Goodness-of-Fit-Model.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: caligntecsei.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Mas mau tanya, kalau uji goodness fit test nya tidak terpenuhi (maupun dengan cara yg dianjurkan) apakah uji regresi lainnya tidak dapat digunakan? Rentang nilai antara 0 (poor fit) sampai dengan 1.0 (perfect fit). Test of goodness of fit / uji kecocokan. Aplikasi goodness of fit dalam structural equation modelling. Goodness of fit dalam regresi logistik adalah untuk mengetahui kebaikan.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-hacer-un-pico-de-hierro-en-minecraft.html" class="be-post-title">
+				 <h6>como hacer un pico de hierro en minecraft </h6>
+                </a>
+                <a href="como-hacer-un-pico-de-hierro-en-minecraft.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20hacer%20un%20pico%20de%20hierro%20en%20minecraft&amp;w=50&amp;h=50&amp;c=7" alt="como hacer un pico de hierro en minecraft">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="katkı-bulunmak-ne-demek.html" class="be-post-title">
+				 <h6>katkı bulunmak ne demek </h6>
+                </a>
+                <a href="katkı-bulunmak-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=katk%C4%B1%20bulunmak%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="katkı bulunmak ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-hay-en-la-ciudad-de-las-artes-y-las-ciencias.html" class="be-post-title">
+				 <h6>que hay en la ciudad de las artes y las ciencias </h6>
+                </a>
+                <a href="que-hay-en-la-ciudad-de-las-artes-y-las-ciencias.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20hay%20en%20la%20ciudad%20de%20las%20artes%20y%20las%20ciencias&amp;w=50&amp;h=50&amp;c=7" alt="que hay en la ciudad de las artes y las ciencias">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="qué-es-un-ecosistema-terrestre-y-cuáles-son-sus-características.html" class="be-post-title">
+				 <h6>qué es un ecosistema terrestre y cuáles son sus características </h6>
+                </a>
+                <a href="qué-es-un-ecosistema-terrestre-y-cuáles-son-sus-características.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=qu%C3%A9%20es%20un%20ecosistema%20terrestre%20y%20cu%C3%A1les%20son%20sus%20caracter%C3%ADsticas&amp;w=50&amp;h=50&amp;c=7" alt="qué es un ecosistema terrestre y cuáles son sus características">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-sinalefa-en-un-poema.html" class="be-post-title">
+				 <h6>que significa sinalefa en un poema </h6>
+                </a>
+                <a href="que-significa-sinalefa-en-un-poema.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20sinalefa%20en%20un%20poema&amp;w=50&amp;h=50&amp;c=7" alt="que significa sinalefa en un poema">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-kost-accountantsverklaring-now.html" class="be-post-title">
+				 <h6>wat kost accountantsverklaring now </h6>
+                </a>
+                <a href="wat-kost-accountantsverklaring-now.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20kost%20accountantsverklaring%20now&amp;w=50&amp;h=50&amp;c=7" alt="wat kost accountantsverklaring now">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-edge-en-un-celular.html" class="be-post-title">
+				 <h6>que significa edge en un celular </h6>
+                </a>
+                <a href="que-significa-edge-en-un-celular.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20edge%20en%20un%20celular&amp;w=50&amp;h=50&amp;c=7" alt="que significa edge en un celular">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-indirect-allorecognition.html" class="be-post-title">
+				 <h6>what is indirect allorecognition </h6>
+                </a>
+                <a href="what-is-indirect-allorecognition.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20indirect%20allorecognition&amp;w=50&amp;h=50&amp;c=7" alt="what is indirect allorecognition">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-vitamina-es-buena-para-los-nervios.html" class="be-post-title">
+				 <h6>que vitamina es buena para los nervios </h6>
+                </a>
+                <a href="que-vitamina-es-buena-para-los-nervios.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20vitamina%20es%20buena%20para%20los%20nervios&amp;w=50&amp;h=50&amp;c=7" alt="que vitamina es buena para los nervios">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="czy-palenie-marihuany-odchudza.html" class="be-post-title">
+				 <h6>czy palenie marihuany odchudza </h6>
+                </a>
+                <a href="czy-palenie-marihuany-odchudza.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=czy%20palenie%20marihuany%20odchudza&amp;w=50&amp;h=50&amp;c=7" alt="czy palenie marihuany odchudza">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Tingkat Signifikansi Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Tingkat Signifikansi Adalah",
+  "datePublished": "2022-06-22T19:01:58Z",
+  "image": "https://tse1.mm.bing.net/th?q=tingkat%20signifikansi%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=tingkat%20signifikansi%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=tingkat%20signifikansi%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=tingkat%20signifikansi%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Tingkat Signifikansi Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Tingkat Signifikansi Adalah</h2>
+    <p><strong>Tingkat Signifikansi Adalah</strong>. Jika angka signifikansi sebesar 0,1, maka tingkat kepercayaan adalah sebesar 90%. Tingkat signifikansi \(\alpha\) adalah besarnya toleransi yang digunakan dalam menerima kesalahan pengujian secara statistik.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=tingkat%20signifikansi%20adalah" alt="Tingkat Partisipasi Angkatan Kerja Menurut Jurnal Adalah / Opini" />
+        <br>
+        <figcaption>Tingkat Partisipasi Angkatan Kerja Menurut Jurnal Adalah / Opini from ermagoings.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Tingkat signifikansi, juga dilambangkan sebagai alfa atau , adalah probabilitas menolak hipotesis nol padahal hipotesis itu benar. Ketika p kurang dari 0.05 berarti peluang tersebut berada di daerah alfa sehingga tolak h0. Meskipun secara teori bilangan antara 0 dan 1 dapat digunakan untuk alfa, namun tidak demikian halnya dengan praktik statistik.
+    </p>
+    <h3>Tingkat Partisipasi Angkatan Kerja Menurut Jurnal Adalah / Opini</h3>
+    <p>Demikian juga, bagaimana anda tahu jika suatu statistik signifikan? 0.05 itu adalah tingkat signifikansi, alfa, peluang menolak h0 benar. Tingkat signifikansi itu bisa selain 0.05 seperti 1% atau 10%. Jika menggunakan taraf signifikansi yang sama yaitu sebesar 95% (α = 0.05), maka posisi daerah penolakan dapat dijabarkan sebagai berikut:</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="MAKHLUK HIDUP DAN LINGKUNGANNYA Ceiling Light" data-src="https://i2.wp.com/image.slidesharecdn.com/sistemorganisasikehidupan-141104162200-conversion-gate02/95/sistem-organisasi-kehidupan-7-638.jpg?cb=1415139796" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: anisanurjannah.wordpress.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Misalnya, nilai p 0,08 menunjukkan bahwa hipotesis nol ditolak pada tingkat signifikansi 10%, tetapi tidak pada tingkat 5%. Secara umum, jika nilai koefisien korelasi naik. Tetapkan tingkat signifikansi (α) 3. Kita tidak perlu melihat berapa nilai t outputnya, apakah positif atau negatif. Beberapa komentarnya menyarankan pendekatan yang lebih atau kurang ketat (yaitu tingkat alfa lebih rendah atau lebih tinggi) dalam.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Konsultasi Statistik Analisis Compare Means Statistik" data-src="https://i2.wp.com/3.bp.blogspot.com/-WIvStSB5Rd8/UysZf7za4oI/AAAAAAAACPM/8z-7xrN7sDQ/s1600/tabel+f.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: statistikujivaliditas.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jika tingkatnya cukup rendah, yaitu kemungkinan terjadinya secara kebetulan cukup kecil, kita katakan peristiwa itu signifikan. Tingkat signifikansi (α) menunjukkan probabilitas atau peluang kesalahan yang ditetapkan peneliti dalam mengambil keputusan untuk menolak atau. Jika angka signifikansi sebesar 0,1, maka tingkat kepercayaan adalah sebesar 90%. Apa tingkat signifikansi dalam statistik? Pengertian signifikan merujuk pada sesuatu atau seseorang yang dirasa penting karena.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT KOMPETENSI INTI DAN KOMPETENSI DASAR PowerPoint Presentation" data-src="https://i2.wp.com/image1.slideserve.com/2377909/slide5-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kata signifikan biasanya dipakai untuk menyatakan pengaruh dari suatu permasalahan tertentu. Tingkat signifikansi \(\alpha\) adalah besarnya toleransi yang digunakan dalam menerima kesalahan pengujian secara statistik. Definisi signifikansi tingkat signifikansi suatu peristiwa (seperti uji statistik) adalah probabilitas bahwa peristiwa tersebut dapat terjadi secara kebetulan. Tingkat signifikansi, juga dilambangkan sebagai alfa atau , adalah probabilitas menolak hipotesis nol padahal hipotesis itu benar..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pengertian dan Struktur Tingkat Organisasi Kehidupan LENGKAP Generasi" data-src="https://i2.wp.com/3.bp.blogspot.com/-nc-rKA-FpB8/WXS0ZbuTg2I/AAAAAAAAGzw/kJjyo-vWrDIMiIouiFLQwFX9Vrbg7ZMkgCLcBGAs/s1600/sistem%2Borganisasi%2Bkehidupan%2Bmakhluk%2Bhidup.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: generasibiologi.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tingkat signifikansi itu bisa selain 0.05 seperti 1% atau 10%. Jika menggunakan taraf signifikansi yang sama yaitu sebesar 95% (α = 0.05), maka posisi daerah penolakan dapat dijabarkan sebagai berikut: 0.05 itu adalah tingkat signifikansi, alfa, peluang menolak h0 benar. Baik itu sisi kanan (positif) maupun sisi kiri (negatif). Misalnya, tingkat signifikansi 0,05 menunjukkan risiko 5% untuk menyimpulkan bahwa ada.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tingkat Partisipasi Angkatan Kerja Menurut Jurnal Adalah Jurnal Mitra" data-src="https://i2.wp.com/lh5.googleusercontent.com/proxy/rukL_yLF5SUeuMDSWM1rRFTF-cpwXLSqDCyKk8Dl2ICe1vDpLikeqeyBhYlvWUgNn1jVa6EEWFBbGsOVQrsf_5TZLIUmFLOQ3HS_TByPMcestRFczw=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: rolandhatelme.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jika angka signifikansi sebesar 0,1, maka tingkat kepercayaan adalah sebesar 90%. Tingkat signifikansi (α) menunjukkan probabilitas atau peluang kesalahan yang ditetapkan peneliti dalam mengambil keputusan untuk menolak atau. Beberapa komentarnya menyarankan pendekatan yang lebih atau kurang ketat (yaitu tingkat alfa lebih rendah atau lebih tinggi) dalam situasi yang berbeda. Tetapkan tingkat signifikansi (α) 3. Tingkat signifikansi \(\alpha\) adalah besarnya toleransi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tingkat Partisipasi Angkatan Kerja Menurut Jurnal Adalah / Opini" data-src="https://i2.wp.com/mmc.tirto.id/image/2018/04/30/kondisi-pekerja-perempuan-indonesia--periksadata--quita_1-copy.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ermagoings.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kata signifikan biasanya dipakai untuk menyatakan pengaruh dari suatu permasalahan tertentu. Tingkat signifikansi yang sering digunakan adalah 0,01, 0,05 dan 0,1 (biasa ditulis 1%, 5% dan 10%), tergantung tingkat ketelitian yang. Dalam penelitian, taraf signifikansi (α) merupakan angka yang menunjukkan probabilitas atau peluang kesalahan yang ditetapkan peneliti dalam mengambil keputusan untuk menolak atau mendukung hipotesis nol, atau dapat diartikan juga.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tingkat Partisipasi Angkatan Kerja Menurut Jurnal Adalah / Analisis" data-src="https://i2.wp.com/lh6.googleusercontent.com/proxy/vsHyYlvPnosSdi1I0E9X0D6KWSOb75OOU9OPuVgVkzwW9FRPOaLLKDGDXIACQvbNvgPGxR9D-iLwfrcI4LJ_TQNIJo7MISa2yJwNYb5Yfd_Lu-UtJ915GNA=s0-d" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lafabamford6.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Misalnya, tingkat signifikansi 0,05 menunjukkan risiko 5% untuk menyimpulkan bahwa ada perbedaan ketika tidak ada perbedaan yang sebenarnya. Akan tetapi, jika kita menggunakan hipotesis satu arah, pada signifikansi 5%, maka nilai signifikansi output harus dibagi dengan dua terlebih dahulu. Adapun prosedurnya adalah sebagai berikut. Misalnya, tingkat signifikansi 0,05 menunjukkan risiko 5% untuk menyimpulkan bahwa ada perbedaan ketika tidak ada perbedaan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tanaman berikut yang menunjukkan keanekaragaman tingkat gen adalah" data-src="https://i2.wp.com/id-static.z-dn.net/files/d67/d6361d7fec0e57f258c59065c81b5a59.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Misalnya, nilai p 0,08 menunjukkan bahwa hipotesis nol ditolak pada tingkat signifikansi 10%, tetapi tidak pada tingkat 5%. Signifikansi statistik dihitung menggunakan nilai p, yang menunjukkan besarnya probabilitas hasil penelitian, dengan syarat pernyataan tertentu (hipotesis nol) adalah benar. Tetapkan tingkat signifikansi (α) 3. Tingkat signifikansi ini disebut tingkat.05, umumnya ditulis p 5_.05 (p adalah probabilitas). Tingkat signifikansi yang paling umum.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Berapakah Tingkat Signifikansi dalam Pengujian Hipotesis?" data-src="https://i2.wp.com/www.thoughtco.com/thmb/qp8xHb4mRn3Pcp7RsVVkZTT1Oh8=/2129x1411/filters:fill(auto,1)/GettyImages-114996128-57359c0e5f9b58723d62a8fd.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.greelane.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bilangan yang diwakili oleh alfa adalah probabilitas, sehingga dapat mengambil nilai bilangan riil nonnegatif apa pun yang kurang dari satu. Tingkat kepercayaan ini harus ditentukan di. Tetapkan tingkat signifikansi (α) 3. Akan tetapi, jika kita menggunakan hipotesis satu arah, pada signifikansi 5%, maka nilai signifikansi output harus dibagi dengan dua terlebih dahulu. 0.05 itu adalah tingkat signifikansi, alfa, peluang menolak.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Salim Pengantar Ilmu Statistik ChiSquare/ChiKuadrat" data-src="https://i2.wp.com/2.bp.blogspot.com/-IZSTI_LdHm4/U-dOIAaqH4I/AAAAAAAABZ8/3IFNzSqfUVc/s1600/Nilai-nilai+Chi-Kuadrat.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: seindah-akhlak-islam.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Misalnya, tingkat signifikansi 0,05 menunjukkan risiko 5% untuk menyimpulkan bahwa ada perbedaan ketika tidak ada perbedaan yang sebenarnya. Akan tetapi, jika kita menggunakan hipotesis satu arah, pada signifikansi 5%, maka nilai signifikansi output harus dibagi dengan dua terlebih dahulu. Ketika p kurang dari 0.05 berarti peluang tersebut berada di daerah alfa sehingga tolak h0. Tetapkan tingkat signifikansi (α) 3. Bilangan.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-vendedor-cambaceo.html" class="be-post-title">
+				 <h6>que es un vendedor cambaceo </h6>
+                </a>
+                <a href="que-es-un-vendedor-cambaceo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20vendedor%20cambaceo&amp;w=50&amp;h=50&amp;c=7" alt="que es un vendedor cambaceo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="which-is-true-about-a-riser-rated-cable.html" class="be-post-title">
+				 <h6>which is true about a riser rated cable </h6>
+                </a>
+                <a href="which-is-true-about-a-riser-rated-cable.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=which%20is%20true%20about%20a%20riser%20rated%20cable&amp;w=50&amp;h=50&amp;c=7" alt="which is true about a riser rated cable">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-actividades-industriales.html" class="be-post-title">
+				 <h6>que es actividades industriales </h6>
+                </a>
+                <a href="que-es-actividades-industriales.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20actividades%20industriales&amp;w=50&amp;h=50&amp;c=7" alt="que es actividades industriales">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-cubanas-en-puerto-rico.html" class="be-post-title">
+				 <h6>que significa cubanas en puerto rico </h6>
+                </a>
+                <a href="que-significa-cubanas-en-puerto-rico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20cubanas%20en%20puerto%20rico&amp;w=50&amp;h=50&amp;c=7" alt="que significa cubanas en puerto rico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-neokolonialisme.html" class="be-post-title">
+				 <h6>wat is neokolonialisme </h6>
+                </a>
+                <a href="wat-is-neokolonialisme.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20neokolonialisme&amp;w=50&amp;h=50&amp;c=7" alt="wat is neokolonialisme">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-liveborn-mean.html" class="be-post-title">
+				 <h6>what does liveborn mean </h6>
+                </a>
+                <a href="what-does-liveborn-mean.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20liveborn%20mean&amp;w=50&amp;h=50&amp;c=7" alt="what does liveborn mean">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-yo-viajare-a-estados-unidos-en-ingles.html" class="be-post-title">
+				 <h6>que significa yo viajare a estados unidos en ingles </h6>
+                </a>
+                <a href="que-significa-yo-viajare-a-estados-unidos-en-ingles.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20yo%20viajare%20a%20estados%20unidos%20en%20ingles&amp;w=50&amp;h=50&amp;c=7" alt="que significa yo viajare a estados unidos en ingles">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-magistrado-en-méxico.html" class="be-post-title">
+				 <h6>que es un magistrado en méxico </h6>
+                </a>
+                <a href="que-es-un-magistrado-en-méxico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20magistrado%20en%20m%C3%A9xico&amp;w=50&amp;h=50&amp;c=7" alt="que es un magistrado en méxico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="q-es-cubata.html" class="be-post-title">
+				 <h6>q es cubata </h6>
+                </a>
+                <a href="q-es-cubata.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=q%20es%20cubata&amp;w=50&amp;h=50&amp;c=7" alt="q es cubata">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="comida-para-se-comer-fria.html" class="be-post-title">
+				 <h6>comida para se comer fria </h6>
+                </a>
+                <a href="comida-para-se-comer-fria.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=comida%20para%20se%20comer%20fria&amp;w=50&amp;h=50&amp;c=7" alt="comida para se comer fria">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

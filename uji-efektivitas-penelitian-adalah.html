@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Efektivitas Penelitian Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Efektivitas Penelitian Adalah",
+  "datePublished": "2022-06-01T05:41:01Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20efektivitas%20penelitian%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20efektivitas%20penelitian%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20efektivitas%20penelitian%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20efektivitas%20penelitian%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Efektivitas Penelitian Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Efektivitas Penelitian Adalah</h2>
+    <p><strong>Uji Efektivitas Penelitian Adalah</strong>. ( ) sedangkan untuk kategorinya kita bisa menggunakan interpretasi Penelitian ini termasuk penelitian dan pengembangan (research and development), karena tujuan dari penelitian ini adalah untuk mengembangkan</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20efektivitas%20penelitian%20adalah" alt="METODE EPIDEMIOLOGI Telaah Kritis Penelitian Eksperimental (Uji Klinis" />
+        <br>
+        <figcaption>METODE EPIDEMIOLOGI Telaah Kritis Penelitian Eksperimental (Uji Klinis from metopidfkmunsri.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Menurut (thiagarajan, dkk, 1974), 4d model ini Penelitian pada hewan dan uji klinis adalah dua bentuk penelitian in vivo. Permata wesha (1992:148) menurut permata wesha, efektivitas adalah keadaan atau kemampuan berhasilnya suatu kerja yang dilakukan oleh manusia untuk membrikan guna yang diharapakan untuk melihat efektivitas kerja pada umumnya dipakai empat macam pertimbangan yaitu :
+    </p>
+    <h3>METODE EPIDEMIOLOGI Telaah Kritis Penelitian Eksperimental (Uji Klinis</h3>
+    <p>25 desember 2021 11:00 diperbarui: Menurut azwar (1986) validitas berasal dari kata validity yang mempunyai arti sejauh mana ketepatan dan kecermatan suatu alat ukur dalam melakukan fungsi ukurnya. Penelitian ini termasuk penelitian dan pengembangan (research and development), karena tujuan dari penelitian ini adalah untuk mengembangkan Efektivitas pada suatu aktivitas baru bisa dianggap tercapai dengan melihat berfungsi atau tidaknya aturan yang sudah dibuat dalam menjaga kelangsungan proses kegiatan tersebut.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Memilih Jenis Uji Hipotesis Ince Furqan" data-src="https://i2.wp.com/1.bp.blogspot.com/-xWpp69tkXUA/Vpn22HhhJBI/AAAAAAAABrA/ETXwHNjEVoI/s1600/TABEL%2BUJI%2BHIPOTESIS.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: incefurqan.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Data dikatakan terdistribusi normal apabila nilai signifikansi yang diperoleh lebih besar dari 0.05 sebagai koefisien alfa (tabel 1). Uji fertilitas dan sterilitas media uji fertilitas media digunakan untuk tujuan melihat dan menumbuhkan bakteri yang diuji sesuai dengan yang diinginkan, agar dapat membuktikan media tersebut fertile dengan media diinokulasi bakteri stapylococus aureus, escherichia coli dan jamur candida albicans memberi hasil yang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Desain Penelitian" data-src="https://i2.wp.com/imgv2-2-f.scribdassets.com/img/document/252896916/original/2490fa7f70/1555173399?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Model pengembangan yang digunakan dalam penelitian ini adalah model four d (4d). Untuk uji efektivitas dengan menggunakan uji t dan uji f, data dikumpulkan melalui quiz atau angket. Cara mengukur dan mengetahui efektivitas pembelajaran. Penelitian pada tahun kedua adalah untuk mengukur hasil temuan model, oleh karena itu penelitian ini menggunakan jenis penelitian kuantatif, pengukuran efektivitas model biasanya dengan membandingkan hasil.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="METODE EPIDEMIOLOGI Telaah Kritis Penelitian Eksperimental (Uji Klinis" data-src="https://i2.wp.com/4.bp.blogspot.com/-ssQSpxJjZqU/VFrd2ABy4mI/AAAAAAAAAPU/vuAOoskSmNQ/s1600/CT-Experimental%2BStudy.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: metopidfkmunsri.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Penelitian ini termasuk penelitian dan pengembangan (research and development), karena tujuan dari penelitian ini adalah untuk mengembangkan Penelitian pada tahun kedua adalah untuk mengukur hasil temuan model, oleh karena itu penelitian ini menggunakan jenis penelitian kuantatif, pengukuran efektivitas model biasanya dengan membandingkan hasil pretest dan post test. Cara pengujian efektivitas pembelajaran melalui ptk dapat dilakukan dengan cara mengukur kompetensi sebelum.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Hipotesis Analisis Bivariat dalam Olah Data Statistik Kesehatan" data-src="https://i2.wp.com/1.bp.blogspot.com/-43v--K-Cw1I/Xx0IQ1IbqEI/AAAAAAAAGws/5WO_1nRv0IUE97RbNnZMCL6uqKm_lY2yQCLcBGAsYHQ/s569/tabel%2Bhipotesis.PNG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.biotekners.my.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Menurut azwar (1986) validitas berasal dari kata validity yang mempunyai arti sejauh mana ketepatan dan kecermatan suatu alat ukur dalam melakukan fungsi ukurnya. Pada penelitian ini, uji normalitas yang digunakan adalah uji shapiro wilk karena jumlah subjek kurang dari 50. Ρ = proporsi yang terealisasi, dihitung dengan cara jumlah nilai yang diberi oleh ekspert dibagi jumlah. Penelitian pada tahun kedua.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="BAB III METODOLOGI PENELITIAN 3.1 DEFINISI O adalah uji kandungan" data-src="https://i2.wp.com/img.dokumen.tips/img/1200x630/reader023/reader/2020101803/5f75becdb2636e0fcf645175/r-1.jpg?t=1619829224" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dokumen.tips</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pada bab ini merupakan presentasi rancangan sebuah aplikasi yang akan diuraikan berdasarkan metodologi yang telah terkonsep pada bab tiga. Tujuan penelitian ini adalah untuk mengetahui efektivitas larvasida ekstrak daun pepaya (carica papaya linn) terhadap larva aedes aegypti. Pada uji efektivitas menggunakan metode. Jenis dan pendekatan penelitian, prosedur penelitian, uji coba produk, dan teknik analisis data. Model pengembangan yang digunakan dalam.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Model Penelitian Yang Menggunakan Variabel Moderasi Adalah Garumah" data-src="https://i2.wp.com/lh5.googleusercontent.com/proxy/xb7L0hNcl17NJntDc6yQu1eR161F_euYsWPd_rrQpuEYKRwlT3GkCFVIpHV5zWjpVIbJNpTryrae0Zt_cHOkrj9f_eiDWmep-CNZYrhlAxzem1bN76hbZg=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: garumahx.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Metode penelitian yang dibahasa pada bab ini mencakup: Menurut starawaji 2009 yang mengutip pendapat campbell 1989, terdapat cara pengukuran terhadap efektivitas yang secara umum dan yang paling menonjol adalah sebagai berikut: Jenis dan pendekatan penelitian, prosedur penelitian, uji coba produk, dan teknik analisis data. Pengujian efektivitas dilakukan dengan penelitian tindakan kelas (ptk). Tidak ada perbedaan pemahaman siswa sebelum dan sesudah.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Fase Uji Klinik (Clinical Trial) Penelitian Fase 0 hingga IV" data-src="https://i2.wp.com/doktermuslim.com/wp-content/uploads/2018/02/Fase-Uji-Klinis-doktermuslim.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: doktermuslim.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">1) 1 orang dosen sebagai ahli materi dan ahli media dalam Penelitian ini termasuk penelitian dan pengembangan (research and development), karena tujuan dari penelitian ini adalah untuk mengembangkan Ini adalah untuk mengurangi volume sampah. Penelitian pada hewan dan uji klinis adalah dua bentuk penelitian in vivo. Pertimbangan ekonomi, pertimbangan fisiologi, pertimbangan psikologi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Hasil Analisis Uji Validitas dan Reliabilitas Instrumen Penelitian" data-src="https://i2.wp.com/www.researchgate.net/profile/Musnaini_Musnaini/publication/337147225/figure/download/tbl1/AS:823464852221952@1573340728594/Hasil-Analisis-Uji-Validitas-dan-Reliabilitas-Instrumen-Penelitian.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pengujian efektivitas perlindungan terhadap sinar matahari secara in. Desain penelitian eksperimental dengan subjek penelitian 840 ekor larva aedes aegypti instar iii. 25 desember 2021 11:00 diperbarui: Menurut ( hake dalam sundayana, 2014 : Peneliti menggunakan fase ini untuk mendapatkan informasi kemanan jangka panjang penggunaan obat, efektifitas, dan berbagai manfaat dari obat ini.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Hasil Analisis Uji Validitas dan Reliabilitas Instrumen Penelitian" data-src="https://i2.wp.com/www.researchgate.net/profile/Musnaini_Musnaini/publication/337147225/figure/tbl1/AS:823464852221952@1573340728594/Hasil-Analisis-Uji-Validitas-dan-Reliabilitas-Instrumen-Penelitian_Q640.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">1) 1 orang dosen sebagai ahli materi dan ahli media dalam Pada uji klinis fase iv, terjadi setelah fda menyetuhui obat. Pengujian tersebut berupa uji normalitas. Penelitian pada tahun kedua adalah untuk mengukur hasil temuan model, oleh karena itu penelitian ini menggunakan jenis penelitian kuantatif, pengukuran efektivitas model biasanya dengan membandingkan hasil pretest dan post test. Efektivitas pada suatu aktivitas.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="BAB III METODOLOGI PENELITIAN A. Desain .6) Melakukan uji coba" data-src="https://i2.wp.com/static.dokumen.tech/img/1200x630/reader019/reader/2020050201/5cfa69ab88c99315288ded8d/r-1.jpg?t=1610154362" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dokumen.tech</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Efektivitas tersebut dibangun atas lima indikator, yaitu 1) pemahaman program, 2) tepat sasaran, 3) teat waktu, 4) tercapainya tujuan, 5) perubahan nyata. B) subjek coba subjek pada penelitian ini adalah: Mikroba yang ada atau yang masuk secara tidak sengaja selama ataupun sesudah proses produksi. K = momen kappa yang menunjukan efektivitas produk. Uji efektivitas bertujuan untuk mengungkapkan efektivnya sebuah produk.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="uji-adrenalin-adalah.html" class="be-post-title">
+				 <h6>uji adrenalin adalah </h6>
+                </a>
+                <a href="uji-adrenalin-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=uji%20adrenalin%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="uji adrenalin adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-pensamiento-magico-en-filosofia.html" class="be-post-title">
+				 <h6>que es el pensamiento magico en filosofia </h6>
+                </a>
+                <a href="que-es-el-pensamiento-magico-en-filosofia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20pensamiento%20magico%20en%20filosofia&amp;w=50&amp;h=50&amp;c=7" alt="que es el pensamiento magico en filosofia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-efecto-fotoelectrico-para-niños.html" class="be-post-title">
+				 <h6>que es el efecto fotoelectrico para niños </h6>
+                </a>
+                <a href="que-es-el-efecto-fotoelectrico-para-niños.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20efecto%20fotoelectrico%20para%20ni%C3%B1os&amp;w=50&amp;h=50&amp;c=7" alt="que es el efecto fotoelectrico para niños">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-sem-en-marketing.html" class="be-post-title">
+				 <h6>que es sem en marketing </h6>
+                </a>
+                <a href="que-es-sem-en-marketing.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20sem%20en%20marketing&amp;w=50&amp;h=50&amp;c=7" alt="que es sem en marketing">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-ispt.html" class="be-post-title">
+				 <h6>que es el ispt </h6>
+                </a>
+                <a href="que-es-el-ispt.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20ispt&amp;w=50&amp;h=50&amp;c=7" alt="que es el ispt">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-woestijn.html" class="be-post-title">
+				 <h6>wat is een woestijn </h6>
+                </a>
+                <a href="wat-is-een-woestijn.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20woestijn&amp;w=50&amp;h=50&amp;c=7" alt="wat is een woestijn">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-es-el-amor-de-una-madre.html" class="be-post-title">
+				 <h6>como es el amor de una madre </h6>
+                </a>
+                <a href="como-es-el-amor-de-una-madre.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20es%20el%20amor%20de%20una%20madre&amp;w=50&amp;h=50&amp;c=7" alt="como es el amor de una madre">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-caregiving-mean.html" class="be-post-title">
+				 <h6>what does caregiving mean </h6>
+                </a>
+                <a href="what-does-caregiving-mean.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20caregiving%20mean&amp;w=50&amp;h=50&amp;c=7" alt="what does caregiving mean">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-un-verso-en-un-poema.html" class="be-post-title">
+				 <h6>que significa un verso en un poema </h6>
+                </a>
+                <a href="que-significa-un-verso-en-un-poema.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20un%20verso%20en%20un%20poema&amp;w=50&amp;h=50&amp;c=7" alt="que significa un verso en un poema">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-parca.html" class="be-post-title">
+				 <h6>que es una parca </h6>
+                </a>
+                <a href="que-es-una-parca.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20parca&amp;w=50&amp;h=50&amp;c=7" alt="que es una parca">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

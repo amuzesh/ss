@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Q Es Un Dispositivo De Entrada at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Q Es Un Dispositivo De Entrada",
+  "datePublished": "2022-04-29T12:11:15Z",
+  "image": "https://tse1.mm.bing.net/th?q=q%20es%20un%20dispositivo%20de%20entrada",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=q%20es%20un%20dispositivo%20de%20entrada&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=q%20es%20un%20dispositivo%20de%20entrada" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=q%20es%20un%20dispositivo%20de%20entrada" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Q Es Un Dispositivo De Entrada at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Q Es Un Dispositivo De Entrada</h2>
+    <p><strong>Q Es Un Dispositivo De Entrada</strong>. Qué son dispositivos de entrada y salida: Con ellos es posible escribir en nuestra computadora, de manera muy rápida y sencilla.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=q%20es%20un%20dispositivo%20de%20entrada" alt="¿Qué es un dispositivo o periférico de entrada? Entradas, Sala" />
+        <br>
+        <figcaption>¿Qué es un dispositivo o periférico de entrada? Entradas, Sala from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Algunos ejemplos de dispositivos de entrada populares son: Sin ellos, la computadora no sabría lo que se quiere que haga. Ejemplos de dispositivos de entrada:
+    </p>
+    <h3>¿Qué es un dispositivo o periférico de entrada? Entradas, Sala</h3>
+    <p>Ejemplos de estos dispositivos son el teclado o el ratón (mouse). No pueden aceptar o reproducir información (salida) del ordenador. Ejemplos de dispositivos de entrada todos estos ejemplos son dispositivos de entrada. Ejemplos de dispositivos de entrada mouse.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dispositivos de Entrada, Salida y Mixtos Periférico Monitor de" data-src="https://i2.wp.com/imgv2-1-f.scribdassets.com/img/document/444173709/original/1a0f20abc2/1601480857?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hay muchos dispositivos que se podrían categorizar como periféricos de entrada, como los teclados, los mause, los mandos de consola, los micrófonos y as webcams. Dispone de un conjunto de teclas agrupadas en cuatro bloques denominados alfabético, numérico, de control y. El procesador entonces leerá este voltaje y lo procesará. Los dispositivos de entrada, también conocidos como dispositivos de alimentación.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Algoritmos y programación. Dispositivos de entrada, de salida y de" data-src="https://i2.wp.com/2.bp.blogspot.com/-D7bowHILDCM/TV6i9zVSiCI/AAAAAAAAAAw/E9LIgg29u6g/w1200-h630-p-k-no-nu/D.E.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: algoritmacion.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Se denomina salida o output a una ranura igual a la entrada pero que también permite mandar información hacia el dispositivo conectado. Los dispositivos de entrada son las herramientas utilizadas para ingresar todo tipo de datos a la computadora. Esto es proporcionando datos y señales de control a un sistema de procesamiento de información, como una computadora. Un ejemplo clásico.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="TRABAJO DE TECNOLOGIA QUE ES UN DISPOSITIVO DE ENTRADA" data-src="https://i2.wp.com/2.bp.blogspot.com/_XwfmfaR4gyc/TIang-2aZQI/AAAAAAAAAAU/EcqfnuPAhlI/s1600/dispositivos-de-entrada[1].gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: edwin11-edwin.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En informática, un dispositivo de entrada es cualquier hardware que permite enviar datos a la computadora, permitiendo así controlarla. Dispone de un conjunto de teclas agrupadas en cuatro bloques denominados alfabético, numérico, de control y. Que es un dispositivo de entrada y de salida y ejemplos de cada uno. Se denomina salida o output a una ranura igual a la.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dispositivos de Entrada" data-src="https://i2.wp.com/definicionde.hugex.net/wp-content/uploads/2015/07/entradaps.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: definicionde.hugex.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ratón o mouse de computadora:. En informática, un dispositivo de entrada es cualquier hardware que permite enviar datos a la computadora, permitiendo así controlarla. Dispositivos de entrada son aparatos electrónicos que se conectan para introducir funciones en el computador en un intercambio unilateral. Ejemplos de estos dispositivos son el teclado o el ratón (mouse). En resumen los periféricos de entrada.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="M1S2 Instala Controladores del equipo de computo y dispositivos periféricos" data-src="https://i2.wp.com/1.bp.blogspot.com/-JbkZlDRAPzg/VtdIiiDjaLI/AAAAAAAAABg/u6UypjZqwjo/s1600/Dispositivos-perifericos.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: equipoblancom1s2.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En informática, una entrada o input es un espacio creado para recibir información de otro sistema. Es un dispositivo que se maneja con la mano y que permite mover un cursor por la pantalla de la computadora para. Sin ellos, la computadora no sabría lo que se quiere que haga. Qué son dispositivos de entrada y salida: Los siguientes son.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="CARTILLA INFANTIL DISPOSITIVOS DE ENTRADA" data-src="https://i2.wp.com/2.bp.blogspot.com/-3vV2bzc-kVs/VV33phabq_I/AAAAAAAAAK0/YmEBO1TfLVM/s1600/Dispositivos%2Bde%2Bentrada..jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: cartillademantenimineto.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Es un tipo de periférico en donde su flujo principal de datos es de entrada a la computadora. Dispone de un conjunto de teclas agrupadas en cuatro bloques denominados alfabético, numérico, de control y. El procesador puede entonces poner algún voltaje en otro pin donde otro dispositivo se ha conectado. Por su parte, es importante mencionar que los dispositivos. Dispositivos.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Qué es un dispositivo o periférico de entrada? Entradas, Sala" data-src="https://i.pinimg.com/originals/f6/c4/1a/f6c41a5370265cb04e29aec801bab043.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Se compone de una serie de teclas en funciones de un periférico de entrada, los botones y/o teclas estas actúan como palancas electrónicas que envían información a la computadora. Hay muchos dispositivos que se podrían categorizar como periféricos de entrada, como los teclados, los mause, los mandos de consola, los micrófonos y as webcams. Dispositivos de entrada son aparatos electrónicos.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="ExuallyTrans Que Es Un Dispositivo Mixto De Entrada Y Salida" data-src="https://i2.wp.com/cdn.goconqr.com/uploads/label_image_drag_and_drop_question/image/4259905/image_primary_f96ddd52-f90d-47ae-84ea-a98a51257634.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: exuallytransmittedcentipedes.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dispone de un conjunto de teclas agrupadas en cuatro bloques denominados alfabético, numérico, de control y. La distinción clave entre un dispositivo de entrada y un dispositivo de salida es que el primero envía datos a la computadora, mientras que el segundo recibe datos de la computadora. Los dispositivos de entrada son las herramientas utilizadas para ingresar todo tipo de.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Que Es Un Dispositivo Mixto O De Entrada/salida englshand" data-src="https://i2.wp.com/lh5.googleusercontent.com/proxy/KNu2kVc-D0vWI6K2EmuBbiBFX2J9XsUr4Z8yiaDHmjsYG1_Xdc60CfEz0-i5mYRhJwv6jt8SVqupve_4Ftlwl7nth8GeK4U_ILrdDljMRqCCyREYmBq-J2jz_2c1txNLfZGWVQ=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: englshand.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Los dispositivos de entrada son las herramientas utilizadas para ingresar todo tipo de datos a la computadora. Se denomina salida o output a una ranura igual a la entrada pero que también permite mandar información hacia el dispositivo conectado. Un dispositivo de entrada es un dispositivo de hardware o periférico utilizado para enviar datos a una computadora. Los dispositivos de.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Informatica 1 Bachillerato Dispositivos de Entrada y Salida" data-src="https://i2.wp.com/1.bp.blogspot.com/-4nfmTeCrnqw/WAGuvwQe2mI/AAAAAAAAAKo/aoje6cgs-0sq0mhEnBOmLkEUKScIUnFGwCK4B/s1600/58238608-830d-43ef-8e89-bacce25a5614.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: leiram1dforever.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Un dispositivo de entrada puede enviar datos a otro dispositivo, pero no puede recibir datos de otro dispositivo. Cuales son los dispositivos de entrada de la computadora. Ejemplos de dispositivos de entrada mouse. Asked by admin @ 03/02/22 &amp; viewed by 75 persons. En informática, un dispositivo de entrada es cualquier hardware que permite enviar datos a la computadora, permitiendo.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-betekent-genereuze.html" class="be-post-title">
+				 <h6>wat betekent genereuze </h6>
+                </a>
+                <a href="wat-betekent-genereuze.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20betekent%20genereuze&amp;w=50&amp;h=50&amp;c=7" alt="wat betekent genereuze">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-betekent-investeren.html" class="be-post-title">
+				 <h6>wat betekent investeren </h6>
+                </a>
+                <a href="wat-betekent-investeren.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20betekent%20investeren&amp;w=50&amp;h=50&amp;c=7" alt="wat betekent investeren">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-agente-de-carga.html" class="be-post-title">
+				 <h6>que es un agente de carga </h6>
+                </a>
+                <a href="que-es-un-agente-de-carga.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20agente%20de%20carga&amp;w=50&amp;h=50&amp;c=7" alt="que es un agente de carga">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-do-i-contact-the-queensland-ombudsman.html" class="be-post-title">
+				 <h6>how do i contact the queensland ombudsman </h6>
+                </a>
+                <a href="how-do-i-contact-the-queensland-ombudsman.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20contact%20the%20queensland%20ombudsman&amp;w=50&amp;h=50&amp;c=7" alt="how do i contact the queensland ombudsman">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-eis-means-in-english.html" class="be-post-title">
+				 <h6>what does eis means in english </h6>
+                </a>
+                <a href="what-does-eis-means-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20eis%20means%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="what does eis means in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="por-que-ecuador-es-megadiverso.html" class="be-post-title">
+				 <h6>por que ecuador es megadiverso </h6>
+                </a>
+                <a href="por-que-ecuador-es-megadiverso.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=por%20que%20ecuador%20es%20megadiverso&amp;w=50&amp;h=50&amp;c=7" alt="por que ecuador es megadiverso">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-are-the-different-pipes-used-in-plumbing.html" class="be-post-title">
+				 <h6>what are the different pipes used in plumbing </h6>
+                </a>
+                <a href="what-are-the-different-pipes-used-in-plumbing.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20are%20the%20different%20pipes%20used%20in%20plumbing&amp;w=50&amp;h=50&amp;c=7" alt="what are the different pipes used in plumbing">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-genero-lirico-en-literatura.html" class="be-post-title">
+				 <h6>que es el genero lirico en literatura </h6>
+                </a>
+                <a href="que-es-el-genero-lirico-en-literatura.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20genero%20lirico%20en%20literatura&amp;w=50&amp;h=50&amp;c=7" alt="que es el genero lirico en literatura">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-menopausia-en-español.html" class="be-post-title">
+				 <h6>que es la menopausia en español </h6>
+                </a>
+                <a href="que-es-la-menopausia-en-español.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20menopausia%20en%20espa%C3%B1ol&amp;w=50&amp;h=50&amp;c=7" alt="que es la menopausia en español">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-reviewstudie.html" class="be-post-title">
+				 <h6>wat is een reviewstudie </h6>
+                </a>
+                <a href="wat-is-een-reviewstudie.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20reviewstudie&amp;w=50&amp;h=50&amp;c=7" alt="wat is een reviewstudie">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

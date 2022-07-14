@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Kurva Permintaan Agregat Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Kurva Permintaan Agregat Adalah",
+  "datePublished": "2022-07-09T09:28:16Z",
+  "image": "https://tse1.mm.bing.net/th?q=kurva%20permintaan%20agregat%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=kurva%20permintaan%20agregat%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kurva%20permintaan%20agregat%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kurva%20permintaan%20agregat%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Kurva Permintaan Agregat Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Kurva Permintaan Agregat Adalah</h2>
+    <p><strong>Kurva Permintaan Agregat Adalah</strong>. Kurva penawaran agregat jangka panjang. Teori klasik dapat menjelaskan dunia dalam jangka pendek, namun tidak saat jangka panjang.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=kurva%20permintaan%20agregat%20adalah" alt="Anisa Alwiyah Taha Model Keynesian Faktor yang menentukan Agregat Demand" />
+        <br>
+        <figcaption>Anisa Alwiyah Taha Model Keynesian Faktor yang menentukan Agregat Demand from anisaalwiyahtaha.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Dalam hal ini, hubungan antara harga dan permintaan adalah negatif. Para ekonom menghitung permintaan agregat menggunakan nilai pada titik waktu tertentu, yang terdaftar selama satu bulan, kuartal, atau tahun. Kurva permintaan agregat (aggregate demand curve) adalah grafik yang menunjukkan hubungan terbalik antara permintaan agregat dan tingkat harga.
+    </p>
+    <h3>Anisa Alwiyah Taha Model Keynesian Faktor yang menentukan Agregat Demand</h3>
+    <p>Kurva penawaran agregat jangka panjang berbentuk vertikal. Pada ketika permintaan tenaga kerja adalah d tingkat upah adalah w dan jumlah tenaga kerja yang di gunakan dalam ekonomi adalah n. Salah satu faktor yang menyebabkan pergeseran kurva permintaan adalah pendapatan konsumen. Permintaan agregat adalah jumlah barang dan jasa yang diminta oleh suatu negara, pada tingkat harga tertentu, dalam periode waktu tertentu.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kurva Permintaan Agregat" data-src="https://i2.wp.com/4.bp.blogspot.com/-WXu6KYcBkac/XI3YAzJC9-I/AAAAAAAAAgo/3uFQ-hqRetcZxPDv1KBYqcN_fnKNYZYUwCLcBGAs/w1200-h630-p-k-no-nu/Permintaan%2BAgregat.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.situsekonomi.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dalam model ini dianggap bahwa. Advertisement aggregate demand atau permintaan agregat adalah jumlah permintaan barang dan jasa dalam perekonomian pada tingkat harga tertentu. Hal ini mengimplikasikan bahwa jika hal lain tetap sama, penurunan tingkat harga keseluruhan dalam. Jika m naik, maka kurva ad bergeser ke kanan, dan sebaliknya. Kurva permintaan agregat kemudian bergeser sepanjang kurva penawaran agregat jangka pendek sampai.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Anisa Alwiyah Taha Model Keynesian Faktor yang menentukan Agregat Demand" data-src="https://i2.wp.com/2.bp.blogspot.com/-TnhSXRxisBs/Tsm6rjaE7RI/AAAAAAAAADA/wfGz9Dolnag/s1600/agregatdemand.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: anisaalwiyahtaha.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pergeseran kurva permintaan agregat mengarah pada perubahan pendapatan nasional,y. Advertisement aggregate demand atau permintaan agregat adalah jumlah permintaan barang dan jasa dalam perekonomian pada tingkat harga tertentu. Permintaan agregat adalah kumpulan permintaan jumlah kuantitas barang dan jasa yang ingin dibeli dari seluruh rumah tangga, perusahaan dan pemerintah dalam sebuah negara. Persamaan dibawah ini meringkas pembahasan kita tentang permintaan barang dan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kurva Permintaan Dan Penawaran Guruinesia" data-src="https://i2.wp.com/www.ruangguru.com/hs-fs/hubfs/Terserah_-_Ekonomi_10_-_Kurva_Permintaan_Penawaran_(8)_.png?width=600&amp;name=Terserah_-_Ekonomi_10_-_Kurva_Permintaan_Penawaran_(8)_.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: guruinesia.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jumlah output yang dapat dihasilkan dalam perekonomian jangka panjang ditentukan oleh jumlah modal dalam perekonomian dan jumlah tenaga kerja yang ditawarkan dalam tingkat pekerjaan penuh (full employment). Total permintaan agregat (agregat demand) menggunakan pendekatan untuk menggambarkan komponen suatu agregat demand yaitu gdp = y = ad= c + i + g + nx. Beberapa faktor yang dapat mempengaruhi permintaan akhir.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kurva Permintaan" data-src="https://i1.wp.com/cerdasco.com/wp-content/uploads/2019/06/downward-sloping-demand-curve.png?fit=1920%2C1080&amp;ssl=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: cerdasco.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kurva permintaan agregat membantu dalam mengetahui pengaruh perubahan harga barang atau jasa dalam suatu perekonomian terhadap permintaan produk. Permintaan agregat mengacu pada permintaan terhadap semua barang yang diproduksi dalam perekonomian. Rumah tangga, bisnis, pemerintah, dan sektor eksternal. Hal ini mengimplikasikan bahwa jika hal lain tetap sama, penurunan tingkat harga keseluruhan dalam. Bab ii pembahasan a.pengertian permintaan agregat permintaan agregat adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Gambar 2 Pergeseran Kurva Permintaan Download Scientific Diagram" data-src="https://i2.wp.com/www.researchgate.net/publication/337392936/figure/download/fig1/AS:827301033959424@1574255345334/Gambar-2-Pergeseran-Kurva-Permintaan.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Seperti yang digambarkan pada figur di atas, yaitu kurva agregat miring ke bawah. Pengertian dan dampak inflasi ) tingkat pengangguran alamiah adalah suatu keadaan. Permintaan agregat mewakili jumlah permintaan dari empat sektor ekonomi makro: Aggregate demand adalah nilai seluruh permintaan pada seluruh jenis produk barang dan jasa yang dibuat dalam suatu periode tertentu.nilai permintaan yang terdapat di dalam agregat ini.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Inflasi dan Pengangguran Pasukan Kepo Pengetahuan" data-src="https://i2.wp.com/2.bp.blogspot.com/-0FQbXK4jbik/VqLFLKMu-gI/AAAAAAAAABo/YhPCNm8mc1g/s1600/permintaan%2Bagregat.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kepo789.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Fb twitter wa line pinterest g+ linkedin. Perubahan tingkat investasi kejadian yang menyebabkan perubahan tingkat investasi pada tingkat harga berapa pun di pasar juga merupakan faktor pendorong terjadinya pergeseran pada kurva permintaan agregat. Namun, tidak satu pun dari penjelasan ini ada hubungannya dengan perubahan tingkat harga. Hal ini memang sejalan dengan hukum permintaan. Pergeseran kurva permintaan agregat mengarah pada perubahan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kurva permintaan dan penawaran BY R A E" data-src="https://i2.wp.com/blog.ruangguru.com/hs-fs/hubfs/permintaan j4.jpg?t=1543134931526&amp;width=1200&amp;name=permintaan j4.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: byraeyourshope.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jumlah output yang dapat dihasilkan dalam perekonomian jangka panjang ditentukan oleh jumlah modal dalam perekonomian dan jumlah tenaga kerja yang ditawarkan dalam tingkat pekerjaan penuh (full employment). Kurva penawaran agregat jangka panjang. Kurva permintaan agregat membantu dalam mengetahui pengaruh perubahan harga barang atau jasa dalam suatu perekonomian terhadap permintaan produk. Namun, jika faktor yang mengalami perubahan adalah faktor nonharga, yang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Abstraksi Ekonomi Teori Permintaan Agregat dan Tingkat Harga" data-src="https://i2.wp.com/2.bp.blogspot.com/-P6oo7p0QARw/UpFFgDdbTUI/AAAAAAAADLY/uncvmTZ5fKo/s1600/04-04+Bentuk+Kurva+Permintaan+Agregatif,+Asumsi+Klasik+Lawan+Asumsi+Keynes+(Soediyono,+2000).jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: abstraksiekonomi.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Aggregate demand adalah nilai seluruh permintaan pada seluruh jenis produk barang dan jasa yang dibuat dalam suatu periode tertentu.nilai permintaan yang terdapat di dalam agregat ini akan dinyatakan dalam wujud nilai keseluruhan yang yang digunakan untuk produk barang dan jasa tersebut hingga level harga yang lebih. Penawaran agregat jangka panjang (long run agregat supply / lras) karakteristik dari penawaran agregat.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Perubahan Jumlah Uang yang Beredar" data-src="https://i2.wp.com/1.bp.blogspot.com/-pv8GdM0jaSk/XJH3KoMsxfI/AAAAAAAAAhk/z-Z1QC_gn-EPibntmMmu5GieqxZBVZ8UACLcBGAs/w1200-h630-p-k-no-nu/Injeksi%2BMoneter.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.situsekonomi.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hal ini mengimplikasikan bahwa jika hal lain tetap sama, penurunan tingkat harga keseluruhan dalam. Kurva permintaan agregat turun miring dari kiri ke atas kanan bawah menunjukkan bahwa harga naik, maka nilai riil uang adalah Menurut posma sariguna johnson kennedy dalam modul ekonomi mikro pasar, ada sejumlah faktor yang menyebabkan pergeseran kurva permintaan. Kurva permintaan agregat kemudian bergeser sepanjang kurva penawaran.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Permintaan Agregat, Penawaran Agregat dan Kurva Phillips Situs Ekonomi" data-src="https://i2.wp.com/2.bp.blogspot.com/-gQduYDdisLk/XJSw76sWf2I/AAAAAAAAAio/LF5d5iVol-4mR2fKtnwYAWSQDHAw4dfwgCLcBGAs/w1200-h630-p-k-no-nu/Kurva%2BPhillips.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.situsekonomi.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kurva permintaan agregat (aggregate demand curve) adalah grafik yang menunjukkan hubungan terbalik antara permintaan agregat dan tingkat harga. Advertisement aggregate demand atau permintaan agregat adalah jumlah permintaan barang dan jasa dalam perekonomian pada tingkat harga tertentu. Para ekonom menghitung permintaan agregat menggunakan nilai pada titik waktu tertentu, yang terdaftar selama satu bulan, kuartal, atau tahun. Permintaan agregat adalah jumlah barang.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-portapapeles-en-el-movil.html" class="be-post-title">
+				 <h6>que es el portapapeles en el movil </h6>
+                </a>
+                <a href="que-es-el-portapapeles-en-el-movil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20portapapeles%20en%20el%20movil&amp;w=50&amp;h=50&amp;c=7" alt="que es el portapapeles en el movil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-tweedegraads-nicht.html" class="be-post-title">
+				 <h6>wat is een tweedegraads nicht </h6>
+                </a>
+                <a href="wat-is-een-tweedegraads-nicht.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20tweedegraads%20nicht&amp;w=50&amp;h=50&amp;c=7" alt="wat is een tweedegraads nicht">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="was-ist-eine-szenerie.html" class="be-post-title">
+				 <h6>was ist eine szenerie </h6>
+                </a>
+                <a href="was-ist-eine-szenerie.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=was%20ist%20eine%20szenerie&amp;w=50&amp;h=50&amp;c=7" alt="was ist eine szenerie">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="minecraft-bedrock-vs-java-2020.html" class="be-post-title">
+				 <h6>minecraft bedrock vs java 2020 </h6>
+                </a>
+                <a href="minecraft-bedrock-vs-java-2020.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=minecraft%20bedrock%20vs%20java%202020&amp;w=50&amp;h=50&amp;c=7" alt="minecraft bedrock vs java 2020">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-minimalista-ejemplos.html" class="be-post-title">
+				 <h6>que es minimalista ejemplos </h6>
+                </a>
+                <a href="que-es-minimalista-ejemplos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20minimalista%20ejemplos&amp;w=50&amp;h=50&amp;c=7" alt="que es minimalista ejemplos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-pensamiento-grupal.html" class="be-post-title">
+				 <h6>que significa pensamiento grupal </h6>
+                </a>
+                <a href="que-significa-pensamiento-grupal.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20pensamiento%20grupal&amp;w=50&amp;h=50&amp;c=7" alt="que significa pensamiento grupal">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-kpmg-australia.html" class="be-post-title">
+				 <h6>what is kpmg australia </h6>
+                </a>
+                <a href="what-is-kpmg-australia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20kpmg%20australia&amp;w=50&amp;h=50&amp;c=7" alt="what is kpmg australia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-periodo-critico-en-psicologia.html" class="be-post-title">
+				 <h6>que es el periodo critico en psicologia </h6>
+                </a>
+                <a href="que-es-el-periodo-critico-en-psicologia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20periodo%20critico%20en%20psicologia&amp;w=50&amp;h=50&amp;c=7" alt="que es el periodo critico en psicologia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-following-risk-matrix-used-for.html" class="be-post-title">
+				 <h6>what is the following risk matrix used for </h6>
+                </a>
+                <a href="what-is-the-following-risk-matrix-used-for.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20following%20risk%20matrix%20used%20for&amp;w=50&amp;h=50&amp;c=7" alt="what is the following risk matrix used for">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="is-your-rising-sign-your-venus-sign.html" class="be-post-title">
+				 <h6>is your rising sign your venus sign </h6>
+                </a>
+                <a href="is-your-rising-sign-your-venus-sign.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=is%20your%20rising%20sign%20your%20venus%20sign&amp;w=50&amp;h=50&amp;c=7" alt="is your rising sign your venus sign">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

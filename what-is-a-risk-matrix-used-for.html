@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        What Is A Risk Matrix Used For at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "What Is A Risk Matrix Used For",
+  "datePublished": "2022-05-14T05:27:58Z",
+  "image": "https://tse1.mm.bing.net/th?q=what%20is%20a%20risk%20matrix%20used%20for",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=what%20is%20a%20risk%20matrix%20used%20for&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20a%20risk%20matrix%20used%20for" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20a%20risk%20matrix%20used%20for" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            What Is A Risk Matrix Used For at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">What Is A Risk Matrix Used For</h2>
+    <p><strong>What Is A Risk Matrix Used For</strong>. A risk response matrix is similar in that a risk response matrix contains a few key elements too. Identify potential risks while considering both internal and external factors.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=what%20is%20a%20risk%20matrix%20used%20for" alt="How To Use A Risk Matrix" />
+        <br>
+        <figcaption>How To Use A Risk Matrix from www.juliantalbot.com</figcaption>
+    </figure>
+        <p>
+        A risk matrix is a matrix that is used during risk assessment to define the level of risk by considering the category of probability  or likelihood against the category of consequence severity. To create an efficient risk assessment matrix, you have to follow four simple steps. A risk response matrix is similar in that a risk response matrix contains a few key elements too.
+    </p>
+    <h3>How To Use A Risk Matrix</h3>
+    <p>So, a risk matrix combined with the use of the right skills and acumen to tackle risks can empower a project manager to make every project a success. This blog post will discuss the risk assessment matrix, how to create a risk assessment matrix, and provide you with examples and a template that you can use. Identify potential hazards for the project. As we know, risk assessment matrices contain a certain number of concrete elements which enable projects and companies to objectively and consistently assess risk.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk assessment matrix Download Scientific Diagram" data-src="https://i2.wp.com/www.researchgate.net/profile/Yuri_Raydugin/publication/275999294/figure/download/fig2/AS:700422733959170@1544005201290/Risk-assessment-matrix.ppm" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">On that note, see each risk matrix example below. Once outlined, a risk assessment matrix is used for companies to decide whether or not they have the resources to minimise or control the risk, and in turn, it helps prioritise what risks to address. A risk assessment matrix is a tool for assessing and prioritizing risks in risk management. In.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk Management Processes Support Adventure" data-src="https://i2.wp.com/www.supportadventure.co.nz/assets/Risk-Matrix.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.supportadventure.co.nz</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A risk assessment matrix is the basis for measuring potential risks based on two intersecting factors: Provide project members and stakeholders with a snapshot. How to create a risk matrix. But with this approach, you’ll be on the path towards handling cybersecurity threats in a clear, logical, and effective manner. The matrix can be used as a risk screening tool.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How To Use A Risk Matrix" data-src="https://i2.wp.com/static.wixstatic.com/media/8f1d84_1a481ba90e44488cafc9449d712116df~mv2.png/v1/fill/w_735,h_657,al_c/8f1d84_1a481ba90e44488cafc9449d712116df~mv2.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.juliantalbot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Risk matrixes are used to assess risk severity based on where the risk’s assessed probability and impacts intersect on the risk matrix. A risk matrix does not have to be 5x5, although this is the most common type. It also helps to identify who may be at risk. So, a risk matrix combined with the use of the right skills.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How To Use A Risk Matrix" data-src="https://i2.wp.com/static.wixstatic.com/media/8f1d84_c32602613d2845258400f0536445df42~mv2.png/v1/fit/w_1000%2Ch_1000%2Cal_c/file.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.juliantalbot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Risk matrices can cover exposure to different types of loss, including harm to humans, damage to the environment, financial loss or impact on reputation. A risk assessment matrix is a visual project management tool that consists of a single page with all potential risks listed, along with their likelihood and severity of consequence. In this sense, the risk matrix should.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="An Alternative Risk Matrix Template to the Matrix" data-src="https://i2.wp.com/lucidmanager.org/images/management-tools/risk-matrix-template.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lucidmanager.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">To create an efficient risk assessment matrix, you have to follow four simple steps. A risk assessment matrix is an essential part of any risk management approach. A risk assessment matrix is a visual project management tool that consists of a single page with all potential risks listed, along with their likelihood and severity of consequence. A risk response matrix.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Sa3dahnews [Download 19+] 32+ Business Plan Risk Analysis Template Png PNG" data-src="https://i2.wp.com/www.stevebizblog.com/wp-content/uploads/2019/08/Risk-Matrix.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sa3dahnews.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Assign each hazard with a corresponding risk rating, based on the likelihood and impact you’ve already calculated. How a risk matrix works. That said, high risks must be in red, moderate risks in yellow (amber), and low risks in green. Risk matrices are commonly used in many risk management practices. Creating a risk matrix contains similar steps to a standard.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="More MindGenius Mind Mapping Software Risk Management with Gordon Wyllie" data-src="https://i2.wp.com/2.bp.blogspot.com/-eAu3qdV-MRY/Tas3zsQqbsI/AAAAAAAAAhc/tXtb6J421to/s1600/risk%2Bmatrix.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blog.mindgenius.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">But with this approach, you’ll be on the path towards handling cybersecurity threats in a clear, logical, and effective manner. A risk matrix is a tool that is used to assess the risk and its visibility by taking into consideration the probability against the consequence severity. A risk assessment matrix is used to: Provide project members and stakeholders with a.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk Control" data-src="https://i2.wp.com/www.sitesafe.org.nz/globalassets/guides-and-resources/practical-safety-advice/risk-assessment-matrix.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sitesafe.org.nz</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The probability of failure and severity of consequences are expressed in a qualitative manner, the risk matrix becomes a purely qualitative approach. In the diagram, the risks are divided depending on their likelihood and their effects or the extent of damage, so that the worst case scenario can be determined at a glance. To create an efficient risk assessment matrix,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Causal Capital Making A Risk Matrix Useful" data-src="https://i2.wp.com/2.bp.blogspot.com/-McErI5J1EK0/Vd3bB1Jg5GI/AAAAAAAAHwg/w-7KoUDzmyc/s1600/Typical%2BRisk%2BMatrix.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: causalcapital.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Creating a risk matrix contains similar steps to a standard risk management process. As the name suggests, it is made up of 3 columns for the horizontal and vertical sides. Start by assessing your risk landscape. If you have to use a risk matrix due, for example, to corporate policy, the following advice may help. A 5x5 risk matrix simply.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="The Strategic Risk Severity Matrix LaConte Consulting" data-src="https://i2.wp.com/laconteconsulting.com/wp-content/uploads/2018/05/the-strategic-risk-severity-matrix.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: laconteconsulting.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">There are a number of issues with risk matrices and overall, i would discourage their indiscriminate use. Write down a checklist or risk register of any potential risks, ranging from the trivial to the disastrous. But with this approach, you’ll be on the path towards handling cybersecurity threats in a clear, logical, and effective manner. A risk matrix is a.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cuáles-son-los-beneficios-de-la-canela.html" class="be-post-title">
+				 <h6>cuáles son los beneficios de la canela </h6>
+                </a>
+                <a href="cuáles-son-los-beneficios-de-la-canela.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cu%C3%A1les%20son%20los%20beneficios%20de%20la%20canela&amp;w=50&amp;h=50&amp;c=7" alt="cuáles son los beneficios de la canela">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-bebida-cuba-libre.html" class="be-post-title">
+				 <h6>que es bebida cuba libre </h6>
+                </a>
+                <a href="que-es-bebida-cuba-libre.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20bebida%20cuba%20libre&amp;w=50&amp;h=50&amp;c=7" alt="que es bebida cuba libre">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-tarjeta-debito-y-credito.html" class="be-post-title">
+				 <h6>que es tarjeta debito y credito </h6>
+                </a>
+                <a href="que-es-tarjeta-debito-y-credito.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20tarjeta%20debito%20y%20credito&amp;w=50&amp;h=50&amp;c=7" alt="que es tarjeta debito y credito">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-triple-doble-en-la-nba.html" class="be-post-title">
+				 <h6>que es un triple doble en la nba </h6>
+                </a>
+                <a href="que-es-un-triple-doble-en-la-nba.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20triple%20doble%20en%20la%20nba&amp;w=50&amp;h=50&amp;c=7" alt="que es un triple doble en la nba">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-sifonado-en-quimica.html" class="be-post-title">
+				 <h6>que es sifonado en quimica </h6>
+                </a>
+                <a href="que-es-sifonado-en-quimica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20sifonado%20en%20quimica&amp;w=50&amp;h=50&amp;c=7" alt="que es sifonado en quimica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-son-los-guetos-de-varsovia.html" class="be-post-title">
+				 <h6>que son los guetos de varsovia </h6>
+                </a>
+                <a href="que-son-los-guetos-de-varsovia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20son%20los%20guetos%20de%20varsovia&amp;w=50&amp;h=50&amp;c=7" alt="que son los guetos de varsovia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-zijn-gewestelijke-belastingen.html" class="be-post-title">
+				 <h6>wat zijn gewestelijke belastingen </h6>
+                </a>
+                <a href="wat-zijn-gewestelijke-belastingen.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20zijn%20gewestelijke%20belastingen&amp;w=50&amp;h=50&amp;c=7" alt="wat zijn gewestelijke belastingen">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="list-van-betekenis.html" class="be-post-title">
+				 <h6>list van betekenis </h6>
+                </a>
+                <a href="list-van-betekenis.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=list%20van%20betekenis&amp;w=50&amp;h=50&amp;c=7" alt="list van betekenis">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="teknik-tendangan-dengan-pengenaan-pada-punggung-kaki-adalah.html" class="be-post-title">
+				 <h6>teknik tendangan dengan pengenaan pada punggung kaki adalah </h6>
+                </a>
+                <a href="teknik-tendangan-dengan-pengenaan-pada-punggung-kaki-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=teknik%20tendangan%20dengan%20pengenaan%20pada%20punggung%20kaki%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="teknik tendangan dengan pengenaan pada punggung kaki adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="comunicación-sincrónica-y-asincrónica-ejemplos.html" class="be-post-title">
+				 <h6>comunicación sincrónica y asincrónica ejemplos </h6>
+                </a>
+                <a href="comunicación-sincrónica-y-asincrónica-ejemplos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=comunicaci%C3%B3n%20sincr%C3%B3nica%20y%20asincr%C3%B3nica%20ejemplos&amp;w=50&amp;h=50&amp;c=7" alt="comunicación sincrónica y asincrónica ejemplos">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

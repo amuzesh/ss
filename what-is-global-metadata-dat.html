@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        What Is Global-Metadata.dat at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "What Is Global-Metadata.dat",
+  "datePublished": "2022-05-01T08:24:42Z",
+  "image": "https://tse1.mm.bing.net/th?q=what%20is%20global-metadata.dat",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=what%20is%20global-metadata.dat&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20global-metadata.dat" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20global-metadata.dat" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            What Is Global-Metadata.dat at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">What Is Global-Metadata.dat</h2>
+    <p><strong>What Is Global-Metadata.dat</strong>. The sheer growth of enterprise data, increasing regulatory pressures, and the need to extract more value from data have all caused metadata to emerge as the fulcrum of data management, compliance, and business intelligence. This metadata is what a file system uses to find and organize data and it’s the foundation for performance in cloudfs.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=what%20is%20global-metadata.dat" alt="Mobile Tour U3D Globalmetadata.dat decryption Programmer Sought" />
+        <br>
+        <figcaption>Mobile Tour U3D Globalmetadata.dat decryption Programmer Sought from www.programmersought.com</figcaption>
+    </figure>
+        <p>
+        The pbs file metadata.txt contains various information used throughout the game (global metadata), as well as information about the defined player characters. A managed metadata column is a special kind of column that you can add to lists or libraries. Paper document files have often administrative metadata that help manage documents.
+    </p>
+    <h3>Mobile Tour U3D Globalmetadata.dat decryption Programmer Sought</h3>
+    <p>Importing metadata is only as efficient as the software you’re trying to import files with. The actual data is inside those files. In another version of this ios application there are no file pack or compression that i found these child files: Global attributes are used to provide informational metadata associated with all the variables in the file, and as a means of attaching information that may be carried along with the data.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mobile Tour U3D Globalmetadata.dat decryption Programmer Sought" data-src="https://i2.wp.com/www.programmersought.com/images/927/c2033fa3a702e13b5f2e2f8ba833fe6f.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.programmersought.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">But as time passes on, companies will get ahead of us. The pbs file metadata.txt contains various information used throughout the game (global metadata), as well as information about the defined player characters. Since the exif tag contains metadata about the photo, it can pose a privacy problem. When creating multiple projects using similar data sets (or when using a.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Unity il2cpp globalmetadata.dat 加密方案" data-src="https://i2.wp.com/fairguard.github.io/assets/res/202103/325/2.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: fairguard.github.io</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Url to purchase this file. After extracting the metadata file from the apk, open hxd and open the metadata file with it. There are many distinct types of metadata, including: Here are three ways you can define global metadata that can be used across projects, users, and/or data sets: Can i remove from my builds?</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="global metadata.dat 이 없어요" data-src="https://i2.wp.com/linforum.kr/data/file/qa/3542538414_Ce1mQ8Zr_d5f0c1ddefe75152b74009aa4d5ef349e5eca300.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: linforum.kr</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">But as time passes on, companies will get ahead of us. The pbs file metadata.txt contains various information used throughout the game (global metadata), as well as information about the defined player characters. Each section in this file is either the global metadata or one separate player character, where a section begins with a line containing a number in square.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mobile Tour U3D Globalmetadata.dat decryption Programmer Sought" data-src="https://i2.wp.com/www.programmersought.com/images/23/ba19af229e6375752234f104f0f1479f.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.programmersought.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">You can view a snapshot of an index over a specific timeframe, such as the last 7 days, by using the time range picker. Here are three ways you can define global metadata that can be used across projects, users, and/or data sets: Once that is done, each string is accessed via an index into a big table of strings.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mobile Tour U3D Globalmetadata.dat decryption Programmer Sought" data-src="https://i2.wp.com/www.programmersought.com/images/753/c692bac9823f092b1fcc9b83c4454999.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.programmersought.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pokémon go metadata opened in hxd editor. File name, type, size, creation date and time, last modification date and time. This application for ios, i changed file extension of ios app to.zip and extracted these files. But as time passes on, companies will get ahead of us. Metadata is data that provides information about other data, but not the content.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mobile Tour U3D Globalmetadata.dat decryption Programmer Sought" data-src="https://i2.wp.com/p4.ssl.qhimg.com/t01a917dd6b151b1661.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.programmersought.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The sheer growth of enterprise data, increasing regulatory pressures, and the need to extract more value from data have all caused metadata to emerge as the fulcrum of data management, compliance, and business intelligence. Deleting a table record in the object metadata table in nav 2013 r2, results in having all data in that table deleted as well, in all.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="il2cppdumper 및 globalmetadata.dat 메모리 덤프 관련 질문" data-src="https://i2.wp.com/linforum.kr/data/file/qa/3698876300_u1h27ylw_e392af3c67ea8be9c1f7fe3b493b6abdd9c70360.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: linforum.kr</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">When creating multiple projects using similar data sets (or when using a single data set), you might find it useful to store the metadata configurations for usage across projects. In the search box, type  update  and press  enter . Now working on nav 2013 r2 this procedure has a catastrofic influence on the data. The pbs file metadata.txt contains various.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mobile Tour U3D Globalmetadata.dat decryption Programmer Sought" data-src="https://i2.wp.com/p3.ssl.qhimg.com/t01e24edeae1d30233e.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.programmersought.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">When creating multiple projects using similar data sets (or when using a single data set), you might find it useful to store the metadata configurations for usage across projects. Metadata organizes data, classifies it, and encodes its relevance, thus. This metadata is what a file system uses to find and organize data and it’s the foundation for performance in cloudfs..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mobile Tour U3D Globalmetadata.dat decryption Programmer Sought" data-src="https://i2.wp.com/www.programmersought.com/images/67/5368e8fbdfa484b2cc3ecd79925f632b.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.programmersought.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Once that is done, each string is accessed via an index into a big table of strings loaded into memory from that file. The metadata command returns information accumulated over time. Importing metadata is only as efficient as the software you’re trying to import files with. Here are three ways you can define global metadata that can be used across.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mobile Tour U3D Globalmetadata.dat decryption Programmer Sought" data-src="https://i2.wp.com/www.programmersought.com/images/938/a589fb5a138d01befdd6f0429fe1b772.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.programmersought.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">However, there are some important factors everyone should consider when looking at how a tool treats metadata. File name, type, size, creation date and time, last modification date and time. The actual data is inside those files. Paper document files have often administrative metadata that help manage documents. These metadata files are used by tools and language projections in order.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-concentración-de-las-soluciones.html" class="be-post-title">
+				 <h6>que es la concentración de las soluciones </h6>
+                </a>
+                <a href="que-es-la-concentración-de-las-soluciones.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20concentraci%C3%B3n%20de%20las%20soluciones&amp;w=50&amp;h=50&amp;c=7" alt="que es la concentración de las soluciones">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-quitar-el-dolor-de-ciatica-en-la-pierna.html" class="be-post-title">
+				 <h6>como quitar el dolor de ciatica en la pierna </h6>
+                </a>
+                <a href="como-quitar-el-dolor-de-ciatica-en-la-pierna.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20quitar%20el%20dolor%20de%20ciatica%20en%20la%20pierna&amp;w=50&amp;h=50&amp;c=7" alt="como quitar el dolor de ciatica en la pierna">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-crear-un-bosquejo-en-word.html" class="be-post-title">
+				 <h6>como crear un bosquejo en word </h6>
+                </a>
+                <a href="como-crear-un-bosquejo-en-word.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20crear%20un%20bosquejo%20en%20word&amp;w=50&amp;h=50&amp;c=7" alt="como crear un bosquejo en word">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="explica-que-es-el-efecto-invernadero-natural.html" class="be-post-title">
+				 <h6>explica que es el efecto invernadero natural </h6>
+                </a>
+                <a href="explica-que-es-el-efecto-invernadero-natural.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=explica%20que%20es%20el%20efecto%20invernadero%20natural&amp;w=50&amp;h=50&amp;c=7" alt="explica que es el efecto invernadero natural">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-son-sumideros-de-carbono.html" class="be-post-title">
+				 <h6>que son sumideros de carbono </h6>
+                </a>
+                <a href="que-son-sumideros-de-carbono.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20son%20sumideros%20de%20carbono&amp;w=50&amp;h=50&amp;c=7" alt="que son sumideros de carbono">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-make-a-complaint-to-the-financial-ombudsman-service.html" class="be-post-title">
+				 <h6>how to make a complaint to the financial ombudsman service </h6>
+                </a>
+                <a href="how-to-make-a-complaint-to-the-financial-ombudsman-service.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20make%20a%20complaint%20to%20the%20financial%20ombudsman%20service&amp;w=50&amp;h=50&amp;c=7" alt="how to make a complaint to the financial ombudsman service">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-instalar-una-tarja-de-cocina.html" class="be-post-title">
+				 <h6>como instalar una tarja de cocina </h6>
+                </a>
+                <a href="como-instalar-una-tarja-de-cocina.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20instalar%20una%20tarja%20de%20cocina&amp;w=50&amp;h=50&amp;c=7" alt="como instalar una tarja de cocina">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-voor-vlees-is-een-viandel.html" class="be-post-title">
+				 <h6>wat voor vlees is een viandel </h6>
+                </a>
+                <a href="wat-voor-vlees-is-een-viandel.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20voor%20vlees%20is%20een%20viandel&amp;w=50&amp;h=50&amp;c=7" alt="wat voor vlees is een viandel">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="was-ist-eine-szene.html" class="be-post-title">
+				 <h6>was ist eine szene </h6>
+                </a>
+                <a href="was-ist-eine-szene.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=was%20ist%20eine%20szene&amp;w=50&amp;h=50&amp;c=7" alt="was ist eine szene">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-intentie-verklaring.html" class="be-post-title">
+				 <h6>wat is een intentie verklaring </h6>
+                </a>
+                <a href="wat-is-een-intentie-verklaring.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20intentie%20verklaring&amp;w=50&amp;h=50&amp;c=7" alt="wat is een intentie verklaring">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Date Betekenis at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Date Betekenis",
+  "datePublished": "2022-04-12T18:41:59Z",
+  "image": "https://tse1.mm.bing.net/th?q=date%20betekenis",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=date%20betekenis&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=date%20betekenis" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=date%20betekenis" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Date Betekenis at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Date Betekenis</h2>
+    <p><strong>Date Betekenis</strong>. Betekenis &#039;datum&#039; je hebt gezocht op het woord: The particular day, month, or year (usually according to the gregorian calendar).</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=date%20betekenis" alt="blind date de betekenis volgens Wiktionary" />
+        <br>
+        <figcaption>blind date de betekenis volgens Wiktionary from www.ensie.nl</figcaption>
+    </figure>
+        <p>
+        Betekenis &#039;datum&#039; je hebt gezocht op het woord: Laten we de verschillende betekenissen eens op rij zetten. Het kan dus op verschillende manieren bekeken worden.
+    </p>
+    <h3>blind date de betekenis volgens Wiktionary</h3>
+    <p>A numbered day in a month, often given with a combination of the name of the day, the month, and…. Hieronder vind je een betekenis van het woord date filed je kunt ook zelf een definitie van date filed toevoegen. A manufacturing date on your supplements basically addresses the date on which the supplements you are consuming was bottled. July 4, 1776 was the date of the signing of the declaration of independence.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Symbolen en hun betekenis (PDF) SYMBOLEN en hun Betekenis Alle" data-src="https://i2.wp.com/reader019.fdocuments.nl/reader019/reader/2020032621/5a7a3b567f8b9a71348db9c3/r-4.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: fdocuments.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Commonly, most of the supplements are treated as stable to consume for at least two to three years from the date of manufacturing. What does manufacturing date actually mean? Date night meaning in the cambridge english dictionary. Bestel nu uw toegang of probeer van dale online gratis. 【dict.wiki ⓿ 】date nederlands, wat betekent date?</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="uptodate de betekenis volgens Wiktionary" data-src="https://i2.wp.com/www.ensie.nl/sharecardimage/wiktionary/up-to-date" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.ensie.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sweet edible fruit of the date palm with a single long woody seed. Betekenis &#039;date&#039; je hebt gezocht op het woord: It gives examples such as “we danced until dawn” and “she can’t leave until friday.”. The numbers printed on top of the word dni is the issue date. Wat is de betekenis van date?</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wat is een MILF? De betekenis van deze bijzondere bijnaam Gratis" data-src="https://i2.wp.com/www.gratisdatingtips.nl/wp-content/uploads/2020/12/milf-1024x704.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.gratisdatingtips.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Als trefwoord met bijbehorende synoniemen. What does manufacturing date actually mean? The act of moving something from one location to another. Date night meaning in the cambridge english dictionary. Betekenis &#039;datum&#039; je hebt gezocht op het woord:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="blind date de betekenis volgens Wiktionary" data-src="https://i2.wp.com/www.ensie.nl/sharecardimage/wiktionary/blind-date" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.ensie.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The particular day, month, or year (usually according to the gregorian calendar). Conveyance reference number (s10) consignee (security) (s06) glass ampoules used for the conveyance or packing of goods. Define annual review date salary. The date and time that an electronic document was filed in the rma, and thus, became a record. Dagtekening 2) dag waarop iets gebeurt;</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Constitutionele monarchie de betekenis volgens Liek Mulder" data-src="https://i2.wp.com/www.ensie.nl/sharecardimage/liek-mulder/constitutionele-monarchie" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.ensie.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Op ensie, encyclopedie sinds 1946, vind je 11 betekenissen van het woord date. The particular day, month, or year (usually according to the gregorian calendar). Currently in our pm work order when the materials are added to the component tab to create purchase requistion the requirement date is defaulting to today. Bestel nu uw toegang of probeer van dale online.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="FileNederlands verkeersbord B7 (19661979).svg Wikimedia Commons" data-src="https://i2.wp.com/photo.juerd.nl/verkeer/verkeerscode66/kscan_0034.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: commons.wikimedia.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Date night meaning in the cambridge english dictionary. Best before use by dates. Due date meaning in the cambridge english. The act of moving something from one location to another. Een afspraakje met iemand hebben of maken.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Missie, visie &amp; doelstellingen" data-src="https://i2.wp.com/image.slidesharecdn.com/eindpresentatieondernemen-130228095229-phpapp01/95/missie-visie-doelstellingen-workshop-13-638.jpg?cb=1362045288" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Value date, in finance, is the date when the value of an asset that fluctuates in price is determined. The date on which something such as a contract, right, or legal obligation ends. However, under companies and contacts, the dates have been updated correctly. Het kan dus op verschillende manieren bekeken worden. It gives examples such as “we danced until.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Year to date (YTD) de betekenis volgens Redactie Ensie" data-src="https://i2.wp.com/www.ensie.nl/sharecardimage/beleggen/year-to-date-ytd" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.ensie.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The value date is used when there is a possibility for discrepancies due to differences in the timing of asset valuation. The date and time that an electronic document was filed in the rma, and thus, became a record. Hieronder vind je een betekenis van het woord date filed je kunt ook zelf een definitie van date filed toevoegen. Datingprogramma.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="This is fun...! Kleurenpsychologie, De betekenis van kleuren, Kleur" data-src="https://i.pinimg.com/originals/5f/dd/02/5fdd02e85a2d69d33ee33eb96378f06b.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">[noun] the brown, oblong edible fruit of a palm (phoenix dactylifera). The numbers printed on top of the word dni is the issue date. Currently in our pm work order when the materials are added to the component tab to create purchase requistion the requirement date is defaulting to today. Een datum prikken een datum kiezen voor een bijeenkomst e.d.;.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="endometriose+betekenis What Endometriosis Is stories highlights" data-src="https://i2.wp.com/yoors-media-uploads-adsfairbv.netdna-ssl.com/91050/images/1519975005-20180302_081617.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: insta-stalkerr.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Een afspraakje met iemand hebben of maken. Daten = een date met iemand hebben of maken; Date definition, a particular month, day, and year at which some event happened or will happen: (van levensmiddelen) over datum waarvan. Define annual review date salary.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-realizar-una-descripcion-del-problema.html" class="be-post-title">
+				 <h6>como realizar una descripcion del problema </h6>
+                </a>
+                <a href="como-realizar-una-descripcion-del-problema.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20realizar%20una%20descripcion%20del%20problema&amp;w=50&amp;h=50&amp;c=7" alt="como realizar una descripcion del problema">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-sumidero-de-carbono.html" class="be-post-title">
+				 <h6>que es el sumidero de carbono </h6>
+                </a>
+                <a href="que-es-el-sumidero-de-carbono.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20sumidero%20de%20carbono&amp;w=50&amp;h=50&amp;c=7" alt="que es el sumidero de carbono">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-vrij-van-parabenen.html" class="be-post-title">
+				 <h6>wat is vrij van parabenen </h6>
+                </a>
+                <a href="wat-is-vrij-van-parabenen.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20vrij%20van%20parabenen&amp;w=50&amp;h=50&amp;c=7" alt="wat is vrij van parabenen">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="tips-nedir-ne-demek.html" class="be-post-title">
+				 <h6>tips nedir ne demek </h6>
+                </a>
+                <a href="tips-nedir-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=tips%20nedir%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="tips nedir ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-comida.html" class="be-post-title">
+				 <h6>que es una comida </h6>
+                </a>
+                <a href="que-es-una-comida.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20comida&amp;w=50&amp;h=50&amp;c=7" alt="que es una comida">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-alimentos-tienen-carbohidratos-complejos.html" class="be-post-title">
+				 <h6>que alimentos tienen carbohidratos complejos </h6>
+                </a>
+                <a href="que-alimentos-tienen-carbohidratos-complejos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20alimentos%20tienen%20carbohidratos%20complejos&amp;w=50&amp;h=50&amp;c=7" alt="que alimentos tienen carbohidratos complejos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-effectenrekening-axa.html" class="be-post-title">
+				 <h6>wat is een effectenrekening axa </h6>
+                </a>
+                <a href="wat-is-een-effectenrekening-axa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20effectenrekening%20axa&amp;w=50&amp;h=50&amp;c=7" alt="wat is een effectenrekening axa">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-comunicación-asincrónica.html" class="be-post-title">
+				 <h6>que es una comunicación asincrónica </h6>
+                </a>
+                <a href="que-es-una-comunicación-asincrónica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20comunicaci%C3%B3n%20asincr%C3%B3nica&amp;w=50&amp;h=50&amp;c=7" alt="que es una comunicación asincrónica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-respeto-para-niños-pdf.html" class="be-post-title">
+				 <h6>que es el respeto para niños pdf </h6>
+                </a>
+                <a href="que-es-el-respeto-para-niños-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20respeto%20para%20ni%C3%B1os%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="que es el respeto para niños pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-razonamiento-matematico.html" class="be-post-title">
+				 <h6>que es el razonamiento matematico </h6>
+                </a>
+                <a href="que-es-el-razonamiento-matematico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20razonamiento%20matematico&amp;w=50&amp;h=50&amp;c=7" alt="que es el razonamiento matematico">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

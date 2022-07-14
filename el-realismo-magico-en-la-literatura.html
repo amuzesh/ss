@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        El Realismo Magico En La Literatura at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "El Realismo Magico En La Literatura",
+  "datePublished": "2022-06-14T04:10:56Z",
+  "image": "https://tse1.mm.bing.net/th?q=el%20realismo%20magico%20en%20la%20literatura",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=el%20realismo%20magico%20en%20la%20literatura&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=el%20realismo%20magico%20en%20la%20literatura" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=el%20realismo%20magico%20en%20la%20literatura" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            El Realismo Magico En La Literatura at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">El Realismo Magico En La Literatura</h2>
+    <p><strong>El Realismo Magico En La Literatura</strong>. Todos ellos aplican claramente la definición que roth dio al realismo. El realismo mágico se define como una preocupación estilística y el interés de mostrar lo irreal o extraño como algo cotidiano y común.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=el%20realismo%20magico%20en%20la%20literatura" alt="Realismo mágico Características, obras y autores" />
+        <br>
+        <figcaption>Realismo mágico Características, obras y autores from comoescribirbien.com</figcaption>
+    </figure>
+        <p>
+        El nacimiento de la cultura latinoamericana reflejado en los textos de los conquistadoresdejo su huella en la cultura latinoamericana y se reprodujo en. • en el realismo mágico son significativos el manejo del tiempo y el. Crónica de una muerte anunciada o el coronel no tiene quien le escriba.
+    </p>
+    <h3>Realismo mágico Características, obras y autores</h3>
+    <p>Escritor venezolano que se destacó por su obra la lluvia y las lanzas coloradas de 1930. Crónica de una muerte anunciada o el coronel no tiene quien le escriba. —los sentidos cobran una importancia enorme al tejer la historia. Esta corriente se cultiva con mayor énfasis en américa aunque en europa ya existía pero no como se.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Literatura Acá del otro lado" data-src="https://i2.wp.com/1.bp.blogspot.com/-xo5P7hRSPTQ/UXRE_cRJLEI/AAAAAAAAAGY/w2TosNZLhi4/s1600/portadas+libros2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.acadelotrolado.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En la primera la magia es lo cotidiano, y en el segundo la realidad parece magia. Esta corriente se cultiva con mayor énfasis en américa aunque en europa ya existía pero no como se. Este trabajo está dedicado a la corriente literaria del realismo mágico y sus rasgos característicos en la novela latinoamericana, basado en la obra cien años de.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Literatura en Colombia timeline Timetoast timelines" data-src="https://i2.wp.com/s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/12222643/279.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.timetoast.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">El sentido mágico y cautivador esta expresado en su profundidad, simbolismo, y misterio. Læs el realismo mágico en la literatura latinoamericana con el ejemplo de &#039;cien años de soledad&#039; de gabriel garcía márquez af inga axmann tilgængelig fra rakuten kobo. La discrepancia se debe a que a veces real maravilloso se usa como sinónimo de realismo mágico, sin embargo hay.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Literatura Latinoamericana El Realismo Magico" data-src="https://i2.wp.com/4.bp.blogspot.com/_EONy7d9nJqw/R_BQU_4Sm_I/AAAAAAAAAAg/qO2RN4jekII/w1200-h630-p-k-no-nu/rg1ko9.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: charlesguillemet.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Universidad nacional abierta y a distancia; Læs el realismo mágico en la literatura latinoamericana con el ejemplo de &#039;cien años de soledad&#039; de gabriel garcía márquez af inga axmann tilgængelig fra rakuten kobo. Desde el romanticismo, hasta el realismo del xix y el modernismo, había sido una literatura de mérito variable, seguidora ciega de modas y tendencias de europa. Voy.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Realismo mágico Características, obras y autores" data-src="https://i2.wp.com/comoescribirbien.com/wp-content/uploads/2015/10/realismomagico.jpg?fit=540%2C361&amp;ssl=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: comoescribirbien.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">El llamado realismo mágico vio la luz en la vanguardia literaria del siglo xx, a partir de cien años de soledad. El término fue usado por un crítico de arte, el alemán franz roh, para describir una pintura que demostraba una realidad alterada, y llegó al idioma español con la traducción en 1925 del libro realismo mágico (revista de occidente,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Literatura Realismo Magico Caracteristicas" data-src="https://i2.wp.com/i.ytimg.com/vi/oc49mVOdl28/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: culturaentreamigos.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Entre los principales representantes del realismo mágico se destacan: El realismo mágico se desarrolló con fuerza en las décadas de 1960 y 1970, como producto de dos puntos de vista que coexistieron en la américa hispana y también en brasil: Este trabajo está dedicado a la corriente literaria del realismo mágico y sus rasgos característicos en la novela latinoamericana, basado.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Realismo Magico Literatura Ejemplos" data-src="https://i2.wp.com/rcmorera.com/wp-content/uploads/realismo-mágico.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: culturaentreamigos.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Este movimiento coincide con el surgimiento de otro proceso importante de la literatura, llamado el boom latinoamericano, del que hablamos en profundidad en otro apartado. Arranca una nueva lección de unprofesor en la que nos vamos a centrar en un breve resumen del realismo mágico en la literatura hispanoamericana.este movimiento surgió a comienzos del siglo xx, principalmente cultivado por escritores.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="El realismo mágico en la literatura hispanoamericana Culture" data-src="https://i2.wp.com/cultureandlanguagecenter.com/wp-content/uploads/2021/05/Imagen-pintura-Visiones-del-Quijote-por-Octavio-Ocampo-1024x576.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: cultureandlanguagecenter.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">El termino “realismo magico” nacio en el seno de la cultura europea, pero fueron los escritores y criticos latinoamericanos los que adoptaron este termino europeo y lo emplearon para caracterizar su propia literatura. Arranca una nueva lección de unprofesor en la que nos vamos a centrar en un breve resumen del realismo mágico en la literatura hispanoamericana.este movimiento surgió a.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="La domadora de libros Hablemos de..... ¡El realismo mágico!" data-src="https://i2.wp.com/4.bp.blogspot.com/-HkqFE63dU1s/VBzfUtJceNI/AAAAAAAAAGs/bl84Q3x27FE/w1200-h630-p-k-no-nu/Magic-Realism-Tomek-Setowski-Poland-05.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ladomadoradelibros.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sobre todo es importante no confundir estas obras con las que son plenamente de fantasía puesto que el elemento clave de estos textos es, precisamente, que. Nos parecía evidente que esa realidad no había sido reflejada en la literatura. “movimiento literario hispanoamericano surgido en torno a los años 30 del siglo xx, caracterizado por la introducción de elementos fantásticos en.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Realismo Mágico historia, características y representantes" data-src="https://i2.wp.com/www.caracteristicas.co/wp-content/uploads/2016/09/realismo-magico-2-e1560393953305.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.caracteristicas.co</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">15 de septiembre del 2015. También escribió otros libros maravillosos como: Gabriel garcía márquez fue un escritor colombiano y es conocido como un representante del realismo mágico en literatura española y uno de los “iconos principales” en siglo xx (mcguirk y cardwell). Grandes figuras de relieve mundial escribieron dentro de esta estética: No es una expresión literaria mágica, su finalidad.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="QUIENES SOMOS Realismo mágico" data-src="https://i2.wp.com/2.bp.blogspot.com/-aKPuLvEo2MU/TZPVEjKPipI/AAAAAAAAABc/OlXz3qOlG_0/s1600/0_41b0e_1f30ece0_L.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: mmatematicas0.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Entre los principales representantes del realismo mágico se destacan: Aunque françois rabelais, laurence sterne, vladimir nabokov y günter grass ya manifestaron estas tendencias en sus obras, el realismo mágico floreció en la. 15 de septiembre del 2015. El realismo mágico, es una característica propia de la literatura latinoamericana de la segunda mitad de siglo xx que funde la. —los sentidos.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-se-clasifican-los-ecosistemas-terrestres-y-acuaticos.html" class="be-post-title">
+				 <h6>como se clasifican los ecosistemas terrestres y acuaticos </h6>
+                </a>
+                <a href="como-se-clasifican-los-ecosistemas-terrestres-y-acuaticos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20se%20clasifican%20los%20ecosistemas%20terrestres%20y%20acuaticos&amp;w=50&amp;h=50&amp;c=7" alt="como se clasifican los ecosistemas terrestres y acuaticos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-zijn-genotypen.html" class="be-post-title">
+				 <h6>wat zijn genotypen </h6>
+                </a>
+                <a href="wat-zijn-genotypen.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20zijn%20genotypen&amp;w=50&amp;h=50&amp;c=7" alt="wat zijn genotypen">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="estar-en-sus-13-significado.html" class="be-post-title">
+				 <h6>estar en sus 13 significado </h6>
+                </a>
+                <a href="estar-en-sus-13-significado.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=estar%20en%20sus%2013%20significado&amp;w=50&amp;h=50&amp;c=7" alt="estar en sus 13 significado">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-minestrone.html" class="be-post-title">
+				 <h6>que es minestrone </h6>
+                </a>
+                <a href="que-es-minestrone.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20minestrone&amp;w=50&amp;h=50&amp;c=7" alt="que es minestrone">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-hacen-con-la-comida-de-masterchef-ecuador.html" class="be-post-title">
+				 <h6>que hacen con la comida de masterchef ecuador </h6>
+                </a>
+                <a href="que-hacen-con-la-comida-de-masterchef-ecuador.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20hacen%20con%20la%20comida%20de%20masterchef%20ecuador&amp;w=50&amp;h=50&amp;c=7" alt="que hacen con la comida de masterchef ecuador">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-betekent-gewestplannen.html" class="be-post-title">
+				 <h6>wat betekent gewestplannen </h6>
+                </a>
+                <a href="wat-betekent-gewestplannen.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20betekent%20gewestplannen&amp;w=50&amp;h=50&amp;c=7" alt="wat betekent gewestplannen">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-ahre-en-argentina.html" class="be-post-title">
+				 <h6>que es ahre en argentina </h6>
+                </a>
+                <a href="que-es-ahre-en-argentina.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20ahre%20en%20argentina&amp;w=50&amp;h=50&amp;c=7" alt="que es ahre en argentina">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="fair-work-ombudsman-qld-phone-number.html" class="be-post-title">
+				 <h6>fair work ombudsman qld phone number </h6>
+                </a>
+                <a href="fair-work-ombudsman-qld-phone-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=fair%20work%20ombudsman%20qld%20phone%20number&amp;w=50&amp;h=50&amp;c=7" alt="fair work ombudsman qld phone number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="instrumento-de-viento-pequeño-y-ovalado.html" class="be-post-title">
+				 <h6>instrumento de viento pequeño y ovalado </h6>
+                </a>
+                <a href="instrumento-de-viento-pequeño-y-ovalado.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=instrumento%20de%20viento%20peque%C3%B1o%20y%20ovalado&amp;w=50&amp;h=50&amp;c=7" alt="instrumento de viento pequeño y ovalado">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-taurus-rising-sign-and-moon-sign.html" class="be-post-title">
+				 <h6>what is a taurus rising sign and moon sign </h6>
+                </a>
+                <a href="what-is-a-taurus-rising-sign-and-moon-sign.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20taurus%20rising%20sign%20and%20moon%20sign&amp;w=50&amp;h=50&amp;c=7" alt="what is a taurus rising sign and moon sign">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

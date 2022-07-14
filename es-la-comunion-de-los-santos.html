@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Es La Comunion De Los Santos at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Es La Comunion De Los Santos",
+  "datePublished": "2022-07-09T19:31:20Z",
+  "image": "https://tse1.mm.bing.net/th?q=es%20la%20comunion%20de%20los%20santos",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=es%20la%20comunion%20de%20los%20santos&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=es%20la%20comunion%20de%20los%20santos" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=es%20la%20comunion%20de%20los%20santos" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Es La Comunion De Los Santos at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Es La Comunion De Los Santos</h2>
+    <p><strong>Es La Comunion De Los Santos</strong>. La iglesia entonces, es ‘la gente santa de dios´, y sus miembros. Puesto que somos un cuerpo en cristo, vivimos en una comunión que abarca el cielo y la tierra.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=es%20la%20comunion%20de%20los%20santos" alt="CJM News ¿Qué es la Comunión de los Santos?" />
+        <br>
+        <figcaption>CJM News ¿Qué es la Comunión de los Santos? from cjmnews-eudistas.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Y no puede decir el ojo a la mano: Puesto que somos un cuerpo en cristo, vivimos en una comunión que abarca el cielo y la tierra. 962 creemos en la comunión de todos los fieles cristianos, es decir, de los que peregrinan en la tierra, de los que se purifican después de muertos y de los que gozan de la bienaventuranza celeste, y que todos se unen en una sola iglesia;
+    </p>
+    <h3>CJM News ¿Qué es la Comunión de los Santos?</h3>
+    <p>Y la común unión entre los cristianos, gracias al bautismo, no. También los santos velan por nosotros, nos cuidan, nos dan consuelo, nos alientan, en definitiva, se preocupan por nosotros. Y creemos igualmente que en esa comunión está a nuestra disposición el amor misericordioso de dios y de sus santos, que siempre ofrecen. Comparten un solo “cuerpo místico”, con cristo como la pista, en la cual cada miembro contribuye al bueno de todos y comparte en el.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="La Comunion de los santos. ¿Pueden éstos interceder por nosotros?, ¿son" data-src="https://i2.wp.com/1.bp.blogspot.com/-f8MVH6vXNQU/TiTq4kcARtI/AAAAAAAAAXM/B8L2O4QXvUo/s1600/20500AK.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.catolicosfirmesensufe.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La comunión de los santos es uno de los dogmas de la iglesia católica. Los del cielo interceden por los demás; También los santos velan por nosotros, nos cuidan, nos dan consuelo, nos alientan, en definitiva, se preocupan por nosotros. «los muertos son arrastrados al inmenso río de la vida de la comunión de los santos», explica el teólogo ortodoxo.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tema 17 LA COMUNIÓN DE LOS SANTOS ESCUELA DIOCESANA DE TEOLOGÍA" data-src="https://i2.wp.com/2.bp.blogspot.com/-6Brs11wYTYE/WXk0elXojnI/AAAAAAAAALQ/JAZbKH7DVcI4946qPjyG7aScwkFhd2SOgCLcBGAs/s1600/ComunionCatecismo_110117.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dogmayteologia.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Como dice el catecismo, la comunión de los santos es precisamente la iglesia. Publicado en febrero 14, 2020. (…) de esta suerte, si padece un miembro, todos los miembros padecen con él; La comunión con dios, en el amor de cristo, derramado en nuestros corazones por el espíritu santo, se explicita en la comunidad de los creyentes, que celebra su.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Macsfs apologetica i la comunion de los santos" data-src="https://i2.wp.com/image.slidesharecdn.com/slu5yzyis92jy6eonmdf-140704161104-phpapp02/95/macsfs-apologetica-i-la-comunion-de-los-santos-2-638.jpg?cb=1404490329" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">No tengo necesidad de ti. 962 creemos en la comunión de todos los fieles cristianos, es decir, de los que peregrinan en la tierra, de los que se purifican después de muertos y de los que gozan de la bienaventuranza celeste, y que todos se unen en una sola iglesia; La comunión de santos, es la unión espiritual de todos.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Qué es la comunión de los santos? La Croix en español" data-src="https://i2.wp.com/es.la-croix.com/images/0000/comunion-de-los-santos.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.la-croix.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Se presentará él solo delante de dios, referirá toda su vida: Para una gran mayoría esto es algo evidente y que no admite ni siquiera discusión: «los muertos son arrastrados al inmenso río de la vida de la comunión de los santos», explica el teólogo ortodoxo olivier clément. Puesto que somos un cuerpo en cristo, vivimos en una comunión que.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Comunión de los santos por papa francisco" data-src="https://i2.wp.com/image.slidesharecdn.com/comunindelossantosporpapafrancisco-131108132950-phpapp02/95/comunin-de-los-santos-por-papa-francisco-1-638.jpg?cb=1383918012" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La comunión con dios, en el amor de cristo, derramado en nuestros corazones por el espíritu santo, se explicita en la comunidad de los creyentes, que celebra su fe y viven en el amor mutuo su existencia. La comunión de santos, es la unión espiritual de todos los cristianos, vivos y muertos. También designa la comunión entre las personas santas,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Comunion de los Santos Listado de Santos" data-src="https://i2.wp.com/www.canalizandoluz.es/wp-content/uploads/2004/02/comunion-santos700.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.canalizandoluz.es</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En ese momento tendrá que dar cuenta de las obras buenas que hizo, de las obras buenas que pudo haber hecho y no quiso y también de todo el mal que haya. Esta comunión tiene dos significados estrechamente relacionados: Para una gran mayoría esto es algo evidente y que no admite ni siquiera discusión: Y creemos igualmente que en esa.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Creo en la Comunión de los Santos" data-src="https://i2.wp.com/www.portaluz.org/imagenes/fotosdeldia/4015_santos_.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.portaluz.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Recuerde que en el nuevo testamento, “santos” significa no santos canonizados (un desarrollo mucho más tardío), sino todo el pueblo de dios. Poemas están en ebay compara precios y características de productos nuevos y usados muchos artículos con envío gratis! No tengo necesidad de ti. Para una gran mayoría esto es algo evidente y que no admite ni siquiera discusión:.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="20 La comunión de los santos" data-src="https://i2.wp.com/image.slidesharecdn.com/cateqes20-090602163458-phpapp02/95/20-la-comunin-de-los-santos-1-728.jpg?cb=1243960681" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Y creemos igualmente que en esa comunión está a nuestra disposición el amor misericordioso de dios y de sus santos, que siempre ofrecen. El cristiano es un administrador de los bienes del señor. “si sufre un miembro, todos los demás sufren con él. 962 creemos en la comunión de todos los fieles cristianos, es decir, de los que peregrinan en.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="CJM News ¿Qué es la Comunión de los Santos?" data-src="https://i2.wp.com/4.bp.blogspot.com/-QV86QRT7tB4/VjzUQc9PZKI/AAAAAAAAMiM/C1kwONXgZok/s1600/comunion4Nov.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: cjmnews-eudistas.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Catecismo de la iglesia católica, 948. Por eso, que un cristiano católico trate de explicar que en realidad no. Poemas están en ebay compara precios y características de productos nuevos y usados muchos artículos con envío gratis! La comunión de los santos. Comparten un solo “cuerpo místico”, con cristo como la pista, en la cual cada miembro contribuye al bueno.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="LA COMUNIÓN DE LOS SANTOS. CATEQUESIS PAPA FRANCISCO AÑO DE LA FE YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/LpDaxJADyXc/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La comunión de los santos es la iglesia, ccc 946. Aquí los santos son los bautizados en general, llamados a vivir santamente, llamados a ser santos en el cielo. La expresión «comunión de los santos» indica, ante todo, la común participación de todos los miembros de la iglesia en las cosas santas (sancta): Y la común unión entre los cristianos,.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-vendedor-por-cambaceo.html" class="be-post-title">
+				 <h6>que es vendedor por cambaceo </h6>
+                </a>
+                <a href="que-es-vendedor-por-cambaceo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20vendedor%20por%20cambaceo&amp;w=50&amp;h=50&amp;c=7" alt="que es vendedor por cambaceo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-ordenar-cajones-de-cocina.html" class="be-post-title">
+				 <h6>como ordenar cajones de cocina </h6>
+                </a>
+                <a href="como-ordenar-cajones-de-cocina.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20ordenar%20cajones%20de%20cocina&amp;w=50&amp;h=50&amp;c=7" alt="como ordenar cajones de cocina">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-ictus.html" class="be-post-title">
+				 <h6>que es el ictus </h6>
+                </a>
+                <a href="que-es-el-ictus.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20ictus&amp;w=50&amp;h=50&amp;c=7" alt="que es el ictus">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-als-een-gezinslid-getest-wordt.html" class="be-post-title">
+				 <h6>wat als een gezinslid getest wordt </h6>
+                </a>
+                <a href="wat-als-een-gezinslid-getest-wordt.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20als%20een%20gezinslid%20getest%20wordt&amp;w=50&amp;h=50&amp;c=7" alt="wat als een gezinslid getest wordt">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-medida-metrica-en-un-poema.html" class="be-post-title">
+				 <h6>que es la medida metrica en un poema </h6>
+                </a>
+                <a href="que-es-la-medida-metrica-en-un-poema.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20medida%20metrica%20en%20un%20poema&amp;w=50&amp;h=50&amp;c=7" alt="que es la medida metrica en un poema">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-ude-egresados.html" class="be-post-title">
+				 <h6>que significa ude egresados </h6>
+                </a>
+                <a href="que-significa-ude-egresados.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20ude%20egresados&amp;w=50&amp;h=50&amp;c=7" alt="que significa ude egresados">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-eis-contribution.html" class="be-post-title">
+				 <h6>what is eis contribution </h6>
+                </a>
+                <a href="what-is-eis-contribution.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20eis%20contribution&amp;w=50&amp;h=50&amp;c=7" alt="what is eis contribution">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-ristretto-espresso-and-lungo.html" class="be-post-title">
+				 <h6>what is ristretto espresso and lungo </h6>
+                </a>
+                <a href="what-is-ristretto-espresso-and-lungo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20ristretto%20espresso%20and%20lungo&amp;w=50&amp;h=50&amp;c=7" alt="what is ristretto espresso and lungo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="un-poema-que-tenga-dos-estrofas-y-cuatro-versos.html" class="be-post-title">
+				 <h6>un poema que tenga dos estrofas y cuatro versos </h6>
+                </a>
+                <a href="un-poema-que-tenga-dos-estrofas-y-cuatro-versos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=un%20poema%20que%20tenga%20dos%20estrofas%20y%20cuatro%20versos&amp;w=50&amp;h=50&amp;c=7" alt="un poema que tenga dos estrofas y cuatro versos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-son-concentraciones-de-soluciones.html" class="be-post-title">
+				 <h6>que son concentraciones de soluciones </h6>
+                </a>
+                <a href="que-son-concentraciones-de-soluciones.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20son%20concentraciones%20de%20soluciones&amp;w=50&amp;h=50&amp;c=7" alt="que son concentraciones de soluciones">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

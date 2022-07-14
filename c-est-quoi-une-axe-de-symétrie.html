@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        C&#039;est Quoi Une Axe De Symétrie at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "C&#039;est Quoi Une Axe De Symétrie",
+  "datePublished": "2022-06-07T19:57:21Z",
+  "image": "https://tse1.mm.bing.net/th?q=c%27est%20quoi%20une%20axe%20de%20sym%C3%A9trie",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=c%27est%20quoi%20une%20axe%20de%20sym%C3%A9trie&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=c%27est%20quoi%20une%20axe%20de%20sym%C3%A9trie" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=c%27est%20quoi%20une%20axe%20de%20sym%C3%A9trie" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            C&#039;est Quoi Une Axe De Symétrie at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">C&#039;est Quoi Une Axe De Symétrie</h2>
+    <p><strong>C&#039;est Quoi Une Axe De Symétrie</strong>. Si x change de signe, son image est inchangée. Lire la leçon sur la symétrie axiale au cm1.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=c%27est%20quoi%20une%20axe%20de%20sym%C3%A9trie" alt="Cours de maths Tracer un axe de symétrie à l&#039;intérieur d&#039;une figure" />
+        <br>
+        <figcaption>Cours de maths Tracer un axe de symétrie à l&#039;intérieur d&#039;une figure from www.maxicours.com</figcaption>
+    </figure>
+        <p>
+        Le symétrique d&#039;une droite par symétrie centrale est une droite parallèle. La droite qui le supporte. La symétrie est la correspondance parfaite entre deux formes.
+    </p>
+    <h3>Cours de maths Tracer un axe de symétrie à l&#039;intérieur d&#039;une figure</h3>
+    <p>Pour savoir si deux dessins sont symétriques, je peux plier le long de l&#039;axe. Non ici deux figures géométriques une à droite et une à gauche et on cherche à savoir si les droite représentée en bleu ici qui coupent ces figures en deux sont des axe de symétrie alors le critère est très simple on peut parler dax de symétrie si le dessin qui est situé d&#039;un côté de cette grotte est. Si tu plies ta feuille le long de l&#039;axe de symétrie, alors la partie droite du dessin se superpose avec la partie gauche. Insérez vos variables dans la formule de l&#039;axe de symétrie.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Si deux droites sont parallèles, alors toute droite perpendiculaire à l" data-src="https://i2.wp.com/p5.storage.canalblog.com/59/21/1092764/83681008.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lesmathsenimage.canalblog.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La courbe admet alors un axe de symétrie : Les axes de symétrie sont généralement notés l. Mes élèves savent depuis longtemps déjà que s’ils doivent tracer les axes de symétrie d’un cercle, il leur suffit d’en tracer 4 à 5 et d’indiquer en plus le mot “infini” autour de la figure. Voici un dessin qui illustre bien la différence.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Symétrie axiale, qu&#039;est ce que c&#039;est ? (6eme) Doovi" data-src="https://i2.wp.com/i.ytimg.com/vi/WniTqk4_4so/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.doovi.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La figure obtenue, appelée le symétrique, possède les mêmes propriétés que la figure de. Un cercle a une infinité d&#039;axes de symétrie. Lire la leçon sur la symétrie axiale au cm1. Pour calculer l&#039;axe de symétrie d&#039;un polynôme d&#039;ordre 2 sous la forme ax 2 + bx +c (une parabole), il est recommandé d&#039;utiliser la. Le symétrique d&#039;un angle par.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cours de maths Axe de symétrie" data-src="https://i2.wp.com/e.maxicours.com/img/2/2/8/8/228842.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.maxicours.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Les propriétés de la symétrie axiale. Un papillon, par exemple, est symétrique. Y = ax2 + bx + c. Pour calculer l&#039;axe de symétrie d&#039;un polynôme d&#039;ordre 2 sous la forme ax 2 + bx +c (une parabole), il est recommandé d&#039;utiliser la. Pour ce qui est de l&#039;axe de symétrie, il s&#039;agit d&#039;une droite qui divise une figure en.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cours de maths Tracer un axe de symétrie à l&#039;intérieur d&#039;une figure" data-src="https://i2.wp.com/e.maxicours.com/img/2/3/9/2/239240.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.maxicours.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La symétrie est une propriété d&#039;un système : Si les dessins se superposent exactement alors ils sont. Ensuite, les axes de symétrie des figures sont considérés. Le symétrique d&#039;un angle par symétrie centrale est un angle de même mesure. Le carré a quatre axes de symétrie, un rectangle ou.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Comprendre les Propriétés de la Symétrie Centrale" data-src="https://i2.wp.com/math-coaching.com/img/fiche/132/exercice-propriete-symetrie-centrale-600w.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: math-coaching.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pour débuter, je propose donc de plier une feuille pour obtenir un trait et de peindre d’un côté puis de plier sa feuille à. La médiatrice (d) d’un segment [ ab]. Si on plie au milieu verticalement, on voit apparaître deux moitiés de la maison. Les axes de symétrie sont généralement notés l. Pour tout h réel :</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Axes de symetrie et diagonales du losange YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/3hOno4RNZv0/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Y = ax2 + bx + c. Il peut y en avoir beaucoup, et ils peuvent être arrangés comme vous voulez: Mes élèves savent depuis longtemps déjà que s’ils doivent tracer les axes de symétrie d’un cercle, il leur suffit d’en tracer 4 à 5 et d’indiquer en plus le mot “infini” autour de la figure. Une figure peut avoir.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Un losange a deux axes de symétrie ses &quot;diagonales&quot; (ou plutôt les" data-src="https://i2.wp.com/p7.storage.canalblog.com/76/04/1092764/83680687.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lesmathsenimage.canalblog.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En bleu, la parabole d&#039;équation y = x 2 /10, représentative d&#039;une fonction paire f : De manière générale, un système est symétrique quand on peut permuter ses éléments en laissant sa forme inchangée. L&#039;exemple le plus connu est la symétrie en géométrie. En géométrie, la symétrie est la correspondance exacte entre deux figures (même dimensions et angles), par rapport.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Symétrie axiale Maxicours" data-src="https://i2.wp.com/e.educlever.com/img/1/4/8/7/148797.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.maxicours.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Non ici deux figures géométriques une à droite et une à gauche et on cherche à savoir si les droite représentée en bleu ici qui coupent ces figures en deux sont des axe de symétrie alors le critère est très simple on peut parler dax de symétrie si le dessin qui est situé d&#039;un côté de cette grotte est. Tu.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pouvez vous m&#039;expliquer la différence entre symétrie axiale et symétrie" data-src="https://i2.wp.com/fr-static.z-dn.net/files/d22/8302e4209e6262217d51aea38a499d97.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: nosdevoirs.fr</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De manière générale, un système est symétrique quand on peut permuter ses éléments en laissant sa forme inchangée. Prenons le logo de la maison lumni. Le symétrique d&#039;un angle par symétrie centrale est un angle de même mesure. Un cercle a une infinité d&#039;axes de symétrie. La symétrie axiale est une transformation géométrique.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Axe de symétrie axiale et centrale Bases Maths ce2 cm1 cm2 6ème 5ème" data-src="https://i2.wp.com/i.ytimg.com/vi/v-ni8QV_Kgw/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De par ses propriétés, il est important de ne pas mélanger «axe de réflexion» et «axe de symétrie». Un papillon, par exemple, est symétrique. De façon générale, pour démontrer que la droite d&#039;équation x = a est axe de symétrie vertical, on montre que : Le carré a quatre axes de symétrie, un rectangle ou. Le symétrique d&#039;un segment par.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-atender-en-un-restaurante-en-ingles.html" class="be-post-title">
+				 <h6>como atender en un restaurante en ingles </h6>
+                </a>
+                <a href="como-atender-en-un-restaurante-en-ingles.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20atender%20en%20un%20restaurante%20en%20ingles&amp;w=50&amp;h=50&amp;c=7" alt="como atender en un restaurante en ingles">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-psicologia-industrial-y-social.html" class="be-post-title">
+				 <h6>que es la psicologia industrial y social </h6>
+                </a>
+                <a href="que-es-la-psicologia-industrial-y-social.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20psicologia%20industrial%20y%20social&amp;w=50&amp;h=50&amp;c=7" alt="que es la psicologia industrial y social">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-verso-en-un-poema.html" class="be-post-title">
+				 <h6>que es el verso en un poema </h6>
+                </a>
+                <a href="que-es-el-verso-en-un-poema.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20verso%20en%20un%20poema&amp;w=50&amp;h=50&amp;c=7" alt="que es el verso en un poema">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-codice-de-leningrado-jw.html" class="be-post-title">
+				 <h6>que es el codice de leningrado jw </h6>
+                </a>
+                <a href="que-es-el-codice-de-leningrado-jw.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20codice%20de%20leningrado%20jw&amp;w=50&amp;h=50&amp;c=7" alt="que es el codice de leningrado jw">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-una-estrofa-y-un-verso.html" class="be-post-title">
+				 <h6>que una estrofa y un verso </h6>
+                </a>
+                <a href="que-una-estrofa-y-un-verso.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20una%20estrofa%20y%20un%20verso&amp;w=50&amp;h=50&amp;c=7" alt="que una estrofa y un verso">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-paritair-comité-999.html" class="be-post-title">
+				 <h6>what is paritair comité 999 </h6>
+                </a>
+                <a href="what-is-paritair-comité-999.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20paritair%20comit%C3%A9%20999&amp;w=50&amp;h=50&amp;c=7" alt="what is paritair comité 999">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-hace-un-magistrado-en-méxico.html" class="be-post-title">
+				 <h6>que hace un magistrado en méxico </h6>
+                </a>
+                <a href="que-hace-un-magistrado-en-méxico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20hace%20un%20magistrado%20en%20m%C3%A9xico&amp;w=50&amp;h=50&amp;c=7" alt="que hace un magistrado en méxico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="sebutan-lain-dari-tendangan-punggung-kaki-adalah.html" class="be-post-title">
+				 <h6>sebutan lain dari tendangan punggung kaki adalah </h6>
+                </a>
+                <a href="sebutan-lain-dari-tendangan-punggung-kaki-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=sebutan%20lain%20dari%20tendangan%20punggung%20kaki%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="sebutan lain dari tendangan punggung kaki adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="porque-mexico-es-un-pais-megadiverso-para-niños.html" class="be-post-title">
+				 <h6>porque mexico es un pais megadiverso para niños </h6>
+                </a>
+                <a href="porque-mexico-es-un-pais-megadiverso-para-niños.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=porque%20mexico%20es%20un%20pais%20megadiverso%20para%20ni%C3%B1os&amp;w=50&amp;h=50&amp;c=7" alt="porque mexico es un pais megadiverso para niños">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-goed-salaris.html" class="be-post-title">
+				 <h6>wat is een goed salaris </h6>
+                </a>
+                <a href="wat-is-een-goed-salaris.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20goed%20salaris&amp;w=50&amp;h=50&amp;c=7" alt="wat is een goed salaris">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

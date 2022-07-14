@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Psiap Pajak Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Psiap Pajak Adalah",
+  "datePublished": "2022-05-19T21:45:51Z",
+  "image": "https://tse1.mm.bing.net/th?q=psiap%20pajak%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=psiap%20pajak%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=psiap%20pajak%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=psiap%20pajak%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Psiap Pajak Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Psiap Pajak Adalah</h2>
+    <p><strong>Psiap Pajak Adalah</strong>. Prinsip dasar akuntansi pph berdasarkan psak 46. Kementerian keuangan (kemenkeu) melalui ditjen pajak belum lama ini, meluncurkan pembaruan sistem inti administrasi perpajakan (psiap) atau core tax.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=psiap%20pajak%20adalah" alt="Kemenkeu Berkomitmen Gunakan Transformasi Digital Demi Reformasi" />
+        <br>
+        <figcaption>Kemenkeu Berkomitmen Gunakan Transformasi Digital Demi Reformasi from ekonomi.bisnis.com</figcaption>
+    </figure>
+        <p>
+        Mengenai perpajakan, ada beberapa istilah yang wajib kalian ketahui, salah satunya adalah sppkp. Integrasi dan pengolahan data yang lebih baik dipercaya dapat mengatasi. Salah satu contoh pajak langsung adalah pajak seperti penghasilan bumi dan penghasilan atau pbb.
+    </p>
+    <h3>Kemenkeu Berkomitmen Gunakan Transformasi Digital Demi Reformasi</h3>
+    <p>Sistem pajak akan menjadi lebih adil. Segala sesuatu yang penting tentu memiliki standar, termasuk dalam akuntansi. Manfaat, fungsi, jenis jenis dan contohnya. Dengan membayar pajak diharapkan dana tersebut bisa digunakan untuk kepentingan seluruh masyarakat, bukan hanya untuk para pejabat atau petinggi lainnya.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="“Core Tax” Prioritaskan Pemeriksaan WP Berisiko Tinggi" data-src="https://i2.wp.com/www.pajak.com/storage/2022/07/PAJAK-22-561x374.jpeg?v=1657672117" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pajak.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sistem informasi administrasi perpajkaan diharapkan menjadi lebih mudah, andal, terintegrasi, akurat, dan pasti untuk optimalisasi pelayanan dan pengawasan. Psak 46 menggunakan konsep akrual dalam mengakui beban, aset dan kewajiban perpajakan. Kecuali jika pengusaha kecil tersebut mengajukan dan memilih untuk menjadi pkp. Pajak merupakan salah satu sumber bagi negara untuk melakukan pembangunan. Kebijakan pajak (tax policies) kebijakan fiskal dalam arti luas.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mas Dhito Jaga Kualitas Pertemuan dengan Keluarga Nasional Tempo.co" data-src="https://i2.wp.com/statik.tempo.co/data/2022/06/29/id_1121429/1121429_720.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: nasional.tempo.co</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Juli 13, 2022 oleh admin. Biasanya para wajib pajak ini mendapatkan surat dari kantor pajak. Timbal balik pajak tidak dirasakan secara langsung oleh. July 9, 2013 at 2:32 pm. Pada dasarnya, pengenaan pajak ini adalah variabel dalam menghitung jumlah pajak terutang yang harus dibayar.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Hari Pajak 2021, Pesan Menkeu, MPajak, dan Buku Reformasi Perpajakan" data-src="https://i2.wp.com/1.bp.blogspot.com/-kbf9SI8PpfY/YPHAReF-nWI/AAAAAAAAEpg/vxz95mB1uSI3emM-bqYbC33s_32KUCgXwCLcBGAsYHQ/s1270/daftar%2Bpenulis%2Bbuku%2Breformasi%2Bperpajakan.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ekstensifikasi423.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Menyelenggarakan akuntansi piutang pajak merupakan salah satu kewajiban setiap unit. Jadi, dasar pengenaan pajak untuk pph 21 dari a sebesar rp 116.000.000. Berita pajak hari dirjen pajak. Berdasarkan sifat, pajak dibagi menjadi 2 yaitu secara langsung dan tidak langsung. Utang pajak yang melekat pada wajib pajak akan dihapus karena pembayaran pajak yang dilakukan ke kas negara.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="“Core Tax” Prioritaskan Pemeriksaan WP Berisiko Tinggi" data-src="https://i2.wp.com/www.pajak.com/storage/2022/07/PAJAK-22.jpeg?v=1657672117" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pajak.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sehingga setiap penghasilan menurut akuntansi, harus tetap memperhitungkan. Sistem informasi administrasi perpajkaan diharapkan menjadi lebih mudah, andal, terintegrasi, akurat, dan pasti untuk optimalisasi pelayanan dan pengawasan. Salah satu permasalahan pajak indonesia adalah rendahnya tax ratio sebagai akibat dari rendahnya angka partisipasi, kontribusi, dan kepatuhan dari masyarakat. Sppkp merupakan singkatan dari surat pengukuhan pengusaha kena pajak. Pada dasarnya, pengenaan pajak ini.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="BRI dan Ditjen Pajak Jalin Kerja Sama Implementasi Aplikasi PSIAP" data-src="https://i2.wp.com/statik.tempo.co/data/2022/06/29/id_1121390/1121390_720.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bisnis.tempo.co</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pengertian, syarat &amp; cara mendapatkan. Dengan membayar pajak diharapkan dana tersebut bisa digunakan untuk kepentingan seluruh masyarakat, bukan hanya untuk para pejabat atau petinggi lainnya. Pajak merupakan salah satu sumber bagi negara untuk melakukan pembangunan. Penyerahan barang kena pajak atau bkp adalah setiap kegiatan penyerahan barang kena pajak, dan yang termasuk penyerahan bkp di antaranya: Contoh pajak langsung adalah pajak.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Hari Pajak 2021, Pesan Menkeu, MPajak, dan Buku Reformasi Perpajakan" data-src="https://i2.wp.com/1.bp.blogspot.com/-7eiUQX85nv8/YPG_jO7eM6I/AAAAAAAAEpY/MrJUdehfWs4CtHUHCSGPPdyDR89k263GQCLcBGAsYHQ/s1280/diskusi%2Bbuku%2Bcerita%2Breformasi%2Bperpajakan.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ekstensifikasi423.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dpp pph 21 = rp116.000.000. 4 kriteria barang yang diklasifikasikan sebagai barang mewah adalah barang tersebut bukan merupakan barang kebutuhan pokok, dikonsumsi masyarakat tertentu, umumnya barang dikonsumsi masyarakat berpenghasilan tinggi dan. Infografis, infografis pajak, pembaruan sistem inti administrasi pajak. Berdasarkan sifat, pajak dibagi menjadi 2 yaitu secara langsung dan tidak langsung. Biasanya para wajib pajak ini mendapatkan surat dari kantor.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="BRI Jalin Kerja Sama Implementasi Aplikasi PSIAP bersama Dirjen Pajak" data-src="https://i2.wp.com/mediabumn.com/wp-content/uploads/2022/06/235.-BRI-Jalin-Kerja-Sama-Implementasi-Aplikasi-PSIAP.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: mediabumn.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Berikut pengertian lengkap, sejarah dan jenisnya. Dengan membayar pajak diharapkan dana tersebut bisa digunakan untuk kepentingan seluruh masyarakat, bukan hanya untuk para pejabat atau petinggi lainnya. Dalam kasus ini, ian terutang pajak atas hadiah undian berupa uang tunai yang diterimanya. Mengenal pembaruan sistem inti administrasi perpajakan (psiap) gallantino farman | rabu, 01 september 2021 | 11:45 wib. Psak sendiri adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Reformasi Perpajakan melalui PPN dan PPh Laman 2 dari 2" data-src="https://i2.wp.com/www.pajak.com/storage/2021/05/thumbnail-78.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pajak.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sehingga setiap penghasilan menurut akuntansi, harus tetap memperhitungkan. Pembaruan sistem inti administrasi perpajakan (psiap) disampaikan dalam kegiatan “kick off tim pendampingan hukum” psiap 07 april 2021. Dalam kasus ini, ian terutang pajak atas hadiah undian berupa uang tunai yang diterimanya. Keberhasilan reformasi perpajakan sangat ditentukan oleh dukungan, determinasi, dan semangat yang kuat dari para pegawainya. Psak sendiri adalah singkatan dari.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kemenkeu Berkomitmen Gunakan Transformasi Digital Demi Reformasi" data-src="https://i2.wp.com/images.bisnis-cdn.com/posts/2021/07/08/1415582/pajak.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ekonomi.bisnis.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Mengenai perpajakan, ada beberapa istilah yang wajib kalian ketahui, salah satunya adalah sppkp. Berdasarkan sifat, pajak dibagi menjadi 2 yaitu secara langsung dan tidak langsung. Direktur penyuluhan, pelayanan, dan humas djp hestu yoga saksama mengatakan pembentukan tim pelaksana psiap pada awal november 2020 tidak untuk. Juli 13, 2022 oleh admin. Sistem pajak akan menjadi lebih adil.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Hari Pajak 2021, Pesan Menkeu, MPajak, dan Buku Reformasi Perpajakan" data-src="https://i2.wp.com/1.bp.blogspot.com/-S4d0kRxw0CI/YPHAmgmDmwI/AAAAAAAAEpo/8-OYsnSbAuoYPzZpFcaiTJpwiz8W_2rXQCLcBGAsYHQ/s1280/unduh%2Bbuku%2Bcerita%2Bdi%2Bbalik%2Breformasi%2Bperpajakan.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ekstensifikasi423.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Semoga ditjen pajak ri dan kemenkeu ri dapat selalu menjadi institusi terbaik di negeri ini dalam mengumpulkan penerimaan negara menuju #indonesiamaju #haripajak #haripajak2022 please rate this beri rating. Integrasi dan pengolahan data yang lebih baik dipercaya dapat mengatasi. Reformasi perpajakan adalah bukti bahwa djp terus melakukan perubahan secara kontinyu. Kecuali jika pengusaha kecil tersebut mengajukan dan memilih untuk menjadi pkp..</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="police-ombudsman-contact-number.html" class="be-post-title">
+				 <h6>police ombudsman contact number </h6>
+                </a>
+                <a href="police-ombudsman-contact-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=police%20ombudsman%20contact%20number&amp;w=50&amp;h=50&amp;c=7" alt="police ombudsman contact number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-zijn-de-symptomen-van-een-flauwte.html" class="be-post-title">
+				 <h6>wat zijn de symptomen van een flauwte </h6>
+                </a>
+                <a href="wat-zijn-de-symptomen-van-een-flauwte.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20zijn%20de%20symptomen%20van%20een%20flauwte&amp;w=50&amp;h=50&amp;c=7" alt="wat zijn de symptomen van een flauwte">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-it-mean-to-have-a-rising-sign-in-capricorn.html" class="be-post-title">
+				 <h6>what does it mean to have a rising sign in capricorn </h6>
+                </a>
+                <a href="what-does-it-mean-to-have-a-rising-sign-in-capricorn.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20it%20mean%20to%20have%20a%20rising%20sign%20in%20capricorn&amp;w=50&amp;h=50&amp;c=7" alt="what does it mean to have a rising sign in capricorn">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="where-to-find-customer-id-for-axis-bank.html" class="be-post-title">
+				 <h6>where to find customer id for axis bank </h6>
+                </a>
+                <a href="where-to-find-customer-id-for-axis-bank.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=where%20to%20find%20customer%20id%20for%20axis%20bank&amp;w=50&amp;h=50&amp;c=7" alt="where to find customer id for axis bank">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-troyano-informatico.html" class="be-post-title">
+				 <h6>que es un troyano informatico </h6>
+                </a>
+                <a href="que-es-un-troyano-informatico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20troyano%20informatico&amp;w=50&amp;h=50&amp;c=7" alt="que es un troyano informatico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-qemu-machine-emulators-and-tools.html" class="be-post-title">
+				 <h6>que es qemu machine emulators and tools </h6>
+                </a>
+                <a href="que-es-qemu-machine-emulators-and-tools.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20qemu%20machine%20emulators%20and%20tools&amp;w=50&amp;h=50&amp;c=7" alt="que es qemu machine emulators and tools">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-son-las-carceles-federales-en-estados-unidos.html" class="be-post-title">
+				 <h6>como son las carceles federales en estados unidos </h6>
+                </a>
+                <a href="como-son-las-carceles-federales-en-estados-unidos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20son%20las%20carceles%20federales%20en%20estados%20unidos&amp;w=50&amp;h=50&amp;c=7" alt="como son las carceles federales en estados unidos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cuales-son-los-versos-y-estrofas-de-un-poema-ejemplo.html" class="be-post-title">
+				 <h6>cuales son los versos y estrofas de un poema ejemplo </h6>
+                </a>
+                <a href="cuales-son-los-versos-y-estrofas-de-un-poema-ejemplo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cuales%20son%20los%20versos%20y%20estrofas%20de%20un%20poema%20ejemplo&amp;w=50&amp;h=50&amp;c=7" alt="cuales son los versos y estrofas de un poema ejemplo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-existe-la-relatividad-del-tiempo.html" class="be-post-title">
+				 <h6>que existe la relatividad del tiempo </h6>
+                </a>
+                <a href="que-existe-la-relatividad-del-tiempo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20existe%20la%20relatividad%20del%20tiempo&amp;w=50&amp;h=50&amp;c=7" alt="que existe la relatividad del tiempo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="nominal-risk-free-rate-là-gì.html" class="be-post-title">
+				 <h6>nominal risk free rate là gì </h6>
+                </a>
+                <a href="nominal-risk-free-rate-là-gì.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=nominal%20risk%20free%20rate%20l%C3%A0%20g%C3%AC&amp;w=50&amp;h=50&amp;c=7" alt="nominal risk free rate là gì">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

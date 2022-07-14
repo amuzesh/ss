@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Selefi Ne Demektir at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Selefi Ne Demektir",
+  "datePublished": "2022-04-11T20:31:40Z",
+  "image": "https://tse1.mm.bing.net/th?q=selefi%20ne%20demektir",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=selefi%20ne%20demektir&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=selefi%20ne%20demektir" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=selefi%20ne%20demektir" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Selefi Ne Demektir at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Selefi Ne Demektir</h2>
+    <p><strong>Selefi Ne Demektir</strong>. Peygamber ve sahâbîlerin inançta takip ettikleri yolu doğrudan doğruya izleyen gruptur. Seo by selenay dinç lalin isminin anlamı nedir?</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=selefi%20ne%20demektir" alt="Selefi nedir? Selefilik ne demektir? Selefiler kimlerdir?" />
+        <br>
+        <figcaption>Selefi nedir? Selefilik ne demektir? Selefiler kimlerdir? from www.binlercebilgi.com</figcaption>
+    </figure>
+        <p>
+        Için yorumlar kapalı 20 kez görüntülendi. (selefi anlamı, selefi ingilizcesi, ingilizcede selefi, selefi nnd) Selef önde olan anlamına gelir.
+    </p>
+    <h3>Selefi nedir? Selefilik ne demektir? Selefiler kimlerdir?</h3>
+    <p>Selefîlik, salafizm ve selefiyecilik olarak da bilinir. Selef, önde olan anlamına gelir ve geleneksel olarak i̇slâm peygamberi, sahabeler ve onları görerek tâbî olanlardan (tâbiîn ve tebeut tâbiîn) oluşan gruba verilen isimdir. Selef önde olan anlamına gelir. Için yorumlar kapalı 20 kez görüntülendi.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Selef Ne Demektir? · Fetva Meclisi" data-src="https://i2.wp.com/i3.ytimg.com/vi/IaS10wtYtdI/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: fetvameclisi.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Selefi ve selefilik ne demektir? Selefi ve selefilik ne demektir? Iyi ve allah’ın rızasına kavuşmuş insanlar için söylenen bir terimdir. Selefîlik (salafizm ve selefiyecilik olarak da bilinir.arapça: &#039;cübbeli ahmet&#039; olarak bilinen ahmet mahmut ünlü&#039;nün, selefi derneklerin silahlandığını iddia etmesi sonrası &#039;selefilik nedir, ne zaman.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Selefi ne demek, anlamı nedir? Selefi dernekleri hangileri? Selefilik" data-src="https://i2.wp.com/iatkv.tmgrup.com.tr/05e78b/0/0/0/0/0/0?u=https:%2f%2fitkv.tmgrup.com.tr%2f2020%2f09%2f24%2fselefi-ne-demek-anlami-nedir-selefi-dernekleri-hangileri-selefilik-nedir-1600931698381.jpg&amp;mw=600" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.takvim.com.tr</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Deaş (işid) terör örgütü ile birlikte tekrar gündeme gelen. Download for offline reading, highlight, bookmark or take notes while you read selefi̇ ki̇mdi̇r?: Daha sonra yaşadığı halde aynı metotları benimseyen ve aynı görüşleri paylaşan. Selefi nedir ve selefi ne demek sorularına hızlı cevap veren sözlük sayfası. 0 0 6 dakika okuma süresi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ehli Kalesi Selefiye / Selefilik yada Selefiyecilik nedir?" data-src="https://i2.wp.com/3.bp.blogspot.com/-hpF5umyvo0Q/UOU-j1d7RjI/AAAAAAAABeI/kMDsiIZjS7A/s1600/selefi.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ehlisunnetkalesi.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Selefi ise i̇slâmî bilgilere göre ilk dönemlere mensup i̇slâm büyükleri anlamında, bu. Selef, önde olan anlamına gelir ve geleneksel olarak i̇slâm peygamberi, sahabeler ve onları görerek tâbî olanlardan (tâbiîn ve tebeut tâbiîn) oluşan gruba verilen isimdir. Daha sonra yaşadığı halde aynı metotları benimseyen ve aynı görüşleri paylaşan. Için yorumlar kapalı 20 kez görüntülendi. Deaş (işid) terör örgütü ile birlikte tekrar.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ubeydullah Arslan Selefilik nedir Selefi Kimdir ne demek YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/8ZdrZVtrVr4/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Deaş işid terör örgütü ile beraber yine gündeme gelen selefilik, vehhabiliğin kamufle edilmiş ismidir. Selef halefin tersidir ve tarihsel olarak önde olanlar anlamına gelir. Tdk’ye göre selef kelimesi ise şu anlama gelmektedir: Tdk&#039;ye göre halef selef kelimesi anlamı şu şekildedir: Halef selef kelimesi, dilimizde oldukça kullanılan kelimelerden birisidir.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Selefi ne demek, anlamı nedir? Selefi dernekleri hangileri? Selefilik" data-src="https://i2.wp.com/iatkv.tmgrup.com.tr/2ff7fc/616/321/0/192/851/636?u=https:%2f%2fitkv.tmgrup.com.tr%2f2020%2f09%2f24%2fselefi-ne-demek-anlami-nedir-selefi-dernekleri-hangileri-selefilik-nedir-1600931644054.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.takvim.com.tr</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Selef halefin tersidir ve tarihsel olarak önde olanlar anlamına gelir. Sözlükte “önce gelmek, geçmek, geçmişte kalmak” anlamındaki selef ( sülûf) kelimesinden gelen selefiyye “geçmiş insanlar, soy, fazilet ve ilim bağlamında önce gelip geçenler” demektir. Selef, terim olarak ilim ve fazilet. Buna “selefilik mezhebinin yedi temel esası” demek, yani selef kelimesini selefilik olarak. Deaş işid terör örgütü ile beraber yine gündeme.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Selefi nedir? Selefilik ne demektir? Selefiler kimlerdir?" data-src="https://i2.wp.com/1.bp.blogspot.com/-DqMhNuGkpIw/X27zUSplycI/AAAAAAAAOkU/9FYpNdNlZLgY-h8GytZGAPY2hNGmSKNTACLcBGAsYHQ/w1600/selefi-ne-demek-selefi-kimlere-denir.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.binlercebilgi.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Eş&#039;arîlik ve mâtürîdîlik ortaya çıkıncaya kadar, sünnî müslüman çevrede hâkim olan inanç, selef inancıdır. Selefi dernekleri türkiye’nin gündemine oturdu. İmam şâfiî, mâlik, ahmed b. Halef selef kelimesi, dilimizde oldukça kullanılan kelimelerden birisidir. Deaş (işid) terör örgütü ile birlikte tekrar gündeme gelen.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Selefi ne demek, anlamı nedir? Selefi dernekleri hangileri? Selefilik" data-src="https://i2.wp.com/iatkv.tmgrup.com.tr/2627c0/0/0/0/0/0/0?u=https:%2f%2fitkv.tmgrup.com.tr%2f2020%2f09%2f24%2fselefi-ne-demek-anlami-nedir-selefi-dernekleri-hangileri-selefilik-nedir-1600931651837.jpg&amp;mw=600" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.takvim.com.tr</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bu bağlamda sünni ve hanefi arasındaki fark yoktur, hanefi mezhebi (hanefilik) sünniliğe (ehli sünnete) bağlı olan bir mezheptir. İmam şâfiî, mâlik, ahmed b. Selefi nedir ve selefi ne demek sorularına hızlı cevap veren sözlük sayfası. 0 0 6 dakika okuma süresi. Bu mezhebin temel esasları yedidir…” diyor.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Selfie Ne Demektir? Sorusu Kriz Yarattı Komik İlginç" data-src="https://i2.wp.com/foto.haberler.com/haber/2014/04/12/selfie-ne-demektir-sorusu-kriz-yaratti-5900283_9012_o.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.haberler.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Selefîlik, salafizm ve selefiyecilik olarak da bilinir. Sözlükte “önce gelmek, geçmek, geçmişte kalmak” anlamındaki selef ( sülûf) kelimesinden gelen selefiyye “geçmiş insanlar, soy, fazilet ve ilim bağlamında önce gelip geçenler” demektir. 1 ﻿selena ne demek haberleri ve gelişmelerini bu sayfada siyah beyaz yayınları serenay özen nedir serisi 4&#039;lü set yorumlarını inceleyin, trendyol&#039;a özel indirimli fiyata satın alın. Selef, terim olarak.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Selfie Nedir? Ne Demektir? Her Şeyden Bir Şey" data-src="https://i2.wp.com/www.herseydenbirsey.com/wp-content/uploads/selfie.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.herseydenbirsey.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Selefi gelenek hadisçilerin temsil ettiği bir ekol. Buna gücünün yetmeyeceğini anlayıp aczini kabul etmek demektir. Bir orunda kendinden önce bulunmuş olan kimse, öncel, ardıl karşıtı. Eş&#039;arîlik ve mâtürîdîlik ortaya çıkıncaya kadar, sünnî müslüman çevrede hâkim olan inanç, selef inancıdır. Read this book using google play books app on your pc, android, ios devices.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Selef ne demek, Selefi ne anlama geliyor? Selefiler kimdir? Selefilik" data-src="https://i2.wp.com/foto.haberler.com/haber/2020/09/25/selef-ne-demek-selefi-ne-anlama-geliyor-13625801_1883_amp.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.haberler.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">0 0 6 dakika okuma süresi. Bu mezhebin temel esasları yedidir…” diyor. Bu sebeple, selefi salihin şöyle dedi, selefi salihin’den filanca böyle yaptı derken biz, iyi nesli örneklendirmek istediğimizden bunu konuşuyoruz. &#039;cübbeli ahmet&#039; olarak bilinen ahmet mahmut ünlü&#039;nün, selefi derneklerin silahlandığını iddia etmesi sonrası &#039;selefilik nedir, ne zaman. Bunlardan muradın ne olduğunu allah bilir.” derler.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-hacer-con-queso-de-puerco.html" class="be-post-title">
+				 <h6>que hacer con queso de puerco </h6>
+                </a>
+                <a href="que-hacer-con-queso-de-puerco.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20hacer%20con%20queso%20de%20puerco&amp;w=50&amp;h=50&amp;c=7" alt="que hacer con queso de puerco">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-es-un-dispositivo-rooteado.html" class="be-post-title">
+				 <h6>como es un dispositivo rooteado </h6>
+                </a>
+                <a href="como-es-un-dispositivo-rooteado.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20es%20un%20dispositivo%20rooteado&amp;w=50&amp;h=50&amp;c=7" alt="como es un dispositivo rooteado">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-poner-un-molino-de-cocina.html" class="be-post-title">
+				 <h6>como poner un molino de cocina </h6>
+                </a>
+                <a href="como-poner-un-molino-de-cocina.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20poner%20un%20molino%20de%20cocina&amp;w=50&amp;h=50&amp;c=7" alt="como poner un molino de cocina">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-estornudar-3-veces.html" class="be-post-title">
+				 <h6>que significa estornudar 3 veces </h6>
+                </a>
+                <a href="que-significa-estornudar-3-veces.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20estornudar%203%20veces&amp;w=50&amp;h=50&amp;c=7" alt="que significa estornudar 3 veces">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-https-en-informatica.html" class="be-post-title">
+				 <h6>que es https en informatica </h6>
+                </a>
+                <a href="que-es-https-en-informatica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20https%20en%20informatica&amp;w=50&amp;h=50&amp;c=7" alt="que es https en informatica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-economia-mixta.html" class="be-post-title">
+				 <h6>que es la economia mixta </h6>
+                </a>
+                <a href="que-es-la-economia-mixta.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20economia%20mixta&amp;w=50&amp;h=50&amp;c=7" alt="que es la economia mixta">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-itf.html" class="be-post-title">
+				 <h6>que es el itf </h6>
+                </a>
+                <a href="que-es-el-itf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20itf&amp;w=50&amp;h=50&amp;c=7" alt="que es el itf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cual-es-la-serigrafia-textil.html" class="be-post-title">
+				 <h6>cual es la serigrafia textil </h6>
+                </a>
+                <a href="cual-es-la-serigrafia-textil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cual%20es%20la%20serigrafia%20textil&amp;w=50&amp;h=50&amp;c=7" alt="cual es la serigrafia textil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="porque-es-importante-aprender-español-para-tí-in-english.html" class="be-post-title">
+				 <h6>porque es importante aprender español para tí in english </h6>
+                </a>
+                <a href="porque-es-importante-aprender-español-para-tí-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=porque%20es%20importante%20aprender%20espa%C3%B1ol%20para%20t%C3%AD%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="porque es importante aprender español para tí in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-megadiverso-en-el-diccionario.html" class="be-post-title">
+				 <h6>que significa megadiverso en el diccionario </h6>
+                </a>
+                <a href="que-significa-megadiverso-en-el-diccionario.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20megadiverso%20en%20el%20diccionario&amp;w=50&amp;h=50&amp;c=7" alt="que significa megadiverso en el diccionario">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

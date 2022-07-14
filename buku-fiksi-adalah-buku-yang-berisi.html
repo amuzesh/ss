@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Buku Fiksi Adalah Buku Yang Berisi at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Buku Fiksi Adalah Buku Yang Berisi",
+  "datePublished": "2022-05-27T01:59:25Z",
+  "image": "https://tse1.mm.bing.net/th?q=buku%20fiksi%20adalah%20buku%20yang%20berisi",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=buku%20fiksi%20adalah%20buku%20yang%20berisi&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=buku%20fiksi%20adalah%20buku%20yang%20berisi" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=buku%20fiksi%20adalah%20buku%20yang%20berisi" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Buku Fiksi Adalah Buku Yang Berisi at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Buku Fiksi Adalah Buku Yang Berisi</h2>
+    <p><strong>Buku Fiksi Adalah Buku Yang Berisi</strong>. Dengan kata lain, buku fiksi adalah buku yang di dalamnya berisi cerita rekaan atau khayalan. Buku memiliki cover, daftar isi, bab, sub bab, dan penutup.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=buku%20fiksi%20adalah%20buku%20yang%20berisi" alt="Contoh Muka Depan Buku Rph 9+ Contoh Resensi Buku, Fiksi, Non Fiksi" />
+        <br>
+        <figcaption>Contoh Muka Depan Buku Rph 9+ Contoh Resensi Buku, Fiksi, Non Fiksi from toniseledricc.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Dengan kata lain, buku fiksi adalah buku yang di dalamnya berisi cerita rekaan atau khayalan. Apakah yang dimaksud dengan buku nonfiksi menurut kbbi, pengertian non fiksi didasarkan pada fakta dan kenyataan, bukan fiksi (melalui karya sastra, karangan, dsb). Biasanya buku nonfiksi isinya ilmu pengetahuan, baik secara teknis maupun secara popular, menjelaskan kejadian.
+    </p>
+    <h3>Contoh Muka Depan Buku Rph 9+ Contoh Resensi Buku, Fiksi, Non Fiksi</h3>
+    <p>Buku non fiksi adalah buku yang disusun berdasarkan kenyataan atau dalam istilah kerennya based on fact. Pengertian buku secara umumnya adalah sebuah kumpulan kertas yang dijilid menjadi sau pada salah satu ujungnya dan berisi tulisan atau gambar. Non fiksi ialah karya seni yang sifatnya faktual sehingga di dalamnya mengandung kejadian nyata. Contoh dari buku ini antara lain biografi, esai, karangan ilmiah, dan jurnal.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Sebutkan Sistematika Penulisan Buku Fiksi Latihan Online" data-src="https://i2.wp.com/id-static.z-dn.net/files/df3/d6bf522ea19db3005a5e8b94a446c1cb.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: latihan-online.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pengertian buku secara umumnya adalah sebuah kumpulan kertas yang dijilid menjadi sau pada salah satu ujungnya dan berisi tulisan atau gambar. Berikut contoh buku non fiksi adalah materi soal from materisoalsiswa.blogspot.com. Jenis buku yang termasuk buku fiksi antara lain novel, cerpen, komik, legenda, fabel, dan puisi. Yang dimaksud dengan buku nonfiksi adalah buku yang berisi cerita yang benar benar terjadi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Buku Fiksi Dan Non Fiksi Soal Ejercicio De Latihan Buku Fiksi Dan" data-src="https://i2.wp.com/lh3.googleusercontent.com/proxy/YsxnRRsTeitvEmBvEEfwAwwrzrYJuYD2tRyAN2Sl1xRofBFbOE4JMmzoVHMXCrNpAo7atty3o8hfFYFJFauQ_XGZIqCtnAHC06tf3v16D7AMoDnIslFx_l2EbxBJWp4NONotc6rH9Km9WAR5ObmtpsxUcboSfv4_ww=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: niallanjani5.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Historical fiction historical fiction atau fiksi sejarah. Oleh karena itu, buku nonfiksi sering digunakan. Buku non fiksi adalah buku yang disusun berdasarkan kenyataan atau dalam istilah kerennya based on fact. Contoh buku fiksi dan non fiksi. Buku non fiksi adalah buku yang berisi mengenai fakta berdasarkan pengalaman, pengetahuan, hasil, maupun hasil penelitian.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Fiksi &amp; Nonfiksi Sekejap Lebih Cerdas" data-src="https://i2.wp.com/akutahu.com/uploads/images/image_1920x__28042018-IG-Fiksi-Non_Fiksi.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.akutahu.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Buku fiksi terdiri dari dua kata, buku dan fiksi. Pengertian buku secara umumnya adalah sebuah kumpulan kertas yang dijilid menjadi sau pada salah satu ujungnya dan berisi tulisan atau gambar. Untuk buku fiksi, adalah buku yang menjelaskan cerita tentang. Ide dari tulisan buku fiksi biasanya berasal dari khayalan penulisnya. Sedangkan buku fiksi merupakan karya yang berisi cerita imajinatif.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Berikut Ini Yang Termasuk Buku Non Fiksi Adalah Latihan Online" data-src="https://i2.wp.com/id-static.z-dn.net/files/dad/870aa430663a6df6290f897782a81296.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: latihan-online.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Novel merupakan buku yang berisi karangan fiksi berisi cerita seorang tokoh utama dengan pro dan kontra di dalam alur ceritanya, mulai awal hingga akhir cerita. Buku nonfiksi adalah buku yang berisi tentang kejadian sebenarnya yang disampaikan menurut opini penulis. Historical fiction historical fiction atau fiksi sejarah. Contoh buku fiksi dan non fiksi. Jenis buku yang termasuk buku fiksi antara lain.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Buku Tidak Fiksyen Contoh Buku Bukan Fiksyen Lengkap Dan" data-src="https://i2.wp.com/assets.bharian.com.my/images/articles/wotw6.transformed.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kimalakus.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dari pilahan ganda di atas novel adalah jawaban yang tepat karena novel isinya berupa karangan dan imajinasi yang tidak nyata atau bukan kejadian yang real terjadi. 100 gambar imajinasi dibuat berdasarkan terlihat keren. Buku sendiri di bagi menjadi dua macam yakni buku fiksi dan non fiksi. Buku ini ditulis dengan memaparkan fakta sesuai kenyataan. Sedangkan buku nonfiksi adalah buku.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Muka Depan Buku Rph 9+ Contoh Resensi Buku, Fiksi, Non Fiksi" data-src="https://i2.wp.com/4.bp.blogspot.com/-oyUH7AMFDb4/Uc-XsDb_J0I/AAAAAAAAEEo/ZHQLAbLELWs/w1200-h630-p-k-no-nu/IMG_3417.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: toniseledricc.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dalam buku pengembangan diri, terdapat penjelasan lengkap mengenai ilmu untuk menguasai suatu keahlian atau memahami sebuah konsep yang berguna dalam kehidupan. Oleh karena itu, buku nonfiksi sering digunakan. Buku fiksi adalah buku hasil imajinasi, khayalan, atau rekaan penulis. Buku non fiksi bersifat informatif dengan bahasa yang jelas, akurat, dan disajikan apa adanya sesuai dengan fakta yang terjadi. Buku non fiksi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Lima Buku Fiksi yang Menghangatkan Keluarga di Tengah Corona Alif.ID" data-src="https://i2.wp.com/alif.id/wp-content/uploads/2020/04/IMG20200414234046-1600x2133.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: alif.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Buku fiksi adalah buku yang berisi sesuatu yang tidak nyata atau hasil khayalan seorang penulis. Dalam bahasa indonesia kata fiksi diartikan sesuatu yang dibentuk, sesuatu yang dibuat, atau sesuatu yang diimajinasikan. Berikut contoh buku non fiksi adalah materi soal from materisoalsiswa.blogspot.com. Literasi buku fiksi dan non fiksi buku fiksi adalah buku yang berisi cerita atau kejadian yang tidak sebenarnya. Karena.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Berikut Contoh Buku Non Fiksi Adalah Materi Soal" data-src="https://i2.wp.com/lh5.googleusercontent.com/proxy/bq7LRKaF2Ivjwgurhdday0vS7LdzAzy49PS4-hT4z5i9YcJg1tfl8ciN030BKNKbUUP9BriYK82ZppFEo87YZWpZvR-cpno_5Bd0gZ7EUQAOG-BtyFh2Cn1nAqRV8d2IdaQNV43T6Ls4TEbf7KP5-U2Tj8kW-DMFzo8D1KCQvyClWA=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: materisoalsiswa.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kedua jenis itu mempunyai perbedaan yang menonjol berdasarkan pengertiannya. Buku non fiksi bersifat informatif dengan bahasa yang jelas, akurat, dan disajikan apa adanya sesuai dengan fakta yang terjadi. Sedangkan buku nonfiksi adalah buku. Buku fiksi adalah buku yang berisi cerita rekaan, khayalan, atau tidak berdasarkan kenyataan. Ide dari tulisan buku fiksi biasanya berasal dari khayalan penulisnya.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Buku Fiksi Dan Non Fiksi Soal Perbedaan Fiksi dan NonFiksi" data-src="https://i.pinimg.com/originals/e8/77/19/e87719eaa55337d0be661a6461573d53.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: finnianhester.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sedangkan buku nonfiksi adalah buku. Karena bertujuan memberi informasi, buku nonfiksi. Berbeda dengan fiksi, buku non fiksi adalah buku berisi kejadian sebenarnya yang berdasarkan fakta dan dituliskan oleh pengarang secara ilmiah. Pengertian buku fiksi adalah buku yang tulisannya adalah sebuah karangan atau imajinasi dari penulisnya, dengan kata lain ini adalah karangan belaka dan bukan tulisan tentang sesuatu yang nyata. Tujuan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ringkasan Buku Fiksi Per Bab" data-src="https://i2.wp.com/id-static.z-dn.net/files/d8e/ec7899e9615eae97c38436c8ccfc23ba.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.se-intelligence.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Materinya seputar keterampilan dan keahlian di bidang tertentu sesuai minat. Tujuan cerita fiksi adalah untuk menghibur dan menyenangkan pembaca, karena sifatnya penuh imajinasi. Biasanya buku nonfiksi isinya ilmu pengetahuan, baik secara teknis maupun secara popular, menjelaskan kejadian. Untuk buku fiksi, adalah buku yang menjelaskan cerita tentang. Dalam buku pengembangan diri, terdapat penjelasan lengkap mengenai ilmu untuk menguasai suatu keahlian atau.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-funciona-la-musica-en-nuestro-cerebro.html" class="be-post-title">
+				 <h6>como funciona la musica en nuestro cerebro </h6>
+                </a>
+                <a href="como-funciona-la-musica-en-nuestro-cerebro.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20funciona%20la%20musica%20en%20nuestro%20cerebro&amp;w=50&amp;h=50&amp;c=7" alt="como funciona la musica en nuestro cerebro">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-demonio-significado-biblico.html" class="be-post-title">
+				 <h6>que es un demonio significado biblico </h6>
+                </a>
+                <a href="que-es-un-demonio-significado-biblico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20demonio%20significado%20biblico&amp;w=50&amp;h=50&amp;c=7" alt="que es un demonio significado biblico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-cocina-fria.html" class="be-post-title">
+				 <h6>que es cocina fria </h6>
+                </a>
+                <a href="que-es-cocina-fria.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20cocina%20fria&amp;w=50&amp;h=50&amp;c=7" alt="que es cocina fria">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-more-important-rising-sign-or-sun-sign.html" class="be-post-title">
+				 <h6>what is more important rising sign or sun sign </h6>
+                </a>
+                <a href="what-is-more-important-rising-sign-or-sun-sign.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20more%20important%20rising%20sign%20or%20sun%20sign&amp;w=50&amp;h=50&amp;c=7" alt="what is more important rising sign or sun sign">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-estrofas-y-ejemplos.html" class="be-post-title">
+				 <h6>que es estrofas y ejemplos </h6>
+                </a>
+                <a href="que-es-estrofas-y-ejemplos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20estrofas%20y%20ejemplos&amp;w=50&amp;h=50&amp;c=7" alt="que es estrofas y ejemplos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-contiene-el-ceviche-peruano.html" class="be-post-title">
+				 <h6>que contiene el ceviche peruano </h6>
+                </a>
+                <a href="que-contiene-el-ceviche-peruano.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20contiene%20el%20ceviche%20peruano&amp;w=50&amp;h=50&amp;c=7" alt="que contiene el ceviche peruano">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-desgarre-en-la-pierna.html" class="be-post-title">
+				 <h6>que es un desgarre en la pierna </h6>
+                </a>
+                <a href="que-es-un-desgarre-en-la-pierna.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20desgarre%20en%20la%20pierna&amp;w=50&amp;h=50&amp;c=7" alt="que es un desgarre en la pierna">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-choice-based-credit-system.html" class="be-post-title">
+				 <h6>what is choice based credit system </h6>
+                </a>
+                <a href="what-is-choice-based-credit-system.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20choice%20based%20credit%20system&amp;w=50&amp;h=50&amp;c=7" alt="what is choice based credit system">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-minecraft-mcpe.html" class="be-post-title">
+				 <h6>que es minecraft mcpe </h6>
+                </a>
+                <a href="que-es-minecraft-mcpe.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20minecraft%20mcpe&amp;w=50&amp;h=50&amp;c=7" alt="que es minecraft mcpe">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-débito-y-crédito-fiscal.html" class="be-post-title">
+				 <h6>que es débito y crédito fiscal </h6>
+                </a>
+                <a href="que-es-débito-y-crédito-fiscal.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20d%C3%A9bito%20y%20cr%C3%A9dito%20fiscal&amp;w=50&amp;h=50&amp;c=7" alt="que es débito y crédito fiscal">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

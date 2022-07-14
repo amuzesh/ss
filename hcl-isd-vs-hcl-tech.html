@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Hcl Isd Vs Hcl Tech at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Hcl Isd Vs Hcl Tech",
+  "datePublished": "2022-03-29T02:39:38Z",
+  "image": "https://tse1.mm.bing.net/th?q=hcl%20isd%20vs%20hcl%20tech",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=hcl%20isd%20vs%20hcl%20tech&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=hcl%20isd%20vs%20hcl%20tech" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=hcl%20isd%20vs%20hcl%20tech" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Hcl Isd Vs Hcl Tech at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Hcl Isd Vs Hcl Tech</h2>
+    <p><strong>Hcl Isd Vs Hcl Tech</strong>. Hcl technologies had 703 more reviews than hcl infosystems that mentioned less salary as a con. Hcl technologies (hindustan computers limited) is an indian multinational information technology (it) services and consulting company headquartered in noida.it is a subsidiary of hcl enterprise.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=hcl%20isd%20vs%20hcl%20tech" alt="Tech Mahindra Vs HCL Tech Vs L&amp;T Infotech Share Comparative Analysis" />
+        <br>
+        <figcaption>Tech Mahindra Vs HCL Tech Vs L&amp;T Infotech Share Comparative Analysis from www.youtube.com</figcaption>
+    </figure>
+        <p>
+        Lti has a rating of 4.2 stars with 11 reviews. Building a resilient digital enterprise | hcl digital foundation services is the fastest growing line of business at hcl technologies. Hcl isd telecom products support guide @2021 hcl technologies limited 8 • programs updates:
+    </p>
+    <h3>Tech Mahindra Vs HCL Tech Vs L&amp;T Infotech Share Comparative Analysis</h3>
+    <p>Originally the research and development division of hcl limited, it emerged as an independent company in 1991 when hcl limited ventured into the software services business. Lti has a rating of 4.2 stars with 11 reviews. Hcl tech and hcl infra are two different lobs of hcl technologies ltd. On annual basis, hcl tech ‘s net profit rose 2.4 per cent.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tech Mahindra Vs HCL Tech Vs L&amp;T Infotech Share Comparative Analysis" data-src="https://i2.wp.com/i.ytimg.com/vi/XHdYTNIohD0/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">As per jobbuzz data, infosys was the worst performer in terms of appraisals. For more information, please visit www.hclisd.com. Compare hcl first careers, noida vs hcl first careers, bangalore on their fees, placements, cut off, reviews, seats, courses and other details. Compare salary information for hcl infosystems and hcl technologies. Wipro tech has received 3.2 stars out of 5 whereas.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="HCL Tech vs Infosys HCL Tech Share News Infosys Share News HCL" data-src="https://i2.wp.com/i.ytimg.com/vi/GAXCDIOlg3I/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.technewwz.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Solution to reduce cost of deployment by over 40 per cent Both are recruiting freshers from all over the india. Based on verified reviews from real users in the data and analytics service providers market. Hcl digital foundation | 96,701 followers on linkedin. It is a subsidiary of hcl enterprise.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Share analysis ! TECHM vs HCL TECH ! Which one is a better stock" data-src="https://i2.wp.com/i.ytimg.com/vi/fIrfBjmYQuA/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">While hcl infra merely provides the infrastructure services t. The company reported 8.6 per cent sequential decline in consolidated net profit at rs 3,283 crore for the quarter ending june 2022. It reported consolidated net profit of rs 3,593 crore in the previous quarter. Wipro tech has received 3.2 stars out of 5 whereas hcl tech has 3.1 stars. Previously.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="L&amp;T Infotech vs HCL Tech L&amp;T Infotech Share News HCL Tech Share" data-src="https://i2.wp.com/i.ytimg.com/vi/fxeKYCcruLI/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Compare salary information for hcl infosystems and hcl technologies. Programs software patches for on premises software will be made available for download from the online support portal (as. Solution to reduce cost of deployment by over 40 per cent Compare hcl first careers, noida vs hcl first careers, bangalore on their fees, placements, cut off, reviews, seats, courses and other.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tech Mahindra Vs HCL Technology Vs L&amp;T Infotech Tech M Share News" data-src="https://i2.wp.com/i.ytimg.com/vi/A9bGDUeeEqs/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: 5g.inc</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It is a subsidiary of hcl enterprise. Founded in 1976, hcl is one of. Hcl technologies has a rating of 4.5 stars with 41 reviews. Hcl tech primarily serves to the clients on the application development and application support level. Hcl technologies (hindustan computers limited) is an indian multinational information technology (it) services and consulting company headquartered in noida.it is.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="HCL Tech vs TCS vs Infosys Analysis of Best IT Stocks 2020 Latest" data-src="https://i2.wp.com/i.ytimg.com/vi/6M5AeugIjo4/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It is very hard to say that which one is better. Early career program for an it engineer job for class xii. Here are the details (source: On annual basis, hcl tech ‘s net profit rose 2.4 per cent. Based on verified reviews from real users in the data and analytics service providers market.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tech Mahindra vs HCL Tech Tech Mahindra Share News HCL Tech Share" data-src="https://i2.wp.com/i.ytimg.com/vi/27vstHqsFQQ/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.technewwz.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The overall rating of the companies is close enough. It is very hard to say that which one is better. Both are recruiting freshers from all over the india. While hcl infra merely provides the infrastructure services t. Salaries are taken from job posts or reported by employees and are not adjusted for level or location.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tech Mahindra vs HCL Technologies YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/J79U0p0PltU/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hcl technologies limited is a multinational it services company, headquartered in noida, uttar pradesh, india. Salaries are taken from job posts or reported by employees and are not adjusted for level or location. It is a subsidiary of hcl enterprise. Slide 1 *hcl confidential hcl technologies ito business overview kalyan kumar svp &amp; chief technologist global products &amp; technology organization.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="From TCS, Infosys, Wipro to HCL Tech, how Indian IT is transitioning to" data-src="https://i2.wp.com/images.financialexpress.com/2017/10/123.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.financialexpress.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Based on verified reviews from real users in the public cloud it transformation services market. Hcl infra was earlier called as hcl comnet. Slide 1 *hcl confidential hcl technologies ito business overview kalyan kumar svp &amp; chief technologist global products &amp; technology organization hcl isd email: Work life balance(in 107 reviews) good working environment (in 84 reviews) good work environment(in.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Sensex, Nifty end with modest gains in choppy session; HCL Tech, Infy" data-src="https://i2.wp.com/images.livemint.com/img/2020/10/13/original/sensex_1602572878657.PNG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.livemint.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Based on verified reviews from real users in the public cloud it transformation services market. Compare salary information for hcl infosystems and hcl technologies. Building a resilient digital enterprise | hcl digital foundation services is the fastest growing line of business at hcl technologies. Work life balance(in 107 reviews) good working environment (in 84 reviews) good work environment(in 2115 reviews).</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="umur-27-kelahiran-tahun-berapa.html" class="be-post-title">
+				 <h6>umur 27 kelahiran tahun berapa </h6>
+                </a>
+                <a href="umur-27-kelahiran-tahun-berapa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=umur%2027%20kelahiran%20tahun%20berapa&amp;w=50&amp;h=50&amp;c=7" alt="umur 27 kelahiran tahun berapa">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cómo-se-escribe-escuchando-música-en-inglés.html" class="be-post-title">
+				 <h6>cómo se escribe escuchando música en inglés </h6>
+                </a>
+                <a href="cómo-se-escribe-escuchando-música-en-inglés.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=c%C3%B3mo%20se%20escribe%20escuchando%20m%C3%BAsica%20en%20ingl%C3%A9s&amp;w=50&amp;h=50&amp;c=7" alt="cómo se escribe escuchando música en inglés">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="uji-model-fit-adalah.html" class="be-post-title">
+				 <h6>uji model fit adalah </h6>
+                </a>
+                <a href="uji-model-fit-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=uji%20model%20fit%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="uji model fit adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-qedu.html" class="be-post-title">
+				 <h6>que es el qedu </h6>
+                </a>
+                <a href="que-es-el-qedu.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20qedu&amp;w=50&amp;h=50&amp;c=7" alt="que es el qedu">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-fonavi-en-diccionario.html" class="be-post-title">
+				 <h6>que significa fonavi en diccionario </h6>
+                </a>
+                <a href="que-significa-fonavi-en-diccionario.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20fonavi%20en%20diccionario&amp;w=50&amp;h=50&amp;c=7" alt="que significa fonavi en diccionario">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="la-diferencia-entre-sinfonia-y-sonata.html" class="be-post-title">
+				 <h6>la diferencia entre sinfonia y sonata </h6>
+                </a>
+                <a href="la-diferencia-entre-sinfonia-y-sonata.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=la%20diferencia%20entre%20sinfonia%20y%20sonata&amp;w=50&amp;h=50&amp;c=7" alt="la diferencia entre sinfonia y sonata">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-disminuir-el-dolor-de-espalda-en-el-embarazo.html" class="be-post-title">
+				 <h6>como disminuir el dolor de espalda en el embarazo </h6>
+                </a>
+                <a href="como-disminuir-el-dolor-de-espalda-en-el-embarazo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20disminuir%20el%20dolor%20de%20espalda%20en%20el%20embarazo&amp;w=50&amp;h=50&amp;c=7" alt="como disminuir el dolor de espalda en el embarazo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="schat-in-het-spaans.html" class="be-post-title">
+				 <h6>schat in het spaans </h6>
+                </a>
+                <a href="schat-in-het-spaans.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=schat%20in%20het%20spaans&amp;w=50&amp;h=50&amp;c=7" alt="schat in het spaans">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-psicologia-industrial-pdf.html" class="be-post-title">
+				 <h6>que es la psicologia industrial pdf </h6>
+                </a>
+                <a href="que-es-la-psicologia-industrial-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20psicologia%20industrial%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="que es la psicologia industrial pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="van-raam-dealers-nederland.html" class="be-post-title">
+				 <h6>van raam dealers nederland </h6>
+                </a>
+                <a href="van-raam-dealers-nederland.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=van%20raam%20dealers%20nederland&amp;w=50&amp;h=50&amp;c=7" alt="van raam dealers nederland">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

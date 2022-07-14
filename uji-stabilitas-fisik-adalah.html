@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Stabilitas Fisik Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Stabilitas Fisik Adalah",
+  "datePublished": "2022-04-03T10:06:29Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20stabilitas%20fisik%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20stabilitas%20fisik%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20stabilitas%20fisik%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20stabilitas%20fisik%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Stabilitas Fisik Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Stabilitas Fisik Adalah</h2>
+    <p><strong>Uji Stabilitas Fisik Adalah</strong>. Uji stabilitas fisik dan uji aktivitas antibakteri minyak jintan hitam (nigella sativa l.) yang diformulasikan sebagai sediaan nanoemulsi gel (nanoemulgel) minyak jintan hitam merupakan salah satu produk herbal yang berpotensi dalam bidang pengobatan. Setelah diperoleh hasil evaluasi awal kemudian dilakukan uji stabilitas fisik terhadap keempat krim tomat selama 8 minggu (2 bulan), yaitu, uji stabilitas fisik krim pada penyimpanan suhu dingin (4oc), suhu kamar, dan suhu tinggi (40+2oc).</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20stabilitas%20fisik%20adalah" alt="(PDF) UJI STABILITAS FISIK DAN DAYA ANTIBAKTERI SUSPENSI ERITROMISIN" />
+        <br>
+        <figcaption>(PDF) UJI STABILITAS FISIK DAN DAYA ANTIBAKTERI SUSPENSI ERITROMISIN from www.researchgate.net</figcaption>
+    </figure>
+        <p>
+        Indri kusuma dewi, uji stabilitas fisik dan hedonik sirup 81 sudah mendidih, matikan api, diamkan sampai sirup menjadi hangat. Formulasi sediaan krim dari ekstrak etanol kunyit val. Stabilitas didefinisikan sebagai kemampuan zat obat atau produk obat untuk tetap di dalam spesifikasi yang dibentuk untuk menjaga identitas, kekuatan, kualitas dan kemurnian dalam batasan yang ditetapkan sepanjang periode penyimpanan dan penggunaan.
+    </p>
+    <h3>(PDF) UJI STABILITAS FISIK DAN DAYA ANTIBAKTERI SUSPENSI ERITROMISIN</h3>
+    <p>Formulasi sediaan krim dari ekstrak etanol kunyit val. Uji stabilitas fisik dan uji aktivitas antioksidan sirup buah patikala (etlingera elatior) menyatakan dengan sesungguhnya dan penuh kesadaran bahwa skripsi ini benar adalah hasil karya sendiri. Hasil uji stabilitas fisik suspensi eritromisin, formula yang paling baik adalah formula 1 dengan konsentrasi pga 5% karena memiliki ukuran. Viskositas merupakan pernyataan tahanan dari suatu cairan untuk mengalir.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) Uji Stabilitas dan Aktivitas Gel Handsanitizer Ekstrak Daun Kemangi" data-src="https://i2.wp.com/i1.rgstatic.net/publication/332080806_Uji_Stabilitas_dan_Aktivitas_Gel_Handsanitizer_Ekstrak_Daun_Kemangi/links/5c9e5f0e45851506d7341352/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Terkendali adalah sesuai ketentuan, termasuk uji jangka panjang 3. Faktor utama lingkungan dapat menurunkan stabilitas diantaranya temperatur yang tidak sesuai, cahaya, kelembaban,oksigen dan mikroorganisme. Hasil analisis data menggunakan descriptive. Menghubungkan sifat fisik tertentu dengan sifat kimia dari molekul. Uji stabilitas menurut who,cpob dan ich [q6ngxg25w04v.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) FORMULASI, UJI STABILITAS FISIK DAN KOMPATIBILITAS PRODUK" data-src="https://i2.wp.com/i1.rgstatic.net/publication/346703921_FORMULASI_UJI_STABILITAS_FISIK_DAN_KOMPATIBILITAS_PRODUK_KOSMETIK_ANTI-AGING_DALAM_SEDIAAN_SERUM_PUDDING/links/5fd46ccca6fdccdcb8bb0c11/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji stabilitas menurut who,cpob dan ich [q6ngxg25w04v. Coli, citrobacter spp., pseudomonas spp dan lainnya f. Tujuan dari penelitian ini adalah untuk mengevaluasi stabilitas fisik (volume sedimentasi, mudah tidaknya dituang, ukuran. Indri kusuma dewi, uji stabilitas fisik dan hedonik sirup 81 sudah mendidih, matikan api, diamkan sampai sirup menjadi hangat. Pengujian stabilitas hidrogel terhadap fisik pengujian stabilitas produk obat dengan parameter.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) PENGARUH POLA ALIRAN AIR TERHADAP KONSTRUKSI SEKAT KANAL DI LAHAN" data-src="https://i2.wp.com/i1.rgstatic.net/publication/332341794_PENGARUH_POLA_ALIRAN_AIR_TERHADAP_KONSTRUKSI_SEKAT_KANAL_DI_LAHAN_GAMBUT_DENGAN_UJI_MODEL_FISIK_HIDRAULIK/links/5cae949c92851c8d22e304cb/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Formulasi sediaan krim dari ekstrak etanol kunyit val. Parameter stabilitas yang diamati adalah perubahan distribusi ukuran droplet, pergeseran viskositas sediaan cold cream 1 bulan setelah pembuatan dan stabilitas fase emulsi. Viskositas sediaan tidak boleh terlalu tinggi dan tidak boleh terlalu rendah, karena jika terlalu tinggi (kental), maka gel akan sulit untuk. Hasil uji stabilitas fisik suspensi eritromisin, formula yang paling.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Stabilitas Fisik dan Komponen Kimia Pada Minyak Biji Jinten Hitam" data-src="https://i2.wp.com/data03.123dok.com/thumb/tabel-hasil-pengamatan-organoleptis-emulsi-mbjh-myjo3l5z.zW9tzlSgRf6vsyLsLpHg.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: id.123dok.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji stabilitas fisik dan uji aktivitas antioksidan sirup buah patikala (etlingera elatior) menyatakan dengan sesungguhnya dan penuh kesadaran bahwa skripsi ini benar adalah hasil karya sendiri. Granul instan dibuat dengan metode granulasi basah menggunakan variasi konsentrasi pvp sebagai pengikat. Berdasarkan hasil uji stabilitas fisik, formula terbaik granul instan serbuk kering tangkai genjer adalah f2 dengan komposisi serbuk kering tangkai genjer.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(DOC) DASAR TEORI struktur morfologi ginjal dan uji fisik urin" data-src="https://i2.wp.com/0.academia-photos.com/attachment_thumbnails/34890109/mini_magick20180817-24624-ynipet.png?1534554705" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.academia.edu</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Viskositas merupakan pernyataan tahanan dari suatu cairan untuk mengalir. Stabilitas didefinisikan sebagai kemampuan zat obat atau produk obat untuk tetap di dalam spesifikasi yang dibentuk untuk menjaga identitas, kekuatan, kualitas dan kemurnian dalam batasan yang ditetapkan sepanjang periode penyimpanan dan penggunaan. Parameter stabilitas adalah pengamatan organoleptis, ph, ukuran globul, Uji stabilitas fisik dan uji aktivitas antibakteri minyak jintan hitam (nigella.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(DOC) Formulasi Dan Uji Fisik Sediaan Lilin Aromaterphy sigit" data-src="https://i2.wp.com/0.academia-photos.com/attachment_thumbnails/61053138/mini_magick20191028-10818-wfzw40.png?1572331163" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.academia.edu</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji stabilitas fisik dan kompatibilitas. Viskositas sediaan tidak boleh terlalu tinggi dan tidak boleh terlalu rendah, karena jika terlalu tinggi (kental), maka gel akan sulit untuk. Terkendali adalah sesuai ketentuan, termasuk uji jangka panjang 3. Uji sifat fisik dan stabilitas. Evaluasi stabilitas ini meliputi lima parameter uji yaitu waktu alir, sudut.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Mutu Fisik Tablet Ekstrak Daun Jambu Monyet (Anacardium" data-src="https://i2.wp.com/s1.studylibid.com/store/data/000707541_1-b2a779681c348552c5e1b5a9b50b8eae.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: studylibid.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Parameter stabilitas adalah pengamatan organoleptis, ph, ukuran globul, Setiap pengujian dilakukan secara triplo. Formulasi dan evaluasi mikroemulsi antikerut ekstrak beras. Negative seperti enterobacter spp., e. Stabilitas obat adalah derajat degradasi suatu obat dipandang dari segi kimia.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) UJI STABILITAS FISIK DAN DAYA ANTIBAKTERI SUSPENSI ERITROMISIN" data-src="https://i2.wp.com/i1.rgstatic.net/publication/342778767_UJI_STABILITAS_FISIK_DAN_DAYA_ANTIBAKTERI_SUSPENSI_ERITROMISIN_DENGAN_SUSPENDING_AGENT_PULVIS_GUMMI_ARABICI/links/5f8bea5092851c14bccf744a/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Terkendali adalah sesuai ketentuan, termasuk uji jangka panjang 3. Stabilitas toksikologi stabilitas toksikologi adalah ukuran yang menujukkan ketahanan suatu senyawa. Kampus farmasi formulasi sediaan lotion. Hasil analisis data menggunakan descriptive. Formulasi sediaan krim dari ekstrak etanol kunyit val.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) Formulasi dan Uji Stabilitas Fisik Sabun Mandi Cair Ekstrak" data-src="https://i2.wp.com/i1.rgstatic.net/publication/339563798_Formulasi_dan_Uji_Stabilitas_Fisik_Sabun_Mandi_Cair_Ekstrak_Etanol_Buah_Kapulaga_Amomum_compactum_Sol_ex_Maton/links/5e5908e3a6fdccbeba08353c/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Berdasarkan hasil uji stabilitas fisik, formula terbaik granul instan serbuk kering tangkai genjer adalah f2 dengan komposisi serbuk kering tangkai genjer 100 mg, laktosa 70%, pvp 3%, aspartam 1,5%, manitol 20%, natrium benzoat 0,5%, green tea flavor 5 % b/b dan etanol qs dengan total bobot granul 1000 mg. Stabilitas obat adalah derajat degradasi suatu obat di pandang dari segi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) Uji Stabilitas Fisik Sediaan Sabun Padat Ekstrak Rimpang" data-src="https://i2.wp.com/i1.rgstatic.net/publication/339564065_Uji_Stabilitas_Fisik_Sediaan_Sabun_Padat_Ekstrak_Rimpang_Temugiring_Curcuma_heyneana_Valeton_Zijp/links/5e5908e3299bf1bdb8414054/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Formulasi sediaan krim dari ekstrak etanol kunyit val. Parameter stabilitas adalah pengamatan organoleptis, ph, ukuran globul, viskositas dan hasil uji cycling. Kampus farmasi formulasi sediaan lotion. Uji stabilitas fisik dan kompatibilitas. Stabilitas didefinisikan sebagai kemampuan zat obat atau produk obat untuk tetap di dalam spesifikasi yang dibentuk untuk menjaga identitas, kekuatan, kualitas dan kemurnian dalam batasan yang ditetapkan sepanjang periode.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-querella-y-denuncia.html" class="be-post-title">
+				 <h6>que es querella y denuncia </h6>
+                </a>
+                <a href="que-es-querella-y-denuncia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20querella%20y%20denuncia&amp;w=50&amp;h=50&amp;c=7" alt="que es querella y denuncia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-meaning-of-watcher.html" class="be-post-title">
+				 <h6>what is the meaning of watcher </h6>
+                </a>
+                <a href="what-is-the-meaning-of-watcher.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20meaning%20of%20watcher&amp;w=50&amp;h=50&amp;c=7" alt="what is the meaning of watcher">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-civilismo-en-historia.html" class="be-post-title">
+				 <h6>que es el civilismo en historia </h6>
+                </a>
+                <a href="que-es-el-civilismo-en-historia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20civilismo%20en%20historia&amp;w=50&amp;h=50&amp;c=7" alt="que es el civilismo en historia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-fazer-um-anel-mágico-no-crochê.html" class="be-post-title">
+				 <h6>como fazer um anel mágico no crochê </h6>
+                </a>
+                <a href="como-fazer-um-anel-mágico-no-crochê.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20fazer%20um%20anel%20m%C3%A1gico%20no%20croch%C3%AA&amp;w=50&amp;h=50&amp;c=7" alt="como fazer um anel mágico no crochê">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="uji-penetrasi-standar-spt-adalah.html" class="be-post-title">
+				 <h6>uji penetrasi standar spt adalah </h6>
+                </a>
+                <a href="uji-penetrasi-standar-spt-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=uji%20penetrasi%20standar%20spt%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="uji penetrasi standar spt adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-betekent-het-begrip-arbeidsintensief.html" class="be-post-title">
+				 <h6>wat betekent het begrip arbeidsintensief </h6>
+                </a>
+                <a href="wat-betekent-het-begrip-arbeidsintensief.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20betekent%20het%20begrip%20arbeidsintensief&amp;w=50&amp;h=50&amp;c=7" alt="wat betekent het begrip arbeidsintensief">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="q-es-un-dispositivo-de-salida.html" class="be-post-title">
+				 <h6>q es un dispositivo de salida </h6>
+                </a>
+                <a href="q-es-un-dispositivo-de-salida.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=q%20es%20un%20dispositivo%20de%20salida&amp;w=50&amp;h=50&amp;c=7" alt="q es un dispositivo de salida">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-rele.html" class="be-post-title">
+				 <h6>que es el rele </h6>
+                </a>
+                <a href="que-es-el-rele.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20rele&amp;w=50&amp;h=50&amp;c=7" alt="que es el rele">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-zijn-steroïden-hormonen.html" class="be-post-title">
+				 <h6>wat zijn steroïden hormonen </h6>
+                </a>
+                <a href="wat-zijn-steroïden-hormonen.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20zijn%20stero%C3%AFden%20hormonen&amp;w=50&amp;h=50&amp;c=7" alt="wat zijn steroïden hormonen">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-hidratos-de-carbono-complejos.html" class="be-post-title">
+				 <h6>que es hidratos de carbono complejos </h6>
+                </a>
+                <a href="que-es-hidratos-de-carbono-complejos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20hidratos%20de%20carbono%20complejos&amp;w=50&amp;h=50&amp;c=7" alt="que es hidratos de carbono complejos">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

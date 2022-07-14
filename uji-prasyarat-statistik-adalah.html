@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Prasyarat Statistik Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Prasyarat Statistik Adalah",
+  "datePublished": "2022-06-12T05:23:23Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20prasyarat%20statistik%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20prasyarat%20statistik%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20prasyarat%20statistik%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20prasyarat%20statistik%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Prasyarat Statistik Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Prasyarat Statistik Adalah</h2>
+    <p><strong>Uji Prasyarat Statistik Adalah</strong>. Dan korelasi sentence examples within penelitian ini adalah. Uji prasyarat analisis teknik analisis data.1 statistik.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20prasyarat%20statistik%20adalah" alt="dr. Suparyanto, M.Kes UJI STATISTIK" />
+        <br>
+        <figcaption>dr. Suparyanto, M.Kes UJI STATISTIK from dr-suparyanto.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Pengujian prasyarat analisis dilakukan sebelum melakukan analisis regresi linier berganda. Selain itu, prasyarat yang lain adalah uji linearitas, skala datanya harus interval, dan uji autokorelasi. Ukuran keeratan dalam uji korelasi ini biasanya.
+    </p>
+    <h3>dr. Suparyanto, M.Kes UJI STATISTIK</h3>
+    <p>Pendahuluan uji hipotesis bergantung pada: Full pdf package download full pdf package. Pengujian prasyarat analisis dilakukan sebelum melakukan analisis regresi linier berganda. Diterbitkan tuesday, may 28, 2013.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="dr. Suparyanto, M.Kes UJI STATISTIK" data-src="https://i2.wp.com/3.bp.blogspot.com/-mCYk1KL1N74/TndNkFJQ67I/AAAAAAAAAgA/duP-lk2XpQU/s1600/Uji+Hipotesis+Komparatif+2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dr-suparyanto.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji normalitas adalah prasyarat atau disebut sebagai asumsi dari uji statistik lainnya yang lebih utama, biasanya untuk menjawab hipotesis dari statistik inferensial. Bab i uji prasyarat analisis a. Apabila skala datanya ordinal atau nominal, dengan kata lain bukan interval atau rasio, maka disebut uji komparatif non parametris. Diterbitkan tuesday, may 28, 2013. Keuntungan menggunakan uji statistik non parametrik adalah kita.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT UJI HIPOTESIS PowerPoint Presentation, free download ID5432886" data-src="https://i2.wp.com/image3.slideserve.com/5432886/uji-perbandingan-statistik-parametrik-non-parametrik-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A short summary of this paper. Apabila bentuk hipotesisnya adalah uji beda atau uji yang mengukur ada tidaknya perbedaan antara dua kelompok atau beberapa kelompok, baik kelompok bebas maupun berpasangan, maka harus digunakan uji komparatif. Uji statistik untuk penelitian disampaikan oleh: Biaya analisis deskriptif statistik ujian prasyarat, tarif uji asumsi klasik, dan regresi linier berganda. Bahan ajar praktikum spss 21.0.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pedoman Memilih Teknik Analisis Statistik berdasarkan Jenis Data dan" data-src="https://i2.wp.com/1.bp.blogspot.com/-op1RYnRbhcg/Xlnnh-5uBDI/AAAAAAAACLE/f0BzE3n4_mollANeCouOO7_UHLXRQltMgCLcBGAsYHQ/s1600/hipotesis.PNG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.semestapsikometrika.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Variabel kategori terdiri dari dua kategori yang saling bebas satu sama lain. Berdasarkan gambar 4.12 dapat diketahui bahwa data berada pada sumbu x kognitif di rentang nilai 35 s.d. Pengujian dengan statistik inferensial parametrik mensyaratkan beberapa hal, seperti uji normalitas, uji. Prasyarat yang digunakan dalam penelitian ini meliputi uji normalitas, uji linieritas, uji multikolinieritas dan uji heteroskedastisitas yang dilakukan menggunakan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="hERisMaN blog&#039;s Analisis Data" data-src="https://i2.wp.com/2.bp.blogspot.com/-lPCdqi2mHE4/T5j9rGUqicI/AAAAAAAAARA/gkoQNY101vE/s1600/Gambar+uji+statisti+dengan+data.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: herisman.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Terdapat beberapa uji statistika yang dapat dilakukan untuk menguji kesamaan variansi, diantaranya seperti bartlett levene, bartlett, khi kuadrat, siegel tukey, moses [7]. Analisis ini digunakan apabila kita ingin membandingkan mean dan keragaman dari dua kelompok data, dan cocok sebagai analisis dua kelompok rancangan percobaan acak. Prasyarat yang digunakan dalam penelitian ini meliputi uji normalitas, uji linieritas, uji multikolinieritas dan uji.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Hipotesis Analisis Bivariat dalam Olah Data Statistik Kesehatan" data-src="https://i2.wp.com/1.bp.blogspot.com/-43v--K-Cw1I/Xx0IQ1IbqEI/AAAAAAAAGws/5WO_1nRv0IUE97RbNnZMCL6uqKm_lY2yQCLcBGAsYHQ/s569/tabel%2Bhipotesis.PNG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.biotekners.my.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Terdapat beberapa uji statistika yang dapat dilakukan untuk menguji kesamaan variansi, diantaranya seperti bartlett levene, bartlett, khi kuadrat, siegel tukey, moses [7]. One sample t test adalah uji komparatif untuk menilai perbedaan antara nilai. Variansi variabel kategori (terhadap variabel uji) adalah sama. Jumlah ini sehubungan dengan mulai tidak berubahnya nilai r tabel setelah angka 30. Full pdf package download full.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="QUARTILSTAT Analisis Data Statistik Terbaik di Kota Mataram UJI" data-src="https://i2.wp.com/4.bp.blogspot.com/-6siggfUF0Eo/WmnaYPqatdI/AAAAAAAAAx8/M97Aap18MJwLy0Da3XGFHGH1Xqkpme4vQCLcBGAs/s1600/444.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: quartilstat.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">62 3.6 teknik analisis data 3.6.1 statistik diskriptif setelah semua data yang dibutuhkan terkumpul, langkah berikut yang dilakukan adalah mengadakan analisis terhadap semua data yang telah terkumpul. Repositori institusi | universitas kristen satya wacana: Sedangkan dalam statistika, uji korelasi sendiri merupakan teknik analisis yang digunakan untuk mengetahui ada tidaknya hubungan antar 2 variabel yang diuji. Biro olah data skripsi, tesis,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pengertian Statistik dan Jenis Data Penelitian Blog Pendidikan" data-src="https://i2.wp.com/4.bp.blogspot.com/-UkhVcK8iuqg/UWGPXlAcLlI/AAAAAAAAAjE/cpybKxeAUig/s1600/Tabel+1+Penggunaan+Statistik+Parametris+dan+Non+Parametris.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: takorub.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Adapun uji persyaratan analisis yang dibahas dalam buku ini adalah yang paling umum dilakukan, meliputi: Pendahuluan uji hipotesis bergantung pada: Uji persyaratan data makalah ini disusun sebagai tugas ujian akhir semester. Bahan ajar praktikum spss 21.0. Uji hipotesis adalah ?☑️ pengertian, rumus, tabel☑️ dan contoh soal uji hipotesis lengkap dengan pembahasannya☑️ dalam ilmu statistika, anda tentu tidak asing dengan uji.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="tabel uji validitas" data-src="https://i2.wp.com/imgv2-1-f.scribdassets.com/img/document/240539477/original/4c77c62a8b/1584056863?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Cara yang ditempuh peneliti adalah memberikan skor untuk setiap jawaban per item soal. Uji prasyarat analisis uji persyaratan analisis diperlukan untuk mengetahui apakah analisis data untuk pengujian hipotesis dapat dilanjutkan atau. Digunakan pada pada data yang kecil atau data yang lebih besar dengan perhitungan yang sederhana. Dan korelasi penelitian ini adalah 10.31004/basicedu.v5i5.1444. Prasyarat yang digunakan dalam penelitian ini meliputi uji.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="SUMMARY STATISTIK Uji Chi Square" data-src="https://i2.wp.com/1.bp.blogspot.com/-XrFPSPFcCu8/Xer7LKSu31I/AAAAAAAAQIk/bkgb2-7OhHYRkA9bkCU_AflGpGrl1DmVwCLcBGAsYHQ/s1600/29.PNG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: billyonlinetext.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Berdasarkan gambar 4.12 dapat diketahui bahwa data berada pada sumbu x kognitif di rentang nilai 35 s.d. Uji prasyarat dalam statistika penulis irfanfaris8726. Biro olah data skripsi, tesis, disertasi untuk analisis statistika dengan spss, amos, lisrel, eviews, smartpls, gretl, stata, minitab dan deap 2.1 whatsapp : Alat dan aplikasi yang digunakan untuk uji analisis deskriptif statistik ujian prasyarat, tarif uji.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji statistik non parametrik Statistik Ceria" data-src="https://i2.wp.com/4.bp.blogspot.com/-68-CvWwY648/Uy8B34oJX5I/AAAAAAAACMI/ptyrTKRkIwI/s1600/non+parametric.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: statistikceria.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Alat dan aplikasi yang digunakan untuk uji analisis deskriptif statistik ujian prasyarat, tarif uji asumsi klasik, dan regresi linier berganda adalah spss, amos, literel, stata dan lainya yang sesuai metodologi bab 3nya. Apabila bentuk hipotesisnya adalah uji beda atau uji yang mengukur ada tidaknya perbedaan antara dua kelompok atau beberapa kelompok, baik kelompok bebas maupun berpasangan, maka harus digunakan uji.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cuanto-es-un-dólar-en-cuba.html" class="be-post-title">
+				 <h6>cuanto es un dólar en cuba </h6>
+                </a>
+                <a href="cuanto-es-un-dólar-en-cuba.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cuanto%20es%20un%20d%C3%B3lar%20en%20cuba&amp;w=50&amp;h=50&amp;c=7" alt="cuanto es un dólar en cuba">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-xilema-y-el-floema.html" class="be-post-title">
+				 <h6>que es el xilema y el floema </h6>
+                </a>
+                <a href="que-es-el-xilema-y-el-floema.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20xilema%20y%20el%20floema&amp;w=50&amp;h=50&amp;c=7" alt="que es el xilema y el floema">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-itin-en-estados-unidos.html" class="be-post-title">
+				 <h6>que es un itin en estados unidos </h6>
+                </a>
+                <a href="que-es-un-itin-en-estados-unidos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20itin%20en%20estados%20unidos&amp;w=50&amp;h=50&amp;c=7" alt="que es un itin en estados unidos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cómo-tratar-el-dolor-de-la-vesícula.html" class="be-post-title">
+				 <h6>cómo tratar el dolor de la vesícula </h6>
+                </a>
+                <a href="cómo-tratar-el-dolor-de-la-vesícula.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=c%C3%B3mo%20tratar%20el%20dolor%20de%20la%20ves%C3%ADcula&amp;w=50&amp;h=50&amp;c=7" alt="cómo tratar el dolor de la vesícula">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-motor-asincrono-y-sincrono.html" class="be-post-title">
+				 <h6>que es motor asincrono y sincrono </h6>
+                </a>
+                <a href="que-es-motor-asincrono-y-sincrono.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20motor%20asincrono%20y%20sincrono&amp;w=50&amp;h=50&amp;c=7" alt="que es motor asincrono y sincrono">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="quels-sont-les-avantages-du-multilinguisme.html" class="be-post-title">
+				 <h6>quels sont les avantages du multilinguisme </h6>
+                </a>
+                <a href="quels-sont-les-avantages-du-multilinguisme.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=quels%20sont%20les%20avantages%20du%20multilinguisme&amp;w=50&amp;h=50&amp;c=7" alt="quels sont les avantages du multilinguisme">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-activador.html" class="be-post-title">
+				 <h6>que es activador </h6>
+                </a>
+                <a href="que-es-activador.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20activador&amp;w=50&amp;h=50&amp;c=7" alt="que es activador">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-alimentar-un-caballo.html" class="be-post-title">
+				 <h6>como alimentar un caballo </h6>
+                </a>
+                <a href="como-alimentar-un-caballo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20alimentar%20un%20caballo&amp;w=50&amp;h=50&amp;c=7" alt="como alimentar un caballo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-itinerario.html" class="be-post-title">
+				 <h6>que es el itinerario </h6>
+                </a>
+                <a href="que-es-el-itinerario.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20itinerario&amp;w=50&amp;h=50&amp;c=7" alt="que es el itinerario">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-sos-cuba.html" class="be-post-title">
+				 <h6>que es sos cuba </h6>
+                </a>
+                <a href="que-es-sos-cuba.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20sos%20cuba&amp;w=50&amp;h=50&amp;c=7" alt="que es sos cuba">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

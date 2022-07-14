@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Wat Is Een Micel at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Wat Is Een Micel",
+  "datePublished": "2022-04-26T21:51:19Z",
+  "image": "https://tse1.mm.bing.net/th?q=wat%20is%20een%20micel",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=wat%20is%20een%20micel&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=wat%20is%20een%20micel" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=wat%20is%20een%20micel" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Wat Is Een Micel at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Wat Is Een Micel</h2>
+    <p><strong>Wat Is Een Micel</strong>. Information and translations of micel in the most comprehensive dictionary definitions resource on the web. 1000 gigabyte bestaat ook en dat is een terabyte.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20micel" alt="MICeL YouTube" />
+        <br>
+        <figcaption>MICeL YouTube from www.youtube.com</figcaption>
+    </figure>
+        <p>
+        Information and translations of micel in the most comprehensive dictionary definitions resource on the web. Vooral ter verklaring van de imbibitieverschijnselen heeft deze theorie dienst moeten doen. De zeepwerking wanneer je iets schoonmaakt in een teiltje water, zullen de vuildeeltjes in het water terecht komen.
+    </p>
+    <h3>MICeL YouTube</h3>
+    <p>Olie en water kunnen niet met elkaar mengen, maar doordat erop deze manier een micel wordt gevormd, wordt dit probleem overwonnen. Ēalā, hū miċele nosu hē hæfþ! māran iċ ġeseah. hwæt is sēo mǣste þe þū ǣfre ġemēttest? wow, he has such a big nose! i&#039;ve seen bigger. what&#039;s the biggest one you&#039;ve ever seen? much, a lot quotations. Micelles are important in the chemistry of surfaces—e.g., the power of soap solutions to disperse organic compounds. Product successfully added to your shopping cart proceed to checkout.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="BIODERMA SENSIBIO H20 MICEL. OPL DOSEERPOMP 500ML Apotheek T&#039;Kindt" data-src="https://i2.wp.com/files.apotheektkindt.be/cache/products/images/cache_1000x1000/6c517fdc97a4797bbd197d6871ffd878553627fc.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.apotheektkindt.be</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hieronder vind je 7 betekenissen van het woord micel. A person who get you really annoyed but in love withing seconds you may hate her but so in love, sometimes shy silly and also really cute don&#039;t let her go even if she gets you mad if you meet her give her a hug she loves hugs. 1000 terabyte is.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wat is micellair water en hoe werkt het? ⋆ Beautylab.nl" data-src="https://i2.wp.com/www.beautylab.nl/wp-content/uploads/2017/09/micellair-water-800x580.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.beautylab.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dat lijkt het absolute maximum, maar dat is niet zo. Meerdere soorten moleculen kunnen micellen vormen. Er is ook nog een yottabyte en dat is 1000 zettabyte. Af mica &#039;lille korn, lille smule&#039;), elektrisk ladede partikler af kolloid størrelse, dvs. Het hydrofobe deel bestaat meestal uit een lange koolwaterstofketen en vormt als het ware de staart van het molecuul.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bioderma Sebium H2o Micel. Water Doseerpomp 500ml kopen Pazzox" data-src="https://i2.wp.com/www.pazzox.nl/media/products/3945169-142376.jpg?type=resize&amp;w=1000&amp;h=1000" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pazzox.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Micellair water betekent dus dat er olie zit in een waterige oplossing. De koppen zitten aan de buitenkant van de micel en de combinatie van deze unieke eigenschappen zorgt ervoor dat micellen handige ‘pakketjes’ vormen die bepaalde stoffen in je lichaam ongehinderd op hun bestemming brengen. Af mica &#039;lille korn, lille smule&#039;), elektrisk ladede partikler af kolloid størrelse, dvs. Dus.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Micelle Reverse Micelles Supercells Applications of Micelle" data-src="https://i2.wp.com/s3-ap-southeast-1.amazonaws.com/subscriber.images/chemistry/2017/09/12112915/Micelles5.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: byjus.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Een celmembraan moet zich eigenlijk in zijn geheel lekker voelen in water. Derved danner fedtsyreionerne en sfærisk struktur på ca. Als je een druppel fosfolipiden op water legt, gaan de koppen in het water liggen en de pootjes blijven samen in het binnenste van de druppel. Daarom wordt er een tweede laag gevormd van fosfolipiden. Als vethoudend voedsel de wand.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Factcheck What is micellar water and how does it work? An Update" data-src="https://i.pinimg.com/originals/20/3d/ff/203dff8e6dd1c4ef29280e0f5481d905.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Derved danner fedtsyreionerne en sfærisk struktur på ca. Micelles are important in the chemistry of surfaces—e.g., the power of soap solutions to disperse organic compounds. Een dergelijk clustertje noemen we een ‘micel’. Micellen spelen een belangrijke rol bij de opname van vet en vitamines in de darm. Een micel is een microscopisch klein structuur waarbij de uiteinden van de staarten.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="MiCel Microbioomtherapie in COVID19" data-src="https://i2.wp.com/procureproject.be/wp-content/uploads/sites/2/2021/02/info-flyer-15022021_huisartsen-1152x1536.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: procureproject.be</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Therefore, micellar water can be used as a facial wash, makeup remover and moisturizer all in one. Meerdere soorten moleculen kunnen micellen vormen. Ēalā, hū miċele nosu hē hæfþ! māran iċ ġeseah. hwæt is sēo mǣste þe þū ǣfre ġemēttest? wow, he has such a big nose! i&#039;ve seen bigger. what&#039;s the biggest one you&#039;ve ever seen? much, a lot.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wat is micellair water en hoe werkt het? ⋆ Beautylab.nl" data-src="https://i2.wp.com/www.beautylab.nl/wp-content/uploads/2017/09/micelle.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.beautylab.nl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Daarnaast hebben micellen een lipofiele (vetminnende) staart, wat inhoudt dat deze vet aantrekt en water afstoot. Een micel is een microscopisch klein structuur waarbij de uiteinden van de staarten zich naar elkaar toe keren, waardoor de stearaationen een structuur krijgt zoals op de afbeelding, maar dan zonder iets erin. Er wordt nog steeds veel. Een dergelijk clustertje noemen we een.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="De evolutie van ontvetten op waterbasis Kemet Europe" data-src="https://i2.wp.com/www.kemet-europe.com/sites/default/files/inline-images/Micel tankding.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.kemet-europe.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Een congres is een samenkomst van mensen met dezelfde professionele, culturele, politieke of religieuze achtergrond, waar bepaalde onderwerpen worden besproken. Een byte bestaat in deze context uit 8 bits. 1000 gigabyte bestaat ook en dat is een terabyte. Micelles are important in the chemistry of surfaces—e.g., the power of soap solutions to disperse organic compounds. Er wordt nog steeds veel.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Schematische weergave van een micel — Stockvector © fancy.tapis.gmail" data-src="https://i2.wp.com/st3.depositphotos.com/7017042/16136/v/1600/depositphotos_161366676-stockillustratie-schematische-weergave-van-een-micel.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: nl.depositphotos.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Een byte bestaat in deze context uit 8 bits. Een micel is een benaming van het deeltje wat ontstaat als je water, emulgator en een hydrofobe stof mengt. De koppen zitten aan de buitenkant van de micel en de combinatie van deze unieke eigenschappen zorgt ervoor dat micellen handige ‘pakketjes’ vormen die bepaalde stoffen in je lichaam ongehinderd op hun.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="MICeL YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/vouKPnf20t4/maxresdefault_live.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Een micel is een microscopisch klein structuur waarbij de uiteinden van de staarten zich naar elkaar toe keren, waardoor de stearaationen een structuur krijgt zoals op de afbeelding, maar dan zonder iets erin. Voor submicroscopische, uit een raamwerk van grote moleculen samengestelde deeltjes waaruit macromoleculaire stoffen zijn opgebouwd. “it looks like water, it has the viscosity of water but when.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="mezbahalar-ne-demek.html" class="be-post-title">
+				 <h6>mezbahalar ne demek </h6>
+                </a>
+                <a href="mezbahalar-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=mezbahalar%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="mezbahalar ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-swipe-stand-for-in-nursing.html" class="be-post-title">
+				 <h6>what does swipe stand for in nursing </h6>
+                </a>
+                <a href="what-does-swipe-stand-for-in-nursing.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20swipe%20stand%20for%20in%20nursing&amp;w=50&amp;h=50&amp;c=7" alt="what does swipe stand for in nursing">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-amortizacion-de-capital-en-un-prestamo.html" class="be-post-title">
+				 <h6>que es amortizacion de capital en un prestamo </h6>
+                </a>
+                <a href="que-es-amortizacion-de-capital-en-un-prestamo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20amortizacion%20de%20capital%20en%20un%20prestamo&amp;w=50&amp;h=50&amp;c=7" alt="que es amortizacion de capital en un prestamo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-use-of-education-edition-in-minecraft.html" class="be-post-title">
+				 <h6>what is the use of education edition in minecraft </h6>
+                </a>
+                <a href="what-is-the-use-of-education-edition-in-minecraft.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20use%20of%20education%20edition%20in%20minecraft&amp;w=50&amp;h=50&amp;c=7" alt="what is the use of education edition in minecraft">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-globalizacion-brainly.html" class="be-post-title">
+				 <h6>que es la globalizacion brainly </h6>
+                </a>
+                <a href="que-es-la-globalizacion-brainly.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20globalizacion%20brainly&amp;w=50&amp;h=50&amp;c=7" alt="que es la globalizacion brainly">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-sos-cuba.html" class="be-post-title">
+				 <h6>que es sos cuba </h6>
+                </a>
+                <a href="que-es-sos-cuba.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20sos%20cuba&amp;w=50&amp;h=50&amp;c=7" alt="que es sos cuba">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-get-through-to-telstra-complaints.html" class="be-post-title">
+				 <h6>how to get through to telstra complaints </h6>
+                </a>
+                <a href="how-to-get-through-to-telstra-complaints.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20get%20through%20to%20telstra%20complaints&amp;w=50&amp;h=50&amp;c=7" alt="how to get through to telstra complaints">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-chipear.html" class="be-post-title">
+				 <h6>que es chipear </h6>
+                </a>
+                <a href="que-es-chipear.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20chipear&amp;w=50&amp;h=50&amp;c=7" alt="que es chipear">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="police-ombudsman-qld-contact.html" class="be-post-title">
+				 <h6>police ombudsman qld contact </h6>
+                </a>
+                <a href="police-ombudsman-qld-contact.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=police%20ombudsman%20qld%20contact&amp;w=50&amp;h=50&amp;c=7" alt="police ombudsman qld contact">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-doet-denktank.html" class="be-post-title">
+				 <h6>wat doet denktank </h6>
+                </a>
+                <a href="wat-doet-denktank.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20doet%20denktank&amp;w=50&amp;h=50&amp;c=7" alt="wat doet denktank">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

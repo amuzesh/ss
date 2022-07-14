@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Components Of Risk Matrix at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Components Of Risk Matrix",
+  "datePublished": "2022-04-28T05:55:47Z",
+  "image": "https://tse1.mm.bing.net/th?q=components%20of%20risk%20matrix",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=components%20of%20risk%20matrix&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=components%20of%20risk%20matrix" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=components%20of%20risk%20matrix" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Components Of Risk Matrix at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Components Of Risk Matrix</h2>
+    <p><strong>Components Of Risk Matrix</strong>. Risk elements are (1) inherent risk, (2) control risk, (3) acceptable audit. A racm is a repository of risks that pose a threat to an organization’s operations as well as the.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=components%20of%20risk%20matrix" alt="A risk assessment matrix adapted from MILSTD882E, Department of" />
+        <br>
+        <figcaption>A risk assessment matrix adapted from MILSTD882E, Department of from www.researchgate.net</figcaption>
+    </figure>
+        <p>
+        The risk matrix creates awareness about hazards and risks. The rbi risk matrix by rbi component graph on the risk based inspection overview page plots the total number of components based on their consequence of failure and probability of failure values. This analysis is focused on determining key objectives, identifying related risks, documenting mitigating controls and.
+    </p>
+    <h3>A risk assessment matrix adapted from MILSTD882E, Department of</h3>
+    <p>Colours are used to segment the table. Principle was formulated by a. These components need to be considered separately when determining on how to manage the risk. Think uneven surfaces causing slips and falls, materials on the ground causing trips etc.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk Assessment Matrix Industry Risk Security Risk Assessments" data-src="https://i2.wp.com/industryrisk.com.au/wp-content/uploads/2019/07/Matrix.fw_.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: industryrisk.com.au</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Colours are used to segment the table. However, if both the fundamentals of risk: The major components of any risk response matrix are: The cells are categorized on the basis of their severity: In the diagram, the risks are divided depending on their likelihood and their effects or the extent of damage, so that the worst case scenario can be.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="A risk assessment matrix adapted from MILSTD882E, Department of" data-src="https://i2.wp.com/www.researchgate.net/publication/352393779/figure/download/fig1/AS:1034813112868870@1623730080673/A-risk-assessment-matrix-adapted-from-MIL-STD-882E-Department-of-Defense-Standard.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Creating a risk matrix contains similar steps to a standard risk management process. A risk matrix does not have to be 5x5, although this is the most common type. Future studies will undoubtedly also explore which components of the risk matrix support forecasting choice at larger scales (e.g., on the internet and in markets). Meanwhile, a risk with a higher.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How to Create Risk Matrix Template in Excel Free Download" data-src="https://i2.wp.com/www.examspm.com/wp-content/uploads/2016/08/Screen-Shot-2016-08-23-at-12.47.10-PM.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.examspm.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The matrix is thus a critical component of the risk assessment, because without it identified risks cannot be assessed or evaluated. A 5×5 risk matrix also aims to answer the question “what are the 5 risk rating levels in the risk assessment matrix?” a 5×5 risk matrix has two axes, or components to put it simply, that make up the.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk matrix for 41 analyzed components, (detail analysis fatality" data-src="https://i2.wp.com/www.researchgate.net/profile/Alin_Constantin_Murariu/publication/288824736/figure/download/fig5/AS:312415951572996@1451497175289/Risk-matrix-for-41-analyzed-components-detail-analysis-fatality-consequence.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A 5x5 risk matrix simply refers to a risk matrix that is made up of 5 cells along the x axis and 5 cells along the y axis. Principle was formulated by a. It is said to have been an important step towards the development of the risk matrix. For example, a hazard that is very likely to happen and.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Project Risk Manager Blog Page" data-src="https://i2.wp.com/www.project-risk-manager.com/wp-content/uploads/2017/03/4x4-Risk-Matrix.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.project-risk-manager.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Safety professionals use a risk matrix to assess the various risks of hazards (and incidents), often during a job hazard analysis.understanding the components of a risk matrix will allow you and your organization to manage risk effectively and reduce workplace illnesses and injuries.check out the three components of the risk matrix; In this sense, the risk matrix should be seen.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Interview with a PMP Instructor Part I, Sitting for the PMP Exam" data-src="https://i2.wp.com/projectmanagementacademy.net/articles/images/Risk-Matrix.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: projectmanagementacademy.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In august 1978, business textbook author david e hussey defined an investment risk matrix with risk on one axis, and profitability on the other. These components need to be considered separately when determining on how to manage the risk. The audit risk model is best applied during the planning stage and possesses little value in terms of evaluating audit performance..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="4. Risk matrix used to obtain overall risk rating for each component" data-src="https://i2.wp.com/www.researchgate.net/profile/Shane_Griffiths/publication/274375438/figure/download/tbl1/AS:614152347332621@1523436738897/4-Risk-matrix-used-to-obtain-overall-risk-rating-for-each-component-based-on-the.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A risk breakdown structure is a chart that details the categories of risk your project may encounter. Creating a risk matrix contains similar steps to a standard risk management process. Meanwhile, a risk with a higher probability of occurring and significant potential impact represents a priority for your team to plan for and take action on quickly. This analysis is.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="The LBA2A1 component on the risk matrix at detailed risk analysis" data-src="https://i2.wp.com/www.researchgate.net/profile/Alin-Constantin-Murariu/publication/288828996/figure/download/fig4/AS:312669665021955@1451557665386/The-LBA2A-1-component-on-the-risk-matrix-at-detailed-risk-analysis.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Risk matrix prevents the possibility of injuries or illnesses, especially when done at. The rbi risk matrix by rbi component graph on the risk based inspection overview page plots the total number of components based on their consequence of failure and probability of failure values. A racm is a repository of risks that pose a threat to an organization’s operations.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk Management Processes Support Adventure" data-src="https://i2.wp.com/www.supportadventure.co.nz/assets/Risk-Matrix__FillWzYwMCwzNDBd.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.supportadventure.co.nz</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The probability and the impact. The probability of failure and severity of consequences are expressed in a qualitative manner, the risk matrix becomes a purely qualitative approach. These components need to be considered separately when determining on how to manage the risk. Teams then categorize those risks according to their likelihood and impact. An audit risk model is a conceptual.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risk matrix after classification level for LBA2A1 component" data-src="https://i2.wp.com/www.researchgate.net/profile/Alin_Constantin_Murariu/publication/288828996/figure/fig1/AS:312669665021952@1451557665269/Risk-matrix-after-classification-level-for-LBA2A-1-component.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">How a risk matrix works. The audit risk model is best applied during the planning stage and possesses little value in terms of evaluating audit performance. This analysis is focused on determining key objectives, identifying related risks, documenting mitigating controls and. A risk matrix helps you do both, calculating risk across various outcomes to give you clear guidelines on whether.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-constructivismo-segun-varios-autores.html" class="be-post-title">
+				 <h6>que es constructivismo segun varios autores </h6>
+                </a>
+                <a href="que-es-constructivismo-segun-varios-autores.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20constructivismo%20segun%20varios%20autores&amp;w=50&amp;h=50&amp;c=7" alt="que es constructivismo segun varios autores">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-desfibrilador-y-para-que-sirve.html" class="be-post-title">
+				 <h6>que es un desfibrilador y para que sirve </h6>
+                </a>
+                <a href="que-es-un-desfibrilador-y-para-que-sirve.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20desfibrilador%20y%20para%20que%20sirve&amp;w=50&amp;h=50&amp;c=7" alt="que es un desfibrilador y para que sirve">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-wet-riser.html" class="be-post-title">
+				 <h6>what is a wet riser </h6>
+                </a>
+                <a href="what-is-a-wet-riser.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20wet%20riser&amp;w=50&amp;h=50&amp;c=7" alt="what is a wet riser">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="müreccah-ne-demek.html" class="be-post-title">
+				 <h6>müreccah ne demek </h6>
+                </a>
+                <a href="müreccah-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=m%C3%BCreccah%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="müreccah ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-als-een-gezinslid-in-quarantaine-moet.html" class="be-post-title">
+				 <h6>wat als een gezinslid in quarantaine moet </h6>
+                </a>
+                <a href="wat-als-een-gezinslid-in-quarantaine-moet.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20als%20een%20gezinslid%20in%20quarantaine%20moet&amp;w=50&amp;h=50&amp;c=7" alt="wat als een gezinslid in quarantaine moet">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="psiap-adalah.html" class="be-post-title">
+				 <h6>psiap adalah </h6>
+                </a>
+                <a href="psiap-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=psiap%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="psiap adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-typical-stair-riser-height.html" class="be-post-title">
+				 <h6>what is the typical stair riser height </h6>
+                </a>
+                <a href="what-is-the-typical-stair-riser-height.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20typical%20stair%20riser%20height&amp;w=50&amp;h=50&amp;c=7" alt="what is the typical stair riser height">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="hoe-lang-blijft-wespennest-zitten.html" class="be-post-title">
+				 <h6>hoe lang blijft wespennest zitten </h6>
+                </a>
+                <a href="hoe-lang-blijft-wespennest-zitten.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=hoe%20lang%20blijft%20wespennest%20zitten&amp;w=50&amp;h=50&amp;c=7" alt="hoe lang blijft wespennest zitten">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cómo-realizar-un-diario-de-doble-entrada.html" class="be-post-title">
+				 <h6>cómo realizar un diario de doble entrada </h6>
+                </a>
+                <a href="cómo-realizar-un-diario-de-doble-entrada.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=c%C3%B3mo%20realizar%20un%20diario%20de%20doble%20entrada&amp;w=50&amp;h=50&amp;c=7" alt="cómo realizar un diario de doble entrada">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="uji-viskositas-emulsi-adalah.html" class="be-post-title">
+				 <h6>uji viskositas emulsi adalah </h6>
+                </a>
+                <a href="uji-viskositas-emulsi-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=uji%20viskositas%20emulsi%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="uji viskositas emulsi adalah">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

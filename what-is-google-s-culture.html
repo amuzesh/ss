@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        What Is Google&#039;s Culture at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "What Is Google&#039;s Culture",
+  "datePublished": "2022-04-17T02:03:44Z",
+  "image": "https://tse1.mm.bing.net/th?q=what%20is%20google%27s%20culture",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=what%20is%20google%27s%20culture&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20google%27s%20culture" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20google%27s%20culture" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            What Is Google&#039;s Culture at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">What Is Google&#039;s Culture</h2>
+    <p><strong>What Is Google&#039;s Culture</strong>. 10 reasons why google’s company culture works. Employees are an integral part of the google family.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=what%20is%20google%27s%20culture" alt="Google Campus ,Dublin / Google / Office / Architecture Technology" />
+        <br>
+        <figcaption>Google Campus ,Dublin / Google / Office / Architecture Technology from www.camenzindevolution.com</figcaption>
+    </figure>
+        <p>
+        The company is deservedly famous for encouraging employees to explore a. In glassdoor&#039;s 13th annual employees&#039; choice awards, google. According to google, 80% of employees are satisfied with their jobs.
+    </p>
+    <h3>Google Campus ,Dublin / Google / Office / Architecture Technology</h3>
+    <p>Learn more about google’s history, values, people, and technology. Enter the google company culture. Google places no restrictions on where employees must work. For years continuously, google has been ranked as one of the best places to work.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="This Week in Tech Google’s New App for Art, Architecture Architect" data-src="https://i2.wp.com/cdnassets.hw.net/19/ae/4e546b934f3f86b78f97e6f35608/0722-tr-hero-copy.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.architectmagazine.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Some may argue that an approach like that is dangerous, but from an honest employee’s point of view, always being suspected or expected to do something untoward is demotivating. Organizational culture is a set of beliefs and values that determine how employees behave, how the company treats its employees, and what the work environment is like. Google&#039;s company culture takes.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Google’s new Arts &amp; Culture app brings the world’s art, virtual tours" data-src="https://i2.wp.com/techcrunch.com/wp-content/uploads/2016/07/screen-shot-2016-07-20-at-12-33-00-pm.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: techcrunch.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Through its history of development, it has had positive impacts on society; Discover stories about our culture, philosophy, and how google technology is impacting others. Google’s cultural statement forces the company to keep its leadership in the industry of information technology and online advertising. Some may argue that an approach like that is dangerous, but from an honest employee’s point.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Google Arts &amp; Culture Experiments YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/xgnxnmqnR7Y/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">From the moma to the tokyo national museum, the world&#039;s best offerings are. This paper provides a viewpoint of the culture and subcultures at google inc., which is a famous global company, and has a huge engineering staff and many talented leaders. For a company, their organizational culture is based on their customs, culture, behavior ideals that influence employee behavior.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Google Arts &amp; Culture review App Ed Review" data-src="https://i2.wp.com/appedreview.com/app/wp-content/uploads/2016/06/Screen-Shot-2016-06-22-at-5.20.20-PM-768x252.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: appedreview.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Afternoon volleyball breaks are just one of many assets of google’s great corporate culture Helping every googler feel seen, connected, supported, and empowered to participate fully. Google&#039;s culture is what defines its leadership style, power structure, motivation theories, and its employees&#039; commitment to the company. Here’s how google gets it done: Google’s company culture is one that trusts its employees.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Google Company Culture Not Doing Too Well?" data-src="https://i2.wp.com/s3.amazonaws.com/images.seroundtable.com/google-employee-culture-1578053491.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.seroundtable.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Google’s company culture is one that trusts its employees. Google has faced issue after issue over the past several years, and it sounds like a major reason for that is the company&#039;s culture. The board of directors (bods) developed and implemented a. One of the reasons why so many people long to work for google is because of its unique.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Meet Google Arts &amp; Culture GoogleArts YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/bp4oa7MHg88/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Since its inception, google has launched many revolutionary services youtube, google maps, google drive,. In glassdoor&#039;s 13th annual employees&#039; choice awards, google. According to google, 80% of employees are satisfied with their jobs. Addressing barriers in society by focusing on. At lunchtime, almost everyone eats in the office cafe, sitting at whatever.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Google OutGoogles Itself With New Tel Aviv Office HuffPost" data-src="https://i2.wp.com/i.huffpost.com/gen/1014417/images/o-GOOGLE-TEL-AVIV-facebook.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.huffingtonpost.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">There have been management challenges. Google has faced issue after issue over the past several years, and it sounds like a major reason for that is the company&#039;s culture. In 2019, it got 15 awards from comparably, including the best ceo, best for women, and best company culture awards. Google describes innovation as, the process of taking new ideas, building.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="7 Secrets of Google&#039;s Epic Organizational Culture" data-src="https://i2.wp.com/officevibe.com/wp-content/uploads/2013/09/positive-atmosphere-at-google.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: officevibe.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Google&#039;s culture is what defines its leadership style, power structure, motivation theories, and its employees&#039; commitment to the company. 10 reasons why google’s company culture works. This paper provides a viewpoint of the culture and subcultures at google inc., which is a famous global company, and has a huge engineering staff and many talented leaders. Google&#039;s company culture takes away.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Google will let you explore the world of art and culture, from 1000" data-src="https://i2.wp.com/luxurylaunches.com/wp-content/uploads/2016/08/Google-art-1170x614.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: luxurylaunches.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Through its history of development, it has had positive impacts on society; Kim scott turned this concept into a book and a podcast. This is the cost of doing business in our market.”. Google’s culture is a shining example of a productive workplace. Such cultures are most effective in terms of motivating employees.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Google Campus ,Dublin / Google / Office / Architecture Technology" data-src="https://i2.wp.com/www.camenzindevolution.com/var/ezwebin_site/storage/images/office/google/google-campus-dublin/18268-128-esl-ES/Google-Campus-Dublin_opengraph.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.camenzindevolution.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Such cultures are most effective in terms of motivating employees. Here’s how google gets it done: Learn more about google’s history, values, people, and technology. Some may argue that an approach like that is dangerous, but from an honest employee’s point of view, always being suspected or expected to do something untoward is demotivating. Google describes innovation as, the process.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-jardin-de-getsemani.html" class="be-post-title">
+				 <h6>que es el jardin de getsemani </h6>
+                </a>
+                <a href="que-es-el-jardin-de-getsemani.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20jardin%20de%20getsemani&amp;w=50&amp;h=50&amp;c=7" alt="que es el jardin de getsemani">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="q-es-la-informacion-digital.html" class="be-post-title">
+				 <h6>q es la informacion digital </h6>
+                </a>
+                <a href="q-es-la-informacion-digital.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=q%20es%20la%20informacion%20digital&amp;w=50&amp;h=50&amp;c=7" alt="q es la informacion digital">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-jabalina-en-electricidad.html" class="be-post-title">
+				 <h6>que es una jabalina en electricidad </h6>
+                </a>
+                <a href="que-es-una-jabalina-en-electricidad.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20jabalina%20en%20electricidad&amp;w=50&amp;h=50&amp;c=7" alt="que es una jabalina en electricidad">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wie-geht-es-dir-ne-demek.html" class="be-post-title">
+				 <h6>wie geht es dir ne demek </h6>
+                </a>
+                <a href="wie-geht-es-dir-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wie%20geht%20es%20dir%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="wie geht es dir ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-n-monopolie.html" class="be-post-title">
+				 <h6>wat is n monopolie </h6>
+                </a>
+                <a href="wat-is-n-monopolie.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20n%20monopolie&amp;w=50&amp;h=50&amp;c=7" alt="wat is n monopolie">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-sonata-en-español.html" class="be-post-title">
+				 <h6>que es sonata en español </h6>
+                </a>
+                <a href="que-es-sonata-en-español.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20sonata%20en%20espa%C3%B1ol&amp;w=50&amp;h=50&amp;c=7" alt="que es sonata en español">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-fondo-en-cocina.html" class="be-post-title">
+				 <h6>que es un fondo en cocina </h6>
+                </a>
+                <a href="que-es-un-fondo-en-cocina.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20fondo%20en%20cocina&amp;w=50&amp;h=50&amp;c=7" alt="que es un fondo en cocina">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-la-purga-en-estados-unidos.html" class="be-post-title">
+				 <h6>que significa la purga en estados unidos </h6>
+                </a>
+                <a href="que-significa-la-purga-en-estados-unidos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20la%20purga%20en%20estados%20unidos&amp;w=50&amp;h=50&amp;c=7" alt="que significa la purga en estados unidos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="qué-es-la-polinización.html" class="be-post-title">
+				 <h6>¿qué es la polinización </h6>
+                </a>
+                <a href="qué-es-la-polinización.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=%C2%BFqu%C3%A9%20es%20la%20polinizaci%C3%B3n&amp;w=50&amp;h=50&amp;c=7" alt="¿qué es la polinización">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="s-e-s-kpop-members.html" class="be-post-title">
+				 <h6>s.e.s kpop members </h6>
+                </a>
+                <a href="s-e-s-kpop-members.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=s.e.s%20kpop%20members&amp;w=50&amp;h=50&amp;c=7" alt="s.e.s kpop members">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

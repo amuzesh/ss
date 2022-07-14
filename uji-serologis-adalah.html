@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Serologis Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Serologis Adalah",
+  "datePublished": "2022-04-17T02:20:13Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20serologis%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20serologis%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20serologis%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20serologis%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Serologis Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Serologis Adalah</h2>
+    <p><strong>Uji Serologis Adalah</strong>. Sampel darah adalah semua yang dibutuhkan laboratorium untuk melakukan pengujian serologi dokter akan memasukkan jarum ke pembuluh darah dan mengambil darah untuk sampel. Prinsip utama uji serologis adalah mereaksikan antibodi dengan antigen yang sesuai 3 pemeriksaan serologi hepatitis b dan c.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20serologis%20adalah" alt="Garam Yang Mengalami Hidrolisis Dan Sesuai Dengan Uji Lakmusnya Adalah" />
+        <br>
+        <figcaption>Garam Yang Mengalami Hidrolisis Dan Sesuai Dengan Uji Lakmusnya Adalah from soaltuntas.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Di mana prinsip uji ha dan hi menggunakan mekanisme aglutinasi atau penggumpalan eritrosit akibat keberadaan hemagglutinin yang. Serum merupakan bagian dari plasma darah (bagian cair darah) yang didapatkan dari pengendapan darah yang akan berwarna kuning bening (kondisi bagus). Dibandingkan dengan mikroskopi, uji serologis tb berpotensi memungkinkan diagnosis cepat seperti imunochromatography (ict) karena tes ini memiliki keunggulan kecepatan (hasil dapat tersedia dalam beberapa menit), teknologi dan pelatihan.
+    </p>
+    <h3>Garam Yang Mengalami Hidrolisis Dan Sesuai Dengan Uji Lakmusnya Adalah</h3>
+    <p>Pada artikel kali ini, penulis akan membahas mengenai “pengertian elisa dalam laboratorium”. Dalam perkembangannya, peternak mulai menyadari perlunya melakukan uji serologis terlebih lagi. Cara pengujian yang paling populer adalah kelompok pengujian pembedaan (deference test ) dan kelompok pengujian pemilihan (preference test).di samping kedua kelompok pengujian itu, dikenal juga pengujian. Terdapat tiga mekanisme yang terdapat dalam pengujian secara serologis, yaitu aglutinasi, presipitasi, dan wb(western blot).</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="kesimpulan hasil percobaan uji makanan di atas adalah.... Brainly.co.id" data-src="https://i2.wp.com/id-static.z-dn.net/files/d50/da753879c892006498514051bfeefc71.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pemeriksaan serologi adalah pemeriksaan yang menggunakan serum seperti pemeriksaan pada dugaan demam dengue. Tes presipitasi untuk menunjukkan pengendapan yang dihasilkan dari reaksi antigen dan antibodi spesifik yang saling. Secara umum, skin test dilakukan dengan 3 cara utama, yaitu uji intradermal, uji. Pemeriksaan laboratorium yang paling sering digunakan adalah uji serologis. Mungkin bagi anda yang bekerja di.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Uji Mann Whitney [PDF Document]" data-src="https://i2.wp.com/static.fdokumen.com/img/1200x630/reader017/html5/js20200114/5e1ccc3f7117a/5e1ccc3fd167f.png?t=1606700048" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: fdokumen.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Beberapa jenis uji serologi yang umum dilakukan, antara lain: Secara umum, skin test dilakukan dengan 3 cara utama, yaitu uji intradermal, uji. Prinsip uji serologis adalah dengan cara mereaksikan antigen dan antibodi yang sesuai, antigen dapat diperoleh dari whole worm extract (wwe) cacing h. Proses untuk melakukan tes adalah sama,. Elisa adalah merupakan uji serologis yang umum digunakan di berbagai.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="SUMMARY STATISTIK Uji Chi Square" data-src="https://i2.wp.com/1.bp.blogspot.com/-XrFPSPFcCu8/Xer7LKSu31I/AAAAAAAAQIk/bkgb2-7OhHYRkA9bkCU_AflGpGrl1DmVwCLcBGAsYHQ/s1600/29.PNG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: billyonlinetext.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sampel darah adalah semua yang dibutuhkan laboratorium untuk melakukan pengujian serologi dokter akan memasukkan jarum ke pembuluh darah dan mengambil darah untuk sampel. Hasil elisa akan memberitahukan, apakah seorang tersebut berada dalam keadaan akut (baru saja terkena virus), telah terinfeksi namun ringan, terinfeksi namun tanpa. Hasil pemeriksaan juga dapat menentukan apakah tubuh telah membentuk kekebalan terhadap virus. Yang lebih penting.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Garam Yang Mengalami Hidrolisis Dan Sesuai Dengan Uji Lakmusnya Adalah" data-src="https://i2.wp.com/i.ytimg.com/vi/LMgFN5mk09o/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: soaltuntas.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hasil elisa akan memberitahukan, apakah seorang tersebut berada dalam keadaan akut (baru saja terkena virus), telah terinfeksi namun ringan, terinfeksi namun tanpa. Di mana uji ha dan hi termasuk ke dalam uji serologis. Dibandingkan dengan mikroskopi, uji serologis tb berpotensi memungkinkan diagnosis cepat seperti imunochromatography (ict) karena tes ini memiliki keunggulan kecepatan (hasil dapat tersedia dalam beberapa menit), teknologi dan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Uji Dua Sampel Berpasangan Dengan Metode Wilcoxon / Contoh" data-src="https://i2.wp.com/1.bp.blogspot.com/-_jTbyNIgQq8/XZqt3Xyp4LI/AAAAAAAAEDQ/ZpvfSu2gK9Q4uNNj1Gkom4FuXugcOl4QgCEwYBhgL/s1600/6.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: jawabansoalcollection.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hasil pemeriksaan elisa memiliki keunggulan dalam survey serologis. Artinya, hasil pemeriksaan elisa bisa mendeteksi keadaan infeksi virus corona pada beberapa kondisi sekaligus. Dibandingkan dengan mikroskopi, uji serologis tb berpotensi memungkinkan diagnosis cepat seperti imunochromatography (ict) karena tes ini memiliki keunggulan kecepatan (hasil dapat tersedia dalam beberapa menit), teknologi dan pelatihan. Igg ialah antibodi utama dalam serum. Pemeriksaan laboratorium yang paling.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Normalitas dan Homogenitas" data-src="https://i2.wp.com/image.slidesharecdn.com/babviiiujinormaitasdanhomogenitas-160314171147/95/uji-normalitas-dan-homogenitas-3-638.jpg?cb=1457975755" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Mungkin bagi anda yang bekerja di. Secara umum, skin test dilakukan dengan 3 cara utama, yaitu uji intradermal, uji. Berikut ini adalah beberapa metode tes serologi: Pada pemeriksaan serologis uji hi serum diencerkan menjadi kelipatan 2 kali, dimulai dengan pengenceran 1:10, 1:20,. Terdapat tiga mekanisme yang terdapat dalam pengujian secara serologis, yaitu aglutinasi, presipitasi, dan wb(western blot).</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Garam Yang Mengalami Hidrolisis Dan Sesuai Dengan Uji Lakmusnya Adalah" data-src="https://i2.wp.com/id-static.z-dn.net/files/d53/9a459de7acc61359e370d09c8cb4ee6c.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.jawabanku.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji ini memiliki beberapa keunggulan seperti teknik pengerjaan yang relatif sederhana, ekonomis, dan memiliki sensitivitas yang cukup tinggi. Demam dengue dapat merupakan infeksi pertama kali yang disebut infeksi primer dan dikenal sebagai demam dengue, serta infeksi kedua kali yang disebut infeksi sekunder yang dapat menimbulkan penyakit demam berdarah yang dikenal sebagai dengue. Serum mengandung antibodi sehingga mutlak untuk pengujian di.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT UJI HIPOTESIS PowerPoint Presentation, free download ID5432886" data-src="https://i2.wp.com/image3.slideserve.com/5432886/uji-perbandingan-statistik-parametrik-non-parametrik-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Prinsip utama uji serologis adalah mereaksikan antibodi dengan antigen yang sesuai 3 pemeriksaan serologi hepatitis b dan c. Beberapa jenis uji serologi yang umum dilakukan, antara lain: Oleh karenanya, kita wajib mengikuti protocol. Kultur salmonella merupakan gold standard dalam menegakkan diagnosis demam tifoid.7tes serologis lain yang dapat digunakan dalam menentukan diagnosis demam tifoid adalah tes widal, dan tes igm salmonella.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji Normalitas dan Homogenitas" data-src="https://i2.wp.com/image.slidesharecdn.com/babviiiujinormaitasdanhomogenitas-160314171147/95/uji-normalitas-dan-homogenitas-4-638.jpg?cb=1457975755" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji serologis berkaitan untuk mendeteksi respons kekebalan tubuh humoral (antibodi) terhadap antigen m. Hasil elisa akan memberitahukan, apakah seorang tersebut berada dalam keadaan akut (baru saja terkena virus), telah terinfeksi namun ringan, terinfeksi namun tanpa. Igg ialah antibodi utama dalam serum. Mungkin bagi anda yang bekerja di. Uji aglutinasi untuk menunjukkan apakah antibodi yang terpapar antigen akan menyebabkan penggumpalan partikel.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="tabel diatas adalah data hasil uji kompetensi matematika sekelompok" data-src="https://i2.wp.com/id-static.z-dn.net/files/dc2/e44c85ec6690220e46fc634dfc23f660.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tes presipitasi untuk menunjukkan pengendapan yang dihasilkan dari reaksi antigen dan antibodi spesifik yang saling. Fungsi uji serologis adalah : 83 sifilis th 2014 tentang utd bank darah rumah sakit, dan jenjang pelayanan hiv/aids tranfusi darah, uji saring serologi donor darah crossmatch meliputi: Yang lebih penting lagi adalah bagaimana bisa menegakkan diagnosis sedini mungkin, sehingga pengobatan secara adekwat dapat segera.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="minestrone-soup-que-es.html" class="be-post-title">
+				 <h6>minestrone soup que es </h6>
+                </a>
+                <a href="minestrone-soup-que-es.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=minestrone%20soup%20que%20es&amp;w=50&amp;h=50&amp;c=7" alt="minestrone soup que es">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-amortizacion-de-un-prestamo.html" class="be-post-title">
+				 <h6>que es la amortizacion de un prestamo </h6>
+                </a>
+                <a href="que-es-la-amortizacion-de-un-prestamo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20amortizacion%20de%20un%20prestamo&amp;w=50&amp;h=50&amp;c=7" alt="que es la amortizacion de un prestamo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-risk-management-process-definition.html" class="be-post-title">
+				 <h6>what is risk management process definition </h6>
+                </a>
+                <a href="what-is-risk-management-process-definition.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20risk%20management%20process%20definition&amp;w=50&amp;h=50&amp;c=7" alt="what is risk management process definition">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-3-fase-kookgroep.html" class="be-post-title">
+				 <h6>wat is een 3 fase kookgroep </h6>
+                </a>
+                <a href="wat-is-een-3-fase-kookgroep.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%203%20fase%20kookgroep&amp;w=50&amp;h=50&amp;c=7" alt="wat is een 3 fase kookgroep">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-levend-kwartetspel.html" class="be-post-title">
+				 <h6>wat is levend kwartetspel </h6>
+                </a>
+                <a href="wat-is-levend-kwartetspel.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20levend%20kwartetspel&amp;w=50&amp;h=50&amp;c=7" alt="wat is levend kwartetspel">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="versekerings-bedrog.html" class="be-post-title">
+				 <h6>versekerings bedrog </h6>
+                </a>
+                <a href="versekerings-bedrog.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=versekerings%20bedrog&amp;w=50&amp;h=50&amp;c=7" alt="versekerings bedrog">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-hace-el-hidrato-de-metano.html" class="be-post-title">
+				 <h6>que hace el hidrato de metano </h6>
+                </a>
+                <a href="que-hace-el-hidrato-de-metano.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20hace%20el%20hidrato%20de%20metano&amp;w=50&amp;h=50&amp;c=7" alt="que hace el hidrato de metano">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-funciona-alexa.html" class="be-post-title">
+				 <h6>como.funciona alexa </h6>
+                </a>
+                <a href="como-funciona-alexa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como.funciona%20alexa&amp;w=50&amp;h=50&amp;c=7" alt="como.funciona alexa">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-risk-management-in-engineering.html" class="be-post-title">
+				 <h6>what is risk management in engineering </h6>
+                </a>
+                <a href="what-is-risk-management-in-engineering.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20risk%20management%20in%20engineering&amp;w=50&amp;h=50&amp;c=7" alt="what is risk management in engineering">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-schoonheidsspecialiste.html" class="be-post-title">
+				 <h6>wat is een schoonheidsspecialiste </h6>
+                </a>
+                <a href="wat-is-een-schoonheidsspecialiste.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20schoonheidsspecialiste&amp;w=50&amp;h=50&amp;c=7" alt="wat is een schoonheidsspecialiste">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

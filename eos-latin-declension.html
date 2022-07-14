@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Eos Latin Declension at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Eos Latin Declension",
+  "datePublished": "2022-03-22T04:30:42Z",
+  "image": "https://tse1.mm.bing.net/th?q=eos%20latin%20declension",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=eos%20latin%20declension&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=eos%20latin%20declension" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=eos%20latin%20declension" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Eos Latin Declension at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Eos Latin Declension</h2>
+    <p><strong>Eos Latin Declension</strong>. Check &#039;eos&#039; translations into english. Is personal pronoun see the translation of this word.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=eos%20latin%20declension" alt="Eng424 3" />
+        <br>
+        <figcaption>Eng424 3 from www.slideshare.net</figcaption>
+    </figure>
+        <p>
+        This noun and adjective are both masculine nominative singular. Ēōs feminine noun iii declension. Accusative plural for masculine and feminine nouns.
+    </p>
+    <h3>Eng424 3</h3>
+    <p>Indeed, there is a distinction between parisyllabic and imparisyllabic latin words. The third latin declension is the most difficult to learn. Cite this page | conjugate another latin verb | conjugate another latin verb Accusative plural for masculine and feminine nouns.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Latin Personal Pronouns Chart Pictures to Pin on Pinterest PinsDaddy" data-src="https://i2.wp.com/www.languagesgulper.com/eng/Latin_files/droppedImage-filtered_1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinsdaddy.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">And in the neuter like bellum. This shows the three nominative singular forms: Third declension nouns can be masculine, feminine, or neuter. We like to speak the personal pronouns that go with the conjugated verb. Indeed, there is a distinction between parisyllabic and imparisyllabic latin words.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Latín básico" data-src="https://i2.wp.com/image.slidesharecdn.com/latnbsico-121218171028-phpapp01/95/latn-bsico-6-638.jpg?cb=1416746096" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Is personal pronoun see the translation of this word. Egli;lui/x;esso, esso/essa, essi/esse,questo, quello, colui, (pron.agg determinativo), (eng) = he, she, it,this,that, (esp) = él. Over time, aspects of latin were the building blocks of romance languages, which include italian, portuguese, spanish, and french.additionally, many latin words have been adopted by the english language. Accusative plural for masculine and feminine nouns..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Chapter 7 grammar" data-src="https://i2.wp.com/image.slidesharecdn.com/chapter7grammar-141002210507-phpapp02/95/chapter-7-grammar-4-638.jpg?cb=1412283934" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">This noun and adjective are both masculine nominative singular. Paetus, ut antea te scripsi,. Edit tags history files print site tools + options. The best latin dictionary with a conjugator and a latin declension tool available online for free! 14 rows find is (demonstrative pronoun) in the latin online dictionary with english meanings, all fabulous forms &amp; inflections and a.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Eng424 3" data-src="https://i2.wp.com/image.slidesharecdn.com/eng4243-141014054650-conversion-gate02/95/eng424-3-11-638.jpg?cb=1413265729" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">For dictionary, in top 20,000 words source: First declension nouns latin : Use eum/eam/eos/eas if the subject of the indirect statement is not the same as the subject of the main verb. The good news is that masculine and feminine nouns use the same. In english, we say, i love, you love, he loves;</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Latín básico" data-src="https://i2.wp.com/image.slidesharecdn.com/latnbsico-121218171028-phpapp01/95/latn-bsico-20-638.jpg?cb=1416746096" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: es.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">And in the neuter like bellum. This shows the three nominative singular forms: Indeed, there is a distinction between parisyllabic and imparisyllabic latin words. First declension nouns latin : The best latin dictionary with a conjugator and a latin declension tool available online for free!</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Chapter 7 grammar" data-src="https://i2.wp.com/image.slidesharecdn.com/chapter7grammar-141002210507-phpapp02/95/chapter-7-grammar-4-638.jpg?cb=1412283934" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The good news is that masculine and feminine nouns use the same. Nominative and accusative cases of neuter nouns are always the same. Indeed, there is a distinction between parisyllabic and imparisyllabic latin words. For example, the words scholar, nautical, and lingual derive from the latin word schola, nauta, and lingua respectively. And in the neuter like bellum.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Latín" data-src="https://i2.wp.com/image.slidesharecdn.com/latin-120722061149-phpapp01/95/latn-6-728.jpg?cb=1347285534" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Give yourself a huge advantage in life! Egli;lui/x;esso, esso/essa, essi/esse,questo, quello, colui, (pron.agg determinativo), (eng) = he, she, it,this,that, (esp) = él. Indeed, there is a distinction between parisyllabic and imparisyllabic latin words. Definition from wiktionary, the free dictionary For dictionary, in top 20,000 words source:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Demonstrative Pronouns Paradigms Dickinson College Commentaries" data-src="https://i2.wp.com/dcc.dickinson.edu/sites/default/files/ipse_ipsa_ipsum_0.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dcc.dickinson.edu</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Declension of oppidum third declension noun endings. Egli;lui/x;esso, esso/essa, essi/esse,questo, quello, colui, (pron.agg determinativo), (eng) = he, she, it,this,that, (esp) = él. Parisyllabic nouns have the same number of nominative and genitive syllables, whereas for imparisyllabic nouns, the genitive has one syllable more than the nominative.beware, there are false imparisyllabic nouns: And in the neuter like bellum. Is, ea, id,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Demonstrative Pronouns Paradigms Dickinson College Commentaries" data-src="https://i2.wp.com/dcc.dickinson.edu/sites/default/files/is_ea_id_0.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dcc.dickinson.edu</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Paetus, ut antea te scripsi,. Personal pronouns such as i, you, he, she, it, we and they stand in for the names of people or things. The i, you, he, she, it of the (ancient) latin world. Is personal pronoun see the translation of this word. 1st and 2nd declension adjectives:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Third Form Latin 19 sayings grammar practice" data-src="https://i2.wp.com/image.slidesharecdn.com/19sayingsgrammarpractice-120217112054-phpapp01/95/third-form-latin-19-sayings-grammar-practice-34-728.jpg?cb=1329478355" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The latin dictionary where latin meets english. Third declension is by far the most confusing of the five latin declensions. Ēōs feminine noun iii declension. The good news is that masculine and feminine nouns use the same. The best latin dictionary with a conjugator and a latin declension tool available online for free!</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-itin-number.html" class="be-post-title">
+				 <h6>que es un itin number </h6>
+                </a>
+                <a href="que-es-un-itin-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20itin%20number&amp;w=50&amp;h=50&amp;c=7" alt="que es un itin number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-contrato-de-donacion-entre-vivos.html" class="be-post-title">
+				 <h6>que es un contrato de donacion entre vivos </h6>
+                </a>
+                <a href="que-es-un-contrato-de-donacion-entre-vivos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20contrato%20de%20donacion%20entre%20vivos&amp;w=50&amp;h=50&amp;c=7" alt="que es un contrato de donacion entre vivos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-hacer-un-diario-de-doble-entrada-ejemplo.html" class="be-post-title">
+				 <h6>como hacer un diario de doble entrada ejemplo </h6>
+                </a>
+                <a href="como-hacer-un-diario-de-doble-entrada-ejemplo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20hacer%20un%20diario%20de%20doble%20entrada%20ejemplo&amp;w=50&amp;h=50&amp;c=7" alt="como hacer un diario de doble entrada ejemplo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-staatsobligatie.html" class="be-post-title">
+				 <h6>wat is een staatsobligatie </h6>
+                </a>
+                <a href="wat-is-een-staatsobligatie.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20staatsobligatie&amp;w=50&amp;h=50&amp;c=7" alt="wat is een staatsobligatie">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-itp-y-como-se-calcula.html" class="be-post-title">
+				 <h6>que es el itp y como se calcula </h6>
+                </a>
+                <a href="que-es-el-itp-y-como-se-calcula.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20itp%20y%20como%20se%20calcula&amp;w=50&amp;h=50&amp;c=7" alt="que es el itp y como se calcula">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="sopa-minestrone-casera.html" class="be-post-title">
+				 <h6>sopa minestrone casera </h6>
+                </a>
+                <a href="sopa-minestrone-casera.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=sopa%20minestrone%20casera&amp;w=50&amp;h=50&amp;c=7" alt="sopa minestrone casera">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="why-goog-is-more-expensive-than-googl.html" class="be-post-title">
+				 <h6>why goog is more expensive than googl </h6>
+                </a>
+                <a href="why-goog-is-more-expensive-than-googl.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=why%20goog%20is%20more%20expensive%20than%20googl&amp;w=50&amp;h=50&amp;c=7" alt="why goog is more expensive than googl">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="porque-todo-fue-hecho-por-el-y-para-el.html" class="be-post-title">
+				 <h6>porque todo fue hecho por el y para el </h6>
+                </a>
+                <a href="porque-todo-fue-hecho-por-el-y-para-el.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=porque%20todo%20fue%20hecho%20por%20el%20y%20para%20el&amp;w=50&amp;h=50&amp;c=7" alt="porque todo fue hecho por el y para el">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-fix-mercedes-eis.html" class="be-post-title">
+				 <h6>how to fix mercedes eis </h6>
+                </a>
+                <a href="how-to-fix-mercedes-eis.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20fix%20mercedes%20eis&amp;w=50&amp;h=50&amp;c=7" alt="how to fix mercedes eis">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="c-est-quoi-une-axe-de-symétrie.html" class="be-post-title">
+				 <h6>c&#039;est quoi une axe de symétrie </h6>
+                </a>
+                <a href="c-est-quoi-une-axe-de-symétrie.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=c%27est%20quoi%20une%20axe%20de%20sym%C3%A9trie&amp;w=50&amp;h=50&amp;c=7" alt="c&amp;#039;est quoi une axe de symétrie">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

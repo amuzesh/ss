@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Penetrasi Standar Spt Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Penetrasi Standar Spt Adalah",
+  "datePublished": "2022-05-17T12:57:23Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20penetrasi%20standar%20spt%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20penetrasi%20standar%20spt%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20penetrasi%20standar%20spt%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20penetrasi%20standar%20spt%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Penetrasi Standar Spt Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Penetrasi Standar Spt Adalah</h2>
+    <p><strong>Uji Penetrasi Standar Spt Adalah</strong>. Spt (standard penetration test) for driving a split barrel sampler to obtain a refresentative soil sampler and measure of the soil resistance to penetration. Standar penetrasi tanah berkohesi keuntungan dan kerugian spt (standart penetration test.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20penetrasi%20standar%20spt%20adalah" alt="Standard Test PT Hesa Laras Cemerlang" />
+        <br>
+        <figcaption>Standard Test PT Hesa Laras Cemerlang from hesa.co.id</figcaption>
+    </figure>
+        <p>
+        Kerangka kerja osstmm (open source security testing methodology manual), merupakan salah satu standar yang paling dikenal di industri, menyediakan metodologi ilmiah untuk pengujian penetrasi jaringan dan penilaian. Cara ini dilakukan dengan cara memukul tabung standar ke dalan lubang. Uji spt (standard penetration test).
+    </p>
+    <h3>Standard Test PT Hesa Laras Cemerlang</h3>
+    <p>0 + = n φ. Cara ini dilakukan dengan cara memukul tabung standar ke dalan lubang. Sedangkan jumlah pukulan yang dipakai adalah penetrasi tanah pada. Dengan standard penetration test (spt), suatu percobaan dinamis yang berasal dari amerika serika serikat (di pekanbaru dikenal dengan “bor mesin”).</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Standard Test PT Hesa Laras Cemerlang" data-src="https://i2.wp.com/hesa.co.id/wp-content/uploads/2017/04/Standar-Penetration-Test.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: hesa.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">0 + = n φ. Pengujian penetrasi standar (spt) pengertian spt standard penetration test (spt) adalah metode pengujian di lapangan dengan memasukkan (memancangkan) sebuah split spoon sampler (tabung pengambilan contoh tanah yang dapat dibuka dalam arah memanjang) dengan diameter 50 mm dan panjang 500 mm. Dengan percobaan ini akan diperoleh kepadatan relatif relative density, sudut geser tanah φ berdasarkan nilai.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Eksplorasi Bawah Permukaan Dengan Uji Standar dan Uji" data-src="https://i2.wp.com/indonesian.explorationcoredrilling.com/photo/pl16979113-subsurface_exploration_using_the_standard_penetration_test_and_the_cone_penetrometer_test.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: indonesian.explorationcoredrilling.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Spt (standard penetration test) for driving a split barrel sampler to obtain a refresentative soil sampler and measure of the soil resistance to penetration. Cara ini dilakukan dengan cara memukul tabung standar ke dalan lubang. Standard penetration test kita tidak diragukan lagi bahwa salah satu aspek terpenting dalam geoteknik adalah penyelidikan tanah yang baik dan benar. Prinsip pelaksanaan uji penetrasi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="JASA BORING SPT" data-src="https://i2.wp.com/sondir.co.id/wp-content/uploads/2020/03/Jasa-Boring-SPT-26-1-1024x767.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sondir.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dalam pengujian ini didasarkan dari prinsip kapilaritas, yaitu masuk serta keluarnya cairan penetrant ke dalam diskontinuitas dan dari kontinuitas ke permukaan. Analisa data dan pembahasan 3.1. Standar ini menetapkan cara uji penetrasi lapangan dengan spt, untuk memperoleh parameter perlawanan penetrasi lapisan tanah di lapangan dengan spt. Cara ini dilakukan dengan cara memukul tabung standar ke dalan lubang. Dengan percobaan ini.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Automatic Trip SPT Hammer Untuk Investigasi Tanah Uji Standar" data-src="https://i2.wp.com/indonesian.explorationcoredrilling.com/photo/pl29739050-automatic_trip_spt_hammer_for_standard_penetration_test_soil_investigation.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: indonesian.explorationcoredrilling.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Salah satu uji lapangan yang dapat dikatakan hampir selalu dilakukan dalam setiap penyelidikan tanah di indonesia adalah uji penetrasi standar (standard penetrotion test. Tujuan untuk memperoleh parameter perlawanan penetrasi lapisan tanah di lapangan dengan spt, yang dapat dipergunakan untuk identifikasi perlapisan tanah yang merupakan bagian dari desain fondasi. Standar penetrasi tanah berkohesi keuntungan dan kerugian spt (standart penetration test. Spt.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="CUP&#039;S April 2012" data-src="https://i2.wp.com/1.bp.blogspot.com/-R8l5sKCyVMg/T3po4QuDVXI/AAAAAAAAASc/sPOquy6K52A/s1600/dscn3011.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: luiheisei.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Apabila kita melihat ke belakang, sejarah uji penetrant ini bermula ketika awal tahun 1900 an metode kapilaritas digunakan dalam industri perkeretaapian untuk memeriksa komponen mesin pada lokomotip, ketika itu uji penetrant masih disebut dengan metoda “minyak dan kapur”, hal ini dikarenakan untuk pengaplikasiannya menggunakan minyak. Hubungan penetrasi standar dengan sudut geser tanah dan kepadatan relatif untuk tanah berpasir, dilihat pada.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="OEM SPT Sampler Automatic Trip Hammer Untuk Investigasi Tanah Uji" data-src="https://i2.wp.com/indonesian.explorationcoredrilling.com/photo/pl29739055-oem_spt_sampler_automatic_trip_hammer_for_standard_penetration_test_soil_investigation.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: indonesian.explorationcoredrilling.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Spt (standard penetration test) adalah salah satu jenis uji tanah yang sering digunakan untuk mengetahui daya dukung tanah selain cpt Pengujian standrad penetration test (spt) pada proyek pembangunan jembatan sei wampu dilakukan sebanyak 8 titik. Standard penetration test spt adalah sejenis percobaan dinamis dengan memasukkan suatu alat yang dinamakan split spoon ke dalam tanah. Hindiarti rizki kurnia pradana nurul ali.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) UJI STANDAR (SPT mr prof Academia.edu" data-src="https://i2.wp.com/0.academia-photos.com/attachment_thumbnails/54255568/mini_magick20190117-18908-dehy0r.png?1547775111" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.academia.edu</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dengan percobaan ini akan diperoleh kepadatan relatif relative density, sudut geser tanah φ berdasarkan nilai jumlah pukulan n. Sesuai sni sni 4153:200 berikut ini sop dalam pengujian tanah lapangan dengan metode spt, yaitu. Di seluruh dunia, ini adalah tes tanah yang paling populer untuk eksplorasi bawah permukaan. Hubungan kepadatan relatif, sudut geser tanah dan nilai n dari pasir dapat dilihat..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Metode Uji Standar Untuk Uji Standar SPT Dan Pengambilan" data-src="https://i2.wp.com/indonesian.explorationcoredrilling.com/photo/pl17011396-standard_test_method_for_standard_penetration_test_spt_and_split_barrel_sampling_of_soils.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: indonesian.explorationcoredrilling.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Spt (standard penetration test) adalah salah satu jenis uji tanah yang sering digunakan untuk mengetahui daya dukung tanah selain cpt Kerangka kerja osstmm (open source security testing methodology manual), merupakan salah satu standar yang paling dikenal di industri, menyediakan metodologi ilmiah untuk pengujian penetrasi jaringan dan penilaian. Standar penetrasi tanah berkohesi keuntungan dan kerugian spt (standart penetration test. Prinsip pelaksanaan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Alat Uji Standar SPT Travel Hammer 2 &quot;63.5kg untuk Sampling Tanah" data-src="https://i2.wp.com/indonesian.explorationcoredrilling.com/photo/pl18207356-standard_penetration_test_equipment_spt_travel_hammer_2_63_5kg_for_soil_sampling.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: indonesian.explorationcoredrilling.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Apabila kita melihat ke belakang, sejarah uji penetrant ini bermula ketika awal tahun 1900 an metode kapilaritas digunakan dalam industri perkeretaapian untuk memeriksa komponen mesin pada lokomotip, ketika itu uji penetrant masih disebut dengan metoda “minyak dan kapur”, hal ini dikarenakan untuk pengaplikasiannya menggunakan minyak. Berikut adalah 5 metodologi dan standar pengujian penetrasi testing yang akan menjamin pengembalian investasi anda:.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Soil Test dan Tujuan Pengambilan Sample Tanah Pada Dunia Konstruksi" data-src="https://i1.wp.com/solusikonstruksi.com/wp-content/uploads/2020/08/alat-soil-test.jpg?resize=886%2C669&amp;ssl=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: solusikonstruksi.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji spt (standard penetration test). (2.14) angka penetrasi sebagai pedoman dalam eksplorasi tanah dan untuk memperkirakan kondisi lapisan tanah. Standard penetration test spt adalah sejenis percobaan dinamis dengan memasukkan suatu alat yang dinamakan split spoon ke dalam tanah. Kerangka kerja osstmm (open source security testing methodology manual), merupakan salah satu standar yang paling dikenal di industri, menyediakan metodologi ilmiah untuk.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-tener-muchos-estornudos.html" class="be-post-title">
+				 <h6>que significa tener muchos estornudos </h6>
+                </a>
+                <a href="que-significa-tener-muchos-estornudos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20tener%20muchos%20estornudos&amp;w=50&amp;h=50&amp;c=7" alt="que significa tener muchos estornudos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="problem-nedir-ne-demek-ingilizcesi.html" class="be-post-title">
+				 <h6>problem nedir ne demek ingilizcesi </h6>
+                </a>
+                <a href="problem-nedir-ne-demek-ingilizcesi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=problem%20nedir%20ne%20demek%20ingilizcesi&amp;w=50&amp;h=50&amp;c=7" alt="problem nedir ne demek ingilizcesi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="para-que-sirve-sorgo.html" class="be-post-title">
+				 <h6>para que sirve sorgo </h6>
+                </a>
+                <a href="para-que-sirve-sorgo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=para%20que%20sirve%20sorgo&amp;w=50&amp;h=50&amp;c=7" alt="para que sirve sorgo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cuales-son-versos-y-estrofas-de-un-poema.html" class="be-post-title">
+				 <h6>cuales son versos y estrofas de un poema </h6>
+                </a>
+                <a href="cuales-son-versos-y-estrofas-de-un-poema.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cuales%20son%20versos%20y%20estrofas%20de%20un%20poema&amp;w=50&amp;h=50&amp;c=7" alt="cuales son versos y estrofas de un poema">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-ejido-en-méxico.html" class="be-post-title">
+				 <h6>que es un ejido en méxico </h6>
+                </a>
+                <a href="que-es-un-ejido-en-méxico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20ejido%20en%20m%C3%A9xico&amp;w=50&amp;h=50&amp;c=7" alt="que es un ejido en méxico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-contrato-de-arrendamiento-de-vivienda.html" class="be-post-title">
+				 <h6>que es un contrato de arrendamiento de vivienda </h6>
+                </a>
+                <a href="que-es-un-contrato-de-arrendamiento-de-vivienda.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20contrato%20de%20arrendamiento%20de%20vivienda&amp;w=50&amp;h=50&amp;c=7" alt="que es un contrato de arrendamiento de vivienda">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-hacer-una-empresa-en-estados-unidos.html" class="be-post-title">
+				 <h6>como hacer una empresa en estados unidos </h6>
+                </a>
+                <a href="como-hacer-una-empresa-en-estados-unidos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20hacer%20una%20empresa%20en%20estados%20unidos&amp;w=50&amp;h=50&amp;c=7" alt="como hacer una empresa en estados unidos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-suite-en-un-hotel.html" class="be-post-title">
+				 <h6>que es una suite en un hotel </h6>
+                </a>
+                <a href="que-es-una-suite-en-un-hotel.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20suite%20en%20un%20hotel&amp;w=50&amp;h=50&amp;c=7" alt="que es una suite en un hotel">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-relampago.html" class="be-post-title">
+				 <h6>que es el relampago </h6>
+                </a>
+                <a href="que-es-el-relampago.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20relampago&amp;w=50&amp;h=50&amp;c=7" alt="que es el relampago">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-mejor-minecraft-java-edition-o-windows-10.html" class="be-post-title">
+				 <h6>que es mejor minecraft java edition o windows 10 </h6>
+                </a>
+                <a href="que-es-mejor-minecraft-java-edition-o-windows-10.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20mejor%20minecraft%20java%20edition%20o%20windows%2010&amp;w=50&amp;h=50&amp;c=7" alt="que es mejor minecraft java edition o windows 10">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

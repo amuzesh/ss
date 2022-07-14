@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Apa Itu Carik at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Apa Itu Carik",
+  "datePublished": "2022-04-29T04:26:00Z",
+  "image": "https://tse1.mm.bing.net/th?q=apa%20itu%20carik",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=apa%20itu%20carik&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=apa%20itu%20carik" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=apa%20itu%20carik" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Apa Itu Carik at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Apa Itu Carik</h2>
+    <p><strong>Apa Itu Carik</strong>. Secara tradisional, di dalamnya termasuk lurah (kepala desa, kades), carik (sekretaris desa, sekdes), kebayan, dukuh (kepala dusun, kadus), serta beberapa orang pembantu yang biasa disebut sebagai kepala urusan atau kepala seksi (kaur atau kasi,. Tanah bengkok pun dinilai merupakan tanah yang dimiliki oleh desa yang menjadi kekayaan desa.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=apa%20itu%20carik" alt="Carik Carik Bulu Ayam Akhirnya Bercantum Juga Sama Maksud / Peribahasa" />
+        <br>
+        <figcaption>Carik Carik Bulu Ayam Akhirnya Bercantum Juga Sama Maksud / Peribahasa from nothingbutthesadtruths.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Dalam kesempatan tersebut, anies menjelaskan, nama carik diambil dari bahasa daerah yang berarti juru tulis. Menurut pasal 1 angka 10 permendagri 4/2007, dijelaskan bahwa tanah desa adalah barang milik desa berupa tanah bengkok, kuburan, dan titisara. Didalamnya terdapat perangkat desa dimana perangkat desa ini bertugas membantu kepala desa dalam melaksanakan tugas dan wewenangnya.
+    </p>
+    <h3>Carik Carik Bulu Ayam Akhirnya Bercantum Juga Sama Maksud / Peribahasa</h3>
+    <p>1 desember 2017 oleh anita. Aplikasi carik jakarta mandiri tersedia di play store dikhususkan bagi kader dasawisma. Secara tradisional, di dalamnya termasuk lurah (kepala desa, kades), carik (sekretaris desa, sekdes), kebayan, dukuh (kepala dusun, kadus), serta beberapa orang pembantu yang biasa disebut sebagai kepala urusan atau kepala seksi (kaur atau kasi,. Bantuan penjelasan simbol huruf yang ada dalam arti kata carik terkait, dari berbagai simbol huruf ini semoga bisa mudah untuk dipahami sehingga anda akan lebih mudah dalam mengartikan kata.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Apa Itu Dasawisma Pokja PKK" data-src="https://i2.wp.com/lookaside.fbsbx.com/lookaside/crawler/media/?media_id=145673993862344" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: pokjapkk.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Carik jakarta mandiri adalah sebuah aplikasi untuk melakukan pendataan keluarga dasa wisma pkk provinsi dki jakarta. Misalnya apa yang dicari adalah water, minyak, dissolve, sehingga hasil pencarian yang akan ditampilkan adalah minyak dan membubarkan hanya. Bantuan penjelasan simbol huruf yang ada dalam arti kata carik terkait, dari berbagai simbol huruf ini semoga bisa mudah untuk dipahami sehingga anda akan lebih.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Apa Carik Mart &quot;Ini harus Kita kejar &amp; kerjakan, mumpung..." data-src="https://i2.wp.com/lookaside.fbsbx.com/lookaside/crawler/media/?media_id=702010617031102&amp;get_thumbnail=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.facebook.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kamis, 12 agustus 2021 11:19 wib. Aplikasi carik jakarta mandiri tersedia di play store dikhususkan bagi kader dasawisma. Bagi masyarakat jakarta, berikut cara memasukkan data kependudukan menggunakan carik jakarta. Misalnya apa yang dicari adalah water, minyak, dissolve, sehingga hasil pencarian yang akan ditampilkan adalah minyak dan membubarkan hanya. Semoga dapat membantu walau kurangnya jawaban pengertian lengkap untuk menyatakan artinya.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ngicipi Pak Carik.. SLiMS Bot Telegram Untuk Nyari Nomor Klasifikasi" data-src="https://i2.wp.com/3.bp.blogspot.com/-S5x0e66mlxU/WaZViafFrhI/AAAAAAAAG5A/sT1NpvLDsZU_qEsiNKk3LLTYkYtyfOYHQCLcBGAs/s1600/7.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: pustakawanjogja.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Definitions of words in indonesian and english. Aplikasi carik jakarta mandiri tersedia di play store dikhususkan bagi kader dasawisma. Selain itu, bahasa jawa juga dituturkan oleh sebagaian penduduk di wilayah pesisir karawang, subang, cirebon, indramayu, dan banten. Apa itu carik jakarta mandiri? Kamis, 12 agustus 2021 11:19 wib.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="walk on wings, tread in air This entry takde maksud nak perli sesaper" data-src="https://i2.wp.com/4.bp.blogspot.com/-hjW3hXxut7E/UGxT-2c1eQI/AAAAAAAAPcA/UvaqsdwLIlk/w1200-h630-p-k-no-nu/untitled.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.dianaishak.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Keluar atau masuk,dan membuat surat ekpedisi. Didalamnya terdapat perangkat desa dimana perangkat desa ini bertugas membantu kepala desa dalam melaksanakan tugas dan wewenangnya. Menurut pasal 1 angka 10 permendagri 4/2007, dijelaskan bahwa tanah desa adalah barang milik desa berupa tanah bengkok, kuburan, dan titisara. Definitions of words in indonesian and english. Jumlah ibu hamil, ibu nifas, ibu menyusui, dan partisipasi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="APA ITU LABORATORIUM KLINIK? Afiat Medika Farma" data-src="https://i2.wp.com/afiat-medika.com/wp-content/uploads/2020/10/030.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: afiat-medika.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">By ngadmin posted on october 26, 2021. Dalam kesempatan tersebut, anies menjelaskan, nama carik diambil dari bahasa daerah yang berarti juru tulis. Berikut ini adalah arti, makna, pengertian, definisi dari kata  carik  menurut kamus besar bahasa indonesia (kbbi) online dan menurut para ahli bahasa. Carik memiliki arti dalam kelas adjektiva atau kata sifat sehingga carik dapat mengubah kata benda atau.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Apa Itu Dasawisma Pokja PKK" data-src="https://i2.wp.com/lookaside.fbsbx.com/lookaside/crawler/media/?media_id=145961617166915" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: pokjapkk.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jumlah ibu hamil, ibu nifas, ibu menyusui, dan partisipasi warga dalam berbagai kelompok kegiatan (poktan) bkkbn. Carik jakarta mandiri adalah sebuah aplikasi untuk melakukan pendataan keluarga dasa wisma pkk provinsi dki jakarta. Habislah pecah ~ seluar dan baju kertasnya; Obrolan kita hari ini adalah rangkain dari obrolan #artikata tentang kamus besar bahasa indonesia. Kader dasawisma akan membagikan tautan pendataan bagi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Carik musuh bermuda itu sulit??.apa lagi di hari raya. YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/bPTWP4kJCkI/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Secara tradisional, di dalamnya termasuk lurah (kepala desa, kades), carik (sekretaris desa, sekdes), kebayan, dukuh (kepala dusun, kadus), serta beberapa orang pembantu yang biasa disebut sebagai kepala urusan atau kepala seksi (kaur atau kasi,. Melalui dinas pemberdayaan, perlindungan anak dan pengendalian penduduk (dppapp) dan pemberdayaan kesejahteraan keluarga (pkk), pemerintah provinsi dki jakarta meluncurkan aplikasi carik jakarta sebagai pendataan keluarga terpadu.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Apa Carik Mart APA SAJA YANG KAMU BUTUH, LIHAT2 DULU DI..." data-src="https://i2.wp.com/lookaside.fbsbx.com/lookaside/crawler/media/?media_id=101193421258795" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.facebook.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Selain itu, berikut ini tugas sekretaris desa yang wajib anda pahami dan laksanakan. Pemanfaatan tanah carik untuk sewa 2. Synomyms, dictionary, sinonim, kamus, dan. Dalam kesempatan tersebut, anies menjelaskan, nama carik diambil dari bahasa daerah yang berarti juru tulis. Kelurahan di kota yogyakarta tidak berganti nama.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Nasa Buat Akun Instagram, Hadirkan Foto Indah Luar Angkasa Apa Carik?" data-src="https://i2.wp.com/4.bp.blogspot.com/-YO_QbgDMPGY/Uiv43MRuy3I/AAAAAAAAALA/klaOWQkt8xw/s1600/nasa-130907c.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: apa-carik.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Didalamnya terdapat perangkat desa dimana perangkat desa ini bertugas membantu kepala desa dalam melaksanakan tugas dan wewenangnya. Carik jakarta adalah integrasi pelayanan kesejahteraan keluarga satu pintu melalui dasawisma yang merupakan kader pkk (pemberdayaan kesejahteraan keluarga) dki jakarta. Secara tradisional, di dalamnya termasuk lurah (kepala desa, kades), carik (sekretaris desa, sekdes), kebayan, dukuh (kepala dusun, kadus), serta beberapa orang pembantu yang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Carik Carik Bulu Ayam Akhirnya Bercantum Juga Sama Maksud / Peribahasa" data-src="https://i2.wp.com/cdn.cupdf.com/img/1200x630/reader024/reader/2021021916/563db891550346aa9a94e013/r-1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: nothingbutthesadtruths.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sebagai salah satu tindakan nyata buat lestariin setiap kekayaan indonesia khususnya budaya dan bahasa. Berikut ini adalah arti, makna, pengertian, definisi dari kata  carik  menurut kamus besar bahasa indonesia (kbbi) online dan menurut para ahli bahasa. Berikut ini adalah arti, makna, pengertian, definisi dari kata  carik  menurut kamus besar bahasa indonesia (kbbi) online dan menurut para ahli bahasa. Tanah bengkok.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="orkestra-adalah.html" class="be-post-title">
+				 <h6>orkestra adalah </h6>
+                </a>
+                <a href="orkestra-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=orkestra%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="orkestra adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-dagmaat-garagedeur.html" class="be-post-title">
+				 <h6>wat is dagmaat garagedeur </h6>
+                </a>
+                <a href="wat-is-dagmaat-garagedeur.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20dagmaat%20garagedeur&amp;w=50&amp;h=50&amp;c=7" alt="wat is dagmaat garagedeur">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="qué-es-sifonales.html" class="be-post-title">
+				 <h6>qué es sifonales </h6>
+                </a>
+                <a href="qué-es-sifonales.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=qu%C3%A9%20es%20sifonales&amp;w=50&amp;h=50&amp;c=7" alt="qué es sifonales">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-funciona-minecraft.html" class="be-post-title">
+				 <h6>como funciona minecraft </h6>
+                </a>
+                <a href="como-funciona-minecraft.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20funciona%20minecraft&amp;w=50&amp;h=50&amp;c=7" alt="como funciona minecraft">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-push.html" class="be-post-title">
+				 <h6>que es un push </h6>
+                </a>
+                <a href="que-es-un-push.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20push&amp;w=50&amp;h=50&amp;c=7" alt="que es un push">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="types-of-risers.html" class="be-post-title">
+				 <h6>types of risers </h6>
+                </a>
+                <a href="types-of-risers.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=types%20of%20risers&amp;w=50&amp;h=50&amp;c=7" alt="types of risers">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-hacer-pierna-en-el-gym.html" class="be-post-title">
+				 <h6>como hacer pierna en el gym </h6>
+                </a>
+                <a href="como-hacer-pierna-en-el-gym.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20hacer%20pierna%20en%20el%20gym&amp;w=50&amp;h=50&amp;c=7" alt="como hacer pierna en el gym">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significan-las-siglas-m-k-s-en-fisica.html" class="be-post-title">
+				 <h6>que significan las siglas m.k.s. en fisica </h6>
+                </a>
+                <a href="que-significan-las-siglas-m-k-s-en-fisica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significan%20las%20siglas%20m.k.s.%20en%20fisica&amp;w=50&amp;h=50&amp;c=7" alt="que significan las siglas m.k.s. en fisica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-interface-grafica.html" class="be-post-title">
+				 <h6>que es una interface grafica </h6>
+                </a>
+                <a href="que-es-una-interface-grafica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20interface%20grafica&amp;w=50&amp;h=50&amp;c=7" alt="que es una interface grafica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-cambaceo-yahoo.html" class="be-post-title">
+				 <h6>que es el cambaceo yahoo </h6>
+                </a>
+                <a href="que-es-el-cambaceo-yahoo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20cambaceo%20yahoo&amp;w=50&amp;h=50&amp;c=7" alt="que es el cambaceo yahoo">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

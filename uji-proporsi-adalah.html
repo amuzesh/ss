@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Proporsi Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Proporsi Adalah",
+  "datePublished": "2022-03-30T15:00:27Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20proporsi%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20proporsi%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20proporsi%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20proporsi%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Proporsi Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Proporsi Adalah</h2>
+    <p><strong>Uji Proporsi Adalah</strong>. P p o h 1 : Uji hipotesis komparatif adalah salah satu pengujian hipotesis yang sering digunakan dalam berbagai.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20proporsi%20adalah" alt="Contoh Soal Uji T Dua Sampel Dikdasmen" />
+        <br>
+        <figcaption>Contoh Soal Uji T Dua Sampel Dikdasmen from dikdasmen.my.id</figcaption>
+    </figure>
+        <p>
+        Tujuan uji hipotesis adalah untuk memutuskan apakah hipotesis yang diuji ditolak atau diterima. Dalam penelitian ini karakteristik corporate governance yang digunakan adalah kualitas audit, proporsi dewan komisaris independen, kepemilikan institusional, dan kepemilikan manajerial. Uji proporsi 1 populasi dan 2 populasi;
+    </p>
+    <h3>Contoh Soal Uji T Dua Sampel Dikdasmen</h3>
+    <p>Alternatifnya adalah p &lt; p0,p &gt; p0 p &lt; p 0, p &gt; p 0, atau p ≠ p0 p ≠ p 0. Uji hipotesis komparatif adalah salah satu pengujian hipotesis yang sering digunakan dalam berbagai. Apabila bentuk hipotesisnya adalah uji beda atau uji yang mengukur ada tidaknya perbedaan antara dua kelompok atau beberapa kelompok, baik kelompok bebas maupun berpasangan, maka harus digunakan uji komparatif. Uji proporsi proporsi adalah suatu pecahan, rasio atau persentase yang menunjukkan suatu bagian populasi atau sampel yang mempunyai sifat luas.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pengertian Uji Hipotesis dan Jenisjenisnya" data-src="https://i2.wp.com/teknikelektronika.com/wp-content/uploads/2015/05/Rumus-Uji-Hipotesis.jpg?x22079" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: teknikelektronika.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tujuan uji hipotesis adalah untuk memutuskan apakah hipotesis yang diuji ditolak atau diterima. Akhlis faidhul ulum ( 4101420205 ) pengantar hipotesis adalah asumsi atau dugaan mengenai suatu hal yang dibuat untuk menjelaskan suatu hal dengan melakukan pengecekan secara matematis. Tugas kelompok ii uji proporsi beberapa populasi nama kelompok : P = p o lawan h 1 : Uji beda membandingkan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Uji T Dua Sampel Dikdasmen" data-src="https://i2.wp.com/i.ytimg.com/vi/vcWziU7okAw/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dikdasmen.my.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji proporsi proporsi adalah suatu pecahan, rasio atau persentase yang menunjukkan suatu bagian populasi atau sampel yang mempunyai sifat luas. Bobby triki novandra 13.7537 2. Kasus ini adalah kasus menaksir peluang p sukses pada data yang berdistribusi binomial. Apabila skala datanya ordinal atau nominal, dengan kata lain bukan interval atau rasio, maka disebut uji komparatif non parametris. Tugas kelompok ii.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Uji Hipotesis Dua Pihak Contoh Soal Terbaru" data-src="https://i2.wp.com/lh6.googleusercontent.com/proxy/3lxRengDUBefO5-C8J0Kk2O1zPYoIrDJddGr9q2M4_unkgs6ALHwrQDsmJfbt6_H2Qy9JUVPBYVfNiHEuNJ6lHVA7M3_mSpA1ZMJW8zVS96i9VEiDcdEy6yJvg_VrJ5gIQRwMCMfAMXkyzDGweuD-wmZ8w2MWagdLOReuQoVSPH3nzzq7SsPAgxEuT4kS8OouvQCmhLvgWmqipSWAeaFZVU04XytwsR6XQn5PbEXewg9u0M_fnBwKw=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: barucontohsoal.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji hipotesis merupakan bagian dari statistik inferensial yang bertujuan untuk menarik kesimpulan. Hipotesisnya adalah (uji satu arah) h 0: Dina atika rahmawati 13.7585 3. P 1 = p 2. P &gt; 0.5 (proporsi kucing oren jantan lebih banyak) 2.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="24++ Contoh Soal Uji Hipotesis Distribusi Normal Kumpulan Contoh Soal" data-src="https://i2.wp.com/miro.medium.com/max/1222/0*gmlywPrf3455ag59.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: teamhannamy.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bobby triki novandra 13.7537 2. Sebagai contoh adalah suatu survei tentang tingkat pendidikan konsumen dengan mengambil sampel 70 orang, 30 orang dinyatakan berpendidikan smu. P = p0 h 0: Hipotesis terdiri dari dua bentuk, yaitu hipotesis untuk uji dua arah dan hipotesis untuk uji satu arah. Tingkat signifikansi 5% atau 0.05.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="UJI PROPORSI DUA SAMPEL" data-src="https://i2.wp.com/image.slidesharecdn.com/presentasiujiproporsiduasampel-150604173227-lva1-app6892/95/uji-proporsi-dua-sampel-3-638.jpg?cb=1433439560" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Disajikan dalam tabel berikut : P = 0.5 (proporsi kucing oren jantan dan betina tidak berbeda) h 1: Ini namanya uji beda proporsi, dengan 2 proporsi. Dari sampel berukuran n yang diperoleh. Akhlis faidhul ulum ( 4101420205 ) pengantar hipotesis adalah asumsi atau dugaan mengenai suatu hal yang dibuat untuk menjelaskan suatu hal dengan melakukan pengecekan secara matematis.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="UJI PROPORSI DUA SAMPEL" data-src="https://i2.wp.com/image.slidesharecdn.com/presentasiujiproporsiduasampel-150604173227-lva1-app6892/95/uji-proporsi-dua-sampel-8-638.jpg?cb=1433439560" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sebagai contoh adalah suatu survei tentang tingkat pendidikan konsumen dengan mengambil sampel 70 orang, 30 orang dinyatakan berpendidikan smu. Tujuan uji hipotesis adalah untuk memutuskan apakah hipotesis yang diuji ditolak atau diterima. Uji hipotesis adalah salah satu cabang dari ilmu statistika inferensial yang dipakai untuk melakukan pengujian terhadap kebenaran suatu kalimat,. Artinya, kasus ini adalah kasus menaksir proporsi populasi dengan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="UJI PROPORSI DUA SAMPEL" data-src="https://i2.wp.com/image.slidesharecdn.com/presentasiujiproporsiduasampel-150604173227-lva1-app6892/95/uji-proporsi-dua-sampel-2-638.jpg?cb=1433439560" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">P = 0.5 (proporsi kucing oren jantan dan betina tidak berbeda) h 1: Setelah itu dapat digunakan persamaan yang merupakan substitusi nilai pada persamaan dan mengubah fungsi untuk mendapatkan nilai n maka didapatkan rumus: Dilakukan pengecekan untuk melihat kenyataannya. Uji proporsi proporsi adalah suatu pecahan, rasio atau persentase yang menunjukkan suatu bagian populasi atau sampel yang mempunyai sifat luas. Pengujian.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="UJI PROPORSI DUA SAMPEL" data-src="https://i2.wp.com/reader021.dokumen.tips/reader021/slide/20170817/55d0840bbb61ebba7d8b46ec/document-4.png?t=1592171169" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dokumen.tips</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sebagai contoh adalah suatu survei tentang tingkat pendidikan konsumen dengan mengambil sampel 70 orang, 30 orang dinyatakan berpendidikan smu. Pengujian proporsi dua sampel atau 2 proportion test; Artinya, kasus ini adalah kasus menaksir proporsi populasi dengan cara : P = p o lawan h 1 : Hipotesisnya adalah (uji satu arah) h 0:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="UJI PROPORSI DUA SAMPEL" data-src="https://i2.wp.com/reader021.dokumen.tips/reader021/slide/20170817/55d0840bbb61ebba7d8b46ec/document-5.png?t=1592171169" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dokumen.tips</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Berikut adalah hasil dari penghitungan penaksiran parameter dan pengujian hipotesis proporsi. Uji proporsi satu populasi digunakan untuk melihat apakah proporsi suatu populasi sudah sesuai dengan nilai acuan yang diberikan. Tentukan tingkat signifikansi α α. Uji hipotesis adalah sebuah proses untuk melakukan evaluasi kekuatan bukti dari sampel, dan memberikan dasar untuk membuat keputusan terkait dengan populasinya. Jenis pengujian ini dipakai untuk.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Uji T Satu Sampel dan Dua Sampel Fatkhan.web.id" data-src="https://i2.wp.com/fatkhan.web.id/wp-content/uploads/2017/04/Fatkhan.web_.id-Uji-T.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: fatkhan.web.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Setelah itu dapat digunakan persamaan yang merupakan substitusi nilai pada persamaan dan mengubah fungsi untuk mendapatkan nilai n maka didapatkan rumus: Apabila bentuk hipotesisnya adalah uji beda atau uji yang mengukur ada tidaknya perbedaan antara dua kelompok atau beberapa kelompok, baik kelompok bebas maupun berpasangan, maka harus digunakan uji komparatif. Dina atika rahmawati 13.7585 3. Dari sampel berukuran n yang.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="karsinoma-in-situ-nedir.html" class="be-post-title">
+				 <h6>karsinoma in situ nedir </h6>
+                </a>
+                <a href="karsinoma-in-situ-nedir.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=karsinoma%20in%20situ%20nedir&amp;w=50&amp;h=50&amp;c=7" alt="karsinoma in situ nedir">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-contar-el-numero-de-estrofas-en-un-poema.html" class="be-post-title">
+				 <h6>como contar el numero de estrofas en un poema </h6>
+                </a>
+                <a href="como-contar-el-numero-de-estrofas-en-un-poema.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20contar%20el%20numero%20de%20estrofas%20en%20un%20poema&amp;w=50&amp;h=50&amp;c=7" alt="como contar el numero de estrofas en un poema">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-complain-to-the-financial-ombudsman-service.html" class="be-post-title">
+				 <h6>how to complain to the financial ombudsman service </h6>
+                </a>
+                <a href="how-to-complain-to-the-financial-ombudsman-service.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20complain%20to%20the%20financial%20ombudsman%20service&amp;w=50&amp;h=50&amp;c=7" alt="how to complain to the financial ombudsman service">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="was-ist-ein-aufklärungsflugzeug.html" class="be-post-title">
+				 <h6>was ist ein aufklärungsflugzeug </h6>
+                </a>
+                <a href="was-ist-ein-aufklärungsflugzeug.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=was%20ist%20ein%20aufkl%C3%A4rungsflugzeug&amp;w=50&amp;h=50&amp;c=7" alt="was ist ein aufklärungsflugzeug">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="q-es-un-amigo-verdadero.html" class="be-post-title">
+				 <h6>q es un amigo verdadero </h6>
+                </a>
+                <a href="q-es-un-amigo-verdadero.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=q%20es%20un%20amigo%20verdadero&amp;w=50&amp;h=50&amp;c=7" alt="q es un amigo verdadero">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-cuarteto-en-los-poemas.html" class="be-post-title">
+				 <h6>que es cuarteto en los poemas </h6>
+                </a>
+                <a href="que-es-cuarteto-en-los-poemas.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20cuarteto%20en%20los%20poemas&amp;w=50&amp;h=50&amp;c=7" alt="que es cuarteto en los poemas">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="uji-balistik-adalah.html" class="be-post-title">
+				 <h6>uji balistik adalah </h6>
+                </a>
+                <a href="uji-balistik-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=uji%20balistik%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="uji balistik adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-trabajo-de-cambaceo.html" class="be-post-title">
+				 <h6>que es trabajo de cambaceo </h6>
+                </a>
+                <a href="que-es-trabajo-de-cambaceo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20trabajo%20de%20cambaceo&amp;w=50&amp;h=50&amp;c=7" alt="que es trabajo de cambaceo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-simil-en-un-poema-ejemplos.html" class="be-post-title">
+				 <h6>que es un simil en un poema ejemplos </h6>
+                </a>
+                <a href="que-es-un-simil-en-un-poema-ejemplos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20simil%20en%20un%20poema%20ejemplos&amp;w=50&amp;h=50&amp;c=7" alt="que es un simil en un poema ejemplos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-gezinslid.html" class="be-post-title">
+				 <h6>wat is een gezinslid </h6>
+                </a>
+                <a href="wat-is-een-gezinslid.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20gezinslid&amp;w=50&amp;h=50&amp;c=7" alt="wat is een gezinslid">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

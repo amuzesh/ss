@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Pama Polri Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Pama Polri Adalah",
+  "datePublished": "2022-06-02T01:23:47Z",
+  "image": "https://tse1.mm.bing.net/th?q=pama%20polri%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=pama%20polri%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=pama%20polri%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=pama%20polri%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Pama Polri Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Pama Polri Adalah</h2>
+    <p><strong>Pama Polri Adalah</strong>. Perwira pertama (pama) polri terdiri dari: Pamen polri terdiri dari komisaris besar, ajun komisaris besar, dan komisaris.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=pama%20polri%20adalah" alt="Kapolres Kediri AKBP Roni Faisal S.I.K. Pergantian perwira di" />
+        <br>
+        <figcaption>Kapolres Kediri AKBP Roni Faisal S.I.K. Pergantian perwira di from tarunanews.com</figcaption>
+    </figure>
+        <p>
+        Lalu, apa saja kewenangan polri itu? Sebagai informasi, pangkat polisi adalah daftar tanda pangkat dan jenjang kepangkatan yang digunakan oleh kepolisian negara republik indonesia (polri). Mereka yang dimutasi di yanma karena tersandung kasus.
+    </p>
+    <h3>Kapolres Kediri AKBP Roni Faisal S.I.K. Pergantian perwira di</h3>
+    <p>Jenderal polisi, komisaris jenderal polisi, inspektur polisi dan brigadir jenderal polisi. Berikut ini uraian kepangkatan polri dikutip dari laman divisi hukum polri: Inspektur polisi satu (iptu), dan 3. Topi komanda pama pengasuh polri.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pergantian Pamen Pama Polri Daerah ANTARA Foto" data-src="https://i2.wp.com/v-images2.antarafoto.com/pergantian-pamen-pama-polri-daerah-pcvfks-hl.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.antarafoto.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Posisi paling bawah dalam golongan pama polri adalah ipda dengan lambang pangkat satu balok emas. Uu nomor 2 tahun 2002 tentang polri menyebut, calon kapolri adalah pati yang masih aktif dan pengangkatannya dengan memperhatikan jenjang kepangkatan dan karier. Perwira pertama (sering disingkat pama) merupakan golongan pangkat perwira yang paling rendah, terdiri dari inspektur dua, inspektur satu dan ajun komisaris polisi.;.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="3 Pama dan Pamen Disertijab, Polri Harus Berperan Aktif Palikopost" data-src="https://i2.wp.com/palikopost.com/wp-content/uploads/2020/06/IMG-20200611-WA0012-1140x525.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: palikopost.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Menurut keputusan kapolri tersebut, terdapat 22 tingkat kepangkatan dalam jajaran polri yang digolongkan menjadi 6 golongan. Rp 3.290.500 hingga rp 5.407.400. Golongan kepangkatan perwira sebagaimana dimaksud dalam pasal 3 huruf a meliputi: Topi komanda pama pengasuh polri. Jabatan ini merupakan tingkat posisi yang paling tinggi pada polri.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tiga Pama Polres Tebo Dimutasi" data-src="https://i2.wp.com/2.bp.blogspot.com/-rOzJwQgxY-8/W2LXj9PRwOI/AAAAAAAAAcU/nnBg7iB8xQYIgOBLlP5jaS7S4Q6KJ7OugCLcBGAs/w1200-h630-p-k-no-nu/IMG-20180802-WA0058.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.portaltebo.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Perwira menengah (pamen) di bawah pati, terdapat pamen. Mengacu pada peraturan kapolri nomor 3 tahun 2016 tentang administrasi kepangkatan anggota kepolisian negara republik indonesia, yang dimaksud dengan pangkat adalah tingkat kedudukan yang mencerminkan peran, fungsi dan kemampuan, serta keabsahan wewenang dan tanggung jawab dalam penugasan. Topi komanda pama pengasuh polri. Lalu, apa saja kewenangan polri itu? Perubahan tanda kepangkatan polri.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Upacara Tradisi Wisuda Purna Bhakti Polri Pamen, Pama dan Brigadir" data-src="https://i2.wp.com/1.bp.blogspot.com/-F1Hgy7XT4a8/XS2RPh86leI/AAAAAAAAhdM/GIJigJxaY9oA6QaPPZG00nFxKyQ9x7YIQCLcBGAs/s1600/IMG_8206.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kabar.sanggau.go.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Nah itu dia besaran gaji pada perwira tni ad yang. Jadwal dan lokasi vaksinasi booster di jakarta 13 juli 2022; Pangkat pada jenjang ini diantaranya adalah: Perubahan tersebut berdasar pada surat keputusan kapolri no. Berikut ini adalah daftar tingkatan pangkat polisi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kapolres Kediri AKBP Roni Faisal S.I.K. Pergantian perwira di" data-src="https://i2.wp.com/tarunanews.com/wp-content/uploads/2019/11/IMG-20191120-WA00162-1024x675.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: tarunanews.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Perwira menengah (sering disingkat pamen) merupakan golongan pangkat perwira di antara perwira pertama dan perwira tinggi,. Posisi paling bawah dalam golongan pama polri adalah ipda dengan lambang pangkat satu balok emas. Komisaris polisi (kompol) perwira pertama (pama) polri terdiri dari: Berdasarkan peraturan kepolisian negara republik indonesia nomor 3 tahun 2016 pasal 4, tingkatan pangkat polisi tertinggi adalah pada. Dari dokter,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kapolda Jabar Sasaran Pengamanan Pada Tahun 2020 Adalah Pilkada" data-src="https://i2.wp.com/penaku.id/wp-content/uploads/2020/01/IMG-20200117-WA0018-1024x576.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: penaku.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Lahir di madiun, tanggal 18 mei 1967 adalah salah satu pejabat polri yang sejak 12 juni 2020 mengemban amanat sebagai karo pid divhumas polri. Perubahan tanda kepangkatan polri berdasarkan surat keputusan kapolri. Tingkatan pangkat polisi golongan kepangkatan bintara. Jadwal dan lokasi vaksinasi booster di jakarta 13 juli 2022; Perubahan tersebut berdasar pada surat keputusan kapolri nomor pol:.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="DALAM COMMANDER WISHNYA KAPOLDA GORONTALO TEKANKAN JAJARANNYA UNTUK" data-src="https://i2.wp.com/tribratanews.gorontalo.polri.go.id/wp-content/uploads/2020/02/2-4-768x512.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: humas.polri.go.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Menurut laman polres trenggalek, berdasarkan golongan, kepangkatan. Berikut ini adalah daftar tingkatan pangkat polisi pada golongan kepangkatan bintara menurut peraturan kepolisian negara republik indonesia nomor 3 tahun 2016. Barang selalu josss dari spbumiliter.thx pak william dan sukses. Berikut ini adalah testimonial asli tanpa rekayasa dari customer kami. Mereka yang dimutasi di yanma karena tersandung kasus.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kapolres Kediri AKBP Roni Faisal S.I.K. Pergantian perwira di" data-src="https://i2.wp.com/tarunanews.com/wp-content/uploads/2019/11/IMG-20191120-WA00192.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: tarunanews.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pamen polri terdiri dari komisaris besar, ajun komisaris besar, dan komisaris. Menurut keputusan kapolri tersebut, terdapat 22 tingkat kepangkatan dalam jajaran polri yang digolongkan menjadi 6 golongan. Warga tak tahu ada baku tembak di rumah irjen sambo, cctv mati dan tak dipasangi garis polisi. Menurut webster, pengertian dari fungsi kepolisian &#039; adalah function berarti performance the special work done by.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Inilah ,Wisuda Purnawira Bhakti Polri Personel Polda Kepri tahun 2018" data-src="https://i2.wp.com/mediatrias.com/wp-content/uploads/2018/07/WhatsApp-Image-2018-07-05-at-14.46.45-1024x682.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: mediatrias.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Perwira pertama (pama) polri terdiri dari: Nah itu dia besaran gaji pada perwira tni ad yang. Sementara, golongan kepangkatan tertinggi di polri adalah perwira tinggi (pati) berpangkat bintang empat di pundak, yakni jenderal polisi. Menurut webster, pengertian dari fungsi kepolisian &#039; adalah function berarti performance the special work done by a structure. Saat ini, penetapan tingkat pangkat polisi diatur dalam.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Upacara Tradisi Wisuda Purna Bhakti Polri Pamen, Pama dan Brigadir" data-src="https://i2.wp.com/1.bp.blogspot.com/-qGNhlE31OTo/XS2RYg5pQ5I/AAAAAAAAhdU/X75mi1MAqvsCmaM_UTh3rqLJDWKDhcQogCLcBGAs/s1600/IMG_8362.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kabar.sanggau.go.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Berikut ini adalah daftar tingkatan pangkat polisi pada golongan kepangkatan bintara menurut peraturan kepolisian negara republik indonesia nomor 3 tahun 2016. Tanda kepangkatan yang dipakai adalah tiga buah segitiga berwarna merah. Tanda kepangkatan polri yang digunakan sekarang adalah berdasarkan surat keputusan kapolri nomor pol: Polisi dengan pangkat akp dapat menduduki jabatan kasat di polres,. Tamtama kepala polri terdiri dari:</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-hacer-una-descripcion-de-un-trabajo.html" class="be-post-title">
+				 <h6>como hacer una descripcion de un trabajo </h6>
+                </a>
+                <a href="como-hacer-una-descripcion-de-un-trabajo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20hacer%20una%20descripcion%20de%20un%20trabajo&amp;w=50&amp;h=50&amp;c=7" alt="como hacer una descripcion de un trabajo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-co-en-quimica.html" class="be-post-title">
+				 <h6>que es co en quimica </h6>
+                </a>
+                <a href="que-es-co-en-quimica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20co%20en%20quimica&amp;w=50&amp;h=50&amp;c=7" alt="que es co en quimica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="is-there-a-legal-ombudsman.html" class="be-post-title">
+				 <h6>is there a legal ombudsman </h6>
+                </a>
+                <a href="is-there-a-legal-ombudsman.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=is%20there%20a%20legal%20ombudsman&amp;w=50&amp;h=50&amp;c=7" alt="is there a legal ombudsman">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="police-ombudsman-contact-number.html" class="be-post-title">
+				 <h6>police ombudsman contact number </h6>
+                </a>
+                <a href="police-ombudsman-contact-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=police%20ombudsman%20contact%20number&amp;w=50&amp;h=50&amp;c=7" alt="police ombudsman contact number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="ingilizcede-bunun-fiyatı-nedir-ne-demek.html" class="be-post-title">
+				 <h6>ingilizcede bunun fiyatı nedir ne demek </h6>
+                </a>
+                <a href="ingilizcede-bunun-fiyatı-nedir-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=ingilizcede%20bunun%20fiyat%C4%B1%20nedir%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="ingilizcede bunun fiyatı nedir ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="apa-itu-carik.html" class="be-post-title">
+				 <h6>apa itu carik </h6>
+                </a>
+                <a href="apa-itu-carik.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=apa%20itu%20carik&amp;w=50&amp;h=50&amp;c=7" alt="apa itu carik">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="eos-medical-abbreviation-low.html" class="be-post-title">
+				 <h6>eos medical abbreviation low </h6>
+                </a>
+                <a href="eos-medical-abbreviation-low.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=eos%20medical%20abbreviation%20low&amp;w=50&amp;h=50&amp;c=7" alt="eos medical abbreviation low">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-cat6-riser-cable-used-for.html" class="be-post-title">
+				 <h6>what is cat6 riser cable used for </h6>
+                </a>
+                <a href="what-is-cat6-riser-cable-used-for.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20cat6%20riser%20cable%20used%20for&amp;w=50&amp;h=50&amp;c=7" alt="what is cat6 riser cable used for">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-rol.html" class="be-post-title">
+				 <h6>wat is een rol </h6>
+                </a>
+                <a href="wat-is-een-rol.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20rol&amp;w=50&amp;h=50&amp;c=7" alt="wat is een rol">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="o-que-significa-cuba-libre.html" class="be-post-title">
+				 <h6>o que significa cuba libre </h6>
+                </a>
+                <a href="o-que-significa-cuba-libre.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=o%20que%20significa%20cuba%20libre&amp;w=50&amp;h=50&amp;c=7" alt="o que significa cuba libre">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

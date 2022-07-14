@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Canon Definition Psychology at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Canon Definition Psychology",
+  "datePublished": "2022-06-21T03:31:32Z",
+  "image": "https://tse1.mm.bing.net/th?q=canon%20definition%20psychology",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=canon%20definition%20psychology&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=canon%20definition%20psychology" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=canon%20definition%20psychology" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Canon Definition Psychology at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Canon Definition Psychology</h2>
+    <p><strong>Canon Definition Psychology</strong>. Adhering to scientific canon increases the chances of arriving at a. This theory of emotion states that an emotion is produced when some stimulus triggers the thalamus to send information simultaneously to the brain (specifically, the cerebral cortex) and the autonomic system (including the skeletal muscles).</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=canon%20definition%20psychology" alt="Cannon Bard Theory Of Emotion Example slideshare" />
+        <br>
+        <figcaption>Cannon Bard Theory Of Emotion Example slideshare from slidesharenow.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Theories of emotions as formulated by different psychologists are : Lloyd morgan&#039;s canon is the principle, suggested by the british comparative psychologist lioyd morgan in 1894, that any interpretation of an animal’s behaviour must be the simplest possible to account for what is observed. Morgan drew a distinction between (1) objectively testable inferences from animal behavior, which were scientific and (2) untestable speculations about animal minds.
+    </p>
+    <h3>Cannon Bard Theory Of Emotion Example slideshare</h3>
+    <p>A few theories are discussed in brief here under: Sarah has taught psychology at the college level and has a master&#039;s degree in counseling psychology. Apart from psychological processes, they also look into other ideas such as leadership, trust, and personality. Canon canon refers to bodies of information and theories that are generally accepted as facts and truth.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cannon Bard Theory Of Emotion Example slideshare" data-src="https://i2.wp.com/o.quizlet.com/2-umdIAXzsVW27xUyYKJ6A_b.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: slidesharenow.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Today, english language arts educators tend to focus on three of the five—invention. This was the prevailing theory before walter cannon and philip bard came around. In no case is an animal activity to be interpreted in terms of higher psychological processes if. This theory of emotion states that an emotion is produced when some stimulus triggers the thalamus to.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="😊 Cannon bard theory of emotion psychology. Psychology CANON. 20190226" data-src="https://i2.wp.com/image.slidesharecdn.com/chapter7motivationandemotion1-141109100916-conversion-gate01/95/chapter-7-motivation-and-emotion-1-13-638.jpg?cb=1415527972" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: talisman-intl.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The theory was developed in 1927 by walter b. A set of five principles of sound experimental science proposed by john stuart mill. Though each theory sounds true in its own way, no theory is comprehensive and adequate. A general rule or fundamental principle which applies to all, especially in a particular field such as science, religion, or art. To.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="😎 3 what is the cannon bard theory of emotion. James. 20190110" data-src="https://i2.wp.com/image.slidesharecdn.com/emotionsandstressss-140115070327-phpapp02/95/emotions-and-stress-9-638.jpg?cb=1389769573" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sakkampress.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A set of five principles of sound experimental science proposed by john stuart mill. The statement that morgan made was simple. In psychology, the catharsis hypothesis maintains that “releasing”. In 1894, the same year romanes died, c. This theory of emotion states that an emotion is produced when some stimulus triggers the thalamus to send information simultaneously to the brain.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="CannonBard Theory of Emotion" data-src="https://i2.wp.com/cdn.thinglink.me/api/image/514069857755463681/1240/10/scaletowidth" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.thinglink.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Because each of the principles enables the observer to eliminate potential causes, the general approach is often. Though each theory sounds true in its own way, no theory is comprehensive and adequate. In 1894, the same year romanes died, c. It is the thalamus which controls how emotions are experienced, and it is the hypothalamus which regulates how these emotions.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="JamesLange &amp; CannonBard Theories of Emotion Video &amp; Lesson" data-src="https://i2.wp.com/study.com/cimages/videopreview/james-lange-cannon-bard-theories-of-emotion_131933.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: study.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Theories of emotions as formulated by different psychologists are : As a standard rule and working principle, it leads one to make the right inferences. Cannon and his graduate student, philip bard. Some scholars note that today, in practical applications, many educators focus on some of the canons and disregard others. Canon canon refers to bodies of information and theories.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cannon Bard Theory Of Emotion Example slideshare" data-src="https://i2.wp.com/sites.google.com/site/hookappsychology/_/rsrc/1400602253066/emotion-by-gabriel-goldhagen/cannon-bard-theory/0115.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: slidesharenow.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The statement that morgan made was simple. Adhering to scientific canon increases the chances of arriving at a. Lloyd morgan&#039;s canon is the principle, suggested by the british comparative psychologist lioyd morgan in 1894, that any interpretation of an animal’s behaviour must be the simplest possible to account for what is observed. Cannon’s research has been influential, although more recent.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cannon Bard Theory Of Emotion Example slideshare" data-src="https://i2.wp.com/image.slidesharecdn.com/overcomingbingeeatingunderstandingyouremotions-140328210010-phpapp01/95/overcoming-binge-eating-understanding-your-emotions-6-638.jpg?cb=1396040471" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: slidesharenow.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">For example, let’s say you are getting up to speak in front of a class. The statement that morgan made was simple. It asserts that emotions are a result of hypothalamic and thalamic functions. A few theories are discussed in brief here under: In its developed form it states that:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cannon Brad Theory of Emotion" data-src="https://i2.wp.com/image.slidesharecdn.com/4sumbal-131009085704-phpapp01/95/cannon-brad-theory-of-emotion-1-638.jpg?cb=1381310415" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Adhering to scientific canon increases the chances of arriving at a. These principles outline the logical conditions under which observations can establish necessary and sufficient causal relationships between events. Walter cannon discovered the acute stress response in the early 1900s. Lloyd morgan&#039;s canon is the principle, suggested by the british comparative psychologist lioyd morgan in 1894, that any interpretation of.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Canon Law From Annulments to Sacraments, an Insider’s Look at Church" data-src="https://i2.wp.com/www.learn25.com/wp-content/uploads/2020/06/9781632511416_Canon_Law_Annulments-4.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.learn25.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Some scholars note that today, in practical applications, many educators focus on some of the canons and disregard others. A few theories are discussed in brief here under: Each theory emphasizes different aspects of emotion. A general rule or fundamental principle which applies to all, especially in a particular field such as science, religion, or art. Based on the previous.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PSYC1101 Chapter 9, 4th Edition PowerPoint" data-src="https://i2.wp.com/image.slidesharecdn.com/cicc4e09-finalppt-140506123025-phpapp02/95/psyc1101-chapter-9-4th-edition-powerpoint-37-638.jpg?cb=1399379500" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In psychology, the catharsis hypothesis maintains that “releasing”. Thus an explanation requiring a higher psychological functioning should not be offered if a lower. A trusted reference in the field of psychology, offering more than 25,000 clear and authoritative entries. According to cannon, the brain’s thalamus is crucial for our emotions. Today, english language arts educators tend to focus on three.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-comisura-de-los-labios.html" class="be-post-title">
+				 <h6>que es la comisura de los labios </h6>
+                </a>
+                <a href="que-es-la-comisura-de-los-labios.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20comisura%20de%20los%20labios&amp;w=50&amp;h=50&amp;c=7" alt="que es la comisura de los labios">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-hacer-un-triple-doble-en-baloncesto.html" class="be-post-title">
+				 <h6>que es hacer un triple doble en baloncesto </h6>
+                </a>
+                <a href="que-es-hacer-un-triple-doble-en-baloncesto.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20hacer%20un%20triple%20doble%20en%20baloncesto&amp;w=50&amp;h=50&amp;c=7" alt="que es hacer un triple doble en baloncesto">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-indirecte-belasting.html" class="be-post-title">
+				 <h6>wat is indirecte belasting </h6>
+                </a>
+                <a href="wat-is-indirecte-belasting.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20indirecte%20belasting&amp;w=50&amp;h=50&amp;c=7" alt="wat is indirecte belasting">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-alimentos-tienen-carbohidratos-simples.html" class="be-post-title">
+				 <h6>que alimentos tienen carbohidratos simples </h6>
+                </a>
+                <a href="que-alimentos-tienen-carbohidratos-simples.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20alimentos%20tienen%20carbohidratos%20simples&amp;w=50&amp;h=50&amp;c=7" alt="que alimentos tienen carbohidratos simples">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="biggest-surname-in-south-africa.html" class="be-post-title">
+				 <h6>biggest surname in south africa </h6>
+                </a>
+                <a href="biggest-surname-in-south-africa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=biggest%20surname%20in%20south%20africa&amp;w=50&amp;h=50&amp;c=7" alt="biggest surname in south africa">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="uji-prasyarat-uji-hipotesis-independent-sample-t-test-adalah.html" class="be-post-title">
+				 <h6>uji prasyarat uji hipotesis independent sample t test adalah </h6>
+                </a>
+                <a href="uji-prasyarat-uji-hipotesis-independent-sample-t-test-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=uji%20prasyarat%20uji%20hipotesis%20independent%20sample%20t%20test%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="uji prasyarat uji hipotesis independent sample t test adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="en-que-consiste-la-menopausia-y-cuales-son-sus-sintomas.html" class="be-post-title">
+				 <h6>en que consiste la menopausia y cuales son sus sintomas </h6>
+                </a>
+                <a href="en-que-consiste-la-menopausia-y-cuales-son-sus-sintomas.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=en%20que%20consiste%20la%20menopausia%20y%20cuales%20son%20sus%20sintomas&amp;w=50&amp;h=50&amp;c=7" alt="en que consiste la menopausia y cuales son sus sintomas">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-querellante-en-derecho.html" class="be-post-title">
+				 <h6>que es querellante en derecho </h6>
+                </a>
+                <a href="que-es-querellante-en-derecho.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20querellante%20en%20derecho&amp;w=50&amp;h=50&amp;c=7" alt="que es querellante en derecho">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="umur-20-lahir-tahun-berapa-2021.html" class="be-post-title">
+				 <h6>umur 20 lahir tahun berapa 2021 </h6>
+                </a>
+                <a href="umur-20-lahir-tahun-berapa-2021.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=umur%2020%20lahir%20tahun%20berapa%202021&amp;w=50&amp;h=50&amp;c=7" alt="umur 20 lahir tahun berapa 2021">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="a-qué-edad-empieza-la-menopausia-en-una-mujer.html" class="be-post-title">
+				 <h6>a qué edad empieza la menopausia en una mujer </h6>
+                </a>
+                <a href="a-qué-edad-empieza-la-menopausia-en-una-mujer.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=a%20qu%C3%A9%20edad%20empieza%20la%20menopausia%20en%20una%20mujer&amp;w=50&amp;h=50&amp;c=7" alt="a qué edad empieza la menopausia en una mujer">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

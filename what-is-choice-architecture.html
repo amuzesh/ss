@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        What Is Choice Architecture at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "What Is Choice Architecture",
+  "datePublished": "2022-06-23T11:18:15Z",
+  "image": "https://tse1.mm.bing.net/th?q=what%20is%20choice%20architecture",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=what%20is%20choice%20architecture&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20choice%20architecture" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20choice%20architecture" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            What Is Choice Architecture at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">What Is Choice Architecture</h2>
+    <p><strong>What Is Choice Architecture</strong>. Eric johnson teaches at the columbia business school where he is the director of the center for decision sciences. A choice architect has the responsibility for organizing the context in which people make decisions… to count as a mere nudge, the intervention must be easy and cheap to avoid.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=what%20is%20choice%20architecture" alt="Choice Architecture for Interaction YouTube" />
+        <br>
+        <figcaption>Choice Architecture for Interaction YouTube from www.youtube.com</figcaption>
+    </figure>
+        <p>
+        Choice architecture works because the way we structure the environment has the power to change behavior and the decisions that people make. Tdl is an applied research consultancy. They make them in an environment where many features, noticed and unnoticed, can influence their decisions.
+    </p>
+    <h3>Choice Architecture for Interaction YouTube</h3>
+    <p>It can greatly influence how we make decisions. It is done to influence their decisions, or to nudge them towards a specific decision. How the options are presented to you determine what choices you’ll make. People make decisions based on the different options that are presented to them.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Satisficers, Maximisers and Choice Architecture Paul Wood, PMI Lond…" data-src="https://i2.wp.com/image.slidesharecdn.com/15-151023095009-lva1-app6892/95/satisficers-maximisers-and-choice-architecture-paul-wood-pmi-london-2015-100-638.jpg?cb=1445594097" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">This presentation will influence the final choice made. Choice architecture is the process of designing the choices and options that people face. What is a nudge (buyer beware) an unfurnished house is more likely to sell once it is nicely furnished, therefore the act of “staging the house” is a nudge, just as doing anything to improve the sellability. Choice.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Voluntary marketingmix and choicearchitecture strategies to promote" data-src="https://i2.wp.com/www.researchgate.net/profile/Vivica-Kraak/publication/323432040/figure/fig1/AS:700143418474507@1543938607720/oluntary-marketing-mix-and-choice-architecture-strategies-to-promote-healthy-restaurant.ppm" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Special offers and encouragement for choosing a particular option. Choice architecture describes how the decisions we make are affected by the layout / sequencing / and range of choices that are available. Tdl is an applied research consultancy. Nick southgate explains how designing choices based on this knowledge is important. But the more i learn, the more i believe that.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Choice Architecture 9m Consulting" data-src="https://i2.wp.com/9mconsulting.com/wp-content/uploads/2020/04/choice-architecture-revised.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: 9mconsulting.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Choice architecture exists at nearly every scale. An example of an oca practice is how the. Eric johnson teaches at the columbia business school where he is the director of the center for decision sciences. The way choices are presented to us matters! Decision makers do not make choices in a vacuum.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Taking a ‘Choice Architecture’ Road to Guided Pathways Cypress College" data-src="https://i2.wp.com/www.cypresscollege.edu/wp-content/uploads/default-rates.jpg?resize=900%2C506" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.cypresscollege.edu</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Your decisions aren’t entirely yours (interview with eric johnson) nir’s note: The person who creates that environment, is, in our terminology, a choice architect. An example of an oca practice is how the. In our work, we leverage the insights of diverse fields—from. The presentation of choices in different ways will impact decision making.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Choice architecture what is it? YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/KJzEliskcuw/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It is done to influence their decisions, or to nudge them towards a specific decision. What it means is simply that the way a choice is presented influences how it is made. How the options are presented to you determine what choices you’ll make. The way choices are presented to us matters! Parallels are drawn between choice architecture and traditional.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Choice Architecture for Interaction YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/ku7e4b8ypOs/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The choice architect is the person designing the presentation of choices, usually with the intent of swaying the decision maker in a certain directi. Choice architecture is vital for nudge message design and ab testing thereof, as well as conversion funnel design. Choice architecture describes the way in which decision making ais influenced by how the choices are presented (in.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Taking a &#039;Choice Architecture&#039; Road to Guided Pathways Cypress" data-src="https://i2.wp.com/www.cypresscollege.edu/wp-content/uploads/overwhelmed-choice.jpg?fit=1333%2C750&amp;ssl=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.cypresscollege.edu</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Behavioural economics has given us the concept of choice architecture. System of choice architecture helps people improve pup_shafir_the behavioral foundations of public p olicy_ch25_v1.indd 434 achorn international 07/10/2012 11:10pm Choice architecture is the framing of a choice in order to manipulate the outcome of someone’s decision. Choice architecture works because the way we structure the environment has the power to.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Choice architecture" data-src="https://i2.wp.com/image.slidesharecdn.com/persuasion-100314172428-phpapp02/95/persuasivedesign-encouragingyouruserstodowhatyouwantthemto-42-728.jpg?cb=1268600003" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Advertising and campaigns to influence behaviour changing how the good is packaged. Structuring the presentation of options in a way that leads to a satisfying result. What it means is simply that the way a choice is presented influences how it is made. The tools of choice architecture are many and varied. Nick southgate explains how designing choices based on.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Choice Architecture How to Stick With Good Habits Even When Your" data-src="https://i2.wp.com/jamesclear.com/wp-content/uploads/2014/01/choice-architecture.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: jamesclear.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Nick southgate explains how designing choices based on this knowledge is important. Making good decisions involves choice architecture: But the more i learn, the more i believe that the number one driver of better habits and behavior change is the choice architecture of your environment. Choice architecture can be designed to contain a default option that is applied if the.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Choice Architecture tutor2u Economics" data-src="https://i2.wp.com/s3-eu-west-1.amazonaws.com/tutor2u-media/subjects/economics/choice_architecture_overview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.tutor2u.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In fact, too many choices can actually cause dissatisfaction — this is called choice overload. They make them in an environment where many features, noticed and unnoticed, can influence their decisions. It’s easy for families to feel lost and kids to end up in a. The person who creates that environment, is, in our terminology, a choice architect. How the.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="ho-adalah-hipotesis.html" class="be-post-title">
+				 <h6>ho adalah hipotesis </h6>
+                </a>
+                <a href="ho-adalah-hipotesis.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=ho%20adalah%20hipotesis&amp;w=50&amp;h=50&amp;c=7" alt="ho adalah hipotesis">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-stormvloedkering.html" class="be-post-title">
+				 <h6>wat is een stormvloedkering </h6>
+                </a>
+                <a href="wat-is-een-stormvloedkering.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20stormvloedkering&amp;w=50&amp;h=50&amp;c=7" alt="wat is een stormvloedkering">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-produce-la-menopausia-en-la-mujer.html" class="be-post-title">
+				 <h6>que produce la menopausia en la mujer </h6>
+                </a>
+                <a href="que-produce-la-menopausia-en-la-mujer.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20produce%20la%20menopausia%20en%20la%20mujer&amp;w=50&amp;h=50&amp;c=7" alt="que produce la menopausia en la mujer">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-alfabetizacion-digital.html" class="be-post-title">
+				 <h6>que es la alfabetizacion digital </h6>
+                </a>
+                <a href="que-es-la-alfabetizacion-digital.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20alfabetizacion%20digital&amp;w=50&amp;h=50&amp;c=7" alt="que es la alfabetizacion digital">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-la-etica-y-para-que-sirve.html" class="be-post-title">
+				 <h6>que es la etica y para que sirve </h6>
+                </a>
+                <a href="que-es-la-etica-y-para-que-sirve.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20la%20etica%20y%20para%20que%20sirve&amp;w=50&amp;h=50&amp;c=7" alt="que es la etica y para que sirve">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-pentagrama-esoterico-y-para-que-sirve.html" class="be-post-title">
+				 <h6>que es un pentagrama esoterico y para que sirve </h6>
+                </a>
+                <a href="que-es-un-pentagrama-esoterico-y-para-que-sirve.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20pentagrama%20esoterico%20y%20para%20que%20sirve&amp;w=50&amp;h=50&amp;c=7" alt="que es un pentagrama esoterico y para que sirve">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-are-the-whmis-hazard-symbols.html" class="be-post-title">
+				 <h6>what are the whmis hazard symbols </h6>
+                </a>
+                <a href="what-are-the-whmis-hazard-symbols.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20are%20the%20whmis%20hazard%20symbols&amp;w=50&amp;h=50&amp;c=7" alt="what are the whmis hazard symbols">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="punggung-kaki-adalah-kaki-bagian.html" class="be-post-title">
+				 <h6>punggung kaki adalah kaki bagian </h6>
+                </a>
+                <a href="punggung-kaki-adalah-kaki-bagian.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=punggung%20kaki%20adalah%20kaki%20bagian&amp;w=50&amp;h=50&amp;c=7" alt="punggung kaki adalah kaki bagian">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-eis-in-information-system.html" class="be-post-title">
+				 <h6>what is eis in information system </h6>
+                </a>
+                <a href="what-is-eis-in-information-system.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20eis%20in%20information%20system&amp;w=50&amp;h=50&amp;c=7" alt="what is eis in information system">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-amazon-jobs-y-como-funciona.html" class="be-post-title">
+				 <h6>que es amazon jobs y como funciona </h6>
+                </a>
+                <a href="que-es-amazon-jobs-y-como-funciona.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20amazon%20jobs%20y%20como%20funciona&amp;w=50&amp;h=50&amp;c=7" alt="que es amazon jobs y como funciona">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

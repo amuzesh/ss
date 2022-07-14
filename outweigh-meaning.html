@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Outweigh Meaning at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Outweigh Meaning",
+  "datePublished": "2022-06-24T13:40:59Z",
+  "image": "https://tse1.mm.bing.net/th?q=outweigh%20meaning",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=outweigh%20meaning&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=outweigh%20meaning" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=outweigh%20meaning" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Outweigh Meaning at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Outweigh Meaning</h2>
+    <p><strong>Outweigh Meaning</strong>. In most women the benefits of taking tamoxifen outweigh the risks. To exceed in importance or value.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=outweigh%20meaning" alt="Outweigh Quotes Outweigh Sayings Outweigh Picture Quotes" />
+        <br>
+        <figcaption>Outweigh Quotes Outweigh Sayings Outweigh Picture Quotes from www.picturequotes.com</figcaption>
+    </figure>
+        <p>
+        Britannica dictionary definition of outweigh. 2 to be more important or significant than. To be more significant than;
+    </p>
+    <h3>Outweigh Quotes Outweigh Sayings Outweigh Picture Quotes</h3>
+    <p>Outweigh something to be greater or more important than something. ‘however, the nih consensus panel notes that the benefits far outweigh the risks.’. The risks are vastly outweighed by the potential benefits. Information about outweigh in the audioenglish.org dictionary, synonyms and antonyms.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Outweigh definition/meaning" data-src="https://i2.wp.com/il6.picdn.net/shutterstock/videos/13346690/thumb/1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.omnilexica.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Put your answer to the question in the thesis statement in your introduction. Find more similar words at. To outweigh means to weigh more than, to be more important than. 2 to be more important or significant than. For example, if you know for sure that torturing someone will you help you prevent a terrorist attack in which many innocent.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Outweigh Meaning YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/oFmROO4vuro/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">‘the advantages greatly outweigh the disadvantages’. ‘they see the disadvantages of doing so outweighing its advantages.’. Proper usage and audio pronunciation (plus ipa phonetic transcription) of the word outweigh. ‘however, the nih consensus panel notes that the benefits far outweigh the risks.’. The advantages of this scheme more than outweigh the costs involved.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="far outweigh complaints in HSC&#039; Swann Northern Ireland" data-src="https://i2.wp.com/www.northernireland.gov.uk/sites/default/files/images/health/news/Complaints.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.northernireland.gov.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The benefits outweigh the risks. To be greater or more important than something else: You can also find multiple synonyms or similar words of outweigh. To outweigh means to weigh more than, to be more important than. “the existence of mitigating factors does not preclude or prevent the death.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Risks Outweigh The Benefits Conceptual Stock Image Image 1859951" data-src="https://i2.wp.com/thumbs.dreamstime.com/z/risks-outweigh-benefits-conceptual-1859951.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dreamstime.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">To be more significant than; The benefits would surely far outweigh the risks. Synonyms for outweigh include override, exceed, overshadow, supersede, eclipse, outrank, overweigh, surpass, dwarf and outbalance. It is reasonable to ask whether the advantages outweigh the disadvantages. His desire outweighed his discretion.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Outweigh Quotes Outweigh Sayings Outweigh Picture Quotes" data-src="https://i2.wp.com/img.picturequotes.com/2/251/250166/the-means-of-many-outweigh-the-means-of-the-few-or-one-quote-1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.picturequotes.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In most women the benefits of taking tamoxifen outweigh the risks. “the existence of mitigating factors does not preclude or prevent the death. 1 v weigh more heavily “these considerations outweigh our wishes” synonyms: Outbalance , overbalance , preponderate type of: The definition of outweigh is followed by practically usable example sentences which allow you to construct your own sentences.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Outweigh Meaning &amp; Usage YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/pZjX0f_-_TA/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The definition of outweigh is followed by practically usable example sentences which allow you to construct your own sentences based on it. To be greater or more important than something else: The advantages of this scheme more than outweigh the costs involved. ‘they see the disadvantages of doing so outweighing its advantages.’. The advantages far outweigh the disadvantages.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="outweigh definition What is" data-src="https://i2.wp.com/4.bp.blogspot.com/-ybTJ1-We5Z8/T5VjGRmhkBI/AAAAAAAABhw/rl0_KRXx7-g/s1600/Scale+costs.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: english.my-definitions.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">For example, if you know for sure that torturing someone will you help you prevent a terrorist attack in which many innocent people would be killed, you&#039;re morally obliged to torture that person. Proper usage and audio pronunciation (plus ipa phonetic transcription) of the word outweigh. To outweigh the interests of justice it will have to be prejudice of the.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="When the Good Outweighs the Bad Art Of Management" data-src="https://i2.wp.com/amican.com/wp-content/uploads/2018/11/25015649_l-Smaller.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: amican.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">More meanings of outweigh, it&#039;s definitions, example sentences, related words, idioms and quotations. To be greater than (someone or something) in weight, value, or importance. ‘in fact, the benefits far outweigh the risks and will lead to improved health care.’. If one thing outweighs another, the first thing is of greater importance , benefit , or. Outbalance , overbalance ,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Health Benefits Of Exercise Outweigh Effects Of Pollution, Meaning You" data-src="https://i2.wp.com/images.medicaldaily.com/sites/medicaldaily.com/files/2015/03/29/exercise-pollution.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.medicaldaily.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">For example, if you know for sure that torturing someone will you help you prevent a terrorist attack in which many innocent people would be killed, you&#039;re morally obliged to torture that person. A sufficiently large benefit to society outweighs ( = is more important than) harms to individuals. ‘in fact, the benefits far outweigh the risks and will lead.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="The Secret to Consumer Decision Making Value Peng’s Blog" data-src="https://i2.wp.com/pengtiong.com/blog/wp-content/uploads/2015/06/costbenefit.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: pengtiong.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">His desire outweighed his discretion. The advantages far outweigh [= exceed] the disadvantages. The risks are vastly outweighed by the potential benefits. ‘they see the disadvantages of doing so outweighing its advantages.’. To exceed in weight or mass.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-hidrato-de-carbono-complejo.html" class="be-post-title">
+				 <h6>que es un hidrato de carbono complejo </h6>
+                </a>
+                <a href="que-es-un-hidrato-de-carbono-complejo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20hidrato%20de%20carbono%20complejo&amp;w=50&amp;h=50&amp;c=7" alt="que es un hidrato de carbono complejo">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-betekent-betaalverzoek-op-marktplaats.html" class="be-post-title">
+				 <h6>wat betekent betaalverzoek op marktplaats </h6>
+                </a>
+                <a href="wat-betekent-betaalverzoek-op-marktplaats.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20betekent%20betaalverzoek%20op%20marktplaats&amp;w=50&amp;h=50&amp;c=7" alt="wat betekent betaalverzoek op marktplaats">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="diferencia-entre-sinfonia-y-sonata-clasica.html" class="be-post-title">
+				 <h6>diferencia entre sinfonia y sonata clasica </h6>
+                </a>
+                <a href="diferencia-entre-sinfonia-y-sonata-clasica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=diferencia%20entre%20sinfonia%20y%20sonata%20clasica&amp;w=50&amp;h=50&amp;c=7" alt="diferencia entre sinfonia y sonata clasica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-significa-la-palabra-unanime.html" class="be-post-title">
+				 <h6>que significa la palabra unanime </h6>
+                </a>
+                <a href="que-significa-la-palabra-unanime.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20significa%20la%20palabra%20unanime&amp;w=50&amp;h=50&amp;c=7" alt="que significa la palabra unanime">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="q-significa-cuba-libre.html" class="be-post-title">
+				 <h6>q significa cuba libre </h6>
+                </a>
+                <a href="q-significa-cuba-libre.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=q%20significa%20cuba%20libre&amp;w=50&amp;h=50&amp;c=7" alt="q significa cuba libre">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="comment-faire-un-bandeau-sur-word.html" class="be-post-title">
+				 <h6>comment faire un bandeau sur word </h6>
+                </a>
+                <a href="comment-faire-un-bandeau-sur-word.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=comment%20faire%20un%20bandeau%20sur%20word&amp;w=50&amp;h=50&amp;c=7" alt="comment faire un bandeau sur word">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-como-porque.html" class="be-post-title">
+				 <h6>que como porque </h6>
+                </a>
+                <a href="que-como-porque.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20como%20porque&amp;w=50&amp;h=50&amp;c=7" alt="que como porque">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-betekent-gewestweg.html" class="be-post-title">
+				 <h6>wat betekent gewestweg </h6>
+                </a>
+                <a href="wat-betekent-gewestweg.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20betekent%20gewestweg&amp;w=50&amp;h=50&amp;c=7" alt="wat betekent gewestweg">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-procesador-de-alimentos-comprar.html" class="be-post-title">
+				 <h6>que procesador de alimentos comprar </h6>
+                </a>
+                <a href="que-procesador-de-alimentos-comprar.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20procesador%20de%20alimentos%20comprar&amp;w=50&amp;h=50&amp;c=7" alt="que procesador de alimentos comprar">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="uji-one-sample-t-test-adalah.html" class="be-post-title">
+				 <h6>uji one sample t test adalah </h6>
+                </a>
+                <a href="uji-one-sample-t-test-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=uji%20one%20sample%20t%20test%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="uji one sample t test adalah">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

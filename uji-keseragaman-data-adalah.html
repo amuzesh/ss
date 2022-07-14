@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Uji Keseragaman Data Adalah at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Uji Keseragaman Data Adalah",
+  "datePublished": "2022-03-25T02:37:11Z",
+  "image": "https://tse1.mm.bing.net/th?q=uji%20keseragaman%20data%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=uji%20keseragaman%20data%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20keseragaman%20data%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=uji%20keseragaman%20data%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Uji Keseragaman Data Adalah at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Uji Keseragaman Data Adalah</h2>
+    <p><strong>Uji Keseragaman Data Adalah</strong>. Lalu waktu saya uji normalitas, ternyata hasilnya tidak normal. Salah satu uji yang perlu dilakukan untuk memenuhi asumsi tertentu adalah uji homogenitas atau uji keseragaman data.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=uji%20keseragaman%20data%20adalah" alt="Part 1 Ergonomi Pengukuran Waktu Kerja ilmuit.id" />
+        <br>
+        <figcaption>Part 1 Ergonomi Pengukuran Waktu Kerja ilmuit.id from www.ilmuit.id</figcaption>
+    </figure>
+        <p>
+        Pengukuran kerja metode pengukuran dinusacidrepository. Pembatasan masalah dalam tugas besar yang berjudul “perhitungan uji keseragaman data terhadap sampel” adalah sebagai berikut: Dan data diatas adalah data saat kita melakukan penelitian menghitung jumlah kendaraan disalah satu perempatan di daerah kami.
+    </p>
+    <h3>Part 1 Ergonomi Pengukuran Waktu Kerja ilmuit.id</h3>
+    <p>Hasil eksperimen orde ii menyatakan bahwa model optimasi yang sesuai adalah y = 1,7833 + 0,0538 x2 ¬0,1098 x3 + 0,0477 x2x3 + ε, dimana y adalah adalah kandungan warna kuning dan merah dalam. Uji keseragaman data dengan software spss spss adalah program komputer yang dipakai untuk analisis statistika. Menentukan jumlah subgroup dapat dirumuskan seperti yang ditunjukkan persamaan 2.6. Jika yang terjadi adalah sebaliknya, maka data perlu ditambah dan diuji kembali.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Uji Mann Whitney [PDF Document]" data-src="https://i2.wp.com/static.fdokumen.com/img/1200x630/reader017/html5/js20200114/5e1ccc3f7117a/5e1ccc3fd167f.png?t=1606700048" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: fdokumen.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Lingkar paha, lingkar perut, lingkar Mampu membuat aplikasi uji keseragaman data menggunakan bahasa pemrograman php. Jika data tersebut berada diluar rentang batas Data penimbangan baku ambroxol hcl. K = 1 + 3,3 log n 2.6 keterangan :</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Presentasi lab statistik" data-src="https://i2.wp.com/image.slidesharecdn.com/presentasilabstatistik-130807024552-phpapp02/95/presentasi-lab-statistik-33-638.jpg?cb=1375843763" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Maka yang tidak kalah pentingnya adalah bahwa data yang dikumpulkan harus seragam. Uji keseragaman data ini perlu dilakukan terlebih dahulu sebelum menggunakan data yang diperoleh guna menetapkan waktu standart. Jika yang terjadi adalah sebaliknya, maka data perlu ditambah dan diuji kembali. Selanjutnya adalah menguji validasi data yang meliputi uji keseragaman dan uji kecukupan data. Uji statistik yang dapat digunakan diantaranya.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Penjelasan Tentang Uji Normalitas dan Metode Perhitungan Uji Statistik" data-src="https://i1.wp.com/www.statistikian.com/wp-content/uploads/2013/01/f41.jpg?fit=640%2C287" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.statistikian.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">12 k = jumlah subgroup n = jumlah pengamatan b. Uji statistik yang dapat digunakan diantaranya. Bab iii penyajian data penelitian. Stasiun 2 (penyolderan) data di bawah ini merupakan data waktu penyolderan dalam satuan detik yang diperoleh dari hasil pengamatan, data tesebut dikelompokkan ke dalam beberapa subgroup: Saya melakukan penelitian analisis regresi data panel dan uji asumsi klasik dengan eviews.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Presentasi lab statistik" data-src="https://i2.wp.com/image.slidesharecdn.com/presentasilabstatistik-130807024552-phpapp02/95/presentasi-lab-statistik-20-638.jpg?cb=1375843763" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Berikut yang dapat admin bagikan terkait rumus uji keseragaman dan kecukupan data. Dan data diatas adalah data saat kita melakukan penelitian menghitung jumlah kendaraan disalah satu perempatan di daerah kami. Uji statistik yang dapat digunakan diantaranya. Mencoba melakukan uji keseragaman bobot, kekerasan, kerapuhan dan waktu hancur. Tidak hanya dengan cara manual, uji kecukupan data juga bisa dilakukan dengan aplikasi statistik.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Excel Statistik Indonesia Cara Menghitung Validitas dan Reliabilitas" data-src="https://i2.wp.com/2.bp.blogspot.com/-y7bhnKV7-Bk/VaTPMgEE5aI/AAAAAAAAAEc/nMqfG09H1Hw/s1600/rumus%2Bspearman.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: excelstatistikindonesia.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pengujian ini dilakukan untuk mengetahui apakah data yang didapat telah seragam dan tidak melebihi dari batas kontrol atas bka dan batas kontrol bawah bkb yang telah ditentukan. Kemudian saya outlier dan ditemukan 4 data outlier. K = 1 + 3,3 log n 2.6 keterangan : Lingkar tubuh jarak antara dua titik pada tubuh manusia yang mencakup: Stasiun 2 (penyolderan) data.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Presentasi lab statistik" data-src="https://i2.wp.com/image.slidesharecdn.com/presentasilabstatistik-130807024552-phpapp02/95/presentasi-lab-statistik-45-638.jpg?cb=1375843763" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Stasiun 2 (penyolderan) data di bawah ini merupakan data waktu penyolderan dalam satuan detik yang diperoleh dari hasil pengamatan, data tesebut dikelompokkan ke dalam beberapa subgroup: Langkah untuk melakukan uji anova “waktu siklus pengepakan benang” adalah: Selanjutnya adalah menguji validasi data yang meliputi uji keseragaman dan uji kecukupan data. Lingkar paha, lingkar perut, lingkar Berikut yang dapat admin bagikan terkait.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT Pengukuran Kerja (Work Measurement) PowerPoint Presentation, free" data-src="https://i2.wp.com/image1.slideserve.com/3291930/slide7-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Namun untuk memberikan kepastian, data yang dimiliki berdistribusi normal atau tidak, sebaiknya digunakan uji normalitas. Pertama dalam pengujian uji keseragaman data ini adalah perhitungan mean, median, modus, standar deviasi untuk mengetahui batas kendali atas dan bawah. Data dikatakan seragam jika berasal dari sistem sebab yang sama, dan bila berada diantara kedua batas kontrol, sedangkan data dikatakan. Kemudian saya outlier dan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tutorial Uji Tanda dan Uji Rank Tanda Wilcoxon" data-src="https://i2.wp.com/1.bp.blogspot.com/-_jTbyNIgQq8/XZqt3Xyp4LI/AAAAAAAAEDQ/ZpvfSu2gK9Q4uNNj1Gkom4FuXugcOl4QgCEwYBhgL/s1600/6.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.danialmahkya.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hasil eksperimen orde ii menyatakan bahwa model optimasi yang sesuai adalah y = 1,7833 + 0,0538 x2 ¬0,1098 x3 + 0,0477 x2x3 + ε, dimana y adalah adalah kandungan warna kuning dan merah dalam. Pengujian ini dilakukan untuk mengetahui apakah data yang didapat telah seragam dan tidak melebihi dari batas kontrol atas bka dan batas kontrol bawah bkb yang telah.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Part 1 Ergonomi Pengukuran Waktu Kerja ilmuit.id" data-src="https://i2.wp.com/1.bp.blogspot.com/-3Amz2kezpic/XX1kFr5a0hI/AAAAAAAAAIA/a27g98pt7L4g7m8Ee-ki1yivoANiYv60QCLcBGAsYHQ/s1600/erg17.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.ilmuit.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dimensi linier (jarak) jenis data 2. Uji keseragaman data dengan software spss spss adalah program komputer yang dipakai untuk analisis statistika. Pertanyaan ini pernah menjadi bahan diskusi saya dan dengan seorang teman ketika kita mempelajari uji keseragaman data yang menggunakan metode peta kendali. Maka yang tidak kalah pentingnya adalah bahwa data yang dikumpulkan harus seragam. Selanjutnya adalah menguji validasi data.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Presentasi lab statistik" data-src="https://i2.wp.com/image.slidesharecdn.com/presentasilabstatistik-130807024552-phpapp02/95/presentasi-lab-statistik-43-638.jpg?cb=1375843763" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Saya melakukan penelitian analisis regresi data panel dan uji asumsi klasik dengan eviews. Suatu data dikatakan seragam apabila barada dalam rentang batas kontrol tertentu. Namun untuk memberikan kepastian, data yang dimiliki berdistribusi normal atau tidak, sebaiknya digunakan uji normalitas. — april 12, 2017 — add comment — ms excel. Mampu membuat aplikasi uji keseragaman data menggunakan bahasa pemrograman php.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-tarjeta-interfaz-de-red.html" class="be-post-title">
+				 <h6>que es una tarjeta interfaz de red </h6>
+                </a>
+                <a href="que-es-una-tarjeta-interfaz-de-red.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20tarjeta%20interfaz%20de%20red&amp;w=50&amp;h=50&amp;c=7" alt="que es una tarjeta interfaz de red">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-ristretto-mean-at-starbucks.html" class="be-post-title">
+				 <h6>what does ristretto mean at starbucks </h6>
+                </a>
+                <a href="what-does-ristretto-mean-at-starbucks.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20ristretto%20mean%20at%20starbucks&amp;w=50&amp;h=50&amp;c=7" alt="what does ristretto mean at starbucks">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-enseñanza-sincronica-y-asincronica.html" class="be-post-title">
+				 <h6>que es enseñanza sincronica y asincronica </h6>
+                </a>
+                <a href="que-es-enseñanza-sincronica-y-asincronica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20ense%C3%B1anza%20sincronica%20y%20asincronica&amp;w=50&amp;h=50&amp;c=7" alt="que es enseñanza sincronica y asincronica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-se-hace-un-testamento-en-estados-unidos.html" class="be-post-title">
+				 <h6>como se hace un testamento en estados unidos </h6>
+                </a>
+                <a href="como-se-hace-un-testamento-en-estados-unidos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20se%20hace%20un%20testamento%20en%20estados%20unidos&amp;w=50&amp;h=50&amp;c=7" alt="como se hace un testamento en estados unidos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-una-recaída-emocional.html" class="be-post-title">
+				 <h6>que es una recaída emocional </h6>
+                </a>
+                <a href="que-es-una-recaída-emocional.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20una%20reca%C3%ADda%20emocional&amp;w=50&amp;h=50&amp;c=7" alt="que es una recaída emocional">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="qué-son-los-minestrones.html" class="be-post-title">
+				 <h6>qué son los minestrones </h6>
+                </a>
+                <a href="qué-son-los-minestrones.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=qu%C3%A9%20son%20los%20minestrones&amp;w=50&amp;h=50&amp;c=7" alt="qué son los minestrones">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-pensamiento-científico-y-filosófico.html" class="be-post-title">
+				 <h6>que es el pensamiento científico y filosófico </h6>
+                </a>
+                <a href="que-es-el-pensamiento-científico-y-filosófico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20pensamiento%20cient%C3%ADfico%20y%20filos%C3%B3fico&amp;w=50&amp;h=50&amp;c=7" alt="que es el pensamiento científico y filosófico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-fazer-uma-pesquisa-de-mercado.html" class="be-post-title">
+				 <h6>como fazer uma pesquisa de mercado </h6>
+                </a>
+                <a href="como-fazer-uma-pesquisa-de-mercado.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20fazer%20uma%20pesquisa%20de%20mercado&amp;w=50&amp;h=50&amp;c=7" alt="como fazer uma pesquisa de mercado">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="umur-17-kelahiran-tahun-berapa-2022.html" class="be-post-title">
+				 <h6>umur 17 kelahiran tahun berapa 2022 </h6>
+                </a>
+                <a href="umur-17-kelahiran-tahun-berapa-2022.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=umur%2017%20kelahiran%20tahun%20berapa%202022&amp;w=50&amp;h=50&amp;c=7" alt="umur 17 kelahiran tahun berapa 2022">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-amigo-con-derecho.html" class="be-post-title">
+				 <h6>que es un amigo con derecho </h6>
+                </a>
+                <a href="que-es-un-amigo-con-derecho.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20amigo%20con%20derecho&amp;w=50&amp;h=50&amp;c=7" alt="que es un amigo con derecho">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

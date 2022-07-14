@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Que Es Un Release Plan En Scrum at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "Que Es Un Release Plan En Scrum",
+  "datePublished": "2022-07-02T13:54:47Z",
+  "image": "https://tse1.mm.bing.net/th?q=que%20es%20un%20release%20plan%20en%20scrum",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=que%20es%20un%20release%20plan%20en%20scrum&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20es%20un%20release%20plan%20en%20scrum" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20es%20un%20release%20plan%20en%20scrum" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Que Es Un Release Plan En Scrum at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Que Es Un Release Plan En Scrum</h2>
+    <p><strong>Que Es Un Release Plan En Scrum</strong>. Etant agile, on s’autorisera que le scope puisse bouger avec le temps sur la release. The first step in release planning is to establish the release goal, which is the desired outcome of the release.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=que%20es%20un%20release%20plan%20en%20scrum" alt="Powerpoint Agile Release Plan Template scrum iterations &amp; releases" />
+        <br>
+        <figcaption>Powerpoint Agile Release Plan Template scrum iterations &amp; releases from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        En las frameworks ágiles, y en scrum especialmente, cada iteración, cada sprint, debiera concluir con un incremento funcional sobre el producto, que además sea potencialmente entregable. El trabajo de desarrollo es organizado en iteraciones (sprints) cuya duración no debería ser superior a un mes (la frecuencia recomendada por xp o scrum). Determine the sprint length, in hours or days.
+    </p>
+    <h3>Powerpoint Agile Release Plan Template scrum iterations &amp; releases</h3>
+    <p>Find out the indispensable options (primary features) under each major feature that must be present for delivery. Multiply personnel cost (per hour or per day) by sprint length to get a cost per sprint. This stage is to ensure that all members of the team agree on the goals and other features of the plan. Find out the indispensable options (primary features) under each major feature that must be present for delivery.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Powerpoint Agile Release Plan Template scrum iterations &amp; releases" data-src="https://i.pinimg.com/originals/0d/f8/e6/0df8e6df9e63708c02ec045fc554ef2a.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.co.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It can be challenging to have enough work prepared for the development team for their first sprint. Depending on the product complexity, some teams might choose to have a release after every sprint. El sprint de release (una reléase es una versión que. This is great from the perspective of fast adaption as product delivery can be adjusted based on.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Release planning in Scrum" data-src="https://i2.wp.com/image.slidesharecdn.com/131024releaseplanning-131024082755-phpapp01/95/release-planning-in-scrum-22-638.jpg?cb=1382605508" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En las frameworks ágiles, y en scrum especialmente, cada iteración, cada sprint, debiera concluir con un incremento funcional sobre el producto, que además sea potencialmente entregable. With the above terms in mind, release planning is the process of determining the desired outcome (including the timeline) of one major release and positioning yourself and your agile team to maximize the chances.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Visio Agile Release Plan for Scrum Teams Story Map &amp; MVP" data-src="https://i2.wp.com/business-docs.co.uk/wp-content/uploads/edd/2016/03/BDUK-83-Agile-Release-Plan-02.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: business-docs.co.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Surtout il le fait en mode client / fournisseur avec un scrum master ayant un rôle de chef de projet agile (mes doigts brûlent en écrivant cette ligne.). En général, on travail cela très facilement avec un story mapping enchainé d’un release board : Actores externos pueden asistir por invitación del equipo, pero es extraño que suceda en la mayoría.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Scrum Planning Happens at Multiple Levels Chapter 15 of Essential" data-src="https://i2.wp.com/www.innolution.com/uploads/icon-language/15fig03.png?v=1351736905" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.innolution.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A release plan becomes the guideline that reflects expectations from a scrum team about: Determine who is on the team. Así es como, por ejemplo, define cohn la «release planning» (puedes ver una definición similar en su libro. The release plan is not an official part of the scrum guide or the. There are two ways you can incorporate the.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Plan de release en couleurs Scrum, Agilité &amp; rock&#039;n roll" data-src="https://i2.wp.com/www.aubryconseil.com/img/is2/planRelease.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.aubryconseil.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La planificación de release puede abarcar uno o más releases del producto al cliente. This stage is to ensure that all members of the team agree on the goals and other features of the plan. Multiply personnel cost (per hour or per day) by sprint length to get a cost per sprint. Now take this mix (product backlog. Surtout il.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Agile Scrum Definition Examples and Forms" data-src="https://i2.wp.com/www.agile-scrum.be/wordpress/wp-content/uploads/2014/08/Scrum-Release-Management-Agile-Scrum-Belgium-Training.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.lisbonlx.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En général, on travail cela très facilement avec un story mapping enchainé d’un release board : Surtout il le fait en mode client / fournisseur avec un scrum master ayant un rôle de chef de projet agile (mes doigts brûlent en écrivant cette ligne.). It can be challenging to have enough work prepared for the development team for their first.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Product management in Scrum ScrumDesk, Meaningfully Agile" data-src="https://i2.wp.com/www.scrumdesk.com/wp-content/uploads/Release-cycle-in-Scrum.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.scrumdesk.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Elle est constituée d’un ensemble de sprints, leur nombre étant dépendant de leur durée et de celle fixée par la release. Es un horizonte de planificación a más largo plazo que un solo sprint. Así es como, por ejemplo, define cohn la «release planning» (puedes ver una definición similar en su libro. El “release planning” es una planificación de entregas.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Release Planning in Agile" data-src="https://i2.wp.com/2.bp.blogspot.com/-i79cIo9KkTc/WWj_L3NOa4I/AAAAAAAAFVI/TnmacFacAmwx6KMEGuCo7sl4Gn-DVxV-gCLcBGAs/s1600/release.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: easyagile.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">This stage is to ensure that all members of the team agree on the goals and other features of the plan. A release plan in scrum reflects the features in the backlog to be worked on in the upcoming sprints and provides an approximate date for the release. En cualquier enfoque ágil un pilar fundamental es realizar entregas ( releases).</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Powerpoint Agile Release Plan Template scrum iterations &amp; releases" data-src="https://i.pinimg.com/736x/a8/c5/b9/a8c5b97db04577bbdda900ee9b2df65c.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Así es como, por ejemplo, define cohn la «release planning» (puedes ver una definición similar en su libro. The meeting is, of course, the most important facet of release planning. Los objetivos de la planificación de release son: This is great from the perspective of fast adaption as product delivery can be adjusted based on the need. Pero no todo.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Release planning in Scrum" data-src="https://i2.wp.com/image.slidesharecdn.com/131024releaseplanning-131024082755-phpapp01/95/release-planning-in-scrum-18-638.jpg?cb=1382605508" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">How to do release planning. Los objetivos de la planificación de release son: En las frameworks ágiles, y en scrum especialmente, cada iteración, cada sprint, debiera concluir con un incremento funcional sobre el producto, que además sea potencialmente entregable. The plan should include the responsibilities, resources, and activities needed for each release and their potential priority. Once the next features.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="características-del-realismo-mágico-de-gabriel-garcía-márquez.html" class="be-post-title">
+				 <h6>características del realismo mágico de gabriel garcía márquez </h6>
+                </a>
+                <a href="características-del-realismo-mágico-de-gabriel-garcía-márquez.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=caracter%C3%ADsticas%20del%20realismo%20m%C3%A1gico%20de%20gabriel%20garc%C3%ADa%20m%C3%A1rquez&amp;w=50&amp;h=50&amp;c=7" alt="características del realismo mágico de gabriel garcía márquez">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="literatura-del-realismo-magico-en-colombia.html" class="be-post-title">
+				 <h6>literatura del realismo magico en colombia </h6>
+                </a>
+                <a href="literatura-del-realismo-magico-en-colombia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=literatura%20del%20realismo%20magico%20en%20colombia&amp;w=50&amp;h=50&amp;c=7" alt="literatura del realismo magico en colombia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="definicion-de-estrofa-para-niños-de-primaria.html" class="be-post-title">
+				 <h6>definicion de estrofa para niños de primaria </h6>
+                </a>
+                <a href="definicion-de-estrofa-para-niños-de-primaria.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=definicion%20de%20estrofa%20para%20ni%C3%B1os%20de%20primaria&amp;w=50&amp;h=50&amp;c=7" alt="definicion de estrofa para niños de primaria">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-cubata.html" class="be-post-title">
+				 <h6>que es cubata </h6>
+                </a>
+                <a href="que-es-cubata.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20cubata&amp;w=50&amp;h=50&amp;c=7" alt="que es cubata">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-get-axis-bank-customer-id-from-debit-card.html" class="be-post-title">
+				 <h6>how to get axis bank customer id from debit card </h6>
+                </a>
+                <a href="how-to-get-axis-bank-customer-id-from-debit-card.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20get%20axis%20bank%20customer%20id%20from%20debit%20card&amp;w=50&amp;h=50&amp;c=7" alt="how to get axis bank customer id from debit card">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="invaziv-karsinom-nedir-ne-demek.html" class="be-post-title">
+				 <h6>invaziv karsinom nedir ne demek </h6>
+                </a>
+                <a href="invaziv-karsinom-nedir-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=invaziv%20karsinom%20nedir%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="invaziv karsinom nedir ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-debito-y-credito-en-contabilidad.html" class="be-post-title">
+				 <h6>que es el debito y credito en contabilidad </h6>
+                </a>
+                <a href="que-es-el-debito-y-credito-en-contabilidad.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20debito%20y%20credito%20en%20contabilidad&amp;w=50&amp;h=50&amp;c=7" alt="que es el debito y credito en contabilidad">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-el-efecto-fotoelectrico-para-niños.html" class="be-post-title">
+				 <h6>que es el efecto fotoelectrico para niños </h6>
+                </a>
+                <a href="que-es-el-efecto-fotoelectrico-para-niños.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20el%20efecto%20fotoelectrico%20para%20ni%C3%B1os&amp;w=50&amp;h=50&amp;c=7" alt="que es el efecto fotoelectrico para niños">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-houdt-controleverklaring-in.html" class="be-post-title">
+				 <h6>wat houdt controleverklaring in </h6>
+                </a>
+                <a href="wat-houdt-controleverklaring-in.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20houdt%20controleverklaring%20in&amp;w=50&amp;h=50&amp;c=7" alt="wat houdt controleverklaring in">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-roeping.html" class="be-post-title">
+				 <h6>wat is een roeping </h6>
+                </a>
+                <a href="wat-is-een-roeping.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20roeping&amp;w=50&amp;h=50&amp;c=7" alt="wat is een roeping">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

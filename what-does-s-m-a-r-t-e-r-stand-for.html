@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        What Does S.m.a.r.t.e.r Stand For at Versekering
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Diana",
+    "url": "https://www.google.com/search?q=Diana"
+  },
+  "headline": "What Does S.m.a.r.t.e.r Stand For",
+  "datePublished": "2022-06-07T19:33:15Z",
+  "image": "https://tse1.mm.bing.net/th?q=what%20does%20s.m.a.r.t.e.r%20stand%20for",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Versekering 2022",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=what%20does%20s.m.a.r.t.e.r%20stand%20for&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20does%20s.m.a.r.t.e.r%20stand%20for" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20does%20s.m.a.r.t.e.r%20stand%20for" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Versekering 2022
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            What Does S.m.a.r.t.e.r Stand For at Versekering
+          </h1>
+          <p class="lead">
+                          Best vertroude versekering 2022 . Search anything about versekering in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">What Does S.m.a.r.t.e.r Stand For</h2>
+    <p><strong>What Does S.m.a.r.t.e.r Stand For</strong>. Build any hr process on peoplegoal. All of these factors increase your chances of accomplishing what.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=what%20does%20s.m.a.r.t.e.r%20stand%20for" alt="Fat Loss Use S.M.A.R.T. Goals Sweat is Free" />
+        <br>
+        <figcaption>Fat Loss Use S.M.A.R.T. Goals Sweat is Free from sweatisfree.com</figcaption>
+    </figure>
+        <p>
+        There are three types of objectives in a communications plan; The establishment of all objectives should be created using the s.m.a.r.t. A brief explanation of s.m.a.r.t.e.r.
+    </p>
+    <h3>Fat Loss Use S.M.A.R.T. Goals Sweat is Free</h3>
+    <p>Acronym is used in other. A goal with this aspect should help you and matter in your life. In order for goal setting to benefit training the goals set should be s.m.a.r.t. The term was first proposed by george t.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kodak Courage S.M.A.R.T. Goals" data-src="https://i2.wp.com/1.bp.blogspot.com/-q0h3duzoJAo/UWxWWT-7X_I/AAAAAAAAAKc/HyI4irMf7yI/s1600/smart+goals.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kodakcourage.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">E is for the existence of the church. Smart goal settings are set while keeping in mind that those goals are attainable within a specific time duration. Each letter in the smart acronym is an element that helps create the best objectives for an organization. Fitness goals you can set. It just means that you have to pick goals that.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Create S.M.A.R.T. Goals for 2014 [Infographic] CareerBliss" data-src="https://i2.wp.com/media.careerbliss.com/cms/smart_goals_large.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: careerbliss.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Goals should be as specific as possible, even if this means breaking them down. In order for goal setting to benefit training the goals set should be s.m.a.r.t. It stands for the word smarter, or a synonym is intelligent. The establishment of all objectives should be created using the s.m.a.r.t. S encourages young people to be safe by not giving.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="022 Aman Gangavarapu IM 20 NITIE POM Course S.M.A.R.T Goals" data-src="https://i2.wp.com/1.bp.blogspot.com/-VzxYbYqrAUg/UdA5izvd3sI/AAAAAAAAAC0/dMDUhS2bme8/s659/Smart.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: 022amangangavarapuim20nitiepomcourse.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In smart goal setting, a goal needs to be specific. To be able to curl 100 pounds within six months. A highlights the risks of accepting emails, pictures and text messages from unknown sources. M draws attention to the risks associated with meeting someone you only know online. A smart goal is used to help guide goal setting.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT Get S.M.A.R.T Goal Setting and Measurement for Institutional" data-src="https://i2.wp.com/image1.slideserve.com/2739390/what-does-s-m-a-r-t-stand-for-n.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The establishment of all objectives should be created using the s.m.a.r.t. From publicly denying jesus to boldly preaching to thousands in jerusalem, the disciples were changed forever. E is for the existence of the church. The second step in setting s.m.a.r.t.e.r. What does blood carry to every cell in the body</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="The Flash S01E10 PostGame Report Revenge of the Rogues Firestorm Fan" data-src="https://i2.wp.com/firestormfan.com/images/firestorm-acronym.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: firestormfan.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">When the s.m.a.r.t goal was first introduced to the world it was an acronym which stood for: Your abbreviation search returned 132 meanings What does the acronym stand for? Is an acronym that is used to guide the development of measurable goals. Sexually malested and raped twice s m a r t</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Rachel Scott, An R.E. and Computing Blog... E safety and Safer" data-src="https://i2.wp.com/mypad.northampton.ac.uk/reandcomputingblog/files/2014/02/Untitled-1l6173i.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: mypad.northampton.ac.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The smart rules have been developed with the aim of keeping young people safe online. Goal setting is a widely used and a highly effective tool for setting and achieving goals. It stands for the word smarter, or a synonym is intelligent. Your abbreviation search returned 132 meanings Fitness goals you can set.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How to Write SMART Goals" data-src="https://i2.wp.com/d2myx53yhj7u4b.cloudfront.net/sites/default/files/smart-goals-ss.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.smartsheet.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A = attainable or achievable. Goals also keep you on track and regularly accountable. Smarter is listed in the world&#039;s largest and most authoritative dictionary database of abbreviations and acronyms. Goals should be as specific as possible, even if this means breaking them down. A goal with this aspect includes realistic time frames.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Fat Loss Use S.M.A.R.T. Goals Sweat is Free" data-src="https://i2.wp.com/sweatisfree.com/wp-content/uploads/2014/11/S.M.A.R.T..png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sweatisfree.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Your goal might look something like this: Well defined, clear, and unambiguous. A smart goal is used to help guide goal setting. In order for goal setting to benefit training the goals set should be s.m.a.r.t. What do we mean by a s.m.a.r.t.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="What does S.M.A.R.T mean? Definition of S.M.A.R.T S.M.A.R.T stands" data-src="https://i2.wp.com/acronymsandslang.com/acronym_image/2620/27f90180278284bc0873146b633a47d6.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: acronymsandslang.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A goal with this aspect has an outcome that can be assessed as a hit or miss, success or failure. Sexually malested and raped twice s m a r t Each letter in the smart acronym is an element that helps create the best objectives for an organization. Your abbreviation search returned 132 meanings When the s.m.a.r.t goal was first.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="S.M.A.R.T.E.R Goals Acronym Specific, Measurable, Action, Realistic" data-src="https://i.pinimg.com/736x/65/61/f4/6561f44f4e94cfd623b855cdf58edaf4.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.co.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">You have a higher chance of success when a goal is more precise and manageable. E is for the existence of the church. All of these factors increase your chances of accomplishing what. What do we mean by a s.m.a.r.t. Your goal might look something like this:</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-pensamiento-matematico.html" class="be-post-title">
+				 <h6>que es pensamiento matematico </h6>
+                </a>
+                <a href="que-es-pensamiento-matematico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20pensamiento%20matematico&amp;w=50&amp;h=50&amp;c=7" alt="que es pensamiento matematico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="is-there-an-end-to-minecraft-dungeons.html" class="be-post-title">
+				 <h6>is there an end to minecraft dungeons </h6>
+                </a>
+                <a href="is-there-an-end-to-minecraft-dungeons.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=is%20there%20an%20end%20to%20minecraft%20dungeons&amp;w=50&amp;h=50&amp;c=7" alt="is there an end to minecraft dungeons">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="waar-zijn-muggen-goed-voor.html" class="be-post-title">
+				 <h6>waar zijn muggen goed voor </h6>
+                </a>
+                <a href="waar-zijn-muggen-goed-voor.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=waar%20zijn%20muggen%20goed%20voor&amp;w=50&amp;h=50&amp;c=7" alt="waar zijn muggen goed voor">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-tempura-en-cocina.html" class="be-post-title">
+				 <h6>que es tempura en cocina </h6>
+                </a>
+                <a href="que-es-tempura-en-cocina.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20tempura%20en%20cocina&amp;w=50&amp;h=50&amp;c=7" alt="que es tempura en cocina">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-sintomas-tiene-la-andropausia-en-los-hombres.html" class="be-post-title">
+				 <h6>que sintomas tiene la andropausia en los hombres </h6>
+                </a>
+                <a href="que-sintomas-tiene-la-andropausia-en-los-hombres.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20sintomas%20tiene%20la%20andropausia%20en%20los%20hombres&amp;w=50&amp;h=50&amp;c=7" alt="que sintomas tiene la andropausia en los hombres">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="which-is-better-eis-or-it-in-tcs.html" class="be-post-title">
+				 <h6>which is better eis or it in tcs </h6>
+                </a>
+                <a href="which-is-better-eis-or-it-in-tcs.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=which%20is%20better%20eis%20or%20it%20in%20tcs&amp;w=50&amp;h=50&amp;c=7" alt="which is better eis or it in tcs">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-hacer-una-correcta-descripcion-de-puestos.html" class="be-post-title">
+				 <h6>como hacer una correcta descripcion de puestos </h6>
+                </a>
+                <a href="como-hacer-una-correcta-descripcion-de-puestos.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20hacer%20una%20correcta%20descripcion%20de%20puestos&amp;w=50&amp;h=50&amp;c=7" alt="como hacer una correcta descripcion de puestos">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wat-is-een-samenlevingscontract.html" class="be-post-title">
+				 <h6>wat is een samenlevingscontract </h6>
+                </a>
+                <a href="wat-is-een-samenlevingscontract.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wat%20is%20een%20samenlevingscontract&amp;w=50&amp;h=50&amp;c=7" alt="wat is een samenlevingscontract">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="donde-grabaron-diario-de-vampiros.html" class="be-post-title">
+				 <h6>donde grabaron diario de vampiros </h6>
+                </a>
+                <a href="donde-grabaron-diario-de-vampiros.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=donde%20grabaron%20diario%20de%20vampiros&amp;w=50&amp;h=50&amp;c=7" alt="donde grabaron diario de vampiros">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-triple-doble-en-baloncesto.html" class="be-post-title">
+				 <h6>que es triple doble en baloncesto </h6>
+                </a>
+                <a href="que-es-triple-doble-en-baloncesto.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20triple%20doble%20en%20baloncesto&amp;w=50&amp;h=50&amp;c=7" alt="que es triple doble en baloncesto">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Versekering 2022. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>
